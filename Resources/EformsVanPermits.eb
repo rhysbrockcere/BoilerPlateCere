@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="EFORMS" id="EformsVanPermits" dateCreated="2017-04-03T15:56:06.312+01:00">
+        <columns>*</columns>
+        <from>dbo.VanPermit</from>
+        <fields>
+            <field id="address_1" type="VARCHAR" length="50"/>
+            <field id="address_2" type="VARCHAR" length="50"/>
+            <field id="address_3" type="VARCHAR" length="50"/>
+            <field id="address_4" type="VARCHAR" length="50"/>
+            <field id="address_5" type="VARCHAR" length="50"/>
+            <field id="date_of_visit" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="email" type="VARCHAR" length="50"/>
+            <field id="first_name" type="VARCHAR" length="50"/>
+            <field id="id" type="INTEGER" length="10"/>
+            <field id="items" type="VARCHAR" length="5000"/>
+            <field id="language" type="TINYINT" length="3"/>
+            <field id="phone" type="VARCHAR" length="50"/>
+            <field id="postcode" type="VARCHAR" length="10"/>
+            <field id="registration" type="VARCHAR" length="50"/>
+            <field id="surname" type="VARCHAR" length="50"/>
+            <field id="title" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>
