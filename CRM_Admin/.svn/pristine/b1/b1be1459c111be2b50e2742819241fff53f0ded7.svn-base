@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Add_Information" type="CHAR" clientAccessible="ReadWrite" labelTextRef="Txt1fUGZp" maxLength="5000" displayType="TEXTAREA" displayLength="80" rows="10" html="true"/>
+    <field name="Add_Information_CY" type="CHAR" clientAccessible="ReadWrite" labelTextRef="Txt3f7Fu7" maxLength="5000" displayType="TEXTAREA" displayLength="80" rows="10"/>
+    <field name="Category_ID" type="INTEGER" parameter="true" labelTextRef="Txt8fonDH" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Created_By" type="CHAR" labelTextRef="Txt4rJV2P" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="Date_Created" type="DATETIME" labelTextRef="TxtXfw1q" displayType="TEXT"/>
+    <field name="Date_Modified" type="DATETIME" labelTextRef="Txt919Sv" displayType="TEXT"/>
+    <field name="Default_Details" type="CHAR" clientAccessible="ReadWrite" labelTextRef="Txt4dtTM5" maxLength="5000" displayType="TEXTAREA" displayLength="80" rows="10"/>
+    <field name="Default_Details_CY" type="CHAR" clientAccessible="ReadWrite" labelTextRef="Txt2VD5k9" maxLength="5000" displayType="TEXTAREA" displayLength="80" rows="10"/>
+    <field name="Default_Subject" type="CHAR" clientAccessible="ReadWrite" labelTextRef="Txt8z5jCI" maxLength="100" displayType="TEXT" displayLength="80"/>
+    <field name="Default_Subject_CY" type="CHAR" clientAccessible="ReadWrite" labelTextRef="Txt8iH2MM" maxLength="100" displayType="TEXT" displayLength="80"/>
+    <field name="Description" type="CHAR" labelTextRef="Txt77FCja" maxLength="500" displayType="TEXTAREA" displayLength="80" rows="5"/>
+    <field name="Description_CY" type="CHAR" labelTextRef="Txt7FZj1" maxLength="500" displayType="TEXTAREA" displayLength="80" rows="5"/>
+    <field name="Enabled" type="BOOLEAN" defaultValue="1" labelTextRef="TxtO9BaY" displayType="CHECKBOX"/>
+    <field name="Keywords" type="CHAR" clientAccessible="ReadWrite" labelTextRef="Txt6Rt1cn" maxLength="500" displayType="TEXT" displayLength="80"/>
+    <field name="Modified_By" type="CHAR" labelTextRef="Txt5fgCpH" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="Page_URL" type="CHAR" clientAccessible="ReadWrite" labelTextRef="Txt9Kodz3" maxLength="255" displayType="TEXT" displayLength="80"/>
+    <field name="Page_URL_CY" type="CHAR" clientAccessible="ReadWrite" labelTextRef="Txt54GTDe" maxLength="255" displayType="TEXT" displayLength="80"/>
+    <field name="Resp_Team_ID" type="CHAR" labelTextRef="TxtA0Hw7z" maxLength="50" displayType="SELECT" displayLength="50" dynamicList="/Lists/Teams">
+        <listMappings display="Team_Name" return="Team_ID"/>
+    </field>
+    <field name="Sub_Category" type="CHAR" labelTextRef="Txt97B7g5" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="Sub_Category_CY" type="CHAR" labelTextRef="Txt4bOh6u" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="Sub_Category_ID" type="INTEGER" parameter="true" labelTextRef="Txt6IuZwd" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="cat_Add_Information" type="CHAR" clientAccessible="ReadOnly" labelTextRef="Txt1FFAYE" maxLength="2147483647" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Add_Information_CY" type="CHAR" clientAccessible="ReadOnly" labelTextRef="Txt3G3qGD" maxLength="2147483647" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Category" type="CHAR" labelTextRef="Txt97mdaF" maxLength="200" displayType="TEXT" displayLength="40"/>
+    <field name="cat_Category_CY" type="CHAR" labelTextRef="Txt2gYXNc" maxLength="200" displayType="TEXT" displayLength="40"/>
+    <field name="cat_Default_Details" type="CHAR" clientAccessible="ReadOnly" labelTextRef="TxtFkP2J" maxLength="2147483647" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Default_Details_CY" type="CHAR" clientAccessible="ReadOnly" labelTextRef="Txt3fEqjD" maxLength="2147483647" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Default_Subject" type="CHAR" clientAccessible="ReadOnly" labelTextRef="Txt9FRj6J" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Default_Subject_CY" type="CHAR" clientAccessible="ReadOnly" labelTextRef="Txt6tubeo" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Description" type="CHAR" labelTextRef="Txt5iQyaA" maxLength="500" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Description_CY" type="CHAR" labelTextRef="Txt6Dre1b" maxLength="500" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Keywords" type="CHAR" clientAccessible="ReadOnly" labelTextRef="Txt8NQwV2" maxLength="500" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Page_URL" type="CHAR" clientAccessible="ReadOnly" labelTextRef="Txt7EU34n" maxLength="255" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Page_URL_CY" type="CHAR" clientAccessible="ReadOnly" labelTextRef="Txt5uIquZ" maxLength="255" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Resp_Team_ID" type="CHAR" labelTextRef="Txt7kA318" maxLength="50" displayType="TEXT" displayLength="50"/>
+</fields>

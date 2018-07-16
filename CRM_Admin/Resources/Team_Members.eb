@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERI_DOCS" table="true" id="Team_Members" dateCreated="2017-08-31T16:29:04.447+01:00">
+        <columns>*</columns>
+        <from>[FIM-SECMODEL].[dbo].[CERI_OCCUPANCY_v]</from>
+        <where>team_id = &amp;&amp;team_id and contract_id is not null</where>
+        <additional>order by fullname</additional>
+        <fields>
+            <field id="cont_lookup" type="VARCHAR" length="183"/>
+            <field id="contract_id" type="VARCHAR" length="10"/>
+            <field id="contract_name" type="VARCHAR" length="80"/>
+            <field id="forename" type="VARCHAR" length="80"/>
+            <field id="forename1" type="VARCHAR" length="80"/>
+            <field id="forename2" type="VARCHAR" length="80"/>
+            <field id="forename3" type="VARCHAR" length="80"/>
+            <field id="fullname" type="VARCHAR" length="161"/>
+            <field id="manager_lookup" type="VARCHAR" length="183"/>
+            <field id="manager_positionid" type="VARCHAR" length="10"/>
+            <field id="org_id" type="VARCHAR" length="10"/>
+            <field id="person_id" type="VARCHAR" length="10"/>
+            <field id="position_id" type="VARCHAR" length="10"/>
+            <field id="position_lookup" type="VARCHAR" length="183"/>
+            <field id="position_nm" type="VARCHAR" length="80"/>
+            <field id="position_ref_no" type="VARCHAR" length="80"/>
+            <field id="prev_surname" type="VARCHAR" length="80"/>
+            <field id="reference_no" type="VARCHAR" length="80"/>
+            <field id="surname" type="VARCHAR" length="80"/>
+            <field id="team_id" type="VARCHAR" length="10"/>
+            <field id="team_lookup" type="VARCHAR" length="183"/>
+            <field id="title" type="VARCHAR" length="80"/>
+        </fields>
+    </dbResource>
+</ebase>

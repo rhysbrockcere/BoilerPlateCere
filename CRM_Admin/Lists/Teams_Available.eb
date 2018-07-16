@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" debug="true" id="Teams_Available" dateCreated="2017-03-09T15:19:12.434Z">
+        <columns>Team_Name, Team_ID, Email, Leader</columns>
+        <from>sys_Security_Team_List_View</from>
+        <additional>order by team_name</additional>
+        <fields>
+            <field id="Team_Name" input="false"/>
+            <field id="Team_ID" input="false"/>
+            <field id="Category_ID" type="INTEGER" input="false"/>
+            <field id="Email" input="false"/>
+            <field id="Leader" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

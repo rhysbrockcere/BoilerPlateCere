@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="List_Items" dateCreated="2017-11-01T11:25:34.955Z">
+        <columns>*</columns>
+        <from>sys_List_Items</from>
+        <where>List_ID=&amp;&amp;List_ID</where>
+        <additional>order by description</additional>
+        <fields>
+            <field id="Description" type="VARCHAR" length="100"/>
+            <field id="Enabled" type="BIT" length="1"/>
+            <field id="Item_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="List_ID" type="INTEGER" length="10"/>
+            <field id="Description_CY" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

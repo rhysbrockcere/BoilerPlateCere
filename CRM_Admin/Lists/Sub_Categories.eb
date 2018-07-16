@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Sub_Categories" dateCreated="2017-07-03T14:42:26.852+01:00">
+        <columns>Sub_Category_ID, Sub_Category</columns>
+        <from>crm_Category_Sub</from>
+        <fields>
+            <field id="Sub_Category_ID" type="INTEGER" input="false"/>
+            <field id="Sub_Category" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

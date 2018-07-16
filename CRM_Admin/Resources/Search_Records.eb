@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Info merged from Enquiries, Attachments, Actions for Record Searching" database="CRM" table="true" preparedStatement="false" id="Search_Records" dateCreated="2017-10-31T12:17:09.837Z">
+        <columns>*</columns>
+        <from>CS_CRM_TEST.dbo.rpt_Enquiry_Record_Details_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Action" type="VARCHAR" length="10"/>
+            <field id="Action_Date" type="TIMESTAMP" length="16"/>
+            <field id="Agent" type="VARCHAR" length="50"/>
+            <field id="Assigned_To" type="VARCHAR" length="50"/>
+            <field id="Attachment_Name" type="VARCHAR" length="601" readOnly="true"/>
+            <field id="BB_ApprovalStatus" type="VARCHAR" length="50"/>
+            <field id="BB_BadgeType" type="VARCHAR" length="50"/>
+            <field id="Category" type="VARCHAR" length="200"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Completed" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Description" type="VARCHAR" length="50"/>
+            <field id="Details" type="CLOB" length="1073741823"/>
+            <field id="DocumentType" type="INTEGER" length="10"/>
+            <field id="DueDate" type="TIMESTAMP" length="16"/>
+            <field id="Email" type="VARCHAR" length="500"/>
+            <field id="Enquiry_Details" type="CLOB" length="1073741823"/>
+            <field id="Enquiry_ID" type="INTEGER" length="10"/>
+            <field id="Expr1" type="VARCHAR" length="500"/>
+            <field id="FileName" type="VARCHAR" length="100"/>
+            <field id="FilePath" type="VARCHAR" length="500"/>
+            <field id="FileType" type="VARCHAR" length="10"/>
+            <field id="Firstname" type="VARCHAR" length="500"/>
+            <field id="Location" type="VARCHAR" length="50"/>
+            <field id="Priority" type="INTEGER" length="10"/>
+            <field id="Reference" type="VARCHAR" length="50"/>
+            <field id="Resolution_Notes" type="CLOB" length="1073741823"/>
+            <field id="Resolution_Status" type="VARCHAR" length="50"/>
+            <field id="Status" length="1"/>
+            <field id="Sub_Category" type="VARCHAR" length="200"/>
+            <field id="Subject" type="VARCHAR" length="100"/>
+            <field id="Surname" type="VARCHAR" length="500"/>
+            <field id="Team_email" type="VARCHAR" length="100"/>
+            <field id="Title" type="VARCHAR" length="10"/>
+            <field id="Type" type="VARCHAR" length="100"/>
+            <field id="state" type="VARCHAR" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="400" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

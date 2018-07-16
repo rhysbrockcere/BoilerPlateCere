@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/crm_Security" id="getTeam" dateCreated="2016-09-21T16:22:14.317+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+fields.WhereClause.value = 'team_id = \'' + tables.CeriExtract.Team_ID.value + '\'';
+tables.Teams.fetchTable();
+
+log("Where Clause = " + fields.WhereClause.value);
+log("Team ID = " + tables.Teams.Team_ID.value); </scriptText>
+    </script>
+</ebase>

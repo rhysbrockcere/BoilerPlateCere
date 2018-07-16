@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webFormComponent type="PART_PAGE" template="/Presentation/Presentation_Templates/Intranet17" firstPage="DUMMY_PAGE_03102003" preferredScriptFolder="/Scripts" id="CRM" dateCreated="2017-08-10T09:45:38.516+01:00">
+        <resources>
+            <resource name="CRM_WEB_ENQUIRY" path="/Resources/CRM_WEB_ENQUIRY"/>
+            <resource name="CRM_WEB_FORM" path="/Resources/CRM_WEB_FORM"/>
+        </resources>
+    </webFormComponent>
+</ebase>

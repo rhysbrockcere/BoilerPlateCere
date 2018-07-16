@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" pageHeaderTextRef="TxtAZehVv" pageInfoTextReference="Txt3CBMef" pageTrailerTextReference="Txt7JkXEU" nextPageTextReference="Txt7t1xyn" prevPageTextReference="Txt5g10OU">
+    <pageContents>
+        <page ctrl="Pagigios" outputType="0" pdfFooterText="LocalTxt4cMjdh" pdfHeaderText="LocalTxtAaxGVV" uid="415BS2Yg">
+            <panel ctrl="PanQWfYC" propertySet="PagePanel" uid="NUPTh6MO">
+                <fieldTable ctrl="TblUT7DU" displayOnly="true" field="CRM_Users" tableHeaderText="LocalTxt8vfPlO" tableInfoText="LocalTxt8nzU8t" tableTrailerText="LocalTxt8Pe683" uid="GRZ80iIA">
+                    <tablePage ctrl="TpgeYhXu" default="L" uid="IHTd7Vl4">
+                        <fieldColumn buttonText="LocalTxt56Al7r" ctrl="Col13fhiv" field="CRM_Users-ID" uid="7vsj9jiQ" width="5%"/>
+                        <fieldColumn buttonText="LocalTxt4k7GQ" ctrl="Col13w5M0" field="CRM_Users-Position_ID" uid="DM3yqhRc" width="11%"/>
+                        <fieldColumn buttonText="LocalTxt9ARyJC" ctrl="Coldh91Y" field="CRM_Users-Username" uid="S8vmQDKf" width="11%"/>
+                        <fieldColumn buttonText="LocalTxt1K0eKV" ctrl="CollkRcT" field="CRM_Users-Reference_No" uid="N3wJBjut" width="11%"/>
+                        <fieldColumn buttonText="LocalTxt6W1LCA" ctrl="Colqb0Ez" field="CRM_Users-Email" uid="2GV0EtXR" width="30%"/>
+                        <fieldColumn buttonText="LocalTxt3Ylqj" ctrl="ColrFe9B" field="CRM_Users-Created_By" uid="9UdBu4LO" width="11%"/>
+                        <fieldColumn buttonText="LocalTxt5hD0y6" ctrl="ColU0alz" field="CRM_Users-Date_Created" uid="BqI26bIo" width="11%"/>
+                        <fieldColumn buttonText="LocalTxt2jw4i6" ctrl="Col89Cf9" field="CRM_Users-Modified_By" uid="J4kj795t" width="11%"/>
+                        <fieldColumn buttonText="LocalTxt8xkfE4" ctrl="ColBw3m3" field="CRM_Users-Date_Modified" uid="FacXJTFY" width="11%"/>
+                    </tablePage>
+                </fieldTable>
+            </panel>
+        </page>
+    </pageContents>
+</page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="Lists" dateCreated="2017-11-01T11:17:11.934Z">
+        <columns>*</columns>
+        <from>sys_Lists</from>
+        <fields>
+            <field id="Description" type="VARCHAR" length="500"/>
+            <field id="Enabled" type="BIT" length="1"/>
+            <field id="List_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

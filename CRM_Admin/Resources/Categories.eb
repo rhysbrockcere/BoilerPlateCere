@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="Categories" dateCreated="2016-09-23T15:32:59.580+01:00">
+        <columns>*</columns>
+        <from>crm_Categories_List</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by Category</additional>
+        <fields>
+            <field id="Category" type="VARCHAR" length="200"/>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="Enabled" type="BIT" length="1"/>
+            <field id="Resp_Team_ID" type="VARCHAR" length="50"/>
+            <field id="Team_Name" type="VARCHAR" length="80"/>
+            <field id="Team_Path" type="VARCHAR" length="1000"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

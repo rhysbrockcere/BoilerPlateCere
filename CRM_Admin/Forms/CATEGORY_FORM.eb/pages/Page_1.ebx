@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Category/Forms/Form_Load,/Scripts/Category/Forms/Type_Change" pageHeaderTextRef="Txt5pNi4T" pageInfoTextReference="Txt8IspvA" pageTrailerTextReference="Txt9lxPi" nextPageTextReference="TxtfrxsL" prevPageTextReference="TxtArOv5F">
+    <pageContents>
+        <page ctrl="PagmcrQJ" localMsg="false" msgControls="DWOe7yjb" outputType="0" pdfFooterText="LocalTxt2gijYO" pdfHeaderText="LocalTxt3BXyg3" uid="2vEQr7DX">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu_AdminMenu"/>
+            <panel ctrl="PankWDnk" propertySet="PagePanel" uid="N9S5aSMy">
+                <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="DCiottag"/>
+                <message ctrl="Msg1wlP6" uid="DWOe7yjb"/>
+                <panel ctrl="PantLDVo" uid="8FaaSCmm">
+                    <layoutProperties>
+                        <FIELD labelVAlign="Top"/>
+                    </layoutProperties>
+                    <rootHtmlElementProperties classLocator="box"/>
+                    <field buttonText="LocalTxt9Jok0m" ctrl="FldGTjdj" field="Active" uid="F9NHauhk"/>
+                    <field buttonText="LocalTxt4LqGRK" ctrl="FldcF7ZO" field="Name" modifiers="r" uid="HwhI83Be"/>
+                    <field buttonText="LocalTxt6vvPzA" ctrl="Fld6tsbT" displayInfoText="true" displayOnly="true" field="Sub_Category_ID" hidden="true" modifiers="r" uid="NRvoQop7"/>
+                    <field buttonText="LocalTxt1RvGwK" ctrl="FldqLzDg" field="Description" uid="CjjJ7cEe"/>
+                    <field buttonText="LocalTxt58uad" ctrl="Fldjr9pl" field="Type" immedEvent="/Scripts/Category/Forms/Type_Change" immediateValidation="true" modifiers="r" uid="On4UUxaw"/>
+                    <panel ctrl="pnl_Eform" hidden="true" uid="5u7oe2Bu">
+                        <field buttonText="LocalTxtC4SSD" ctrl="Fldh9wIi" field="Ebase_Form_ID" modifiers="r" uid="42sFW0JJ"/>
+                        <field buttonText="LocalTxtYo0NH" ctrl="Fldok3Hp" displayInfoText="true" field="Parameter1" uid="kzj7ZyG"/>
+                        <field buttonText="LocalTxt7XjbBl" ctrl="Fld8Ovei" displayInfoText="true" field="Parameter2" uid="JjRvvDYd"/>
+                        <field buttonText="LocalTxt7BmhLg" ctrl="Flds4Is4" displayInfoText="true" field="Parameter3" uid="56bGrnk9"/>
+                    </panel>
+                    <panel ctrl="pnl_Document" hidden="true" uid="7uLNkGKo">
+                        <field buttonText="LocalTxt5BqY7i" ctrl="FldieGzY" field="Form_URL" modifiers="r" uid="B2vwyoYZ"/>
+                        <field buttonText="LocalTxt2Pbbzp" ctrl="FldTwSed" field="Form_Date" uid="RjWcnXEc"/>
+                    </panel>
+                </panel>
+                <panel ctrl="Pan14H5Rv" propertySet="Button_Panel" uid="HfwXPyQp">
+                    <button buttonText="LocalTxt3WqObP" ctrl="cmd" mouseOverText="LocalTxt9L1ZmK" onClickEvent="/Scripts/Category/go_back" uid="QCAsN99D"/>
+                    <button buttonText="LocalTxt97pI47" ctrl="ButJ9wYN" mouseOverText="LocalTxt72IFMn" newLine="false" onClickEvent="/Scripts/Category/Forms/Save_Form" uid="2OOOlMxJ"/>
+                </panel>
+                <panel ctrl="PanqDf2" displayOnly="true" layoutType="HORIZONTAL_BOX" uid="1ucuVv4G">
+                    <layoutProperties>
+                        <HORIZONTAL_BOX hAlign="Fill" spacerSize="20px"/>
+                    </layoutProperties>
+                    <field buttonText="LocalTxtA27b3r" ctrl="FldSVVv2" field="Created_By" uid="Br3gtZVs"/>
+                    <field buttonText="LocalTxtA6W2ql" ctrl="FldNlGeo" field="Date_Created" uid="QhDFHVq3"/>
+                    <field buttonText="LocalTxt8rDR4M" ctrl="FldOlgCa" field="Modified_By" uid="OYC87RGu"/>
+                    <field buttonText="LocalTxt5T71kz" ctrl="FldhqCJQ" field="Date_Modified" uid="LMXmXf78"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

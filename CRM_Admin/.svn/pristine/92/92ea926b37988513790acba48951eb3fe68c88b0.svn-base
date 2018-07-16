@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CERI_DOCS" id="Ceri_People_Team" dateCreated="2017-02-07T11:00:52.211Z">
+        <columns>distinct Name, Username, Email</columns>
+        <from>Ceri_Docs_Live.dbo.CERiExtract</from>
+        <where>Team_ID=&amp;&amp;Team_ID</where>
+        <additional>order by Name</additional>
+        <fields>
+            <field id="Name" input="false"/>
+            <field id="Username" input="false"/>
+            <field id="Team_ID" output="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

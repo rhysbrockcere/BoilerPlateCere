@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" pageHeaderTextRef="Txt5XpjSt" pageInfoTextReference="Txt9jqEiT" pageTrailerTextReference="TxtEU13V" nextPageTextReference="Txt4YaZ1v" prevPageTextReference="Txt9OMqJa">
+    <pageContents>
+        <page ctrl="Pag5cLK5" outputType="0" pdfFooterText="LocalTxt1AvXu0" pdfHeaderText="LocalTxt8esFmt" uid="1euEUImT">
+            <panel ctrl="PanAKbtq" propertySet="Nav_Panel" uid="HjrVAfFJ">
+                <button buttonText="LocalTxt57L0vB" ctrl="ButBt7nI" mouseOverText="LocalTxt9TKTA1" onClickEvent="/Scripts/goto_Admin_Home" uid="7rGoP2sg"/>
+            </panel>
+            <panel ctrl="PanB5XKl" uid="FhAfwUeX">
+                <rootHtmlElementProperties classLocator="box"/>
+                <text ctrl="Tex10dltc" text="LocalTxt3hUWDR" uid="PT2oFHf3"/>
+            </panel>
+            <componentPlaceHolder name="CMP_LANG_CONTROL" prefix="LangCMP_LANG_CONTROL"/>
+        </page>
+    </pageContents>
+</page>

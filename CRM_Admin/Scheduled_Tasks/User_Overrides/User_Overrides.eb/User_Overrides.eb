@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm beforeEvent="/Scheduled_Tasks/User_Overrides/Sync_Users" formHeaderTextRef="Txt9oKdIL" htmlTitleTextRef="Txt7AQrKR" finishButtonTextRef="Txt5eqQIc" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/Scheduled_Tasks/User_Overrides" id="User_Overrides" dateCreated="2018-01-23T13:59:54.478Z">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+        </sharedFunctionScripts>
+        <resources>
+            <resource name="Ceri_ADInfo" path="/Resources/Ceri_ADInfo"/>
+            <resource name="CRM_Users" path="/Resources/CRM_Users"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt1N8nI8" restoreButtonTextRef="Txt7G6fb9" saveInfoTextRef="TxtAkUdN5" restoreInfoTextRef="Txt4CHm4A"/>
+        <finalPage headerTextRef="Txt2Yro0n" infoTextRef="Txt9pxi5m" returnTextRef="Txt9iXPWP" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

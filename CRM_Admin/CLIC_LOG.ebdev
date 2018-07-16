@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<development version="5.2.0" id="9c1a64c9-fa7e-4ee9-8365-4e5f2b809085" name="CLIC_LOG" description="" createdOnDate="2018-03-06T15:45:25.173Z">
+    <workspaceFiles>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/CLIC_LOG"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Forms/CLIC_LOG"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Lists/Form_Type"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Lists/Log_Types"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Lists/Return_Rows"/>
+        <workspaceFile type="Folder" projectName="CRM_Admin" entityPath="/Menu"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/crm_Log"/>
+        <workspaceFile type="Folder" projectName="CRM_Admin" entityPath="/Scripts/Log"/>
+    </workspaceFiles>
+</development>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Lists/Lists_Load" pageHeaderTextRef="TxtAt9GH2" pageInfoTextReference="Txt4u3EDn" pageTrailerTextReference="Txt46iWF5" nextPageTextReference="Txt3koRUS" prevPageTextReference="TxtAf64X0">
+    <pageContents>
+        <page ctrl="PagzolmE" outputType="0" pdfFooterText="LocalTxt9RjuP9" pdfHeaderText="LocalTxtPZaWw" uid="NjfbumHa">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu_AdminMenu"/>
+            <panel ctrl="Panz6laA" propertySet="PagePanel" uid="IDLuvj3X">
+                <panel ctrl="Panfrg56" propertySet="floatLeft" uid="Iz17xAEE" width="50%">
+                    <text ctrl="TexYaK3R" text="LocalTxt26nD03" uid="S2JXSWGC"/>
+                    <fieldTable ctrl="TblLyTJp" deletable="false" field="Lists" insertable="true" tableHeaderText="LocalTxt58lGlA" tableInfoText="LocalTxt6TwWUW" tableTrailerText="LocalTxtAs3cTr" uid="14UwzzSE">
+                        <tablePage ctrl="TpggytpI" default="L" uid="AuxRsI1n">
+                            <fieldColumn buttonText="LocalTxt6Ro6Jw" ctrl="Coldbm2A" displayOnly="true" field="Lists-List_ID" uid="5ebF3UeH" width="8%"/>
+                            <fieldColumn buttonText="LocalTxtA1PMU5" ctrl="Col115HMI" field="Lists-Name" uid="AbXAD8KV" width="20%"/>
+                            <fieldColumn buttonText="LocalTxthcY9b" ctrl="Col9dLif" field="Lists-Description" uid="LSIwtiVO" width="30%"/>
+                            <fieldColumn buttonText="LocalTxt2UVGVj" ctrl="ColyZakP" field="Lists-Enabled" hAlign="Center" uid="6mSUhLeD" width="8%">
+<columnHeaderProperties hAlign="Center"/>
+<stripeProperties hAlign="Center"/>
+                            </fieldColumn>
+                            <fieldColumn buttonText="LocalTxtAan6LK" ctrl="ColtyeTJ" field="Lists-Select" hAlign="Center" hyperlink="true" immedEvent="/Scripts/Lists/Select_List" uid="HIJOMwDi" width="10%">
+<columnHeaderProperties hAlign="Center"/>
+<stripeProperties hAlign="Center"/>
+                            </fieldColumn>
+                        </tablePage>
+                    </fieldTable>
+                </panel>
+                <panel ctrl="pnlItems" hidden="true" propertySet="floatRight" uid="9bi1JlXM" width="47%">
+                    <rootHtmlElementProperties classLocator="panelRight box"/>
+                    <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="Eq15xTR5"/>
+                    <hyperlink ctrl="LnkeCTJl" text="LocalTxt272NRW" title="LocalTxt5E7KCi" uid="Nm19dH2H"/>
+                    <fieldTable ctrl="TblPzFYR" deletable="true" field="List_Items" insertable="true" tableHeaderText="LocalTxt4EN9wc" tableInfoText="LocalTxt5vgAE3" tableTrailerText="LocalTxt84nbfK" uid="S3YZC3fc">
+                        <tablePage ctrl="Tpg6sq2Q" default="L" uid="GLzE2ke1">
+                            <fieldColumn buttonText="LocalTxt8MdNWv" ctrl="ColhhB6O" displayOnly="true" field="List_Items-Item_ID" uid="OdZ9Z1EQ" width="10%"/>
+                            <fieldColumn buttonText="LocalTxt8drZ3x" ctrl="ColyUMAQ" field="List_Items-Description" uid="1ETAUP7H" width="25%"/>
+                            <fieldColumn buttonText="LocalTxt4ZBIpW" ctrl="ColREDr2" field="List_Items-Description_CY" uid="HoIacdRT" width="25%"/>
+                            <fieldColumn buttonText="LocalTxtntBZI" ctrl="Colh8zns" field="List_Items-Enabled" hAlign="Center" uid="QdjjH7IR" width="12%">
+<columnHeaderProperties hAlign="Center"/>
+<stripeProperties hAlign="Center"/>
+                            </fieldColumn>
+                        </tablePage>
+                    </fieldTable>
+                </panel>
+                <panel ctrl="PanT2GFZ" topPadding="10px" uid="EUc6pmDI">
+                    <button buttonText="LocalTxt2CQic2" ctrl="But2RRjc" mouseOverText="LocalTxt4QZ5w0" onClickEvent="/Scripts/Lists/Cancel_Lists" uid="1UIlkBXQ"/>
+                    <button buttonText="LocalTxt4WkSau" ctrl="ButilMTx" mouseOverText="LocalTxt3Gc5Dh" newLine="false" onClickEvent="/Scripts/GL_Validate,/Scripts/Lists/Save_Lists" uid="OzEyuCGh"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

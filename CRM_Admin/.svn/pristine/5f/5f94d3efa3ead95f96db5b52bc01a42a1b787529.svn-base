@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" pageHeaderTextRef="Txt1vrnhr" pageInfoTextReference="Txt8XfRXo" pageTrailerTextReference="Txt44dfXZ" nextPageTextReference="Txt6l5G9x" prevPageTextReference="Txt3QzVbb">
+    <pageContents>
+        <page ctrl="Pag15VojY" outputType="0" pdfFooterText="LocalTxt5ULZl6" pdfHeaderText="LocalTxtAel844" uid="LJquG6MU">
+            <panel ctrl="Pan14H5Rv" propertySet="Nav_Panel" uid="8FTYnfjv">
+                <button buttonText="LocalTxt57L0vB" ctrl="ButBt7nI" mouseOverText="LocalTxt9TKTA1" onClickEvent="/Scripts/goto_Admin_Home" uid="OalELIQO"/>
+                <button buttonText="LocalTxt3WqObP" ctrl="cmd" mouseOverText="LocalTxt9L1ZmK" newLine="false" uid="LC5Xx6kO"/>
+            </panel>
+            <panel ctrl="Pan118wsr" propertySet="floatLeft" uid="D4z0tlEc" width="70%">
+                <rootHtmlElementProperties classLocator="panelLeft box"/>
+                <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="NNFEtW1K"/>
+                <horizontalLine ctrl="Hln4ooMH_2" uid="CO7nKih6"/>
+            </panel>
+            <panel ctrl="PanfwWbT" propertySet="floatRight" uid="E3yzlfA3" width="29%">
+                <rootHtmlElementProperties classLocator="panelRight box"/>
+                <text ctrl="TexYaK3R_5" text="LocalTxt26nD03_5" uid="RtiCmBKi"/>
+                <horizontalLine ctrl="Hln4ooMH_5" uid="KVPwqrqu"/>
+            </panel>
+        </page>
+    </pageContents>
+</page>

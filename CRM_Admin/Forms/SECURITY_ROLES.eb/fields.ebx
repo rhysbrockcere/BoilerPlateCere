@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Where_Clause" type="CHAR" labelTextRef="Txt5W5sVW" displayType="TEXT"/>
+</fields>

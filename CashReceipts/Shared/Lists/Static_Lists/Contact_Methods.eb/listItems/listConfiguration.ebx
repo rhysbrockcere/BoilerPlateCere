@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<items>
-    <item id="1" returnVal="SMS"/>
-    <item id="2" returnVal="Email"/>
-    <item id="3" returnVal="Post"/>
-</items>

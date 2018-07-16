@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Log/Form_Load,/Scripts/Log/Fetch_Log" pageHeaderTextRef="Txt5o143R" pageInfoTextReference="Txt37S16E" pageTrailerTextReference="Txt7MSoO5" nextPageTextReference="Txt3hAr1j" prevPageTextReference="Txt4VBHmf">
+    <pageContents>
+        <page ctrl="Pagq8N1O" outputType="0" pdfFooterText="LocalTxt4Q8kqT" pdfHeaderText="LocalTxt275Avz" uid="PTlOUxYI">
+            <componentPlaceHolder name="AdminMenu" prefix="mnuAdminMenu"/>
+            <panel ctrl="PankTCd" propertySet="PagePanel" uid="F9sA78YT">
+                <panel ctrl="PanTeE4s" uid="8u92BxYC">
+                    <text ctrl="TexsAfva" text="LocalTxt6LkxsI" uid="Brz1sD5Z"/>
+                    <panel ctrl="PanibHBn" layoutType="HORIZONTAL_BOX" uid="N7MI5dNX">
+                        <layoutProperties>
+                            <HORIZONTAL_BOX cellVAlign="Center" hAlign="Fill"/>
+                        </layoutProperties>
+                        <field buttonText="LocalTxt2P9nus" ctrl="FldOJrDP" field="Filter_Action" propertySet="Chosen-Medium" uid="OYw0FfGx"/>
+                        <field buttonText="LocalTxt1rAQT3" ctrl="FldA6kll" field="Filter_Form" propertySet="Chosen-Medium" uid="FKz93Dfs"/>
+                        <field buttonText="LocalTxt7fsM50" ctrl="Fldqf6vL" field="Filter_User" propertySet="Chosen-Medium" uid="GKt41i5J"/>
+                        <field buttonText="LocalTxt7oAZ5k" ctrl="Fld9WDOE" field="Filter_Type" propertySet="Chosen-Medium" uid="8dBzs41y"/>
+                        <button buttonText="LocalTxtAaalSZ" ctrl="But112Jy5" mouseOverText="LocalTxt1wtIUt" onClickEvent="/Scripts/Log/Fetch_Log" uid="J8NgGMrT"/>
+                        <hyperlink ctrl="LnkZaHG5" onClickEvent="/Scripts/Log/Clear_Filter,/Scripts/Log/Fetch_Log" text="LocalTxt355v85" title="LocalTxt6L6eeM" uid="Gy2N2WZp"/>
+                    </panel>
+                    <panel ctrl="Pan5wdY8" layoutType="HORIZONTAL_BOX" uid="88bOcPX8">
+                        <layoutProperties>
+                            <HORIZONTAL_BOX cellVAlign="Center" hAlign="Left"/>
+                        </layoutProperties>
+                        <field buttonText="LocalTxt1o5oSZ" ctrl="FldEOh6b" field="Filter_Rows" propertySet="Chosen-Small" uid="QBIh9y2M"/>
+                        <text ctrl="TexqJUvK" text="LocalTxt28fzpO" uid="GMozgvfH"/>
+                    </panel>
+                </panel>
+                <fieldTable ctrl="TblAr2tI" displayOnly="true" field="crm_Log" numVisibleRows="20" tableHeaderText="LocalTxtx6Awr" tableInfoText="LocalTxt7CUvSw" tableTrailerText="LocalTxt872S0C" uid="QZAVUq3Y">
+                    <tablePage ctrl="Tpgex51I" default="L" uid="beyPWhm">
+                        <fieldColumn buttonText="LocalTxt6N3DU7" ctrl="ColdtVp7" field="crm_Log-Action" uid="EguDwPt6" width="10%"/>
+                        <fieldColumn buttonText="LocalTxt6lk0H3" ctrl="ColWRWHI" field="crm_Log-Time_Stamp" uid="4JuQ0Mnc" width="14%"/>
+                        <fieldColumn buttonText="LocalTxt8ZnnK4" ctrl="ColMuZi9" field="crm_Log-Form" uid="GRg8jxGt" width="14%"/>
+                        <fieldColumn buttonText="LocalTxt3o8ezW" ctrl="Colc9h0u" field="crm_Log-Page" uid="LxEy0UoG" width="14%"/>
+                        <fieldColumn buttonText="LocalTxt9OGoNV" ctrl="Col5wBcp" field="crm_Log-Details" uid="3iueWjp3" width="40%"/>
+                        <fieldColumn buttonText="LocalTxt5fbXoK" ctrl="Col9PVr5" field="crm_Log-User_ID" uid="PEJbthzq" width="14%"/>
+                        <fieldColumn buttonText="LocalTxt8LELqq" ctrl="ColeTJkB" field="crm_Log-Type" uid="57NZdJtZ" width="14%"/>
+                    </tablePage>
+                </fieldTable>
+            </panel>
+        </page>
+    </pageContents>
+</page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Divisions" dateCreated="2017-03-09T15:20:36.500Z">
+        <columns>distinct Division</columns>
+        <from>crm_categories_list</from>
+        <additional>order by division</additional>
+        <fields>
+            <field id="Division" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="SecurityRoles" dateCreated="2017-02-07T12:22:40.090Z">
+        <columns>Role_ID, Name</columns>
+        <from>sys_Security_Roles</from>
+        <fields>
+            <field id="Name" input="false"/>
+            <field id="Role_ID" type="INTEGER" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

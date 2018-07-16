@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Scheduled_Tasks/User_Overrides/User_Overrides" id="Sync_Users" dateCreated="2018-01-23T14:02:26.228Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+var batchID = crmGetSequenceID('Batch_ID');
+
+crmScheduleLog(batchID, 'Ceri', 'Start User Sync', 0, 0, 'Start', '');
+//Get list of user overrides 
+fields.Where_Clause.value = "username is not null";
+
+var t = tables.CRM_Users
+t.fetchTable();
+
+var count = 0;
+var updated = 0;
+var inserted = 0;
+
+if (tables.CRM_Users.rowCount &gt; 0) {
+	var rows = t.getRows();
+
+	while (rows.next()) {
+		//Loop through each override and see if it already exists ion the ADInfo table
+		resources.Ceri_ADInfo.fetch();
+		log ("Record Found? " + system.variables.$FOUND.value);
+		
+		if (system.variables.$FOUND.value == 'Y') {//Update ADInfo
+			log ("Exisiting user found, updating");
+			resources.Ceri_ADInfo.update();
+			updated ++;
+		}
+		else { //Insert ADInfo
+			log ("No user found, inserting");
+			resources.Ceri_ADInfo.insert();
+			inserted ++;
+		}
+
+		count ++;
+		
+	}
+	
+}
+
+crmScheduleLog(batchID, 'Ceri', 'End User Sync - ' + count + ' rows found. ' + updated + ' updated and ' + inserted + ' rows inserted.', 0, 0, 'End', '');
+
+
+/**
+ * Function to insert a row into the schedule log
+ */
+ 
+function crmScheduleLog (BatchID, ExtSystem, Comments, InternalID, ExternalID, Status, Flag) {
+	var con = null;
+	var stmt = null;
+
+	if(InternalID == null){InternalID = 0};
+	if(ExternalID == null){ExternalID = 0};
+	if(BatchID == null){BatchID = 0};
+	
+	try {
+		con = system.getDatabaseConnection(strCon);
+  	stmt = con.prepareStatement("insert into sys_Schedule_Log (System, DateStamp, Comments, Internal_ID, External_ID, Status, Flag, Ebase_Form, Ebase_Page, Batch_ID) values "
+  					+ "(?,getdate(),?,?,?,?,?,?,?,?)");
+
+		stmt.setString(1, ExtSystem);
+		stmt.setString(2, Comments);
+		stmt.setInt(3, InternalID);
+		stmt.setInt(4, ExternalID);
+		stmt.setString(5, Status);
+		stmt.setString(6, Flag);
+		stmt.setString(7, system.variables.$FORMID.value);
+		stmt.setString(8, system.variables.$CURRENT_PAGE.value);
+		stmt.setInt(9, BatchID);		
+		
+  	stmt.execute();
+
+	}
+	catch (e) {
+		log("__**ERROR** - crmScheduleLog - " + e);
+	}
+	finally	{
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+
+}
+
+</scriptText>
+    </script>
+</ebase>

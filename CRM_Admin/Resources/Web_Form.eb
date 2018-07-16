@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource database="CRM" id="Web_Form" dateCreated="2017-07-28T16:22:07.969+01:00">
+        <columns>*</columns>
+        <from>web_Contact_Forms</from>
+        <where>Form_ID=&amp;&amp;Form_ID</where>
+        <fields>
+            <field id="Address_Block" type="BIT" length="1"/>
+            <field id="Allow_Anonymous" type="BIT" length="1"/>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="Confirmation_Text_CY" type="CLOB" length="1073741823"/>
+            <field id="Confirmation_Text_EN" type="CLOB" length="1073741823"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Default_Comments" type="BIT" length="1"/>
+            <field id="Default_Enquiry_Type" type="INTEGER" length="10"/>
+            <field id="Email_Address" type="VARCHAR" length="200"/>
+            <field id="Email_Confirmation_Details" type="BIT" length="1"/>
+            <field id="Email_Customer" type="BIT" length="1"/>
+            <field id="Email_Form" type="BIT" length="1"/>
+            <field id="Email_From" type="VARCHAR" length="200"/>
+            <field id="Email_Subject_CY" type="VARCHAR" length="200"/>
+            <field id="Email_Subject_EN" type="VARCHAR" length="200"/>
+            <field id="Email_Text_EN" type="CLOB" length="1073741823"/>
+            <field id="Email_text_CY" type="CLOB" length="1073741823"/>
+            <field id="Enabled" type="BIT" length="1"/>
+            <field id="Form_ID" type="INTEGER" length="10"/>
+            <field id="Hits" type="INTEGER" length="10"/>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Intro_Text_CY" type="CLOB" length="1073741823"/>
+            <field id="Intro_Text_EN" type="CLOB" length="1073741823"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Next_Form_Name" type="VARCHAR" length="100"/>
+            <field id="Page_Header_CY" type="VARCHAR" length="100"/>
+            <field id="Page_Header_EN" type="VARCHAR" length="100"/>
+            <field id="Param1" type="VARCHAR" length="50"/>
+            <field id="RB_Search" type="BIT" length="1"/>
+            <field id="Return_URL_CY" type="VARCHAR" length="500"/>
+            <field id="Return_URL_EN" type="VARCHAR" length="500"/>
+            <field id="Show_Comments" type="BIT" length="1"/>
+            <field id="Show_Subject" type="BIT" length="1"/>
+            <field id="Sub_Category_ID" type="INTEGER" length="10"/>
+            <field id="Summary_Text_CY" type="CLOB" length="1073741823"/>
+            <field id="Summary_Text_EN" type="CLOB" length="1073741823"/>
+            <field id="allow_select" type="BIT" length="1"/>
+            <field id="email_required" type="BIT" length="1"/>
+            <field id="total_pages" type="SMALLINT" length="5"/>
+            <field id="verify" type="BIT" length="1"/>
+            <field id="verify_text" type="CLOB" length="2147483647"/>
+            <field id="allow_upload" type="BIT" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

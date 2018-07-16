@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="Javascript" preferredComponentPath="/Forms/ENQUIRY" preferredComponentProject="CRM_Customer" id="crm_Funtions" dateCreated="2016-02-25T15:32:07.067Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+/******************************************************************************/
+
+/**
+ * Gets the next collections dates for a given address using the UPRN as an identifier
+ * @param UPRN string
+ * @return Collections as object
+ */
+ 
+function getRefuseDates(UPRN) {
+
+	log("Getting bin collections for UPRN " + UPRN);
+ 		
+	var collections = [];
+	var found = false;
+
+	try {
+
+		var con = system.getDatabaseConnection('CRM');
+		var stmt;
+		var rs;
+	
+		//Get the next two dates from the database
+  	stmt = con.prepareStatement("select convert(smalldatetime,strDate1) as strDate1, convert(smalldatetime,strDate2) as strDate2 ,Date1Type, Date2Type from web_RefuseCollectionDates where UPRN = ?");
+  	stmt.setInt(1, UPRN);
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+
+  		//Store the dates as moment and type as string into an array
+  		log("Date 1 = " + rs.getString("strDate1") + " Type=" + rs.getString("Date1Type"));
+  		var collection1 = [moment(rs.getString("strDate1")),rs.getString("Date1Type")];
+  		collections.push(collection1);
+  		
+  		log("Date 2 = " + rs.getString("strDate2") + " Type=" + rs.getString("Date2Type"));
+  		var collection2 = [moment(rs.getString("strDate2")),rs.getString("Date2Type")];
+  		collections.push(collection2);
+			found = true;
+		}	
+			
+		//See if either one of the dates is a bank holiday
+		if (checkBankHoliday(collections[0][0])) {
+			//Move both dates on a week - Using moment.js functions
+			collections[0][0] = collections[0][0].add(1,'w');
+			collections[1][0] = collections[1][0].add(1,'w');
+		}
+
+		if (checkBankHoliday(collections[1][0])) {
+ 			//Only move the second date on a week
+ 			collections[1][0] = collections[1][0].add(1,'w');
+ 		}
+ 		
+	}
+	catch (e) {
+		log("__**ERROR** - getRefuseDates - " + e);
+		crmLog(0, "Query", "Error getting refuse dates (UPRN = " + UPRN + ") " + e, 1);
+	}
+	
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+
+	if (found == true) {
+		return collections;
+	}
+	else {
+		return "Error";
+	}
+	
+}
+
+/******************************************************************************/
+
+/**
+ * Gets the next bulky waste collections dates for a given address using the UPRN as an identifier
+ * @param UPRN string
+ * @return Collections as object
+ */
+ 
+function getBulkyDates(UPRN) {
+
+	log("Getting bulky collections for UPRN " + UPRN);
+ 	
+	var collections = [];
+	var found = false;
+
+	try {
+		var con = system.getDatabaseConnection('CRM');
+		var stmt;
+		var rs;
+	
+		//Get the next two dates from the database
+  	stmt = con.prepareStatement("select Pickup1, Pickup2 from web_BulkyCollectionDates where UPRN = ?");
+  	stmt.setString(1, UPRN);
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+  		//Store the dates as moment and type as string into an array
+  		log("Date 1 = " + rs.getString("Pickup1"));
+  		collections[0] = moment(rs.getString("Pickup1"));
+  		
+  		log("Date 2 = " + rs.getString("Pickup2"));
+  		collections[1] = moment(rs.getString("Pickup2"));
+			found = true;
+		}
+
+//		//See if either one of the dates is a bank holiday
+//		if (checkBankHoliday(collections[0][0])) {
+//			//Move both dates on a week - Using moment.js functions
+//			collections[0][0] = collections[0][0].add(1,'w');
+//			collections[1][0] = collections[1][0].add(1,'w');
+//		}
+//
+//		if (checkBankHoliday(collections[1][0])) {
+// 			//Only move the second date on a week
+// 			collections[1][0] = collections[1][0].add(1,'w');
+// 		}
+
+	}
+	catch (e) {
+		log("__**ERROR** - getBulkyDates - " + e);
+		crmLog(0, "Query", "Error getting bulky dates (UPRN = " + UPRN + ") " + e, 1);
+	}
+	
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+
+	if (found == true) {
+		return collections;
+	}
+	else {
+		return "Error";
+	}
+	
+}
+
+/******************************************************************************/
+
+/**
+ * Gets the next bulky waste collections dates for a given address using the UPRN as an identifier
+ * @param UPRN string
+ * @return Collections as object
+ */
+ 
+function getGreenDates(UPRN) {
+
+	log("Getting green collection dates for UPRN " + UPRN);
+ 		
+	var collections = [];
+	var found = false;
+
+	try {
+
+		var con = system.getDatabaseConnection('CRM');
+		var stmt;
+		var rs;
+	
+		//Get the next two dates from the database
+  	stmt = con.prepareStatement("select Pickup1, Pickup2 from web_GreenCollectionDates where UPRN = ?");
+  	stmt.setString(1, UPRN);
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+  		//Store the dates as moment and type as string into an array
+  		log("Date 1 = " + rs.getString("Pickup1"));
+  		collections[0] = moment(rs.getString("Pickup1"));
+  		
+  		log("Date 2 = " + rs.getString("Pickup2"));
+  		collections[1] = moment(rs.getString("Pickup2"));
+			found = true;
+		}
+
+	}
+	catch (e) {
+		log("__**ERROR** - getGreenDates - " + e);
+		crmLog(0, "Query", "Error getting green dates (UPRN = " + UPRN + ") " + e, 1);
+	}
+	
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+
+	if (found == true) {
+		return collections;
+	}
+	else {
+		return "Error";
+	}
+	
+}
+
+/******************************************************************************/
+
+/**
+ * Sends both the emails to the staff annd customer after an enquiry has been created
+ */
+ 
+function sendEmails () {
+
+	/************************
+	 * Send internal email
+	 ************************/
+
+	//generate link for the email
+	fields.EMAIL_LINK.value = crmGetEnquiryLink(fields.Enquiry_ID.value);
+
+	//If the staff email address has not been set then default to reception@
+	if (fields.FRM_EMAIL_ADDRESS.value == null &amp;&amp; fields.FRM_Team_Email.value == null) {
+		fields.EMAIL_ADDRESS.value = 'reception@ceredigion.gov.uk'}
+	else {
+		fields.EMAIL_ADDRESS.value = fields.FRM_Team_Email.value;
+	}
+
+	//If we are on a test server override the email address
+	if(TestServer) {fields.EMAIL_ADDRESS.value = 'georgee@ceredigion.gov.uk'}
+	else {fields.EMAIL_ADDRESS.value = fields.FRM_EMAIL_ADDRESS.value}
+
+	//Send either the welsh or english email resource
+	if (system.variables.$LANGUAGE.value == 'CY') {resources.Email_Staff_CY.sendmail()}
+	else {resources.Email_Staff.sendmail()}
+	
+	crmLog(0,"EMAIL", "Email sent to " + fields.EMAIL_ADDRESS.value ,3);
+	
+	/************************
+	 * Send customer email
+	 ************************/
+
+	//If we are on a test server override the email address
+	//if(TestServer) {fields.EMAIL_ADDRESS.value = 'ict.appsteam@ceredigion.gov.uk'}
+	//else {
+	if (fields.FRM_EMAIL_CUSTOMER.value == true) {
+		if (fields.CUST_EMAIL.value != '' &amp;&amp; fields.CUST_EMAIL.value != null) {
+			fields.EMAIL_ADDRESS.value = fields.CUST_EMAIL.value;
+			//}
+		
+			//Get the right title / salutation for the customer
+			fields.EMAIL_SALUTATION.value = crmGetSalutation(fields.CUST_TITLE.value, fields.CUST_OTHER_TITLE.value, fields.CUST_FIRSTNAME.value, fields.CUST_SURNAME.value);
+		
+			//Send either the welsh or english email resource
+			if (system.variables.$LANGUAGE.value == 'CY') {resources.Email_Customer_CY.sendmail()}
+			else {resources.Email_Customer.sendmail()}
+			
+			crmLog(0,"EMAIL", "Email sent to " + fields.EMAIL_ADDRESS.value ,3);
+		}
+		else {
+			crmLog(0,"Info", "No customer email address supplied." ,3);
+		}
+	}
+	
+	
+}
+</scriptText>
+    </script>
+</ebase>

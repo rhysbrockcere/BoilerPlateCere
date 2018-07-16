@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm beforeEvent="/LogonService/DELETE_GL_checkCredentials_CRM" formHeaderTextRef="Txt2ZbrkJ" htmlTitleTextRef="Txt5RAmWa" finishButtonTextRef="Txt4FMYyc" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" id="APPOINTMENTS" dateCreated="2017-06-29T09:48:16.552+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+        </sharedFunctionScripts>
+        <clientCallableFunctionScripts>
+            <clientCallableFunctionScript path="/Scripts/_CLIENT_FUNCTIONS"/>
+        </clientCallableFunctionScripts>
+        <saveRestore enabled="false" saveButtonTextRef="Txt9wEagI" restoreButtonTextRef="Txt8jxMG5" saveInfoTextRef="TxtCa5Sa" restoreInfoTextRef="Txt9qvhUf"/>
+        <finalPage headerTextRef="Txt6X9zju" infoTextRef="Txt6GKMqk" returnTextRef="TxtySeWc" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

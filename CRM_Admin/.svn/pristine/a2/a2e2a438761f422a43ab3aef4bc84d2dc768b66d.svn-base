@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm beforeEvent="/LogonService/GL_checkCredentials,/LogonService/GL_CheckAccess" formHeaderTextRef="TxtAD7XLj" htmlTitleTextRef="Txt4Als0V" finishButtonTextRef="Txt8ruDHh" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" id="WEB_FORMS" dateCreated="2017-07-27T14:13:48.108+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+        </sharedFunctionScripts>
+        <saveRestore enabled="false" saveButtonTextRef="Txt11CPNf" restoreButtonTextRef="Txt8NOG9E" saveInfoTextRef="Txt4WSzME" restoreInfoTextRef="TxtfQune"/>
+        <finalPage headerTextRef="Txt7YIcy2" infoTextRef="Txt3Js04S" returnTextRef="Txt2d9qHU" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

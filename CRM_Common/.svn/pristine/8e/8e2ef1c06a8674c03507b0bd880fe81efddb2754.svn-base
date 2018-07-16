@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" id="Category" dateCreated="2017-03-09T16:18:52.077Z">
+        <columns>*</columns>
+        <from>crm_Categories</from>
+        <where>Category_ID=&amp;&amp;Category_ID</where>
+        <fields>
+            <field id="Add_Information" type="CLOB" length="2147483647"/>
+            <field id="Add_Information_CY" type="CLOB" length="2147483647"/>
+            <field id="Category" type="VARCHAR" length="200"/>
+            <field id="Category_CY" type="VARCHAR" length="200"/>
+            <field id="Category_ID" type="INTEGER" length="10" key="true"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Default_Details" type="CLOB" length="2147483647"/>
+            <field id="Default_Details_CY" type="CLOB" length="2147483647"/>
+            <field id="Default_Subject" type="VARCHAR" length="100"/>
+            <field id="Default_Subject_CY" type="VARCHAR" length="100"/>
+            <field id="Description" type="VARCHAR" length="500"/>
+            <field id="Description_CY" type="VARCHAR" length="500"/>
+            <field id="Ebase_Form_ID" type="VARCHAR" length="50"/>
+            <field id="Enabled" type="BIT" length="1"/>
+            <field id="FileRef_ListID" type="INTEGER" length="10"/>
+            <field id="Keywords" type="VARCHAR" length="500"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Page_URL" type="VARCHAR" length="255"/>
+            <field id="Page_URL_CY" type="VARCHAR" length="255"/>
+            <field id="Resp_Team_ID" type="VARCHAR" length="50"/>
+            <field id="SLA_ID" type="INTEGER" length="10"/>
+            <field id="Show_DueDate" type="BIT" length="1"/>
+            <field id="Show_FileRef" type="BIT" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

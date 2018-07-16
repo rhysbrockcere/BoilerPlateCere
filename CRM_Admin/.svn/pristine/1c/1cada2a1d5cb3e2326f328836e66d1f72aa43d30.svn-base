@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm beforeEvent="/LogonService/GL_checkCredentials,/LogonService/GL_CheckAccess" formHeaderTextRef="Txt2wvciE" htmlTitleTextRef="TxtA1nie2" finishButtonTextRef="TxtA3h3qi" backButtonSupport="yes" ajax="false" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Search" preferredScriptFolder="/Scripts/Security" id="SECURITY" dateCreated="2016-09-15T15:54:42.933+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+        </sharedFunctionScripts>
+        <clientCallableFunctionScripts>
+            <clientCallableFunctionScript path="/Scripts/Internal_ClientFunctions"/>
+        </clientCallableFunctionScripts>
+        <resources>
+            <resource name="CeriExtract" path="/Resources/CeriExtract"/>
+            <resource name="CeriExtract_Teams" path="/Resources/CeriExtract_Teams"/>
+            <resource name="Security_Settings" path="/Resources/Security_Settings"/>
+            <resource name="SecurityTeamInfo" path="/Resources/SecurityTeamInfo"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt7H3hNw" restoreButtonTextRef="Txt2T6hgs" saveInfoTextRef="TxtADtdSA" restoreInfoTextRef="Txt3lseoI"/>
+        <finalPage headerTextRef="Txt4CWEx3" infoTextRef="Txt9WS8pr" returnTextRef="TxtAP2KGY" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

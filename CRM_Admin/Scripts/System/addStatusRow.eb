@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/ENQUIRY_STATUSES" id="addStatusRow" dateCreated="2018-04-27T14:12:28.478+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+tables.Statuses.insertRow();
+controls.pnlNew.show();
+fields.search_Category.value = '';
+//controls.pnl_StatusVis.hide();</scriptText>
+    </script>
+</ebase>

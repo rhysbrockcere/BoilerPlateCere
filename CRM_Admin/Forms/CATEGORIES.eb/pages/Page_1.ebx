@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Categories/Categories_Load" pageHeaderTextRef="Txt2YJ9YT" pageInfoTextReference="TxtAcrlGS" pageTrailerTextReference="TxtaQUF4" nextPageTextReference="Txt16C5Ou" prevPageTextReference="Txt3N7mZp">
+    <pageContents>
+        <page ctrl="PagBsr3P" outputType="0" pdfFooterText="LocalTxt5yXC8U" pdfHeaderText="LocalTxtAO6WdW" uid="NwIxcRS3">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu_AdminMenu"/>
+            <panel ctrl="PanYlZyJ" propertySet="PagePanel" uid="QSNLjbob">
+                <panel ctrl="Pan4uK1T" displayOnly="true" layoutType="@0" propertySet="floatLeft" uid="9A1JWg6l" width="70%">
+                    <rootHtmlElementProperties classLocator="panelLeft"/>
+                    <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="IwlUHE5q"/>
+                    <gridControl columnWidths="36.67%,36.67%,26.67%" columns="3" ctrl="GrdJNQeX" rows="1" uid="PYA78JGq">
+                        <gridCell column="1" columnspan="1" ctrl="Grc13rBQk" row="1" rowspan="1" textBold="Bold" uid="KdS0UEsX">
+                            <text ctrl="TexiBuiE" text="LocalTxt5ymJDV" uid="4XLW627p"/>
+                        </gridCell>
+                        <gridCell column="2" columnspan="1" ctrl="GrcBLtiO" row="1" rowspan="1" textBold="Bold" uid="q8D91GU">
+                            <text ctrl="TexF9gQi" text="LocalTxt5J5ZSf" uid="3CkJWL5A"/>
+                        </gridCell>
+                        <gridCell column="3" columnspan="1" ctrl="GrceTKUr" row="1" rowspan="1" textBold="Bold" uid="ClXaNtVs"/>
+                    </gridControl>
+                    <repeater ctrl="RepTRcrV" field="Categories" layoutType="@0" numVisibleRows="20" uid="HGN52yAW">
+                        <repeaterRow bottomPadding="5px" ctrl="ReprZXzNY" layoutType="@0" topPadding="5px" uid="LAZHcZgV">
+                            <gridControl columnWidths="36.67%,36.67%,26.67%" columns="3" ctrl="Grd110vHD" rows="1" uid="Pvm0EaP1">
+<gridCell column="1" columnspan="1" ctrl="Grc2NDmf" layoutType="@0" row="1" rowspan="1" uid="8kbrJXAs">
+    <field buttonText="LocalTxt2ieibp" ctrl="Fldm0WpH" displayLabelText="false" field="Categories-Category" hyperlink="true" immedEvent="/Scripts/Categories/goto_Category" uid="PtuQPKNi"/>
+</gridCell>
+<gridCell column="2" columnspan="1" ctrl="GrcfLsNK" layoutType="@0" row="1" rowspan="1" uid="EhghLI9H">
+    <field buttonText="LocalTxt6C2chd" ctrl="Fldz0r3N" displayLabelText="false" field="Categories-Team_Name" uid="4k1xB4jD"/>
+</gridCell>
+<gridCell column="3" columnspan="1" ctrl="Grc3KMBc" layoutType="@0" row="1" rowspan="1" uid="RXoFtzpU">
+    <text ctrl="TexKfet3" text="LocalTxt698G5w" uid="Ii4JuRHm"/>
+</gridCell>
+                            </gridControl>
+                            <panel bottomMargin="10px" ctrl="PanUc7bl" uid="11Y3IpRt">
+<rootHtmlElementProperties classLocator="pnlNestedDetail box"/>
+<field buttonText="LocalTxt9iynVV" ctrl="FldSuaTN" field="Categories-Team_Path" uid="Gw3TGZQa"/>
+<text ctrl="txtSubCategories" text="LocalTxt3j0K5X" uid="JdYSBgzJ"/>
+<repeater ctrl="RepwQw9w" field="Sub_Categories" filterExpression="Categories-Category_ID = Sub_Categories-Category_ID" showInfoMessage="false" uid="80WuMPal">
+    <repeaterRow ctrl="Repr84pWj" leftPadding="10px" uid="QfpdhyBF">
+        <field buttonText="LocalTxt5Imcvp" ctrl="FldBtw63" displayLabelText="false" field="Sub_Categories-Sub_Category" hyperlink="true" immedEvent="/Scripts/Categories/goto_Sub_Category" uid="B5xjx4IO"/>
+    </repeaterRow>
+</repeater>
+                            </panel>
+                        </repeaterRow>
+                    </repeater>
+                </panel>
+                <panel ctrl="PanoMjEt_2" propertySet="floatRight" topMargin="10px" topPadding="@0" uid="1MrFNCdr" width="29%">
+                    <rootHtmlElementProperties classLocator="panelRight box"/>
+                    <panel ctrl="PanIevDi" layoutType="VERTICAL_BOX" uid="QRe9zC5n">
+                        <text ctrl="TexYaK3R" text="LocalTxt26nD03" uid="6Sioeu56"/>
+                        <field buttonText="LocalTxt1gtTE3" ctrl="FldI3GNE" displayLabelText="false" field="search_Category" uid="2wDmHHfh">
+                            <editorHtmlElementProperties classLocator="spEditor" idLocator="searchCategory" jQueryEventHandlers="$;ready;&#xA;$.widget( &quot;custom.catcomplete&quot;, $.ui.autocomplete, {&#xA; _create: function() {&#xA;   this._super();&#xA;   this.widget().menu( &quot;option&quot;, &quot;items&quot;, &quot;&gt; :not(.ui-autocomplete-category)&quot; );&#xA; },&#xA; _renderMenu: function( ul, items ) {&#xA;   var that = this,&#xA;     currentCategory = &quot;&quot;;&#xA;   $.each( items, function( index, item ) {&#xA;     var li;&#xA;     if ( item.category != currentCategory ) {&#xA;       ul.append( &quot;&lt;li class='ui-autocomplete-category' data-id=&quot; + item.ID + &quot;&gt;&quot; + item.category + &quot;&lt;/li&gt;&quot; );&#xA;       currentCategory = item.category;&#xA;     }&#xA;     li = that._renderItemData( ul, item );&#xA;     if ( item.category ) {&#xA;       li.attr( &quot;aria-label&quot;, item.category + &quot; : &quot; + item.label );&#xA;     }&#xA;   });&#xA; }&#xA;});&#xA;&#xA;// Setup the JQuery autocomplete function for the name search box&#xA;$(&quot;#searchCategory&quot;).catcomplete({ &#xA;&#x9;source: filterCategories,&#xA;&#x9;delay: 0,&#xA;&#x9;select: function(event, ui) {&#xA;&#x9;&#x9;var selected = ui.item.value;&#xA;&#x9;&#x9;ID = ui.item.ID;&#xA;&#x9;&#x9;$eb.executeFunction(&quot;gotoSubCategory&quot;, ID);&#xA;&#x9;&#x9;//$eb.setFieldValue(&quot;Sub_Category_ID&quot;, ID,true);&#xA;&#x9;}&#xA;});"/>
+                        </field>
+                    </panel>
+                    <panel ctrl="PanahQ5" uid="Dgjq6ppB">
+                        <text ctrl="TexYaK3R_5" text="LocalTxt26nD03_5" uid="RQLK4Tdr"/>
+                        <field buttonText="LocalTxtAtq53S" ctrl="FldHeUUS" field="filter_CatName" uid="IloNHv07"/>
+                        <field buttonText="LocalTxt8Jtki8" ctrl="FldOzRrq" field="filter_Team" propertySet="Chosen-Small" uid="8Obix56A"/>
+                        <field buttonText="LocalTxt37c98i" ctrl="FldnxqL8" field="filter_Disabled" uid="5t7Y4hj1"/>
+                        <panel ctrl="Pan13Yjox_2" uid="N3uCNZUq">
+                            <button buttonText="LocalTxt4YBOgN" ctrl="cmdClearFilter" hidden="true" mouseOverText="LocalTxt6CwO5Z" onClickEvent="/Scripts/Categories/Clear_Filter,/Scripts/Categories/Categories_Load" uid="HDnY5LVS"/>
+                            <button buttonText="LocalTxt4lZJIf" ctrl="cmdFilter" mouseOverText="LocalTxt9rSSpI" newLine="false" onClickEvent="/Scripts/Categories/Categories_Load" uid="IgvHB6f9"/>
+                        </panel>
+                    </panel>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

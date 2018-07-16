@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CRM_User">
+        <fieldMapping resourceField="Created_By" field="usr_Created_By"/>
+        <fieldMapping resourceField="Date_Created" field="usr_Date_Created"/>
+        <fieldMapping resourceField="Date_Modified" field="usr_Date_Modified"/>
+        <fieldMapping resourceField="Email" field="usr_Email"/>
+        <fieldMapping resourceField="ID" field="usr_ID"/>
+        <fieldMapping resourceField="Modified_By" field="usr_Modified_By"/>
+        <fieldMapping resourceField="Position_ID" field="usr_Position_ID"/>
+        <fieldMapping resourceField="Reference_No" field="usr_Reference_No"/>
+        <fieldMapping resourceField="Username" field="usr_Username"/>
+    </resourceMapping>
+    <resourceMapping id="CRM_Users">
+        <tableMapping table="CRM_Users"/>
+        <fieldMapping resourceField="Created_By" field="CRM_Users-Created_By"/>
+        <fieldMapping resourceField="Date_Created" field="CRM_Users-Date_Created"/>
+        <fieldMapping resourceField="Date_Modified" field="CRM_Users-Date_Modified"/>
+        <fieldMapping resourceField="Email" field="CRM_Users-Email"/>
+        <fieldMapping resourceField="ID" field="CRM_Users-ID"/>
+        <fieldMapping resourceField="Modified_By" field="CRM_Users-Modified_By"/>
+        <fieldMapping resourceField="Position_ID" field="CRM_Users-Position_ID"/>
+        <fieldMapping resourceField="Reference_No" field="CRM_Users-Reference_No"/>
+        <fieldMapping resourceField="Username" field="CRM_Users-Username"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WhereClause"/>
+    </resourceMapping>
+    <resourceMapping id="Ceri_Occupancy">
+        <tableMapping table="CeriOcc"/>
+        <fieldMapping resourceField="Name" field="CeriOcc-Name"/>
+        <fieldMapping resourceField="cont_lookup" field="CeriOcc-cont_lookup"/>
+        <fieldMapping resourceField="contract_id" field="CeriOcc-contract_id"/>
+        <fieldMapping resourceField="manager_lookup" field="CeriOcc-manager_lookup"/>
+        <fieldMapping resourceField="manager_positionid" field="CeriOcc-manager_positionid"/>
+        <fieldMapping resourceField="org_id" field="CeriOcc-org_id"/>
+        <fieldMapping resourceField="person_id" field="CeriOcc-person_id"/>
+        <fieldMapping resourceField="position_id" field="CeriOcc-position_id"/>
+        <fieldMapping resourceField="position_lookup" field="CeriOcc-position_lookup"/>
+        <fieldMapping resourceField="position_nm" field="CeriOcc-position_nm"/>
+        <fieldMapping resourceField="position_ref_no" field="CeriOcc-position_ref_no"/>
+        <fieldMapping resourceField="reference_no" field="CeriOcc-reference_no"/>
+        <fieldMapping resourceField="team_id" field="CeriOcc-team_id"/>
+        <fieldMapping resourceField="team_lookup" field="CeriOcc-team_lookup"/>
+        <fieldMapping resourceField="Where_Clause" field="WhereClause"/>
+    </resourceMapping>
+</resourceMappings>

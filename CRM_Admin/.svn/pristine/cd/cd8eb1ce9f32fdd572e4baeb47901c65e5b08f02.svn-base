@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Where_Clause" type="CHAR" labelTextRef="Txt9n4iNA" displayType="TEXT"/>
+    <field name="filter_CatName" type="CHAR" labelTextRef="Txt5JIA6P" displayType="TEXT"/>
+    <field name="filter_Division" type="CHAR" labelTextRef="Txt4XJsR" displayType="SELECT" dynamicList="/Lists/Divisions">
+        <listMappings display="Division"/>
+    </field>
+    <field name="filter_Service" type="CHAR" labelTextRef="TxtAO6JjT" displayType="SELECT" dynamicList="/Lists/Services">
+        <listMappings display="Service"/>
+    </field>
+    <field name="filter_Team" type="CHAR" labelTextRef="TxtB6U4z" displayType="SELECT" dynamicList="/Lists/Teams">
+        <listMappings display="Team_Name" return="Team_ID"/>
+    </field>
+</fields>

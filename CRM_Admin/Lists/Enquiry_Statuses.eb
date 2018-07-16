@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Enquiry_Statuses" dateCreated="2018-04-27T11:29:07.071+01:00">
+        <columns>Status_ID, Description as Status</columns>
+        <from>crm_Enquiry_Status_List</from>
+        <where>optional = 1 and selectable = 1</where>
+        <additional>order by description</additional>
+        <fields>
+            <field id="Status_ID" type="INTEGER" input="false"/>
+            <field id="Status" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

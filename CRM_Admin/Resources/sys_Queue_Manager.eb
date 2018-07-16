@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Manages the Status for the Call Centre Call Queues " database="CRM" table="true" preparedStatement="false" id="sys_Queue_Manager" dateCreated="2018-01-30T16:45:28.502Z">
+        <columns>*</columns>
+        <from>sys_Queue_Manager</from>
+        <fields>
+            <field id="Details" type="VARCHAR" length="500"/>
+            <field id="Details_CY" type="VARCHAR" length="500"/>
+            <field id="End_Time" type="VARCHAR" length="16"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="QueueID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Start_Time" type="VARCHAR" length="16"/>
+            <field id="StatusID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

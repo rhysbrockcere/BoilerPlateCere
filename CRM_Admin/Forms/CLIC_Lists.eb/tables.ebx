@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="List_Items">
+        <column name="Description" type="CHAR" labelTextRef="Txt4l2sm3" maxLength="50" displayType="TEXT" displayLength="30"/>
+        <column name="Description_CY" type="CHAR" labelTextRef="Txt2YqDyZ" maxLength="100" displayType="TEXT" displayLength="30"/>
+        <column name="Enabled" type="BOOLEAN" labelTextRef="Txt7P4KA" displayType="CHECKBOX"/>
+        <column name="Item_ID" type="INTEGER" labelTextRef="TxtXZU4S" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="List_ID" type="INTEGER" labelTextRef="Txt287Mas" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+    <table name="Lists">
+        <column name="Description" type="CHAR" labelTextRef="Txt8uPwzh" maxLength="500" displayType="TEXT" displayLength="40"/>
+        <column name="Enabled" type="BOOLEAN" labelTextRef="Txt6nz6If" displayType="CHECKBOX"/>
+        <column name="List_ID" type="INTEGER" labelTextRef="Txt2R3266" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Name" type="CHAR" labelTextRef="Txt5KVVAR" maxLength="50" displayType="TEXT" displayLength="20"/>
+        <column name="Select" type="CHAR" defaultValue="Select" labelTextRef="Txt99NaCI" displayType="TEXT"/>
+    </table>
+</tables>

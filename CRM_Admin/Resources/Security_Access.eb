@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="Security_Access" dateCreated="2016-09-23T10:17:15.326+01:00">
+        <columns>*</columns>
+        <from>sys_Security_Settings</from>
+        <where>Team_ID = &amp;&amp;Team_ID and category_id is not null and action_id is null</where>
+        <fields>
+            <field id="Action_ID" type="INTEGER" length="10"/>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Team_ID" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

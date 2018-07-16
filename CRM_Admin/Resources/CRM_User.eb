@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" id="CRM_User" dateCreated="2018-01-23T10:31:30.843Z">
+        <columns>*</columns>
+        <from>sys_Security_Users</from>
+        <where>username=&amp;&amp;username</where>
+        <fields>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Email" type="VARCHAR" length="200"/>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Position_ID" type="VARCHAR" length="50"/>
+            <field id="Reference_No" type="VARCHAR" length="50"/>
+            <field id="Username" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

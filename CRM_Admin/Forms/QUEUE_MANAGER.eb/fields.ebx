@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="LIST_ITEM_LIST_ID" type="INTEGER" labelTextRef="TxtAfQVhN" displayType="TEXT"/>
+    <field name="SET_ALL_MESSAGE_CY" type="CHAR" labelTextRef="Txt6odeJ5" displayType="TEXT"/>
+    <field name="SET_ALL_MESSAGE_EN" type="CHAR" labelTextRef="Txt1QT7Da" displayType="TEXT"/>
+    <field name="SET_ALL_STATUS" type="CHAR" labelTextRef="Txt17bcOR" displayType="SELECT" dynamicList="/Scripts/Lists/List_Items_Queue_Manager_list">
+        <listMappings display="Description" return="Item_ID">
+            <additional field="LIST_ITEM_LIST_ID" listField="List_ID"/>
+        </listMappings>
+    </field>
+    <field name="WHERE_CLAUSE" type="CHAR" labelTextRef="Txt4zCK2M" displayType="TEXT"/>
+    <field name="WHERE_CLAUSE_STORED" type="CHAR" labelTextRef="TxtACsBgs" displayType="TEXT"/>
+</fields>

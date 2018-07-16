@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="sys_Queue_DDI">
+        <tableMapping table="DDI"/>
+        <fieldMapping resourceField="DDI" field="DDI-DDI"/>
+        <fieldMapping resourceField="DDI_Auto_Reopen" field="DDI-DDI_Auto_Reopen"/>
+        <fieldMapping resourceField="DDI_ID" field="DDI-DDI_ID"/>
+        <fieldMapping resourceField="DDI_QueueID" field="DDI-DDI_QueueID"/>
+        <fieldMapping resourceField="DDI_Service" field="DDI-DDI_Service"/>
+        <fieldMapping resourceField="DDI_StatusID" field="DDI-DDI_StatusID"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="sys_Queue_Manager">
+        <tableMapping table="Queue"/>
+        <fieldMapping resourceField="Details" field="Queue-Details"/>
+        <fieldMapping resourceField="Details_CY" field="Queue-Details_CY"/>
+        <fieldMapping resourceField="End_Time" field="Queue-End_Time"/>
+        <fieldMapping resourceField="Name" field="Queue-Name"/>
+        <fieldMapping resourceField="QueueID" field="Queue-QueueID"/>
+        <fieldMapping resourceField="Start_Time" field="Queue-Start_Time"/>
+        <fieldMapping resourceField="StatusID" field="Queue-StatusID"/>
+    </resourceMapping>
+</resourceMappings>

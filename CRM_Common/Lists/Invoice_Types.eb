@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Invoice_Types" dateCreated="2018-04-19T16:25:32.367+01:00">
+        <columns>Type_ID, Description</columns>
+        <from>fin_header_types</from>
+        <fields>
+            <field id="Type_ID" type="INTEGER" input="false"/>
+            <field id="Description" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

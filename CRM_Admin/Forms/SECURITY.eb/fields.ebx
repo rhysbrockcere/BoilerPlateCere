@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Email" type="CHAR" labelTextRef="Txt1QXrpw" maxLength="100" displayType="TEXT" displayLength="40">
+        <validators>
+            <validator type="EMAIL"/>
+        </validators>
+    </field>
+    <field name="Filter" type="CHAR" labelTextRef="Txtc3sbv" displayType="TEXT"/>
+    <field name="Leader" type="CHAR" labelTextRef="Txtapajr" maxLength="50" displayType="SELECT" displayLength="20" dynamicList="/Lists/Ceri_People_Team">
+        <listMappings display="fullname" return="position_id">
+            <additional field="Teams-Team_ID" listField="Team_ID"/>
+        </listMappings>
+    </field>
+    <field name="Selected_Category_ID" type="INTEGER" labelTextRef="Txt85sEBN" displayType="TEXT"/>
+    <field name="TeamPath" type="CHAR" labelTextRef="TxtzSWBu" displayType="TEXTAREA" html="true"/>
+    <field name="WhereClause" type="CHAR" labelTextRef="Txt27jN2H" displayType="TEXT"/>
+    <field name="filter_division" type="CHAR" labelTextRef="Txt625wRa" displayType="TEXT"/>
+    <field name="filter_service" type="CHAR" labelTextRef="Txt7JcaO4" displayType="TEXT"/>
+    <field name="find_team" type="CHAR" labelTextRef="Txt8DanQY" displayType="TEXT"/>
+    <field name="find_user" type="CHAR" labelTextRef="Txt9G9QRz" displayType="TEXT"/>
+    <field name="search_Ceri" type="BOOLEAN" labelTextRef="Txt8WnzXe" displayType="CHECKBOX"/>
+    <field name="usr_Created_By" type="CHAR" labelTextRef="Txt77SSrf" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="usr_Date_Created" type="DATETIME" labelTextRef="Txtnr3wP" displayType="TEXT"/>
+    <field name="usr_Date_Modified" type="DATETIME" labelTextRef="Txt9VDvJS" displayType="TEXT"/>
+    <field name="usr_Email" type="CHAR" labelTextRef="Txt7KpLRE" displayType="TEXT" displayLength="40"/>
+    <field name="usr_Modified_By" type="CHAR" labelTextRef="Txt5qni5w" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="usr_Username" type="CHAR" labelTextRef="Txt4VT61V" displayType="TEXT"/>
+</fields>

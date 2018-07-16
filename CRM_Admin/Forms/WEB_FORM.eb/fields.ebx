@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Address_Block" type="BOOLEAN" labelTextRef="Txt1YYUpg" helpTextRef="TxtA5Kvd2" displayType="CHECKBOX"/>
+    <field name="Allow_Anonymous" type="BOOLEAN" labelTextRef="Txt4Bzn2o" helpTextRef="Txt2ZcCw3" displayType="CHECKBOX"/>
+    <field name="Allow_Upload" type="BOOLEAN" labelTextRef="Txt87HY3C" displayType="CHECKBOX"/>
+    <field name="Category_ID" type="INTEGER" labelTextRef="Txt6DZINz" displayType="SELECT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Confirmation_Text_CY" type="CHAR" labelTextRef="Txt8DIHYt" maxLength="1073741823" displayType="TEXTAREA" displayLength="60" rows="10"/>
+    <field name="Confirmation_Text_EN" type="CHAR" labelTextRef="Txt9vqWyX" maxLength="1073741823" displayType="TEXTAREA" displayLength="60" rows="10"/>
+    <field name="Created_By" type="CHAR" labelTextRef="Txt2ILrEp" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="Custom1" type="CHAR" labelTextRef="TxtN5cXJ" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="Custom2" type="CHAR" labelTextRef="TxtsePO0" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="Custom3" type="CHAR" labelTextRef="Txt4Wm2QR" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="Date_Created" type="DATETIME" labelTextRef="Txt5mNpAc" displayType="TEXT"/>
+    <field name="Date_Modified" type="DATETIME" labelTextRef="Txt9QZVmj" displayType="TEXT"/>
+    <field name="Default_Comments" type="BOOLEAN" labelTextRef="Txt4iTCAd" helpTextRef="Txt8H4Ap2" displayType="CHECKBOX"/>
+    <field name="Default_Enquiry_Type" type="INTEGER" labelTextRef="TxtAnrTFY" displayType="SELECT" displayLength="17" dynamicList="/Lists/Enquiry_Types">
+        <listMappings display="Type" return="Id"/>
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Email_Address" type="CHAR" labelTextRef="Txt9Gcgq8" helpTextRef="Txt4sg81C" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="Email_Confirmation_Details" type="BOOLEAN" labelTextRef="Txt9CWhzs" displayType="CHECKBOX"/>
+    <field name="Email_Customer" type="BOOLEAN" labelTextRef="TxtA5cZaV" helpTextRef="Txt1JUxrp" displayType="CHECKBOX"/>
+    <field name="Email_Form" type="BOOLEAN" labelTextRef="Txt1INDgq" helpTextRef="TxtAJ3Kow" displayType="CHECKBOX"/>
+    <field name="Email_From" type="CHAR" labelTextRef="Txt9GnbxK" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="Email_Subject_CY" type="CHAR" labelTextRef="Txt7ua1wH" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="Email_Subject_EN" type="CHAR" labelTextRef="Txt35E6WQ" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="Email_Text_EN" type="CHAR" labelTextRef="Txt2tHmqo" maxLength="1073741823" displayType="TEXTAREA" displayLength="60" rows="10"/>
+    <field name="Email_text_CY" type="CHAR" labelTextRef="Txt4VaCHO" maxLength="1073741823" displayType="TEXTAREA" displayLength="60" rows="10"/>
+    <field name="Enabled" type="BOOLEAN" labelTextRef="Txt9TCfOa" displayType="CHECKBOX"/>
+    <field name="Form_ID" type="INTEGER" parameter="true" labelTextRef="Txt73JMDK" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Hits" type="INTEGER" defaultValue="0" labelTextRef="Txt8dSwyR" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ID" type="INTEGER" labelTextRef="Txt7nqdWL" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Intro_Text_CY" type="CHAR" labelTextRef="Txt6dwD9D" maxLength="1073741823" displayType="TEXTAREA" displayLength="60" rows="10"/>
+    <field name="Intro_Text_EN" type="CHAR" labelTextRef="Txt5GCgsq" maxLength="1073741823" displayType="TEXTAREA" displayLength="60" rows="10"/>
+    <field name="Modified_By" type="CHAR" labelTextRef="Txt70eJcB" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="Next_Form_Name" type="CHAR" labelTextRef="Txt1z0bGB" helpTextRef="Txt5tfFC5" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="Page_Header_CY" type="CHAR" labelTextRef="Txt2WTKGW" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="Page_Header_EN" type="CHAR" labelTextRef="Txt79h6oe" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="Param1" type="CHAR" labelTextRef="Txt3dEAYO" helpTextRef="Txt8h0LYn" maxLength="50" displayType="TEXT" displayLength="20"/>
+    <field name="RB_Search" type="BOOLEAN" labelTextRef="Txt1nq5AI" displayType="CHECKBOX"/>
+    <field name="Return_URL_CY" type="CHAR" labelTextRef="TxtAuSLqX" maxLength="500" displayType="TEXT" displayLength="60"/>
+    <field name="Return_URL_EN" type="CHAR" labelTextRef="Txt3WZUZz" helpTextRef="Txt24wL39" maxLength="500" displayType="TEXT" displayLength="60"/>
+    <field name="Show_Comments" type="BOOLEAN" labelTextRef="Txt72fpd1" helpTextRef="Txt5CDGPA" displayType="CHECKBOX"/>
+    <field name="Show_Subject" type="BOOLEAN" labelTextRef="TxtA4HnDS" helpTextRef="Txt6ZtJrI" displayType="CHECKBOX"/>
+    <field name="Sub_Category_ID" type="INTEGER" labelTextRef="Txt7CeNDA" displayType="SELECT" displayLength="17" dynamicList="/Lists/Sub_Category_List">
+        <listMappings display="Label" return="Sub_Category_ID">
+            <additional field="Category_ID" listField="Category_Id"/>
+        </listMappings>
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Summary_Text_CY" type="CHAR" labelTextRef="Txt3xzLsF" maxLength="1073741823" displayType="TEXTAREA" displayLength="60" rows="10"/>
+    <field name="Summary_Text_EN" type="CHAR" labelTextRef="Txt9HyO3q" maxLength="1073741823" displayType="TEXTAREA" displayLength="60" rows="10"/>
+    <field name="allow_select" type="BOOLEAN" labelTextRef="Txt3rjPot" helpTextRef="TxtLAEHE" displayType="CHECKBOX"/>
+    <field name="cat_Category" type="CHAR" labelTextRef="TxtY74p2" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="cat_Category_ID" type="INTEGER" labelTextRef="Txt6LW8SA" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="email_required" type="BOOLEAN" labelTextRef="Txt7g5Q8v" displayType="CHECKBOX"/>
+    <field name="fop_Category" type="CHAR" labelTextRef="Txt9MTl8N" displayType="SELECT" dynamicList="/Lists/CategoriesList_Full">
+        <listMappings display="Category" return="Category_ID">
+            <additional field="sub_cat_Sub_Category_ID" listField="Sub_Category_ID"/>
+        </listMappings>
+    </field>
+    <field name="fop_Category_ID" type="CHAR" labelTextRef="Txtk1xme" displayType="SELECT" dynamicList="/Lists/Sub_Category_List">
+        <listMappings display="Label" return="Category_Id"/>
+    </field>
+    <field name="sub_cat_Sub_Category" type="CHAR" labelTextRef="Txt1QRnB4" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="sub_cat_Sub_Category_ID" type="INTEGER" labelTextRef="Txt4llGTB" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="total_pages" type="INTEGER" labelTextRef="Txt1NbZtB" helpTextRef="Txt2Ur6Ns" displayType="TEXT" displayLength="9">
+        <validators>
+            <validator type="MAX_DIGITS" value="5"/>
+            <validator type="MAX_LENGTH" value="9"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="verify" type="BOOLEAN" labelTextRef="TxtEhrnT" displayType="CHECKBOX"/>
+    <field name="verify_text" type="CHAR" labelTextRef="Txt8u1Z7R" maxLength="2147483647" displayType="TEXT" displayLength="60"/>
+</fields>

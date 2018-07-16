@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="WhereClause" type="CHAR" labelTextRef="Txt27jN2H" displayType="TEXT"/>
+    <field name="find_user" type="CHAR" labelTextRef="Txt9G9QRz" displayType="TEXT"/>
+    <field name="search_Ceri" type="BOOLEAN" labelTextRef="Txt8WnzXe" displayType="CHECKBOX"/>
+    <field name="usr_Created_By" type="CHAR" labelTextRef="Txt77SSrf" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="usr_Date_Created" type="DATETIME" labelTextRef="Txtnr3wP" displayType="TEXT"/>
+    <field name="usr_Date_Modified" type="DATETIME" labelTextRef="Txt9VDvJS" displayType="TEXT"/>
+    <field name="usr_Email" type="CHAR" labelTextRef="Txt7KpLRE" displayType="TEXT" displayLength="40"/>
+    <field name="usr_ID" type="INTEGER" labelTextRef="Txt28pcR6" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="usr_Modified_By" type="CHAR" labelTextRef="Txt5qni5w" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="usr_Position_ID" type="CHAR" labelTextRef="TxtmnXw3" maxLength="50" displayType="TEXT" displayLength="20"/>
+    <field name="usr_Reference_No" type="CHAR" labelTextRef="Txt1XnUrQ" maxLength="50" displayType="TEXT" displayLength="20"/>
+    <field name="usr_Username" type="CHAR" labelTextRef="Txt4VT61V" displayType="TEXT"/>
+</fields>

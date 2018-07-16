@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Filter_Action" type="CHAR" labelTextRef="Txt3oQnuH" displayType="SELECT"/>
+    <field name="Filter_Form" type="CHAR" labelTextRef="TxtAXfpQz" displayType="SELECT"/>
+    <field name="Filter_Rows" type="CHAR" defaultValue="100" labelTextRef="Txt45Uu0U" displayType="SELECT" staticList="/Lists/Return_Rows"/>
+    <field name="Filter_Type" type="CHAR" labelTextRef="Txt55Fg6l" displayType="SELECT" staticList="/Lists/Log_Types"/>
+    <field name="Filter_User" type="CHAR" labelTextRef="TxtAMbSKc" displayType="SELECT"/>
+    <field name="Where_Clause" type="CHAR" labelTextRef="Txt2snMo7" displayType="TEXT"/>
+</fields>

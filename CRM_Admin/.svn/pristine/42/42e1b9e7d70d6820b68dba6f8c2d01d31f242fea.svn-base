@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="SecurityRoleActions">
+        <column name="Action_ID" type="INTEGER" labelTextRef="Txt1CnCyp" displayType="SELECT" displayLength="17" dynamicList="/Lists/Security_Actions">
+            <listMappings display="Description" return="Action_ID"/>
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ID" type="INTEGER" labelTextRef="Txt7zB8Do" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Role_ID" type="INTEGER" labelTextRef="Txt1ILE3O" displayType="SELECT" displayLength="17" dynamicList="/Lists/SecurityRoles" listBuildOption="each">
+            <listMappings display="Name" return="Role_ID"/>
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+    <table name="SecurityRoles">
+        <column name="Copy" type="CHAR" defaultValue="Copy" labelTextRef="Txt7V0e7P" displayType="TEXT"/>
+        <column name="Description" type="CHAR" labelTextRef="Txt32BFPZ" maxLength="500" displayType="TEXTAREA" displayLength="50"/>
+        <column name="Filter" type="CHAR" defaultValue="Filter" labelTextRef="Txt6yQR26" displayType="TEXT"/>
+        <column name="Name" type="CHAR" labelTextRef="TxtA9bFaP" maxLength="50" displayType="TEXT" displayLength="30"/>
+        <column name="Role_ID" type="INTEGER" labelTextRef="Txt6QxtJq" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+</tables>

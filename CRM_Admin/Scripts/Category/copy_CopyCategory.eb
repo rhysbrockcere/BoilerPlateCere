@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/CATEGORY" id="copy_CopyCategory" dateCreated="2017-10-13T14:29:21.049+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+var db = fields.copy_TargetServer.value;
+log ("DB = " + db);
+
+switch (fields.copy_Action.value) {
+	case 'Existing Category':
+		if (fields.copy_TargetCategory.value != null) {
+			//Copy to exisiting category, overwriting what is already there
+			updateCategory(fields.copy_TargetCategory.value);
+		}
+		else {
+			event.owner.addErrorMessage("No target category selected");
+		}
+	break;
+
+	case 'New Category':
+		//Get the next enquiry no on the target server
+		var CategoryID = insertCategory();
+	
+		if (fields.copy_IncludeSub.value == true) {
+			//For each sub-category insert into target DB
+			var count = 1;
+			var rows = tables.Sub_Categories.getRows();
+			while (rows.next()) {
+				insertSubCategory(CategoryID);
+				count ++;
+			}
+		}
+	break;
+}
+
+/********* FUNCTIONS **************/
+
+function updateCategory(CategoryID) {
+	var con = system.getDatabaseConnection('CRM');
+	var stmt;
+	var rs;
+
+	try {
+	  stmt = con.prepareStatement("update " + db + ".dbo.crm_categories set Category=?,Category_CY=?,Resp_Team_ID=?,Description=?,Add_Information=?,Page_URL=?,"
+	  + " Ebase_Form_ID=?,Description_CY=?,Add_Information_CY=?,Page_URL_CY=?,Default_Details=?,Default_Details_CY=?,Default_Subject=?,Default_Subject_CY=?,Keywords=?,"
+	  + " Modified_By=?, Date_Modified=getdate() where category_id=?");			  
+	  stmt.setString(1, fields.Category.value);
+	  stmt.setString(2, fields.Category_CY.value);
+	  stmt.setString(3, fields.Resp_Team_ID.value);
+	  stmt.setString(4, fields.Description.value);
+	  stmt.setString(5, fields.Add_Information.value);
+	  stmt.setString(6, fields.Page_URL.value);
+	  stmt.setString(7, fields.Ebase_Form_ID.value);
+	  stmt.setString(8, fields.Description_CY.value);
+	  stmt.setString(9, fields.Add_Information_CY.value);
+	  stmt.setString(10, fields.Page_URL_CY.value);
+	  stmt.setString(11, fields.Default_Details.value);
+	  stmt.setString(12, fields.Default_Details_CY.value);
+	  stmt.setString(13, fields.Default_Subject.value);
+	  stmt.setString(14, fields.Default_Subject_CY.value);
+	  stmt.setString(15, fields.Keywords.value);
+	  stmt.setString(16, system.variables.$USER.value);
+	  stmt.setInt(17, CategoryID );
+	  
+		rs = stmt.execute();
+
+		event.owner.addWarningMessage("Category copied successfully to " + fields.copy_TargetServer.value, false);
+		
+		crmLog(0, "Copy", "Copied category id + " + fields.Category_ID.value + " on " + fields.copy_CurrentServer.value + " to " 
+		+ fields.copy_TargetCategory.value + " on " + fields.copy_TargetServer.value, 3);
+	
+	}
+	catch (e) {
+		log("__**ERROR** - Copying category " + e);
+		crmLog(0, "Error", "Error copying category - " + e, 1);
+		event.owner.addErrorMessage("Error in the copy - " + e);
+	}			
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();	
+	}
+}
+
+/****/
+
+function insertCategory() {
+	var Category_ID = getNextID(db, 'Category_ID');
+	
+	var con = system.getDatabaseConnection('CRM');
+	var stmt;
+	var rs;
+
+	try {
+	  stmt = con.prepareStatement("insert into " + db + ".dbo.crm_categories (Category_ID,Category,Category_CY,Resp_Team_ID,Description,Add_Information,Page_URL,"
+	  + " Ebase_Form_ID,Description_CY,Add_Information_CY,Page_URL_CY,Default_Details,Default_Details_CY,Default_Subject,Default_Subject_CY,Keywords,Created_By,Date_Created)"
+	  + " values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,getdate())");			  
+	  stmt.setInt(1, Category_ID);
+	  stmt.setString(2, fields.Category.value);
+	  stmt.setString(3, fields.Category_CY.value);
+	  stmt.setString(4, fields.Resp_Team_ID.value);
+	  stmt.setString(5, fields.Description.value);
+	  stmt.setString(6, fields.Add_Information.value);
+	  stmt.setString(7, fields.Page_URL.value);
+	  stmt.setString(8, fields.Ebase_Form_ID.value);
+	  stmt.setString(9, fields.Description_CY.value);
+	  stmt.setString(10, fields.Add_Information_CY.value);
+	  stmt.setString(11, fields.Page_URL_CY.value);
+	  stmt.setString(12, fields.Default_Details.value);
+	  stmt.setString(13, fields.Default_Details_CY.value);
+	  stmt.setString(14, fields.Default_Subject.value);
+	  stmt.setString(15, fields.Default_Subject_CY.value);
+	  stmt.setString(16, fields.Keywords.value);
+	  stmt.setString(17, system.variables.$USER.value);
+	  
+		rs = stmt.execute();
+
+		event.owner.addWarningMessage("New Category ID " + Category_ID + " created successfully on " + fields.copy_TargetServer.value, false);
+		
+		crmLog(0, "Copy", "Copied category id + " + fields.Category_ID.value + " on " + fields.copy_CurrentServer.value + " to " 
+		+ Category_ID + " (NEW) on " + fields.copy_TargetServer.value, 3);
+	
+	}
+	catch (e) {
+		log("__**ERROR** - Copying category " + e);
+		crmLog(0, "Error", "Error copying category - " + e, 1);
+		event.owner.addErrorMessage("Error in the copy - " + e);
+	}			
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();	
+	}
+
+	return Category_ID;
+}
+
+/******************/
+
+function insertSubCategory(CategoryID) {
+	var Sub_Category_ID = getNextID(db, 'Sub_Category_ID');
+	
+	var con = system.getDatabaseConnection('CRM');
+	var stmt;
+	var rs;
+
+	try {
+	  stmt = con.prepareStatement("insert into " + db + ".dbo.crm_category_sub (Sub_Category_ID,Category_ID,Sub_Category,Sub_Category_CY,Resp_Team_ID,Description,Add_Information,Page_URL,"
+	  + " Description_CY,Add_Information_CY,Page_URL_CY,Default_Details,Default_Details_CY,Default_Subject,Default_Subject_CY,Keywords,Date_Created,Created_By,Default_Type,"
+	  + " Default_Priority)values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,getdate(),?,?,?)");			  
+	  stmt.setInt(1, Sub_Category_ID);
+	  stmt.setInt(2, CategoryID);
+	  stmt.setString(3, tables.Sub_Categories.Sub_Category.value);
+	  stmt.setString(4, tables.Sub_Categories.Sub_Category_CY.value);
+	  stmt.setString(5, tables.Sub_Categories.Resp_Team_ID.value);
+	  stmt.setString(6, tables.Sub_Categories.Description.value);
+	  stmt.setString(7, tables.Sub_Categories.Add_Information.value);
+	  stmt.setString(8, tables.Sub_Categories.Page_URL.value);
+	  stmt.setString(9, tables.Sub_Categories.Description_CY.value);
+	  stmt.setString(10, tables.Sub_Categories.Add_Information_CY.value);
+	  stmt.setString(11, tables.Sub_Categories.Page_URL_CY.value);
+	  stmt.setString(12, tables.Sub_Categories.Default_Details.value);
+	  stmt.setString(13, tables.Sub_Categories.Default_Details_CY.value);
+	  stmt.setString(14, tables.Sub_Categories.Default_Subject.value);
+	  stmt.setString(15, tables.Sub_Categories.Default_Subject_CY.value);
+	  stmt.setString(16, tables.Sub_Categories.Keywords.value);
+	  stmt.setString(17, system.variables.$USER.value);
+	  stmt.setString(18, tables.Sub_Categories.Default_Type.value);
+	  stmt.setString(19, tables.Sub_Categories.Default_Priority.value);
+	  
+		rs = stmt.execute();
+
+		event.owner.addWarningMessage("New Sub Category ID " + Sub_Category_ID + " created successfully...", false);
+		
+		crmLog(0, "Copy", "Copied sub-category id + " + tables.Sub_Categories.Sub_Category_ID.value + " on " + fields.copy_CurrentServer.value + " to " 
+		+ Sub_Category_ID + " (NEW) on " + fields.copy_TargetServer.value, 3);
+	
+	}
+	catch (e) {
+		log("__**ERROR** - Copying sub-category " + e);
+		crmLog(0, "Error", "Error copying sub-category - " + e, 1);
+		event.owner.addErrorMessage("Error copying sub-category - " + e);
+	}			
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();	
+	}
+
+	return Sub_Category_ID;
+}
+
+function getNextID(database, sequence) {
+ 	
+	var con = system.getDatabaseConnection('CRM');
+	var stmt;
+	var rs;
+
+	var NextID = 0;
+
+	try {
+		//Get the next ID
+  	stmt = con.prepareStatement("select Next_ID from " + database + ".dbo.sys_Sequences where Sequence = ?");
+  	stmt.setString(1, sequence);
+  	
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()) {NextID = rs.getInt("Next_ID");}
+
+		//Increment the ID and update the sequences table
+		var updateID = NextID;
+		updateID ++;
+		
+	  stmt = con.prepareStatement("update " + database + ".dbo.sys_Sequences set Next_ID = ? where Sequence = ?");
+  	stmt.setInt(1, updateID);
+  	stmt.setString(2, sequence);
+  	rs = stmt.execute();
+	}
+	catch (e) {
+		log("__**ERROR** - getSequenceID - " + e);
+		crmLog('', "Query", "Error getting sequence ID - " + e, 1);
+	}
+	finally {
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}	
+	  return NextID;
+}
+
+</scriptText>
+    </script>
+</ebase>

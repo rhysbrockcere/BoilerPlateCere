@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<development version="5.2.0" id="07d74150-9085-47bf-8c7c-94a017718866" name="Deploy_SP_INTERNET" description="" createdOnDate="2017-04-07T11:38:08.037+01:00" includeElementAssociations="true">
-    <workspaceFiles>
-        <workspaceFile type="Entity" projectName="Shared" entityPath="/Presentation/Presentation_Templates/Deploy_SP_INTERNET"/>
-        <workspaceFile type="Entity" projectName="Shared" entityPath="/Presentation/Presentation_Templates/SP_INTERNET"/>
-    </workspaceFiles>
-</development>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="100"/>
+    <item id="2" returnVal="500"/>
+    <item id="3" returnVal="1000"/>
+    <item id="4" returnVal="5000"/>
+</items>

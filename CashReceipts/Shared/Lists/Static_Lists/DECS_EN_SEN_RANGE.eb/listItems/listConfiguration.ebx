@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<items>
-    <item id="1" returnVal="S"/>
-    <item id="2" returnVal="SA"/>
-    <item id="3" returnVal="SAP"/>
-    <item id="4" returnVal="SAPE"/>
-    <item id="5" returnVal="SAPEE"/>
-    <item id="6" returnVal="No"/>
-</items>

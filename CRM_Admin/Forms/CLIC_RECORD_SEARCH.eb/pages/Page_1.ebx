@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" pageHeaderTextRef="Txt2YJ9YT" pageInfoTextReference="TxtAcrlGS" pageTrailerTextReference="TxtaQUF4" nextPageTextReference="Txt16C5Ou" prevPageTextReference="Txt3N7mZp">
+    <pageContents>
+        <page ctrl="PagBsr3P" outputType="0" pdfFooterText="LocalTxt5yXC8U" pdfHeaderText="LocalTxtAO6WdW" uid="NwIxcRS3">
+            <panel ctrl="PanYlZyJ" propertySet="PagePanel" uid="QSNLjbob">
+                <panel ctrl="Pan4uK1T" displayOnly="true" propertySet="floatLeft" uid="9A1JWg6l" width="70%">
+                    <rootHtmlElementProperties classLocator="panelLeft"/>
+                    <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="IwlUHE5q"/>
+                    <panel ctrl="PanoMjEt_2" uid="1MrFNCdr">
+                        <text ctrl="TexYaK3R_5" text="LocalTxt26nD03_5" uid="RQLK4Tdr"/>
+                        <field buttonText="LocalTxt817Zn" ctrl="FldnXaFt" field="filter_CustForename" uid="21bNWEIZ"/>
+                        <field buttonText="LocalTxt1NgvFO" ctrl="FldIUoL2" field="filter_CustSurname" uid="22i3dvA2"/>
+                        <field buttonText="LocalTxt54nMaB" ctrl="Fldyn6My" field="filter_EnqID" uid="9rdZmy30"/>
+                        <field buttonText="LocalTxt52WtdJ" ctrl="Flds1PBg" field="filter_EnqReference" uid="3aU8w1yH"/>
+                        <field buttonText="LocalTxt1t9x3v" ctrl="FldeBX9b" field="filter_Keyword" uid="9c9Eanut"/>
+                        <field buttonText="LocalTxt9RYpzm" ctrl="Fld15G1Ys" field="filter_EnqDate" uid="EuDrY79U"/>
+                        <field buttonText="LocalTxt4ZG1Ux" ctrl="Fld12beDz" field="filter_AttachDocType" uid="Lz8w4lLg"/>
+                        <field buttonText="LocalTxt8Jtki8" ctrl="FldOzRrq" field="filter_Team" propertySet="Chosen-Dropdown" uid="8Obix56A"/>
+                        <field buttonText="LocalTxtAtq53S" ctrl="FldHeUUS" field="filter_CatName" uid="IloNHv07"/>
+                        <panel ctrl="Pan13Yjox_2" uid="N3uCNZUq">
+                            <button buttonText="LocalTxt4YBOgN" ctrl="cmdClearFilter" hidden="true" mouseOverText="LocalTxt6CwO5Z" onClickEvent="/Scripts/Categories/Clear_Filter,/Scripts/Categories/Categories_Load" uid="HDnY5LVS"/>
+                            <button buttonText="LocalTxt4lZJIf" ctrl="cmdFilter" mouseOverText="LocalTxt9rSSpI" newLine="false" onClickEvent="/Scripts/Record_Search/Records_Load" uid="IgvHB6f9"/>
+                        </panel>
+                    </panel>
+                    <fieldTable ctrl="Tbll3Sma" displayOnly="true" field="Results" numVisibleRows="30" tableHeaderText="LocalTxt7v4T8I" tableInfoText="LocalTxt2IZTAU" tableTrailerText="LocalTxt16fr4v" uid="AetuCNak">
+                        <tablePage ctrl="Tpgq5ZEU" default="L" uid="6zfuguje">
+                            <fieldColumn buttonText="LocalTxt9Yrggp" ctrl="Col6CScE" field="Results-Enquiry_ID" uid="CbsaTEpf" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt6HZbZ6" ctrl="ColbWICr" field="Results-Firstname" uid="6brU4BeM" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt89YGUJ" ctrl="Cold1Jd4" field="Results-Surname" uid="QH2xlof9" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt3R4akY" ctrl="Col7b1Lm" field="Results-Description" uid="4YDJjuUN" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt4HJMLJ" ctrl="ColXWXrI" field="Results-Action_Date" sortable="true" uid="8Rjt4k2k" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt1NaGll" ctrl="Col12mhqj" field="Results-Agent" sortable="true" uid="P5u55999" width="2%"/>
+                            <fieldColumn buttonText="LocalTxtAoIxQB" ctrl="ColQQKYh" field="Results-Created_By" sortable="true" uid="3VgTvR9l" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt9aQdQL" ctrl="ColS7WB1" field="Results-Date_Created" sortable="true" uid="xI5a2Yy" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt2ssR71" ctrl="ColieXSG" field="Results-DueDate" sortable="true" uid="Lzmunlyw" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt2Er5Nk" ctrl="Coll8eOo" field="Results-Date_Completed" sortable="true" uid="Dy5ZXwP5" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt3VFlji" ctrl="ColcAFcP" field="Results-Assigned_To" uid="GHxF3Hhl" width="2%"/>
+                            <fieldColumn buttonText="LocalTxtgBLWK" ctrl="ColTAZSP" field="Results-Sub_Category" uid="2BdJ3jGL" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt39tD0h" ctrl="Col12ArBZ" field="Results-Details" uid="53ej8J0b" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt3LmMhj" ctrl="Col9tfq4" field="Results-Status" uid="781CMa13" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt5ahD1o" ctrl="Col11dwKq" field="Results-DocumentType" uid="62pw5j2D" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt6ngOue" ctrl="Colj1i7O" field="Results-Enquiry_Details" uid="KgblaASU" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt2CUxit" ctrl="ColS5N6p" field="Results-Location" uid="L0bKmaXP" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt409W1W" ctrl="ColEYroH" field="Results-Reference" uid="E862bEcS" width="2%"/>
+                            <fieldColumn buttonText="LocalTxtAGqXWv" ctrl="ColwHMvq" field="Results-Resolution_Notes" uid="QnkY0uq0" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt8a7IKV" ctrl="ColidoUI" field="Results-Resolution_Status" uid="I2RLm4zt" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt3C8b5j" ctrl="ColQ48Zm" field="Results-Subject" uid="S7MHta6u" width="2%"/>
+                            <fieldColumn buttonText="LocalTxtA6W0Wu" ctrl="Coljx4LJ" field="Results-Type" uid="JsWnyUh2" width="2%"/>
+                            <fieldColumn buttonText="LocalTxt5d1TVw" ctrl="Col9GGtR" field="Results-FilePath" uid="MkHEf6V3" width="2%"/>
+                        </tablePage>
+                    </fieldTable>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

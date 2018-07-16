@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="CUST_Address1" type="CHAR" labelTextRef="Txt9taL9f" maxLength="255" displayType="TEXT" displayLength="60" id="1412c5f8-09f5-42ae-869e-7e41cc31915e"/>
+    <field name="CUST_Address2" type="CHAR" labelTextRef="Txt3sD7X7" maxLength="200" displayType="TEXT" displayLength="60" id="4a588d53-9c98-48ce-b57b-47f25da541de"/>
+    <field name="CUST_Address_ID" type="INTEGER" labelTextRef="Txt8ZELfR" displayType="TEXT" displayLength="17" id="87c5ed8e-721a-4f26-9477-0c973c14e4a3">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_BusinessName" type="CHAR" labelTextRef="Txt9iJjqD" maxLength="200" displayType="TEXT" displayLength="60" id="33769b49-1890-49a9-bbd4-879f6242d5c0"/>
+    <field name="CUST_BusinessRef" type="CHAR" labelTextRef="Txt3VHM6L" maxLength="50" displayType="TEXT" displayLength="50" id="43e90949-3f7c-4760-97ab-0e5d2907863f"/>
+    <field name="CUST_County" type="CHAR" labelTextRef="TxtAIjCAh" maxLength="200" displayType="TEXT" displayLength="60" id="e3c3bc2a-5898-44a0-b3f7-2d9d6c3b94b5"/>
+    <field name="CUST_Email" type="CHAR" labelTextRef="Txt3hxovf" maxLength="500" displayType="TEXT" displayLength="60" id="8736e15a-bac1-41e5-8319-1721970ac781"/>
+    <field name="CUST_Firstname" type="CHAR" labelTextRef="TxtDLoEb" maxLength="500" displayType="TEXT" displayLength="60" id="66a1c386-36c9-466f-9726-a0d7da3a5c22"/>
+    <field name="CUST_FullAddress" type="CHAR" labelTextRef="Txt4JNY0v" maxLength="1000" displayType="TEXT" displayLength="60" id="fcc0f807-477f-4b1e-acf3-fb9c15084dd9"/>
+    <field name="CUST_FullName" type="CHAR" labelTextRef="Txt389gEy" maxLength="200" displayType="TEXT" displayLength="60" id="304bdf1d-6b0c-42c8-a7b8-7a2b214a9429"/>
+    <field name="CUST_ID" type="INTEGER" labelTextRef="Txt77tupA" displayType="TEXT" displayLength="17" id="57051118-d645-4247-830b-0a71d05042c9">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_Mobile" type="CHAR" labelTextRef="Txti6z2f" maxLength="50" displayType="TEXT" displayLength="50" id="b2de84ef-e81d-4609-bc7e-7dbe2fe20ffd"/>
+    <field name="CUST_Other_Title" type="CHAR" labelTextRef="Txt3XFQ9" maxLength="10" displayType="TEXT" displayLength="10" id="35ba5b9a-7566-4fca-8a18-b10b62a7d177"/>
+    <field name="CUST_PostCode" type="CHAR" labelTextRef="Txt1LzgrF" maxLength="10" displayType="TEXT" displayLength="10" id="7ddabf4b-4257-4a34-b812-6378b8db59d3"/>
+    <field name="CUST_PropertyRef" type="CHAR" labelTextRef="Txt4wGb7E" maxLength="50" displayType="TEXT" displayLength="50" id="40cf101f-9fe6-46ee-a8cf-7ff6a5f42626"/>
+    <field name="CUST_Surname" type="CHAR" labelTextRef="Txt37Ssdl" maxLength="500" displayType="TEXT" displayLength="60" id="12ca8cc9-83d4-4084-a25f-40eb331b7c44"/>
+    <field name="CUST_Telephone" type="CHAR" labelTextRef="Txt3kwCNg" maxLength="50" displayType="TEXT" displayLength="50" id="fde5bc09-bca4-47b8-b25a-a72be3bf3a69"/>
+    <field name="CUST_Title" type="CHAR" labelTextRef="Txt363IuA" maxLength="10" displayType="TEXT" displayLength="10" id="bd3421d1-e649-4c06-8222-b64080fe36f9"/>
+    <field name="CUST_Town" type="CHAR" labelTextRef="Txt9kou8v" maxLength="200" displayType="TEXT" displayLength="60" id="7573690d-16f8-420b-94ea-b9c01685cd15"/>
+    <field name="CUST_Type" type="CHAR" labelTextRef="Txt2KghOi" maxLength="1" displayType="TEXT" displayLength="1" id="d0f1d0a6-25ba-4654-b1bc-748ecd3a9e55"/>
+    <field name="CUST_UPRN" type="CHAR" labelTextRef="Txt88ixCZ" maxLength="50" displayType="TEXT" displayLength="50" id="3bb4bb53-c2c0-49da-8f92-fcc009dca867"/>
+    <field name="ENQ_Categori" type="CHAR" labelTextRef="Txt7YnFjE" maxLength="100" displayType="TEXT" displayLength="60" id="24de3f5f-b718-4d2b-9466-6bc4989a6290"/>
+    <field name="ENQ_Category" type="CHAR" labelTextRef="Txt1T7010" maxLength="100" displayType="TEXT" displayLength="60" id="df486bfa-88b9-46db-9d03-b26dcc13e7e2"/>
+    <field name="ENQ_Details" type="CHAR" labelTextRef="Txt3rIk10" maxLength="1073741823" displayType="TEXT" displayLength="60" id="b2f46736-3087-4040-892d-75a2a172d537"/>
+    <field name="ENQ_Enquiry_ID" type="INTEGER" parameter="true" labelTextRef="Txt47Kw58" displayType="TEXT" displayLength="17" id="86f0f31f-81e8-48df-a94f-28ea83d7491e">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ENQ_Reference" type="CHAR" labelTextRef="Txt3YxN4A" maxLength="50" displayType="TEXT" displayLength="50" id="fcbc82d0-52f6-4782-8759-d8f5bef27ed6"/>
+    <field name="ENQ_Subject" type="CHAR" labelTextRef="Txt4eQP2U" maxLength="100" displayType="TEXT" displayLength="60" id="4e4c4644-fb96-4957-9e75-327a36b490c7"/>
+    <field name="EVENT_FIELD" type="CHAR" eventField="true" labelTextRef="TxtSWWOE" displayType="TEXT" id="39212cfe-89eb-4dea-9e20-c3a53e08d702"/>
+    <field name="FRM_Address_Block" type="BOOLEAN" labelTextRef="TxtIkzK9" displayType="CHECKBOX" id="293ba8f8-60ac-4e4d-b7d3-6ffa7aab370b"/>
+    <field name="FRM_Allow_Anonymous" type="BOOLEAN" labelTextRef="Txt6VSmp7" displayType="CHECKBOX" id="de6a53e8-e8f9-4cd3-b8a6-77f40769a776"/>
+    <field name="FRM_Category" type="CHAR" labelTextRef="Txt2WXabC" maxLength="200" displayType="TEXT" displayLength="60" id="783d7bc6-82d6-494d-b097-94ff8c3d5e0d"/>
+    <field name="FRM_Category_ID" type="INTEGER" labelTextRef="Txt3Jumt9" displayType="TEXT" displayLength="17" id="81462d4e-ed85-4596-96e1-e725ffcd21ef">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="FRM_Confirmation_Text_CY" type="CHAR" labelTextRef="Txt3CNFIN" maxLength="1073741823" displayType="TEXT" displayLength="60" id="59ecfff6-0ff6-4e30-8bc0-711e58a1f890"/>
+    <field name="FRM_Confirmation_Text_EN" type="CHAR" labelTextRef="Txt48i8Bo" maxLength="1073741823" displayType="TEXT" displayLength="60" id="02f069bc-e194-4e40-872f-a532ea6fc14f"/>
+    <field name="FRM_Custom1" type="CHAR" labelTextRef="Txth9rRJ" maxLength="200" displayType="TEXT" displayLength="60" id="81c93906-399c-4a25-ae3a-7211c3ea03a3"/>
+    <field name="FRM_Custom2" type="CHAR" labelTextRef="Txt2fhl28" maxLength="200" displayType="TEXT" displayLength="60" id="5775dee2-6f53-48bc-a997-b083dc8d1158"/>
+    <field name="FRM_Custom3" type="CHAR" labelTextRef="Txt6mQmht" maxLength="200" displayType="TEXT" displayLength="60" id="fe463cd2-20fa-4d61-9a5c-2ed2d978f4be"/>
+    <field name="FRM_Default_Comments" type="BOOLEAN" labelTextRef="Txt3eTG2t" displayType="CHECKBOX" id="2b4644db-ff4c-4740-be25-5cb709c7cdc8"/>
+    <field name="FRM_Default_Enquiry_Type" type="INTEGER" labelTextRef="Txt8J7AjA" displayType="TEXT" displayLength="17" id="cb0160f3-2fc9-4895-82fe-fd17987aa814">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="FRM_Default_Subject" type="CHAR" labelTextRef="Txt65vUB7" maxLength="100" displayType="TEXT" displayLength="60" id="ab9bc2bc-b0f7-4197-a296-c3476f3cc406"/>
+    <field name="FRM_Default_Subject_CY" type="CHAR" labelTextRef="Txt21c0Lf" maxLength="100" displayType="TEXT" displayLength="60" id="2c531a92-0d71-47fe-9f61-abf07f151a38"/>
+    <field name="FRM_Email_Confirmation_Details" type="BOOLEAN" labelTextRef="Txt80CAOK" displayType="CHECKBOX" id="bd9fad00-7a9f-4e55-8135-11ee582a870a"/>
+    <field name="FRM_Email_Customer" type="BOOLEAN" labelTextRef="Txt6RgjkR" displayType="CHECKBOX" id="04d02622-7991-4185-9262-fe0a4ee9aa3e"/>
+    <field name="FRM_Email_Subject_CY" type="CHAR" labelTextRef="Txt6iC6Wz" maxLength="200" displayType="TEXT" displayLength="60" id="110b95b3-9d35-4f5e-8a74-0e46c60b7888"/>
+    <field name="FRM_Email_Subject_EN" type="CHAR" labelTextRef="Txt2BcQ60" maxLength="200" displayType="TEXT" displayLength="60" id="2b0902ae-1167-414a-9e83-f3c7bce0f3a0"/>
+    <field name="FRM_Email_Text_EN" type="CHAR" labelTextRef="Txt49vDyy" maxLength="1073741823" displayType="TEXT" displayLength="60" id="f420091f-b0ea-49e7-81af-050e6a8289b7"/>
+    <field name="FRM_Email_text_CY" type="CHAR" labelTextRef="Txt73OjVV" maxLength="1073741823" displayType="TEXT" displayLength="60" id="7e79e280-b1c9-4808-8cd8-d39c95174ecb"/>
+    <field name="FRM_Enabled" type="BOOLEAN" labelTextRef="TxtNvIIr" displayType="CHECKBOX" id="2772f677-99cd-465e-8699-1e06fcdeb97f"/>
+    <field name="FRM_Form_ID" type="INTEGER" labelTextRef="Txt8SfAlO" displayType="TEXT" displayLength="17" id="05e449f7-d6a9-48dd-9619-68a698c275ff">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="FRM_Intro_Text_CY" type="CHAR" labelTextRef="Txt4Fznf5" maxLength="1073741823" displayType="TEXT" displayLength="60" id="5be05815-369f-4394-a0bd-ea69a02b48e9"/>
+    <field name="FRM_Intro_Text_EN" type="CHAR" labelTextRef="Txt4dpPSh" maxLength="1073741823" displayType="TEXT" displayLength="60" id="3a899e13-ed18-4882-9bd7-6a2c34f45ca5"/>
+    <field name="FRM_Next_Form_Name" type="CHAR" labelTextRef="Txtc7uIg" maxLength="100" displayType="TEXT" displayLength="60" id="242ae4ee-21e8-4cf6-9416-8840d0702e64"/>
+    <field name="FRM_Page_Header_CY" type="CHAR" labelTextRef="Txt1yX8ep" maxLength="100" displayType="TEXT" displayLength="60" id="1e77a757-7e1f-468f-a268-52a92936afe9"/>
+    <field name="FRM_Page_Header_EN" type="CHAR" labelTextRef="Txt8Ztrtb" maxLength="100" displayType="TEXT" displayLength="60" id="2eca98d2-c4c0-422b-818c-a334f71e5970"/>
+    <field name="FRM_Resp_Team_ID" type="CHAR" labelTextRef="TxtATI8Lw" maxLength="50" displayType="TEXT" displayLength="50" id="076d443e-6ece-4521-9b82-c0777d27e59d"/>
+    <field name="FRM_Return_URL_CY" type="CHAR" labelTextRef="Txt9Xputs" maxLength="500" displayType="TEXT" displayLength="60" id="a02f41af-fd6e-4564-91cb-5025103f8336"/>
+    <field name="FRM_Return_URL_EN" type="CHAR" labelTextRef="Txt1DDf2V" maxLength="500" displayType="TEXT" displayLength="60" id="b8b856e3-cf57-4069-9b25-f183a0ed45eb"/>
+    <field name="FRM_Show_Comments" type="BOOLEAN" labelTextRef="Txt7UV2DC" displayType="CHECKBOX" id="faa11974-d2b2-4842-8b0c-46dc12d37d4a"/>
+    <field name="FRM_Show_Subject" type="BOOLEAN" labelTextRef="Txt4VovxF" displayType="CHECKBOX" id="ff042e20-0257-461e-bc53-b4d059912e8c"/>
+    <field name="FRM_Sub_Category" type="CHAR" labelTextRef="Txt7Od7Gi" maxLength="200" displayType="TEXT" displayLength="60" id="bfa366c3-8b9f-4700-a4e2-8268c200240a"/>
+    <field name="FRM_Sub_Category_ID" type="INTEGER" labelTextRef="Txt5PnbTe" displayType="TEXT" displayLength="17" id="46f02cb7-c9f2-4a05-a9ac-bf32c129e02e">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="FRM_Summary_Text_CY" type="CHAR" labelTextRef="Txt6qnkiZ" maxLength="1073741823" displayType="TEXT" displayLength="60" id="cb3c0383-5542-472a-b354-3401c7668822"/>
+    <field name="FRM_Summary_Text_EN" type="CHAR" labelTextRef="Txt14Pifp" maxLength="1073741823" displayType="TEXT" displayLength="60" id="2a6a2043-0a59-4a43-a4c2-e1fa8c3df2b3"/>
+    <field name="FRM_Team_Email" type="CHAR" labelTextRef="TxtIhjfT" maxLength="100" displayType="TEXT" displayLength="60" id="1c4b726f-b90c-4f2f-a821-d007d715a9f6"/>
+    <field name="FRM_Team_Leader" type="CHAR" labelTextRef="Txt14aToP" maxLength="50" displayType="TEXT" displayLength="50" id="81946d19-bbaf-49ce-93ac-a25b654df8b9"/>
+    <field name="FRM_allow_select" type="BOOLEAN" labelTextRef="Txt7F80RA" displayType="CHECKBOX" id="061bbe0d-e4e9-4e29-92af-c04094655674"/>
+    <field name="FRM_email_required" type="BOOLEAN" labelTextRef="Txt7Hf4hS" displayType="CHECKBOX" id="d569ec26-78e1-4480-8b96-f8549d361ce5"/>
+    <field name="FRM_total_pages" type="INTEGER" labelTextRef="Txt5GUrQQ" displayType="TEXT" displayLength="9" id="5379bce2-bd55-4f4d-a20f-4a0b0b8ec49b">
+        <validators>
+            <validator type="MAX_DIGITS" value="5"/>
+            <validator type="MAX_LENGTH" value="9"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+</fields>

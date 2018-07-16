@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="List_Items">
+        <tableMapping table="List_Items"/>
+        <fieldMapping resourceField="Description" field="List_Items-Description"/>
+        <fieldMapping resourceField="Description_CY" field="List_Items-Description_CY"/>
+        <fieldMapping resourceField="Enabled" field="List_Items-Enabled"/>
+        <fieldMapping resourceField="Item_ID" field="List_Items-Item_ID"/>
+        <fieldMapping resourceField="List_ID" field="Lists-List_ID"/>
+    </resourceMapping>
+    <resourceMapping id="Lists">
+        <tableMapping table="Lists"/>
+        <fieldMapping resourceField="Description" field="Lists-Description"/>
+        <fieldMapping resourceField="Enabled" field="Lists-Enabled"/>
+        <fieldMapping resourceField="List_ID" field="Lists-List_ID"/>
+        <fieldMapping resourceField="Name" field="Lists-Name"/>
+    </resourceMapping>
+</resourceMappings>

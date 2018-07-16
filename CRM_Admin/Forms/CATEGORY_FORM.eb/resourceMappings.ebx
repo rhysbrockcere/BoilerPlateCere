@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Category_Form">
+        <fieldMapping resourceField="Active" field="Active"/>
+        <fieldMapping resourceField="Created_By" field="Created_By"/>
+        <fieldMapping resourceField="Date_Created" field="Date_Created"/>
+        <fieldMapping resourceField="Date_Modified" field="Date_Modified"/>
+        <fieldMapping resourceField="Description" field="Description"/>
+        <fieldMapping resourceField="Form_ID" field="Ebase_Form_ID"/>
+        <fieldMapping resourceField="Form_Date" field="Form_Date"/>
+        <fieldMapping resourceField="Form_URL" field="Form_URL"/>
+        <fieldMapping resourceField="ID" field="ID"/>
+        <fieldMapping resourceField="Modified_By" field="Modified_By"/>
+        <fieldMapping resourceField="Name" field="Name"/>
+        <fieldMapping resourceField="Parameter1" field="Parameter1"/>
+        <fieldMapping resourceField="Parameter2" field="Parameter2"/>
+        <fieldMapping resourceField="Parameter3" field="Parameter3"/>
+        <fieldMapping resourceField="Sub_Category_ID" field="Sub_Category_ID"/>
+        <fieldMapping resourceField="Type" field="Type"/>
+    </resourceMapping>
+</resourceMappings>

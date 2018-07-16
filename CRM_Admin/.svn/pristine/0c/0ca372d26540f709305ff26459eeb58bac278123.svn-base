@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" id="Category_Form" dateCreated="2017-07-03T14:34:24.969+01:00">
+        <columns>*</columns>
+        <from>crm_Category_Forms</from>
+        <where>ID=&amp;&amp;ID</where>
+        <fields>
+            <field id="Active" type="BIT" length="1"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Description" type="VARCHAR" length="500"/>
+            <field id="Form_ID" type="INTEGER" length="50"/>
+            <field id="Form_Date" type="TIMESTAMP" length="16"/>
+            <field id="Form_URL" type="VARCHAR" length="255"/>
+            <field id="ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="255"/>
+            <field id="Parameter1" type="VARCHAR" length="50"/>
+            <field id="Parameter2" type="VARCHAR" length="50"/>
+            <field id="Parameter3" type="VARCHAR" length="50"/>
+            <field id="Sub_Category_ID" type="INTEGER" length="10"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

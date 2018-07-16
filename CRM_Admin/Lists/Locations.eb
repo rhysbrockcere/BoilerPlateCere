@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Locations" dateCreated="2017-07-12T16:27:51.941+01:00">
+        <columns>*</columns>
+        <from>app_Locations</from>
+        <where>Active = 1</where>
+        <fields>
+            <field id="Location_ID" type="INTEGER" input="false"/>
+            <field id="Description" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

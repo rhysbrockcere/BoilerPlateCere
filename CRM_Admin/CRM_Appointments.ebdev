@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<development version="5.2.0" id="d41737ff-3fb1-4ecd-bfb8-d06929cebb91" name="CRM_Appointments" description="" createdOnDate="2017-12-05T11:39:42.724Z">
+    <workspaceFiles>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Forms/APPOINTMENTS"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Forms/SCHEDULE"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Forms/SCHEDULE_AMEND"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Forms/SCHEDULE_NEW"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Forms/SCHEDULE_UNAVAILABLE_DATES"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Forms/SCHEDULED_SLOTS"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Forms/SCHEDULES"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Lists/Locations"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedule"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedule_Insert_Slots"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedule_Locations"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedule_Locations_Create"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedule_Slots"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedule_Slots_Days"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedule_Unavailable_Dates"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedule_Unavailable_Dates_Mandatory"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedules"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedules_Insert"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Schedules_Slots_Assigned"/>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/Resources/Slots"/>
+        <workspaceFile type="Folder" projectName="CRM_Admin" entityPath="/Scripts/Schedules"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Resources/Database_resources/Insert_Appointment"/>
+    </workspaceFiles>
+</development>

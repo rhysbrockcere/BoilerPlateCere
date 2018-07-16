@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/SECURITY_ROLES" id="ClearActionFilter" dateCreated="2017-02-07T13:34:37.756Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+fields.Where_Clause.value = "id&gt;0";
+tables.SecurityRoleActions.fetchTable();
+controls.cmdClearActionFilter.hide();</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="W"/>
+    <item id="2" returnVal="T"/>
+    <item id="3" returnVal="P"/>
+    <item id="4" returnVal="M"/>
+    <item id="5" returnVal="E"/>
+    <item id="6" returnVal="I"/>
+    <item id="7" returnVal="S"/>
+</items>

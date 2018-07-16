@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Enquiry_Statuses">
+        <tableMapping table="Enquiry_Statuses"/>
+        <fieldMapping resourceField="Description" field="Enquiry_Statuses-Description"/>
+        <fieldMapping resourceField="Optional" field="Enquiry_Statuses-Optional"/>
+        <fieldMapping resourceField="Selectable" field="Enquiry_Statuses-Selectable"/>
+        <fieldMapping resourceField="Status_CY" field="Enquiry_Statuses-Status_CY"/>
+        <fieldMapping resourceField="Status_ID" field="Enquiry_Statuses-Status_ID"/>
+    </resourceMapping>
+    <resourceMapping id="Statuses">
+        <tableMapping table="Statuses"/>
+        <fieldMapping resourceField="Status_ID" field="Statuses-Status_ID"/>
+        <fieldMapping resourceField="Sub_Category_ID" field="Statuses-Sub_Category_ID"/>
+        <fieldMapping resourceField="Type_ID" field="Statuses-Type_ID"/>
+    </resourceMapping>
+</resourceMappings>

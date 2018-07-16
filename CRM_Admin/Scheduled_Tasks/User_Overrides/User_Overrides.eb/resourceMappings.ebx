@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CRM_Users">
+        <tableMapping table="CRM_Users"/>
+        <fieldMapping resourceField="Created_By" field="CRM_Users-Created_By"/>
+        <fieldMapping resourceField="Date_Created" field="CRM_Users-Date_Created"/>
+        <fieldMapping resourceField="Date_Modified" field="CRM_Users-Date_Modified"/>
+        <fieldMapping resourceField="Email" field="CRM_Users-Email"/>
+        <fieldMapping resourceField="ID" field="CRM_Users-ID"/>
+        <fieldMapping resourceField="Modified_By" field="CRM_Users-Modified_By"/>
+        <fieldMapping resourceField="Position_ID" field="CRM_Users-Position_ID"/>
+        <fieldMapping resourceField="Reference_No" field="CRM_Users-Reference_No"/>
+        <fieldMapping resourceField="Username" field="CRM_Users-Username"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="Where_Clause"/>
+    </resourceMapping>
+    <resourceMapping id="Ceri_ADInfo">
+        <fieldMapping resourceField="email" field="CRM_Users-Email"/>
+        <fieldMapping resourceField="position_id" field="CRM_Users-Position_ID"/>
+        <fieldMapping resourceField="reference_no" field="CRM_Users-Reference_No"/>
+        <fieldMapping resourceField="username" field="CRM_Users-Username"/>
+        <fieldMapping resourceField="id" field="id"/>
+    </resourceMapping>
+</resourceMappings>

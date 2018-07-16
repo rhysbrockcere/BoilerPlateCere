@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ebase version="5.2.0">
-    <dbResource description="Global Lists of CCC Sites" database="SQLE648S1" id="GBL_SITELIST">
-        <columns>*</columns>
-        <from>ccc_global_lists.dbo.[site-list]</from>
-    </dbResource>
-</ebase>

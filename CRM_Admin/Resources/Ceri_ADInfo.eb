@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource debug="true" database="CERI_DOCS" id="Ceri_ADInfo" dateCreated="2018-01-23T14:10:15.461Z">
+        <columns>*</columns>
+        <from>[FIM-SECMODEL-TEST].dbo.ADINFO</from>
+        <where>username = &amp;&amp;username</where>
+        <fields>
+            <field id="email" type="VARCHAR" length="100"/>
+            <field id="id" type="INTEGER" length="10" key="true" readOnly="true" persistent="false"/>
+            <field id="position_id" type="VARCHAR" length="15"/>
+            <field id="reference_no" type="VARCHAR" length="15"/>
+            <field id="username" type="VARCHAR" length="15"/>
+        </fields>
+    </dbResource>
+</ebase>

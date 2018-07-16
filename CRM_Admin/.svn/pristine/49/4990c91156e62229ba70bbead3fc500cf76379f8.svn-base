@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" pageHeaderTextRef="Txt6wYEAr" pageInfoTextReference="TxtlvGzr" pageTrailerTextReference="Txt4nLx9a" nextPageTextReference="Txt1S0VQe" prevPageTextReference="Txt3cWkx">
+    <pageContents>
+        <page ctrl="PagS8pFV" outputType="0" pdfFooterText="LocalTxt63MHTD" pdfHeaderText="LocalTxt2yv1dn" uid="H4xkc7Qd">
+            <panel ctrl="Paneqrlh" layoutType="VERTICAL_BOX" propertySet="Central Box" uid="J4zajOkl" width="250px">
+                <layoutProperties>
+                    <VERTICAL_BOX cellHAlign="Center" spacerSize="20px"/>
+                </layoutProperties>
+                <button buttonText="LocalTxt3rwki7" ctrl="ButeIjym" mouseOverText="LocalTxt5WdhKo" onClickEvent="/Scripts/goto_Security" uid="SAE68uFM"/>
+                <button buttonText="LocalTxt5lRO7R" ctrl="ButJoRmV" mouseOverText="LocalTxt3HOrbA" onClickEvent="/Scripts/goto_Categories" uid="4HVvT8u6"/>
+                <button buttonText="LocalTxt7ym3OE" ctrl="But13Jfi1" mouseOverText="LocalTxt8gtpML" uid="LV61YO4e"/>
+                <button buttonText="LocalTxt5BDkat" ctrl="But4OdvR" mouseOverText="LocalTxt1IitaO" onClickEvent="/Scripts/goto_Appointments" uid="CcUj9d8C"/>
+            </panel>
+        </page>
+    </pageContents>
+</page>

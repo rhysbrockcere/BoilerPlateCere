@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="Javascript" preferredComponentPath="/Forms/WEB_FORM" id="Save_WebForm" dateCreated="2017-08-01T16:26:27.004+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+checkMandatoryFields('r');
+
+//Check that the Form_ID doesn't already exist
+if (checkFormID(fields.Form_ID.value, fields.ID.value)) {
+	event.owner.addErrorMessage("Canot save the form, the Form ID entered already exists in the database.");
+}
+
+if(fields.Category_ID == null) {
+	event.owner.addErrorMessage("Please select a category before saving.");
+}
+
+
+if(fields.ID.value &gt; 0) {
+	//Update
+	fields.Date_Modified.value = system.variables.$SYSTEM_DATETIME.value;
+	fields.Modified_By.value = system.securityManager.getUserName();
+
+	resources.Web_Form.update();
+	
+	event.owner.addWarningMessage("Your changes have been saved.");
+}
+else {
+	//Insert
+	fields.Date_Created.value = system.variables.$SYSTEM_DATETIME.value;
+	fields.Created_By.value = system.securityManager.getUserName();
+
+	resources.Web_Form.insert();
+
+	event.owner.addWarningMessage("New web form has been created");
+}
+
+function checkFormID (FormID, ID) {
+	
+	var exists = false;
+	
+	try {
+		var con = system.getDatabaseConnection('CRM');
+		var stmt;
+		var rs;
+	
+		stmt = con.prepareStatement("select ID from [web_Contact_Forms] where form_ID = ? and ID &lt;&gt; ?");
+		stmt.setInt(1, FormID);
+		stmt.setInt(2, ID);
+		rs = stmt.executeQuery();
+	
+		while (rs.next()){
+				exists = true;
+			}
+	  }
+	catch (e) {
+		log("__**ERROR** - checkFormID " + e);
+		crmLog(0, "Query", "Error checking for exisiting form ID - " + e, 1);
+		
+		exists = false;	
+	}
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+		if(con) con.close();
+	
+		return exists;	
+	}	
+}</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="SecurityRoleActions">
+        <tableMapping table="SecurityRoleActions"/>
+        <fieldMapping resourceField="Action_ID" field="SecurityRoleActions-Action_ID"/>
+        <fieldMapping resourceField="ID" field="SecurityRoleActions-ID"/>
+        <fieldMapping resourceField="Role_ID" field="SecurityRoleActions-Role_ID"/>
+        <fieldMapping resourceField="Where_Clause" field="Where_Clause"/>
+    </resourceMapping>
+    <resourceMapping id="SecurityRoles">
+        <tableMapping table="SecurityRoles"/>
+        <fieldMapping resourceField="Description" field="SecurityRoles-Description"/>
+        <fieldMapping resourceField="Name" field="SecurityRoles-Name"/>
+        <fieldMapping resourceField="Role_ID" field="SecurityRoles-Role_ID"/>
+    </resourceMapping>
+</resourceMappings>

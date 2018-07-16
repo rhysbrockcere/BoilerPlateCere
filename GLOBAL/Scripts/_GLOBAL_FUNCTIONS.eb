@@ -12,7 +12,7 @@ var strCon = 'CRM';
 
 /** Set the svrPath variable depending on which server we are running the forms from **/
 var svrPath = '';
-var TestServer = true;
+var TestServer = false;
 var PublicServer = false;
 
 switch (system.variables.$UFS_SERVER_NAME.value) {

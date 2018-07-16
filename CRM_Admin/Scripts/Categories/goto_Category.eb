@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/CATEGORIES" id="goto_Category" dateCreated="2017-03-09T16:39:35.033Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+var params = {};
+if (system.variables.$FORMID.value == 'SUB_CATEGORY') {
+	params.Category_ID = fields.Category_ID.value;
+}
+else {
+	params.Category_ID = tables.Categories.Category_ID.value;
+}
+
+form.callForm("CATEGORY", params)</scriptText>
+    </script>
+</ebase>

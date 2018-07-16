@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Web_Forms">
+        <column name="Category" type="CHAR" labelTextRef="Txt26FY0X" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="Category_ID" type="INTEGER" labelTextRef="Txt7HTOs" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Created_By" type="CHAR" labelTextRef="Txt70jWle" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Date_Created" type="DATETIME" labelTextRef="Txt6HGf9d" displayType="TEXT"/>
+        <column name="Date_Modified" type="DATETIME" labelTextRef="Txt8YZUJz" displayType="TEXT"/>
+        <column name="Enabled" type="BOOLEAN" labelTextRef="Txt8Yl7Rp" displayType="CHECKBOX"/>
+        <column name="Form_ID" type="INTEGER" labelTextRef="Txt89AtYh" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Hits" type="INTEGER" labelTextRef="TxtAlqcNd" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Modified_By" type="CHAR" labelTextRef="Txt7dHqYe" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Page_Header_EN" type="CHAR" labelTextRef="Txt5UmY8" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Resp_Team_ID" type="CHAR" labelTextRef="Txt7rJ27p" maxLength="50" displayType="SELECT" displayLength="50" dynamicList="/Lists/Teams">
+            <listMappings display="Team_Name" return="Team_ID"/>
+        </column>
+        <column name="Team_Email" type="CHAR" labelTextRef="Txt5O8gTZ" maxLength="100" displayType="TEXT" displayLength="60"/>
+    </table>
+</tables>

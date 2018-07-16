@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Category">
+        <fieldMapping resourceField="Category_ID" field="Category_ID"/>
+        <fieldMapping resourceField="Add_Information" field="cat_Add_Information"/>
+        <fieldMapping resourceField="Add_Information_CY" field="cat_Add_Information_CY"/>
+        <fieldMapping resourceField="Category" field="cat_Category"/>
+        <fieldMapping resourceField="Category_CY" field="cat_Category_CY"/>
+        <fieldMapping resourceField="Default_Details" field="cat_Default_Details"/>
+        <fieldMapping resourceField="Default_Details_CY" field="cat_Default_Details_CY"/>
+        <fieldMapping resourceField="Default_Subject" field="cat_Default_Subject"/>
+        <fieldMapping resourceField="Default_Subject_CY" field="cat_Default_Subject_CY"/>
+        <fieldMapping resourceField="Description" field="cat_Description"/>
+        <fieldMapping resourceField="Description_CY" field="cat_Description_CY"/>
+        <fieldMapping resourceField="Keywords" field="cat_Keywords"/>
+        <fieldMapping resourceField="Page_URL" field="cat_Page_URL"/>
+        <fieldMapping resourceField="Page_URL_CY" field="cat_Page_URL_CY"/>
+        <fieldMapping resourceField="Resp_Team_ID" field="cat_Resp_Team_ID"/>
+    </resourceMapping>
+    <resourceMapping id="Category_Forms">
+        <tableMapping table="Forms"/>
+        <fieldMapping resourceField="Active" field="Forms-Active"/>
+        <fieldMapping resourceField="Form_ID" field="Forms-Ebase_Form_ID"/>
+        <fieldMapping resourceField="Form_URL" field="Forms-Form_URL"/>
+        <fieldMapping resourceField="ID" field="Forms-ID"/>
+        <fieldMapping resourceField="Name" field="Forms-Name"/>
+        <fieldMapping resourceField="Type" field="Forms-Type"/>
+        <fieldMapping resourceField="Sub_Category_ID" field="Sub_Category_ID"/>
+    </resourceMapping>
+    <resourceMapping id="Sub_Category">
+        <fieldMapping resourceField="Add_Information" field="Add_Information"/>
+        <fieldMapping resourceField="Add_Information_CY" field="Add_Information_CY"/>
+        <fieldMapping resourceField="App_Duration" field="App_Duration"/>
+        <fieldMapping resourceField="Category_ID" field="Category_ID"/>
+        <fieldMapping resourceField="Created_By" field="Created_By"/>
+        <fieldMapping resourceField="Date_Created" field="Date_Created"/>
+        <fieldMapping resourceField="Date_Modified" field="Date_Modified"/>
+        <fieldMapping resourceField="Default_Details" field="Default_Details"/>
+        <fieldMapping resourceField="Default_Details_CY" field="Default_Details_CY"/>
+        <fieldMapping resourceField="Default_Priority" field="Default_Priority"/>
+        <fieldMapping resourceField="Default_Subject" field="Default_Subject"/>
+        <fieldMapping resourceField="Default_Subject_CY" field="Default_Subject_CY"/>
+        <fieldMapping resourceField="Default_Type" field="Default_Type"/>
+        <fieldMapping resourceField="Description" field="Description"/>
+        <fieldMapping resourceField="Description_CY" field="Description_CY"/>
+        <fieldMapping resourceField="Enabled" field="Enabled"/>
+        <fieldMapping resourceField="Keywords" field="Keywords"/>
+        <fieldMapping resourceField="Modified_By" field="Modified_By"/>
+        <fieldMapping resourceField="Page_URL" field="Page_URL"/>
+        <fieldMapping resourceField="Page_URL_CY" field="Page_URL_CY"/>
+        <fieldMapping resourceField="Resp_Team_ID" field="Resp_Team_ID"/>
+        <fieldMapping resourceField="Sub_Category" field="Sub_Category"/>
+        <fieldMapping resourceField="Sub_Category_CY" field="Sub_Category_CY"/>
+        <fieldMapping resourceField="Sub_Category_ID" field="Sub_Category_ID"/>
+    </resourceMapping>
+</resourceMappings>

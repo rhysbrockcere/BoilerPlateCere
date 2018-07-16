@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="Txt9Ul0VW" pageInfoTextReference="Txt6chSCN" pageTrailerTextReference="TxthN4Py" nextPageTextReference="Txt28oR3o" prevPageTextReference="Txt51RNOC">
+    <pageContents>
+        <component ctrl="CmpBroDg" inheritMsg="true" outputType="0" pdfFooterText="LocalTxt8KqTTY" pdfHeaderText="LocalTxt2271Sy" uid="8x2GYR2E">
+            <field beforeEvent="/Components/AdminMenu/MenuActions" buttonText="LocalTxt3NNqQh" ctrl="FldIWWPe" field="Username" uid="BFdUJXup"/>
+            <nav cssClass="navbar navbar-dark bg-dark" ctrl="nav" propertySet="navbar-dark" uid="GvZjpSAh">
+                <rootHtmlElementProperties classLocator="navbar-expand-sm"/>
+                <image alternativeText="LocalTxt4lY2F5" ctrl="ImgMZFfb" imageURL="$ws/Images/Clic.png" mouseOverText="LocalTxt8ZjfIE" newLine="true" rightMargin="10px" uid="EDK2LTTo"/>
+                <hyperlink ctrl="navbarBrand" hidden="true" href="#" text="LocalTxt7TMj33" title="LocalTxt69wK5K" uid="GPxPWO0" useExternalURL="true">
+                    <rootHtmlElementProperties classLocator="navbar-brand"/>
+                </hyperlink>
+                <button buttonText="LocalTxt9bQ2hV" ctrl="navbarToggler" mouseOverText="LocalTxt4xwj9i" uid="IVU4vclE">
+                    <rootHtmlElementProperties classLocator="navbar-toggler navbar-toggler-icon" customAttributes="type=&quot;button&quot;, data-toggle=&quot;collapse&quot;, data-target=&quot;#myNavbar&quot;"/>
+                </button>
+                <panel ctrl="navbarCollapsible" uid="KVoInVsz">
+                    <rootHtmlElementProperties classLocator="collapse navbar-collapse" idLocator="myNavbar"/>
+                    <listPanel ctrl="navbarNav_left" propertySet="navbar-nav" uid="GGkmFuuw">
+                        <listItem ctrl="home_listItem_4" propertySet="nav-item" uid="PvYSyqU0">
+                            <hyperlink ctrl="lnkBack" hidden="true" href="#" onClickEvent="/Scripts/Navigation/GL_CalledForm" propertySet="nav-link" text="LocalTxtpBBLX_4" title="LocalTxt3UESTF_4" uid="OpHePMPU"/>
+                        </listItem>
+                        <listItem ctrl="home_listItem" propertySet="nav-item" uid="OLjTKVTm">
+                            <hyperlink ctrl="home_link" href="#" onClickEvent="/Components/AdminMenu/goto_Home" propertySet="nav-link" text="LocalTxtpBBLX" title="LocalTxt3UESTF" uid="9YSzbCEs"/>
+                        </listItem>
+                        <listItem ctrl="home_listItem_2" propertySet="nav-item" uid="IfbSBIkd">
+                            <hyperlink ctrl="home_link_2" href="#" onClickEvent="/Components/AdminMenu/goto_Categories" propertySet="nav-link" text="LocalTxtpBBLX_2" title="LocalTxt3UESTF_2" uid="FpFmsKMg"/>
+                        </listItem>
+                        <listItem ctrl="home_listItem_3" propertySet="nav-item" uid="5GRfBOn7">
+                            <hyperlink ctrl="home_link_3" href="#" onClickEvent="/Components/AdminMenu/goto_WebForms" propertySet="nav-link" text="LocalTxtpBBLX_3" title="LocalTxt3UESTF_3" uid="9c1JcK0L"/>
+                        </listItem>
+                        <listItem ctrl="page1_listItem" propertySet="nav-item" uid="LcPh1Nc1">
+                            <rootHtmlElementProperties classLocator="dropdown"/>
+                            <hyperlink ctrl="page1_link" href="#" propertySet="nav-link" text="LocalTxt9jnqXn" title="LocalTxt1GJi6f" uid="3JS0dEbA" useExternalURL="true">
+<rootHtmlElementProperties classLocator="dropdown-toggle" customAttributes="role=&quot;button&quot;, data-toggle=&quot;dropdown&quot;" idLocator="navbarDropdown"/>
+                            </hyperlink>
+                            <panel ctrl="page1_dropdown" propertySet="dropdown-menu" uid="NWBxXwe">
+<hyperlink ctrl="action1_dropdownLilnk_3" href="#" onClickEvent="/Components/AdminMenu/goto_Security" propertySet="dropdown-item" text="LocalTxt8RRFQ9_9" title="LocalTxtgmYL3_9" uid="FAQzyyXc"/>
+<hyperlink ctrl="action1_dropdownLilnk" href="#" onClickEvent="/Components/AdminMenu/goto_Security_Roles" propertySet="dropdown-item" text="LocalTxt8RRFQ9" title="LocalTxtgmYL3" uid="6CZ538l9"/>
+<hyperlink ctrl="action2_dropdownLink" href="#" onClickEvent="/Components/AdminMenu/goto_User_Overrrides" propertySet="dropdown-item" text="LocalTxt8RRFQ9_2" title="LocalTxtgmYL3_2" uid="JhGCvzWF"/>
+<panel ctrl="dropdownDivider1" uid="5uKCzJZF">
+    <rootHtmlElementProperties classLocator="dropdown-divider"/>
+</panel>
+<hyperlink ctrl="action3_dropdownLink" href="#" onClickEvent="/Components/AdminMenu/goto_CeriData" propertySet="dropdown-item" text="LocalTxt8RRFQ9_3" title="LocalTxtgmYL3_3" uid="6kxIfacx"/>
+                            </panel>
+                        </listItem>
+                        <listItem ctrl="page1_listItem_2" propertySet="nav-item" uid="KYH6hR8G">
+                            <rootHtmlElementProperties classLocator="dropdown"/>
+                            <hyperlink ctrl="page1_link_2" href="#" propertySet="nav-link" text="LocalTxt9jnqXn_2" title="LocalTxt1GJi6f_2" uid="Cfycf8xl" useExternalURL="true">
+<rootHtmlElementProperties classLocator="dropdown-toggle" customAttributes="role=&quot;button&quot;, data-toggle=&quot;dropdown&quot;" idLocator="navbarDropdown"/>
+                            </hyperlink>
+                            <panel ctrl="page1_dropdown_2" propertySet="dropdown-menu" uid="IQCVS3KU">
+<hyperlink ctrl="action1_dropdownLilnk_2" href="#" onClickEvent="/Components/AdminMenu/goto_Statuses" propertySet="dropdown-item" text="LocalTxt8RRFQ9_5" title="LocalTxtgmYL3_4" uid="JR1nej0Y"/>
+<hyperlink ctrl="action2_dropdownLink_2" href="#" onClickEvent="/Components/AdminMenu/goto_Lists" propertySet="dropdown-item" text="LocalTxt8RRFQ9_6" title="LocalTxtgmYL3_6" uid="36T3Ed9x"/>
+<hyperlink ctrl="action3_dropdownLink_2" href="#" onClickEvent="/Components/AdminMenu/goto_Stats" propertySet="dropdown-item" text="LocalTxt8RRFQ9_4" title="LocalTxtgmYL3_5" uid="DSpUJr7F"/>
+<panel ctrl="dropdownDivider1_2" uid="1WoK9CrA">
+    <rootHtmlElementProperties classLocator="dropdown-divider"/>
+</panel>
+<hyperlink ctrl="action3_dropdownLink_3" href="#" onClickEvent="/Components/AdminMenu/goto_QueueManager" propertySet="dropdown-item" text="LocalTxt8RRFQ9_7" title="LocalTxtgmYL3_7" uid="3aGi3rDi"/>
+<hyperlink ctrl="action3_dropdownLink_4" href="#" onClickEvent="/Components/AdminMenu/goto_SystemLog" propertySet="dropdown-item" text="LocalTxt8RRFQ9_8" title="LocalTxtgmYL3_8" uid="JwI7egv3"/>
+                            </panel>
+                        </listItem>
+                    </listPanel>
+                    <listPanel ctrl="navbarNav_right" propertySet="navbar-nav-right" uid="BpDUOBan">
+                        <listItem ctrl="LiPanDbAqc" propertySet="nav-item" uid="JAB0LG5X">
+                            <text cssClass="test-server" ctrl="txtTest" hidden="true" leftMargin="@0" leftPadding="@0" lineHeight="@0" rightMargin="@0" rightPadding="@0" text="LocalTxt8NFgAZ" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0" uid="4v1T4TMk"/>
+                        </listItem>
+                        <listItem ctrl="signUp_listItem" propertySet="nav-item" uid="9jK9xaTg">
+                            <hyperlink cssClass="nav-link" ctrl="signUp_link" href="#" propertySet="nav-link" text="LocalTxt7fWbaZ" title="LocalTxt7tVrH6" uid="NBOeE0lw" useExternalURL="true"/>
+                        </listItem>
+                    </listPanel>
+                </panel>
+            </nav>
+        </component>
+    </pageContents>
+</page>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="New_User" nextPage="Edit_User" beforePageEvent="/Scripts/Users/New_Load" pageHeaderTextRef="Txt2ZSR0M" pageInfoTextReference="TxtQaWMJ" pageTrailerTextReference="Txt5sTATK" nextPageTextReference="Txt3ZAcCv" prevPageTextReference="Txt75QQ9D">
+    <pageContents>
+        <page ctrl="Pag130Uxg" outputType="0" pdfFooterText="LocalTxtAGRLRJ" pdfHeaderText="LocalTxtAHML0P" uid="Q6FNCX4H">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu2_AdminMenu"/>
+            <panel ctrl="PanPUSfx" propertySet="PagePanel" uid="1FYH2Isu">
+                <panel ctrl="pnlSearch_2" layoutType="FIELD" propertySet="Central Box" uid="AyoZH9ti" width="75%">
+                    <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="PQYuGghL"/>
+                    <field buttonText="LocalTxt87HZ2V" ctrl="FldKePRt" field="usr_Username" modifiers="mandatroy" uid="3W0itJYC"/>
+                    <field buttonText="LocalTxt7Qmj2z" ctrl="FldE4s6F" field="usr_Email" modifiers="mandatory" uid="MV8kNprj"/>
+                    <field buttonText="LocalTxt4aEdaZ" ctrl="FldtvPc1" displayOnly="true" field="usr_Position_ID" uid="Az00OpBD"/>
+                    <field buttonText="LocalTxtAOdOKy" ctrl="FlduRxqm" displayOnly="true" field="usr_Reference_No" uid="58rfwN2D"/>
+                    <field buttonText="LocalTxtvveDg" ctrl="FldjCGYC" displayOnly="true" field="CeriOcc-position_nm" uid="KI5iAxQ4"/>
+                    <field buttonText="LocalTxt8pa0MF" ctrl="FldXbnTp" displayOnly="true" field="CeriOcc-manager_lookup" uid="22UEhCU1"/>
+                    <field buttonText="LocalTxt59PDIH" ctrl="FldnuDzP" displayOnly="true" field="CeriOcc-team_lookup" uid="L6kCP9WV"/>
+                    <panel ctrl="PantHvyI" propertySet="Button_Panel" uid="1nCLI3lu">
+                        <button buttonText="LocalTxt4F2y6M" ctrl="ButfMkfH" mouseOverText="LocalTxt56Xv8t" onClickEvent="/Scripts/Users/Cancel_User" uid="IKLKdrOM"/>
+                        <button buttonText="LocalTxt67reXI" ctrl="But8whWM" mouseOverText="LocalTxt2NpBTu" newLine="false" onClickEvent="/Scripts/GL_Validate,/Scripts/Users/save_User" uid="FgmMucxv"/>
+                    </panel>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

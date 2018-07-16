@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm beforeEvent="/LogonService/GL_checkCredentials,/LogonService/GL_CheckAccess" formHeaderTextRef="Txt3kqaiU" htmlTitleTextRef="TxtAKLh6i" finishButtonTextRef="Txt7qboNA" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/Scripts/Log" id="CLIC_LOG" dateCreated="2018-03-06T11:36:03.195Z">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+        </sharedFunctionScripts>
+        <resources>
+            <resource name="crm_Log" path="/Resources/crm_Log"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt9ipY1Y" restoreButtonTextRef="Txt6ydKdz" saveInfoTextRef="Txt8oksiP" restoreInfoTextRef="Txt4vLyRB"/>
+        <finalPage headerTextRef="Txt8GVZa9" infoTextRef="Txt8ELqNH" returnTextRef="Txt4jnqg5" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

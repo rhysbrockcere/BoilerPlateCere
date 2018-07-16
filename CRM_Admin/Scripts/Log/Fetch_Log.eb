@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/CLIC_LOG" id="Fetch_Log" dateCreated="2018-03-06T15:23:09.133Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+fields.Where_Clause.value = 'ID &gt; 0';
+
+if (fields.Filter_Action.value != null) {
+	fields.Where_Clause.value += " and action = '" + fields.Filter_Action.value + "'";
+}
+
+if (fields.Filter_Form.value != null) {
+	fields.Where_Clause.value += " and form = '" + fields.Filter_Form.value + "'";
+}
+
+if (fields.Filter_Type.value != null) {
+	fields.Where_Clause.value += " and type = '" + fields.Filter_Type.value + "'";
+}
+
+if (fields.Filter_User.value != null) {
+	fields.Where_Clause.value += " and user_id = '" + fields.Filter_User.value + "'";
+}
+
+fields.Where_Clause.value += ' order by Time_Stamp desc';
+
+tables.crm_Log.fetchTable(true);</scriptText>
+    </script>
+</ebase>

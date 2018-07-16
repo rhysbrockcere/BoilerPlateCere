@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="Categories_List_Full" dateCreated="2017-08-01T15:40:55.364+01:00">
+        <columns>*</columns>
+        <from>crm_Category_List_Full</from>
+        <where>category_id= &amp;&amp;Category_ID and sub_category_ID=&amp;&amp;Sub_Category_ID</where>
+        <fields>
+            <field id="Category" type="VARCHAR" length="403"/>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="Default_Subject" type="VARCHAR" length="100"/>
+            <field id="Default_Subject_CY" type="VARCHAR" length="100"/>
+            <field id="Email" type="VARCHAR" length="100"/>
+            <field id="Leader" type="VARCHAR" length="50"/>
+            <field id="Resp_Team_ID" type="VARCHAR" length="50"/>
+            <field id="Sub_Category_ID" type="INTEGER" length="10"/>
+            <field id="UID" type="BIGINT" length="19"/>
+        </fields>
+    </dbResource>
+</ebase>

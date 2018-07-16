@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/SECURITY" id="_Client_Functions" dateCreated="2017-01-26T09:34:41.017Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+function EditAccess () {
+	controls.cmdEditAccess.hide();
+	controls.cmdSaveAccess.show();
+
+	//Get the teams categories and place into an array
+	var catArray = new Array();
+	var rows = tables.Access.getRows();
+	var i = 0;
+	
+	while (rows.next()) {
+		catArray[i] = tables.Access.Category_ID.value;
+		log("CatArray = " + catArray[i]);
+		i++
+	}
+
+	//Get all categories and highlight the ones which the team has access to using the values in the array
+	fields.WhereClause.value = 'category_id &gt; 0';
+	tables.Categories.fetchTable();
+	
+	var rows = tables.Categories.getRows();
+	var len = catArray.length;
+	
+	while (rows.next()) {
+		//Check to see if this category exists in the array
+		
+		for (i = 0; i &lt; len; i++) {
+			if (tables.Categories.Category_ID.value == catArray[i]) {
+				tables.Categories.Select.value = true;
+				controls.pnlAccessRow.backgroundColor = "#90f39b";
+				break;
+			}
+		}
+	}
+
+		//controls.pnlSelectCategories.show();
+	//controls.pnlCurrentCategories.hide();
+	//controls.pnl_Action_Perms.hide();
+	controls.pnlFilter.show();
+	controls.txtAccessInfo.hide();
+}
+</scriptText>
+    </script>
+</ebase>

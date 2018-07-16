@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Sub_Categories">
+        <column name="Description" type="CHAR" labelTextRef="Txt46qqcv" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Description_CY" type="CHAR" labelTextRef="Txt37Wccr" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Enabled" type="BOOLEAN" labelTextRef="Txt5CItJK" displayType="CHECKBOX"/>
+        <column name="Resp_Team_ID" type="CHAR" labelTextRef="Txt5pAsl1" maxLength="50" displayType="SELECT" displayLength="50" dynamicList="/Lists/Teams">
+            <listMappings display="Team_Name" return="Team_ID"/>
+        </column>
+        <column name="Sub_Category" type="CHAR" labelTextRef="Txt4247Bx" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="Sub_Category_CY" type="CHAR" labelTextRef="TxtAmDNdW" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="Sub_Category_ID" type="INTEGER" labelTextRef="Txt2sCCvo" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+</tables>

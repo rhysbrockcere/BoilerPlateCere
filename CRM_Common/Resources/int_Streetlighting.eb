@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Highways Streetlighting lamp details" database="CRM" preparedStatement="false" id="int_Streetlighting" dateCreated="2017-11-01T16:58:14.094Z">
+        <columns>*</columns>
+        <from>CS_CRM_TEST.dbo.int_Streetlighting</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="EASTING" type="DOUBLE" length="53"/>
+            <field id="LOCATION" type="VARCHAR" length="255"/>
+            <field id="NORTHING" type="DOUBLE" length="53"/>
+            <field id="STREETID" type="VARCHAR" length="255"/>
+            <field id="UNITID" type="VARCHAR" length="255" required="true" key="true"/>
+            <field id="UNITNO" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

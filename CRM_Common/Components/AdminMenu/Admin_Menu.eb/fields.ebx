@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Username" type="CHAR" eventField="true" labelTextRef="Txt6oaJC6" displayType="TEXT" id="9948a3bf-2f39-4b34-a8fe-a7fb107aac4c"/>
+</fields>

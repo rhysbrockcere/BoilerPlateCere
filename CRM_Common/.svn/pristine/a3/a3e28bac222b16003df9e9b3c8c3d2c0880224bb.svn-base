@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<development version="5.2.0" id="1c59dffa-1e8d-4597-a94a-007384cc95ac" name="Full_CRM_Update" description="" createdOnDate="2017-09-14T14:16:52.747+01:00">
+    <workspaceFiles>
+        <workspaceFile type="Project" projectName="CRM_Admin"/>
+        <workspaceFile type="Project" projectName="CRM_Common"/>
+        <workspaceFile type="Project" projectName="CRM_Customer"/>
+        <workspaceFile type="Project" projectName="CRM_Staff"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Components/Address"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Components/CMP_CRM_MENU"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Components/CMP_LANG_CONTROL"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Components/CRM_ACCOUNT"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Components/Declaration"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Components/Title"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/GLOBAL_Messages"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Global_Text"/>
+        <workspaceFile type="Folder" projectName="GLOBAL" entityPath="/LogonService"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Scripts/_GLOBAL_FUNCTIONS"/>
+        <workspaceFile type="Folder" projectName="GLOBAL" entityPath="/Scripts/Address"/>
+        <workspaceFile type="Folder" projectName="GLOBAL" entityPath="/Scripts/CRM_Account"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Scripts/CRM_INTEGRATION"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Scripts/GL_SetLanguage"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Scripts/GL_Validate"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Scripts/Internal_ClientFunctions"/>
+        <workspaceFile type="Folder" projectName="GLOBAL" entityPath="/Scripts/Navigation"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Lists/Dynamic_Lists/Languages"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Lists/Static_Lists/YESNO_FYDD_NAFYDD"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Lists/Static_Lists/YESNO_OESNACOES"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Lists/Static_Lists/YESNO_YDI_NACYDI"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Lists/Static_Lists/YESNO_YDW_NACYDW"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Lists/Static_Lists/YESNO_YDYNNACYDYN"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Presentation/Presentation_Templates/Intranet17"/>
+        <workspaceFile type="Folder" projectName="Shared" entityPath="/Web_Resources/Client_Scripts"/>
+        <workspaceFile type="Folder" projectName="Shared" entityPath="/Web_Resources/Fonts"/>
+        <workspaceFile type="Folder" projectName="Shared" entityPath="/Web_Resources/Images"/>
+        <workspaceFile type="Folder" projectName="Shared" entityPath="/Web_Resources/Javascript"/>
+        <workspaceFile type="Folder" projectName="Shared" entityPath="/Web_Resources/JSP"/>
+        <workspaceFile type="Folder" projectName="Shared" entityPath="/Web_Resources/Style_Sheets"/>
+    </workspaceFiles>
+</development>

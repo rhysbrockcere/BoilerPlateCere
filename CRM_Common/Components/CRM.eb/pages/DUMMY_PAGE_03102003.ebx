@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="Txt72bSDx" pageInfoTextReference="Txt6o6Lsd" pageTrailerTextReference="Txt2cX8Xa" nextPageTextReference="Txt4psPiS" prevPageTextReference="Txt4tQWeZ">
+    <pageContents>
+        <component ctrl="CmpdST5A" inheritMsg="true" outputType="0" pdfFooterText="LocalTxt7r82Wt" pdfHeaderText="LocalTxtAgnfbp" uid="13F1T0A1">
+            <field beforeEvent="/Scripts/Get_CRM_Data" buttonText="LocalTxt4bprOT" ctrl="FldlvuZF" field="EVENT_FIELD" uid="RiaFIAef"/>
+        </component>
+    </pageContents>
+</page>

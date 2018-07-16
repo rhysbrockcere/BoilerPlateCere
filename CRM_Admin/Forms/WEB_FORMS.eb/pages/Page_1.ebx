@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/WebForms/WebForms_Load" pageHeaderTextRef="Txt1vrnhr" pageInfoTextReference="Txt8XfRXo" pageTrailerTextReference="Txt44dfXZ" nextPageTextReference="Txt6l5G9x" prevPageTextReference="Txt3QzVbb">
+    <pageContents>
+        <page ctrl="Pag15VojY" outputType="0" pdfFooterText="LocalTxt5ULZl6" pdfHeaderText="LocalTxtAel844" uid="LJquG6MU">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu_AdminMenu"/>
+            <panel ctrl="PanwhFHK" propertySet="PagePanel" uid="1xwpbr4I">
+                <panel ctrl="Pan118wsr" propertySet="floatLeft" uid="D4z0tlEc" width="70%">
+                    <rootHtmlElementProperties classLocator="panelLeft"/>
+                    <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="NNFEtW1K"/>
+                    <fieldTable ctrl="TblhDQr5" displayOnly="true" field="Web_Forms" numVisibleRows="20" tableHeaderText="LocalTxt34alS" tableInfoText="LocalTxt38XFld" tableTrailerText="LocalTxt9R4Zom" uid="YcwtxKz">
+                        <tablePage ctrl="TpgmYzBz" default="L" uid="QrnufjPc">
+                            <fieldColumn buttonText="LocalTxt4GW4yl" ctrl="Col4vsXk" field="Web_Forms-Enabled" sortable="true" uid="J4lQUg1L" width="5%"/>
+                            <fieldColumn buttonText="LocalTxt72D4gL" ctrl="ColWzIA5" field="Web_Forms-Form_ID" hyperlink="true" immedEvent="/Scripts/WebForms/goto_WebForm" sortable="true" uid="OerOTLFP" width="5%"/>
+                            <fieldColumn buttonText="LocalTxt8YCDe4" ctrl="ColiFF2a" field="Web_Forms-Page_Header_EN" hyperlink="true" immedEvent="/Scripts/WebForms/goto_WebForm" sortable="true" uid="54cnbHjY" width="16%"/>
+                            <fieldColumn buttonText="LocalTxt25THgb" ctrl="Col136474" field="Web_Forms-Category" immedEvent="/Scripts/WebForms/goto_Category" sortable="true" uid="J3NxL319" width="16%"/>
+                            <fieldColumn buttonText="LocalTxt1RcmLN" ctrl="ColTcy66" field="Web_Forms-Hits" sortable="true" uid="FMgct8Yz" width="5%"/>
+                            <fieldColumn buttonText="LocalTxt8YN1QA" ctrl="Colz79l2" field="Web_Forms-Resp_Team_ID" sortable="true" uid="1MxXGOFn" width="16%"/>
+                        </tablePage>
+                    </fieldTable>
+                </panel>
+                <panel ctrl="PanfwWbT" propertySet="floatRight" uid="E3yzlfA3" width="29%">
+                    <rootHtmlElementProperties classLocator="panelRight box"/>
+                    <text ctrl="TexYaK3R_5" text="LocalTxt26nD03_5" uid="RtiCmBKi"/>
+                    <field buttonText="LocalTxt7bgCCe" ctrl="FldfxTzo" field="filter_Name" uid="Fl6bugWY"/>
+                    <field buttonText="LocalTxt49A2UC" ctrl="Fld7vdFH" field="filter_Category" propertySet="Chosen-Small" uid="HhKRnlQb"/>
+                    <field buttonText="LocalTxtQ1YTA" ctrl="FldxSsiQ" field="filter_Team" propertySet="Chosen-Small" uid="APRcrZB3"/>
+                    <panel ctrl="Pan13Yjox_2" uid="Iumgt9xa">
+                        <button buttonText="LocalTxt4YBOgN" ctrl="cmdClearFilter" hidden="true" mouseOverText="LocalTxt6CwO5Z" onClickEvent="/Scripts/WebForms/Clear_Filter,/Scripts/WebForms/WebForms_Load" uid="ENdrYJku"/>
+                        <button buttonText="LocalTxt4lZJIf" ctrl="cmdFilter" mouseOverText="LocalTxt9rSSpI" newLine="false" onClickEvent="/Scripts/WebForms/WebForms_Load" uid="MC5k3ghx"/>
+                    </panel>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

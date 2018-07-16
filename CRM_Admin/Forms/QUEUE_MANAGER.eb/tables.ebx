@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="DDI">
+        <column name="DDI" type="CHAR" labelTextRef="Txt7j6d0I" maxLength="15" displayType="TEXT" displayLength="15"/>
+        <column name="DDI_Auto_Reopen" type="CHAR" labelTextRef="Txt8qi0FO" maxLength="1" displayType="SELECT" displayLength="1" staticList="/Lists/Static_Lists/YESNO"/>
+        <column name="DDI_ID" type="INTEGER" labelTextRef="Txt4Locq3" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DDI_QueueID" type="INTEGER" labelTextRef="TxtCVkLY" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DDI_Service" type="CHAR" labelTextRef="Txt9OR2DE" maxLength="100" displayType="TEXT" displayLength="25"/>
+        <column name="DDI_StatusID" type="INTEGER" labelTextRef="Txt9dqwJM" displayType="SELECT" displayLength="17" dynamicList="/Scripts/Lists/List_Items_Queue_Manager_list">
+            <listMappings display="Description" return="Item_ID">
+                <additional field="LIST_ITEM_LIST_ID" listField="List_ID"/>
+            </listMappings>
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+    <table name="Queue">
+        <column name="Details" type="CHAR" labelTextRef="Txt6fZMN0" maxLength="500" displayType="TEXTAREA" displayLength="20" rows="2"/>
+        <column name="Details_CY" type="CHAR" labelTextRef="TxtAb3IYJ" maxLength="500" displayType="TEXTAREA" displayLength="20" rows="2"/>
+        <column name="End_Time" type="CHAR" labelTextRef="Txt5vAm01" maxLength="16" displayType="TEXT" displayLength="16"/>
+        <column name="Name" type="CHAR" labelTextRef="Txt3y2zeH" maxLength="50" displayType="TEXT" displayLength="30"/>
+        <column name="QueueEdit" type="CHAR" defaultValue="See DDI Info" labelTextRef="Txt8j8660" displayType="TEXT"/>
+        <column name="QueueID" type="INTEGER" labelTextRef="Txt52DY4B" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Start_Time" type="CHAR" labelTextRef="Txt9NRmvF" maxLength="16" displayType="TEXT" displayLength="16"/>
+        <column name="StatusID" type="CHAR" labelTextRef="Txt9TbH9U" maxLength="17" displayType="SELECT" displayLength="17" dynamicList="/Scripts/Lists/List_Items_Queue_Manager_list">
+            <listMappings display="Description" return="Item_ID">
+                <additional field="Queue-Details_CY" listField="Description_CY"/>
+                <additional field="LIST_ITEM_LIST_ID" listField="List_ID"/>
+            </listMappings>
+        </column>
+    </table>
+</tables>

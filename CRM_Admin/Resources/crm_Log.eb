@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="crm_Log" dateCreated="2018-03-06T11:37:26.418Z">
+        <columns>top &amp;&amp;Rows *</columns>
+        <from>crm_Log</from>
+        <where>&amp;&amp;Where_Clause</where>
+        <fields>
+            <field id="Action" type="VARCHAR" length="50"/>
+            <field id="Browser_IP" type="VARCHAR" length="50"/>
+            <field id="Browser_Type" type="VARCHAR" length="500"/>
+            <field id="Details" type="VARCHAR" length="500"/>
+            <field id="Form" type="VARCHAR" length="100"/>
+            <field id="Form_ID" type="INTEGER" length="10"/>
+            <field id="ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Page" type="VARCHAR" length="100"/>
+            <field id="Session_ID" type="VARCHAR" length="100"/>
+            <field id="Time_Stamp" type="TIMESTAMP" length="16"/>
+            <field id="Type" type="INTEGER" length="10"/>
+            <field id="User_ID" type="VARCHAR" length="50"/>
+            <field id="Rows" required="true" persistent="false" dynamic="true"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

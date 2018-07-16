@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DDI individual lines for each Queue" database="CRM" table="true" preparedStatement="false" id="sys_Queue_DDI" dateCreated="2018-02-19T13:33:36.445Z">
+        <columns>*</columns>
+        <from>sys_Queue_DDI</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="DDI" type="VARCHAR" length="15"/>
+            <field id="DDI_Auto_Reopen" type="VARCHAR" length="1"/>
+            <field id="DDI_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="DDI_QueueID" type="INTEGER" length="10"/>
+            <field id="DDI_Service" type="VARCHAR" length="100"/>
+            <field id="DDI_StatusID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="Txt8NwDYg" pageInfoTextReference="Txtwul7c" pageTrailerTextReference="Txt2WFGk4" nextPageTextReference="Txta8GCI" prevPageTextReference="Txt87joQn">
+    <pageContents>
+        <component ctrl="CmpYNxge" inheritMsg="true" outputType="0" pdfFooterText="LocalTxtyMHni" pdfHeaderText="LocalTxt53MvSp" uid="8BCDzP6y">
+            <panel backgroundColor="#057fd3" ctrl="PandSxsW" layoutType="@0" uid="BjXuD2EC">
+                <panel ctrl="PanQNHuv" layoutType="@0" propertySet="PagePanel" uid="R71UvEAv">
+                    <field beforeEvent="/Menu/setCurrentItem" buttonText="LocalTxt4BiHVJ" ctrl="FldyQkhC" field="FIELD1" hidden="true" uid="84TWa309"/>
+                    <horizontalMenu ctrl="Menu" name="HmenEMUsO1506956373997" onClickEvent="/Menu/menuHandling" uid="BIkceZwD">
+                        <staticMenuItem ctrl="mnuHome" imageAltText="LocalTxt2JgaSt" imageMouseOverText="LocalTxt4f2Ro0" itemName="CLIC_ADMIN" name="Mith9cte1506956456121" text="LocalTxtAZYJuU" uid="Nn2GT1zo"/>
+                        <staticMenuItem ctrl="mnuSecurity" imageAltText="LocalTxtRTXkO" imageMouseOverText="LocalTxt6frPk" itemName="SECURITY" name="Mit38VvZ1506956491050" text="LocalTxt6FYTu7" uid="6EknK2QD">
+                            <staticMenuItem ctrl="mnuSecurityRoles" imageAltText="LocalTxtAox5YO" imageMouseOverText="LocalTxt4lGzIF" itemName="SECURITY_ROLES" name="Mite3Vxx1506956525819" text="LocalTxtAPCkEP" uid="5jijRnlw"/>
+                            <staticMenuItem ctrl="MitunHkE" imageAltText="LocalTxt4890Ht" imageMouseOverText="LocalTxt7ZUpAB" itemName="USERS" name="MitunHkE1516705743767" text="LocalTxt1UUm1H" uid="2h5ZhIAM"/>
+                        </staticMenuItem>
+                        <staticMenuItem ctrl="mnuCategories" imageAltText="LocalTxt2Fs5rX" imageMouseOverText="LocalTxt2GOAqU" itemName="CATEGORIES" name="Mit1UXn31506956377878" text="LocalTxt5idDdj" uid="HahNDpY8">
+                            <staticMenuItem ctrl="mnuNewCategory" imageAltText="LocalTxt92lktL" imageMouseOverText="LocalTxt1r2Rtx" itemName="CATEGORY" name="MitH5Fwn1506956383758" text="LocalTxt3vteEu" uid="ATGxcmnR"/>
+                        </staticMenuItem>
+                        <staticMenuItem ctrl="mnuWebForms" imageAltText="LocalTxt1QqURh" imageMouseOverText="LocalTxt1irbYz" itemName="WEB_FORMS" name="MitbZ8aj1506956381230" text="LocalTxt7ILfdb" uid="HwIDE7AX">
+                            <staticMenuItem ctrl="mnuNewWebForm" imageAltText="LocalTxt6tSfEs" imageMouseOverText="LocalTxtnPemx" itemName="WEB_FORM" name="Mitr9P7q1506956637319" text="LocalTxtAiZ8rw" uid="oJvZNiO"/>
+                        </staticMenuItem>
+                        <staticMenuItem ctrl="MitHjv0f" enabled="false" imageAltText="LocalTxt4DMgSt" imageMouseOverText="LocalTxt9MdNfm" itemName="General" name="MitHjv0f1509535886562" text="LocalTxt4jS3EM" uid="9cSorxwB">
+                            <staticMenuItem ctrl="MitnI1xz" imageAltText="LocalTxt6308dk" imageMouseOverText="LocalTxt6uHfiR" itemName="ENQUIRY_STATUSES" name="MitnI1xz1523629568480" text="LocalTxt8lowMa" uid="BF3oQsEC"/>
+                            <staticMenuItem ctrl="MitX64UN" imageAltText="LocalTxt3eJ8jZ" imageMouseOverText="LocalTxt7pOpEh" itemName="CLIC_Lists" name="MitX64UN1509535909657" text="LocalTxt5wVR3b" uid="78s8urEZ"/>
+                            <staticMenuItem ctrl="Mitz8vPn" imageAltText="LocalTxt5Te8zp" imageMouseOverText="LocalTxt54nw2M" itemName="CLIC_Stats" name="Mitz8vPn1510070087073" text="LocalTxtLLVlg" uid="GptK8iXU"/>
+                            <staticMenuItem ctrl="Mit14Yb39" imageAltText="LocalTxt7xLkNV" imageMouseOverText="LocalTxtAnNSW7" imageURL="@0" itemName="QUEUE_MANAGER" name="Mit14Yb391517496975959" text="LocalTxt7QX4Hx" uid="I8PTj5PK"/>
+                            <staticMenuItem ctrl="Mit8C9BT" imageAltText="LocalTxt9szOac" imageMouseOverText="LocalTxt4axBg2" itemName="CLIC_LOG" name="Mit8C9BT1520350864678" text="LocalTxt47mCD4" uid="NbYbtqLE"/>
+                        </staticMenuItem>
+                    </horizontalMenu>
+                </panel>
+            </panel>
+        </component>
+    </pageContents>
+</page>

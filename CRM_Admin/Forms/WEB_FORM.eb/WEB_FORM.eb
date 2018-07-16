@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <webForm formHeaderTextRef="Txt4fwceI" htmlTitleTextRef="Txt44saOc" finishButtonTextRef="Txt7vQEvD" ajax="false" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/Scripts/WebForms" id="WEB_FORM" dateCreated="2017-07-28T16:13:54.642+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+        </sharedFunctionScripts>
+        <linkedTexts>
+            <linkedText>/Global_Text</linkedText>
+        </linkedTexts>
+        <resources>
+            <resource name="Categories_List_Full" path="/Resources/Categories_List_Full"/>
+            <resource name="Web_Form" path="/Resources/Web_Form"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt8C4Di" restoreButtonTextRef="Txt6pj5yX" saveInfoTextRef="Txt2gIZCq" restoreInfoTextRef="Txt6M6PTf"/>
+        <finalPage headerTextRef="Txt8aWkLh" infoTextRef="Txt9Z4617" returnTextRef="Txt7r7zU7" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>
