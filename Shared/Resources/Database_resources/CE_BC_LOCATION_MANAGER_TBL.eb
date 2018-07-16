@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Building Closure -managers linked to location" database="SQLE648S1" table="true" preparedStatement="false" id="CE_BC_LOCATION_MANAGER_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_BC_location_manager_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="BC_End_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="BC_Notes" type="VARCHAR" length="500"/>
+            <field id="BC_Reason" type="VARCHAR" length="50"/>
+            <field id="BC_Reason_CY" type="VARCHAR" length="50"/>
+            <field id="BC_Start_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="BC_Status" type="VARCHAR" length="20"/>
+            <field id="BC_Update_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="LM_End_Date" type="TIMESTAMP" length="16"/>
+            <field id="LM_ID" type="INTEGER" length="10"/>
+            <field id="LM_Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Location" type="VARCHAR" length="250"/>
+            <field id="Location_CY" type="VARCHAR" length="250"/>
+            <field id="Location_ID" type="INTEGER" length="10"/>
+            <field id="Manager_Email" type="VARCHAR" length="100"/>
+            <field id="Type" type="VARCHAR" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

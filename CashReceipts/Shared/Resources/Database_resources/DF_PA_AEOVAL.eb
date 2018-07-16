@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Attachment of Earnings Order details" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_AEOVAL">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.AEOVAL</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="AV_ARRS_TD" type="DECIMAL" length="9"/>
+            <field id="AV_ATT_PY_TP" type="DECIMAL" length="9"/>
+            <field id="AV_BREAK_1" length="12"/>
+            <field id="AV_BREAK_2" length="12"/>
+            <field id="AV_BREAK_3" length="12"/>
+            <field id="AV_BREAK_4" length="12"/>
+            <field id="AV_BREAK_5" length="12"/>
+            <field id="AV_CST_REQ_I" length="1"/>
+            <field id="AV_CTRL_PT" length="1"/>
+            <field id="AV_DEDN_TD" type="DECIMAL" length="9"/>
+            <field id="AV_DEDN_TP" type="DECIMAL" length="9"/>
+            <field id="AV_DEDN_TP_I" length="1"/>
+            <field id="AV_ER_FEE_TD" type="DECIMAL" length="9"/>
+            <field id="AV_ER_FEE_TP" type="DECIMAL" length="9"/>
+            <field id="AV_ER_FETP_I" length="1"/>
+            <field id="AV_OCC_NO" length="2" key="true"/>
+            <field id="AV_PAYROLL_D" length="8" key="true"/>
+            <field id="CON_NO" length="10" key="true"/>
+            <field id="CRT_ORD_NO" length="12" key="true"/>
+            <field id="GTN_I" length="1"/>
+            <field id="GTN_NO" type="DECIMAL" length="4"/>
+            <field id="ORG_NO" type="DECIMAL" length="2" key="true"/>
+            <field id="PAY_NO" length="4" key="true"/>
+            <field id="PROT_ARRS_TP" type="DECIMAL" length="9"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

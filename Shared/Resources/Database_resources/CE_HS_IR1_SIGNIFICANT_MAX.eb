@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_HS_IR1_SIGNIFICANT_MAX">
+        <columns>MAX(SIGN_ID) as SIGN_ID</columns>
+        <from>CE_HS_TEST.dbo.CE_HS_IR1_Significant</from>
+        <fields>
+            <field id="SIGN_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

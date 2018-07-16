@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="SERIO_JOBS_TBL">
+        <columns>*</columns>
+        <from>ICT_Web_Serio_Test.dbo.Serio_Jobs</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by complete_time desc</additional>
+        <fields>
+            <field id="Agent_Email" type="VARCHAR" length="120"/>
+            <field id="Name" type="VARCHAR" length="113"/>
+            <field id="User_Email" type="VARCHAR" length="80"/>
+            <field id="agent_id" type="VARCHAR" length="15"/>
+            <field id="agent_name" type="VARCHAR" length="50"/>
+            <field id="complete_time" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="issue_desc" type="CLOB" length="2147483647"/>
+            <field id="issue_id" type="INTEGER" length="10"/>
+            <field id="issue_no" type="INTEGER" length="10"/>
+            <field id="issue_status" length="1"/>
+            <field id="nt_login" type="VARCHAR" length="30"/>
+            <field id="owned_agent" type="INTEGER" length="10"/>
+            <field id="owned_team" type="INTEGER" length="10"/>
+            <field id="prim_cback_time" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="prob_area_dsc" type="VARCHAR" length="30"/>
+            <field id="short_desc" type="VARCHAR" length="120"/>
+            <field id="type_cd" length="1"/>
+            <field id="work_tel" type="VARCHAR" length="18"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

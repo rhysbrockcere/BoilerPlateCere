@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_LCL_LOGIN_NEXT_PAGE" dateCreated="2012-12-12T12:33:01.823Z" dateImported="2016-09-06T15:35:54.677+01:00">
+        <scriptText>// If you request a new password then PASSWORD_CHANGE is set to 'Y' this means that you need to change your password once you first login.
+// The system also requires you to change your passwork every 40 days
+
+if [PASSWORD_CHANGE = 'Y' or $SYSTEM_DATE &gt;= DATE_CHANGED + 40]
+	show NEW_PWD_DETAILS_GROUP;
+	hide LOGIN_PANEL;
+	hide REQUEST_GROUP;
+	hide OPTION_GROUP;
+	message 'Please reset your password below';
+else
+	set ACCESS_TIME = $SYSTEM_DATETIME;
+	set APP = $FORMID;
+	set APP_SERVER = replace($UFS_SERVER_NAME, '.ceredigion.gov.uk','');
+	if [FOP_NEW_PASSWORD != '']
+		set ACCESS_DETAILS = 'Login Successful - Password Changed';
+	else
+		set ACCESS_DETAILS = 'Login Successful';
+	endif
+	insert LCL_ACCESS_LOG;
+	if [LOGIN_ATTEMPTS &gt;= 1]
+		set LOGIN_ATTEMPTS = 0;
+		set WHERE_CLAUSE = 'Username = \'' + ENK_USER + '\'';
+		update LCL_PASSWORDS;
+	endif
+	goto page $NEXT_PAGE;
+endif</scriptText>
+    </script>
+</ebase>

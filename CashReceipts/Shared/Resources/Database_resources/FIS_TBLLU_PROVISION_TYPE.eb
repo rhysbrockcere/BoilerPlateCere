@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Registration Provision Type" database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_PROVISION_TYPE">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_PROVISION_TYPE</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PROVISIONTYPE</where>
+        <fields>
+            <field id="PRT_CODE" type="VARCHAR" length="10"/>
+            <field id="PRT_DESC" type="VARCHAR" length="100"/>
+            <field id="PRT_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="PRT_UPD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="PRT_UPD_USER" type="VARCHAR" length="128"/>
+            <field id="WHERE_CLAUSE_PROVISIONTYPE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

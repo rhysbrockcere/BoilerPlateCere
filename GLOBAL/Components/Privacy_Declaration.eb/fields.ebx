@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Signature" type="BOOLEAN" defaultValue="1" labelTextRef="Txt6AmYdD" displayType="CHECKBOX" id="89670f25-61d1-4597-b509-e9f715d40c5f"/>
+</fields>

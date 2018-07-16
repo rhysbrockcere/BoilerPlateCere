@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1" table="true" preparedStatement="false" id="CCA_TEMPLATES">
+        <columns>*</columns>
+        <from>CardiConnect.dbo.Templates</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Description" type="VARCHAR" length="500"/>
+            <field id="Destination_Library" length="10"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Template_ID" type="INTEGER" length="10" key="true"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

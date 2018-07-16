@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="ACCESS_ATTEMPTS" type="INTEGER" labelTextRef="38120006" helpTextRef="38120005" displayType="TEXT" displayLength="17" id="10">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_DETAILS" type="CHAR" labelTextRef="38120040" helpTextRef="38120039" maxLength="200" displayType="TEXT" id="180"/>
+    <field name="ACCESS_TIME" type="DATETIME" labelTextRef="38120036" helpTextRef="38120035" maxLength="default" displayType="TEXT" id="160"/>
+    <field name="ACCESS_TYPE" type="CHAR" labelTextRef="TXT29" displayType="TEXT" id="850"/>
+    <field name="APP" type="CHAR" labelTextRef="38120038" helpTextRef="38120037" maxLength="30" displayType="TEXT" id="170"/>
+    <field name="APP_SERVER" type="CHAR" labelTextRef="38120042" helpTextRef="38120041" maxLength="30" displayType="TEXT" id="190"/>
+    <field name="ATTEMPTS_LOGGED" type="CHAR" labelTextRef="38120008" helpTextRef="38120007" maxLength="1" displayType="TEXT" displayLength="1" id="20">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CALLSCRIPTS" type="CHAR" labelTextRef="TXT20" displayType="TEXT" id="770"/>
+    <field name="CANCEL_BUTTON" type="CHAR" labelTextRef="38120034" helpTextRef="38120033" maxLength="default" displayType="BUTTON" id="580"/>
+    <field name="CHANGE_PASSWORD_BUTTON" type="CHAR" labelTextRef="38120067" helpTextRef="38120066" maxLength="default" displayType="BUTTON" id="290"/>
+    <field name="CHAR" type="CHAR" labelTextRef="38120119" helpTextRef="38120118" maxLength="30" displayType="TEXT" id="500"/>
+    <field name="CHAR_CHECK" type="NUMBER" labelTextRef="38120129" helpTextRef="38120128" displayType="TEXT" id="550"/>
+    <field name="CHECK" type="CHAR" labelTextRef="38120109" helpTextRef="38120108" maxLength="30" displayType="TEXT" id="450"/>
+    <field name="CHECKING" type="NUMBER" labelTextRef="38120111" helpTextRef="38120110" maxLength="default" displayType="TEXT" id="460"/>
+    <field name="CODE1" type="CHAR" labelTextRef="TXT24" maxLength="50" displayType="TEXT" displayLength="50" id="800">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CODE2" type="CHAR" labelTextRef="TXT25" maxLength="50" displayType="TEXT" displayLength="50" id="810">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CODE3" type="CHAR" labelTextRef="TXT26" maxLength="50" displayType="TEXT" displayLength="50" id="820">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CODE4" type="CHAR" labelTextRef="TXT27" maxLength="50" displayType="TEXT" displayLength="50" id="830">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CODE5" type="CHAR" labelTextRef="TXT28" maxLength="50" displayType="TEXT" displayLength="50" id="840">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CORRECT" type="CHAR" labelTextRef="38120084" helpTextRef="38120083" maxLength="default" displayType="RADIO" labelPosition="right" staticList="/Lists/Static_Lists/YESNO_YDYNNACYDYN" id="350"/>
+    <field name="COUNT" type="NUMBER" labelTextRef="38120113" helpTextRef="38120112" displayType="TEXT" id="470"/>
+    <field name="DATE_CHANGED" type="DATE" labelTextRef="38120010" helpTextRef="38120009" maxLength="default" displayType="TEXT" id="30"/>
+    <field name="DEPARTMENTNAME" type="CHAR" labelTextRef="38120012" helpTextRef="38120011" maxLength="100" displayType="TEXT" displayLength="60" id="40">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="DEPT" type="CHAR" labelTextRef="38120014" helpTextRef="38120013" maxLength="10" displayType="TEXT" displayLength="10" id="50">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="DOMAIN" type="CHAR" labelTextRef="TXT23" displayType="TEXT" id="790"/>
+    <field name="DYN_DB" type="CHAR" labelTextRef="TXT9" displayType="TEXT" id="670"/>
+    <field name="EMAIL" type="CHAR" labelTextRef="38120016" helpTextRef="38120015" maxLength="50" displayType="TEXT" displayLength="30" id="60"/>
+    <field name="EMAIL_PASSWORD" type="CHAR" labelTextRef="38120048" helpTextRef="38120047" maxLength="30" displayType="TEXT" id="220"/>
+    <field name="EMPLOYEEID" type="CHAR" labelTextRef="TXT7" maxLength="256" displayType="TEXT" displayLength="60" id="650">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ENK_USER" type="CHAR" labelTextRef="38120103" helpTextRef="38120102" maxLength="256" displayType="TEXT" id="440"/>
+    <field name="FIRSTNAME" type="CHAR" labelTextRef="38120018" helpTextRef="38120017" maxLength="255" displayType="TEXT" displayLength="60" id="70">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="FOP_APP_FOUND" type="CHAR" labelTextRef="TXT15" displayType="TEXT" id="730"/>
+    <field name="FOP_CONFIRM_PASSWORD" type="CHAR" labelTextRef="38120075" helpTextRef="38120074" maxLength="255" displayType="PASSWORD" displayLength="30" id="310"/>
+    <field name="FOP_CURR_PASSWORD" type="CHAR" labelTextRef="TXT18" displayType="PASSWORD" id="760"/>
+    <field name="FOP_EMAIL" type="CHAR" labelTextRef="38120050" helpTextRef="38120049" maxLength="30" displayType="TEXT" id="230"/>
+    <field name="FOP_FROM" type="CHAR" labelTextRef="TXT12" displayType="TEXT" id="700"/>
+    <field name="FOP_MESSAGE_LABEL" type="CHAR" labelTextRef="38120060" helpTextRef="38120059" maxLength="255" displayType="LABEL" id="260"/>
+    <field name="FOP_MESSAGE_LABEL_2" type="CHAR" labelTextRef="38120065" helpTextRef="38120064" maxLength="default" displayType="LABEL" id="280"/>
+    <field name="FOP_NAME" type="CHAR" labelTextRef="38120080" helpTextRef="38120079" maxLength="200" displayType="TEXT" id="330"/>
+    <field name="FOP_NEW_PASSWORD" type="CHAR" labelTextRef="38120070" helpTextRef="38120069" maxLength="255" displayType="PASSWORD" displayLength="30" id="300"/>
+    <field name="FOP_PASS" type="CHAR" labelTextRef="TXT17" displayType="TEXT" id="750"/>
+    <field name="FORM_NAME" type="CHAR" labelTextRef="TXT3" helpTextRef="TXT4" displayType="TEXT" id="620"/>
+    <field name="HOME_COST_CODE" type="CHAR" labelTextRef="TXT31" maxLength="100" displayType="TEXT" displayLength="60" id="870">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="JOB_TITLE" type="CHAR" labelTextRef="TXT5" maxLength="150" displayType="TEXT" displayLength="60" id="630">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="JSP_CODE" type="CHAR" labelTextRef="TXT30" displayType="TEXT" id="860"/>
+    <field name="LCL_ACCESS" type="CHAR" labelTextRef="TXT13" displayType="TEXT" id="710"/>
+    <field name="LCL_APP" type="CHAR" labelTextRef="TXT16" displayType="TEXT" id="740"/>
+    <field name="LCL_DATABASE" type="CHAR" labelTextRef="TXT22" displayType="TEXT" id="780"/>
+    <field name="LCL_PASS" type="CHAR" labelTextRef="TXT11" displayType="TEXT" id="690"/>
+    <field name="LCL_USER" type="CHAR" labelTextRef="TXT10" displayType="TEXT" id="680"/>
+    <field name="LETTER" type="CHAR" labelTextRef="38120117" helpTextRef="38120116" maxLength="30" displayType="TEXT" id="490"/>
+    <field name="LOCATION" type="CHAR" labelTextRef="38120020" helpTextRef="38120019" maxLength="256" displayType="TEXT" displayLength="60" id="570">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LOGIN_ATTEMPTS" type="INTEGER" labelTextRef="38120022" helpTextRef="38120021" displayType="TEXT" displayLength="17" id="90">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LOGIN_BUTTON" type="CHAR" labelTextRef="38120057" helpTextRef="38120056" maxLength="default" displayType="BUTTON" id="250"/>
+    <field name="LOGIN_FOP_APP_FOUND" type="CHAR" labelTextRef="38120107" helpTextRef="38120106" maxLength="30" displayType="TEXT" id="430"/>
+    <field name="LOGIN_FOP_FOUND" type="CHAR" labelTextRef="38120099" helpTextRef="38120098" maxLength="30" displayType="TEXT" id="390"/>
+    <field name="LOGIN_FOP_PASSWORD" type="CHAR" labelTextRef="38120052" helpTextRef="38120051" maxLength="255" displayType="PASSWORD" id="240"/>
+    <field name="LOGIN_FOP_PASSWORD_CHECK" type="CHAR" labelTextRef="38120101" helpTextRef="38120100" maxLength="30" displayType="TEXT" id="400"/>
+    <field name="LOGIN_FOP_SYSTEM_NAME" type="CHAR" labelTextRef="38120044" helpTextRef="38120043" maxLength="30" displayType="TEXT" id="200"/>
+    <field name="LOWER_CHECK" type="NUMBER" labelTextRef="38120125" helpTextRef="38120124" displayType="TEXT" id="530"/>
+    <field name="MANAGER" type="CHAR" labelTextRef="TXT6" maxLength="256" displayType="TEXT" displayLength="60" id="640">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="NUM" type="NUMBER" labelTextRef="38120131" helpTextRef="38120130" displayType="TEXT" id="560"/>
+    <field name="NUMBER" type="CHAR" labelTextRef="38120115" helpTextRef="38120114" maxLength="30" displayType="TEXT" id="480"/>
+    <field name="NUM_CHECK" type="NUMBER" labelTextRef="38120121" helpTextRef="38120120" displayType="TEXT" id="510"/>
+    <field name="PASSWORD" type="CHAR" labelTextRef="38120024" helpTextRef="38120023" maxLength="100" displayType="TEXT" displayLength="60" id="100">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PASSWORD_CHANGE" type="CHAR" labelTextRef="38120026" helpTextRef="38120025" maxLength="1" displayType="TEXT" displayLength="1" id="110"/>
+    <field name="PHONEBOOK_LINK" type="CHAR" labelTextRef="38120094" helpTextRef="38120093" maxLength="default" displayType="LABEL" id="380"/>
+    <field name="PHONEBOOK_TEXT" type="CHAR" labelTextRef="38120092" helpTextRef="38120091" maxLength="default" displayType="LABEL" id="370"/>
+    <field name="PID" type="INTEGER" labelTextRef="38120105" helpTextRef="38120104" displayType="TEXT" id="420"/>
+    <field name="REQUEST_PASSWORD_BUTTON" type="CHAR" labelTextRef="38120062" helpTextRef="38120061" maxLength="default" displayType="BUTTON" id="270"/>
+    <field name="REQUEST_PASSWORD_BUTTON_2" type="CHAR" labelTextRef="38120089" helpTextRef="38120088" maxLength="default" displayType="BUTTON" id="360"/>
+    <field name="SECTIONNAME" type="CHAR" labelTextRef="38120136" helpTextRef="38120135" maxLength="60" displayType="TEXT" displayLength="60" id="600">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="SELECT_CLAUSE" type="CHAR" labelTextRef="TXT8" displayType="TEXT" id="660"/>
+    <field name="SERVER" type="CHAR" labelTextRef="TXT1" helpTextRef="TXT2" displayType="TEXT" id="610"/>
+    <field name="SET_PASSWORD_BUTTON" type="CHAR" labelTextRef="38120077" helpTextRef="38120076" maxLength="default" displayType="BUTTON" id="320"/>
+    <field name="SPACER" type="CHAR" labelTextRef="38120082" helpTextRef="38120081" maxLength="default" displayType="LABEL" id="340"/>
+    <field name="STATUS" type="CHAR" labelTextRef="TXT14" displayType="TEXT" id="720"/>
+    <field name="SURNAME" type="CHAR" labelTextRef="38120028" helpTextRef="38120027" maxLength="255" displayType="TEXT" displayLength="60" id="120">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="TELE" type="CHAR" labelTextRef="38120030" helpTextRef="38120029" maxLength="256" displayType="TEXT" displayLength="60" id="130">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="TOTAL_CHECK" type="NUMBER" labelTextRef="38120127" helpTextRef="38120126" displayType="TEXT" id="540"/>
+    <field name="UPPER_CHECK" type="NUMBER" labelTextRef="38120123" helpTextRef="38120122" displayType="TEXT" id="520"/>
+    <field name="USERNAME" type="CHAR" labelTextRef="38120032" helpTextRef="38120031" maxLength="256" displayType="TEXT" displayLength="30" id="140"/>
+    <field name="USER_TYPE" type="CHAR" labelTextRef="38120134" helpTextRef="38120133" maxLength="50" displayType="TEXT" displayLength="50" id="590">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="WHERE_CLAUSE" type="CHAR" labelTextRef="38120046" helpTextRef="38120045" maxLength="500" displayType="TEXT" id="210"/>
+</fields>

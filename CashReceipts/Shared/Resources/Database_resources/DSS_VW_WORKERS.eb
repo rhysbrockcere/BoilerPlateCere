@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DSSSQL" id="DSS_VW_WORKERS">
+        <columns>*</columns>
+        <from>dss_eforms.dbo.vw_workers</from>
+        <fields>
+            <field id="AWSName" type="VARCHAR" length="30"/>
+            <field id="AW_FName" type="VARCHAR" length="30"/>
+            <field id="AW_ID" type="INTEGER" length="10"/>
+            <field id="AW_MName" type="VARCHAR" length="30"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Components/Address" id="Internal_ClientFunctions" dateCreated="2017-06-30T10:26:38.769+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+/*****************************************************************************************
+/**
+ * Language Switch
+ * 
+ */ 
+function setLanguage(lang){	
+	if (!lang){
+		lang = system.variables.$LANGUAGE.value;
+	}			
+	if (lang == 'CY'){	
+		system.variables.$LANGUAGE.value = 'CY';
+	}else{
+		system.variables.$LANGUAGE.value = 'EN';
+	}
+}
+
+/*****************************************************************/
+/**
+ * Gets the form ID
+ * @returns {String}
+ */
+ 
+function getFormID() {
+	log("Getting form ID.");
+	return system.variables.$FORMID.value;
+}
+
+
+/*****************************************************************/
+/**
+ * Gets the server name
+ * @returns {String}
+ */
+
+function getServerName() {
+	return svrPath;
+}
+
+	
+/*****************************************************************/
+/**
+ * Gets the form settings from the Database
+ * @param {Integer} FormID 
+ * @returns {object}
+ */
+ 
+function getFormTitle(FormID) {
+
+	log("Getting form title for " + FormID);
+
+	var con = system.getDatabaseConnection('CERESQLN1_SQL2012');
+	var stmt;
+	var rs;
+
+	var Title = ''
+	
+	try {
+		stmt = con.prepareStatement("select Name from eforms.dbo.IT_Form_Settings where Form_ID = '" + FormID + "'");
+		rs = stmt.executeQuery();
+	
+		while (rs.next()){				
+				Title = rs.getString("Name");
+			}
+	  }
+	  
+	catch (e) {
+		log("__**ERROR** - getFormName - " + e);
+	}
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+
+	if (!Title) {
+		return FormID;
+	}
+	else {
+		return Title;
+	}
+}</scriptText>
+    </script>
+</ebase>

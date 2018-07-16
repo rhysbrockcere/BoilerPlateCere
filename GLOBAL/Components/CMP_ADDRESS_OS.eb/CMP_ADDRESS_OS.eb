@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webFormComponent exportVersion="7" type="PART_PAGE" template="/Presentation/Presentation_Templates/EBASE_DEFAULT" firstPage="DUMMY_PAGE_03102003" preferredScriptFolder="/Scripts" id="CMP_ADDRESS_OS" dateImported="2016-08-09T14:15:33.900+01:00">
+        <linkedTexts>
+            <linkedText>/GLOBAL_Messages</linkedText>
+            <linkedText>/Shared_Texts</linkedText>
+        </linkedTexts>
+        <resources>
+            <resource name="OS_ADDRESS_CYM" path="/Resources/Database_resources/OS_ADDRESS_CYM"/>
+            <resource name="OS_ADDRESS_ENG" path="/Resources/Database_resources/OS_ADDRESS_ENG"/>
+            <resource name="OS_PROPERTIES" path="/Resources/Database_resources/OS_PROPERTIES"/>
+            <resource name="OS_PROPERTIES_TBL" path="/Resources/Database_resources/OS_PROPERTIES_TBL"/>
+        </resources>
+    </webFormComponent>
+</ebase>

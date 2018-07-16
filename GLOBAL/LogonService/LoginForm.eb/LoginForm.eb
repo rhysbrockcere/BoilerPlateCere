@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm formHeaderTextRef="Txt3bbvJE" htmlTitleTextRef="Txt3yiezP" finishButtonTextRef="Txt9gUuD0" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/Scripts" id="LoginForm" dateCreated="2017-01-20T16:09:58.381Z">
+        <clientCallableFunctionScripts>
+            <clientCallableFunctionScript path="/Scripts/Internal_ClientFunctions"/>
+        </clientCallableFunctionScripts>
+        <saveRestore enabled="false" saveButtonTextRef="Txt7Ow17L" restoreButtonTextRef="Txtk9kkc" saveInfoTextRef="TxtAXOo0g" restoreInfoTextRef="TxtAptSGj"/>
+        <finalPage headerTextRef="Txt4itpXg" infoTextRef="Txt4jfAzx" returnTextRef="Txt16MOAa" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

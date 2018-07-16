@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CERESQLS1_PLUS2" id="LS_CM_ACTIVITY_LIST" dateImported="2014-09-11T15:26:29.513+01:00">
+        <columns>DISTINCT(Description) as Description</columns>
+        <from>CER_Members.dbo.Activities</from>
+        <where>SiteID=&amp;&amp;SiteID and (OriginalStartDate &lt;= &amp;&amp;Act_Date) and (OriginalEndDate &gt;= &amp;&amp;Act_Date)</where>
+        <additional>order by Description</additional>
+        <fields>
+            <field id="Act_Date" output="false"/>
+            <field id="Description" input="false"/>
+            <field id="SiteID" output="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

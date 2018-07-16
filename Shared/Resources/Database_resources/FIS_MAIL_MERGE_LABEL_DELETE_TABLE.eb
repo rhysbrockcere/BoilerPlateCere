@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" nativeSql="true" id="FIS_MAIL_MERGE_LABEL_DELETE_TABLE">
+        <columns>*</columns>
+        <from>eyears_test.dbo.A_CCC_Mail_Merge</from>
+        <where>ID is not null</where>
+        <delete>delete from eyears_test.dbo.A_CCC_Mail_Merge_Labels
+where ID is not null</delete>
+    </dbResource>
+</ebase>

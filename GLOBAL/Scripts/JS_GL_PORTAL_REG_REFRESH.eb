@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Components/CMP_PORTAL" preferredComponentProject="GLOBAL" id="JS_GL_PORTAL_REG_REFRESH" dateCreated="2013-12-11T10:52:36.013Z" dateImported="2013-04-22T13:04:23.870+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+for each (var m in form.currentPage.getControlsByModifier(&quot;reg&quot;))
+{
+		var check = m.field.getValue();
+		if (check == null) {
+			m.setEditorStyle(&quot;color='#FF0000'&quot;);
+			m.setLabelStyle(&quot;color='#FF0000'&quot;);
+		} else {
+			m.setEditorStyle(&quot;color=''&quot;);
+			m.setLabelStyle(&quot;color=''&quot;);			
+		}
+}</scriptText>
+    </script>
+</ebase>

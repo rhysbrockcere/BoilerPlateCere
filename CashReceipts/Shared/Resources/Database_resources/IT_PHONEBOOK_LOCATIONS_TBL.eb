@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Phonebook location table" database="SQLE648S1" table="true" preparedStatement="false" id="IT_PHONEBOOK_LOCATIONS_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_Phonebook_Locations</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by location</additional>
+        <fields>
+            <field id="Address_1" type="VARCHAR" length="100"/>
+            <field id="Address_2" type="VARCHAR" length="100"/>
+            <field id="Address_3" type="VARCHAR" length="100"/>
+            <field id="Address_4" type="VARCHAR" length="100"/>
+            <field id="BC_End_Date" type="TIMESTAMP" length="20"/>
+            <field id="BC_Notes" type="VARCHAR" length="500"/>
+            <field id="BC_Reason" type="TIMESTAMP" length="50"/>
+            <field id="BC_Reason_CY" type="VARCHAR" length="50"/>
+            <field id="BC_Start_Date" type="TIMESTAMP" length="20"/>
+            <field id="BC_Status" type="VARCHAR" length="50"/>
+            <field id="BC_Update_Date" type="TIMESTAMP" length="23"/>
+            <field id="County" type="VARCHAR" length="50"/>
+            <field id="Location" type="VARCHAR" length="250"/>
+            <field id="Location_CY" type="VARCHAR" length="250"/>
+            <field id="Location_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Postcode" length="8"/>
+            <field id="Status" length="1"/>
+            <field id="Type" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="SC_CP_NAMES" dateImported="2017-02-01T12:21:29.323Z">
+        <columns>Name, Name_CY, CP_ID</columns>
+        <from>SC_Parking_Test.dbo.Car_Parks</from>
+        <where>Status='Active' and Area=&amp;&amp;Area and Type=&amp;&amp;Type</where>
+        <additional>order by Name</additional>
+        <fields>
+            <field id="Area" output="false"/>
+            <field id="CP_ID" type="INTEGER" input="false"/>
+            <field id="Name" input="false"/>
+            <field id="Name_CY" input="false"/>
+            <field id="Type" output="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

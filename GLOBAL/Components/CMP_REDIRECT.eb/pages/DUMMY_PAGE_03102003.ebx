@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="TXT1" pageInfoTextReference="TXT2" pageTrailerTextReference="TXT3" nextPageTextReference="TXT4" prevPageTextReference="TXT5">
+    <pageContents>
+        <component ctrl="COMPONENT1" default="L" inheritMsg="true" outputType="0" pdfFooterText="LocalTXT6" pdfHeaderText="LocalTXT7" uid="0">
+            <field beforeEvent="/Scripts/GL_SINGLE_REDIRECT" buttonText="LocalTXT9" ctrl="FIELDCONTROL1" field="SINGLE_URL" hidden="true" uid="1"/>
+        </component>
+    </pageContents>
+</page>

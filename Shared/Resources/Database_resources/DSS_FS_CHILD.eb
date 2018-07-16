@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_FS_CHILD">
+        <columns>*</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_Child</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="FS_Eligable" length="1"/>
+            <field id="Child_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="DOB" type="DATE" length="50"/>
+            <field id="Ethnicity" type="VARCHAR" length="100"/>
+            <field id="Pref_Lang" type="VARCHAR" length="50"/>
+            <field id="Surname" type="VARCHAR" length="150"/>
+            <field id="Gender" length="1"/>
+            <field id="Name" type="VARCHAR" length="150"/>
+            <field id="UI_NUM" type="INTEGER" length="10"/>
+            <field id="UI_YEAR" type="INTEGER" length="10"/>
+            <field id="UPRN" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="PID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

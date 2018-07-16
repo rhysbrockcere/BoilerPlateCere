@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="ICM Article Hierarchy" database="SQLW648S1" table="true" preparedStatement="false" id="IT_ICM_ARTICLE_HIERARCHY_TBL">
+        <columns>*</columns>
+        <from>ICM8.dbo.CCC_Article_Hierarchy</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ArticleHeading" type="VARCHAR" length="255"/>
+            <field id="ArticleID" type="INTEGER" length="10"/>
+            <field id="ArticleIntroText" type="VARCHAR" length="1000"/>
+            <field id="ArticleParentID" type="INTEGER" length="10"/>
+            <field id="ArticleText" type="CLOB" length="1073741823"/>
+            <field id="ParentArticleText" type="CLOB" length="1073741823"/>
+            <field id="ParentHeading" type="VARCHAR" length="255"/>
+            <field id="ParentIntroText" type="VARCHAR" length="1000"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

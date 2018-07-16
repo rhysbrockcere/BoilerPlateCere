@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_FS_COURSE_REGISTER">
+        <columns>*</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_Course_Register</from>
+        <fields>
+            <field id="Course_ID" type="INTEGER" length="10"/>
+            <field id="Date_Registered" type="TIMESTAMP" length="16"/>
+            <field id="Reg_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Date_Completed" type="TIMESTAMP" length="16"/>
+            <field id="Child_ID" type="INTEGER" length="10"/>
+            <field id="Completed" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

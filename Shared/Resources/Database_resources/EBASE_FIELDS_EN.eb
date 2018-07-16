@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="**Dynamic" table="true" preparedStatement="false" nativeSql="true" id="EBASE_FIELDS_EN">
+        <columns>DISTINCT pages.FORM_ID, pages.PAGE_NAME, field_on_pages.FIELD_ID, TEXT as FIELD_TEXT, LANGUAGE_ID, TEXT_ITEM_ID</columns>
+        <from>pages LEFT OUTER JOIN field_on_pages on pages.FORM_ID=field_on_pages.FORM_ID AND pages.PAGE_ID=field_on_pages.PAGE_ID LEFT OUTER JOIN form_fields on field_on_pages.FORM_ID=form_fields.FORM_ID AND field_on_pages.FIELD_ID=form_fields.FIELD_ID LEFT OUTER JOIN text_items on form_fields.DISPLAY_TEXT_TEXT_ID=text_items.TEXT_ITEM_ID</from>
+        <where>&amp;&amp;WHERE_CLAUSE AND LANGUAGE_ID='EN' AND TEXT != 'Languagecontrol' AND TEXT NOT LIKE '% id' AND TEXT NOT LIKE 'SYSTEM_FIELD: DO NOT REMOVE:%' AND TEXT != 'Language control'</where>
+        <additional>order by pages.FORM_ID, PAGE_NAME, FIELD_ID</additional>
+        <select>SELECT        TOP (100) PERCENT dbo.pages.FORM_ID, dbo.pages.PAGE_NAME, dbo.language_texts.LANGUAGE_ID, dbo.language_texts.TEXT_CONTENT as FIELD_TEXT, 
+                         dbo.language_texts.TEXT_ID, dbo.form_fields.DISPLAY_FORMAT, dbo.pages.PAGE_ID
+FROM            dbo.language_texts LEFT OUTER JOIN
+                         dbo.form_fields ON dbo.language_texts.TEXT_ID = dbo.form_fields.TEXTID_FIELDLABEL RIGHT OUTER JOIN
+                         dbo.pages ON dbo.language_texts.COMPONENT_ID = dbo.pages.FORM_ID
+
+ 
+where &amp;&amp;WHERE_CLAUSE AND LANGUAGE_ID='EN' AND TEXT_CONTENT NOT LIKE 'Languagecontrol' AND TEXT_CONTENT NOT LIKE '% id' AND TEXT_CONTENT NOT LIKE 'SYSTEM_FIELD: DO NOT REMOVE:%' AND TEXT_CONTENT NOT LIKE 'Language control' AND 
+                         (dbo.form_fields.DISPLAY_FORMAT = 1)
+
+ 
+order by pages.FORM_ID, PAGE_NAME</select>
+        <fields>
+            <field id="FIELD_TEXT" type="VARCHAR" length="255"/>
+            <field id="FORM_ID" type="VARCHAR" length="255"/>
+            <field id="LANGUAGE_ID" type="VARCHAR" length="255"/>
+            <field id="PAGE_NAME" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="TEXT_ID" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

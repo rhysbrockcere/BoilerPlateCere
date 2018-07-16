@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <resource type="SYSTEM_LOGON" id="cccLogin_Resource" dateCreated="2017-01-20T13:10:47.510Z">
+        <params>
+            <param name="BINDCTX">XB</param>
+            <param name="DOCDEFFault">{http://schemas.xmlsoap.org/soap/envelope/}Fault</param>
+            <param name="DOCDEFRequest_STRCT">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#xD;
+&lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Request}Request" nodeType="2"&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Request}PARAM1_VALUE" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Request}PARAM1_SOURCE" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Request}PARAM2_VALUE" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Request}PARAM2_SOURCE" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Request}PARAM3_VALUE" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Request}PARAM3_SOURCE" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+&lt;/field&gt;</param>
+            <param name="DOCDEFResponse_STRCT">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#xD;
+&lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Response}Response" nodeType="2"&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Response}USERID" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="0" name="{http://www.ebasetech.com/logon/Response}CUSTOMROLES" nodeType="2"&gt;&#xD;
+  &lt;field minOcc="0" name="{http://www.ebasetech.com/logon/Response}CUSTOMROLE" nodeType="2"&gt;&#xD;
+   &lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Response}ROLEID" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+  &lt;/field&gt;&#xD;
+ &lt;/field&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="0" name="{http://www.ebasetech.com/logon/Response}EBASEROLES" nodeType="2"&gt;&#xD;
+  &lt;field minOcc="0" name="{http://www.ebasetech.com/logon/Response}EBASEROLE" nodeType="2"&gt;&#xD;
+   &lt;field maxOcc="1" minOcc="1" name="{http://www.ebasetech.com/logon/Response}ROLEID" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+  &lt;/field&gt;&#xD;
+ &lt;/field&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="0" name="{http://www.ebasetech.com/logon/Response}CREDENTIALS" nodeType="2"&gt;&#xD;
+  &lt;field minOcc="0" name="{http://www.ebasetech.com/logon/Response}CREDENTIAL" nodeType="2"&gt;&#xD;
+   &lt;field maxOcc="1" minOcc="0" name="{http://www.ebasetech.com/logon/Response}ID" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+   &lt;field maxOcc="1" minOcc="0" name="{http://www.ebasetech.com/logon/Response}VALUE" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+  &lt;/field&gt;&#xD;
+ &lt;/field&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="0" name="{http://www.ebasetech.com/logon/Response}ERRORCODE" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+ &lt;field maxOcc="1" minOcc="0" name="{http://www.ebasetech.com/logon/Response}ERRORDESCRIPTION" nodeType="2" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;&#xD;
+&lt;/field&gt;</param>
+            <param name="DOCIDS">Request,Response,Fault</param>
+            <param name="NAMESPACES">soapenv=http://schemas.xmlsoap.org/soap/envelope/,req=http://www.ebasetech.com/logon/Request,res=http://www.ebasetech.com/logon/Response</param>
+            <param name="XSBsoapenv11 (http://schemas.xmlsoap.org/soap/envelope/)">&lt;?xml version='1.0' encoding='UTF-8' ?&gt;&#xD;
+&#xD;
+&lt;!-- Schema for the SOAP/1.1 envelope&#xD;
+&#xD;
+Portions © 2001 DevelopMentor.&#xD;
+© 2001 W3C (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.&#xD;
+&#xD;
+This document is governed by the W3C Software License [1] as described in the FAQ [2].&#xD;
+[1] http://www.w3.org/Consortium/Legal/copyright-software-19980720&#xD;
+[2] http://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD&#xD;
+By obtaining, using and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:&#xD;
+&#xD;
+Permission to use, copy, modify, and distribute this software and its documentation, with or without modification,  for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the software and documentation or portions thereof, including modifications, that you make:&#xD;
+&#xD;
+1.  The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.&#xD;
+&#xD;
+2.  Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, a short notice of the following form (hypertext is preferred, text is permitted) should be used within the body of any redistributed or derivative code: "Copyright © 2001 World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"&#xD;
+&#xD;
+3.  Notice of any changes or modifications to the W3C files, including the date changes were made. (We recommend you provide URIs to the location from which the code is derived.)&#xD;
+&#xD;
+Original W3C files; http://www.w3.org/2001/06/soap-envelope&#xD;
+Changes made:&#xD;
+     - reverted namespace to http://schemas.xmlsoap.org/soap/envelope/&#xD;
+     - reverted mustUnderstand to only allow 0 and 1 as lexical values&#xD;
+	 - made encodingStyle a global attribute 20020825&#xD;
+	 - removed default value from mustUnderstand attribute declaration&#xD;
+&#xD;
+THIS SOFTWARE AND DOCUMENTATION IS PROVIDED "AS IS," AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.&#xD;
+&#xD;
+COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.&#xD;
+&#xD;
+The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the software without specific, written prior permission. Title to copyright in this software and any associated documentation will at all times remain with copyright holders.&#xD;
+&#xD;
+--&gt;&#xD;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&#xD;
+           xmlns:tns="http://schemas.xmlsoap.org/soap/envelope/"&#xD;
+           targetNamespace="http://schemas.xmlsoap.org/soap/envelope/" &gt;&#xD;
+&#xD;
+&#xD;
+  &lt;!-- Envelope, header and body --&gt;&#xD;
+  &lt;xs:element name="Envelope" type="tns:Envelope" /&gt;&#xD;
+  &lt;xs:complexType name="Envelope" &gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+      &lt;xs:element ref="tns:Header" minOccurs="0" /&gt;&#xD;
+      &lt;xs:element ref="tns:Body" minOccurs="1" /&gt;&#xD;
+&#xD;
+      &lt;xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded" processContents="lax" /&gt;&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+    &lt;xs:anyAttribute namespace="##other" processContents="lax" /&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+  &lt;xs:element name="Header" type="tns:Header" /&gt;&#xD;
+  &lt;xs:complexType name="Header" &gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+      &lt;xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded" processContents="lax" /&gt;&#xD;
+&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+    &lt;xs:anyAttribute namespace="##other" processContents="lax" /&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+  &lt;xs:element name="Body" type="tns:Body" /&gt;&#xD;
+  &lt;xs:complexType name="Body" &gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+      &lt;xs:any namespace="##any" minOccurs="0" maxOccurs="unbounded" processContents="lax" /&gt;&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+    &lt;xs:anyAttribute namespace="##any" processContents="lax" &gt;&#xD;
+&#xD;
+	  &lt;xs:annotation&gt;&#xD;
+	    &lt;xs:documentation&gt;&#xD;
+		  Prose in the spec does not specify that attributes are allowed on the Body element&#xD;
+		&lt;/xs:documentation&gt;&#xD;
+	  &lt;/xs:annotation&gt;&#xD;
+	&lt;/xs:anyAttribute&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+&#xD;
+  &lt;!-- Global Attributes.  The following attributes are intended to be usable via qualified attribute names on any complex type referencing them.  --&gt;&#xD;
+  &lt;xs:attribute name="mustUnderstand" &gt;&#xD;
+     &lt;xs:simpleType&gt;&#xD;
+&#xD;
+     &lt;xs:restriction base='xs:boolean'&gt;&#xD;
+	   &lt;xs:pattern value='0|1' /&gt;&#xD;
+	 &lt;/xs:restriction&gt;&#xD;
+   &lt;/xs:simpleType&gt;&#xD;
+  &lt;/xs:attribute&gt;&#xD;
+  &lt;xs:attribute name="actor" type="xs:anyURI" /&gt;&#xD;
+&#xD;
+  &lt;xs:simpleType name="encodingStyle" &gt;&#xD;
+    &lt;xs:annotation&gt;&#xD;
+&#xD;
+	  &lt;xs:documentation&gt;&#xD;
+	    'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification&#xD;
+	  &lt;/xs:documentation&gt;&#xD;
+	&lt;/xs:annotation&gt;&#xD;
+    &lt;xs:list itemType="xs:anyURI" /&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+&#xD;
+  &lt;xs:attribute name="encodingStyle" type="tns:encodingStyle" /&gt;&#xD;
+  &lt;xs:attributeGroup name="encodingStyle" &gt;&#xD;
+    &lt;xs:attribute ref="tns:encodingStyle" /&gt;&#xD;
+&#xD;
+  &lt;/xs:attributeGroup&gt;&#xD;
+&#xD;
+  &lt;xs:element name="Fault" type="tns:Fault" /&gt;&#xD;
+  &lt;xs:complexType name="Fault" final="extension" &gt;&#xD;
+    &lt;xs:annotation&gt;&#xD;
+	  &lt;xs:documentation&gt;&#xD;
+	    Fault reporting structure&#xD;
+	  &lt;/xs:documentation&gt;&#xD;
+	&lt;/xs:annotation&gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+&#xD;
+      &lt;xs:element name="faultcode" type="xs:QName" /&gt;&#xD;
+      &lt;xs:element name="faultstring" type="xs:string" /&gt;&#xD;
+      &lt;xs:element name="faultactor" type="xs:anyURI" minOccurs="0" /&gt;&#xD;
+      &lt;xs:element name="detail" type="tns:detail" minOccurs="0" /&gt;&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+  &lt;xs:complexType name="detail"&gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+      &lt;xs:any namespace="##any" minOccurs="0" maxOccurs="unbounded" processContents="lax" /&gt;&#xD;
+&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+    &lt;xs:anyAttribute namespace="##any" processContents="lax" /&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+&lt;/xs:schema&gt;</param>
+            <param name="||DEBUG">false</param>
+            <param name="||FAULT_DOC">Fault</param>
+            <param name="||ID">INTEGRATION</param>
+            <param name="||OPERATION">getLogonDetails</param>
+            <param name="||REQUEST_DOCS">Request</param>
+            <param name="||RESPONSE_DOCS">Response</param>
+            <param name="||TARGET_NS">http://www.ebasetech.com</param>
+        </params>
+        <fields>
+            <field id="ERRORCODE" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Response" RO="false" XB_QUERY="/res:Response/res:ERRORCODE"/>
+            <field id="PARAM2_SOURCE" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Request" RO="false" XB_QUERY="/req:Request/req:PARAM2_SOURCE"/>
+            <field id="PARAM1_VALUE" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Request" RO="false" XB_QUERY="/req:Request/req:PARAM1_VALUE"/>
+            <field id="ERRORDESCRIPTION" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Response" RO="false" XB_QUERY="/res:Response/res:ERRORDESCRIPTION"/>
+            <field id="CREDENTIAL" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Response" RO="false" XB_QUERY="/res:Response/res:CREDENTIALS/res:CREDENTIAL">
+                <field id="ID" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="res:ID"/>
+                <field id="VALUE" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="res:VALUE"/>
+            </field>
+            <field id="CUSTOMROLE" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Response" RO="false" XB_QUERY="/res:Response/res:CUSTOMROLES/res:CUSTOMROLE">
+                <field id="ROLEID" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="res:ROLEID"/>
+            </field>
+            <field id="PARAM3_SOURCE" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Request" RO="false" XB_QUERY="/req:Request/req:PARAM3_SOURCE"/>
+            <field id="USERID" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Response" RO="false" XB_QUERY="/res:Response/res:USERID"/>
+            <field id="EBASEROLE" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Response" RO="false" XB_QUERY="/res:Response/res:EBASEROLES/res:EBASEROLE">
+                <field id="ROLEID.2" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="res:ROLEID"/>
+            </field>
+            <field id="PARAM3_VALUE" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Request" RO="false" XB_QUERY="/req:Request/req:PARAM3_VALUE"/>
+            <field id="PARAM1_SOURCE" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Request" RO="false" XB_QUERY="/req:Request/req:PARAM1_SOURCE"/>
+            <field id="PARAM2_VALUE" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="Request" RO="false" XB_QUERY="/req:Request/req:PARAM2_VALUE"/>
+        </fields>
+    </resource>
+</ebase>

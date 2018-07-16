@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="DSS_RC_DEPOSIT">
+        <columns>*</columns>
+        <from>DSS_Res_Care_TEST.dbo.Lookup_Deposit</from>
+        <fields>
+            <field id="Deposit_Description" type="VARCHAR" length="50"/>
+            <field id="Deposit_Financial_Code" type="VARCHAR" length="17"/>
+        </fields>
+    </dbResource>
+</ebase>

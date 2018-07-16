@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CORP_SS_MAX_STARTDATE">
+        <columns>top(1) PersonID, StartDAte, EndDate, [Type], ID</columns>
+        <from>Absence_Update.dbo.Absences</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by StartDate DESC, EndDate</additional>
+        <select>select top(1) PersonID, StartDAte, EndDate, [Type], ID 
+from Absence_Update.dbo.Absences 
+where &amp;&amp;WHERE_CLAUSE 
+order by StartDate DESC, EndDate</select>
+        <fields>
+            <field id="PersonID" type="INTEGER" length="10"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="EndDate" type="TIMESTAMP" length="16"/>
+            <field id="StartDate" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_BC_NOTIFICATION_REASON">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_BC_Notification_Reason</from>
+        <fields>
+            <field id="Reason_Building_Type" type="VARCHAR" length="50"/>
+            <field id="Reason_CY" type="VARCHAR" length="50"/>
+            <field id="Reason_EN" type="VARCHAR" length="50"/>
+            <field id="Reason_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

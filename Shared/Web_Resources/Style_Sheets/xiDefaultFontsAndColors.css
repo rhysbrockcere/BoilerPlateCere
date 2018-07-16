@@ -1,0 +1,312 @@
+/*
+ *  The main design consideration for this Presentation Template was that the fonts (mainly sizes) and colors used by all the controls on a page can be changed as easily as possible.
+ *  Changing the colors here will have a broad effect on the look and feel of a page. 
+ *  Thus a form can be designed using the set of colors here and then reasonably easily changed so that they fulfill your design vision.
+ */
+
+/* The default font and text color for each page */
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size:13px;
+	color: #212121;
+}
+
+/* COLORS */
+/* ------ */
+/*
+ *  There are two 'sets' of colors that can be defined: a primary and a reverse set:
+ * 		They both consist of the following: normal, selected and hover background colors and normal, selected and hover text colors.
+ * 		
+ * 		The primary and reverse sets are envisaged to be compatible color schemes which can be used together on the same page. 
+ * 		For example in some of the property sets for horizontal menus use the primary color set for the top-level menu items, but the reverse set for the drop downs.
+ * 			
+ *  There are additional colors for borders (which are across both primary and reverse sets), default tabsets and menus, hyperlinks, various different type of field input 
+ *  as well as error and warning messages 
+ */
+
+/* The primary set of colours */
+/* -------------------------- */
+/* The primary background color */
+.controlBackgroundColorNoHover,
+.controlBackgroundColor
+{
+	background-color: #057fd3;
+}
+
+/* The primary selected background color */
+.controlBackgroundSelectedColor
+{
+	background-color: #0470ba;
+}
+
+/* The primary hover background color */
+.controlBackgroundColor:hover
+{
+	background-color: #0470ba;
+}
+
+/* The primary text color */
+.controlTextNoHover,
+.controlText
+{
+	color: #FFFFFF;
+}
+
+/* The primary selected text color */
+.controlSelectedTextNoHover,
+.controlSelectedText
+{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/* The primary hover text color */
+.controlText:hover
+{
+	color: #FFFFFF;
+}
+
+/* The primary selected text hover color */
+.controlSelectedText:hover
+{
+	color: #FFFFFF;
+}
+
+/* Menu colors */
+.menuFirstLevelBackgroundColor
+{
+	background-color: #057fd3;
+}
+
+.menuFirstLevelBackgroundColor:hover
+{
+	background-color: #0470ba;
+}
+
+.menuSecondLevelBackgroundColor
+{
+	background-color: #b3c7df;
+}
+
+.menuSecondLevelBackgroundColor:hover
+{
+	background-color: #7c9ec8;
+}
+
+.menuSecondLevelSelectedBackgroundColor
+{
+	background-color: #7c9ec8;
+	font-weight: bold;
+}
+
+/* The reverse set of colors */
+/* ------------------------- */
+/* The reverse background color */
+.eb-TabSet-Reverse div.eb-TabSet-Header > ul > li,
+.controlReverseBackgroundColorNoHover,
+.controlReverseBackgroundColor
+{
+	background-color: #FFFFFF;
+}
+
+/* The reverse selected background color */
+.eb-TabSet-Reverse div.eb-TabSet-Header > ul > li.ebTabSelected,
+.controlReverseBackgroundSelectedColor
+{
+	background-color: #FFFFFF;
+}
+
+/* The reverse hover background color */
+.eb-TabSet-Reverse div.eb-TabSet-Header > ul > li:hover,
+.headingBackgroundColor,
+.controlReverseBackgroundColor:hover
+{
+	background-color: #EAEAEA !important;
+}
+
+/* The reverse text color */
+.eb-TabSet-Reverse div.eb-TabSet-Header > ul > li,
+.controlReverseTextNoHover,
+.controlReverseText
+{
+	color: #057fd3;
+}
+
+/* The reverse selected text color */
+.eb-TabSet-Reverse div.eb-TabSet-Header > ul > li.ebTabSelected,
+.controlReverseSelectedText
+{
+	color: #0470ba;
+	font-weight: bold;
+}
+
+/* The reverse hover text color */
+.eb-TabSet-Reverse div.eb-TabSet-Header > ul > li:hover,
+.controlReverseText:hover
+{
+	color: #0470ba;
+}
+
+/* Tabset Colors: default/curved */
+.eb-TabSet div.eb-TabSet-Header > ul > li
+{
+	background-color: #fff;
+	color: #0470ba;
+}
+
+.eb-TabSet div.eb-TabSet-Header > ul > li.ebTabSelected, .eb-TabSet div.eb-TabSet-Header > ul > li.ebTabSelected:hover
+{
+	background-color: #057fd3;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.eb-TabSet div.eb-TabSet-Header > ul > li:hover
+{
+	background-color: #eaeaea;
+	color: #0470ba;
+}
+
+/* Border Colors */
+/* ------------- */
+.borderColor, /* borderColor: All the controls use this when showing a border. */
+/* Menus: These are a complex controls with dropdowns and different number of levels. The borders around each menu item use the following styles */
+.eb-Horizontal-Menu ul[class*=SubLevel], 
+.eb-Horizontal-Menu div[class*=TopLevelItem],
+.eb-Vertical-Menu ul div[class*=TopLevelItem],
+.eb-Vertical-Menu ul div[class*=SecondLevelItem],
+.eb-Vertical-Menu ul div[class*=ThirdLevelItem],
+.eb-Vertical-Menu ul div[class*=FourthLevelItem],
+.eb-Vertical-Menu ul[class*=SubLevel], 
+.eb-Vertical-Menu ul div[class*=SubLevelItem],
+/* TabSet: This is a complex control and so have many rules to generate its borders. Their borders use the colors set here */
+.eb-TabSet div.eb-TabSet-Header > ul > li,
+.eb-TabSet div[class*=TabPanelSurround],
+.eb-TabSet div.eb-TabSet-Contents,
+.eb-TabSet-Reverse div.eb-TabSet-Header > ul > li,
+.eb-TabSet-Reverse div[class*=TabPanelSurround],
+.eb-TabSet-Reverse div.eb-TabSet-Contents
+{ 
+	border-color: #0470ba !important;
+}
+
+.tableColumnBorderColour /* The columns of a table, as well as between them can have a border - this controls its color */
+{
+	border-color: #EAEAEA;
+}
+
+/* Table row highlighting */
+/* ---------------------- */
+table .highlightedCell /* This is the color each row of a table turns when the mouse is moved over it - its highlights the entire row */
+{
+	background-color: #EAEAEA !important;
+}
+
+.button 
+{
+  /* Button styling:
+       class controlBackgroundColor - background colors
+       class borderColor - border color
+       class controlTextNoHover - button text color
+    The rules below give buttons a little shadow around the border of the button and its text.
+    It's a subtle effect and these colors should be selected to match the button background color (class controlBackgroundColor).   
+    See also: 
+       button class in style sheet xiDefaultStructure.css 
+  */
+  -webkit-box-shadow:inset 0 1px 0 0 #389fe7,0 3px 3px rgba(18,19,19,0.1);
+  -moz-box-shadow:inset 0 1px 0 0 #389fe7,0 3px 3px rgba(18,19,19,0.1);
+  -o-box-shadow:inset 0 1px 0 0 #389fe7,0 3px 3px rgba(18,19,19,0.1);
+  box-shadow:inset 0 1px 0 0 #389fe7,0 3px 3px rgba(18,19,19,0.1); 
+  text-shadow:0 1px 0 #0461a1;
+}
+
+/* Hyperlink Colors */
+/* ---------------- */
+a
+{
+	color: #057fd3;
+}
+a:hover 
+{
+	color: #0470ba;
+}
+a:visited 
+{
+	color: #03296A;
+}
+
+/* Error and Message Styles */
+.errorMessage 
+{
+	background-color: #ffdfe0;
+	font-size:0.96em;
+	color: #d8000c;
+}
+.warningMessage 
+{
+	background-color:#feefb3;
+	font-size:0.96em;
+	color: #9f6000;
+}
+
+/* Field input colors */
+/* ------------------ */
+input[type=text],
+input[type=password],
+textarea,
+select 
+{
+  border-color: #bababa;
+  color:#333333;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=radio]:focus,
+textarea:focus,
+input[type=checkbox]:focus,
+select:focus 
+{
+  border-color: #bababa;
+}
+
+.h1,h1 
+{
+  font-size:2em;
+}
+.controlTitle, /* controlTitle : Used by the titles of controls - things like the titles in Title, Group and Page Panels and tables */
+.h2,h2
+{
+  font-size:1.5em;
+}
+.h3,h3 
+{
+  font-size:1.17em;
+}
+.controlHeading, /* controlHeading : Used by table column headers in the property sets */
+.h4,h4 
+{
+  font-size:1.12em;
+}
+.h5,h5
+{
+  font-size:0.83em;
+}
+.h6,h6
+{
+  font-size:0.75em;
+}
+
+.controlInfo, /* controlInfo : Used in the various panels and in tables where there is an info section */
+.controlTrailer /* controlTrailer : Used in the various panels and in tables where there is an trailer section */
+{
+  font-size:0.8em;
+}
+
+.menuItemText, /* Defines the size of menu items */
+.buttonText, /* Defines the size of buttons */
+.standardText /* Used as the 'normal' size of text */
+{
+	font-size:1em;
+}

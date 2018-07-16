@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CERESQLS1_PLUS2" id="LS_CM_PLEVEL_LIST" dateImported="2014-09-11T15:26:29.687+01:00">
+        <columns>DISTINCT (PriceLevelID) AS PriceLevelID</columns>
+        <from>CER_Members.dbo.Members</from>
+        <additional>order by PriceLevelID</additional>
+        <fields>
+            <field id="PriceLevelID" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_ADDRESS_ADD" dateImported="2013-04-22T13:04:25.903+01:00">
+        <scriptText>hide NO_ADDR_GROUP;
+show ADDRESS_GROUP;
+
+unset ADDRESS_GROUP DISPLAYONLY;
+
+set CHECK = 'Y';
+set STAGE = '3';</scriptText>
+    </script>
+</ebase>

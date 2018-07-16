@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="GIS_NS_DIVIDE">
+        <columns>*</columns>
+        <from>Juneset_Test.dbo.NS_Divide</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="FULLSTREET" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Depot (N/S)" type="VARCHAR" length="255"/>
+            <field id="LOCALITY" type="VARCHAR" length="255"/>
+            <field id="NSGID" type="VARCHAR" length="255"/>
+            <field id="TOWN" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

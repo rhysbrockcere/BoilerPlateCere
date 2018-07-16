@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_HS_IR1_VIEW">
+        <columns>*</columns>
+        <from>CE_HS_TEST.dbo.CE_HS_IR1_VIEW</from>
+        <where>IRI_Ref=&amp;&amp;IRI_Ref</where>
+        <fields>
+            <field id="Action_Taken_After_Incident" type="VARCHAR" length="500"/>
+            <field id="Affected_CY" length="50"/>
+            <field id="Affected_EN" length="50"/>
+            <field id="Attention_Description_of_Treatment" type="VARCHAR" length="500"/>
+            <field id="Attention_Given" type="VARCHAR" length="3"/>
+            <field id="Cause_CY" length="60"/>
+            <field id="Cause_EN" length="60"/>
+            <field id="Description_of_Incident" type="VARCHAR" length="500"/>
+            <field id="Email_Address" type="VARCHAR" length="50"/>
+            <field id="Equip_CEMark" type="VARCHAR" length="1"/>
+            <field id="Equip_Decsription" type="VARCHAR" length="50"/>
+            <field id="Equip_Involved" type="VARCHAR" length="1"/>
+            <field id="Equip_Location_After_Incident" type="VARCHAR" length="50"/>
+            <field id="Equip_Manufacturer" type="VARCHAR" length="50"/>
+            <field id="Equip_Serial_Number" type="VARCHAR" length="50"/>
+            <field id="Equip_Supplier" type="VARCHAR" length="50"/>
+            <field id="Form_Date_IR1_Completed" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Form_Person_Completing_Designation" type="VARCHAR" length="50"/>
+            <field id="Form_Person_Completing_IR1" type="VARCHAR" length="50"/>
+            <field id="Form_Person_Reporting" type="VARCHAR" length="50"/>
+            <field id="Form_Person_Reporting_Designation" type="VARCHAR" length="50"/>
+            <field id="Gender_CY" length="15"/>
+            <field id="Gender_EN" length="15"/>
+            <field id="IRI_Ref" type="NUMERIC" length="19"/>
+            <field id="IllHealth_CY" length="30"/>
+            <field id="IllHealth_EN" length="30"/>
+            <field id="Incident_CY" length="50"/>
+            <field id="Incident_Date" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Incident_EN" length="50"/>
+            <field id="Incident_Employing_Department" type="VARCHAR" length="50"/>
+            <field id="Incident_Location" type="VARCHAR" length="100"/>
+            <field id="Incident_Time" type="VARCHAR" length="5"/>
+            <field id="Incident_Type" type="VARCHAR" length="3"/>
+            <field id="Individual_Affected" type="VARCHAR" length="3"/>
+            <field id="Individual_Class" type="VARCHAR" length="6"/>
+            <field id="Individual_DOB" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Individual_Forname" type="VARCHAR" length="50"/>
+            <field id="Individual_Full_Part_Time" type="VARCHAR" length="3"/>
+            <field id="Individual_Gender" type="VARCHAR" length="15"/>
+            <field id="Individual_Likely_Absence" type="VARCHAR" length="1"/>
+            <field id="Individual_Likely_Absence_Length" type="VARCHAR" length="50"/>
+            <field id="Individual_Staff_Department" type="VARCHAR" length="10"/>
+            <field id="Individual_Staff_Grade" type="VARCHAR" length="50"/>
+            <field id="Individual_Staff_Occupation" type="VARCHAR" length="50"/>
+            <field id="Individual_Staff_Other" type="VARCHAR" length="50"/>
+            <field id="Individual_Surname" type="VARCHAR" length="50"/>
+            <field id="Individual_Type" type="VARCHAR" length="5"/>
+            <field id="Injury_CY" length="20"/>
+            <field id="Injury_EN" length="20"/>
+            <field id="Part_CY" length="15"/>
+            <field id="Part_EN" length="10"/>
+            <field id="Personal_Cause_of_Injury" type="VARCHAR" length="3"/>
+            <field id="Personal_Nature_of_Ill_Health" type="VARCHAR" length="3"/>
+            <field id="Personal_Nature_of_Injury" type="VARCHAR" length="3"/>
+            <field id="Personal_Part_Affected" type="VARCHAR" length="3"/>
+            <field id="Personal_Recurring_Problem" type="VARCHAR" length="1"/>
+            <field id="Personal_Side_Affected" type="VARCHAR" length="3"/>
+            <field id="Personal_Suffering" type="VARCHAR" length="1"/>
+            <field id="Side_CY" length="10"/>
+            <field id="Side_EN" length="15"/>
+            <field id="Status" type="VARCHAR" length="1"/>
+            <field id="Witnesses" type="VARCHAR" length="500"/>
+        </fields>
+    </dbResource>
+</ebase>

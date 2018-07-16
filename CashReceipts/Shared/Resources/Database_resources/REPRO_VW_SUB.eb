@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="REPRO_VW_SUB">
+        <columns>*</columns>
+        <from>ICT_Reprographic_Test.dbo.VW_Sub</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Artwork_Passed_To_Print" type="TIMESTAMP" length="16"/>
+            <field id="Camera_Ready" type="BIT" length="1"/>
+            <field id="Job_Printed" type="TIMESTAMP" length="16"/>
+            <field id="Paper_Colour" type="VARCHAR" length="50"/>
+            <field id="Paper_Quality" type="VARCHAR" length="50"/>
+            <field id="Paper_Size" type="VARCHAR" length="50"/>
+            <field id="Quantity" type="INTEGER" length="10"/>
+            <field id="Quote_Outcome" type="VARCHAR" length="50"/>
+            <field id="Ready_To_Print" type="TIMESTAMP" length="16"/>
+            <field id="Sheet_Cost" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Colour" type="VARCHAR" length="50"/>
+            <field id="Cost" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="DTP_Design" type="BIT" length="1"/>
+            <field id="Design_Time" type="INTEGER" length="10"/>
+            <field id="Finish" type="VARCHAR" length="250"/>
+            <field id="Finish_ID" type="INTEGER" length="10"/>
+            <field id="Finishing_Time" type="INTEGER" length="10"/>
+            <field id="JOB_ID" type="INTEGER" length="10"/>
+            <field id="Size" type="VARCHAR" length="50"/>
+            <field id="Stock_ID" type="INTEGER" length="10"/>
+            <field id="Stock_Type" type="VARCHAR" length="50"/>
+            <field id="Sub_Design" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Sub_Finish" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Sub_Job_ID" type="INTEGER" length="10"/>
+            <field id="Sub_Job_Status" type="VARCHAR" length="50"/>
+            <field id="Type" type="VARCHAR" length="250"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="IT_REQUEST">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_REQUEST</from>
+        <where>REQUEST_REF=&amp;&amp;REQUEST_REF</where>
+        <fields>
+            <field id="DATE_REVIEW" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="USER_NAME" type="VARCHAR" length="30"/>
+            <field id="FORM_DESCRIPTION" type="VARCHAR" length="500"/>
+            <field id="FORM_PURPOSE" type="VARCHAR" length="20"/>
+            <field id="MANAGER_DEPARTMENT" type="VARCHAR" length="30"/>
+            <field id="MANAGER_EMAIL" type="VARCHAR" length="30"/>
+            <field id="MANAGER_EXT" type="VARCHAR" length="15"/>
+            <field id="MANAGER_NAME" type="VARCHAR" length="30"/>
+            <field id="PRIORITY" type="VARCHAR" length="10"/>
+            <field id="REQUEST_REF" type="VARCHAR" length="10" required="true" key="true"/>
+            <field id="STATUS" type="VARCHAR" length="10"/>
+            <field id="USER_DEPARTMENT" type="VARCHAR" length="30"/>
+            <field id="USER_EMAIL" type="VARCHAR" length="30"/>
+            <field id="USER_EXT" type="VARCHAR" length="15"/>
+            <field id="ADDITIONAL_COMMENT" type="VARCHAR" length="250"/>
+            <field id="ADMIN_COMMENT" type="VARCHAR" length="250"/>
+            <field id="ADMIN_NAME" type="VARCHAR" length="50"/>
+            <field id="DATE_COMPLETED" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="DATE_CONFIRMED" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+        </fields>
+    </dbResource>
+</ebase>

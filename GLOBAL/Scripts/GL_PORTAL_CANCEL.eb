@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_PORTAL" preferredComponentProject="GLOBAL" id="GL_PORTAL_CANCEL" dateCreated="2013-03-04T13:27:12.217Z" dateImported="2016-10-14T14:17:24.053+01:00">
+        <scriptText>show LOGIN_GROUP;
+hide REGISTER_GROUP;
+hide PASSWORD_GROUP;
+hide PROBLEM_GROUP;</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource description="email to TEST APACHE VELOCITY template" accountName="localhost" from="forms@ceredigion.gov.uk" to="&amp;&amp;EMAIL_TO" subject="&amp;&amp;EMAIL_SUBJECT" html="true" id="GIS_REPORT_LIST">
+        <message>&amp;&amp;EMAIL_BODY</message>
+        <fields>
+            <field id="EMAIL_BODY"/>
+            <field id="EMAIL_SUBJECT"/>
+            <field id="EMAIL_TO"/>
+        </fields>
+    </emailResource>
+</ebase>

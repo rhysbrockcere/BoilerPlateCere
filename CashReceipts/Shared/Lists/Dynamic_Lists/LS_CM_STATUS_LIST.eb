@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CERESQLS1_PLUS2" id="LS_CM_STATUS_LIST" dateImported="2014-09-11T15:26:29.700+01:00">
+        <columns>DISTINCT (StatusID) as StatusID</columns>
+        <from>CER_Members.dbo.Members</from>
+        <additional>order by StatusID</additional>
+        <fields>
+            <field id="StatusID" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="TRAINING_COURSE">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.Training_Course</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Test_Length" type="INTEGER" length="10"/>
+            <field id="Title" type="VARCHAR" length="500"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Pass_Mark" type="INTEGER" length="10"/>
+            <field id="Q10_Title" type="VARCHAR" length="50"/>
+            <field id="Q11_Title" type="VARCHAR" length="50"/>
+            <field id="Q12_Title" type="VARCHAR" length="50"/>
+            <field id="Q13_Title" type="VARCHAR" length="50"/>
+            <field id="Q14_Title" type="VARCHAR" length="50"/>
+            <field id="Q15_Title" type="VARCHAR" length="50"/>
+            <field id="Q16_Title" type="VARCHAR" length="50"/>
+            <field id="Q17_Title" type="VARCHAR" length="50"/>
+            <field id="Q18_Title" type="VARCHAR" length="50"/>
+            <field id="Q19_Title" type="VARCHAR" length="50"/>
+            <field id="Q1_Title" type="VARCHAR" length="50"/>
+            <field id="Q20_Title" type="VARCHAR" length="50"/>
+            <field id="Q2_Title" type="VARCHAR" length="50"/>
+            <field id="Q3_Title" type="VARCHAR" length="50"/>
+            <field id="Q4_Title" type="VARCHAR" length="50"/>
+            <field id="Q5_Title" type="VARCHAR" length="50"/>
+            <field id="Q6_Title" type="VARCHAR" length="50"/>
+            <field id="Q7_Title" type="VARCHAR" length="50"/>
+            <field id="Q8_Title" type="VARCHAR" length="50"/>
+            <field id="Q9_Title" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

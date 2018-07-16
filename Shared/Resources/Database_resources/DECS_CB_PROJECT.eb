@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DECS Community Benefits - Project details" database="SQLE648S1" preparedStatement="false" id="DECS_CB_PROJECT">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DECS_CB_Project</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Project_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Project_Status" type="VARCHAR" length="50"/>
+            <field id="Project_Title" type="VARCHAR" length="200"/>
+            <field id="Project_Title_CY" type="VARCHAR" length="200"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="end_date" type="TIMESTAMP" length="16"/>
+            <field id="start_date" type="TIMESTAMP" length="16"/>
+            <field id="email_address" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="CORP_SS_AUDIT_ABSENCES">
+        <columns>*</columns>
+        <from>Absence_Update.dbo.AUDIT_Absences</from>
+        <fields>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="PersonID" type="INTEGER" length="10"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="CalcType" type="VARCHAR" length="50"/>
+            <field id="StartDate" type="TIMESTAMP" length="16"/>
+            <field id="EndDate" type="TIMESTAMP" length="16"/>
+            <field id="AmPm" type="VARCHAR" length="50"/>
+            <field id="Certificate" type="BIT" length="1"/>
+            <field id="RequestReason" type="VARCHAR" length="500"/>
+            <field id="NoOfDays" type="DECIMAL" length="4" fractionalDigits="1"/>
+            <field id="PayrollNo" type="VARCHAR" length="15"/>
+            <field id="DateAmended" type="TIMESTAMP" length="16"/>
+            <field id="DateCreated" type="TIMESTAMP" length="16"/>
+            <field id="ExportDate" type="TIMESTAMP" length="16"/>
+            <field id="RejectReason" type="VARCHAR" length="500"/>
+            <field id="RemoveReason" type="VARCHAR" length="500"/>
+            <field id="Status" type="VARCHAR" length="3"/>
+            <field id="SentTo" type="VARCHAR" length="150"/>
+            <field id="AUD_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="AUD_Date" type="TIMESTAMP" length="16"/>
+            <field id="AUD_Username" type="VARCHAR" length="50"/>
+            <field id="AUD_Action" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

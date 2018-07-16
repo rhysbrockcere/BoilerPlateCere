@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DHPW_TEST" id="DHPW_DEFECTS">
+        <columns>*</columns>
+        <from>Maylink.dbo.DEFECTS</from>
+        <fields>
+            <field id="MASTER_ID" type="VARCHAR" length="6"/>
+            <field id="DEFECTDESC" type="VARCHAR" length="50"/>
+            <field id="LOCKUSERID" type="VARCHAR" length="11"/>
+            <field id="DESCCODE" type="VARCHAR" length="5"/>
+            <field id="DESCRIPTID" type="VARCHAR" length="6"/>
+            <field id="INSPWEATH" type="VARCHAR" length="3"/>
+            <field id="CONTNAME" type="VARCHAR" length="30"/>
+            <field id="DESCPRIOID" type="VARCHAR" length="6"/>
+            <field id="SEVDESCID" type="VARCHAR" length="6"/>
+            <field id="CHANGED_TS" type="VARCHAR" length="6"/>
+            <field id="LEVEL1" type="VARCHAR" length="6"/>
+            <field id="LEVEL2" type="VARCHAR" length="6"/>
+            <field id="LEVEL3" type="VARCHAR" length="6"/>
+            <field id="INSPDATE" type="VARCHAR" length="10"/>
+            <field id="REMEDDATE" type="VARCHAR" length="10"/>
+            <field id="REPORTED" type="VARCHAR" length="10"/>
+            <field id="AMENDDATE" type="VARCHAR" length="10"/>
+            <field id="CREATEDATE" type="VARCHAR" length="10"/>
+            <field id="PROCESSEDD" type="VARCHAR" length="10"/>
+            <field id="CONTDATE" type="VARCHAR" length="10"/>
+            <field id="DEPTH" type="DOUBLE" length="53"/>
+            <field id="INSPTIME" type="DOUBLE" length="53"/>
+            <field id="LENGTH" type="DOUBLE" length="53"/>
+            <field id="QTY" type="DOUBLE" length="53"/>
+            <field id="REMETIME" type="DOUBLE" length="53"/>
+            <field id="WIDTH" type="DOUBLE" length="53"/>
+            <field id="WITHTIME" type="DOUBLE" length="53"/>
+            <field id="REPORTEDT" type="DOUBLE" length="53"/>
+            <field id="WITHDRAWN" type="BIT" length="1"/>
+            <field id="PROCESSED" type="BIT" length="1"/>
+            <field id="SELECTED" type="BIT" length="1"/>
+            <field id="ST_ADDED" type="BIT" length="1"/>
+            <field id="GONETOMAP" type="BIT" length="1"/>
+            <field id="CLEARED" type="BIT" length="1"/>
+            <field id="HOLD" type="BIT" length="1"/>
+            <field id="CTEXTAVAIL" type="BIT" length="1"/>
+            <field id="NRSWA" type="BIT" length="1"/>
+            <field id="PROCESSEDB" type="VARCHAR" length="5"/>
+            <field id="LOCATION1" type="VARCHAR" length="30"/>
+            <field id="LOCATION2" type="VARCHAR" length="30"/>
+            <field id="LOCATION3" type="VARCHAR" length="30"/>
+            <field id="LOCATION4" type="VARCHAR" length="30"/>
+            <field id="SUBITEM" type="VARCHAR" length="6"/>
+            <field id="AMENDTIME" type="DOUBLE" length="53"/>
+            <field id="CREATETIME" type="DOUBLE" length="53"/>
+            <field id="EASTING" type="DOUBLE" length="53"/>
+            <field id="NORTHING" type="DOUBLE" length="53"/>
+            <field id="PROCESSEDT" type="DOUBLE" length="53"/>
+            <field id="DEPTH3" type="DOUBLE" length="53"/>
+            <field id="DEFSTATUS" type="DOUBLE" length="53"/>
+            <field id="REINSPTIME" type="DOUBLE" length="53"/>
+            <field id="CONTTIME" type="DOUBLE" length="53"/>
+            <field id="DEFECTCODE" type="VARCHAR" length="20"/>
+            <field id="DEFECTID" type="VARCHAR" length="6"/>
+            <field id="INSPCODE" type="VARCHAR" length="6"/>
+            <field id="INSPECTOR" type="VARCHAR" length="5"/>
+            <field id="INSPMETHOD" type="VARCHAR" length="1"/>
+            <field id="INSPSCHID" type="VARCHAR" length="8"/>
+            <field id="JOBNO" type="VARCHAR" length="8"/>
+            <field id="STINSPID" type="VARCHAR" length="6"/>
+            <field id="STREETID" type="VARCHAR" length="6"/>
+            <field id="INSPSCHNO" type="VARCHAR" length="6"/>
+            <field id="SERVICE" type="VARCHAR" length="3"/>
+            <field id="HOUSENO" type="VARCHAR" length="10"/>
+            <field id="HOUSENAME" type="VARCHAR" length="30"/>
+            <field id="PRIORITY" type="VARCHAR" length="2"/>
+            <field id="POSITION" type="VARCHAR" length="2"/>
+            <field id="AMENDBY" type="VARCHAR" length="5"/>
+            <field id="CREATEDBY" type="VARCHAR" length="5"/>
+            <field id="ORIGIN" type="VARCHAR" length="10"/>
+            <field id="RECTYPE" type="VARCHAR" length="2"/>
+        </fields>
+    </dbResource>
+</ebase>

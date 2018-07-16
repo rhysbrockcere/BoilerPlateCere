@@ -1,0 +1,2171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="Javascript" preferredComponentPath="/Components/CMP_ADDRESS_REF" id="CRM_INTERGRATION" dateCreated="2013-11-14T11:02:57.703Z" dateImported="2016-10-10T14:23:08.047+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+
+/*************************************************************************************************************************************
+ * 
+ * These functions provide a method of creating a CRM enquiry record by mapping fields using modifiers. 
+ * 
+ * The function checks for exisiting customer using their forename, surname and email address. If all three match then the enquiry
+ * is created using the customer id found. If no match is found, a new customer is created and that customer ID used for the enquiry.
+ * 
+ * The function, if successfull will return the Enquiry ID
+ * 
+ * To create an enquiry call the main function insertCRMEnquiry
+ * 
+ * To create or get just the customer ID call the insertCRMCustomer function
+ * 		
+ * Modifier Mapping Details:-
+ * 		
+ * Table				Field										Modifier Name
+ * 									
+ * Enquiry 			Subject							-		crmSubject
+ * Enquiry 			Details							-		crmDetails
+ * 
+ * Customer			Title								-		crmTitle
+ * Customer			OtherTitle					-		crmOtherTitle
+ * Customer			Forename						-		crmForename
+ * Customer			Surname							-		crmSurname
+ * Customer			Telephone						-		crmTelephone					(Optional)
+ * Customer			Mobile							-		crmMobile							(Optional)
+ * Customer			Email								-		crmEmail
+ * Customer			Revs_Account_Ref		-		crmAccountRef					(Optional)
+ * Customer			NI_No								-		crmNINo								(Optional)
+ * Customer			DOB									-		crmDOB								(Optional)
+ * 
+ * Address			Address1						-		crmAddress1
+ * Address			Address2						-		crmAddress2						(Optional)
+ * Address			Address3						-		crmAddress3						(Optional)
+ * Address			Town								-		crmTown
+ * Address			County							-		crmCounty
+ * Address			PostCode						-		crmPostCode
+ * Address			UPRN								-		crmUPRN								(Optional)			(Residential Only)
+ * Address			PropertyRef					-		crmPropertyRef				(Optional)			(Business Only)
+ * Address			BusinessRef					-		crmBusinessRef				(Optional)			(Business Only)
+ * Address			BusinessName				-		crmBusinessName				(Optional)			(Business Only)
+ * Address			Start Date					-		crmStartDate					(optional)			
+ * 
+ * Created By: 	George Eadon
+ * Date:				15/11/2013
+ * 
+ * Change Log
+ * 
+ * 19/11/2013		GE		Added ability to add to customer reference table (ctax ref)
+ * 20/11/2013		GE		Added ability to add customer address
+ * 21/11/2013		GE		Removed encryption
+ * 22/11/2013		GE		Added form id to enquiry insert
+ * 05/12/2013		GE		Now updates customers current_address_id when new customer is created
+ * 07/01/2014		GE		Now updates customers tel, mobile and account ref if customer is found
+ * 07/01/2014		GE		Now inserts blank into db instead of 'null' if the field is null
+ * 07/01/2014		GE		New log facility added to insert into crm_log table. 3 Levels 1=Error, 2=Warning, 3=Information
+ * 16/01/2014		GE		Now inserts audit record when updating customer information
+ * 20/01/2014		GE		Added the OtherTitle field for when the user select 'other' as their title.
+ * 05/02/2014		GE		Added the ability to change database connection globally via the strCon string.
+ * 03/06/2014		GE		Added Start_Date to the address update / insert function
+ * 03/06/2014		GE		Subject now defaults to the Form ID in the case of no subject mapped.
+ * 09/06/2014		GE		Added Address 3 column to align with address component fields.
+ * 27/06/2014		GE		Removed start date from the address (not sure how to convert the eforms date value to a smalldatetime)
+ * 
+ * 28/08/2015		GE		Added function to check a users permissions to a specified category
+ * 12/07/2016		GE		Now automatically assigns enquiry to responisble officer
+ * 
+ * ******* Wish List *********
+ * 
+ * Flag errors of type 1 (error logs) - possibly email?
+ * 
+ *************************************************************************************************************************************/
+
+var strCon = '';
+
+log("*** UFS Server Name = " + system.variables.$UFS_SERVER_NAME.value);
+
+var svr = system.variables.$UFS_SERVER_NAME.value;
+
+if (svr == 'eformsdev4.ceredigion.gov.uk' || svr == 'eformsdev4' ) {
+	var strCon = "SQLE648S1";
+}
+else {
+	var strCon = "CERESQLN1";
+}
+
+/*********************************************************************************************************************************/
+
+/**
+ * Creates an enquiry object with default values set
+ * @return {Object} 
+ * @desc 	The object contains the following properties
+ * 				Object.Subject&lt;br/&gt;
+ * 				Object.Details&lt;br/&gt;
+ * 				Object.CategoryID&lt;br/&gt;
+ * 				Object.ID&lt;br&gt;
+ * 				Object.FormID&lt;br&gt;
+*/
+
+function crmInitialiseEnquiry() {
+	var enq = {};
+	enq.Subject = system.variables.$FORMID.value;
+	enq.Details = '';
+	enq.CategoryID = 0;
+	enq.ID = 0;
+	enq.FormID = 0;
+	
+	return enq
+}
+
+/*********************************************************************************************************************************/
+
+/**
+ * Creates a customer object with default values set
+ * @return {Object}
+ * @desc 	The object contains the following properties
+ * 				Object.Forename&lt;br/&gt;
+ * 				Object.Surname&lt;br/&gt;
+ * 				Object.Email&lt;br/&gt;
+ * 				Object.Title&lt;br&gt;
+ * 				Object.otherTitle&lt;br/&gt;
+ * 				Object.Telephone&lt;br/&gt;
+ * 				Object.Mobile&lt;br/&gt;
+ * 				Object.AccountRef&lt;br&gt;
+ * 				Object.CustID&lt;br&gt;
+ * 				Object.Addr1&lt;br/&gt;
+ * 				Object.Addr2&lt;br/&gt;
+ * 				Object.Addr3&lt;br/&gt;
+ * 				Object.Town&lt;br/&gt;
+ * 				Object.County&lt;br/&gt;
+ * 				Object.PostCode&lt;br/&gt;
+ * 				Object.UPRN&lt;br/&gt;
+ * 				Object.PropertyRef&lt;br/&gt;
+ * 				Object.BusinessRef&lt;br/&gt;
+ * 				Object.BusinessName&lt;br/&gt;
+ * 				Object.StartDate
+*/
+
+function crmInitialiseCustomer() {
+	var cust = {};
+	cust.Forename = '';
+	cust.Surname = '';
+	cust.Email = '';
+	cust.Title = '';
+	cust.otherTitle = '';
+	cust.Telephone = '';
+	cust.Mobile = '';
+	cust.AccountRef = '';
+
+	cust.CustID = 0;
+	cust.Addr1 = '';
+	cust.Addr2 = '';
+	cust.Addr3 = '';
+	cust.Town = '';
+	cust.County = '';
+	cust.PostCode = '';
+	cust.UPRN = '';
+	cust.PropertyRef = '';
+	cust.BusinessRef = '';
+	cust.BusinessName = '';
+	cust.StartDate = '01/01/1900';
+	
+	return cust
+}
+
+/**********************************************************************************************
+ * Function to create an entry in the CRM Log
+ * @param FormID as Integer - Current form ID
+ * @param Action as String - Insert, Update, Delete
+ * @param Details as String - Description (Max 100 chars)
+ * @param UserID as String - User ID 
+ * @param Type as Integer - 1=Error, 2=Warning, 3=Information
+ */
+
+function crmLog (FormID, Action, Details, UserID, Type) {
+
+	//if(Action != 'DEBUG') {
+		var con = null;
+		var stmt = null;	
+		var rs = null;
+		/*log(system.variables.$SESSION_ID.value);
+		*log(system.variables.$FORMID.value);
+		*log(system.variables.$CURRENT_PAGE.value);
+		*log(system.variables.$BROWSER_IP_ADDRESS.value);
+		*log(system.variables.$BROWSER_TYPE.value);
+		*/
+		
+		try {
+
+			con = system.getDatabaseConnection(strCon);
+			
+	  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Log (Time_Stamp, Form_ID, Action, Details, User_ID, Session_ID, Browser_IP, Browser_Type, Form, Page, Type) values "
+	  	+ "(getdate(),\'" + FormID + "\',\'" + Action + "\',\'" + Details + "\',\'" + UserID + "\',\'" + system.variables.$SESSION_ID.value + "\',"
+	  	+ "\'" + system.variables.$BROWSER_IP_ADDRESS.value + "\',\'" + system.variables.$BROWSER_TYPE.value + "\',\'" + system.variables.$FORMID.value + "\',\'" + system.variables.$CURRENT_PAGE.value + "\',\'" + Type + "\')");
+	  
+	  	rs = stmt.execute();
+	
+		}
+		catch (e) {
+			log("__**ERROR** - crmLog - " + e);	
+		}
+		finally	{
+			if(rs) rs.close();
+		  if(stmt) stmt.close();
+		  if(con) con.close();
+		}
+	//}
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Main function for creating a CRM Enquiry record
+ * @param {Object} Enquiry Details 
+ * @param {Object} Customer Details 
+ * @return EnquiryID as integer
+
+ */
+
+function crmCreateEnquiryNoMods (cust, enq) {
+ /* CategoryID parameter is no longer needed!! */
+
+	enq.Subject = system.variables.$FORMID.value;
+	enq.CategoryID = crmGetFormCategory(enq.formID);
+	enq.ID = getSequenceID('Enquiry_ID');
+
+ 
+	if (enq.CategoryID == null || enq.CategoryID == 'undefined' || enq.CategoryID == 0) {
+		enq.CategoryID = 46; //Main reception
+	}
+
+	var custID = 0;
+	var addressID = 0;
+
+	//Check to see if customer exists and create if not!
+	custID = crmInsertCustomerNoMods(cust);
+	cust.CustID = custID;
+	//Check to see if customers address already exists and create if not!
+	addressID = crmInsertAddressNoMods(cust);
+	
+	
+	if (custID &gt;= 0 ) {
+
+		//Get responsible officer for category
+		var respOfficer = crmGetResponsibleOfficer(enq.CategoryID);
+	
+		try {
+			//Insert Enquiry Record
+			var con = system.getDatabaseConnection(strCon);
+			var stmt;
+		
+	  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Enquiries (Enquiry_ID,Subject,Details,Customer_ID,Status,Source,form_id,srvc_Category_ID,Assigned_To,date_created,created_by) values "
+	  	+ "(\'" + enq.ID + "\','" + stripNull(enq.Subject) + "\',\'" + stripNull(enq.Details) + "\',\'" + custID + "\','W',\'Web\',\'" + stripNull(enq.formID) + "\',\'" + enq.CategoryID + "\',"
+	  	+ "\'" + respOfficer + "\',GETDATE(),'WEB')");
+	  
+	  	stmt.execute();
+		}
+		catch (e) {
+			log("__**ERROR** - crmCreateEnquiry - " + e);
+			crmLog(enq.formID, "", "Error creating enquiry - " + e, "Web", 1)
+		}
+		finally
+		{
+		  if(stmt) stmt.close();
+		  if(con) con.close();	
+		}
+		
+		//enq.ID = crmLastEnquiryID();
+		
+		crmLog(enq.formID, "Insert", "Enquiry Created - " + enq.ID, "Web", 3)
+		enq.Ref = crmGenerateEnquiryRef(enq.ID, 'W')
+	}
+	else {
+		enq.ID = 0;
+		crmLog(enq.formID, "Insert", "Error creating enquiry - No customer ID", "Web", 1)
+	}
+
+	return enq.ID
+ 
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Main function for creating a CRM Enquiry record
+  
+ * @param CategoryID as Integer
+ 
+ * @param FormID as Integer
+
+ * @param Anonymous as Boolean - Allow creation of enquiry with no customer info?
+
+ * @return EnquiryID as integer
+
+ */
+
+function crmCreateEnquiry (FormID, CategoryID, Anonymous) {
+ /* CategoryID parameter is no longer needed!! */
+ 
+	var enq = {};
+	enq.Subject = system.variables.$FORMID.value;
+	enq.Details = '';
+	enq.CategoryID = crmGetFormCategory(FormID);
+	enq.ID = getSequenceID('Enquiry_ID');
+ 
+	for each (var m in form.currentPage.getControlsByModifier('crmSubject')) {				
+			enq.Subject = m.field.getValue();
+	}
+	
+	for each (var m in form.currentPage.getControlsByModifier('crmDetails')) {				
+			enq.Details = m.field.getValue();
+	}
+
+	if (enq.Category == null || enq.Category == 'undefined' || enq.Category == 0) {
+		enq.Category = 46; //Main reception
+	}
+
+	var custID = 0;
+	var addressID = 0;
+
+	//Check to see if contact details have been entered
+	//log("__ CRM Anonymous: " + Anonymous);
+	
+	if (Anonymous == true) {
+		var cust = new Object();
+		cust.Forename = '';
+		cust.Surname = '';
+		cust.Email = '';
+	 
+		for each (var m in form.currentPage.getControlsByModifier('crmForename')) {				
+				cust.Forename = m.field.getValue();
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmSurname')) {				
+				cust.Surname = m.field.getValue();
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmEmail')) {				
+				cust.Email = m.field.getValue();
+		}
+
+		log("__ Forename: " + cust.Forename + " / Surname: " + cust.Surname + " / Email: " + cust.Email);
+		 
+		// If basic informaiton has been entered then create customer record.
+		if (cust.Forename != null &amp;&amp; cust.Surname != null) {
+			//Check to see if customer exists and create if not!
+			custID = crmInsertCustomer("WEB");
+		
+			//Check to see if customers address already exists and create if not!
+			addressID = crmInsertAddress("WEB",custID);
+		}
+	}
+	else {
+		//Check to see if customer exists and create if not!
+		custID = crmInsertCustomer("WEB");
+	
+		//Check to see if customers address already exists and create if not!
+		addressID = crmInsertAddress("WEB",custID);
+	}
+
+	if (custID &gt;= 0 ) {
+
+		//Get responsible officer for category
+		var respOfficer = crmGetResponsibleOfficer(enq.CategoryID);
+
+		//Insert Enquiry Record
+
+	
+		try {
+
+			var con = system.getDatabaseConnection(strCon);
+			var stmt;
+		
+	  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Enquiries (Enquiry_ID,Subject,Details,Customer_ID,Status,Source,form_id,srvc_Category_ID,Assigned_To,date_created,created_by) values "
+	  	+ "(\'" + enq.ID + "\','" + stripNull(enq.Subject) + "\',\'" + stripNull(enq.Details) + "\',\'" + custID + "\','W',\'Web\',\'" + stripNull(FormID) + "\',\'" + enq.CategoryID + "\',"
+	  	+ "\'" + respOfficer + "\',GETDATE(),'WEB')");
+	  
+	  	stmt.execute();
+		}
+		catch (e) {
+			log("__**ERROR** - crmCreateEnquiry - " + e);
+			crmLog(FormID, "", "Error creating enquiry - " + e, "Web", 1)
+		}
+		finally
+		{
+		  if(stmt) stmt.close();
+		  if(con) con.close();	
+		}
+		
+		//enq.ID = crmLastEnquiryID();
+		
+		crmLog(FormID, "Insert", "Enquiry Created - " + enq.ID, "Web", 3)
+		enq.Ref = crmGenerateEnquiryRef(enq.ID, 'W')
+	}
+	else {
+		enq.ID = 0;
+		crmLog(FormID, "Insert", "Error creating enquiry - No customer ID", "Web", 1)
+	}
+
+	return enq.ID
+ 
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Attach a document to an enquiry
+  
+ * @param EnquiryID as Integer
+ 
+ * @param FileName as String
+  
+ * @param FilePath as String
+
+ */
+
+function crmAttachFile (EnquiryID, FileName, FilePath) {
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+
+  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Enquiry_Attachments (Enquiry_ID,FileName,FilePath,Created_By,Date_Created) values "
+  	+ "(\'" + EnquiryID + "\',\'" + FileName + "\',\'" + FilePath + "\','WEB',GETDATE())");
+  
+  	stmt.execute();
+
+  	crmLog(0, "Attach", "File " + FileName + " attached to " + EnquiryID, "Web", 3);
+
+	}
+	catch (e) {
+		log("__**ERROR** - crmAttachFile - " + e);
+		crmLog(0, "Attach", "Error attaching file (" + EnquiryID + ") - " + e, "Web", 1);			
+	}	
+	finally	{
+	  if(stmt) stmt.close();	
+	  if(con) con.close();	
+	}	
+ 
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Checks to see if customer already exists in CRM DB, if not then creates new customer
+ * and returns the Customer ID, otherwsie just resturns the matching Customer ID.
+ 
+ * @param UserID as String (currently logged in user or system name)
+ 
+ * @param AddAddress Boolean)
+
+ * @return CustomerID as integer
+
+ */
+
+function crmInsertCustomerNoMods (cust) {
+	
+	var custID = crmCheckCustomer(cust.Email, cust.Forename, cust.Surname);
+
+	if (custID &lt;= 0 ) { 
+		
+		//Create a new customer record
+		custID = getSequenceID("Customer_ID");
+		
+		try {
+			var con = system.getDatabaseConnection(strCon)
+			var stmt;
+			
+	
+	  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Customers (ID,title,other_Title,firstname,surname,telephone,mobile,email,date_created,created_by,Language) values "
+	  	+ "(\'" + custID + "\','" + stripNull(cust.Title) + "\',\'" + stripNull(cust.otherTitle) + "\',\'" + stripNull(cust.Forename) + "\',\'" + stripNull(cust.Surname) + "\',\'" + stripNull(cust.Telephone) + "\',"
+	  	+ "\'" + stripNull(cust.Mobile) + "\',\'" + stripNull(cust.Email) + "\',GETDATE(),\'WEB\',\'" + system.variables.$LANGUAGE.value + "\')");
+
+	  	stmt.execute();
+
+	  	crmLog(0, "Insert", "Customer Created - " + custID, "Web", 3);
+
+			if (cust.AccountRef != null) {
+				crmInsertCustomerReference(custID, cust.AccountRef,"AUTO", "Web");
+			}
+		
+		}
+		catch (e) {
+			log("__**ERROR** - crmInsertCustomer - " + e);
+			crmLog(0, "Insert", "Error inserting customer - " + e, "Web", 1);	
+		}
+		finally {
+		  if(stmt) stmt.close();
+		  if(con) con.close();
+		}
+	
+	}
+	else {
+		//Update details on customer record
+		crmUpdateCustomerDetails(custID, cust.Title, cust.otherTitle, cust.Telephone, cust.Mobile, cust.AccountRef);
+	}
+	
+	return custID;
+ 
+}
+
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Checks to see if customer already exists in CRM DB, if not then creates new customer
+ * and returns the Customer ID, otherwsie just resturns the matching Customer ID.
+ 
+ * @param UserID as String (currently logged in user or system name)
+ 
+ * @param AddAddress Boolean)
+
+ * @return CustomerID as integer
+
+ */
+
+function crmInsertCustomer (UserID) {
+
+	var cust = new Object();
+	cust.Forename = '';
+	cust.Surname = '';
+	cust.Email = '';
+	cust.Title = '';
+	cust.otherTitle = '';
+	cust.Telephone = '';
+	cust.Mobile = '';
+	cust.AccountRef = '';
+	 
+	for each (var m in form.currentPage.getControlsByModifier('crmForename')) {				
+			cust.Forename = m.field.getValue();
+	}
+	for each (var m in form.currentPage.getControlsByModifier('crmSurname')) {				
+			cust.Surname = m.field.getValue();
+	}
+	for each (var m in form.currentPage.getControlsByModifier('crmEmail')) {				
+			cust.Email = m.field.getValue();
+	}
+	for each (var m in form.currentPage.getControlsByModifier('crmTitle')) {				
+			cust.Title = m.field.getValue();
+	}
+	for each (var m in form.currentPage.getControlsByModifier('crmOtherTitle')) {				
+			cust.otherTitle = m.field.getValue();
+	}
+	for each (var m in form.currentPage.getControlsByModifier('crmTelephone')) {				
+			cust.Telephone = m.field.getValue();	
+	}
+	for each (var m in form.currentPage.getControlsByModifier('crmMobile')) {	
+			cust.Mobile = m.field.getValue()
+	}
+	for each (var m in form.currentPage.getControlsByModifier('crmAccountRef')) {	
+			cust.AccountRef = m.field.getValue()
+	}
+	
+	var custID = crmCheckCustomer(cust.Email, cust.Forename, cust.Surname);
+
+	if (custID &lt;= 0 ) { 
+		
+		//Create a new customer record
+		custID = getSequenceID("Customer_ID");
+		
+		try {
+
+			var con = system.getDatabaseConnection(strCon)
+			var stmt;
+		
+	  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Customers (ID,title,other_Title,firstname,surname,telephone,mobile,email,date_created,created_by,Language) values "
+	  	+ "(\'" + custID + "\','" + stripNull(cust.Title) + "\',\'" + stripNull(cust.otherTitle) + "\',\'" + stripNull(cust.Forename) + "\',\'" + stripNull(cust.Surname) + "\',\'" + stripNull(cust.Telephone) + "\',"
+	  	+ "\'" + stripNull(cust.Mobile) + "\',\'" + stripNull(cust.Email) + "\',GETDATE(),\'" + UserID + "\',\'" + system.variables.$LANGUAGE.value + "\')");
+
+	  	stmt.execute();
+
+	  	crmLog(0, "Insert", "Customer Created - " + custID, "Web", 3);
+
+			if (cust.AccountRef != null) {
+				crmInsertCustomerReference(custID, cust.AccountRef,"AUTO", "Web");
+			}
+		
+		}
+		catch (e) {
+			log("__**ERROR** - crmInsertCustomer - " + e);
+			crmLog(0, "Insert", "Error inserting customer - " + e, "Web", 1);	
+		}
+		finally {
+		  if(stmt) stmt.close();
+		  if(con) con.close();
+		}
+	
+	}
+	else {
+		//Update details on customer record
+		crmUpdateCustomerDetails(custID, cust.Title, cust.otherTitle, cust.Telephone, cust.Mobile, cust.AccountRef);
+	}
+	
+	return custID;
+ 
+}
+
+/*******************************/
+/**
+
+ * Imports customer from RB_Accounts table into CRM customers
+ 
+ * @param RecordID as integer (RB_Accounts record ID to import)
+
+ * @return CustomerID as integer
+
+ 
+function crmImportCustomer(recordID) {
+	var con = system.getDatabaseConnection(strCon);
+	var stmt;	
+	var rs;
+	
+	try {
+	
+		stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Customers (title,firstname,surname,telephone,NI_No,DOB,date_created,created_by)"
+		+ "select title,forename, surname, Tel, NI_No,DOB, getdate(),\'Web\' from cs_crm.dbo.int_rb_accounts where "
+		+ "record_id = \'" + recordID + "\'");
+	
+		rs = stmt.execute();
+	
+		var custID = crmLastCustomerID();
+		
+		crmLog(0, "Insert", "Customer Imported - " + custID, "Web", 3);
+	}
+	
+	catch (e) {
+	
+		crmLog(0, "NA", "Error importing customer (" + custID + ") - " + e, "Web", 1);
+		event.owner.addErrorMessage("Error importing customer to CRM database. - " + e );
+			
+	}
+	
+	finally
+	
+	{
+	
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+
+ 		//inserts the address record for the customer. (function below!)
+		insertAddress(recordID,custID);
+		crmInsertCustomerReference (recordID,custID);
+
+		return custID;
+	}
+
+}
+
+*/
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Adds an account reference to a customer
+ * @param CustomerID as Integer
+ * @param Reference as string
+ * @param Type as String (Reference type, "AUTO" for auto detect)
+ * @param User as string
+ */
+
+function crmInsertCustomerReference (CustomerID, Reference,Type, User) {
+
+	if (Reference == null || Reference == '') { return 0};
+
+	if (Type = 'AUTO') {
+		if (Reference.substring(0,1) == '7') {
+			Type = 'CTAX';
+		}
+		else if (Reference.substring(0,1) == '9') {
+			Type = 'HB';
+		}
+		else if (Reference.substring(0,2) == '10') {
+			Type = 'NNDR';
+		}
+		else {
+			Type = 'Unknown';
+		}
+	}
+		
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+	
+		stmt = con.prepareStatement("insert into CS_CRM.dbo.crm_Customer_References (customer_id,system,reference,date_created,created_by) select"
+		+ "\'" + CustomerID + "\',\'" + Type + "\',\'" + Reference + "\', getdate(),\'" + User + "\' where not exists"
+		+ "(select 1 from CS_CRM.dbo.crm_Customer_References where customer_id = \'" + CustomerID + "\' and system = \'" + Type + "\' and reference = \'" + Reference + "\')");
+	
+		stmt.execute();
+	
+	}
+	
+	catch (e) {
+		crmLog(0, "Insert", "Error creating customer reference record - " + e, User, 1);	
+	}
+	finally {
+	  if(stmt) stmt.close();
+	  if(con) con.close();	
+	}
+
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Checks to see if address already exists for the specified customer in CRM DB, if not then creates new address record
+ 
+ * @param UserID as String (currently logged in user or system name)
+  
+ * @param {object} Customer   
+
+ * @return AddressID as integer
+
+ */
+
+function crmInsertAddressNoMods (cust) {
+
+	var addressID = 0;
+
+	if (cust.PostCode == '' || cust.PostCode == null) {
+		addressID = 0;
+	}
+	else {
+		//If there is a post code then continue to add address
+
+		cust.PostCode = formatPostCode(cust.PostCode);
+
+		if (cust.UPRN &gt; 0) {
+			addressID = crmCheckAddressUPRN (cust);	
+		}
+		else {
+			addressID = crmCheckAddress(cust);
+		}
+			
+		if (addressID &lt;= 0 ) {
+
+			addressID = getSequenceID("Address_ID");
+				
+			try {
+
+				//Insert Address Record
+				var con = system.getDatabaseConnection(strCon);
+				var stmt;
+			
+				if (cust.BusinessName == null || cust.BusinessName == '') {
+					//Residential Address
+					
+			  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Customer_Addresses (address_id,customer_id,uprn,type,address1,address2,address3,town,county,postcode,date_created,created_by) values "
+			  	+ "(\'" + addressID + "\',\'" + cust.CustID + "\',\'" + stripNull(cust.UPRN) + "\','R',\'" + stripNull(cust.Addr1) + "\',\'" + stripNull(cust.Addr2) + "\',\'" + stripNull(cust.Addr3) + "\',\'" + stripNull(cust.Town) + "\',\'" + stripNull(cust.County) + "\',"
+			  	+ "\'" + stripNull(cust.PostCode) + "\',GETDATE(),\'WEB\')");
+
+				}
+				else {
+					//Business Address
+								
+			  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Customer_Addresses (address_id,customer_id,propertyRef,businessRef,BusinessName,type,address1,address2,address3,town,county,postcode,date_created,created_by) values "
+			  	+ "(\'" + addressID + "\',\'" + cust.CustID + "\',\'" + stripNull(cust.PropertyRef) + "\',\'" + stripNull(cust.BusinessRef) + "\',\'" + stripNull(cust.BusinessName) + "\','B',\'" + stripNull(cust.Addr1) + "\',"
+			  	+ "\'" + stripNull(cust.Addr2) + "\',\'" + stripNull(cust.Addr3) + "\',\'" + stripNull(cust.Town) + "\',\'" + stripNull(cust.County) + "\',\'" + stripNull(cust.PostCode) + "\',GETDATE(),\'WEB\')");
+
+			  	
+				}
+				
+		  	stmt.execute();
+			}
+		
+			catch (e) {
+				log("__**ERROR** - crmInsertAddress - " + e);
+				crmLog(0, "Insert", "Error Inserting Address (" + cust.CustID + ", " + cust.Addr1 + ", " + cust.PostCode + ", " + cust.BusinessName + " - " + e, "Web", 1)	
+			}
+			finally	{
+			  if(stmt) stmt.close();
+			  if(con) con.close();
+			}
+		
+			crmLog(0, "Insert", "Address Created - " + addressID, "Web", 3);
+
+			crmUpdateDefaultAddress(cust.CustID, addressID);
+			
+		}
+		else {
+			//If the address already exists just update the default address for the customer.
+			crmUpdateDefaultAddress(cust.CustID, addressID);
+		}
+	}
+	
+	return addressID;
+ 
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Checks to see if address already exists for the specified customer in CRM DB, if not then creates new address record
+ 
+ * @param UserID as String (currently logged in user or system name)
+  
+ * @param CustomerID integer  
+
+ * @return AddressID as integer
+
+ */
+
+function crmInsertAddress (UserID, CustomerID) {
+
+	add = new Object();
+	add.CustID = CustomerID;
+	add.Addr1 = '';
+	add.Addr2 = '';
+	add.Addr3 = '';
+	add.Town = '';
+	add.County = '';
+	add.PostCode = '';
+	add.UPRN = '';
+	add.PropertyRef = '';
+	add.BusinessRef = '';
+	add.BusinessName = '';
+	add.StartDate = '01/01/1900';
+	
+			
+	for each (var m in form.currentPage.getControlsByModifier('crmPostCode')) {				
+			add.PostCode = m.field.getValue();
+	}
+
+	var addressID = 0;
+
+	log("__ Postcode: " + add.PostCode);
+	
+	if (add.PostCode == '' || add.PostCode == null) {
+		addressID = 0;
+	}
+	else {
+		//If there is a post code then continue to add address
+
+		add.PostCode = formatPostCode(add.PostCode);
+
+		for each (var m in form.currentPage.getControlsByModifier('crmAddress1')) {				
+			add.Addr1 = m.field.getValue();
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmAddress2')) {				
+			add.Addr2 = m.field.getValue();
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmAddress3')) {				
+			add.Addr3 = m.field.getValue();
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmTown')) {				
+			add.Town = m.field.getValue();
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmCounty')) {				
+			add.County = m.field.getValue();
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmUPRN')) {				
+			add.UPRN = m.field.getValue();		
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmPropertyRef')) {				
+			add.PropertyRef = m.field.getValue();
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmBusinessRef')) {				
+			add.BusinessRef = m.field.getValue();
+			if (add.BusinessRef == 'undefined') {add.BusinessRef = null};
+		}
+		for each (var m in form.currentPage.getControlsByModifier('crmBusinessName')) {				
+			add.BusinessName = m.field.getValue();
+			if (add.BusinessName == 'undefined') {add.BusinessName = null};
+		}
+		
+		if (add.BusinessName == '') {add.BusinessName = null};
+		
+		for each (var m in form.currentPage.getControlsByModifier('crmStartDate')) {				
+				add.StartDate = m.field.getValue();
+		}
+
+		if (add.UPRN &gt; 0) {
+			addressID = crmCheckAddressUPRN (add);	
+		}
+		else {
+			addressID = crmCheckAddress(CustomerID, add.Addr1, add.PostCode, add.BusinessName);
+		}
+			
+		if (addressID &lt;= 0 ) {
+
+			addressID = getSequenceID("Address_ID");
+				
+			try {
+
+				//Insert Address Record
+				var con = system.getDatabaseConnection(strCon);
+				var stmt;
+			
+				if (add.BusinessName == null || add.BusinessName == '') {
+					//Residential Address
+					
+			  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Customer_Addresses (address_id,customer_id,uprn,type,address1,address2,address3,town,county,postcode,date_created,created_by) values "
+			  	+ "(\'" + addressID + "\',\'" + CustomerID + "\',\'" + stripNull(add.UPRN) + "\','R',\'" + stripNull(add.Addr1) + "\',\'" + stripNull(add.Addr2) + "\',\'" + stripNull(add.Addr3) + "\',\'" + stripNull(add.Town) + "\',\'" + stripNull(add.County) + "\',"
+			  	+ "\'" + stripNull(add.PostCode) + "\',GETDATE(),\'" + UserID + "\')");
+
+			  }
+				else {
+					//Business Address
+					log("__ Creating new business address!");
+					
+			  	stmt = con.prepareStatement("insert into CS_CRM.dbo.CRM_Customer_Addresses (address_id,customer_id,propertyRef,businessRef,BusinessName,type,address1,address2,address3,town,county,postcode,date_created,created_by) values "
+			  	+ "(\'" + addressID + "\',\'" + CustomerID + "\',\'" + stripNull(add.PropertyRef) + "\',\'" + stripNull(add.BusinessRef) + "\',\'" + stripNull(add.BusinessName) + "\','B',\'" + stripNull(add.Addr1) + "\',"
+			  	+ "\'" + stripNull(add.Addr2) + "\',\'" + stripNull(add.Addr3) + "\',\'" + stripNull(add.Town) + "\',\'" + stripNull(add.County) + "\',\'" + stripNull(add.PostCode) + "\',GETDATE(),\'" + UserID + "\')");
+
+				}
+				
+		  	stmt.execute();
+			}
+		
+			catch (e) {
+				log("__**ERROR** - crmInsertAddress - " + e);
+				crmLog(0, "Insert", "Error Inserting Address (" + CustomerID + ", " + add.Addr1 + ", " + add.PostCode + ", " + add.BusinessName + " - " + e, "Web", 1)	
+			}
+			finally	{
+			  if(stmt) stmt.close();
+			  if(con) con.close();
+			}
+		
+			crmLog(0, "Insert", "Address Created - " + addressID, "Web", 3);
+
+			crmUpdateDefaultAddress(CustomerID, addressID);
+			
+		}
+		else {
+			//If the address already exists just update the default address for the customer.
+			crmUpdateDefaultAddress(CustomerID, addressID);
+		}
+	}
+	
+	return addressID;
+ 
+}
+
+/******************************************************************************/
+
+/**
+
+ * Checks to see customer already exists in the CRM DB
+ 
+ * @param email string
+  
+ * @param Forename string
+  
+ * @param Surname string
+
+ * @return CustomerID as integer
+
+ */
+ 
+function crmCheckCustomer( email, Forename, Surname ) {
+ 		
+	var result = 0;
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+	
+  	stmt = con.prepareStatement("select max(ID) as ID from CS_CRM.dbo.CRM_Customers where email = \'" + email + "\'  and firstname = \'" + Forename + "\' and surname = \'" + Surname + "\' and disabled is null");
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+				result = rs.getInt("ID");
+			}	
+		crmLog(0,"Query", "Existing customer? - " + result, "Web", 3);
+	}
+	catch (e) {
+		log("__**ERROR** - crmCheckCustomer - " + e);
+		crmLog(0, "Query", "Error querying customer (" + email + ", " + Forename + ", " + Surname + " - " + e, "Web", 1);
+	}	
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}			
+	  return result;
+}
+
+/******************************************************************************/
+
+/**
+
+ * Checks to see address already exists in the CRM DB using the UPRN
+ 
+ * @param CustomerID integer
+ * @param UPRN integer
+ * @return AddressID as integer
+
+ */
+ 
+function crmCheckAddressUPRN(addr) {
+	
+	var result = 0;
+
+	//log("__ Checking for existing address! (" + addr.UPRN + ")");
+	//log("ADDRESS1 = " + addr.Addr1);
+	//log("ADDRESS2 = " + addr.Addr2);
+	//log("ADDRESS3 = " + addr.Addr3);
+	//log("TOWN = " + addr.Town);
+	//log("COUNTY = " + addr.County);
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+		
+		stmt = con.prepareStatement("select * from CS_CRM.dbo.CRM_Customer_Addresses where customer_id = \'" + addr.CustID + "\' and uprn = \'" + addr.UPRN + "\'");
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+				result = rs.getInt("Address_ID");
+		}
+		
+		//crmLog(0,"Query", "Existing UPRN address? - " + result, "Web", 3);
+
+//		if (result &gt; 0) {
+//			//Update the exisiting address
+//			stmt = con.prepareStatement("update CS_CRM.dbo.CRM_Customer_Addresses set address1 = \'" + stripNull(addr.Addr1) + "\',address2 = \'" + stripNull(addr.Addr2) + "\'"
+//			+ ",address3 = \'" + stripNull(addr.Addr3) + "\',town = \'" + stripNull(addr.Town) + "\',county = \'" + stripNull(addr.County) + "\',postcode = \'" + stripNull(addr.PostCode) + "\'"
+//			+ ",date_modified = getdate(),modified_by = 'WEB' where address_id = \'" + result + "\'");
+//
+//			stmt.execute();
+//
+//		crmLog(0,"DEBUG", "Updated the address - " + result, "Web", 3);
+//		
+//		}
+	}
+	catch (e) {
+		log("__**ERROR** - crmCheckAddressUPRN - " + e);
+		crmLog(0, "Query", "Error querying address using UPRN (" + addr.CustID + "," + addr.UPRN + " - " + e, "Web", 1);
+	}
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+	
+ 	return result;
+}
+
+/******************************************************************************/
+
+/**
+
+ * Checks to see address already exists in the CRM DB
+ 
+ * @param CustomerID integer
+ * @param Address1 string
+ * @param PostCode string
+ * @param UPRN integer
+ * @param BusinessName string
+ * @return AddressID as integer
+
+ */
+ 
+function crmCheckAddress( CustomerID, Address1, PostCode,BusinessName ) {
+
+	var con = system.getDatabaseConnection(strCon);
+	var stmt;
+	var rs;
+	
+	var result = 0;
+
+	try {
+
+		if (BusinessName == null) {
+  		//Residential Address
+  		stmt = con.prepareStatement("select address_ID from CS_CRM.dbo.CRM_Customer_Addresses where customer_id = \'" + CustomerID + "\'  and postcode = \'" + PostCode + "\' and address1 = \'" + Address1 + "\'");
+		}
+  	else {
+  		//Business Address
+  		stmt = con.prepareStatement("select address_ID from CS_CRM.dbo.CRM_Customer_Addresses where customer_id = \'" + CustomerID + "\'  and postcode = \'" + PostCode + "\' and BusinessName = \'" + BusinessName + "\'");
+  	}
+  	
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+				result = rs.getInt("Address_ID");
+			}
+			
+	  }
+
+	catch (e) {
+		log("__**ERROR** - crmCheckAddress - " + e);
+		crmLog(0, "Query", "Error querying address (" + CustomerID + ", " + Address1 + ", " + PostCode + ", " + BusinessName + " - " + e, "Web", 1);
+	}
+	
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+ 	return result;
+}
+
+/*****************************************************************/
+
+ function crmLastCustomerID() {
+
+ 	log("__Getting last customer ID");
+ 		
+	
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+	
+  	stmt = con.prepareStatement("select ID from CS_CRM.dbo.CRM_Customers where ID = (select ident_current(\'CS_CRM.dbo.crm_customers\'))");
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){				
+				var result = rs.getInt("ID");				
+			}
+	  }
+	  
+	catch (e) {
+		log("__**ERROR** - crmLastCustomerID - " + e);
+		crmLog(0, "Query", "Error retrieving customer id - " + e, "Web", 1);
+		
+		result = 0;	
+	}
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+  return result;
+ }
+
+ /*****************************************************************/
+
+ function crmGetFormCategory(formID) {
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+  	stmt = con.prepareStatement("select category_id from CS_CRM.dbo.web_contact_forms where form_ID = \'" + formID + "\'");
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){				
+				var result = rs.getInt("category_id");				
+			}
+	  }
+	  
+	catch (e) {
+		log("__**ERROR** - crmGetFormCategory - " + e);
+		crmLog(0, "Query", "Error getting category for form_id " + formID + " - " + e, "Web", 1);
+		
+		result = 0;	
+	}
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+  return result;
+ }
+
+/*****************************************************************/
+/**
+ * Gets the responsible officer for a service category
+ * @param {Integer} CategoryID 
+ * @returns {String}
+ */
+ 
+function crmGetResponsibleOfficer(catID) {
+
+	log("__Getting responsible officer");
+		
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+		stmt = con.prepareStatement("select resp_officer from CS_CRM.dbo.srvc_categories where category_ID = \'" + catID + "\'");
+		rs = stmt.executeQuery();
+	
+		while (rs.next()){				
+				var result = rs.getString("resp_officer");				
+			}
+	  }
+	  
+	catch (e) {
+		log("__**ERROR** - crmGetResponsibleOfficer - " + e);
+		crmLog(0, "Query", "Error getting responsible officer - " + e, "Web", 1);
+		
+		result = 0;	
+	}
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+	return result;
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * gets last Enquiry ID
+
+ * @return EnquiryID integer
+
+ */
+
+ function crmLastEnquiryID() {
+ 		
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+	
+  	stmt = con.prepareStatement("select enquiry_ID from CS_CRM.dbo.CRM_Enquiries where enquiry_ID = (select ident_current(\'CS_CRM.dbo.crm_enquiries\'))");
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+				var result = rs.getInt("Enquiry_ID");
+			}
+	  }
+
+	catch (e) {
+		log("__**ERROR** - crmLastEnquiryID - " + e);
+		crmLog(0, "Query", "Error retrieving enquiry ID - " + e, "Web", 1);
+		
+		result = 0;
+	}
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	  		
+	  return result;
+	}
+ }
+
+ /*****************************************************************/
+
+ function crmLastAddressID() {
+ 		
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+	
+  	stmt = con.prepareStatement("select address_ID from CS_CRM.dbo.CRM_Customer_Addresses where address_ID = (select ident_current(\'CS_CRM.dbo.crm_customer_addresses\'))");
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){	
+				var result = rs.getInt("address_ID");	
+			}
+	  }
+
+	catch (e) {
+		log("__**ERROR** - crmLastAddressID - " + e);
+		crmLog(0, "Query", "Error retrieving address id - " + e, "Web", 1);
+		
+		result = 0;	
+	}
+	finally	{
+	
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+
+		log("__Return Address ID: " + result);
+		
+	  return result;
+	}
+ }
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Updates the default address id of a customer
+
+ * @param CustoemrID as integer
+ 
+ * @param AddressID as string 
+
+ */
+
+function crmUpdateDefaultAddress( CustomerID, AddressID ) {
+	
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		
+	  stmt = con.prepareStatement("update CS_CRM.dbo.CRM_Customers set Current_Address_ID = \'" + AddressID + "\' where ID = \'" + CustomerID + "\'");  
+		stmt.execute();
+	
+	}
+	catch (e) {
+		log("__**ERROR** - crmUpdateDefaultAddress - " + e);
+		crmLog(0, "Update", "Error updating default address (" + CustomerID + " to " + AddressID + " - " + e, "Web", 1);
+	}
+	
+	finally	{
+	  if(stmt) stmt.close();
+	  if(con) con.close();	
+	}
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Updates Customer contact information
+
+ * @param CustomerID as integer
+  
+ * @param Telephone as integer
+  
+ * @param Mobile as integer
+
+ */
+
+function crmUpdateCustomerDetails( CustomerID, Title, OtherTitle, Telephone, Mobile, AccountRef ) {
+		
+	try {
+		//Insert audit record before updaing the customer
+		crmAuditCustomer(CustomerID, "Update");
+
+		/*
+		 * Need to improve this function by checking infor before updating and only updaing where no info exists in some cases
+		 * e.g. a user sets their language preference in My Account and it may get ovewrwritten here because they complete a form in another language
+		 */
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		
+	  stmt = con.prepareStatement("update CS_CRM.dbo.crm_Customers set title = \'" + stripNull(Title) + "\', other_Title = \'" + stripNull(OtherTitle) + "\', Telephone = \'" + stripNull(Telephone) + "\',"
+	  + "mobile = \'" + stripNull(Mobile) + "\', modified_by = \'WEB\', date_modified = GETDATE(), language=\'" + system.variables.$LANGUAGE.value + "\' where ID = \'" + CustomerID + "\'");  
+		
+		stmt.execute();
+
+		crmInsertCustomerReference(CustomerID,  AccountRef, 'CTAX', 'Web')
+
+		crmLog(0, "Update", "Contact details for " + CustomerID + " updated", "Web", 3);
+	
+	}
+	catch (e) {
+		log("__**ERROR** - crmUpdateCustomerDetails - " + e);
+		crmLog(0, "Update", "Error updating customer details (" + CustomerID + ") - " + e, "Web", 1);
+	}
+	finally	{
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+}
+
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Generates a customer reference number
+
+ * @param enquiryNo as integer
+ 
+ * @param enquiryType as string 
+
+ * @return ref as string
+
+ */
+
+function crmGenerateEnquiryRef( enquiryNo, enquiryType ) {
+
+	var s = enquiryType;
+
+	var d = new Date();
+
+	var day = d.getDate().toString();
+
+	var m = d.getMonth() + 1;
+
+	var month  = m.toString();
+
+	var y = d.getFullYear().toString().substring(2, 4);
+
+	if ( day.length == 1 ) day = '0' + day;
+
+	if (month.length == 1) month = '0' + month;
+	 	
+	s += day + month + y + '-' + enquiryNo;
+
+	//Update the enquiry record in the Database
+
+try {
+
+	var con = system.getDatabaseConnection(strCon);
+	var stmt;
+	stmt = con.prepareStatement("update CS_CRM.dbo.CRM_Enquiries set reference = \'" + s + "\' where enquiry_id = \'" + enquiryNo + "\'");
+	stmt.executeUpdate();
+
+}
+catch (e) {
+	log("__**ERROR** - crmGenerateEnquiryyRef - " + e);
+	crmLog(0, "Query", "Error generating enquiry ref (" + enquiryNo + ", " + enquiryType + ") - " + e, "Web", 1);		
+}
+finally{
+  if(stmt) stmt.close();
+  if(con) con.close();
+}
+	return s;
+	
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Return the Enquiry Reference for the specified enquiry
+  
+ * @param EnquiryID integer
+ 
+ * @return EnquiryReference integer
+
+ */
+
+function crmGetReference(EnquiryID) {
+	
+	try {
+
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+	
+		stmt = con.prepareStatement("select reference from CS_CRM.dbo.CRM_Enquiries where enquiry_ID = (\'" + EnquiryID + "\')");
+		rs = stmt.executeQuery();
+	
+		while (rs.next()){
+				var result = rs.getString("Reference");			
+			}
+	  }
+	
+	catch (e) {
+		log("__**ERROR** - crmGetReference " + e);
+		crmLog(0, "Query", "Error retrieving enquiry ref - " + e, "Web", 1);
+	
+		result = 0;	
+	}
+	finally	{
+	
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+		if(con) con.close();
+			
+	  return result;
+	}
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Return the Enquiry Reference for the specified enquiry
+  
+ * @param EnquiryID integer
+ 
+ * @return EnquiryReference integer
+
+ */
+
+function crmGetCustomerID(EnquiryID) {
+			
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+		
+		stmt = con.prepareStatement("select customer_id from CS_CRM.dbo.CRM_Enquiries where enquiry_ID = (\'" + EnquiryID + "\')");
+		rs = stmt.executeQuery();
+	
+		while (rs.next()){
+				var result = rs.getString("Customer_ID");
+			}
+	  }
+	catch (e) {
+		log("__**ERROR** - crmGetCustomer " + e);
+		crmLog(0, "Query", "Error retrieving customer ID - " + e, "Web", 1);
+		
+		result = 0;	
+	}
+	
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+		if(con) con.close();
+	
+		return result;	
+	}	
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Create customer audit record
+  
+ * @param customerID as Integer
+ 
+ * @param Operation as String
+
+ */
+
+function crmAuditCustomer (CustomerID, Operation) {
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		
+  	stmt = con.prepareStatement("insert into CS_CRM.dbo.Audit_crm_Customers (Operation,Operation_Date,Operation_User,ID,Email,Title,other_title,FirstName,Surname,DOB,Telephone,Mobile,Revs_account_ref,"
+  	+ "Date_Created,Created_by,Created_By_Dept,Date_Modified,Modified_By,Modified_By_Dept,Current_address_ID,Verified,Language,Contact_Method,Business)"
+  	+ "Select \'" + Operation.toUpperCase() + "\',GETDATE(),\'WEB\',ID,Email,Title,other_title,FirstName,Surname,DOB,Telephone,Mobile,Revs_account_ref,Date_Created,Created_by,Created_By_Dept,Date_Modified,Modified_By,"
+  	+ "Modified_By_Dept,Current_address_ID,Verified,Language,Contact_Method,Business from CS_CRM.dbo.crm_customers where ID = \'" + CustomerID + "\'");
+  
+  	stmt.execute();
+
+	}
+	catch (e) {
+		crmLog(0, "Audit", "Error creating audit record for customer " + CustomerID + " - " + e, "Web", 1);
+		log("__**ERROR** - Customer Audit - " + e);	
+	}
+	finally	{
+	  if(stmt) stmt.close();
+	  if(con) con.close();	
+	}
+}
+
+
+/********************************************************************************************************************************/
+
+/**
+
+ * Takes a post code and returns it in the correct format
+
+ * @param s1 post code string
+
+ * @return the formatted post code
+*/
+ 
+
+function formatPostCode( s1 )
+{	
+	if (s1 === null) return "";
+    try
+    {
+			s1 = s1.toUpperCase();
+			s1 = s1.replace(/\s+/g, '');
+			log (s1);
+
+			if (s1.length &lt; 5) throw "Not enough characters in postcode";
+			if (s1.length &gt; 7) throw "Too many characters in postcode";
+			
+			switch (s1.length) {	
+				case 5:
+					s1 = s1.substring(0,2) + " " + s1.substring(2,3);
+					break;
+				case 6:
+					s1 = s1.substring(0,3) + " " + s1.substring(3,3);
+					break;
+				case 7:
+					s1 = s1.substring(0,4) + " " + s1.substring(4);
+				break;	
+			}	
+		}
+		catch (e) {
+			event.owner.addErrorMessage("Error formatting postcode - " + e + " - " + s1.value)
+			return 'ERROR';		
+		}
+		return s1
+}
+
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Checks field for null value and replaces with blank
+
+ * @param s1 string
+
+ * @return string
+
+ */
+
+function stripNull( s1 ){	
+
+	try {
+		if (s1 === null) {
+			s1 = "";
+		}
+		else if (s1 == 'null') {
+			s1 = "";
+		}
+		else {
+			s1 = s1.replace(/'/g, "");
+		}
+	}
+	catch (e) {
+		s1 = s1;
+	}
+	 
+ return s1
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Return the council tax account balance 
+  
+ * @param Account_Ref integer
+ 
+ * @return Balance Decimal
+
+ */
+
+function crmGetCtaxBalance(Account_Ref) {
+	
+	var result = 0;
+	
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+		stmt = con.prepareStatement("select balance from CS_CRM.dbo.CRM_Customer_Balances where ref_no = (\'" + Account_Ref + "\')");
+	
+		rs = stmt.executeQuery();
+
+		while (rs.next()){
+				var result = rs.getString("balance");
+			}
+	  }
+	catch (e) {
+	
+		log("__**ERROR** - crmGetCtaxBalance " + e);
+		crmLog(0, "Query", "Error retrieving CTAX account balance - " + e, "Web", 1);
+		
+		result = 0;
+		
+	}
+	finally	{
+	
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+		if(con) con.close();
+		
+	  return result;
+	
+	}
+		
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Return the council tax number
+  
+ * @param CustomerID integer
+ 
+ * @return CtaxRef String
+
+ */
+
+function crmGetCtaxRef(CustID) {
+
+	log("__ Getting council tax ref for " + CustID);
+		
+	var result = "";
+	
+	try {
+
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+	
+		stmt = con.prepareStatement("select reference from CS_CRM.dbo.CRM_Customer_References where customer_id = \'" + CustID + "\' and system = \'CTAX\'");
+		rs = stmt.executeQuery();
+
+		while (rs.next()){	
+				var result = rs.getString("reference");			
+			}
+	
+	  }
+	
+	catch (e) {
+		log("__**ERROR** - crmGetCtaxReference " + e);
+		crmLog(0, "Query", "Error retrieving CTAX reference - " + e, "Web", 1);
+		
+		result = 0;	
+	}
+	finally {
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+		if(con) con.close();
+		
+	  return result;
+	}		
+}
+
+/********************************************************************************************************/
+/**
+
+ * Checks for dupliacte CTAX no
+ 
+ * @param CTAXRef string
+  
+ * @return CustomerID as integer
+
+ 
+ 
+function crmCheckCtaxRef(Ref) {
+ 		
+	var con = system.getDatabaseConnection('SQLE648s1');
+	var stmt;
+	var rs;
+
+	var result = 0;
+
+	try {
+
+  	stmt = con.prepareStatement("select ID from CS_CRM.dbo.CRM_Customers where revs_account_ref = \'" + Ref + "\'");
+  
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+				
+				result = rs.getInt("ID");
+				
+			}
+
+		crmLog(22,"Query", "Check for dupliacte CTAX ref? - " + Ref, fields.LOGINCMP_LOGIN__USERNAME.value, 3);
+
+	  }
+
+	catch (e) {
+
+		log("__**ERROR** - CheckCtaxRef - " + e);
+		crmLog(22, "Query", "Error checking for duplicate CTAX ref (CustomerID:" + fields.NEW_CUST_ID.value + " CTAX Ref:" + Ref + " - " + e + ")", fields.LOGINCMP_LOGIN__USERNAME.value, 1);
+		
+	}
+	
+	finally
+	
+	{
+	
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	
+	}
+			
+	  return result;
+ 		
+}
+
+*/
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Merges two customer accounts
+
+ * @param OldCustoemrID as integer
+ 
+ * @param NewCustoemrID as integer
+
+ */
+
+function crmMergeCustomers( OldCustomerID, NewCustomerID ) {
+	
+
+	
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+	
+		//Update enquiries
+	  stmt = con.prepareStatement("update CS_CRM.dbo.CRM_Enquiries set customer_id = \'" + NewCustomerID + "\' where customer_ID = \'" + OldCustomerID + "\'");  
+		stmt.execute();
+		crmLog(0, "Merge", "Enquiries for customer id " + OldCustomerID + " updated to new customer " + NewCustomerID, "Web", 3);
+
+		//Update addresses
+	  stmt = con.prepareStatement("update CS_CRM.dbo.CRM_Customer_Addresses set customer_id = \'" + NewCustomerID + "\' where customer_ID = \'" + OldCustomerID + "\'");  
+		stmt.execute();
+		crmLog(0, "Merge", "Addresses for customer id " + OldCustomerID + " updated to new customer " + NewCustomerID, "Web", 3);
+
+		//Update Aliases
+	  stmt = con.prepareStatement("update CS_CRM.dbo.CRM_Customer_Alias set customer_id = \'" + NewCustomerID + "\' where customer_ID = \'" + OldCustomerID + "\'");  
+		stmt.execute();
+		crmLog(0, "Merge", "Aliases for customer id " + OldCustomerID + " updated to new customer " + NewCustomerID, "Web", 3);
+
+		//Update References
+	  stmt = con.prepareStatement("update CS_CRM.dbo.CRM_Customer_References set customer_id = \'" + NewCustomerID + "\' where customer_ID = \'" + OldCustomerID + "\' and"
+	  + " (reference not in (select reference from CS_crm.dbo.crm_Customer_References where customer_id = \'" + NewCustomerID + "\'))");  
+		stmt.execute();
+		crmLog(0, "Merge", "References for customer id " + OldCustomerID + " updated to new customer " + NewCustomerID, "Web", 3);
+
+		//Disable old customer account
+		stmt = con.prepareStatement("update CS_CRM.dbo.CRM_Customers set disabled = 1 where ID = \'" + OldCustomerID + "\'");  
+		stmt.execute();
+		crmLog(0, "Merge", "Customer id " + OldCustomerID + " disabled", "Web", 3);		
+	}
+	catch (e) {
+		log("__**ERROR** - crmMergeCustomers - " + e);
+		crmLog(0, "Merge", "Error Merging custoemrs (" + OldCustomerID + " to " + NewCustomerID + " - " + e, "Web", 1);	
+	}
+	finally	{
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+}
+
+/*********************************************************************************************************************************/
+
+/**
+ * Either prepends or appends text to an enquiry detail
+ * @param {Integer} EnquiryID
+ * @param {String} strText
+ * @param {String} Location
+ * @returns {String} detailText
+ */
+
+function crmUpdateEnquiryDetails(enquiryID,strText,Location) {
+		
+	//Get the enquiry detail text
+	var detailText = "";
+	
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+		//Get the next ID
+  	stmt = con.prepareStatement("select details from CS_CRM.dbo.crm_enquiries where enquiry_id = \'" + enquiryID + "\'");
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){	
+			detailText = rs.getString("details");	
+		}
+		
+		if (Location == "Start") {
+			detailText = strText + detailText;
+		}
+		else {
+			detailText = detailText + strText;
+		}
+
+		stmt = con.prepareStatement("update CS_CRM.dbo.crm_Enquiries set details = '" + detailText + "\' where enquiry_id = \'" + enquiryID + "\'");  
+		stmt.execute();
+		
+	}
+	catch (e) {
+		log("__**ERROR** - crmUpdateEnquiryDetails - " + e);
+		crmLog('', "Query", "Error updating enquiry detail for " + enquiryID + " - " + e, "WEB", 1);
+	}
+	finally {
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+
+	return detailText;
+}
+
+/*********************************************************************************************************************************/
+
+/**
+ * Either prepends or appends text to an enquiry detail
+ * @param {String} BodyText
+ * @returns {String} BodyText
+ */
+
+function crmFormatEmail(BodyText) {
+
+	var newBody = BodyText 
+
+	newBody += '&lt;br /&gt;&lt;br /&gt;Cyngor Sir &lt;strong&gt;CEREDIGION&lt;/strong&gt; County Council&lt;br/&gt;Neuadd Cyngor Ceredigion Penmorfa&lt;br/&gt;Aberaeron&lt;br/&gt;Ceredigion&lt;br/&gt;SA46 0PA&lt;br/&gt;01545 570881';
+	newBody += '&lt;br/&gt;&lt;a href="http://www.ceredigion.gov.uk"&gt;www.ceredigion.gov.uk&lt;/a&gt;';
+
+	return newBody;
+}
+
+
+/*********************************************************************************************************************************/
+
+/**
+ * Updates an enquiry status
+ * @param {String} Status
+ */
+
+function crmUpdateEnquiryStatus(enquiryID,Status) {
+
+	log ("Updating status for enquiry_id " + enquiryID);
+	crmLog('', "Update", "Updating enquiry status to '" + Status + "' for " + enquiryID, "WEB", 1);
+	
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		stmt = con.prepareStatement("update CS_CRM.dbo.crm_Enquiries set status = '" + Status + "\' where enquiry_id = \'" + enquiryID + "\'");  
+		stmt.execute();
+		
+	}
+	catch (e) {
+		log("__**ERROR** - crmUpdateEnquiryStatus - " + e);
+		crmLog('', "Query", "Error updating enquiry status for " + enquiryID + " - " + e, "WEB", 1);
+	}
+	finally {
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Create search history record
+  
+ * @param username as String
+ * @param Type as String
+ * @param WhereClause as String
+
+ */
+
+function crmSearchHistory (username, type, whereClause) {
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+  	stmt = con.prepareStatement("insert into CS_CRM.dbo.crm_Search_History (Username, Type, WhereClause,Time_Stamp ) values (\'" + username + "\',\'" + type + "\',\'" + whereClause + "\', getdate())");
+  	stmt.execute();
+	}
+	catch (e) {
+		crmLog(0, "Insert", "Error creating search history record - " + e, username, 1);
+		log("__**ERROR** - Search History - " + e);
+	}
+	finally	{
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}
+}
+
+/********************************************************************************************************/
+/**
+ * gets the next ID of a sequence
+ * @param Sequence string
+ * @return nextID as integer
+ */
+ 
+function getSequenceID(Sequence) {
+ 	
+	var NextID = 0;
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+
+		//Get the next ID
+  	stmt = con.prepareStatement("select Next_ID from CS_CRM.dbo.sys_Sequences where Sequence = \'" + Sequence + "\'");
+  
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){	
+			NextID = rs.getInt("Next_ID");	
+		}
+
+		if(NextID == null || NextID &lt;= 0) {
+			crmLog('', "Query", "Sequence: " + Sequence + " does not exist in the table", "WEB", 1);
+		}
+		else {
+			//Increment the ID and update the sequences table
+			var updateID = NextID;
+			updateID ++;
+			
+		  stmt = con.prepareStatement("update CS_CRM.dbo.sys_Sequences set Next_ID = \'" + updateID + "\' where Sequence = \'" + Sequence + "\'");
+	  	rs = stmt.execute();
+		}
+		
+	}
+	catch (e) {
+		log("__**ERROR** - getSequenceID - " + e);
+		crmLog('', "Query", "Error getting sequence ID for " + Sequence + " - " + e, "WEB", 1);
+	}
+	finally {
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}	
+	  return NextID;
+}
+
+/*********************************************************************************************************************************/
+
+/**
+ * Updates the hits of a web form
+ * @param FormID as integer
+ */
+
+function crmFormHit( formID ) {
+		
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		
+	  stmt = con.prepareStatement("update CS_CRM.dbo.web_Contact_Forms set hits = hits + 1 where form_id = \'" + formID + "\'");  
+		stmt.execute();
+	}
+	catch (e) {
+		log("__**ERROR** - crmFormHit - " + e);
+		crmLog(0, "Update", "Error updating form hits (" + formID + ") - " + e, "Web", 1);
+	}
+	finally {
+	  if(stmt) stmt.close();
+	  if(con) con.close();	
+	}
+}
+
+/*********************************************************************************************************************************/
+
+/**
+ * Checks for a users permisison to view a service category
+ * @param username as string
+ * @param categoryID as integer
+ * 
+ * @return {boolean} 
+ */
+ 
+function crmCheckPermission(GroupCode, CategoryID) {
+
+	var outcome = false;
+
+	if (GroupCode == 'ADMIN') {
+		//If the user is ADMIN then who cares? Access to everything!
+		outcome = true;
+	}
+	else {
+		//See if the CategoryID exists in the groups list of allowed categories		
+		try {
+			var con = system.getDatabaseConnection(strCon);
+			var stmt;
+			var rs;
+			
+			stmt = con.prepareStatement("select * from CS_CRM.dbo.sys_Group_Access where Category_ID = \'" + CategoryID + "\' and group_id = \'" + GroupCode + "\'");
+	  
+	  	rs = stmt.executeQuery();
+	
+	  	while (rs.next()){
+				outcome = true;
+				log("B");
+			}
+		}
+		catch (e) {
+			log("__**ERROR** - crmCheckPermission - " + e);
+			crmLog(0, "Update", "Error checking the users permisison. GroupCode= " + GroupCode + " CategoryID= " + CategoryID + " - " + e, "Web", 1);
+			outcome = false;
+		}
+		finally {
+		  if(rs) rs.close();
+		  if(stmt) stmt.close();
+		  if(con) con.close();	
+		}		
+	}
+		
+	return outcome;
+}
+
+/******************************************************************************/
+
+/**
+
+ * Checks to see customer has portal login
+ 
+ * @param Customer_ID string
+
+ * @return Login_ID integer
+
+ */
+ 
+function crmGetCustomerPortal( CustomerID ) {
+ 		
+	var result = 0;
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+		
+  	stmt = con.prepareStatement("select login_id from CS_CRM.dbo.ptl_Logins where customer_id = " + CustomerID);
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+				result = rs.getInt("Login_id");
+			}	
+
+	}
+	catch (e) {
+		log("__**ERROR** - crmCheckCustomerPortal - " + e);
+		crmLog(0, "Query", "Error querying customer Portal (Customer ID = " + CustomerID + " - " + e, "Web", 1);
+	}
+	
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}			
+	  return result;
+}
+
+/******************************************************************************/
+
+/**
+
+ * Checks to see if login already exists in the CRM DB
+ 
+ * @param username string
+
+ * @return Login_ID as integer
+
+ */
+ 
+function crmCheckLogin(username) {
+ 		
+	var result = 0;
+
+	try {
+		var con = system.getDatabaseConnection(strCon);
+		var stmt;
+		var rs;
+	
+  	stmt = con.prepareStatement("select max(Login_ID) as Login_ID from CS_CRM.dbo.ptl_logins where username = \'" + username + "\'");
+  	rs = stmt.executeQuery();
+
+  	while (rs.next()){
+				result = rs.getInt("Login_ID");
+			}	
+		crmLog(0,"Query", "Existing Login? - " + result, "Web", 3);
+	}
+	catch (e) {
+		log("__**ERROR** - crmCheckLogin - " + e);
+		crmLog(0, "Query", "Error querying login (" + username + " - " + e, "Web", 1);
+	}
+	
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+	  if(con) con.close();
+	}			
+	  return result;
+}
+</scriptText>
+    </script>
+</ebase>

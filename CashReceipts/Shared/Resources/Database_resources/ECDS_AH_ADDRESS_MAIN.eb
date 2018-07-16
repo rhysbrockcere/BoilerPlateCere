@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Housing Applicant - Main -Past Addresses" database="SQLE648S1" preparedStatement="false" id="ECDS_AH_ADDRESS_MAIN">
+        <columns>*</columns>
+        <from>ECDS_Housing_Test.dbo.AH_Address</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>AND Address_Type = 'Main'</additional>
+        <fields>
+            <field id="Address_1" type="VARCHAR" length="250"/>
+            <field id="Address_2" type="VARCHAR" length="250"/>
+            <field id="Address_3" type="VARCHAR" length="250"/>
+            <field id="Address_4" type="VARCHAR" length="250"/>
+            <field id="Address_5" type="VARCHAR" length="250"/>
+            <field id="Address_From" type="TIMESTAMP" length="16"/>
+            <field id="Address_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Address_Order" type="VARCHAR" length="50"/>
+            <field id="Address_Owner_Occ_Type" type="INTEGER" length="10"/>
+            <field id="Address_To" type="TIMESTAMP" length="16"/>
+            <field id="Address_Type" type="VARCHAR" length="50"/>
+            <field id="Applicant_ID" type="INTEGER" length="10"/>
+            <field id="Application_ID" type="INTEGER" length="10"/>
+            <field id="Postcode" type="VARCHAR" length="50"/>
+            <field id="UPRN" type="FLOAT" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

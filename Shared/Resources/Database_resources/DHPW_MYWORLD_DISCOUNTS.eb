@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="EBASE_SAMPLES" table="true" id="DHPW_MYWORLD_DISCOUNTS">
+        <columns>*</columns>
+        <from>ebase_samples.customer</from>
+        <fields>
+            <field id="ADDRESS" type="VARCHAR" length="40"/>
+            <field id="AREA_CODE" type="DECIMAL" length="3"/>
+            <field id="CITY" type="VARCHAR" length="30"/>
+            <field id="COMMENTS" type="VARCHAR" length="2000"/>
+            <field id="CREDIT_LIMIT" type="DECIMAL" length="9" fractionalDigits="2"/>
+            <field id="CUSTOMER_ID" type="DECIMAL" length="6"/>
+            <field id="E_STATE" length="2"/>
+            <field id="NAME" type="VARCHAR" length="45"/>
+            <field id="PHONE_NUMBER" type="DECIMAL" length="7"/>
+            <field id="SALESPERSON_ID" type="DECIMAL" length="4"/>
+            <field id="ZIP_CODE" type="VARCHAR" length="9"/>
+        </fields>
+    </dbResource>
+</ebase>

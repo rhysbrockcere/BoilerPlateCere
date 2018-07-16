@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="Javascript" preferredComponentPath="/Forms/ORDER_IT" preferredComponentProject="JUNESET" id="GL_JS_PAYMENT" dateCreated="2014-10-09T13:28:32.227+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+var addr1 = '';
+var addr2 = '';
+var addr3 = '';
+var addr4 = '';
+var accountName = '';
+
+var reqID = system.sequenceManager.sequence("PAY_REQ");
+fields.REQUESTID.value = reqID;
+if (system.variables.$LANGUAGE.value == 'EN') {
+	fields.LANGUAGE.setValue("EN");
+}
+else {
+	fields.LANGUAGE.setValue("CY");
+}
+
+fields.SOURCE.value = "I";
+
+fields.BACKURL.value = system.variables.$UFS_RETURN_URL.value;
+fields.RETURNURL.value = system.variables.$UFS_RETURN_URL.value;
+fields.CANCELURL.value = system.variables.$UFS_RETURN_URL.value;
+
+var svr = system.variables.$UFS_SERVER_NAME.value;
+if (svr == 'eforms5dev' || svr == 'eforms5test' || svr == 'localhost') {
+	var post = "&lt;form name=\"CCCpayment\" id=\"CCCpayment\" action=\"https://sbsctest.e-paycapita.com/portal/PortalServlet\" method=\"post\"&gt;";
+}
+else {
+	var post = "&lt;form name=\"CCCpayment\" id=\"CCCpayment\" action=\"https://sbs.e-paycapita.com/portal/PortalServlet\" method=\"post\"&gt;";
+}
+
+post += "&lt;input type=\"hidden\" name=\"portalReq\" value=\"";
+
+var xml = "&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;";
+xml += "&amp;lt;portalReq xmlns=&amp;quot;http://www.e-paycapita.com/portal&amp;quot;&amp;gt;";
+xml += "&amp;lt;requestID&amp;gt;" + reqID + "&amp;lt;/requestID&amp;gt;";
+xml += "&amp;lt;language&amp;gt;" + fields.LANGUAGE.value + "&amp;lt;/language&amp;gt;";
+xml += "&amp;lt;source&amp;gt;" + fields.SOURCE.value + "&amp;lt;/source&amp;gt;";
+xml += "&amp;lt;backURL&amp;gt;" + fields.BACKURL.value + "&amp;lt;/backURL&amp;gt;";
+xml += "&amp;lt;returnURL&amp;gt;" + fields.RETURNURL.value + "&amp;lt;/returnURL&amp;gt;";
+xml += "&amp;lt;cancelURL&amp;gt;" + fields.CANCELURL.value + "&amp;lt;/cancelURL&amp;gt;";
+
+if (tables.ITEM.FUNDCODE.value == '07' || tables.ITEM.FUNDCODE.value == '06') {
+	xml += "&amp;lt;applySurcharge&amp;gt;Y&amp;lt;/applySurcharge&amp;gt;";
+}
+else {
+	xml += "&amp;lt;applySurcharge&amp;gt;N&amp;lt;/applySurcharge&amp;gt;";
+}
+
+xml += "&amp;lt;cart&amp;gt;&amp;lt;items&amp;gt;";
+
+var rows = tables.ITEM.getRows();
+while (rows.next()) {
+	xml += "&amp;lt;item&amp;gt;";
+	xml += "&amp;lt;reference&amp;gt;" + tables.ITEM.REFERENCE.value + "&amp;lt;/reference&amp;gt;";
+	if (tables.ITEM.REFERENCE2.value !== '') {
+		xml += "&amp;lt;reference2&amp;gt;" + tables.ITEM.REFERENCE2.value + "&amp;lt;/reference2&amp;gt;";
+	}
+	xml += "&amp;lt;fundCode&amp;gt;" + tables.ITEM.FUNDCODE.value + "&amp;lt;/fundCode&amp;gt;";
+	xml += "&amp;lt;fundName&amp;gt;" + tables.ITEM.FUNDNAME.value + "&amp;lt;/fundName&amp;gt;";
+	
+	accountName = formatString(tables.ITEM.ACCOUNTNAME.value,50);
+	xml += "&amp;lt;accountName&amp;gt;" + accountName + "&amp;lt;/accountName&amp;gt;";
+	
+	xml += "&amp;lt;amount&amp;gt;" + tables.ITEM.AMOUNT.value + "&amp;lt;/amount&amp;gt;";
+	if (tables.ITEM.ADDRESS_ADDRESS1.value !== '') {
+		xml = xml + "&amp;lt;address&amp;gt;";
+
+		//set address, remove invalid chars and restrict to 50 characters (Function at the bottom of this script)
+		addr1 = formatString(tables.ITEM.ADDRESS_ADDRESS1.value,50);
+		addr2 = formatString(tables.ITEM.ADDRESS_ADDRESS2.value,50);
+		addr3 = formatString(tables.ITEM.ADDRESS_ADDRESS3.value,50);
+		addr4 = formatString(tables.ITEM.ADDRESS_ADDRESS4.value,50);
+				
+		xml += "&amp;lt;address1&amp;gt;" + addr1 + "&amp;lt;/address1&amp;gt;";
+		if (tables.ITEM.ADDRESS_ADDRESS2.value !== ' ') {
+			xml += "&amp;lt;address2&amp;gt;" + addr2 + "&amp;lt;/address2&amp;gt;";
+		}
+		if (tables.ITEM.ADDRESS_ADDRESS3.value !== ' ') {
+			xml += "&amp;lt;address3&amp;gt;" + addr3 + "&amp;lt;/address3&amp;gt;";
+		}
+		if (tables.ITEM.ADDRESS_ADDRESS4.value !== ' ')	{
+			xml += "&amp;lt;address4&amp;gt;" + addr4 + "&amp;lt;/address4&amp;gt;";
+		}
+		xml += "&amp;lt;postcode&amp;gt;" + tables.ITEM.ADDRESS_POSTCODE.value + "&amp;lt;/postcode&amp;gt;";
+		xml += "&amp;lt;/address&amp;gt;";
+	}
+	xml += "&amp;lt;vatInfo&amp;gt;&amp;lt;vatCode&amp;gt;" + tables.ITEM.VATCODE.value + "&amp;lt;/vatCode&amp;gt;";
+	xml += "&amp;lt;vatAmount&amp;gt;" + tables.ITEM.VATAMOUNT.value + "&amp;lt;/vatAmount&amp;gt;&amp;lt;/vatInfo&amp;gt;";
+	xml += "&amp;lt;/item&amp;gt;";
+}
+
+xml += "&amp;lt;/items&amp;gt;&amp;lt;/cart&amp;gt;&amp;lt;/portalReq&amp;gt;\"/&gt;";
+xml = xml.toString();
+xml += "&lt;input type=\"hidden\" name=\"portal_id\" value=\"168821039\"";
+
+post = post + xml + "/&gt;&lt;/form&gt;";
+
+post = "&lt;script&gt;jQuery(document).ready(function($){$(\"body\").append('" + post + "'); $(\"#paySubmit\").click(function(e){e.preventDefault(); $(\"#CCCpayment\").submit();});});&lt;/script&gt;";
+log ("Post = " + post);
+fields.FOP_FILE.value = post;
+
+
+
+function formatString (string, chars) {
+
+	if(string != null) {
+		var s = string.replace("'","");
+		s = s.replace("&amp;","and");
+		s = s.substring(0,chars);
+	}
+	else {
+		s = "";
+	}
+
+	return s;
+
+}
+</scriptText>
+    </script>
+</ebase>

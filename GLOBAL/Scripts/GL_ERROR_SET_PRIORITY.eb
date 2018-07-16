@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_ADDR_BSP" preferredComponentProject="GLOBAL" id="GL_ERROR_SET_PRIORITY" dateCreated="2016-03-16T10:01:34.210Z" dateImported="2016-05-04T11:31:23.703+01:00">
+        <scriptText>set ERRORCMP_ERROR__PRIORITY = '1';</scriptText>
+    </script>
+</ebase>

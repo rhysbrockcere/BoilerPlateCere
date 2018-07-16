@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_HS_IR1_VIEW3">
+        <columns>*</columns>
+        <from>CE_HS_TEST.dbo.CE_HS_IR1_VIEW3</from>
+        <where>IRI_Ref=&amp;&amp;IRI_Ref</where>
+        <fields>
+            <field id="CHSU_Comments" type="VARCHAR" length="100"/>
+            <field id="CHSU_Date_Entered_Database" type="VARCHAR" length="50"/>
+            <field id="CHSU_Date_Recieved" type="VARCHAR" length="50"/>
+            <field id="CHSU_Risk_Number_of_People" type="VARCHAR" length="50"/>
+            <field id="CHSU_Risk_Recurrance" type="VARCHAR" length="50"/>
+            <field id="CHSU_Risk_Serevrity" type="VARCHAR" length="50"/>
+            <field id="Costing_Absence_Injuried" type="VARCHAR" length="50"/>
+            <field id="Costing_Compensation" type="VARCHAR" length="50"/>
+            <field id="Costing_Job_Cover" type="VARCHAR" length="50"/>
+            <field id="Costing_Other" type="VARCHAR" length="50"/>
+            <field id="Costing_Remedial_Action" type="VARCHAR" length="50"/>
+            <field id="Costing_Staff" type="VARCHAR" length="50"/>
+            <field id="Costing_Total" type="VARCHAR" length="50"/>
+            <field id="Costing_Treatment_First_Aid" type="VARCHAR" length="50"/>
+            <field id="HSE_CY" length="15"/>
+            <field id="HSE_EN" length="15"/>
+            <field id="IRI_Ref" type="NUMERIC" length="19"/>
+            <field id="METH_CY" length="10"/>
+            <field id="METH_EN" length="10"/>
+            <field id="NUM_CY" length="10"/>
+            <field id="NUM_EN" length="10"/>
+            <field id="PERSON_CY" length="40"/>
+            <field id="PERSON_EN" length="25"/>
+            <field id="REC_CY" length="15"/>
+            <field id="REC_EN" length="15"/>
+            <field id="RIDDOR_CY" length="30"/>
+            <field id="RIDDOR_Date_HSE_Notified" type="VARCHAR" length="50"/>
+            <field id="RIDDOR_EN" length="30"/>
+            <field id="RIDDOR_HSE_Type_of_Report" type="VARCHAR" length="50"/>
+            <field id="RIDDOR_Hospital_24hr" type="VARCHAR" length="50"/>
+            <field id="RIDDOR_Method" type="VARCHAR" length="50"/>
+            <field id="RIDDOR_Person" type="VARCHAR" length="50"/>
+            <field id="RIDDOR_Report" type="VARCHAR" length="50"/>
+            <field id="RIDDOR_Report_Number" type="VARCHAR" length="20"/>
+            <field id="RIDDOR_Resuscitation" type="VARCHAR" length="50"/>
+            <field id="RIDDOR_Unconscious" type="VARCHAR" length="50"/>
+            <field id="RIDDOR_reportable" type="VARCHAR" length="1"/>
+            <field id="SEV_CY" length="10"/>
+            <field id="SEV_EN" length="10"/>
+            <field id="Status" type="VARCHAR" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

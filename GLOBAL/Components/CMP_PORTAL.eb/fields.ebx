@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="ACCESS_ACCESS_DATE" type="DATETIME" labelTextRef="TXT145" displayType="TEXT" id="1040">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_ACCOUNT_STATUS" type="CHAR" labelTextRef="TXT131" maxLength="50" displayType="TEXT" displayLength="50" id="960">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_ATTEMPTS" type="INTEGER" labelTextRef="TXT132" displayType="TEXT" displayLength="17" id="970">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_CHECK_LINK" type="CHAR" labelTextRef="TXT64" maxLength="500" displayType="TEXT" displayLength="60" id="690">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_CUSTOMER_ID" type="INTEGER" labelTextRef="TXT63" displayType="TEXT" displayLength="17" id="680">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_CUST_ID" type="INTEGER" labelTextRef="TXT146" displayType="TEXT" displayLength="17" id="1050">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_EMAIL" type="CHAR" labelTextRef="TXT137" maxLength="500" displayType="TEXT" displayLength="60" id="980">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_FIRSTNAME" type="CHAR" labelTextRef="TXT138" maxLength="500" displayType="TEXT" displayLength="60" id="990">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_FORMID" type="CHAR" labelTextRef="TXT147" maxLength="150" displayType="TEXT" displayLength="60" id="1060">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_ID" type="INTEGER" labelTextRef="TXT76" displayType="TEXT" displayLength="17" id="710">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_PASSWORD" type="CHAR" labelTextRef="TXT139" maxLength="500" displayType="TEXT" displayLength="60" id="1000">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_PORTAL" type="CHAR" labelTextRef="TXT77" maxLength="150" displayType="TEXT" displayLength="60" id="720">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_STATUS" type="CHAR" labelTextRef="TXT78" maxLength="50" displayType="TEXT" displayLength="50" id="730">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ACCESS_SURNAME" type="CHAR" labelTextRef="TXT140" maxLength="500" displayType="TEXT" displayLength="60" id="1010">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="BUTTON20" type="CHAR" labelTextRef="38200018" helpTextRef="38200017" displayType="BUTTON" id="430"/>
+    <field name="BUTTON40" type="CHAR" labelTextRef="38200023" helpTextRef="38200022" displayType="BUTTON" id="440"/>
+    <field name="CAPTCHA" type="CHAR" defaultValue="&lt;img src='jcaptcha '/&gt;" labelTextRef="38200016" helpTextRef="38200015" maxLength="default" displayType="TEXT" html="true" id="450"/>
+    <field name="CONFIRM" type="CHAR" labelTextRef="TXT125" displayType="TEXT" id="920"/>
+    <field name="COUNT" type="INTEGER" labelTextRef="TXT114" displayType="TEXT" id="830"/>
+    <field name="CUST_CREATED_BY" type="CHAR" labelTextRef="TXT12" maxLength="50" displayType="TEXT" displayLength="50" id="480">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_CREATED_BY_DEPT" type="CHAR" labelTextRef="TXT13" maxLength="50" displayType="TEXT" displayLength="50" id="490">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_DATE_CREATED" type="DATETIME" labelTextRef="TXT15" displayType="TEXT" id="510">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_DATE_MODIFIED" type="DATETIME" labelTextRef="TXT16" displayType="TEXT" id="520">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_DOB" type="DATE" labelTextRef="TXT14" maxLength="50" displayType="TEXT" displayLength="10" id="500"/>
+    <field name="CUST_EMAIL" type="CHAR" labelTextRef="TXT18" maxLength="500" displayType="TEXT" displayLength="30" id="530">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_FIRSTNAME" type="CHAR" labelTextRef="TXT19" maxLength="500" displayType="TEXT" displayLength="30" id="540">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_ID" type="INTEGER" labelTextRef="TXT62" displayType="TEXT" displayLength="17" id="670">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_SURNAME" type="CHAR" labelTextRef="TXT23" maxLength="500" displayType="TEXT" displayLength="30" id="550">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_VERIFIED" type="BOOLEAN" labelTextRef="TXT24" displayType="CHECKBOX" id="560">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="EEA" type="CHAR" labelTextRef="TXT126" displayType="TEXT" id="930"/>
+    <field name="EMAIL_FROM" type="CHAR" labelTextRef="TXT106" displayType="TEXT" id="760"/>
+    <field name="EMAIL_MESSAGE" type="CHAR" labelTextRef="TXT107" displayType="TEXT" id="770"/>
+    <field name="EMAIL_OPTION" type="INTEGER" labelTextRef="TXT156" displayType="TEXT" id="1160"/>
+    <field name="EMAIL_SUBJECT" type="CHAR" labelTextRef="TXT108" displayType="TEXT" id="780"/>
+    <field name="EMAIL_SYSTEM" type="CHAR" labelTextRef="TXT127" maxLength="50" displayType="TEXT" displayLength="50" id="940">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="EMAIL_SYSTEM_ADMIN_FORM" type="CHAR" labelTextRef="TXT128" maxLength="50" displayType="TEXT" displayLength="50" id="950">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="EMAIL_TO" type="CHAR" labelTextRef="TXT109" displayType="TEXT" id="790"/>
+    <field name="FLAG" type="CHAR" labelTextRef="TXT82" displayType="TEXT" id="740"/>
+    <field name="FOP_ANSWER" type="CHAR" labelTextRef="TXT110" displayType="TEXT" id="800"/>
+    <field name="FOP_EMAIL" type="CHAR" labelTextRef="TXT8" displayType="TEXT" id="460"/>
+    <field name="FOP_PASSWORD" type="CHAR" labelTextRef="TXT9" displayType="PASSWORD" id="470"/>
+    <field name="FOP_PASSWORD1" type="CHAR" labelTextRef="TXT60" displayType="PASSWORD" id="810"/>
+    <field name="FOP_PASSWORD2" type="CHAR" labelTextRef="TXT65" displayType="PASSWORD" id="820"/>
+    <field name="INPUT_CHARACTERS_1" type="CHAR" labelTextRef="TXT57" displayType="TEXT" id="650"/>
+    <field name="INPUT_CHARACTERS_2" type="CHAR" labelTextRef="TXT59" displayType="TEXT" id="660"/>
+    <field name="LETTER" type="CHAR" labelTextRef="TXT116" displayType="TEXT" id="850"/>
+    <field name="LOGIN_ANSWER" type="CHAR" labelTextRef="TXT48" maxLength="500" displayType="TEXT" displayLength="60" id="570">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LOGIN_ATTEMPTS" type="INTEGER" labelTextRef="TXT49" displayType="TEXT" displayLength="17" id="580">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LOGIN_CUSTOMER_ID" type="INTEGER" labelTextRef="TXT50" displayType="TEXT" displayLength="17" id="590">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LOGIN_PASSWORD" type="CHAR" labelTextRef="TXT51" maxLength="500" displayType="TEXT" displayLength="60" id="600">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LOGIN_QUESTION" type="INTEGER" labelTextRef="TXT52" displayType="SELECT" displayLength="17" dynamicList="/Lists/Dynamic_Lists/PORTAL_SECURITYQUESTIONS" id="610">
+        <listMappings display="Question" return="ID"/>
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LOGIN_STATUS" type="CHAR" labelTextRef="TXT53" maxLength="50" displayType="TEXT" displayLength="50" id="620">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LOGIN_USERNAME" type="CHAR" labelTextRef="TXT54" maxLength="500" displayType="TEXT" displayLength="60" id="630">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LOWER_CHECK" type="INTEGER" labelTextRef="TXT120" displayType="TEXT" id="890"/>
+    <field name="NAME" type="CHAR" labelTextRef="TXT144" displayType="TEXT" id="1030"/>
+    <field name="NUMBER" type="CHAR" labelTextRef="TXT115" displayType="TEXT" id="840"/>
+    <field name="NUM_CHECK" type="INTEGER" labelTextRef="TXT118" displayType="TEXT" id="870"/>
+    <field name="PASSWORD" type="CHAR" labelTextRef="TXT148" displayType="TEXT" id="1070"/>
+    <field name="POS" type="INTEGER" labelTextRef="TXT123" displayType="TEXT" id="910"/>
+    <field name="QUESTION_NUM" type="INTEGER" labelTextRef="TXT153" displayType="TEXT" id="1130"/>
+    <field name="REG_CHECK" type="CHAR" labelTextRef="TXT84" displayType="TEXT" id="750"/>
+    <field name="SOUNDFILE" type="CHAR" labelTextRef="TXT56" displayType="TEXT" id="640"/>
+    <field name="SP_CHAR" type="CHAR" labelTextRef="TXT117" displayType="TEXT" id="860"/>
+    <field name="SP_CHAR_CHECK" type="INTEGER" labelTextRef="TXT122" displayType="TEXT" id="900"/>
+    <field name="SYSTEM_NAME" type="CHAR" labelTextRef="TXT155" displayType="TEXT" id="1150"/>
+    <field name="TOTAL_CHECK" type="INTEGER" labelTextRef="TXT141" displayType="TEXT" id="1020"/>
+    <field name="UPDATEERROR" type="CHAR" labelTextRef="TXT154" displayType="TEXT" id="1140"/>
+    <field name="UPPER_CHECK" type="INTEGER" labelTextRef="TXT119" displayType="TEXT" id="880"/>
+    <field name="WHERE_CLAUSE" type="CHAR" labelTextRef="TXT17" displayType="TEXT" id="220"/>
+</fields>

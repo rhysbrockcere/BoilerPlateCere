@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource description="Generic Email" accountName="Exchange" from="&amp;&amp;FROM" to="&amp;&amp;TO" cc="&amp;&amp;CC" bcc="&amp;&amp;BCC" subject="&amp;&amp;SUBJECT" html="true" id="GL_EMAIL">
+        <message>&amp;&amp;MESSAGE</message>
+        <fields>
+            <field id="BCC"/>
+            <field id="CC"/>
+            <field id="FROM"/>
+            <field id="MESSAGE"/>
+            <field id="SUBJECT"/>
+            <field id="TO"/>
+        </fields>
+    </emailResource>
+</ebase>

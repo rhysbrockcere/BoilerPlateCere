@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Press Release details" database="SQLE648S1" table="true" preparedStatement="false" id="CE_PR_TBL_NEWS_RELEASE">
+        <columns>TITLE_PROJECT, TITLE_EVENT, TITLE_ANNOUNCEMENT, SECTION, RELEASE_ID, RELEASE_DEADLINE, PURPOSE_PROJECT, PURPOSE_EVENT, PURPOSE_ANNOUNCEMENT, PRESS_LIMITS3, PRESS_LIMITS2, PRESS_LIMITS1, PHOTOS_YES, PHOTOS, OTHER_DETAILS, NAME, MANAGER, JOB_TITLE, INTERVIEWS_WHO, INTERVIEWS, INFO_TYPE, HOW, EMAIL, EDITION_OF_PAPER, DEPARTMENT, DATE_OF_EVENT, CONTACT_NUMBER, ACTIVITIES_WHO_P, ACTIVITIES_WHO_E, ACTIVITIES_WHO_A, ACTIVITIES_WHERE_A, ACTIVITIES_WHERE, ACTIVITIES_WHEN, ACTIVITIES_WHAT_P, ACTIVITIES_WHAT_E, ACTIVITIES_PRESS</columns>
+        <from>IT_Central_TEST.dbo.CE_PR_TBL_NEWS_RELEASE</from>
+        <where>RELEASE_ID=&amp;&amp;RELEASE_ID</where>
+        <fields>
+            <field id="ACTIVITIES_PRESS" type="VARCHAR" length="255"/>
+            <field id="ACTIVITIES_WHAT_E" type="VARCHAR" length="500"/>
+            <field id="ACTIVITIES_WHAT_P" type="VARCHAR" length="255"/>
+            <field id="ACTIVITIES_WHEN" type="VARCHAR" length="255"/>
+            <field id="ACTIVITIES_WHERE" type="VARCHAR" length="255"/>
+            <field id="ACTIVITIES_WHERE_A" type="VARCHAR" length="255"/>
+            <field id="ACTIVITIES_WHO_A" type="VARCHAR" length="30"/>
+            <field id="ACTIVITIES_WHO_E" type="VARCHAR" length="255"/>
+            <field id="ACTIVITIES_WHO_P" type="VARCHAR" length="255"/>
+            <field id="ATTACHMENT_NAME" type="VARCHAR" length="100"/>
+            <field id="CONTACT_NUMBER" type="DECIMAL" length="30" fractionalDigits="2"/>
+            <field id="DATE_OF_EVENT" type="TIMESTAMP" length="10"/>
+            <field id="DEPARTMENT" type="VARCHAR" length="255"/>
+            <field id="EDITION_OF_PAPER" type="TIMESTAMP" length="10"/>
+            <field id="EMAIL" type="VARCHAR" length="255"/>
+            <field id="HOW" type="VARCHAR" length="255"/>
+            <field id="INFO_TYPE" type="VARCHAR" length="255"/>
+            <field id="INTERVIEWS" type="VARCHAR" length="255"/>
+            <field id="INTERVIEWS_WHO" type="VARCHAR" length="255"/>
+            <field id="JOB_TITLE" type="VARCHAR" length="255"/>
+            <field id="MANAGER" type="VARCHAR" length="50"/>
+            <field id="NAME" type="VARCHAR" length="255"/>
+            <field id="OTHER_DETAILS" type="VARCHAR" length="255"/>
+            <field id="PHOTOS" type="VARCHAR" length="255"/>
+            <field id="PHOTOS_YES" type="VARCHAR" length="255"/>
+            <field id="PRESS_LIMITS1" type="VARCHAR" length="255"/>
+            <field id="PRESS_LIMITS2" type="VARCHAR" length="255"/>
+            <field id="PRESS_LIMITS3" type="VARCHAR" length="255"/>
+            <field id="PURPOSE_ANNOUNCEMENT" type="VARCHAR" length="255"/>
+            <field id="PURPOSE_EVENT" type="VARCHAR" length="255"/>
+            <field id="PURPOSE_PROJECT" type="VARCHAR" length="500"/>
+            <field id="RELEASE_DEADLINE" type="TIMESTAMP" length="10"/>
+            <field id="RELEASE_ID" type="INTEGER" length="20" required="true" key="true"/>
+            <field id="REQUEST_STATUS" type="VARCHAR" length="20"/>
+            <field id="SECTION" type="VARCHAR" length="255"/>
+            <field id="TITLE_ANNOUNCEMENT" type="VARCHAR" length="255"/>
+            <field id="TITLE_EVENT" type="VARCHAR" length="255"/>
+            <field id="TITLE_PROJECT" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

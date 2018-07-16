@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FS_AUD_NOTE_CHILDCARE">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Aud_Note</from>
+        <fields>
+            <field id="Carer_FS_ID" type="VARCHAR" length="10"/>
+            <field id="Child_FS_ID" type="VARCHAR" length="10"/>
+            <field id="Date_Input" type="TIMESTAMP" length="16"/>
+            <field id="Note_Author" type="VARCHAR" length="50"/>
+            <field id="Note_Comment" type="VARCHAR" length="500"/>
+            <field id="Note_Date" type="TIMESTAMP" length="16"/>
+            <field id="Note_ID" type="INTEGER" length="10"/>
+            <field id="Note_Type_ID" type="INTEGER" length="10"/>
+            <field id="Operation" type="VARCHAR" length="50"/>
+            <field id="Operator_ID" type="VARCHAR" length="50"/>
+            <field id="history_id" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

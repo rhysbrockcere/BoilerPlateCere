@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="DSS_RC_PERSONAL_ALLOWANCE">
+        <columns>*</columns>
+        <from>DSS_Res_Care_TEST.dbo.Lookup_Personal_Allowance</from>
+        <fields>
+            <field id="Pers_Allow_Description" type="VARCHAR" length="50"/>
+            <field id="Pers_Allow_Financial_Code" type="VARCHAR" length="17"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1" id="CORP_BUDGET_CHALLENGE">
+        <columns>*</columns>
+        <from>corp_budget_challenge.dbo.Challenges</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Slider_Scope" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Challenge_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Description" type="CLOB" length="1073741823"/>
+            <field id="End_Date" type="TIMESTAMP" length="16"/>
+            <field id="Hits" type="INTEGER" length="10"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Start_Budget" type="NUMERIC" length="18" fractionalDigits="1"/>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Target_Budget" type="NUMERIC" length="18" fractionalDigits="1"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

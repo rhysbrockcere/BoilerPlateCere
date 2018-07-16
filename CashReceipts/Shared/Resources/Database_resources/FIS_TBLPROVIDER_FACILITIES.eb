@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLPROVIDER_FACILITIES">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblPROVIDER_FACILITIES</from>
+        <where>PF_ID=&amp;&amp;PF_ID</where>
+        <fields>
+            <field id="PF_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="PF_NOTES" type="VARCHAR" length="4000"/>
+            <field id="PF_UPD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="PF_UPD_USER" type="VARCHAR" length="128"/>
+            <field id="tblLU_FACILITIES" type="INTEGER" length="10"/>
+            <field id="tblPROVIDER" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="ADMISSIONS" id="DECS_ADMISSION_ACCEPTANCE">
+        <columns>*</columns>
+        <from>Admission_Acceptance</from>
+        <fields>
+            <field id="Accepted" length="1"/>
+            <field id="DATE_ACCEPTED" type="TIMESTAMP" length="200"/>
+            <field id="GUID" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

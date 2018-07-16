@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="UFS_FORMS">
+        <columns>*</columns>
+        <from>ufs_dev.dbo.forms</from>
+        <fields>
+            <field id="BACK_BUTTON_SUPPORT" length="1"/>
+            <field id="FORM_ID" type="VARCHAR" length="50" required="true" key="true"/>
+            <field id="INTEGRATION_RESOURCE" type="VARCHAR" length="100"/>
+            <field id="LAST_UPDATED_USER" type="VARCHAR" length="20"/>
+            <field id="TEXTID_FINALPAGEHEADER" type="VARCHAR" length="255"/>
+            <field id="TRANSACTIONAL" length="1"/>
+            <field id="JSP_BOTTOM" type="VARCHAR" length="100"/>
+            <field id="LEFT_JSP_WIDTH" type="VARCHAR" length="10"/>
+            <field id="LIBRARY_IMAGE_FILENAME" type="VARCHAR" length="255"/>
+            <field id="NEXT_AVAILABLE_CONTROL_UID" type="BIGINT" length="19"/>
+            <field id="ON_ERROR_EVENT_ID" type="VARCHAR" length="100"/>
+            <field id="OPTIMISTIC_LOCKING" length="1"/>
+            <field id="PRESENTATION_TEMPLATE" type="VARCHAR" length="50"/>
+            <field id="PROJECT_ID" type="VARCHAR" length="50"/>
+            <field id="RESTORE_INFO_TEXT_ID" type="INTEGER" length="10"/>
+            <field id="RESTORE_TEXT_ID" type="INTEGER" length="10"/>
+            <field id="RIGHT_JSP_WIDTH" type="VARCHAR" length="10"/>
+            <field id="SAVE_INFO_TEXT_ID" type="INTEGER" length="10"/>
+            <field id="SAVE_RESTORE" length="1"/>
+            <field id="SAVE_RESTORE_AS_IMAGE" length="1"/>
+            <field id="SAVE_RESTORE_LIFETIME" type="INTEGER" length="10"/>
+            <field id="SAVE_RESTORE_PASSWORD" length="1"/>
+            <field id="SAVE_TEXT_ID" type="INTEGER" length="10"/>
+            <field id="SECURE" length="1"/>
+            <field id="TEXTID_FINALPAGEINFO" type="VARCHAR" length="255"/>
+            <field id="TEXTID_FINALPAGERETURNURL" type="VARCHAR" length="255"/>
+            <field id="TEXTID_FINISHBUTTON" type="VARCHAR" length="255"/>
+            <field id="TEXTID_FORMHEADER" type="VARCHAR" length="255"/>
+            <field id="TEXTID_HTMLTITLE" type="VARCHAR" length="255"/>
+            <field id="TEXTID_RESTOREBUTTON" type="VARCHAR" length="255"/>
+            <field id="TEXTID_RESTOREINFO" type="VARCHAR" length="255"/>
+            <field id="TEXTID_SAVEBUTTON" type="VARCHAR" length="255"/>
+            <field id="TEXTID_SAVEINFO" type="VARCHAR" length="255"/>
+            <field id="TEXTNS_FINALPAGEHEADER" type="VARCHAR" length="255"/>
+            <field id="WORKFLOW_AWARE" length="1"/>
+            <field id="BEFORE_FORM_EVENT_ID" type="VARCHAR" length="100"/>
+            <field id="BUSINESS_VIEW_ID" type="VARCHAR" length="50"/>
+            <field id="COMMIT_AS_IMAGE" length="1"/>
+            <field id="COMMIT_TEXT_ID" type="INTEGER" length="10"/>
+            <field id="CREATED_DATE" type="VARCHAR" length="20"/>
+            <field id="FORM_PANEL_WIDTH" type="VARCHAR" length="10"/>
+            <field id="FORM_TYPE" type="INTEGER" length="10"/>
+            <field id="FORM_UID" type="INTEGER" length="10"/>
+            <field id="HOLDER_ID" type="INTEGER" length="10"/>
+            <field id="HTML_FORM_POSITION" type="VARCHAR" length="100"/>
+            <field id="HTML_HEADER_ADDITION" type="VARCHAR" length="2000"/>
+            <field id="IMPORTED_DATE" type="VARCHAR" length="20"/>
+            <field id="IMPORTED_USER" type="VARCHAR" length="20"/>
+            <field id="CREATED_USER" type="VARCHAR" length="20"/>
+            <field id="INTEGRATION_EVENT_ID" type="VARCHAR" length="100"/>
+            <field id="JSP_LEFT" type="VARCHAR" length="100"/>
+            <field id="JSP_RIGHT" type="VARCHAR" length="100"/>
+            <field id="JSP_TOP" type="VARCHAR" length="100"/>
+            <field id="LAST_MODIFIED" type="BIGINT" length="19"/>
+            <field id="LAST_UPDATED_DATE" type="VARCHAR" length="20"/>
+            <field id="SECURITY_AUTHORISATION" type="VARCHAR" length="200"/>
+            <field id="TEMPLATE_ID" type="VARCHAR" length="50"/>
+            <field id="TEXTNS_FINALPAGEINFO" type="VARCHAR" length="255"/>
+            <field id="TEXTNS_FINALPAGERETURNURL" type="VARCHAR" length="255"/>
+            <field id="TEXTNS_FINISHBUTTON" type="VARCHAR" length="255"/>
+            <field id="TEXTNS_FORMHEADER" type="VARCHAR" length="255"/>
+            <field id="TEXTNS_HTMLTITLE" type="VARCHAR" length="255"/>
+            <field id="TEXTNS_RESTOREBUTTON" type="VARCHAR" length="255"/>
+            <field id="TEXTNS_RESTOREINFO" type="VARCHAR" length="255"/>
+            <field id="TEXTNS_SAVEBUTTON" type="VARCHAR" length="255"/>
+            <field id="TEXTNS_SAVEINFO" type="VARCHAR" length="255"/>
+            <field id="TEXT_ID_HIGH_USED" type="INTEGER" length="10"/>
+            <field id="TEXT_ID_LOW" type="INTEGER" length="10"/>
+            <field id="TITLE_TEXT_ID" type="INTEGER" length="10"/>
+            <field id="AFTER_FORM_EVENT_ID" type="VARCHAR" length="100"/>
+            <field id="BACK_BUTTON_EVENT_ID" type="VARCHAR" length="100"/>
+            <field id="DEFAULT_PRINT_FORM_NAME" type="VARCHAR" length="50"/>
+            <field id="EBASE_VERSION" length="12"/>
+            <field id="FINAL_PAGE_DESCRIPTION_TEXT_ID" type="INTEGER" length="10"/>
+            <field id="FINAL_PAGE_INFORMATION_TEXT_ID" type="INTEGER" length="10"/>
+            <field id="FINAL_PAGE_URL" type="CLOB" length="2147483647"/>
+            <field id="FINAL_PAGE_URL_TEXT_ID" type="INTEGER" length="10"/>
+            <field id="FIRST_PAGE_ID" type="INTEGER" length="10"/>
+            <field id="FORM_DESCRIPTION_TEXT_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

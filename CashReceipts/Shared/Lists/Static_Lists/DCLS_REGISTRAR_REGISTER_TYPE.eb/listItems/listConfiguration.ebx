@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="BIRTH"/>
+    <item id="2" returnVal="DEATH"/>
+    <item id="3" returnVal="MARRIAGE"/>
+    <item id="4" returnVal="BIRTH"/>
+    <item id="5" returnVal="DEATH"/>
+    <item id="6" returnVal="MARRIAGE"/>
+</items>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Age Group Lookup" database="SQLE645S1" table="true" preparedStatement="false" id="FIS_TBLLU_AGE_GROUPS_TBL">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_AGE_GROUPS</from>
+        <where>agegroup_id=agegroup_id</where>
+        <additional>order by agegroup_from, agegroup_to</additional>
+        <fields>
+            <field id="WHERE_CLAUSE_AGEGROUP" type="NUMERIC" length="500" persistent="false"/>
+            <field id="agegroup_desc" type="VARCHAR" length="50"/>
+            <field id="agegroup_desc_welsh" type="VARCHAR" length="50"/>
+            <field id="agegroup_from" type="DOUBLE" length="53"/>
+            <field id="agegroup_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="agegroup_merge" type="SMALLINT" length="5"/>
+            <field id="agegroup_merge_order" type="SMALLINT" length="5"/>
+            <field id="agegroup_to" type="DOUBLE" length="53"/>
+            <field id="agegroup_type" length="1"/>
+            <field id="agegroup_upd_date" type="TIMESTAMP" length="16"/>
+            <field id="agegroup_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

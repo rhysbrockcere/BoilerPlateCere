@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Student Loans" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_STUDED">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.STUDED</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CON_NO" length="10" required="true" key="true"/>
+            <field id="END_D" length="8"/>
+            <field id="END_ISS_D" length="8"/>
+            <field id="ORG_NO" type="DECIMAL" length="2" required="true" key="true"/>
+            <field id="PAY_NO" length="4" required="true" key="true"/>
+            <field id="SD_START_D" length="8" required="true" key="true"/>
+            <field id="STA_ISS_D" length="8"/>
+            <field id="SUSPEND_I" length="1"/>
+            <field id="SUS_REASON" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

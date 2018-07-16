@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DECS_EN_PARTNER">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DECS_EN_Partner</from>
+        <where>PartnerRef=&amp;&amp;PartnerRef</where>
+        <fields>
+            <field id="PartnerName" type="VARCHAR" length="50"/>
+            <field id="PartnerRef" type="VARCHAR" length="10" required="true" key="true"/>
+        </fields>
+    </dbResource>
+</ebase>

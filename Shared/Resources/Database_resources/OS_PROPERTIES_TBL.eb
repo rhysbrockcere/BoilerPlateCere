@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1_SQL2012" table="true" preparedStatement="false" id="OS_PROPERTIES_TBL">
+        <columns>TOP (100) *</columns>
+        <from>AddressBase.dbo.os_Address</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by E_ADDRESS</additional>
+        <fields>
+            <field id="ADMINISTRATIVE_AREA" type="VARCHAR" length="500"/>
+            <field id="BUILDING_NAME" type="VARCHAR" length="500"/>
+            <field id="BUILDING_NUMBER" type="INTEGER" length="10"/>
+            <field id="Class" type="VARCHAR" length="10"/>
+            <field id="Class_P" type="VARCHAR" length="1"/>
+            <field id="Class_S" type="VARCHAR" length="1"/>
+            <field id="Class_T" type="VARCHAR" length="6"/>
+            <field id="DEPARTMENT_NAME" type="VARCHAR" length="500"/>
+            <field id="DEPENDANT_THOROUGHFARE_NAME" type="VARCHAR" length="500"/>
+            <field id="DEPENDENT_LOCALITY" type="VARCHAR" length="500"/>
+            <field id="DOUBLE_DEPENDENT_LOCALITY" type="VARCHAR" length="500"/>
+            <field id="E_ADDR1" type="VARCHAR" length="4000"/>
+            <field id="E_ADDR2" type="VARCHAR" length="500"/>
+            <field id="E_ADDR3" type="VARCHAR" length="500"/>
+            <field id="E_ADDR4" type="VARCHAR" length="500"/>
+            <field id="E_ADDR5" type="VARCHAR" length="500"/>
+            <field id="E_Address" type="VARCHAR" length="4000"/>
+            <field id="E_PEN" type="VARCHAR" length="10"/>
+            <field id="E_PES" type="VARCHAR" length="10"/>
+            <field id="E_PRO" type="INTEGER" length="10"/>
+            <field id="E_PSN" type="VARCHAR" length="10"/>
+            <field id="E_PSS" type="VARCHAR" length="10"/>
+            <field id="E_PT" type="VARCHAR" length="500"/>
+            <field id="E_SEN" type="VARCHAR" length="10"/>
+            <field id="E_SES" type="VARCHAR" length="10"/>
+            <field id="E_SSN" type="VARCHAR" length="10"/>
+            <field id="E_SSS" type="VARCHAR" length="10"/>
+            <field id="E_ST" type="VARCHAR" length="500"/>
+            <field id="LOCALITY_NAME" type="VARCHAR" length="500"/>
+            <field id="LOGICAL_STATUS" type="INTEGER" length="10"/>
+            <field id="ORGANISATION_NAME" type="VARCHAR" length="500"/>
+            <field id="POSTCODE" type="VARCHAR" length="8"/>
+            <field id="POSTCODE_TYPE" length="1"/>
+            <field id="POST_TOWN" type="VARCHAR" length="500"/>
+            <field id="PO_BOX_NUMBER" type="VARCHAR" length="10"/>
+            <field id="Postcode2" type="VARCHAR" length="7"/>
+            <field id="RECORD_TYPE" type="INTEGER" length="10"/>
+            <field id="STREET_DESCRIPTION" type="VARCHAR" length="500"/>
+            <field id="SUB_BUILDING_NAME" type="VARCHAR" length="500"/>
+            <field id="THOROUGHFARE_NAME" type="VARCHAR" length="500"/>
+            <field id="TOWN_NAME" type="VARCHAR" length="500"/>
+            <field id="UPRN" type="BIGINT" length="19"/>
+            <field id="USRN" type="INTEGER" length="10"/>
+            <field id="WELSH_ADMINISTRATIVE_AREA" type="VARCHAR" length="500"/>
+            <field id="WELSH_DEPENDENT_LOCALITY" type="VARCHAR" length="500"/>
+            <field id="WELSH_DEPENDENT_THOROUGHFARE_NAME" type="VARCHAR" length="500"/>
+            <field id="WELSH_DOUBLE_DEPENDENT_LOCALITY" type="VARCHAR" length="500"/>
+            <field id="WELSH_LOCALITY_NAME" type="VARCHAR" length="500"/>
+            <field id="WELSH_POST_TOWN" type="VARCHAR" length="500"/>
+            <field id="WELSH_STREET_DESCRIPTION" type="VARCHAR" length="500"/>
+            <field id="WELSH_THOROUGHFARE_NAME" type="VARCHAR" length="500"/>
+            <field id="WELSH_TOWN_NAME" type="VARCHAR" length="500"/>
+            <field id="WHERE_CLAUSE" required="true" persistent="false" dynamic="true"/>
+            <field id="W_ADDR1" type="VARCHAR" length="4000"/>
+            <field id="W_ADDR2" type="VARCHAR" length="500"/>
+            <field id="W_ADDR3" type="VARCHAR" length="500"/>
+            <field id="W_ADDR4" type="VARCHAR" length="500"/>
+            <field id="W_ADDR5" type="VARCHAR" length="500"/>
+            <field id="W_Address" type="VARCHAR" length="4000"/>
+            <field id="W_PEN" type="VARCHAR" length="10"/>
+            <field id="W_PES" type="VARCHAR" length="10"/>
+            <field id="W_PRO" type="INTEGER" length="10"/>
+            <field id="W_PSN" type="VARCHAR" length="10"/>
+            <field id="W_PSS" type="VARCHAR" length="10"/>
+            <field id="W_PT" type="VARCHAR" length="500"/>
+            <field id="W_SEN" type="VARCHAR" length="10"/>
+            <field id="W_SES" type="VARCHAR" length="10"/>
+            <field id="W_SSN" type="VARCHAR" length="10"/>
+            <field id="W_SSS" type="VARCHAR" length="10"/>
+            <field id="W_ST" type="VARCHAR" length="500"/>
+            <field id="WebCall" type="VARCHAR" length="10"/>
+            <field id="easting" type="DECIMAL" length="18" fractionalDigits="2"/>
+            <field id="northing" type="DECIMAL" length="18" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Democratic Service - Meetings" database="SQLE648S1" table="true" preparedStatement="false" id="CE_DS_MEETING_VW">
+        <columns>*</columns>
+        <from>CE_Democratic_Services_TEST.dbo.CE_DS_MEETING_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Committee_Name" type="VARCHAR" length="255"/>
+            <field id="Date_Last_Updated" type="TIMESTAMP" length="16"/>
+            <field id="Document_link" type="VARCHAR" length="255"/>
+            <field id="Id" type="INTEGER" length="10"/>
+            <field id="Location" type="VARCHAR" length="255"/>
+            <field id="Meeting_Date" type="TIMESTAMP" length="16"/>
+            <field id="Meeting_Month" type="VARCHAR" length="30" readOnly="true"/>
+            <field id="Pwyllgor" type="VARCHAR" length="255"/>
+            <field id="Teitl" type="VARCHAR" length="50"/>
+            <field id="Time" type="VARCHAR" length="255"/>
+            <field id="Title" type="VARCHAR" length="255"/>
+            <field id="Updated_By" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="Year" type="VARCHAR" length="255"/>
+            <field id="Committee_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

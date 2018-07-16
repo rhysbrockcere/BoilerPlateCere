@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_PAYMENT_2" preferredComponentProject="GLOBAL" id="GL_PAYMENT" dateCreated="2014-10-07T13:57:30.873+01:00">
+        <scriptText>set REQUESTID = 'SW1234';
+set LANGUAGE = 'EN';
+set SOURCE = 'I';
+set BACKURL = 'http://cardinet.ceredigion.gov.uk/index.cfm?articleid=5489';
+set RETURNURL = 'http://cardinet.ceredigion.gov.uk/';
+set CANCELURL = 'http://www.ceredigion.gov.uk/Pages/default.aspx';
+
+resettable ITEM;
+
+insertrow ITEM;
+set ITEM-REFERENCE = 'CTAX123';
+set ITEM-FUNDCODE = '07';
+set ITEM-FUNDNAME = 'COUNCIL TAX';
+set ITEM-ACCOUNTNAME = 'STEVE WRIDE';
+set ITEM-AMOUNT = 12.53;
+set ITEM-VATCODE = 'Z';
+
+insertrow ITEM;
+set ITEM-REFERENCE = 'CTAX234';
+set ITEM-FUNDCODE = '07';
+set ITEM-FUNDNAME = 'COUNCIL TAX';
+set ITEM-ACCOUNTNAME = 'ELERI WRIDE';
+set ITEM-AMOUNT = 15.22;
+set ITEM-VATCODE = 'Z';
+
+updatetable ITEM;
+write EPAYMENT 'xmlFile';
+
+</scriptText>
+    </script>
+</ebase>

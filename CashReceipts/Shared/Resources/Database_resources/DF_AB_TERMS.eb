@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DF_AB_TERMS">
+        <columns>*</columns>
+        <from>Absence_Dev.dbo.DF_AB_Terms</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Aut_1_End" type="TIMESTAMP" length="16"/>
+            <field id="Spr_2_Start" type="TIMESTAMP" length="16"/>
+            <field id="Sum_1_End" type="TIMESTAMP" length="16"/>
+            <field id="Sum_1_Start" type="TIMESTAMP" length="16"/>
+            <field id="Sum_2_End" type="TIMESTAMP" length="16"/>
+            <field id="Sum_2_Start" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Year" type="VARCHAR" length="50"/>
+            <field id="Aut_1_Start" type="TIMESTAMP" length="16"/>
+            <field id="Aut_2_End" type="TIMESTAMP" length="16"/>
+            <field id="Aut_2_Start" type="TIMESTAMP" length="16"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Spr_1_End" type="TIMESTAMP" length="16"/>
+            <field id="Spr_1_Start" type="TIMESTAMP" length="16"/>
+            <field id="Spr_2_End" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

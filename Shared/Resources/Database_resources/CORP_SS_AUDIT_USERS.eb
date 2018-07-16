@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="CORP_SS_AUDIT_USERS">
+        <columns>*</columns>
+        <from>Absence_Update.dbo.AUDIT_Users</from>
+        <fields>
+            <field id="AUDIT_Date" type="TIMESTAMP" length="16"/>
+            <field id="AUDIT_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="AUDIT_User" type="VARCHAR" length="100"/>
+            <field id="DateOfBirth" type="TIMESTAMP" length="16"/>
+            <field id="EmployStart" type="TIMESTAMP" length="16"/>
+            <field id="EmploymentEnd" type="TIMESTAMP" length="16"/>
+            <field id="Initials" type="VARCHAR" length="50"/>
+            <field id="NIno" type="VARCHAR" length="50"/>
+            <field id="PayrollID" type="INTEGER" length="10"/>
+            <field id="PayrollNo" type="VARCHAR" length="50"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Title" type="VARCHAR" length="50"/>
+            <field id="USERID" type="INTEGER" length="10"/>
+            <field id="Username" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

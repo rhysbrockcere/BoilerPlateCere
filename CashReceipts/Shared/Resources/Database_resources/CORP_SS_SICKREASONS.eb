@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Finance Department - Sickness Reasons" database="SQLE648S1" table="true" preparedStatement="false" id="CORP_SS_SICKREASONS">
+        <columns>SickCode, SickDesc</columns>
+        <from>Absence_Update.dbo.SickReasons</from>
+        <where>SickCode &lt;&gt; 'Other'</where>
+        <fields>
+            <field id="SickCode" type="VARCHAR" length="50"/>
+            <field id="SickDesc" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

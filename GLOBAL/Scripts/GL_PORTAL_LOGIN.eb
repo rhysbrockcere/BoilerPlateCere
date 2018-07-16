@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_PORTAL_LOGIN" dateCreated="2012-10-30T16:17:23.740Z" dateImported="2016-10-14T14:17:24.100+01:00">
+        <scriptText>set WHERE_CLAUSE = 'Email = \'' + FOP_EMAIL + '\' and Password = \'' + encrypt(FOP_PASSWORD, 'ENCRYPT') + '\' and Status = \'Active\' and Portal = \'' + $FORMID + '\'';
+fetch PORTAL_ACCESS_CHECK;
+if [$FOUND = 'Y']
+	if [ACCESS_ATTEMPTS = 99999999]
+		hide LOGIN_GROUP;
+		show PASSWORD_GROUP;		
+	else
+		set NAME = CUST_FIRSTNAME + ' ' + CUST_SURNAME;
+		set ACCESS_CUST_ID = CUST_ID;
+		set ACCESS_ACCESS_DATE = $SYSTEM_DATETIME;
+		set ACCESS_FORMID = $FORMID;
+		insert PORTAL_ACCESS_LOG;
+		set WHERE_CLAUSE = 'Username = \'' + FOP_EMAIL + '\'';
+		fetch PORTAL_LOGINS;
+		set LOGIN_ATTEMPTS = 0;
+		update PORTAL_LOGINS;
+		goto page $NEXT_PAGE;
+	endif
+else
+	set WHERE_CLAUSE = 'Email = \'' + FOP_EMAIL + '\' and Password = \'' + encrypt(FOP_PASSWORD, 'ENCRYPT') + '\' and Status &lt;&gt; \'Active\' and Status &lt;&gt; \'Deactive\' and Portal = \'' + $FORMID + '\'';
+	fetch PORTAL_ACCESS_CHECK;
+	if [$FOUND = 'Y']
+		message E, 100040;
+	else
+		message E, 100039;
+	endif
+endif</scriptText>
+    </script>
+</ebase>

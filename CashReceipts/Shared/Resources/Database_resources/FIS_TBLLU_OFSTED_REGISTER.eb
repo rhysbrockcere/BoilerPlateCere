@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_OFSTED_REGISTER">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_OFSTED_REGISTER</from>
+        <where>OFR_ID=&amp;&amp;OFR_ID</where>
+        <fields>
+            <field id="OFR_CODE" type="VARCHAR" length="10"/>
+            <field id="OFR_DESC" type="VARCHAR" length="100"/>
+            <field id="OFR_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="OFR_UPD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="OFR_UPD_USER" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

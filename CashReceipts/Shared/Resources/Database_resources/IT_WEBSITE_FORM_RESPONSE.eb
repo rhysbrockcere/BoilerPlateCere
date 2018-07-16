@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="IT_WEBSITE_FORM_RESPONSE">
+        <columns>*</columns>
+        <from>Website_Forms_TEST.dbo.IT_Website_Form_Response</from>
+        <fields>
+            <field id="HomeLLAddr4" type="VARCHAR" length="150"/>
+            <field id="HomePrevAddr5" type="VARCHAR" length="150"/>
+            <field id="Accountref" type="VARCHAR" length="16"/>
+            <field id="Address1" type="VARCHAR" length="100"/>
+            <field id="Address2" type="VARCHAR" length="100"/>
+            <field id="Address3" type="VARCHAR" length="100"/>
+            <field id="Address4" type="VARCHAR" length="100"/>
+            <field id="Address5" type="VARCHAR" length="100"/>
+            <field id="BusinessName" type="VARCHAR" length="100"/>
+            <field id="BusinessRef" type="VARCHAR" length="16"/>
+            <field id="BusinessType" type="VARCHAR" length="2"/>
+            <field id="Comment" type="VARCHAR" length="2000"/>
+            <field id="ContactName" type="VARCHAR" length="50"/>
+            <field id="DE_AM_Entitled" type="VARCHAR" length="50"/>
+            <field id="DE_Because" type="VARCHAR" length="1000"/>
+            <field id="DE_Effect_From" type="TIMESTAMP" length="16"/>
+            <field id="DE_Entitled_To" type="VARCHAR" length="50"/>
+            <field id="DR_Addr1" type="VARCHAR" length="100"/>
+            <field id="DR_Addr2" type="VARCHAR" length="100"/>
+            <field id="DR_Addr3" type="VARCHAR" length="100"/>
+            <field id="DR_Addr4" type="VARCHAR" length="100"/>
+            <field id="DR_Addr5" type="VARCHAR" length="100"/>
+            <field id="DR_Bathroom" type="VARCHAR" length="50"/>
+            <field id="DR_Name" type="VARCHAR" length="500"/>
+            <field id="DR_Postcode" type="VARCHAR" length="10"/>
+            <field id="DR_Room" type="VARCHAR" length="50"/>
+            <field id="DR_WheelChair" type="VARCHAR" length="50"/>
+            <field id="EAddress" type="VARCHAR" length="100"/>
+            <field id="EMailAddress" type="VARCHAR" length="50"/>
+            <field id="Forename" type="VARCHAR" length="50"/>
+            <field id="FormName" type="VARCHAR" length="100"/>
+            <field id="HomeActuOccupied" type="TIMESTAMP" length="16"/>
+            <field id="HomeActuVacated" type="TIMESTAMP" length="16"/>
+            <field id="HomeAdultsIn" type="INTEGER" length="10"/>
+            <field id="HomeAdultsOut" type="INTEGER" length="10"/>
+            <field id="HomeDateCompleted" type="TIMESTAMP" length="16"/>
+            <field id="HomeDateFurnIn" type="TIMESTAMP" length="16"/>
+            <field id="HomeDateFurnOut" type="TIMESTAMP" length="16"/>
+            <field id="HomeDateSold" type="TIMESTAMP" length="16"/>
+            <field id="HomeDateTenancyEnd" type="TIMESTAMP" length="16"/>
+            <field id="HomeDateTenancyStart" type="TIMESTAMP" length="16"/>
+            <field id="HomeForAddr1" type="VARCHAR" length="150"/>
+            <field id="HomeForAddr2" type="VARCHAR" length="150"/>
+            <field id="HomeForAddr3" type="VARCHAR" length="150"/>
+            <field id="HomeForAddr4" type="VARCHAR" length="150"/>
+            <field id="HomeForAddr5" type="VARCHAR" length="150"/>
+            <field id="HomeForPostcode" type="VARCHAR" length="10"/>
+            <field id="HomeFurnished" type="VARCHAR" length="50"/>
+            <field id="HomeLLAddr1" type="VARCHAR" length="150"/>
+            <field id="HomeLLAddr2" type="VARCHAR" length="150"/>
+            <field id="HomeLLAddr3" type="VARCHAR" length="150"/>
+            <field id="HomePrevOccuAddr2" type="VARCHAR" length="150"/>
+            <field id="HomePrevOccuAddr3" type="VARCHAR" length="150"/>
+            <field id="HomePrevOccuAddr4" type="VARCHAR" length="150"/>
+            <field id="HomePrevOccuAddr5" type="VARCHAR" length="150"/>
+            <field id="HomePrevOccuPostcode" type="VARCHAR" length="10"/>
+            <field id="HomePrevPostcode" type="VARCHAR" length="10"/>
+            <field id="HomePurchased" type="VARCHAR" length="50"/>
+            <field id="HomeSold" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Indicators" type="VARCHAR" length="50"/>
+            <field id="NumField" type="VARCHAR" length="10"/>
+            <field id="Payerref" type="VARCHAR" length="50"/>
+            <field id="Postcode" type="VARCHAR" length="10"/>
+            <field id="PropertyReference" type="VARCHAR" length="16"/>
+            <field id="StringField" type="VARCHAR" length="20"/>
+            <field id="Surname" type="VARCHAR" length="64"/>
+            <field id="TelNoWork" type="VARCHAR" length="20"/>
+            <field id="faxno" type="VARCHAR" length="32"/>
+            <field id="telno" type="VARCHAR" length="32"/>
+            <field id="HomeLLAddr5" type="VARCHAR" length="150"/>
+            <field id="HomeLLName" type="VARCHAR" length="250"/>
+            <field id="HomeLLPostcode" type="VARCHAR" length="10"/>
+            <field id="HomeNewName" type="VARCHAR" length="250"/>
+            <field id="HomePayDD" type="VARCHAR" length="10"/>
+            <field id="HomePrevAddr1" type="VARCHAR" length="150"/>
+            <field id="HomePrevAddr3" type="VARCHAR" length="150"/>
+            <field id="HomePrevAddr4" type="VARCHAR" length="150"/>
+            <field id="HomePrevOccuAddr1" type="VARCHAR" length="150"/>
+            <field id="Title" type="VARCHAR" length="6"/>
+            <field id="datefrom" type="VARCHAR" length="11"/>
+            <field id="dateto" type="VARCHAR" length="11"/>
+        </fields>
+    </dbResource>
+</ebase>

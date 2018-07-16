@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CE_TOURISM_TDB_CONTRACTS">
+        <columns>*</columns>
+        <from>&amp;&amp;DBNAME .dbo.tdb_Contracts_View</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Client_ID" type="NUMBER" length="10"/>
+            <field id="Client_Ref" type="VARCHAR" length="20"/>
+            <field id="Contract_ID" type="INTEGER" length="10"/>
+            <field id="DBNAME" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Date" type="TIMESTAMP" length="16"/>
+            <field id="Description" type="VARCHAR" length="20"/>
+            <field id="Discount" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Net" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Status" length="1"/>
+            <field id="VAT_Rate" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Where_Clause" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

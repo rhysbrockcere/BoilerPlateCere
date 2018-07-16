@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="ARCHIVES - New Building Fileroom Record Request" database="SQLE648S1" table="true" preparedStatement="false" id="DECS_FILEROOM_REQUEST_TBL">
+        <columns>*</columns>
+        <from>DECS_Archives_RTL_TEST.dbo.Fileroom_Request</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CardNumber" type="INTEGER" length="10"/>
+            <field id="Collect_Indicator" type="VARCHAR" length="1"/>
+            <field id="RespondDate" type="DATE" length="10"/>
+            <field id="Responder" type="VARCHAR" length="50"/>
+            <field id="Department" type="VARCHAR" length="50"/>
+            <field id="FileColour" type="VARCHAR" length="15"/>
+            <field id="FileDescription" type="VARCHAR" length="500"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="FileReference" type="VARCHAR" length="30"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="RequestDate" type="TIMESTAMP" length="16"/>
+            <field id="RequestStatus" type="VARCHAR" length="50"/>
+            <field id="Requestor" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

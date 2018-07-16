@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" preparedStatement="false" id="FIS_CCC_TBLPROV_FSD_TBL">
+        <columns>*</columns>
+        <from>eyears_test.dbo.CCC_tblPROV_FSD</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PROV_FSD</where>
+        <fields>
+            <field id="PRC_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="PRC_UPD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="PRC_UPD_USER" type="VARCHAR" length="128"/>
+            <field id="PSL_LEVEL1_ID" type="INTEGER" length="10"/>
+            <field id="PSL_LEVEL2_ID" type="INTEGER" length="10"/>
+            <field id="PSL_LEVEL3_ID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE_PROV_FSD" type="NUMERIC" length="500" persistent="false"/>
+            <field id="tblLU_PROVIDER_CATEGORY" type="INTEGER" length="10"/>
+            <field id="tblPROVIDER" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="DF_DIRECT_DWP_IN">
+        <columns>*</columns>
+        <from>DF_Direct_Banking_TEST.dbo.DF_Direct_DWP_IN</from>
+        <fields>
+            <field id="HB1" type="VARCHAR" length="255"/>
+            <field id="NINO" type="VARCHAR" length="255"/>
+            <field id="DWP_REF" type="DOUBLE" length="53"/>
+            <field id="HB2" type="VARCHAR" length="255"/>
+            <field id="HB3" type="VARCHAR" length="255"/>
+            <field id="LA_Ref" type="VARCHAR" length="255"/>
+            <field id="DEBT_BAL" type="DOUBLE" length="53"/>
+            <field id="TOTAL" type="DOUBLE" length="53"/>
+        </fields>
+    </dbResource>
+</ebase>

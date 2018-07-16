@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Community Councillors" database="SQLE648S1" table="true" preparedStatement="false" id="DCLS_ER_COMMUNITY_COUNCILLORS_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.[DCLS_ER_Community_ Councillors]</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address1" type="VARCHAR" length="50"/>
+            <field id="Address2" type="VARCHAR" length="50"/>
+            <field id="Address3" type="VARCHAR" length="50"/>
+            <field id="Address4" type="VARCHAR" length="50"/>
+            <field id="Clerk" type="VARCHAR" length="255"/>
+            <field id="ClerkAddress" type="VARCHAR" length="255"/>
+            <field id="ClerkContact" type="VARCHAR" length="255"/>
+            <field id="Community" type="VARCHAR" length="50"/>
+            <field id="FirstName" type="VARCHAR" length="50"/>
+            <field id="PostCode" type="VARCHAR" length="10"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="Ward" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

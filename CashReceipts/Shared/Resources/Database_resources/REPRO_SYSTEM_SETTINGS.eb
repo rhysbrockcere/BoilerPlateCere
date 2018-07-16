@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="REPRO_SYSTEM_SETTINGS">
+        <columns>*</columns>
+        <from>ICT_Reprographic_Test.dbo.System_Settings</from>
+        <fields>
+            <field id="Design" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Finishing" type="NUMERIC" length="18" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

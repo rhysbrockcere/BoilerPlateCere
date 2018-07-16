@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_ITRENT2012" table="true" id="CERI_SICKNESS_VW">
+        <columns>*</columns>
+        <from>Feeders_LIVE.dbo.Ceri_Sickness</from>
+        <fields>
+            <field id="CERI_ID" type="VARCHAR" length="10"/>
+            <field id="Certificate Comments" type="INTEGER" length="10" readOnly="true"/>
+            <field id="End Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="First Name" type="VARCHAR" length="80"/>
+            <field id="No of Days" type="DOUBLE" length="53"/>
+            <field id="Open Ended" type="VARCHAR" length="1" readOnly="true"/>
+            <field id="Payroll No" type="VARCHAR" length="80"/>
+            <field id="Reason" type="VARCHAR" length="80"/>
+            <field id="Source" type="VARCHAR" length="4" readOnly="true"/>
+            <field id="Start Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Type" type="VARCHAR" length="10"/>
+            <field id="am pm" type="VARCHAR" length="10"/>
+            <field id="am pm 1" type="VARCHAR" length="10"/>
+            <field id="surname" type="VARCHAR" length="80"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Affordable Housing - Vacant Prroperty details" database="SQLE648S1" preparedStatement="false" id="ECDS_AH_VACANCY">
+        <columns>*</columns>
+        <from>ECDS_Housing_Test.dbo.AH_Vacancy</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Date_Shortlisted" type="VARCHAR" length="10"/>
+            <field id="Address1" type="VARCHAR" length="50"/>
+            <field id="Address2" type="VARCHAR" length="50"/>
+            <field id="Address3" type="VARCHAR" length="50"/>
+            <field id="Address4" type="VARCHAR" length="50"/>
+            <field id="Area_ID" type="INTEGER" length="10"/>
+            <field id="Date_Accepted" type="VARCHAR" length="10"/>
+            <field id="Date_Available" type="VARCHAR" length="10"/>
+            <field id="Date_LastUpdated" type="TIMESTAMP" length="16"/>
+            <field id="Num_Bedrooms" type="VARCHAR" length="50"/>
+            <field id="Org_Email" type="VARCHAR" length="100"/>
+            <field id="Postcode" type="VARCHAR" length="50"/>
+            <field id="Property_ID" type="BIGINT" length="19"/>
+            <field id="Property_Type" type="VARCHAR" length="50"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="UPRN" type="BIGINT" length="19"/>
+            <field id="Userid" type="VARCHAR" length="50"/>
+            <field id="Vacancy_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Vacancy_Org_ID" type="INTEGER" length="10"/>
+            <field id="Vacancy_Type" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

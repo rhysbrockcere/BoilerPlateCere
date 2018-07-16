@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FCW - Company, Customer, Address view" database="SQLE648S1" table="true" preparedStatement="false" id="FCW_VW_CO_CUST_ADDRESS_TBL">
+        <columns>*</columns>
+        <from>FCW_CRM_Test.dbo.VW_Co_Cust_Address</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address_ID" type="INTEGER" length="10"/>
+            <field id="Company_ID" type="INTEGER" length="10"/>
+            <field id="Company_Name" type="VARCHAR" length="50"/>
+            <field id="County" type="VARCHAR" length="50"/>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="House" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Postcode" type="VARCHAR" length="10"/>
+            <field id="Street" type="VARCHAR" length="50"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Title" type="VARCHAR" length="50"/>
+            <field id="Town" type="VARCHAR" length="50"/>
+            <field id="Village" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="250" persistent="false"/>
+            <field id="co_Address_ID" type="INTEGER" length="10"/>
+            <field id="co_county" type="VARCHAR" length="50"/>
+            <field id="co_house" type="VARCHAR" length="50"/>
+            <field id="co_street" type="VARCHAR" length="50"/>
+            <field id="co_town" type="VARCHAR" length="50"/>
+            <field id="co_village" type="VARCHAR" length="50"/>
+            <field id="co_postcode" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

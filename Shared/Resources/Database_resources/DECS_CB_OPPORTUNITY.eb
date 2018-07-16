@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DECS - community Benefits - Opportunity details" database="SQLE648S1" preparedStatement="false" id="DECS_CB_OPPORTUNITY">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DECS_CB_Opportunity</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Comment" type="VARCHAR" length="1000"/>
+            <field id="Commitment_Required" type="VARCHAR" length="200"/>
+            <field id="Duration" type="VARCHAR" length="200"/>
+            <field id="Number_Places" type="INTEGER" length="10"/>
+            <field id="Opportunity_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Project_ID" type="INTEGER" length="10"/>
+            <field id="Sector_ID" type="INTEGER" length="10"/>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+            <field id="Comment_CY" type="VARCHAR" length="1000"/>
+        </fields>
+    </dbResource>
+</ebase>

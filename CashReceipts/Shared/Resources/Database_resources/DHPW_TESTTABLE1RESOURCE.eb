@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="EBASE_SAMPLES" table="true" id="DHPW_TESTTABLE1RESOURCE">
+        <columns>LAST_NAME, FIRST_NAME, E_MAIL</columns>
+        <from>DHPW_TESTTABLE1RESOURCE</from>
+        <fields>
+            <field id="E_MAIL" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="FIRST_NAME" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="LAST_NAME" type="VARCHAR" length="255" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

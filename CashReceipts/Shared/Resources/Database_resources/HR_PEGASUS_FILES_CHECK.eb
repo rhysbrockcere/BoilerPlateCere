@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="HR_PEGASUS_FILES_CHECK">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.Pegasus_Files</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="FILE_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="File_Date" type="TIMESTAMP" length="16"/>
+            <field id="File_User" type="VARCHAR" length="50"/>
+            <field id="Filename" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="File_OUT" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

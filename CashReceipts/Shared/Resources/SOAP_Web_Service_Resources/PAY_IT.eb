@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <resource type="WS" id="PAY_IT">
+        <params>
+            <param name="BINDCTX">XB</param>
+            <param name="DOCDEFportalHeader_STRCT">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#xD;
+&lt;field maxOcc=&quot;1&quot; minOcc=&quot;1&quot; name=&quot;header&quot; nodeType=&quot;2&quot;&gt;&#xD;
+&lt;field maxOcc=&quot;1&quot; minOcc=&quot;1&quot; name=&quot;portal_id&quot; nodeType=&quot;2&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}integer&quot;/&gt;&#xD;
+&lt;/field&gt;</param>
+            <param name="DOCDEFportalReq">{http://www.e-paycapita.com/portal}portalReq</param>
+            <param name="DOCDEFportalRes">{http://www.e-paycapita.com/portal}portalRes</param>
+            <param name="DOCIDS">portalReq,portalRes,portalHeader</param>
+            <param name="NAMESPACES">por=http://www.e-paycapita.com/portal</param>
+            <param name="XSDportal">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xD;
+&lt;xs:schema targetNamespace=&quot;http://www.e-paycapita.com/portal&quot; xmlns=&quot;http://www.e-paycapita.com/portal&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; elementFormDefault=&quot;qualified&quot; attributeFormDefault=&quot;unqualified&quot; version=&quot;0.01&quot; id=&quot;portalReq&quot;&gt;&#xD;
+  &lt;xs:element name=&quot;portalReq&quot;&gt;&#xD;
+    &lt;xs:complexType&gt;&#xD;
+      &lt;xs:annotation&gt;&#xD;
+        &lt;xs:documentation&gt;AXIS Payments Portal v2.1&lt;/xs:documentation&gt;&#xD;
+      &lt;/xs:annotation&gt;&#xD;
+      &lt;xs:all&gt;&#xD;
+        &lt;xs:element name=&quot;requestID&quot; type=&quot;generalString&quot;/&gt;&#xD;
+        &lt;xs:element name=&quot;userID&quot; type=&quot;userID&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+        &lt;xs:element name=&quot;language&quot; type=&quot;language&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+        &lt;xs:element name=&quot;source&quot; type=&quot;source&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+        &lt;xs:element name=&quot;backURL&quot; type=&quot;generalLongString&quot;/&gt;&#xD;
+        &lt;xs:element name=&quot;returnURL&quot; type=&quot;generalLongString&quot;/&gt;&#xD;
+        &lt;xs:element name=&quot;applySurcharge&quot; type=&quot;applySurcharge&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+        &lt;xs:element name=&quot;cancelURL&quot; type=&quot;generalLongString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+        &lt;xs:element name=&quot;stageIndicator&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+          &lt;xs:complexType&gt;&#xD;
+            &lt;xs:all&gt;&#xD;
+              &lt;xs:element name=&quot;firstPortalStage&quot; type=&quot;generalInteger&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;totalStages&quot; type=&quot;generalInteger&quot;/&gt;&#xD;
+            &lt;/xs:all&gt;&#xD;
+          &lt;/xs:complexType&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+        &lt;xs:element name=&quot;cart&quot;&gt;&#xD;
+          &lt;xs:complexType&gt;&#xD;
+            &lt;xs:sequence&gt;&#xD;
+              &lt;xs:element name=&quot;items&quot;&gt;&#xD;
+                &lt;xs:complexType&gt;&#xD;
+                  &lt;xs:sequence&gt;&#xD;
+                    &lt;xs:element name=&quot;item&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;
+                      &lt;xs:complexType&gt;&#xD;
+                        &lt;xs:all&gt;&#xD;
+                          &lt;xs:element name=&quot;reference&quot; type=&quot;generalString&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;reference2&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;fundCode&quot; type=&quot;generalCode&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;fundName&quot; type=&quot;generalString&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;accountName&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;amount&quot; type=&quot;generalAmount&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;editable&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+                            &lt;xs:complexType&gt;&#xD;
+                              &lt;xs:sequence&gt;&#xD;
+                                &lt;xs:element name=&quot;minAmount&quot; type=&quot;generalInteger&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;maxAmount&quot; type=&quot;generalInteger&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                              &lt;/xs:sequence&gt;&#xD;
+                            &lt;/xs:complexType&gt;&#xD;
+                          &lt;/xs:element&gt;&#xD;
+                          &lt;xs:element name=&quot;overrideUserCode&quot; type=&quot;generalCode&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;balance&quot; type=&quot;generalAmount&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;sourceCode&quot; type=&quot;generalCode&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;areaCode&quot; type=&quot;generalCode&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;locationCode&quot; type=&quot;generalCode&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;accountCode&quot; type=&quot;generalCode&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;tranCode&quot; type=&quot;generalCode&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;quantity&quot; type=&quot;generalInteger&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;eMails&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+                            &lt;xs:complexType&gt;&#xD;
+                              &lt;xs:sequence&gt;&#xD;
+                                &lt;xs:element name=&quot;eMail&quot; type=&quot;generalString&quot; maxOccurs=&quot;5&quot;/&gt;&#xD;
+                              &lt;/xs:sequence&gt;&#xD;
+                            &lt;/xs:complexType&gt;&#xD;
+                          &lt;/xs:element&gt;&#xD;
+                          &lt;xs:element name=&quot;vatInfo&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+                            &lt;xs:complexType&gt;&#xD;
+                              &lt;xs:all&gt;&#xD;
+                                &lt;xs:element name=&quot;vatCode&quot; type=&quot;generalCode&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;vatAmount&quot; type=&quot;generalAmount&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;vatRate&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                              &lt;/xs:all&gt;&#xD;
+                            &lt;/xs:complexType&gt;&#xD;
+                          &lt;/xs:element&gt;&#xD;
+                          &lt;xs:element name=&quot;address&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+                            &lt;xs:complexType&gt;&#xD;
+                              &lt;xs:all&gt;&#xD;
+                                &lt;xs:element name=&quot;address1&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;address2&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;address3&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;address4&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;postCode&quot; type=&quot;postCode&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;telNo&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;postcode&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                              &lt;/xs:all&gt;&#xD;
+                            &lt;/xs:complexType&gt;&#xD;
+                          &lt;/xs:element&gt;&#xD;
+                          &lt;xs:element name=&quot;billingAddress&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+                            &lt;xs:complexType&gt;&#xD;
+                              &lt;xs:all&gt;&#xD;
+                                &lt;xs:element name=&quot;address1&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;address2&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;address3&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;address4&quot; type=&quot;generalNullableString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;postCode&quot; type=&quot;postCode&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                              &lt;/xs:all&gt;&#xD;
+                            &lt;/xs:complexType&gt;&#xD;
+                          &lt;/xs:element&gt;&#xD;
+                          &lt;xs:element name=&quot;additionalInfo&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+                            &lt;xs:complexType&gt;&#xD;
+                              &lt;xs:all&gt;&#xD;
+                                &lt;xs:element name=&quot;userString1&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;userString2&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;userString3&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;userString4&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;userLong1&quot; type=&quot;generalInteger&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;userLong2&quot; type=&quot;generalInteger&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;userLong3&quot; type=&quot;generalInteger&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                              &lt;/xs:all&gt;&#xD;
+                            &lt;/xs:complexType&gt;&#xD;
+                          &lt;/xs:element&gt;&#xD;
+                          &lt;xs:element name=&quot;aip&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+                            &lt;xs:complexType&gt;&#xD;
+                              &lt;xs:sequence&gt;&#xD;
+                                &lt;xs:element name=&quot;miscellaneousPaymentMessage&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                              &lt;/xs:sequence&gt;&#xD;
+                            &lt;/xs:complexType&gt;&#xD;
+                          &lt;/xs:element&gt;&#xD;
+                          &lt;xs:element name=&quot;itemDescriptions&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+                            &lt;xs:complexType&gt;&#xD;
+                              &lt;xs:all&gt;&#xD;
+                                &lt;xs:element name=&quot;item1&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                                &lt;xs:element name=&quot;item2&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                              &lt;/xs:all&gt;&#xD;
+                            &lt;/xs:complexType&gt;&#xD;
+                          &lt;/xs:element&gt;&#xD;
+                          &lt;xs:element name=&quot;supplementaryData&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+                            &lt;xs:complexType&gt;&#xD;
+                              &lt;xs:sequence&gt;&#xD;
+                                &lt;xs:element name=&quot;dataItem&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;
+                                  &lt;xs:complexType&gt;&#xD;
+                                    &lt;xs:all&gt;&#xD;
+                                      &lt;xs:element name=&quot;code&quot; type=&quot;generalString&quot;/&gt;&#xD;
+                                      &lt;xs:element name=&quot;value&quot; type=&quot;generalString&quot;/&gt;&#xD;
+                                    &lt;/xs:all&gt;&#xD;
+                                  &lt;/xs:complexType&gt;&#xD;
+                                &lt;/xs:element&gt;&#xD;
+                              &lt;/xs:sequence&gt;&#xD;
+                            &lt;/xs:complexType&gt;&#xD;
+                          &lt;/xs:element&gt;&#xD;
+                        &lt;/xs:all&gt;&#xD;
+                      &lt;/xs:complexType&gt;&#xD;
+                    &lt;/xs:element&gt;&#xD;
+                  &lt;/xs:sequence&gt;&#xD;
+                &lt;/xs:complexType&gt;&#xD;
+              &lt;/xs:element&gt;&#xD;
+              &lt;xs:element name=&quot;minAmount&quot; type=&quot;generalInteger&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;maxAmount&quot; type=&quot;generalInteger&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+            &lt;/xs:sequence&gt;&#xD;
+          &lt;/xs:complexType&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+      &lt;/xs:all&gt;&#xD;
+    &lt;/xs:complexType&gt;&#xD;
+  &lt;/xs:element&gt;&#xD;
+  &lt;xs:element name=&quot;portalRes&quot;&gt;&#xD;
+    &lt;xs:complexType&gt;&#xD;
+      &lt;xs:annotation&gt;&#xD;
+        &lt;xs:documentation&gt;AXIS Payments Portal v2.1&lt;/xs:documentation&gt;&#xD;
+      &lt;/xs:annotation&gt;&#xD;
+      &lt;xs:sequence&gt;&#xD;
+        &lt;xs:element name=&quot;requestID&quot; type=&quot;generalString&quot;/&gt;&#xD;
+        &lt;xs:element name=&quot;reqStatus&quot;&gt;&#xD;
+          &lt;xs:complexType&gt;&#xD;
+            &lt;xs:sequence&gt;&#xD;
+              &lt;xs:element name=&quot;statusCode&quot; type=&quot;generalInteger&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;message&quot; type=&quot;generalLongStringEmpty&quot;/&gt;&#xD;
+            &lt;/xs:sequence&gt;&#xD;
+          &lt;/xs:complexType&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+        &lt;xs:element name=&quot;authDetail&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+          &lt;xs:complexType&gt;&#xD;
+            &lt;xs:annotation&gt;&#xD;
+              &lt;xs:documentation&gt;can is for payment record&lt;/xs:documentation&gt;&#xD;
+            &lt;/xs:annotation&gt;&#xD;
+            &lt;xs:sequence&gt;&#xD;
+              &lt;xs:element name=&quot;responseCode&quot; type=&quot;generalString&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;message&quot; type=&quot;generalString&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;authCode&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;amount&quot; type=&quot;generalAmount&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;can&quot; type=&quot;generalInteger&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+            &lt;/xs:sequence&gt;&#xD;
+          &lt;/xs:complexType&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+        &lt;xs:element name=&quot;cardData&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+          &lt;xs:complexType&gt;&#xD;
+            &lt;xs:sequence&gt;&#xD;
+              &lt;xs:element name=&quot;number&quot; type=&quot;generalString&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;cardHolderName&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;type&quot; type=&quot;cardType&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;surchargeRate&quot; type=&quot;generalCode&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+            &lt;/xs:sequence&gt;&#xD;
+          &lt;/xs:complexType&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+        &lt;xs:element name=&quot;surcharge&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+          &lt;xs:complexType&gt;&#xD;
+            &lt;xs:sequence&gt;&#xD;
+              &lt;xs:element name=&quot;fundCode&quot; type=&quot;generalCode&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;reference&quot; type=&quot;generalString&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+              &lt;xs:element name=&quot;amount&quot; type=&quot;generalAmount&quot;/&gt;&#xD;
+            &lt;/xs:sequence&gt;&#xD;
+          &lt;/xs:complexType&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+        &lt;xs:element name=&quot;mop&quot; type=&quot;generalCode&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+          &lt;xs:annotation&gt;&#xD;
+            &lt;xs:documentation&gt;Method of Payment&lt;/xs:documentation&gt;&#xD;
+          &lt;/xs:annotation&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+        &lt;xs:element name=&quot;cart&quot; minOccurs=&quot;0&quot;&gt;&#xD;
+          &lt;xs:complexType&gt;&#xD;
+            &lt;xs:sequence&gt;&#xD;
+              &lt;xs:element name=&quot;items&quot;&gt;&#xD;
+                &lt;xs:complexType&gt;&#xD;
+                  &lt;xs:sequence&gt;&#xD;
+                    &lt;xs:element name=&quot;item&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;
+                      &lt;xs:complexType&gt;&#xD;
+                        &lt;xs:annotation&gt;&#xD;
+                          &lt;xs:documentation&gt;can is for transaction record&lt;/xs:documentation&gt;&#xD;
+                        &lt;/xs:annotation&gt;&#xD;
+                        &lt;xs:sequence&gt;&#xD;
+                          &lt;xs:element name=&quot;reference&quot; type=&quot;generalString&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;reference2&quot; type=&quot;generalStringEmpty&quot; minOccurs=&quot;0&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;can&quot; type=&quot;generalInteger&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;fundCode&quot; type=&quot;generalCode&quot;/&gt;&#xD;
+                          &lt;xs:element name=&quot;amount&quot; type=&quot;generalAmount&quot;/&gt;&#xD;
+                        &lt;/xs:sequence&gt;&#xD;
+                      &lt;/xs:complexType&gt;&#xD;
+                    &lt;/xs:element&gt;&#xD;
+                  &lt;/xs:sequence&gt;&#xD;
+                &lt;/xs:complexType&gt;&#xD;
+              &lt;/xs:element&gt;&#xD;
+            &lt;/xs:sequence&gt;&#xD;
+          &lt;/xs:complexType&gt;&#xD;
+        &lt;/xs:element&gt;&#xD;
+      &lt;/xs:sequence&gt;&#xD;
+    &lt;/xs:complexType&gt;&#xD;
+  &lt;/xs:element&gt;&#xD;
+  &lt;xs:simpleType name=&quot;generalCode&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:minLength value=&quot;1&quot; /&gt;&#xD;
+      &lt;xs:maxLength value=&quot;5&quot; /&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;generalString&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:minLength value=&quot;1&quot; /&gt;&#xD;
+      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+    &lt;xs:simpleType name=&quot;generalNullableString&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:minLength value=&quot;0&quot; /&gt;&#xD;
+      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;generalLongString&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:minLength value=&quot;1&quot; /&gt;&#xD;
+      &lt;xs:maxLength value=&quot;2048&quot;/&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;generalLongStringEmpty&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:minLength value=&quot;0&quot; /&gt;&#xD;
+      &lt;xs:maxLength value=&quot;2048&quot;/&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;generalAmount&quot;&gt;&#xD;
+    &lt;xs:annotation&gt;&#xD;
+      &lt;xs:documentation&gt;Amount in pounds&lt;/xs:documentation&gt;&#xD;
+    &lt;/xs:annotation&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:decimal&quot; /&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;generalInteger&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:int&quot; /&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;generalDate&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:dateTime&quot; /&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;userID&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:minLength value=&quot;1&quot; /&gt;&#xD;
+      &lt;xs:maxLength value=&quot;10&quot; /&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;language&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:length value=&quot;2&quot;/&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;source&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:length value=&quot;1&quot;/&gt;&#xD;
+      &lt;xs:enumeration value=&quot;I&quot;/&gt;&#xD;
+      &lt;xs:enumeration value=&quot;M&quot;/&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;applySurcharge&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:length value=&quot;1&quot;/&gt;&#xD;
+      &lt;xs:enumeration value=&quot;Y&quot;/&gt;&#xD;
+      &lt;xs:enumeration value=&quot;N&quot;/&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;postCode&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:minLength value=&quot;1&quot;/&gt;&#xD;
+      &lt;xs:maxLength value=&quot;10&quot;/&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;cardType&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:minLength value=&quot;1&quot;/&gt;&#xD;
+      &lt;xs:maxLength value=&quot;4&quot;/&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+  &lt;xs:simpleType name=&quot;generalStringEmpty&quot;&gt;&#xD;
+    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;
+      &lt;xs:minLength value=&quot;0&quot; /&gt;&#xD;
+      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+&lt;/xs:schema&gt;</param>
+            <param name="||DEBUG">true</param>
+            <param name="||ERROR_ON_FAULT">true</param>
+            <param name="||ID">WS</param>
+            <param name="||REQUEST_DOCS">portalReq</param>
+            <param name="||REQUEST_HEADERS">portalHeader</param>
+            <param name="||RESPONSE_DOCS">portalRes</param>
+            <param name="||SESSION_COOKIE">false</param>
+            <param name="||SOAP_VERSION">http://schemas.xmlsoap.org/wsdl/soap/</param>
+            <param name="||TARGET_URL">https://sbsctest.e-paycapita.com/portal/PortalServlet</param>
+        </params>
+        <fields>
+            <field id="portal_id" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}integer" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalHeader" RO="false" XB_QUERY="/header/portal_id"/>
+            <field id="requestID" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:requestID"/>
+            <field id="userID" XB_STYPE="{http://www.e-paycapita.com/portal}userID" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:userID"/>
+            <field id="language" XB_STYPE="{http://www.e-paycapita.com/portal}language" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:language"/>
+            <field id="source" XB_STYPE="{http://www.e-paycapita.com/portal}source" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:source"/>
+            <field id="backURL" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalLongString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:backURL"/>
+            <field id="returnURL" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalLongString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:returnURL"/>
+            <field id="applySurcharge" XB_STYPE="{http://www.e-paycapita.com/portal}applySurcharge" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:applySurcharge"/>
+            <field id="cancelURL" XB_STYPE="{http://www.e-paycapita.com/portal}generalLongString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:cancelURL"/>
+            <field id="firstPortalStage" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:stageIndicator/por:firstPortalStage"/>
+            <field id="totalStages" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:stageIndicator/por:totalStages"/>
+            <field id="cart_minAmount" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:cart/por:minAmount"/>
+            <field id="cart_maxAmount" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:cart/por:maxAmount"/>
+            <field id="item" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:cart/por:items/por:item">
+                <field id="reference" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:reference"/>
+                <field id="reference2" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:reference2"/>
+                <field id="fundCode" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:fundCode"/>
+                <field id="fundName" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:fundName"/>
+                <field id="accountName" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:accountName"/>
+                <field id="amount" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:amount"/>
+                <field id="editable_minAmount" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:editable/por:minAmount"/>
+                <field id="editable_maxAmount" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:editable/por:maxAmount"/>
+                <field id="overrideUserCode" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:overrideUserCode"/>
+                <field id="balance" XB_STYPE="{http://www.e-paycapita.com/portal}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:balance"/>
+                <field id="sourceCode" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:sourceCode"/>
+                <field id="areaCode" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:areaCode"/>
+                <field id="locationCode" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:locationCode"/>
+                <field id="accountCode" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:accountCode"/>
+                <field id="tranCode" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:tranCode"/>
+                <field id="quantity" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:quantity"/>
+                <field id="vatCode" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:vatInfo/por:vatCode"/>
+                <field id="vatAmount" XB_STYPE="{http://www.e-paycapita.com/portal}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:vatInfo/por:vatAmount"/>
+                <field id="vatRate" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:vatInfo/por:vatRate"/>
+                <field id="address_address1" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:address/por:address1"/>
+                <field id="address_address2" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:address/por:address2"/>
+                <field id="address_address3" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:address/por:address3"/>
+                <field id="address_address4" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:address/por:address4"/>
+                <field id="address_postCode" XB_STYPE="{http://www.e-paycapita.com/portal}postCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:address/por:postCode"/>
+                <field id="telNo" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:address/por:telNo"/>
+                <field id="postcode" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:address/por:postcode"/>
+                <field id="billingAddress_address1" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:billingAddress/por:address1"/>
+                <field id="billingAddress_address2" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:billingAddress/por:address2"/>
+                <field id="billingAddress_address3" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:billingAddress/por:address3"/>
+                <field id="billingAddress_address4" XB_STYPE="{http://www.e-paycapita.com/portal}generalNullableString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:billingAddress/por:address4"/>
+                <field id="billingAddress_postCode" XB_STYPE="{http://www.e-paycapita.com/portal}postCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:billingAddress/por:postCode"/>
+                <field id="userString1" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:additionalInfo/por:userString1"/>
+                <field id="userString2" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:additionalInfo/por:userString2"/>
+                <field id="userString3" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:additionalInfo/por:userString3"/>
+                <field id="userString4" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:additionalInfo/por:userString4"/>
+                <field id="userLong1" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:additionalInfo/por:userLong1"/>
+                <field id="userLong2" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:additionalInfo/por:userLong2"/>
+                <field id="userLong3" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:additionalInfo/por:userLong3"/>
+                <field id="miscellaneousPaymentMessage" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:aip/por:miscellaneousPaymentMessage"/>
+                <field id="item1" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:itemDescriptions/por:item1"/>
+                <field id="item2" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:itemDescriptions/por:item2"/>
+            </field>
+            <field id="requestID.2" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:requestID"/>
+            <field id="statusCode" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:reqStatus/por:statusCode"/>
+            <field id="reqStatus_message" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalLongStringEmpty" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:reqStatus/por:message"/>
+            <field id="responseCode" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:authDetail/por:responseCode"/>
+            <field id="authDetail_message" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:authDetail/por:message"/>
+            <field id="authCode" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:authDetail/por:authCode"/>
+            <field id="authDetail_amount" XB_STYPE="{http://www.e-paycapita.com/portal}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:authDetail/por:amount"/>
+            <field id="authDetail_can" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:authDetail/por:can"/>
+            <field id="number" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:cardData/por:number"/>
+            <field id="cardHolderName" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:cardData/por:cardHolderName"/>
+            <field id="type" XB_STYPE="{http://www.e-paycapita.com/portal}cardType" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:cardData/por:type"/>
+            <field id="surchargeRate" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:cardData/por:surchargeRate"/>
+            <field id="surcharge_fundCode" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:surcharge/por:fundCode"/>
+            <field id="surcharge_reference" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:surcharge/por:reference"/>
+            <field id="surcharge_amount" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:surcharge/por:amount"/>
+            <field id="mop" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:mop"/>
+            <field id="item.2" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalRes" RO="false" XB_QUERY="/por:portalRes/por:cart/por:items/por:item">
+                <field id="reference.2" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:reference"/>
+                <field id="reference2.2" XB_STYPE="{http://www.e-paycapita.com/portal}generalStringEmpty" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="por:reference2"/>
+                <field id="can" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:can"/>
+                <field id="fundCode.2" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:fundCode"/>
+                <field id="amount.2" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:amount"/>
+            </field>
+            <field id="eMail" repeatable="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:cart/por:items/por:item/por:eMails/por:eMail"/>
+            <field id="dataItem" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReq" RO="false" XB_QUERY="/por:portalReq/por:cart/por:items/por:item/por:supplementaryData/por:dataItem">
+                <field id="code" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:code"/>
+                <field id="value" required="true" XB_STYPE="{http://www.e-paycapita.com/portal}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="por:value"/>
+            </field>
+        </fields>
+    </resource>
+</ebase>

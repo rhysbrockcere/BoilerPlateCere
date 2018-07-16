@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_DIS_EXEMPT_ID">
+        <columns>MAX(ID) AS ID</columns>
+        <from>IT_Central_TEST.dbo.CE_DIS_EXEMPT</from>
+        <fields>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

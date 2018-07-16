@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource debug="true" database="SQLE648S1" preparedStatement="false" id="FCWCRM_ENQUIRY">
+        <columns>*</columns>
+        <from>FCW_CRM_Test.dbo.Enquiries</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Contact_ID" type="INTEGER" length="10"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="Date" type="TIMESTAMP" length="16"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Details" type="CLOB" length="1073741823"/>
+            <field id="Enquiry_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Source" type="VARCHAR" length="50"/>
+            <field id="Background" type="CLOB" length="1073741823"/>
+            <field id="Subject" type="VARCHAR" length="200"/>
+            <field id="Where_Clause" type="INTEGER" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

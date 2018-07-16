@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="DECS_AC_COURSE" dateCreated="2013-08-05T13:39:40.180+01:00" dateImported="2013-10-31T14:25:02.050Z">
+        <columns>CourseName, CourseId</columns>
+        <from>IT_Central.dbo.DECS_AC_Course</from>
+        <fields>
+            <field id="CourseId" type="INTEGER" input="false"/>
+            <field id="CourseName" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

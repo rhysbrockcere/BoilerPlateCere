@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Current financial year" database="SQLE645S1" preparedStatement="false" id="FS_QUARTERS">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Quarters</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ID" type="NUMERIC"/>
+            <field id="Quarter" length="12"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

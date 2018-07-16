@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Report_Error" type="BOOLEAN" defaultValue="False" parameter="true" labelTextRef="Txt4hAWRu" displayType="TEXT"/>
+    <field name="Session_ID" type="CHAR" labelTextRef="Txt4u58bx" displayType="TEXT"/>
+    <field name="User" type="CHAR" labelTextRef="Txt6TjavE" displayType="TEXT"/>
+    <field name="err_Form_ID" type="CHAR" parameter="true" labelTextRef="Txt5sGtuK" displayType="TEXT"/>
+    <field name="err_Message" type="CHAR" parameter="true" labelTextRef="Txt3qBAeV" displayType="TEXT" html="true"/>
+    <field name="err_Page" type="CHAR" parameter="true" labelTextRef="Txt2IOYpc" displayType="TEXT"/>
+    <field name="err_Server" type="CHAR" labelTextRef="Txt2dEVqg" displayType="TEXT"/>
+    <field name="err_Title" type="CHAR" parameter="true" labelTextRef="Txt4KJia" displayType="TEXT"/>
+</fields>

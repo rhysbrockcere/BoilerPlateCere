@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS ESTYN Statement type" database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_STATEMENT">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_statement</from>
+        <where>&amp;&amp;WHERE_CLAUSE_STATEMENT</where>
+        <fields>
+            <field id="WHERE_CLAUSE_STATEMENT" type="NUMERIC" length="500" persistent="false"/>
+            <field id="state_desc" type="VARCHAR" length="100"/>
+            <field id="state_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="state_resp" type="SMALLINT" length="5"/>
+            <field id="state_upd_date" type="TIMESTAMP" length="16"/>
+            <field id="state_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

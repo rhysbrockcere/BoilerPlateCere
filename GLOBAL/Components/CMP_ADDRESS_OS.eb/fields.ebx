@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="ADDRESS_LIST" type="CHAR" labelTextRef="TXT47" displayType="SELECT" id="180"/>
+    <field name="CHECK" type="CHAR" labelTextRef="TXT35" displayType="TEXT" id="330"/>
+    <field name="COUNTY_CLAUSE" type="CHAR" labelTextRef="TXT34" displayType="TEXT" id="320"/>
+    <field name="FOP_ROWS" type="INTEGER" labelTextRef="TXT49" displayType="TEXT" id="190"/>
+    <field name="LOCAL_FLAG" type="CHAR" labelTextRef="TXT145" displayType="TEXT" id="1340"/>
+    <field name="OS_ACCOUNTREF" type="CHAR" labelTextRef="TXT52" maxLength="16" displayType="TEXT" displayLength="16" id="250">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_ADDR1" type="CHAR" labelTextRef="TXT31" maxLength="458" displayType="TEXT" displayLength="60" id="200">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_ADDR2" type="CHAR" labelTextRef="TXT32" maxLength="100" displayType="TEXT" displayLength="60" id="210">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_ADDR3" type="CHAR" labelTextRef="TXT33" maxLength="202" displayType="TEXT" displayLength="60" id="220">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_ADDR4" type="CHAR" labelTextRef="TXT50" maxLength="100" displayType="TEXT" displayLength="60" id="230">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_ADDR5" type="CHAR" labelTextRef="TXT51" maxLength="17" displayType="TEXT" displayLength="60" id="240"/>
+    <field name="OS_ADMINISTRATIVE_AREA" type="CHAR" labelTextRef="TXT144" maxLength="500" displayType="TEXT" displayLength="60" id="1330">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_COUNTRY" type="CHAR" labelTextRef="TXT53" maxLength="17" displayType="TEXT" displayLength="60" id="260"/>
+    <field name="OS_EASTING" type="NUMBER" fractionalDigits="4" labelTextRef="TXT55" displayType="TEXT" displayLength="20" id="280">
+        <validators>
+            <validator type="MAX_DIGITS" value="12"/>
+            <validator type="MAX_LENGTH" value="20"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_E_ADDR1" type="CHAR" labelTextRef="TXT133" maxLength="4000" displayType="TEXT" displayLength="60" id="1220">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_E_ADDR2" type="CHAR" labelTextRef="TXT134" maxLength="500" displayType="TEXT" displayLength="60" id="1230">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_E_ADDR3" type="CHAR" labelTextRef="TXT135" maxLength="500" displayType="TEXT" displayLength="60" id="1240">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_E_ADDR4" type="CHAR" labelTextRef="TXT136" maxLength="500" displayType="TEXT" displayLength="60" id="1250">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_E_ADDR5" type="CHAR" labelTextRef="TXT137" maxLength="500" displayType="TEXT" displayLength="60" id="1260">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_NORTHING" type="NUMBER" fractionalDigits="4" labelTextRef="TXT56" displayType="TEXT" displayLength="20" id="290">
+        <validators>
+            <validator type="MAX_DIGITS" value="12"/>
+            <validator type="MAX_LENGTH" value="20"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_POSTCODE" type="CHAR" labelTextRef="TXT57" maxLength="100" displayType="TEXT" displayLength="60" id="300">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_UPRN" type="NUMBER" fractionalDigits="0" labelTextRef="TXT58" displayType="TEXT" displayLength="29" id="310">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_USRN" type="INTEGER" labelTextRef="TXT54" displayType="TEXT" displayLength="17" id="270">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_W_ADDR1" type="CHAR" labelTextRef="TXT138" maxLength="4000" displayType="TEXT" displayLength="60" id="1270">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_W_ADDR2" type="CHAR" labelTextRef="TXT139" maxLength="500" displayType="TEXT" displayLength="60" id="1280">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_W_ADDR3" type="CHAR" labelTextRef="TXT140" maxLength="500" displayType="TEXT" displayLength="60" id="1290">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_W_ADDR4" type="CHAR" labelTextRef="TXT141" maxLength="500" displayType="TEXT" displayLength="60" id="1300">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="OS_W_ADDR5" type="CHAR" labelTextRef="TXT142" maxLength="500" displayType="TEXT" displayLength="60" id="1310">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="SEARCH_ADDRESS" type="CHAR" labelTextRef="TXT25" displayType="TEXT" id="160"/>
+    <field name="SEARCH_POSTCODE" type="CHAR" labelTextRef="TXT26" helpTextRef="TXT146" displayType="TEXT" displayLength="8" id="170"/>
+    <field name="WHERE_CLAUSE" type="CHAR" labelTextRef="TXT21" displayType="TEXT" id="150"/>
+    <field name="WHERE_CLAUSE_SEARCH" type="CHAR" labelTextRef="TXT143" displayType="TEXT" id="1320"/>
+</fields>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Registration Accreditation" database="SQLE645S1" table="true" preparedStatement="false" id="FIS_VW_CCC_REGISTRATION_ACCREDITATION">
+        <columns>*</columns>
+        <from>eyears_test.dbo.VW_CCC_Registration_Accreditation</from>
+        <where>&amp;&amp;WHERE_CLAUSE_ACCRED</where>
+        <fields>
+            <field id="WHERE_CLAUSE_ACCRED" type="NUMERIC" length="500" persistent="false"/>
+            <field id="accred_desc" type="VARCHAR" length="100"/>
+            <field id="accred_id" type="INTEGER" length="10"/>
+            <field id="raccred_date" type="TIMESTAMP" length="16"/>
+            <field id="raccred_id" type="INTEGER" length="10"/>
+            <field id="raccred_period" type="VARCHAR" length="20"/>
+            <field id="raccred_regno" type="VARCHAR" length="30"/>
+            <field id="tblLU_ACCRED_BY" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

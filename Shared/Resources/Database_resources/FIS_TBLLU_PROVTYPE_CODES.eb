@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_PROVTYPE_CODES">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_PROVTYPE_CODES</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PROVIDER_TYPE_PROVTYPE_CODES</where>
+        <fields>
+            <field id="WHERE_CLAUSE_PROVIDER_TYPE_PROVTYPE_CODES" type="NUMERIC" length="500" persistent="false"/>
+            <field id="ptc_code" type="VARCHAR" length="20"/>
+            <field id="ptc_region" type="VARCHAR" length="50"/>
+            <field id="ptc_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ptc_upd_user" type="VARCHAR" length="128"/>
+            <field id="ptc_desc" type="VARCHAR" length="60"/>
+            <field id="ptc_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

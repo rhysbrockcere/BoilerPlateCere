@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DECS - School Bus Stop Routes" database="DECSSQL_ADMISSIONS" table="true" preparedStatement="false" id="DECS_ADM_VIEW_ROUTESTOPS">
+        <columns>*</columns>
+        <from>LEA_Database.dbo.View_RouteStops</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>Order by RouteCode,[Time]</additional>
+        <fields>
+            <field id="Description" type="VARCHAR" length="200"/>
+            <field id="Expr1" type="VARCHAR" length="8000" readOnly="true"/>
+            <field id="LEA" type="INTEGER" length="10"/>
+            <field id="RouteCode" type="VARCHAR" length="50"/>
+            <field id="Time" type="VARCHAR" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="VisitingSite" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

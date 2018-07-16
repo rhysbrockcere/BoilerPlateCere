@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Democratic Services - Ward Details" database="SQLE648S1" preparedStatement="false" id="CE_DS_WARD">
+        <columns>*</columns>
+        <from>CE_Democratic_Services_TEST.dbo.CE_DS_Ward</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Enw_Etholaeth" type="VARCHAR" length="255"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="Ward_Name" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

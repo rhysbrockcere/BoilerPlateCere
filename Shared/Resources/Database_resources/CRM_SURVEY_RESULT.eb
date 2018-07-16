@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="CRM_SURVEY_RESULT">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.crm_Survey_Results</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Enquiry_ID" type="INTEGER" length="10"/>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Notes" type="VARCHAR" length="1000"/>
+            <field id="Q1" type="SMALLINT" length="5"/>
+            <field id="Q2" type="SMALLINT" length="5"/>
+            <field id="Q3" type="SMALLINT" length="5"/>
+            <field id="Q4" type="SMALLINT" length="5"/>
+            <field id="Q5" type="SMALLINT" length="5"/>
+            <field id="Survey_No" type="INTEGER" length="10"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

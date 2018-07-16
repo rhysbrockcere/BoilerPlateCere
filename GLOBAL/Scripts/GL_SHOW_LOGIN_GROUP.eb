@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_SHOW_LOGIN_GROUP" dateImported="2016-09-06T15:35:53.617+01:00">
+        <scriptText>show LOGIN_GROUP;
+show LOGIN_PANEL;
+//hide group REQUEST;
+//hide group OPTION;
+hide REQUEST_GROUP;
+hide OPTION_GROUP;
+hide NEW_PWD_DETAILS_GROUP;
+show LOGIN_FOP_PASSWORD;</scriptText>
+    </script>
+</ebase>

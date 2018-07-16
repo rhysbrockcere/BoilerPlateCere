@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Contact details" database="SQLE645S1" preparedStatement="false" id="FIS_TBLCONTACT_MAX">
+        <columns>MAX(CONTACT_ID) as CONTACT_ID</columns>
+        <from>eyears_test.dbo.tblCONTACT</from>
+        <where>CONTACT_ID is not null</where>
+        <fields>
+            <field id="CONTACT_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

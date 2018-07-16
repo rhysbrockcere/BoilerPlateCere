@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="ERRORCODE" type="CHAR"/>
+    <field name="ERRORDESCRIPTION" type="CHAR"/>
+    <field name="Email" type="CHAR"/>
+    <field name="Man_Email" type="CHAR"/>
+    <field name="Man_Username" type="CHAR"/>
+    <field name="Manager" type="CHAR"/>
+    <field name="Name" type="CHAR"/>
+    <field name="PARAM1_SOURCE" type="CHAR"/>
+    <field name="PARAM1_VALUE" type="CHAR"/>
+    <field name="PARAM2_SOURCE" type="CHAR"/>
+    <field name="PARAM2_VALUE" type="CHAR"/>
+    <field name="Position_ID" type="CHAR"/>
+    <field name="Position_Name" type="CHAR"/>
+    <field name="Team_ID" type="CHAR"/>
+    <field name="Team_Name" type="CHAR"/>
+    <field name="Username" type="CHAR"/>
+    <field name="party_nm_pos" type="CHAR"/>
+</fields>

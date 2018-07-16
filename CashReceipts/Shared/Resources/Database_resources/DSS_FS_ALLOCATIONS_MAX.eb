@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_FS_ALLOCATIONS_MAX">
+        <columns>MAX(ID) AS Alloc_ID</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_Allocations</from>
+        <fields>
+            <field id="Alloc_ID" type="BIGINT" length="19"/>
+        </fields>
+    </dbResource>
+</ebase>

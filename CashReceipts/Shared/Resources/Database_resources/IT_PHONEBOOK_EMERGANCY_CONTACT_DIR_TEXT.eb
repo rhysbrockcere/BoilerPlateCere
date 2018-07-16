@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="IT_PHONEBOOK_EMERGANCY_CONTACT_DIR_TEXT">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_Phonebook_Emergancy_Contact_Dir_Text</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Page" type="VARCHAR" length="100"/>
+            <field id="Page_Name" type="VARCHAR" length="50"/>
+            <field id="Text" type="VARCHAR" length="1200"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

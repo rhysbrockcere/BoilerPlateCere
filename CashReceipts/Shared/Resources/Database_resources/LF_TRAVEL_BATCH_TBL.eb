@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_ITRENT2012" table="true" preparedStatement="false" id="LF_TRAVEL_BATCH_TBL">
+        <columns>*</columns>
+        <from>Feeders_Test.dbo.Travel_Batch</from>
+        <additional>order by Batch DESC</additional>
+        <fields>
+            <field id="Batch" type="INTEGER" length="10"/>
+            <field id="Created_BY" type="VARCHAR" length="50"/>
+            <field id="Created_ON" type="TIMESTAMP" length="16"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

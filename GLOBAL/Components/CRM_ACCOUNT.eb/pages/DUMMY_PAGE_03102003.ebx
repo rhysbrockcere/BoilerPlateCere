@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="Txt2Bcfoc" pageInfoTextReference="Txt2ozRqI" pageTrailerTextReference="TxtjqSpD" nextPageTextReference="Txt4LyMOB" prevPageTextReference="Txt21qux8">
+    <pageContents>
+        <component ctrl="Cmp7JkKk" inheritMsg="true" layoutType="@0" outputType="0" pdfFooterText="LocalTxt5L1GAy" pdfHeaderText="LocalTxt1HUhjp" uid="AYXfQAAP">
+            <panel ctrl="pnlLogin" layoutType="FIELD" uid="H8J0mdMr">
+                <panel ctrl="PANEL2_4" layoutType="@0" style="float: right;" uid="BzwXMPJ2" width="@0">
+                    <rootHtmlElementProperties classLocator="user-menu" idLocator="UserMenu"/>
+                    <horizontalMenu ctrl="mnuRegister" name="HmenC5g1N1521114586667" uid="NUfgbYPX">
+                        <staticMenuItem ctrl="Mit58Msm" imageAltText="LocalTxt3dV5AW" imageMouseOverText="LocalTxt5KiuUo" itemName="Item7" name="Mit58Msm1521114608748" text="LocalTxt6DHmz7" uid="B8HJgyrq"/>
+                    </horizontalMenu>
+                    <horizontalMenu ctrl="mnuSignedIn" hidden="true" name="HmennOiab1521113831584" uid="6VcNhZMN">
+                        <staticMenuItem ctrl="mnuName" enabled="false" imageAltText="LocalTxt56yRWF" imageMouseOverText="LocalTxtAPh6P7" itemName="Item1" name="Mitvweqc1521113835104" text="LocalTxt5YY6pj" uid="DPSvoSCm">
+                            <staticMenuItem ctrl="MitFWltC" imageAltText="LocalTxt2Qo4Yd" imageMouseOverText="LocalTxt3z3WXJ" itemName="Item2" name="MitFWltC1521113840240" onClickEvent="/Scripts/CRM_Menu/Goto_Dashboard" text="LocalTxtApEv5H" uid="Ez0847Xx"/>
+                            <staticMenuItem ctrl="Mit11Qkb4" imageAltText="LocalTxt8W8Iku" imageMouseOverText="LocalTxt8NkDnU" itemName="Item3" name="Mit11Qkb41521113896610" onClickEvent="/Scripts/CRM_Menu/Goto_Enquiries" text="LocalTxt8JYe1c" uid="5l3SVTnL"/>
+                            <staticMenuItem ctrl="MitQWPa5" imageAltText="LocalTxt34hBZt" imageMouseOverText="LocalTxt5VU2PW" itemName="Item4" name="MitQWPa51521113900291" onClickEvent="/Scripts/CRM_Menu/Goto_Profile" text="LocalTxt7usfvC" uid="5TNIpGTG"/>
+                            <staticMenuItem ctrl="MitHWb22" imageAltText="LocalTxtAhM6MA" imageMouseOverText="LocalTxt4Xcl5F" itemName="Item5" name="MitHWb221521113914259" onClickEvent="/Scripts/CRM_Menu/Goto_Preferences" text="LocalTxt5yrCNK" uid="A7qtTTqz"/>
+                            <staticMenuItem ctrl="MitN3Smj" imageAltText="LocalTxt6MrxBf" imageMouseOverText="LocalTxt1JbTOb" itemName="Item6" name="MitN3Smj1521113918891" onClickEvent="/Scripts/CRM_Menu/SignOut" text="LocalTxt9V04RM" uid="GF7JDzeE"/>
+                        </staticMenuItem>
+                    </horizontalMenu>
+                    <field beforeEvent="/Scripts/CRM_Menu/mnu_load" buttonText="LocalTXT8" ctrl="RUNSCRIPT" displayEditor="false" displayLabelText="false" field="FIELD1" uid="Q6IET3WX"/>
+                </panel>
+            </panel>
+        </component>
+    </pageContents>
+</page>

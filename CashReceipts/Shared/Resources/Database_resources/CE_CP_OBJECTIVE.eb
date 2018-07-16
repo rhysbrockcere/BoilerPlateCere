@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_CP_OBJECTIVE">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_CP_Objectives</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="BU_Dept" type="VARCHAR" length="50"/>
+            <field id="BU_ID" type="INTEGER" length="10"/>
+            <field id="OBJ_ID" type="INTEGER" length="10"/>
+            <field id="Obj_Owner" type="VARCHAR" length="50"/>
+            <field id="TH_Context" type="VARCHAR" length="2000"/>
+            <field id="TH_ID" type="INTEGER" length="10"/>
+            <field id="TH_Measure" type="VARCHAR" length="2000"/>
+            <field id="TH_Objective" type="VARCHAR" length="2000"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

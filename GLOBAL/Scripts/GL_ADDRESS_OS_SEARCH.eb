@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_ADDRESS_CERE" preferredComponentProject="GLOBAL" id="GL_ADDRESS_OS_SEARCH" dateCreated="2014-10-20T14:14:23.563+01:00" dateImported="2016-07-12T11:20:27.380+01:00">
+        <scriptText>unhighlight SEARCH_ADDRESS;
+unhighlight SEARCH_POSTCODE;
+unhighlight ADDRESS_LIST;
+
+set SEARCH_ADDRESS = replace(SEARCH_ADDRESS, '\'', '_');
+set SEARCH_POSTCODE = replace(SEARCH_POSTCODE, '\'', '_');
+
+show ADDRESS_LINK;
+
+if [SEARCH_POSTCODE != '']
+	set WHERE_CLAUSE = '';
+	set WHERE_CLAUSE_SEARCH = '';
+	if [SEARCH_ADDRESS != '']
+		set WHERE_CLAUSE = '(ADDR1 like \'%' + SEARCH_ADDRESS + '%\' or ADDR2 like \'%' + SEARCH_ADDRESS + '%\' or ADDR3 like \'%' + SEARCH_ADDRESS + '%\')';
+		set WHERE_CLAUSE_SEARCH = '((E_ADDR1 like \'%' + SEARCH_ADDRESS + '%\' or E_ADDR2 like \'%' + SEARCH_ADDRESS + '%\' or E_ADDR3 like \'%' + SEARCH_ADDRESS + '%\') or (W_ADDR1 like \'%' + SEARCH_ADDRESS + '%\' or W_ADDR2 like \'%' + SEARCH_ADDRESS + '%\' or W_ADDR3 like \'%' + SEARCH_ADDRESS + '%\'))';
+	endif
+	if [WHERE_CLAUSE = '']
+	//		set WHERE_CLAUSE = 'REPLACE(POSTCODE, \' \', \'\') like \'%' + condense(SEARCH_POSTCODE) + '%\'';
+		set WHERE_CLAUSE = 'POSTCODE2 like \'' + condense(SEARCH_POSTCODE) + '%\'';
+		set WHERE_CLAUSE_SEARCH = 'POSTCODE2 like \'' + condense(SEARCH_POSTCODE) + '%\'';
+	else
+//		set WHERE_CLAUSE = WHERE_CLAUSE + ' and REPLACE(POSTCODE, \' \', \'\') like \'%' + condense(SEARCH_POSTCODE) + '%\'';
+		set WHERE_CLAUSE = WHERE_CLAUSE + ' and POSTCODE2 like \'' + condense(SEARCH_POSTCODE) + '%\'';
+		set WHERE_CLAUSE_SEARCH = WHERE_CLAUSE_SEARCH + ' and POSTCODE2 like \'' + condense(SEARCH_POSTCODE) + '%\'';
+	endif
+	if [WHERE_CLAUSE != '']
+		if [COUNTY_CLAUSE != '']
+			set WHERE_CLAUSE = WHERE_CLAUSE + ' and ADMINISTRATIVE_AREA = \'' + COUNTY_CLAUSE + '\'';
+			set WHERE_CLAUSE_SEARCH = WHERE_CLAUSE_SEARCH + ' and ADMINISTRATIVE_AREA = \'' + COUNTY_CLAUSE + '\'';
+		endif
+		set WHERE_CLAUSE = WHERE_CLAUSE + ' and webcall = \'Y\'';
+		set WHERE_CLAUSE_SEARCH = WHERE_CLAUSE_SEARCH + ' and webcall = \'Y\'';
+		hide ADDR_GROUP;
+		if [LOCAL_FLAG = 'Y']
+			set ADDR_CMP_ADDRESS_OS__WHERE_CLAUSE = WHERE_CLAUSE;
+			set ADDR_CMP_ADDRESS_OS__WHERE_CLAUSE_SEARCH = WHERE_CLAUSE_SEARCH;
+			if [$LANGUAGE = 'CY']
+				fetchtable ADDR_CMP_ADDRESS_OS__OS_ADDR_CYM;
+			else
+				fetchtable ADDR_CMP_ADDRESS_OS__OS_ADDR_ENG;
+			endif
+		else
+			if [$LANGUAGE = 'CY']
+				fetchtable OS_ADDR_CYM;
+			else
+				fetchtable OS_ADDR_ENG;
+			endif
+		endif
+		if [$FOUND = 'Y']
+			set ADDRESS_LIST = '';
+			show ADDRESS_LIST;
+			if [LOCAL_FLAG = 'Y']
+				if [$LANGUAGE = 'CY']
+					set FOP_ROWS = buildlistfromtable('ADDRESS_LIST', 'ADDR_CMP_ADDRESS_OS__OS_ADDR_CYM', 'ADDR_CMP_ADDRESS_OS__OS_ADDR_CYM-ADDRESS', 'ADDR_CMP_ADDRESS_OS__OS_ADDR_CYM-PRO_ORDER');
+				else
+					set FOP_ROWS = buildlistfromtable('ADDRESS_LIST', 'ADDR_CMP_ADDRESS_OS__OS_ADDR_ENG', 'ADDR_CMP_ADDRESS_OS__OS_ADDR_ENG-ADDRESS', 'ADDR_CMP_ADDRESS_OS__OS_ADDR_ENG-PRO_ORDER');
+				endif
+			else
+				if [$LANGUAGE = 'CY']
+					set FOP_ROWS = buildlistfromtable('ADDRESS_LIST', 'OS_ADDR_CYM', 'OS_ADDR_CYM-ADDRESS', 'OS_ADDR_CYM-PRO_ORDER');
+				else
+					set FOP_ROWS = buildlistfromtable('ADDRESS_LIST', 'OS_ADDR_ENG', 'OS_ADDR_ENG-ADDRESS', 'OS_ADDR_ENG-PRO_ORDER');
+				endif
+			endif
+		else
+			hide ADDRESS_LIST;
+			set FOP_ROWS = 0;
+			message w, 100028;
+		endif
+	endif
+else
+	highlight SEARCH_POSTCODE WARNING;
+	message w, 100034;
+endif</scriptText>
+    </script>
+</ebase>

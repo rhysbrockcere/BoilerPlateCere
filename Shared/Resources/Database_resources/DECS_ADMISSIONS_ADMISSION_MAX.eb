@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="ADMISSIONS" preparedStatement="false" id="DECS_ADMISSIONS_ADMISSION_MAX">
+        <columns>MAX(Admission_ID) as Admission_ID</columns>
+        <from>Admissions</from>
+        <where>Admission_ID is not null</where>
+        <fields>
+            <field id="Admission_ID" type="INTEGER" length="20" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DFIT_CENTRAL" preparedStatement="false" id="DHPW_CLOSURE_TYPE">
+        <columns>*</columns>
+        <from>DHPW_Road_Closures.dbo.TBL_Closure_Type</from>
+        <where>Closure_Type=&amp;&amp;Closure_Type</where>
+        <fields>
+            <field id="Closure_Type" length="10" required="true" key="true"/>
+        </fields>
+    </dbResource>
+</ebase>

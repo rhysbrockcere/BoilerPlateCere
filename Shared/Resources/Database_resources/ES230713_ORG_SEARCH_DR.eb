@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Returns organisations whose name matches a search word" database="EBASE_SAMPLES" table="true" nativeSql="true" id="ES230713_ORG_SEARCH_DR">
+        <select>select org_id, org_name from es230713_organisations where upper(org_name) like  upper('%&amp;&amp;searchword%')</select>
+        <fields>
+            <field id="org_id" type="VARCHAR"/>
+            <field id="org_name" type="VARCHAR"/>
+            <field id="searchword" required="true" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_HS_IR1_VIEW2">
+        <columns>*</columns>
+        <from>CE_HS_TEST.dbo.CE_HS_IR1_VIEW2</from>
+        <where>IRI_Ref=&amp;&amp;IRI_Ref</where>
+        <fields>
+            <field id="Additional_Client_Unobserved_Fall_Unexpected_Movement" type="VARCHAR" length="50"/>
+            <field id="Additional_Staff_Days_Absent" type="VARCHAR" length="50"/>
+            <field id="Cause_Inadequate_Staffing" type="BIT" length="1"/>
+            <field id="Investigator_Name1" type="VARCHAR" length="50"/>
+            <field id="Cause_Inadequate_Supervision" type="BIT" length="1"/>
+            <field id="Cause_Inadequate_Training" type="BIT" length="1"/>
+            <field id="Cause_Other_Factors" type="VARCHAR" length="50"/>
+            <field id="Cause_Personal_Factors" type="VARCHAR" length="50"/>
+            <field id="FALL_CY" length="15"/>
+            <field id="FALL_EN" length="15"/>
+            <field id="Factor_CY" length="30"/>
+            <field id="Factor_EN" length="30"/>
+            <field id="Form_Date_IR1_Completed" type="VARCHAR" length="50"/>
+            <field id="Form_Person_Completing_Designation" type="VARCHAR" length="50"/>
+            <field id="Investigator_Name2" type="VARCHAR" length="50"/>
+            <field id="Investigator_Name3" type="VARCHAR" length="50"/>
+            <field id="Investigator_Other_Attached" type="BIT" length="1"/>
+            <field id="Additional_Staff_Hours_Absent" type="VARCHAR" length="50"/>
+            <field id="Form_Person_Completing_IR1" type="VARCHAR" length="50"/>
+            <field id="Form_Person_Reporting" type="VARCHAR" length="50"/>
+            <field id="Form_Person_Reporting_Designation" type="VARCHAR" length="50"/>
+            <field id="IRF_Action_Required" type="VARCHAR" length="50"/>
+            <field id="IRF_Facts_Number" type="VARCHAR" length="50"/>
+            <field id="IRF_From" type="VARCHAR" length="50"/>
+            <field id="IRF_Location" type="VARCHAR" length="50"/>
+            <field id="IRF_Sent_to" type="VARCHAR" length="50"/>
+            <field id="IRI_Ref" type="NUMERIC" length="19"/>
+            <field id="Investigator_Date" type="VARCHAR" length="10"/>
+            <field id="Investigator_Designation1" type="VARCHAR" length="50"/>
+            <field id="Investigator_Designation2" type="VARCHAR" length="50"/>
+            <field id="Investigator_Designation3" type="VARCHAR" length="50"/>
+            <field id="Investigator_Other_Attached_Details" type="VARCHAR" length="50"/>
+            <field id="TLD_Personal_Property" type="VARCHAR" length="50"/>
+            <field id="Investigator_Photographs_Attached" type="BIT" length="1"/>
+            <field id="Investigator_Sketches_Attached" type="BIT" length="1"/>
+            <field id="Investigator_Witness_Statement_Attached" type="BIT" length="1"/>
+            <field id="LOSS_CY" length="25"/>
+            <field id="LOSS_EN" length="25"/>
+            <field id="Nature_CY" length="40"/>
+            <field id="Nature_EN" length="30"/>
+            <field id="Notified_Date" type="VARCHAR" length="10"/>
+            <field id="Notified_Designation1" type="VARCHAR" length="50"/>
+            <field id="Notified_Designation2" type="VARCHAR" length="50"/>
+            <field id="Notified_Designation3" type="VARCHAR" length="50"/>
+            <field id="Notified_of_Incident_Name1" type="VARCHAR" length="50"/>
+            <field id="Notified_of_Incident_Name2" type="VARCHAR" length="50"/>
+            <field id="Notified_of_Incident_Name3" type="VARCHAR" length="50"/>
+            <field id="OF_CF_CY" length="30"/>
+            <field id="OF_CF_EN" length="30"/>
+            <field id="ORG_CY" length="15"/>
+            <field id="ORG_EN" length="15"/>
+            <field id="PART_CY" length="15"/>
+            <field id="PART_EN" length="10"/>
+            <field id="Personal_CY" length="15"/>
+            <field id="Personal_EN" length="15"/>
+            <field id="Significant_Comments" type="VARCHAR" length="500"/>
+            <field id="Significant_Number" type="VARCHAR" length="50"/>
+            <field id="Status" type="VARCHAR" length="1"/>
+            <field id="TLD_Cause_of_Loss" type="VARCHAR" length="50"/>
+            <field id="TLD_Police_Involved" type="VARCHAR" length="50"/>
+            <field id="Time_of_Fire_Alarm" type="VARCHAR" length="50"/>
+            <field id="Time_of_Fire_Brigade" type="VARCHAR" length="50"/>
+            <field id="VAH_Contributory_Factor" type="VARCHAR" length="50"/>
+            <field id="VAH_Nature_of_Incident" type="VARCHAR" length="50"/>
+            <field id="Assailant_Male_Female" type="VARCHAR" length="50"/>
+            <field id="Assailant_Name" type="VARCHAR" length="50"/>
+            <field id="Assailant_Person_Class" type="VARCHAR" length="50"/>
+            <field id="Cause_Inadequate_Equiptment" type="BIT" length="1"/>
+            <field id="Cause_Inadequate_Information" type="BIT" length="1"/>
+            <field id="Cause_Inadequate_Maintenance" type="BIT" length="1"/>
+            <field id="TLD_Crime_Number" type="VARCHAR" length="50"/>
+            <field id="TLD_Estimated_Value_of_Loss" type="VARCHAR" length="50"/>
+            <field id="TLD_Organisations_Property" type="VARCHAR" length="50"/>
+            <field id="AFF_CY" length="50"/>
+            <field id="AFF_EN" length="50"/>
+            <field id="Additional_Address" type="VARCHAR" length="100"/>
+            <field id="Additional_Client_Fall_From" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Fall_Observed" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Fall_Observed_Factors" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Inj_Date_Informed" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Inj_Informed_by_Whom" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Inj_Relative_Informed" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Unobserved_Fall_Environmental_Cause" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Unobserved_Fall_Fallen_Before" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Unobserved_Fall_Medical_Reason" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Unobserved_Fall_Normal_Staffing_Levels" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Unobserved_Fall_Personal_Reason" type="VARCHAR" length="50"/>
+            <field id="Additional_Client_Unobserved_Fall_Risk_of_Unforeseeable_Falls" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

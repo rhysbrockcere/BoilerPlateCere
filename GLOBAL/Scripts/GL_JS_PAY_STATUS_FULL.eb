@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Components/CMP_PAYMENT_FULL" preferredComponentProject="GLOBAL" id="GL_JS_PAY_STATUS_FULL" dateImported="2017-01-30T13:51:59.530Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+var gross = null;
+var vatAmount = null;
+var rows = tables.PAY_CMP_PAYMENT_FULL__ITEM.getRows();
+
+var tgross = 0;
+var tvat = 0;
+
+tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.resetTable();
+
+while (rows.next())
+{
+	gross = tables.PAY_CMP_PAYMENT_FULL__ITEM.AMOUNT.value;
+	vatAmount = tables.PAY_CMP_PAYMENT_FULL__ITEM.VATAMOUNT.value;
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.insertRow();
+	if (tables.PAY_CMP_PAYMENT_FULL__ITEM.FUNDCODE.value == '05')
+	{ 
+		tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.ITEM.setValue(tables.PAY_CMP_PAYMENT_FULL__ITEM.REFERENCE2.value);
+	} else
+	{
+		tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.ITEM.setValue(tables.PAY_CMP_PAYMENT_FULL__ITEM.FUNDNAME.value);
+	}
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.UNIT.setValue(tables.PAY_CMP_PAYMENT_FULL__ITEM.UNIT.value);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.QUANTITY.setValue(tables.PAY_CMP_PAYMENT_FULL__ITEM.QUANTITY.value);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.GROSS.setValue(gross);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.VAT_AMOUNT.setValue(vatAmount);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.VAT_RATE.setValue(tables.PAY_CMP_PAYMENT_FULL__ITEM.VATRATE.value);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.NET.setValue(gross - vatAmount);
+	tgross = tgross + gross
+	tvat = tvat + vatAmount
+}
+
+if (fields.PAY_CMP_PAYMENT_FULL__RES_SURCHARGE_AMOUNT.value &gt; 0)
+{
+	gross = fields.PAY_CMP_PAYMENT_FULL__RES_SURCHARGE_AMOUNT.value /100;
+	vatAmount = 0;
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.insertRow();
+	if (system.variables.$LANGUAGE.getValue() == &quot;EN&quot;)
+	{
+		tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.ITEM.setValue(&quot;Credit Card Surcharge&quot;);
+	} else {
+		tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.ITEM.setValue(&quot;Gordal Cerdyn Credyd&quot;);
+	}
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.UNIT.setValue(gross);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.QUANTITY.setValue(&quot;1&quot;);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.GROSS.setValue(gross);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.VAT_AMOUNT.setValue(vatAmount);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.VAT_RATE.setValue(&quot;0&quot;);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TBL.NET.setValue(gross - vatAmount);
+	tgross = tgross + gross
+	tvat = tvat + vatAmount
+}
+
+if (system.variables.$LANGUAGE.getValue() == &quot;EN&quot;)
+{
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.resetTable();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.insertRow();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.NAME.setValue('NET');
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.AMOUNT.setValue(tgross - tvat);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.insertRow();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.NAME.setValue('VAT');
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.AMOUNT.setValue(tvat);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.insertRow();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.NAME.setValue('Discount');
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.AMOUNT.setValue(0);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.insertRow();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.NAME.setValue('GROSS');
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.AMOUNT.setValue(tgross);
+} else {
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.resetTable();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.insertRow();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.NAME.setValue('NET');
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.AMOUNT.setValue(tgross - tvat);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.insertRow();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.NAME.setValue('TAW');
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.AMOUNT.setValue(tvat);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.insertRow();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.NAME.setValue('Gostyngiad');
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.AMOUNT.setValue(0);
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.insertRow();
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.NAME.setValue('GROS');
+	tables.PAY_CMP_PAYMENT_FULL__RECEIPT_TOT.AMOUNT.setValue(tgross);
+}
+// Create PDF File
+var opts = new PdfOptions();
+opts.display = true;
+opts.save = false;
+opts.pages = [pages.PAY_CMP_PAYMENT_FULL__RECEIPT];
+form.generatePdf(opts);</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webFormComponent type="PART_PAGE" template="/Presentation/Presentation_Templates/Public17" firstPage="DUMMY_PAGE_03102003" preferredScriptFolder="/Scripts" id="CMP_CRM_MENU" dateCreated="2016-06-06T14:22:57.327+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+        </sharedFunctionScripts>
+        <clientCallableFunctionScripts>
+            <clientCallableFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+        </clientCallableFunctionScripts>
+        <linkedTexts>
+            <linkedText>/GLOBAL_Messages</linkedText>
+            <linkedText>/Shared_Texts</linkedText>
+        </linkedTexts>
+    </webFormComponent>
+</ebase>

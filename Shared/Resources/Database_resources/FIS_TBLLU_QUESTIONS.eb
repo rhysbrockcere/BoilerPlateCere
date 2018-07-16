@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_QUESTIONS">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_QUESTIONS</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PROV_QUEST</where>
+        <fields>
+            <field id="WHERE_CLAUSE_PROV_QUEST" type="NUMERIC" length="500" persistent="false"/>
+            <field id="quest_Web" type="BIT" length="1"/>
+            <field id="quest_WebDescription" type="VARCHAR" length="100"/>
+            <field id="quest_contact" type="BIT" length="1"/>
+            <field id="quest_cservice" type="SMALLINT" length="5"/>
+            <field id="quest_desc" type="VARCHAR" length="100"/>
+            <field id="quest_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="quest_merge" type="SMALLINT" length="5"/>
+            <field id="quest_merge_order" type="SMALLINT" length="5"/>
+            <field id="quest_notactive" type="SMALLINT" length="5"/>
+            <field id="quest_ofsted" type="SMALLINT" length="5"/>
+            <field id="quest_provider" type="SMALLINT" length="5"/>
+            <field id="quest_reg" type="BIT" length="1"/>
+            <field id="quest_upd_date" type="TIMESTAMP" length="16"/>
+            <field id="quest_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="ECDS_AH_AUDIT_PREFER_AREA">
+        <columns>*</columns>
+        <from>ECDS_Housing_Test.dbo.AH_Audit_Prefer_Area</from>
+        <fields>
+            <field id="Prefer_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Application_ID" type="INTEGER" length="10"/>
+            <field id="Area_ID" type="INTEGER" length="10"/>
+            <field id="Date_Last_Updated" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Updated_By" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

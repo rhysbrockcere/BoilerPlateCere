@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="IT_SYSTEM_LOCK_LOG">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_System_Lock_log</from>
+        <fields>
+            <field id="Action" length="6"/>
+            <field id="Date" type="TIMESTAMP" length="16"/>
+            <field id="Reason" type="CLOB" length="2147483647"/>
+            <field id="System" type="VARCHAR" length="50"/>
+            <field id="User_Name" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

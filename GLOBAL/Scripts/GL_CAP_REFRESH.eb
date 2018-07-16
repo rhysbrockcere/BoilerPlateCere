@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_PORTAL" preferredComponentProject="GLOBAL" id="GL_CAP_REFRESH" dateImported="2016-10-14T14:17:23.820+01:00">
+        <scriptText>set CAPTCHA = '&lt;img src=\'jcaptcha?' + tostring($SYSTEM_DATETIME) + '\'/&gt;';
+set INPUT_CHARACTERS_1 = '';
+set INPUT_CHARACTERS_2 = '';</scriptText>
+    </script>
+</ebase>

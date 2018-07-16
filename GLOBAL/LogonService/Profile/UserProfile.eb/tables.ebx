@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Access">
+        <column name="Role" type="CHAR" labelTextRef="Txt5nsArN" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Role_ID" type="INTEGER" labelTextRef="Txt3DLJTP" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Username" type="CHAR" labelTextRef="Txt4XN7eJ" maxLength="50" displayType="TEXT" displayLength="50"/>
+    </table>
+    <table name="CeriExtract">
+        <column name="con_pos_ref_no" type="CHAR" labelTextRef="Txt5GIg41" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="Email" type="CHAR" labelTextRef="Txt29HhYw" maxLength="4000" displayType="TEXT" displayLength="60"/>
+        <column name="Manager_Email" type="CHAR" labelTextRef="Txt3w3C1E" maxLength="4000" displayType="TEXT" displayLength="60"/>
+        <column name="Manager_Name" type="CHAR" labelTextRef="Txt54qEJh" maxLength="161" displayType="TEXT" displayLength="60"/>
+        <column name="Manager_Position" type="CHAR" labelTextRef="Txt3nLvBT" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="Manager_Position_ID" type="CHAR" labelTextRef="TxtliTsM" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Manager_Reference_No" type="CHAR" labelTextRef="Txt3VXxVH" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="Manager_username" type="CHAR" labelTextRef="Txt6eG5Xo" maxLength="4000" displayType="TEXT" displayLength="60"/>
+        <column name="Name" type="CHAR" labelTextRef="Txt7fe4rG" maxLength="161" displayType="TEXT" displayLength="60"/>
+        <column name="position_id" type="CHAR" labelTextRef="Txt9ohF8S" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Position_Name" type="CHAR" labelTextRef="TxtA08lpc" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="team_id" type="CHAR" labelTextRef="TxtAbm0UB" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Team_Name" type="CHAR" labelTextRef="Txt1LkRvq" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="Username" type="CHAR" labelTextRef="Txt6Esrg4" maxLength="4000" displayType="TEXT" displayLength="60"/>
+    </table>
+</tables>

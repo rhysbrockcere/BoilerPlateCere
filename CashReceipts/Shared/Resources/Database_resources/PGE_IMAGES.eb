@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="PGE table of images" database="SQLE648S1" table="true" preparedStatement="false" id="PGE_IMAGES">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.PGE_Images</from>
+        <fields>
+            <field id="Active" type="VARCHAR" length="1"/>
+            <field id="Height" type="INTEGER" length="10"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Main" type="VARCHAR" length="50"/>
+            <field id="Path" type="VARCHAR" length="50"/>
+            <field id="Thumb" type="VARCHAR" length="50"/>
+            <field id="Title" type="VARCHAR" length="50"/>
+            <field id="Width" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

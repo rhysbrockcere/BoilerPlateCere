@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_PROV_FUND_PURPOSE">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_PROV_FUND_PURPOSE</from>
+        <where>&amp;&amp;WHERE_CLAUSE_FUNDS</where>
+        <fields>
+            <field id="WHERE_CLAUSE_FUNDS" type="NUMERIC" length="500" persistent="false"/>
+            <field id="pfp_desc" type="VARCHAR" length="50"/>
+            <field id="pfp_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="pfp_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="pfp_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

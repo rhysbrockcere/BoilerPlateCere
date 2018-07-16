@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="TXT1" pageInfoTextReference="TXT2" pageTrailerTextReference="TXT3" nextPageTextReference="TXT4" prevPageTextReference="TXT5">
+    <pageContents>
+        <component ctrl="COMPONENT1" default="L" localMsg="false" msgControls="7" outputType="0" pdfFooterText="LocalTXT6" pdfHeaderText="LocalTXT7" uid="0">
+            <field beforeEvent="/Scripts/CRM_GET_CUSTOMER" buttonText="LocalTXT26" ctrl="RUNSCRIPT" displayEditor="false" displayIvAsImage="false" displayLabelText="false" field="FIELD1" uid="30" validationEvent="/Scripts/CRM_GET_CUSTOMER"/>
+            <panel cssClass="@0" ctrl="PANEL8" layoutType="@0" uid="8" width="60%">
+                <rootHtmlElementProperties classLocator="panelLeft"/>
+                <message ctrl="MESSAGE1" uid="7"/>
+                <groupPanel ctrl="GROUPPANEL1" groupHeaderText="LocalTXT37" groupInfoText="LocalTXT38" groupTrailerText="LocalTXT39" uid="9">
+                    <field buttonText="LocalTXT40" ctrl="FIELDCONTROL1_2" field="USERNAME" modifiers="r" uid="10"/>
+                    <field buttonText="LocalTXT41" ctrl="FIELDCONTROL2" field="PASSWORD" modifiers="r" uid="11"/>
+                    <hyperlink ctrl="HYPERLINK5" text="LocalTXT44" title="LocalTXT45" uid="12"/>
+                    <button buttonText="LocalTXT42" ctrl="BUTTON1" inheritMsg="false" mouseOverText="LocalTXT43" msgControls="7" onClickEvent="/Scripts/CRM_LOGIN" uid="13"/>
+                </groupPanel>
+            </panel>
+            <panel ctrl="PNL_RIGHT" propertySet="floatRight" uid="14">
+                <panel ctrl="PANEL10" propertySet="contentPane" uid="15">
+                    <rootHtmlElementProperties classLocator="contentPaneThickBorder"/>
+                    <text ctrl="TEXT2" text="LocalTXT46" uid="16"/>
+                    <button buttonText="LocalTXT47" ctrl="BUTTON2" mouseOverText="LocalTXT48" onClickEvent="/Scripts/GL_CRM_GOTO_REGISTER" uid="17"/>
+                    <panel ctrl="PANEL11" topPadding="20px" uid="18">
+                        <text ctrl="TEXT3" text="LocalTXT49" uid="19"/>
+                        <html ctrl="HTML1" htmlText="LocalTXT50" uid="20"/>
+                        <text ctrl="TEXT4" text="LocalTXT51" uid="21"/>
+                        <text ctrl="TEXT5" text="LocalTXT52" uid="22"/>
+                        <text ctrl="TEXT6" text="LocalTXT53" uid="23"/>
+                        <html ctrl="HTML2" htmlText="LocalTXT54" uid="24"/>
+                    </panel>
+                    <panel ctrl="PANEL12" layoutType="VERTICAL_BOX" uid="25">
+                        <hyperlink ctrl="HYPERLINK7" text="LocalTXT57" title="LocalTXT58" uid="26"/>
+                        <spacer ctrl="SPACER1" uid="27"/>
+                        <hyperlink ctrl="HYPERLINK6" text="LocalTXT55" title="LocalTXT56" uid="28"/>
+                    </panel>
+                </panel>
+            </panel>
+        </component>
+    </pageContents>
+</page>

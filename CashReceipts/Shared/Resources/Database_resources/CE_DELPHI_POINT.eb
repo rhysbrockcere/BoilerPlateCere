@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_DELPHI_POINT">
+        <columns>*</columns>
+        <from>CE_Personnel_TEST.dbo.CE_Delphi_Point</from>
+        <fields>
+            <field id="Spine_Point" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

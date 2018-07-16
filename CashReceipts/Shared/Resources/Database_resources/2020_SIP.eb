@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="2020_SIP">
+        <columns>*</columns>
+        <from>Eforms_Surveys_Test.dbo.SIP</from>
+        <fields>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Q1" type="VARCHAR" length="50"/>
+            <field id="Q10" type="VARCHAR" length="50"/>
+            <field id="Q11" type="VARCHAR" length="50"/>
+            <field id="Q12" type="VARCHAR" length="50"/>
+            <field id="Q13" type="VARCHAR" length="50"/>
+            <field id="Q13_Other" type="VARCHAR" length="500"/>
+            <field id="Q14" type="VARCHAR" length="50"/>
+            <field id="Q1_Reason" type="VARCHAR" length="1000"/>
+            <field id="Q2" type="VARCHAR" length="50"/>
+            <field id="Q3" type="VARCHAR" length="1000"/>
+            <field id="Q4_Comment" type="VARCHAR" length="1000"/>
+            <field id="Q4_EP" type="VARCHAR" length="50"/>
+            <field id="Q4_IL" type="VARCHAR" length="50"/>
+            <field id="Q4_SF" type="VARCHAR" length="50"/>
+            <field id="Q5_Comment" type="VARCHAR" length="1000"/>
+            <field id="Q5_EP" type="VARCHAR" length="50"/>
+            <field id="Q5_IL" type="VARCHAR" length="50"/>
+            <field id="Q5_SF" type="VARCHAR" length="50"/>
+            <field id="Q6" type="VARCHAR" length="50"/>
+            <field id="Q6_Reason" type="VARCHAR" length="1000"/>
+            <field id="Q7" type="VARCHAR" length="50"/>
+            <field id="Q7_Reason" type="VARCHAR" length="1000"/>
+            <field id="Q8" type="VARCHAR" length="50"/>
+            <field id="Q8_Reason" type="VARCHAR" length="1000"/>
+            <field id="Q9" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

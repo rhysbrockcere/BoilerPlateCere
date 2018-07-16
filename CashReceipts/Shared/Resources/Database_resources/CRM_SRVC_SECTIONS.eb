@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="CRM_SRVC_SECTIONS">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.srvc_Sections</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="IsAdran" type="VARCHAR" length="60"/>
+            <field id="OrgChart" type="VARCHAR" length="255"/>
+            <field id="SectionName" type="VARCHAR" length="60"/>
+            <field id="Section_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Section_Type" type="VARCHAR" length="15"/>
+            <field id="Service_ID" type="VARCHAR" length="10"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

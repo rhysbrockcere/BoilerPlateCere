@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_ADDRESS_CERE" preferredComponentProject="GLOBAL" id="GL_ADDRESS_OS_SELECT" dateCreated="2015-11-19T11:55:20.967Z" dateImported="2016-07-12T11:20:27.443+01:00">
+        <scriptText>if [ADDRESS_LIST != '']
+	unhighlight ADDRESS_LIST;
+	unhighlight OS_ADDR1;
+	unhighlight OS_POSTCODE;
+	set WHERE_CLAUSE = WHERE_CLAUSE_SEARCH;
+	if [$LANGUAGE = 'CY']
+		set WHERE_CLAUSE = WHERE_CLAUSE + ' and W_PRO = \'' + ADDRESS_LIST + '\'';
+	else
+		set WHERE_CLAUSE = WHERE_CLAUSE + ' and E_PRO = \'' + ADDRESS_LIST + '\'';
+	endif
+	fetch OS_PROPERTIES;
+	show ADDR_GROUP;
+	set ADDR_GROUP DISPLAYONLY;
+	if [$LANGUAGE = 'CY']
+		set OS_ADDR1 = OS_W_ADDR1;
+		set OS_ADDR2 = OS_W_ADDR2;
+		set OS_ADDR3 = OS_W_ADDR3;
+		set OS_ADDR4 = OS_W_ADDR4;
+		set OS_ADDR5 = OS_W_ADDR5;
+	else
+		set OS_ADDR1 = OS_E_ADDR1;
+		set OS_ADDR2 = OS_E_ADDR2;
+		set OS_ADDR3 = OS_E_ADDR3;
+		set OS_ADDR4 = OS_E_ADDR4;
+		set OS_ADDR5 = OS_E_ADDR5;
+	endif
+	if [OS_ADDR1 = '']
+		hide OS_ADDR1;
+	else
+		show OS_ADDR1;
+	endif
+	if [OS_ADDR2 = '']
+		hide OS_ADDR2;
+	else
+		show OS_ADDR2;
+	endif
+	if [OS_ADDR3 = '']
+		hide OS_ADDR3;
+	else
+		show OS_ADDR3;
+	endif
+	if [OS_ADDR4 = '']
+		hide OS_ADDR4;
+	else
+		show OS_ADDR4;
+	endif
+	if [OS_ADDR5 = '']
+		hide OS_ADDR5;
+	else
+		show OS_ADDR5;
+	endif
+	if [OS_COUNTRY = '']
+		hide OS_COUNTRY;
+	else
+		show OS_COUNTRY;
+	endif
+else
+	hide ADDR_GROUP;
+endif</scriptText>
+    </script>
+</ebase>

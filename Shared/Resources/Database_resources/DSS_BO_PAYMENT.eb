@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_BO_PAYMENT">
+        <columns>*</columns>
+        <from>&amp;&amp;DBNAME .dbo.Payments</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Amount" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="CreatedBy" type="VARCHAR" length="50"/>
+            <field id="DBNAME" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Date" type="DATE" length="16"/>
+            <field id="DateCreated" type="DATE" length="16"/>
+            <field id="DateModified" type="DATE" length="16"/>
+            <field id="Description" type="CLOB" length="1073741823"/>
+            <field id="Fin_Code" type="VARCHAR" length="30"/>
+            <field id="ModifiedBy" type="VARCHAR" length="50"/>
+            <field id="Notes" type="CLOB" length="1073741823"/>
+            <field id="Payment_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Period_Start" type="DATE" length="16"/>
+            <field id="Placement_ID" type="INTEGER" length="10"/>
+            <field id="Type" type="INTEGER" length="10"/>
+            <field id="where_Clause" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

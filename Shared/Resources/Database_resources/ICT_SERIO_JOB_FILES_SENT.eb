@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="ICT_SERIO_JOB_FILES_SENT">
+        <columns>*</columns>
+        <from>ICT_Web_Serio_Test.dbo.ICT_Job_Files</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="File_Ext" type="VARCHAR" length="50"/>
+            <field id="File_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Filename" type="VARCHAR" length="500"/>
+            <field id="Job_ID" type="INTEGER" length="10"/>
+            <field id="Sent" type="TIMESTAMP" length="16"/>
+            <field id="System_Name" type="VARCHAR" length="500"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

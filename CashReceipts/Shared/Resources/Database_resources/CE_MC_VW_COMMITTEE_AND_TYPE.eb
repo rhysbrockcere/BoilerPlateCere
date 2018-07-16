@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Committee name and type" database="SQLE645S1" table="true" preparedStatement="false" id="CE_MC_VW_COMMITTEE_AND_TYPE">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_MC_VW_Committee_and_type</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Committee_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Committee_Type" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="100"/>
+            <field id="Type_ID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/LogonService/msg_Load" pageHeaderTextRef="Txtb5hNn" pageInfoTextReference="TxtATim5m" pageTrailerTextReference="TxtAIa16O" nextPageTextReference="TxtcHzl1" prevPageTextReference="Txt6YFn2P">
+    <pageContents>
+        <page ctrl="PagHtsFc" jSPBottom="NULL" jSPTop="NULL" outputType="0" pdfFooterText="LocalTxt7wylQe" pdfHeaderText="LocalTxt9LXiRM" uid="HsCpO6Fr">
+            <panel ctrl="pnlSearch" propertySet="PagePanel" uid="IifaeX0c" width="500px">
+                <panel allPadding="10px" borderColor="#FF0000" borderRadius="5px" borderStyle="Solid" borderWidth="1px" ctrl="pnlSearch_2" layoutType="VERTICAL_BOX" topMargin="10px" uid="UdApytF" width="Fill">
+                    <layoutProperties>
+                        <VERTICAL_BOX cellHAlign="Center" spacerSize="10px"/>
+                    </layoutProperties>
+                    <html ctrl="HtmcsFgJ_2" default="L" htmlText="LocalTxt7gbMRs_2" uid="HbBEYnF4"/>
+                    <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="5OmJbYH1"/>
+                    <text ctrl="TexnYqFq" text="LocalTxtADGqD8" uid="4x4LgTzZ"/>
+                    <button buttonText="LocalTxt1IlhLP" ctrl="cmd_Request" mouseOverText="LocalTxt4xkaEq" onClickEvent="/LogonService/Request_Access" uid="AV27PQ8j"/>
+                    <panel ctrl="pnlHub" propertySet="Button_Panel" uid="2p8aT07c">
+                        <button buttonText="LocalTxtAfMxUZ" ctrl="cmdHub" mouseOverText="LocalTxt7gwAtr" onClickEvent="/LogonService/goto_Hub" uid="MEFLUTyb"/>
+                    </panel>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

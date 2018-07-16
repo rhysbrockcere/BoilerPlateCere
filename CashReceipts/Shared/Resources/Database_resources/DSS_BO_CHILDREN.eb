@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="DSS_BO_CHILDREN">
+        <columns>*</columns>
+        <from>&amp;&amp;DBNAME .dbo.Child_View</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by child_id desc</additional>
+        <fields>
+            <field id="Age" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Child_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="CreatedBy" type="VARCHAR" length="50"/>
+            <field id="DBNAME" type="NUMERIC" length="500" persistent="false"/>
+            <field id="DOB" type="DATE" length="16"/>
+            <field id="DateCreated" type="DATE" length="16"/>
+            <field id="DateModified" type="DATE" length="16"/>
+            <field id="Draig_No" type="VARCHAR" length="8"/>
+            <field id="ModifiedBy" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="100"/>
+            <field id="Where_Clause" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

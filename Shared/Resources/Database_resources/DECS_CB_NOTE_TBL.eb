@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DECS community Benefits - Application Notes" database="SQLE648S1" table="true" preparedStatement="false" id="DECS_CB_NOTE_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DECS_CB_Note</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY Note_Date DESC, Note_ID DESC</additional>
+        <fields>
+            <field id="Note" type="VARCHAR" length="200"/>
+            <field id="Note_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="Note_Date" type="DATE" length="23"/>
+            <field id="Application_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

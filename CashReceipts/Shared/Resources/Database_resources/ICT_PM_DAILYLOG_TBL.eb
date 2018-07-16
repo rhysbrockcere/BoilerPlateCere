@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="ICT Project Management" database="SQLE648S1" table="true" preparedStatement="false" id="ICT_PM_DAILYLOG_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.ICT_PM_DailyLog</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Log_Entry" type="VARCHAR" length="2000"/>
+            <field id="Log_Type" type="VARCHAR" length="50"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

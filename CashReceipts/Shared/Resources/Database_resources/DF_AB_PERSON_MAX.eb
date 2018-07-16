@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Finance Dept - Person" database="SQLE648S1" preparedStatement="false" id="DF_AB_PERSON_MAX">
+        <columns>MAX(PersonID) as PersonID</columns>
+        <from>Absence_Dev.dbo.DF_AB_Person</from>
+        <fields>
+            <field id="PersonID" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

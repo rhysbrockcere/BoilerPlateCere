@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Components/CMP_ADDR_CM_IN_MAP" preferredComponentProject="GLOBAL" id="JS_GL_PAYMENT" dateCreated="2013-09-09T15:53:28.843+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;portalReq xmlns=&quot;http://www.e-paycapita.com/portal&quot;&gt;
+	&lt;requestID&gt;abc123&lt;/requestID&gt;
+	&lt;language&gt;en&lt;/language&gt;
+	&lt;source&gt;I&lt;/source&gt;
+	&lt;backURL&gt;
+		http://anyOrgansiation.co.uk/payments.asp
+	&lt;/backURL&gt;
+	&lt;returnURL&gt;
+		http://anyOrganisation.co.uk/portalResponse.asp
+	&lt;/returnURL&gt;
+	&lt;cancelURL&gt;
+		http://anyOrgansiation.co.uk/homepage.html
+	&lt;/cancelURL&gt;
+	&lt;cart&gt;
+		&lt;items&gt;
+			&lt;item&gt;
+				&lt;reference&gt;CTAX123&lt;/reference&gt;
+				&lt;fundCode&gt;05&lt;/fundCode&gt;
+				&lt;fundName&gt;Council Tax&lt;/fundName&gt;
+				&lt;accountName&gt;Mr J Bloggs&lt;/accountName&gt;
+				&lt;amount&gt;0.00&lt;/amount&gt;
+				&lt;vatInfo&gt;
+					&lt;vatCode&gt;N&lt;/vatCode&gt;
+				&lt;/vatInfo&gt;
+			&lt;/item&gt;
+		&lt;/items&gt;
+	&lt;/cart&gt;
+&lt;/portalReq&gt;
+</scriptText>
+    </script>
+</ebase>

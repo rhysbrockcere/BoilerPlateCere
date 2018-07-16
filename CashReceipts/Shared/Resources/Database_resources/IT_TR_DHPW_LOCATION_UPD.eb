@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DFIT_CENTRAL" preparedStatement="false" id="IT_TR_DHPW_LOCATION_UPD">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_TR_DHPW_Location</from>
+        <where>AreaOfficer=&amp;&amp;AreaOfficer AND Category=&amp;&amp;Category AND Location=&amp;&amp;Location</where>
+        <fields>
+            <field id="AreaOfficer" type="VARCHAR" length="10"/>
+            <field id="Category" type="VARCHAR" length="100"/>
+            <field id="Location" type="VARCHAR" length="100"/>
+            <field id="Officer" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

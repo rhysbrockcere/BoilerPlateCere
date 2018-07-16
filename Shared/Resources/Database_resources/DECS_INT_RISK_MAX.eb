@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DECS_INT_RISK_MAX">
+        <columns>MAX(Risk_ID) as Risk_ID</columns>
+        <from>DECS_Archives_RTL_TEST.dbo.Int_Risk</from>
+        <fields>
+            <field id="Risk_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

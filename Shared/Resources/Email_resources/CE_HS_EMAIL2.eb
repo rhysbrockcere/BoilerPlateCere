@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource description="Email to inform the next person in the chain" accountName="Exchange" from="&amp;&amp;EFROM" to="&amp;&amp;EMAIL" bcc="&amp;&amp;EMAILC" subject="&amp;&amp;ESUBJECT" critical="true" html="true" id="CE_HS_EMAIL2">
+        <message>&amp;&amp;ECONTENT1</message>
+        <fields>
+            <field id="ECONTENT1"/>
+            <field id="EFROM"/>
+            <field id="EMAIL"/>
+            <field id="EMAILC"/>
+            <field id="ESUBJECT"/>
+        </fields>
+    </emailResource>
+</ebase>

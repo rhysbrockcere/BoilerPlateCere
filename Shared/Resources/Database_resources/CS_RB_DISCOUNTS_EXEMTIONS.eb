@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CS_RB_DISCOUNTS_EXEMTIONS">
+        <columns>*</columns>
+        <from>CS_RB_Forms.dbo.Discounts_Exemptions</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CRM_Enquiry_ID" type="INTEGER" length="10"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_From" type="TIMESTAMP" length="16"/>
+            <field id="Declaration" type="VARCHAR" length="100"/>
+            <field id="ID" type="INTEGER" length="10" key="true"/>
+            <field id="Reason" type="CLOB" length="1073741823"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

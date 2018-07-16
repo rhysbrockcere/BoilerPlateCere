@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="CORP_SS_SYS_GROUPS">
+        <columns>*</columns>
+        <from>Absence_Update.dbo.SYS_Groups</from>
+        <additional>order by Code3 DESC, Code2, Code1</additional>
+        <fields>
+            <field id="Code1" type="VARCHAR" length="50"/>
+            <field id="Code2" type="VARCHAR" length="50"/>
+            <field id="Code3" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

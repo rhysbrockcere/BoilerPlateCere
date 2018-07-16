@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CE_DC_LOCATIONS">
+        <columns>*</columns>
+        <from>ce_tourism.dbo.Locations_Summary</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CategoryTitle" type="VARCHAR" length="500"/>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="Desc_CY" type="CLOB" length="2147483647"/>
+            <field id="Desc_EN" type="CLOB" length="2147483647"/>
+            <field id="Latitude" type="VARCHAR" length="50"/>
+            <field id="Location_Id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Location_Name_English" type="VARCHAR" length="500"/>
+            <field id="Longitude" type="VARCHAR" length="50"/>
+            <field id="Org_Name_English" type="VARCHAR" length="500"/>
+            <field id="Status" type="VARCHAR" length="10"/>
+            <field id="Where_Clause" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_GOTO_NEXT_PAGE" dateImported="2017-02-08T00:01:28.273Z">
+        <scriptText>goto page $NEXT_PAGE;</scriptText>
+    </script>
+</ebase>

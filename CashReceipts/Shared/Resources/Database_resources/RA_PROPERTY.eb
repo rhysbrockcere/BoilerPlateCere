@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1_SQL2012" table="true" id="RA_PROPERTY">
+        <columns>*</columns>
+        <from>Rent_Accounting_TEST.dbo.RA_Property</from>
+        <where>propref=&amp;&amp;propref</where>
+        <fields>
+            <field id="contactid" type="VARCHAR" length="50"/>
+            <field id="proadd2" type="VARCHAR" length="50"/>
+            <field id="adultn" type="VARCHAR" length="50"/>
+            <field id="ageban" type="VARCHAR" length="50"/>
+            <field id="arrsof" type="VARCHAR" length="50"/>
+            <field id="assessorref" type="VARCHAR" length="50"/>
+            <field id="bedroo" type="VARCHAR" length="50"/>
+            <field id="bedspa" type="VARCHAR" length="50"/>
+            <field id="blockpropref" type="VARCHAR" length="50"/>
+            <field id="childn" type="VARCHAR" length="50"/>
+            <field id="costcode" type="VARCHAR" length="50"/>
+            <field id="proadd3" type="VARCHAR" length="50"/>
+            <field id="sgroom" type="VARCHAR" length="50"/>
+            <field id="propaltref" type="VARCHAR" length="50"/>
+            <field id="propamdate" type="VARCHAR" length="50"/>
+            <field id="propco" type="VARCHAR" length="50"/>
+            <field id="prople" type="VARCHAR" length="50"/>
+            <field id="propref" type="VARCHAR" length="50" required="true" key="true"/>
+            <field id="propstcd" type="VARCHAR" length="50"/>
+            <field id="propty" type="VARCHAR" length="50"/>
+            <field id="propvalue" type="VARCHAR" length="50"/>
+            <field id="prosig" type="VARCHAR" length="50"/>
+            <field id="prosto" type="VARCHAR" length="50"/>
+            <field id="rentgp" type="VARCHAR" length="50"/>
+            <field id="roomno" type="VARCHAR" length="50"/>
+            <field id="roundn" type="VARCHAR" length="50"/>
+            <field id="s125expdate" type="VARCHAR" length="50"/>
+            <field id="s125offerdate" type="VARCHAR" length="50"/>
+            <field id="countyco" type="VARCHAR" length="50"/>
+            <field id="dbroom" type="VARCHAR" length="50"/>
+            <field id="depoti" type="VARCHAR" length="50"/>
+            <field id="disabi" type="VARCHAR" length="50"/>
+            <field id="eligib" type="VARCHAR" length="50"/>
+            <field id="estate" type="VARCHAR" length="50"/>
+            <field id="fincategory" type="VARCHAR" length="50"/>
+            <field id="firece" type="VARCHAR" length="50"/>
+            <field id="fundtypeco" type="VARCHAR" length="50"/>
+            <field id="proadd4" type="VARCHAR" length="50"/>
+            <field id="probuilt" type="VARCHAR" length="50"/>
+            <field id="procla" type="VARCHAR" length="50"/>
+            <field id="promaxocc" type="VARCHAR" length="50"/>
+            <field id="propaltkey" type="VARCHAR" length="50"/>
+            <field id="garinc" type="VARCHAR" length="50"/>
+            <field id="handdate" type="VARCHAR" length="50"/>
+            <field id="heatco" type="VARCHAR" length="50"/>
+            <field id="housen" type="VARCHAR" length="50"/>
+            <field id="landlo" type="VARCHAR" length="50"/>
+            <field id="mnodec" type="VARCHAR" length="50"/>
+            <field id="owncom" type="VARCHAR" length="50"/>
+            <field id="patchcod" type="VARCHAR" length="50"/>
+            <field id="proadd1" type="VARCHAR" length="50"/>
+            <field id="taccty" type="VARCHAR" length="50"/>
+            <field id="target" type="VARCHAR" length="50"/>
+            <field id="taxban" type="VARCHAR" length="50"/>
+            <field id="temppr" type="VARCHAR" length="50"/>
+            <field id="udd01" type="VARCHAR" length="50"/>
+            <field id="udd02" type="VARCHAR" length="50"/>
+            <field id="unimproved" type="VARCHAR" length="50"/>
+            <field id="uniqpropref" type="VARCHAR" length="50"/>
+            <field id="valdate" type="VARCHAR" length="50"/>
+            <field id="voscheme" type="VARCHAR" length="50"/>
+            <field id="walkor" type="VARCHAR" length="50"/>
+            <field id="wardco" type="VARCHAR" length="50"/>
+            <field id="watvar" type="VARCHAR" length="50"/>
+            <field id="wforce" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

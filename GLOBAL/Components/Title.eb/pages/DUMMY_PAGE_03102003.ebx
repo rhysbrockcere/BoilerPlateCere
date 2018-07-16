@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="TxtAm71TP" pageInfoTextReference="Txt6YV6El" pageTrailerTextReference="TxtrIQvd" nextPageTextReference="Txt98zBlN" prevPageTextReference="Txt3ltzCt">
+    <pageContents>
+        <component ctrl="Cmpb4IQn" inheritMsg="true" layoutType="FIELD" outputType="0" pdfFooterText="LocalTxt8zmNsF" pdfHeaderText="LocalTxt30yqDC" uid="Qr4gsc0l">
+            <field beforeEvent="/Scripts/GL_Title" buttonText="LocalTxt6XggYD" ctrl="FldtlvSc" field="Title" immedEvent="/Scripts/GL_Title" immediateValidation="true" uid="IGxZi1cn"/>
+            <field buttonText="LocalTxt3wid9x" ctrl="txtOther" field="Other_Title" hidden="true" uid="MGDBzP1K"/>
+        </component>
+    </pageContents>
+</page>

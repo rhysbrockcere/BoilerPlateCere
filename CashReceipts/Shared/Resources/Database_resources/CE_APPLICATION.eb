@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_APPLICATION">
+        <columns>*</columns>
+        <from>CE_Personnel_TEST.dbo.CE_Application</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="APP_ID" type="BIGINT" length="19"/>
+            <field id="Additional_File" type="VARCHAR" length="100"/>
+            <field id="Additional_Upload" length="1"/>
+            <field id="Additional_Upload_Type" length="1"/>
+            <field id="Address_1" type="VARCHAR" length="50"/>
+            <field id="Address_2" type="VARCHAR" length="50"/>
+            <field id="Address_3" type="VARCHAR" length="50"/>
+            <field id="Address_4" type="VARCHAR" length="50"/>
+            <field id="App_Type" length="1"/>
+            <field id="Car_Owner" length="1"/>
+            <field id="Closing_Date" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Consent" length="1"/>
+            <field id="Convictions" length="1"/>
+            <field id="Convictions_Details" type="VARCHAR" length="250"/>
+            <field id="Dec_Date" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Declartion" length="1"/>
+            <field id="Drive_License" length="1"/>
+            <field id="Filename" type="VARCHAR" length="500"/>
+            <field id="Health_Details" type="VARCHAR" length="100"/>
+            <field id="Health_Illness" type="VARCHAR" length="250"/>
+            <field id="Health_Operations" length="1"/>
+            <field id="Health_Problems" type="VARCHAR" length="1"/>
+            <field id="Health_Sick_Days" type="VARCHAR" length="10"/>
+            <field id="IM_Control" length="1"/>
+            <field id="Interview_Date" type="DATE" length="23"/>
+            <field id="Interview_Loc_Code" type="INTEGER" length="4"/>
+            <field id="Interview_Time" type="VARCHAR" length="10"/>
+            <field id="Intials" type="VARCHAR" length="10"/>
+            <field id="JOB_ID" type="INTEGER" length="19"/>
+            <field id="NI_Number" type="VARCHAR" length="20"/>
+            <field id="Post_Ref" type="VARCHAR" length="20"/>
+            <field id="Post_Seen" type="VARCHAR" length="50"/>
+            <field id="Postcode" type="VARCHAR" length="10"/>
+            <field id="Pres_Address_1" type="VARCHAR" length="50"/>
+            <field id="Pres_Address_2" type="VARCHAR" length="50"/>
+            <field id="Pres_Address_3" type="VARCHAR" length="50"/>
+            <field id="Pres_Address_4" type="VARCHAR" length="50"/>
+            <field id="Pres_Date_Appointed" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Pres_Emoluments" type="VARCHAR" length="50"/>
+            <field id="Pres_Employer" type="VARCHAR" length="50"/>
+            <field id="Pres_Notice" type="VARCHAR" length="50"/>
+            <field id="Pres_Per_No" length="7"/>
+            <field id="Pres_Post" type="VARCHAR" length="50"/>
+            <field id="Pres_Postcode" type="VARCHAR" length="50"/>
+            <field id="Pres_Salary" type="VARCHAR" length="10"/>
+            <field id="Pres_Salary_Scale" type="VARCHAR" length="50"/>
+            <field id="Ref1_Address_1" type="VARCHAR" length="50"/>
+            <field id="Ref1_Address_2" type="VARCHAR" length="50"/>
+            <field id="Ref1_Address_3" type="VARCHAR" length="50"/>
+            <field id="Ref1_Address_4" type="VARCHAR" length="50"/>
+            <field id="Ref1_Designation" type="VARCHAR" length="50"/>
+            <field id="Ref1_Email" type="VARCHAR" length="50"/>
+            <field id="Ref1_Name" type="VARCHAR" length="100"/>
+            <field id="Ref1_Postcode" type="VARCHAR" length="8"/>
+            <field id="Ref1_Tel" type="VARCHAR" length="15"/>
+            <field id="Ref2_Address_1" type="VARCHAR" length="50"/>
+            <field id="Ref2_Address_2" type="VARCHAR" length="50"/>
+            <field id="Ref2_Address_3" type="VARCHAR" length="50"/>
+            <field id="Ref2_Address_4" type="VARCHAR" length="50"/>
+            <field id="Ref2_Designation" type="VARCHAR" length="50"/>
+            <field id="Ref2_Email" type="VARCHAR" length="50"/>
+            <field id="Ref2_Name" type="VARCHAR" length="100"/>
+            <field id="Ref2_Postcode" type="VARCHAR" length="8"/>
+            <field id="Ref2_Tel" type="VARCHAR" length="15"/>
+            <field id="Relation" length="1"/>
+            <field id="Relationship" type="VARCHAR" length="250"/>
+            <field id="Status" length="1"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Tel_Home" type="VARCHAR" length="15"/>
+            <field id="Tel_Office" type="VARCHAR" length="15"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

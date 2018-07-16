@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Cheque to be stopped" database="SQLE645S1" preparedStatement="false" id="DF_CHEQUE_STOP_REPL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DF_Cheque_Stop_Repl</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Adm_Cash_Sheet" length="1"/>
+            <field id="Adm_Cert_Date" type="TIMESTAMP" length="16"/>
+            <field id="Adm_Cert_by" type="VARCHAR" length="20"/>
+            <field id="Adm_Destroyed" length="1"/>
+            <field id="Adm_Raised" length="1"/>
+            <field id="Adm_Repl_Agree" length="1"/>
+            <field id="Admin_Ref" type="VARCHAR" length="9"/>
+            <field id="Auth_Date" type="TIMESTAMP" length="16"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Acc2_Cert_by" type="VARCHAR" length="15"/>
+            <field id="Acc2_Cert_date" type="TIMESTAMP" length="16"/>
+            <field id="Acc2_Positive_ref" type="VARCHAR" length="10"/>
+            <field id="Acc2_System" length="1"/>
+            <field id="Acc_Amended" length="1"/>
+            <field id="Acc_Cancelled" type="VARCHAR" length="1"/>
+            <field id="Acc_Cert_Date" type="TIMESTAMP" length="16"/>
+            <field id="Acc_Cert_by" type="VARCHAR" length="20"/>
+            <field id="Acc_Destroy" length="1"/>
+            <field id="Acc_Expend" length="1"/>
+            <field id="Acc_Other" type="VARCHAR" length="100"/>
+            <field id="Acc_Replaced" length="1"/>
+            <field id="Acc_Stop_Bank" length="1"/>
+            <field id="Acc_Stop_Cash" length="1"/>
+            <field id="Acc_Written" length="1"/>
+            <field id="Acc_Xls_Replace" length="1"/>
+            <field id="Acc_Xls_Stop" length="1"/>
+            <field id="Adm_Amend_Agree" length="1"/>
+            <field id="Adm_Amendment" length="1"/>
+            <field id="Amount" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Auth_by" type="VARCHAR" length="20"/>
+            <field id="Payee" type="VARCHAR" length="50"/>
+            <field id="Reason_given" type="VARCHAR" length="100"/>
+            <field id="Ref" type="VARCHAR" length="20"/>
+            <field id="Rejected_Reason" type="VARCHAR" length="500"/>
+            <field id="Rejected_by" type="VARCHAR" length="30"/>
+            <field id="Rejected_date" type="DATE" length="19"/>
+            <field id="Replacement" length="1"/>
+            <field id="SectionName" type="VARCHAR" length="10"/>
+            <field id="Send_to_Address" type="VARCHAR" length="100"/>
+            <field id="Send_to_Name" type="VARCHAR" length="30"/>
+            <field id="Adm_Repl_Amount" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Aud_Cert_by" type="VARCHAR" length="20"/>
+            <field id="CTax_Ref" type="VARCHAR" length="9"/>
+            <field id="Status" type="VARCHAR" length="10"/>
+            <field id="Adm_Repl_Date" type="DATE" length="19"/>
+            <field id="Adm_Repl_No" description="Replacement cheque number" type="BIGINT" length="1"/>
+            <field id="Aud_Cert_date" type="TIMESTAMP" length="16"/>
+            <field id="Cheque_Date" type="TIMESTAMP" length="16"/>
+            <field id="Cheque_No" type="BIGINT" length="19"/>
+            <field id="Completed_by" type="VARCHAR" length="20"/>
+            <field id="Created_Date" type="TIMESTAMP" length="16"/>
+            <field id="Financials_Code" type="VARCHAR" length="10"/>
+            <field id="HBen_Ref" type="VARCHAR" length="9"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+            <field id="Stop_Notice" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="DSS_FP_CLIENT_PLACEMENT_LOG_MAX">
+        <columns>MAX(LOG_ID) AS LOG_ID</columns>
+        <from>DSS_Foster_Portal_Test.dbo.Client_Placement_Log</from>
+        <fields>
+            <field id="LOG_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

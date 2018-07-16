@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" nativeSql="true" id="FOI_MOVE">
+        <update>insert into FOI_TEST.dbo.FOI_Deleted_Details ( ID, TYPE, RECEIVED_DATE, COMPLETED_DATE, QUERY, ADDRESS1, ADDRESS2, ADDRESS3, ASSIGNED_TO_USERNAME, CHILD_ID, 
+                         COMPLETED_OFFICER_USERNAME, COUNTY, DEPARTMENT, EMAIL, ENQUIRER_FIRSTNAME, ENQUIRER_SURNAME, ENQUIRER_TITLE, PHONE, POSTCODE, 
+                         PUBLISH_PUBLIC, SECTION, STAGE, COMPLETION_DETAILS, SHARED_FOI_CE, SHARED_FOI_DECS, SHARED_FOI_DESH, SHARED_FOI_DF, SHARED_FOI_DHPW, 
+                         SHARED_FOI_DSS, RECEIVED_TYPE, RESPONCE_TYPE, COMP_SUBJECT, MOBILE_PHONE, WORK_PHONE, ANON, REF_NO, EXEMPTION_ID, LESSONS_LEARNT, 
+                         ON_BEHALF, COMP_OUTCOME, COMP_COSTS, COMP_OMBUDSMAN_RESPONCE_DUE_DATE, COMP_OMBUDSMAN_RESPONCE_SENT_DATE, 
+                         COMPLETED_STATUS, System, School, Stage_1_previously, Delete_Date, Delete_User)
+select  ID, TYPE, RECEIVED_DATE, COMPLETED_DATE, QUERY, ADDRESS1, ADDRESS2, ADDRESS3, ASSIGNED_TO_USERNAME, CHILD_ID, 
+                         COMPLETED_OFFICER_USERNAME, COUNTY, DEPARTMENT, EMAIL, ENQUIRER_FIRSTNAME, ENQUIRER_SURNAME, ENQUIRER_TITLE, PHONE, POSTCODE, 
+                         PUBLISH_PUBLIC, SECTION, STAGE, COMPLETION_DETAILS, SHARED_FOI_CE, SHARED_FOI_DECS, SHARED_FOI_DESH, SHARED_FOI_DF, SHARED_FOI_DHPW, 
+                         SHARED_FOI_DSS, RECEIVED_TYPE, RESPONCE_TYPE, COMP_SUBJECT, MOBILE_PHONE, WORK_PHONE, ANON, REF_NO, EXEMPTION_ID, LESSONS_LEARNT, 
+                         ON_BEHALF, COMP_OUTCOME, COMP_COSTS, COMP_OMBUDSMAN_RESPONCE_DUE_DATE, COMP_OMBUDSMAN_RESPONCE_SENT_DATE, 
+                         COMPLETED_STATUS, System, School, Stage_1_previously, getdate(), &amp;&amp;DELETE_USER
+from FOI_TEST.dbo.FOI_Details
+where ID = &amp;&amp;ID
+
+ insert into FOI_TEST.dbo.FOI_Deleted_Action_Details (ID, Details_ID, Action_Type_ID, Action_Date, Assigned_to, Comment, Reference_Doc, Completed_by, Aud_Username, Delete_Date, Delete_User)
+select ID, Details_ID, Action_Type_ID, Action_Date, Assigned_to, Comment, Reference_Doc, Completed_by, Aud_Username, getdate(), &amp;&amp;DELETE_USER
+from FOI_TEST.dbo.FOI_Action_Details
+where Details_ID = &amp;&amp;ID
+
+
+DELETE from FOI_TEST.dbo.FOI_Details
+where ID = &amp;&amp;ID
+
+DELETE from FOI_TEST.dbo.FOI_Action_Details
+where Details_ID =&amp;&amp;ID
+
+
+
+</update>
+        <fields>
+            <field id="DELETE_USER" type="VARCHAR" length="30"/>
+            <field id="ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

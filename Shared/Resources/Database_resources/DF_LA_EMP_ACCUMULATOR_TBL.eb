@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="DF_LA_EMP_ACCUMULATOR_TBL">
+        <columns>*</columns>
+        <from>DF_Logica_LIVE.dbo.CCC_LA_EMP_ACCUMULATOR</from>
+        <fields>
+            <field id="emp_ref" type="VARCHAR" length="2"/>
+            <field id="pay_ref" type="VARCHAR" length="15"/>
+            <field id="pay_group_ref" type="VARCHAR" length="10"/>
+            <field id="pay_year" type="NUMERIC" length="10"/>
+            <field id="pay_period_num" type="NUMERIC" length="10"/>
+            <field id="accumulator" type="NUMERIC" length="10"/>
+            <field id="name" type="VARCHAR" length="30"/>
+            <field id="accumulator_value" type="NUMERIC" length="18" fractionalDigits="6"/>
+            <field id="person_ref" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="TRAIN_BOOKINGS_CHECK">
+        <columns>*</columns>
+        <from>ICT_Training_Test.dbo.Bookings_View</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Booked" type="TIMESTAMP" length="16"/>
+            <field id="Email" type="VARCHAR" length="4000" readOnly="true"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Job_Title" type="VARCHAR" length="250" readOnly="true"/>
+            <field id="Laptop" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="511" readOnly="true"/>
+            <field id="ServiceArea" type="VARCHAR" length="250"/>
+            <field id="SessionID" type="INTEGER" length="10"/>
+            <field id="Username" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="employeeID" type="VARCHAR" length="4000" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

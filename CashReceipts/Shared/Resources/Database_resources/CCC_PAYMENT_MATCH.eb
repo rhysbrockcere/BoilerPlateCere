@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_CASH2012" table="true" preparedStatement="false" id="CCC_PAYMENT_MATCH">
+        <columns>*</columns>
+        <from>Aim_Cer_Test.dbo.CCC_Payment_Match</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Amount" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Auth_CAN" type="NUMERIC" length="18"/>
+            <field id="Auth_Code" type="VARCHAR" length="50"/>
+            <field id="Matched" type="VARCHAR" length="50" readOnly="true"/>
+            <field id="Postcode" type="VARCHAR" length="50"/>
+            <field id="Ref" type="VARCHAR" length="50"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="Surcharge" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="TimeStamp" type="TIMESTAMP" length="16"/>
+            <field id="id" type="INTEGER" length="10"/>
+            <field id="transformed_transaction_date" type="TIMESTAMP" length="23" fractionalDigits="3" readOnly="true"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

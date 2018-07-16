@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_DP_PAYMENT">
+        <columns>*</columns>
+        <from>DSS_Direct_Payments_TEST.dbo.Payments</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Cost_Centre" type="VARCHAR" length="20"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date" type="TIMESTAMP" length="16"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Description" type="VARCHAR" length="500"/>
+            <field id="Detail_Code" type="VARCHAR" length="20"/>
+            <field id="Manual" type="BIT" length="1"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Notes" type="VARCHAR" length="500"/>
+            <field id="Payment_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Period_Start" type="TIMESTAMP" length="16"/>
+            <field id="Client_ID" type="INTEGER" length="10"/>
+            <field id="Service_ID" type="INTEGER" length="10"/>
+            <field id="Unit_Amount" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Units" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

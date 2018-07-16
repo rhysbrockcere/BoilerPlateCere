@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_ITRENT2012" preparedStatement="false" id="AD_ACTIVE_EMAILS">
+        <columns>*</columns>
+        <from>Ceri_Docs_Live.dbo.AD_Active_Emails</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Email" type="VARCHAR" length="4000"/>
+            <field id="employeeID" type="VARCHAR" length="4000"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

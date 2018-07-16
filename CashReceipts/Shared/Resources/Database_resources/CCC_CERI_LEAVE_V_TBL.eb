@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_ITRENT2012" table="true" preparedStatement="false" id="CCC_CERI_LEAVE_V_TBL">
+        <columns>*</columns>
+        <from>Ceri_Docs_Live.dbo.CCC_CERi_Leave_V</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Name" type="VARCHAR" length="242"/>
+            <field id="abs_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="abs_days" type="INTEGER" length="10"/>
+            <field id="abs_ed" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="abs_et" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="abs_group_id" type="VARCHAR" length="10"/>
+            <field id="abs_hrs" type="DOUBLE" length="53"/>
+            <field id="abs_s" type="VARCHAR" length="10"/>
+            <field id="abs_t" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="abs_type_id" type="VARCHAR" length="10"/>
+            <field id="abs_type_nm" type="VARCHAR" length="80"/>
+            <field id="auth_status" type="VARCHAR" length="10"/>
+            <field id="man_id" type="VARCHAR" length="10"/>
+            <field id="part_first_ty" type="VARCHAR" length="10"/>
+            <field id="part_last_ty" type="VARCHAR" length="10"/>
+            <field id="party_id" type="VARCHAR" length="10"/>
+            <field id="person_id" type="VARCHAR" length="10"/>
+            <field id="reference_no" type="VARCHAR" length="80"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

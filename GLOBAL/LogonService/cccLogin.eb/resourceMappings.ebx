@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CeriExtract">
+        <fieldMapping resourceField="Email" field="Email"/>
+        <fieldMapping resourceField="Manager_Email" field="Man_Email"/>
+        <fieldMapping resourceField="Manager_username" field="Man_Username"/>
+        <fieldMapping resourceField="Manager_Name" field="Manager"/>
+        <fieldMapping resourceField="Name" field="Name"/>
+        <fieldMapping resourceField="position_id" field="Position_ID"/>
+        <fieldMapping resourceField="Position_Name" field="Position_Name"/>
+        <fieldMapping resourceField="team_id" field="Team_ID"/>
+        <fieldMapping resourceField="Team_Name" field="Team_Name"/>
+        <fieldMapping resourceField="Username" field="Username"/>
+    </resourceMapping>
+    <resourceMapping id="Roles">
+        <tableMapping table="Roles"/>
+        <fieldMapping resourceField="Role" field="Roles-RoleID"/>
+        <fieldMapping resourceField="Username" field="Roles-Username"/>
+    </resourceMapping>
+    <resourceMapping id="cccLogin_Resource">
+        <tableMapping resourceField="CREDENTIAL" table="CREDENTIAL"/>
+        <tableMapping resourceField="CUSTOMROLE" table="CUSTOMROLE"/>
+        <fieldMapping resourceField="ID" field="CREDENTIAL-ID"/>
+        <fieldMapping resourceField="VALUE" field="CREDENTIAL-VALUE"/>
+        <fieldMapping resourceField="ROLEID" field="CUSTOMROLE-ROLEID"/>
+        <fieldMapping resourceField="ERRORCODE" field="ERRORCODE"/>
+        <fieldMapping resourceField="ERRORDESCRIPTION" field="ERRORDESCRIPTION"/>
+        <fieldMapping resourceField="PARAM1_SOURCE" field="PARAM1_SOURCE"/>
+        <fieldMapping resourceField="PARAM1_VALUE" field="PARAM1_VALUE"/>
+        <fieldMapping resourceField="PARAM2_SOURCE" field="PARAM2_SOURCE"/>
+        <fieldMapping resourceField="PARAM2_VALUE" field="PARAM2_VALUE"/>
+        <fieldMapping resourceField="USERID" field="Username"/>
+    </resourceMapping>
+</resourceMappings>

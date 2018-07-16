@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS ESTYN Statements" database="SQLE645S1" table="true" preparedStatement="false" id="FIS_TBLREGISTRATION_STATEMENT_TBL">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblREGISTRATION_STATEMENT</from>
+        <where>&amp;&amp;WHERE_CLAUSE_ESTYN_STATEMENT</where>
+        <fields>
+            <field id="WHERE_CLAUSE_ESTYN_STATEMENT" type="NUMERIC" length="500" persistent="false"/>
+            <field id="rstate_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="rstate_no" type="INTEGER" length="10"/>
+            <field id="tblLU_statement" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

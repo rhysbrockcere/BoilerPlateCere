@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="UFS" table="true" preparedStatement="false" id="MYCDS">
+        <columns>*</columns>
+        <from>mycds</from>
+        <fields>
+            <field id="ARTIST" type="VARCHAR" length="200"/>
+            <field id="CD_ID" type="INTEGER" length="11" key="true"/>
+            <field id="CLASSIFICATION" type="VARCHAR" length="50"/>
+            <field id="COMPOSER" type="VARCHAR" length="200"/>
+            <field id="DESCRIPTION" type="LONGVARCHAR" length="65535"/>
+            <field id="RATING" type="INTEGER" length="11"/>
+            <field id="REVIEW" type="LONGVARCHAR" length="65535"/>
+            <field id="SUB_CLASSIFICATION" type="VARCHAR" length="50"/>
+            <field id="TITLE" type="VARCHAR" length="200"/>
+        </fields>
+    </dbResource>
+</ebase>

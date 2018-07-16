@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Support data for Systems" database="SQLE645S1" preparedStatement="false" id="IT_BC_SUPPORT">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_BC_Support</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Contact_Alt_Email" type="VARCHAR" length="30"/>
+            <field id="Contact_Alt_Name" type="VARCHAR" length="30"/>
+            <field id="Contact_Alt_Tel" type="VARCHAR" length="25"/>
+            <field id="Contact_Main_Email" type="VARCHAR" length="30"/>
+            <field id="Contact_Main_Name" type="VARCHAR" length="30"/>
+            <field id="Contact_Main_Tel" type="VARCHAR" length="25"/>
+            <field id="Dept" type="VARCHAR" length="4"/>
+            <field id="Hours_of_Service" type="VARCHAR" length="30"/>
+            <field id="Owner_Sys_Admin" type="VARCHAR" length="100"/>
+            <field id="Supplier" type="VARCHAR" length="200"/>
+            <field id="Supplier_Address" type="VARCHAR" length="200"/>
+            <field id="Support_ID" type="NUMERIC" length="18"/>
+            <field id="System_Details" type="VARCHAR" length="100"/>
+            <field id="System_ID" type="NUMERIC" length="18"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

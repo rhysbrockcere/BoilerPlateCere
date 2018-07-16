@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLPROV_AREAS_COVERED">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblPROV_AREAS_COVERED</from>
+        <where>PCV_ID=&amp;&amp;PCV_ID</where>
+        <fields>
+            <field id="PCV_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="PCV_UPD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="PCV_UPD_USER" type="VARCHAR" length="128"/>
+            <field id="tblLU_AREAS_COVERED" type="INTEGER" length="10"/>
+            <field id="tblPROVIDER" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

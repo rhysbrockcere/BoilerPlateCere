@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="FCWCRM_EMAIL_LOG">
+        <columns>*</columns>
+        <from>FCW_CRM_Test.dbo.Email_Log</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Email_Subject" type="VARCHAR" length="100"/>
+            <field id="Sent_By" type="VARCHAR" length="50"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+            <field id="Contact_ID" type="INTEGER" length="10"/>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="Date_Sent" type="TIMESTAMP" length="16"/>
+            <field id="Email_Address" type="VARCHAR" length="100"/>
+            <field id="Email_Body" type="CLOB" length="1073741823"/>
+            <field id="Email_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

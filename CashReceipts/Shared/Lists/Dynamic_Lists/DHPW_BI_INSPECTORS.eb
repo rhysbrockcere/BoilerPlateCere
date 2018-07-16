@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="DHPWSQL" id="DHPW_BI_INSPECTORS" dateCreated="2017-01-18T15:05:52.310Z" dateImported="2017-02-08T00:01:28.897Z">
+        <columns>InspectorNo, Firstname + ' ' + Surname as Inspector, username</columns>
+        <from>BuildingInspections_TEST.dbo.Inspectors</from>
+        <fields>
+            <field id="Inspector" input="false"/>
+            <field id="InspectorNo" type="INTEGER" input="false"/>
+            <field id="username" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

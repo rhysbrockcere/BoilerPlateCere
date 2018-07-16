@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_ITRENT2012" table="true" preparedStatement="false" id="HR_CERI_POST_TITLE_TBL">
+        <columns>*</columns>
+        <from>Ceri_Docs_Test.dbo.CCC_Post_Title</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CCC_Post_Title" type="VARCHAR" length="150"/>
+            <field id="CCC_Post_Title_Welsh" type="VARCHAR" length="150"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="party_ref_no" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500"/>
+        </fields>
+    </dbResource>
+</ebase>

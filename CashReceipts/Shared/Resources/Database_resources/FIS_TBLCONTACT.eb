@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Contact details" database="SQLE645S1" preparedStatement="false" id="FIS_TBLCONTACT">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblCONTACT</from>
+        <where>&amp;&amp;WHERE_CLAUSE_CONTACT</where>
+        <fields>
+            <field id="CONTACT_AAFNAME" type="VARCHAR" length="35"/>
+            <field id="CONTACT_AAMNAME" type="VARCHAR" length="35"/>
+            <field id="CONTACT_AASNAME" type="VARCHAR" length="35"/>
+            <field id="CONTACT_DOB" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CONTACT_EMAIL" type="VARCHAR" length="254"/>
+            <field id="CONTACT_EMAILLTR" type="SMALLINT" length="5"/>
+            <field id="CONTACT_END" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CONTACT_FAX" type="VARCHAR" length="100"/>
+            <field id="CONTACT_FNAME" type="VARCHAR" length="35"/>
+            <field id="CONTACT_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="CONTACT_LETTER" type="SMALLINT" length="5"/>
+            <field id="CONTACT_MNAME" type="VARCHAR" length="35"/>
+            <field id="CONTACT_MOBILE" type="VARCHAR" length="40"/>
+            <field id="CONTACT_MOBILEAA" type="VARCHAR" length="40"/>
+            <field id="CONTACT_ORDER" type="INTEGER" length="10"/>
+            <field id="CONTACT_PRINT" type="SMALLINT" length="5"/>
+            <field id="CONTACT_SEX" type="VARCHAR" length="1"/>
+            <field id="CONTACT_SNAME" type="VARCHAR" length="35"/>
+            <field id="CONTACT_START" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CONTACT_TEL_DAY" type="VARCHAR" length="100"/>
+            <field id="CONTACT_TEL_DAYAA" type="VARCHAR" length="40"/>
+            <field id="CONTACT_TEL_NIGHT" type="VARCHAR" length="40"/>
+            <field id="CONTACT_UPD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CONTACT_UPD_USER" type="VARCHAR" length="128"/>
+            <field id="CONTACT_WORK" type="VARCHAR" length="30"/>
+            <field id="CONTACT_XDIR_DAY" type="BIT" length="1"/>
+            <field id="CONTACT_XDIR_DAYAA" type="BIT" length="1"/>
+            <field id="CONTACT_XDIR_NIGHT" type="BIT" length="1"/>
+            <field id="CRB_CHECK_DECLINED" type="BIT" length="1"/>
+            <field id="CRB_COMPLETED_STEPS" type="INTEGER" length="10"/>
+            <field id="CRB_CURRENT_APPOINTMENT" type="INTEGER" length="10"/>
+            <field id="CRB_DECLINED_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CRB_DISCLOSURE_NUMBER" type="VARCHAR" length="200"/>
+            <field id="CRB_DISCLOSURE_RETURNED" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CRB_FORM_NUMBER" type="VARCHAR" length="250"/>
+            <field id="CRB_FORM_RETURNED_TO_LEA" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CRB_FORM_SENT_TO_CRB" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CRB_FORM_SENT_TO_GOVERNOR" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CRB_NEW_CHECK_REQUIRED" type="BIT" length="1"/>
+            <field id="CRB_REMINDER_SENT_TO_CRB" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CRB_SATISFACTORY_DISCLOSURE" type="BIT" length="1"/>
+            <field id="CRB_UNSATISFACTORY_DISCLOSURE" type="BIT" length="1"/>
+            <field id="ISSIS_WORKER_NO" type="VARCHAR" length="8"/>
+            <field id="LIST99_FORM_NUMBER" type="VARCHAR" length="250"/>
+            <field id="TRANSACTIONID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE_CONTACT" type="NUMERIC" length="500" persistent="false"/>
+            <field id="contact_aainit" type="VARCHAR" length="8"/>
+            <field id="contact_aatitle" type="VARCHAR" length="15"/>
+            <field id="contact_approval" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="contact_candidate" type="BIT" length="1"/>
+            <field id="contact_cv_doc" type="VARCHAR" length="100"/>
+            <field id="contact_default" type="BIT" length="1"/>
+            <field id="contact_department" type="VARCHAR" length="100"/>
+            <field id="contact_disabled" type="BIT" length="1"/>
+            <field id="contact_init" type="VARCHAR" length="8"/>
+            <field id="contact_jobtitle" type="VARCHAR" length="100"/>
+            <field id="contact_match_vac" type="BIT" length="1"/>
+            <field id="contact_natins_no" type="VARCHAR" length="10"/>
+            <field id="contact_office_location" type="VARCHAR" length="100"/>
+            <field id="contact_ofsted_app" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="contact_oob" type="BIT" length="1"/>
+            <field id="contact_pay_rate" type="DECIMAL" length="9" fractionalDigits="2"/>
+            <field id="contact_pay_type" length="1"/>
+            <field id="contact_photo_file" type="VARCHAR" length="250"/>
+            <field id="contact_provider" type="BIT" length="1"/>
+            <field id="contact_relief" type="BIT" length="1"/>
+            <field id="contact_translate" type="BIT" length="1"/>
+            <field id="contact_welsh" type="BIT" length="1"/>
+            <field id="tblLETTER_TYPE" type="INTEGER" length="10"/>
+            <field id="tblLU_AGE_GROUPS" type="INTEGER" length="10"/>
+            <field id="tblLU_CONTACT_SOURCE" type="INTEGER" length="10"/>
+            <field id="tblLU_CONTACT_TYPE" type="INTEGER" length="10"/>
+            <field id="tblLU_EMPLOYMENT_STATUS" type="INTEGER" length="10"/>
+            <field id="tblLU_EMPLOYMENT_TRAVEL" type="INTEGER" length="10"/>
+            <field id="tblLU_EMP_SUPPLY_SOURCE" type="INTEGER" length="10"/>
+            <field id="tblLU_PER_TITLE" type="INTEGER" length="10"/>
+            <field id="tblLU_PER_TITLEAA" type="INTEGER" length="10"/>
+            <field id="tblLU_PUP_ETHNICITY" type="INTEGER" length="10"/>
+            <field id="tblLU_PUP_LANGUAGE" type="INTEGER" length="10"/>
+            <field id="tblLU_RELATION" type="INTEGER" length="10"/>
+            <field id="tblLU_RELATIONAA" type="INTEGER" length="10"/>
+            <field id="tblNOTES" type="INTEGER" length="10"/>
+            <field id="tbllu_CONTACT_TEAM" type="INTEGER" length="10"/>
+            <field id="tbllu_SCH_DISTRICT" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

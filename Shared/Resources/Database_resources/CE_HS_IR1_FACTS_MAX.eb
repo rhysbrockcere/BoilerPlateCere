@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_HS_IR1_FACTS_MAX">
+        <columns>MAX(FACT_ID) as FACT_ID</columns>
+        <from>CE_HS_TEST.dbo.CE_HS_IR1_Facts</from>
+        <fields>
+            <field id="FACT_ID" type="INTEGER" length="19"/>
+        </fields>
+    </dbResource>
+</ebase>

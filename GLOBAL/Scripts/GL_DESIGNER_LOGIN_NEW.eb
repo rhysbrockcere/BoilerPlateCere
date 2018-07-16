@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_DESIGNER_LOGIN_NEW" dateImported="2016-09-06T15:35:53.163+01:00">
+        <scriptText>if [$USERVAR3 != 'switch_user']
+
+	if [$USER != '']
+		set $USERVAR3 = $USER;
+	endif
+	
+	if [$USERVAR3 != '']
+		set USERNAME = $USERVAR3;
+		
+		if [$FORMID = 'CE_HS_IR1' and contains($UFS_SERVER_NAME, 'dev')]
+			callscript GL_SINGLE_SIGNON_IR1;
+		else
+			callscript GL_SINGLE_SIGNON;
+		endif
+	
+	endif
+
+endif</scriptText>
+    </script>
+</ebase>

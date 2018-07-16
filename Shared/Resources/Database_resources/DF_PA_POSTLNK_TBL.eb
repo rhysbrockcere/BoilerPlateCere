@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Post Link details" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_POSTLNK_TBL">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.POSTLNK</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="END_D" length="8"/>
+            <field id="ORG_NO" type="DECIMAL" length="2" required="true" key="true"/>
+            <field id="PL_START_D" length="8" required="true" key="true"/>
+            <field id="POST_NO" length="12" required="true" key="true"/>
+            <field id="REP_POST_NO" length="12" required="true" key="true"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

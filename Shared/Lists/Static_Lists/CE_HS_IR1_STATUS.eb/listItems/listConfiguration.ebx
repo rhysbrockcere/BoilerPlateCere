@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="R"/>
+    <item id="2" returnVal="I"/>
+    <item id="3" returnVal="C"/>
+    <item id="4" returnVal="S"/>
+</items>

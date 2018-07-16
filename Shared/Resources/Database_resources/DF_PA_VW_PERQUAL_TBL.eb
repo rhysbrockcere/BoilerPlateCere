@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Personal Qualifications" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_VW_PERQUAL_TBL">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.VW_PERQUAL</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="EFF_D" length="8"/>
+            <field id="LEV_CODE" length="3"/>
+            <field id="ORG_NO" type="DECIMAL" length="2"/>
+            <field id="PER_NO" length="10"/>
+            <field id="Qual_Code" length="25"/>
+            <field id="Qual_Level" length="15"/>
+            <field id="SUB_CODE" length="4"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

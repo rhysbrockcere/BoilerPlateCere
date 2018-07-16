@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_PUP_PLACEMENT_TYPE">
+        <columns>*</columns>
+        <from>eyears_live.dbo.tblLU_PUP_PLACEMENT_TYPE</from>
+        <where>ppt_id=&amp;&amp;ppt_id</where>
+        <fields>
+            <field id="ppt_desc" type="VARCHAR" length="100"/>
+            <field id="ppt_id" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="ppt_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ppt_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

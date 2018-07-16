@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Fees and Charges Service Area" database="SQLE648S1" table="true" preparedStatement="false" id="FC_SERVICES">
+        <columns>*</columns>
+        <from>DF_Fees_Charges_TEST.dbo.Services</from>
+        <fields>
+            <field id="Admin_Contact_Email" type="VARCHAR" length="255"/>
+            <field id="Service" type="VARCHAR" length="255"/>
+            <field id="Service_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Service_CY" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

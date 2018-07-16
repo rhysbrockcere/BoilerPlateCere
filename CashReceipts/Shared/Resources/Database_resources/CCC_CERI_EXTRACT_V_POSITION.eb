@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Trent Position details" database="CERESQLS1_ITRENT2012" preparedStatement="false" id="CCC_CERI_EXTRACT_V_POSITION">
+        <columns>*</columns>
+        <from>TLIVE.dbo.CCC_CERi_Extract_V_Position</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="PARTY_ID2_POST_LINK" type="VARCHAR" length="10"/>
+            <field id="PARTY_ID_POST_LINK" type="VARCHAR" length="10"/>
+            <field id="PARTY_LNK_D_POST_LINK" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="PARTY_LNK_ED_POST_LINK" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="UNIT_NM_03" type="VARCHAR" length="80"/>
+            <field id="UNIT_NM_04" type="VARCHAR" length="80"/>
+            <field id="UNIT_NM_05" type="VARCHAR" length="80"/>
+            <field id="UNIT_NM_06" type="VARCHAR" length="80"/>
+            <field id="con_pos_ref_no" type="VARCHAR" length="80"/>
+            <field id="contract_basis" type="VARCHAR" length="80"/>
+            <field id="contract_type" type="VARCHAR" length="80"/>
+            <field id="contractual_hours" type="DOUBLE" length="53"/>
+            <field id="fte_hours" type="DOUBLE" length="53"/>
+            <field id="je_ref" type="VARCHAR" length="80"/>
+            <field id="je_score" type="VARCHAR" length="80"/>
+            <field id="occupancy_type" type="VARCHAR" length="10" readOnly="true"/>
+            <field id="party_id" type="VARCHAR" length="10"/>
+            <field id="party_lnk_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="party_nm" type="VARCHAR" length="80"/>
+            <field id="party_nm_pos" type="VARCHAR" length="80"/>
+            <field id="party_ref_no" type="VARCHAR" length="80"/>
+            <field id="party_ref_no_post" type="VARCHAR" length="80"/>
+            <field id="teacher_i" type="VARCHAR" length="3" readOnly="true"/>
+            <field id="the_desc" type="VARCHAR" length="80"/>
+            <field id="weeks_worked" type="DOUBLE" length="53"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

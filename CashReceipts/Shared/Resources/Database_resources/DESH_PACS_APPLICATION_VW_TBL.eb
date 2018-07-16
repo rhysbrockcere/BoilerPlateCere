@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Planning Application Search" database="SQLE648S1" table="true" preparedStatement="false" id="DESH_PACS_APPLICATION_VW_TBL">
+        <columns>*</columns>
+        <from>PacsData.dbo.PACS_Application_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Agent" type="VARCHAR" length="50"/>
+            <field id="Agent_Address" type="VARCHAR" length="2000"/>
+            <field id="Agent_Company" type="VARCHAR" length="200"/>
+            <field id="Agent_Name" type="VARCHAR" length="200"/>
+            <field id="AppCode" type="VARCHAR" length="14"/>
+            <field id="AppTypeDesc" type="VARCHAR" length="200"/>
+            <field id="Applicant_Name" type="VARCHAR" length="69" readOnly="true"/>
+            <field id="ApplicationAddress" type="VARCHAR" length="167" readOnly="true"/>
+            <field id="CommDate" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Company" type="VARCHAR" length="30"/>
+            <field id="DecisDate" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Decision" type="VARCHAR" length="60"/>
+            <field id="Desc" type="VARCHAR" length="75"/>
+            <field id="Easting" type="INTEGER" length="10"/>
+            <field id="Initials" type="VARCHAR" length="7"/>
+            <field id="Location" type="VARCHAR" length="80"/>
+            <field id="LocationPostcode" type="VARCHAR" length="8"/>
+            <field id="Name" type="VARCHAR" length="40"/>
+            <field id="Northing" type="INTEGER" length="10"/>
+            <field id="OfficeNotes" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Proposal" type="VARCHAR" length="100"/>
+            <field id="ReceivedDate" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Recommend" type="VARCHAR" length="2000"/>
+            <field id="Surname" type="VARCHAR" length="51"/>
+            <field id="ValidDate" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Ward" type="VARCHAR" length="30"/>
+            <field id="Community" type="VARCHAR" length="30"/>
+        </fields>
+    </dbResource>
+</ebase>

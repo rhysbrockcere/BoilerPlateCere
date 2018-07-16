@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Inspection Location Types" database="DHPW_TEST" table="true" preparedStatement="false" id="DHPW_CI_LOCTYPE">
+        <columns>*</columns>
+        <from>Cleaninginsp_TEST.dbo.LocType</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="InspFreqSum" type="INTEGER" length="10"/>
+            <field id="InspFreqWint" type="INTEGER" length="10"/>
+            <field id="LocTypeID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="LocTypeName" length="20"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

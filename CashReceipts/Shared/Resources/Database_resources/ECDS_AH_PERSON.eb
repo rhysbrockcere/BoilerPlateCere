@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Affordable Housing - Person Records" database="SQLE648S1" preparedStatement="false" id="ECDS_AH_PERSON">
+        <columns>*</columns>
+        <from>ECDS_Housing_Test.dbo.AH_Person</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="Email_Address" type="VARCHAR" length="250"/>
+            <field id="Email_Updates" type="VARCHAR" length="1"/>
+            <field id="Forenames" type="VARCHAR" length="250"/>
+            <field id="Gender" type="VARCHAR" length="1"/>
+            <field id="Home_Number" type="VARCHAR" length="50"/>
+            <field id="Marital_Status" type="VARCHAR" length="50"/>
+            <field id="Mobile_Number" type="VARCHAR" length="50"/>
+            <field id="Person_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Surname" type="VARCHAR" length="250"/>
+            <field id="Title" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMBER" length="300" persistent="false"/>
+            <field id="Work_Number" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

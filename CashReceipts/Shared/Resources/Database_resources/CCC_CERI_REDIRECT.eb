@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_ITRENT2012" preparedStatement="false" id="CCC_CERI_REDIRECT">
+        <columns>*</columns>
+        <from>TTEST.dbo.CCC_Ceri_Redirect</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="email_address" type="VARCHAR" length="255"/>
+            <field id="end_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="man_id" type="VARCHAR" length="10"/>
+            <field id="red_to_user_nm" type="VARCHAR" length="20"/>
+            <field id="redirect_email" type="VARCHAR" length="255"/>
+            <field id="redirect_id" type="VARCHAR" length="10"/>
+            <field id="start_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="user_nm" type="VARCHAR" length="20"/>
+            <field id="man_name" type="VARCHAR" length="250"/>
+        </fields>
+    </dbResource>
+</ebase>

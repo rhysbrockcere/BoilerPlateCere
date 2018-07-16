@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" nativeSql="true" id="DESH_PACS_INSERT">
+        <columns>*</columns>
+        <from>PacsData.dbo.NeighboursContacted</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <select>select * 
+from PacsData.dbo.NeighboursContacted 
+where &amp;&amp;WHERE_CLAUSE</select>
+        <insert>insert into PacsData.dbo.NeighboursContacted 
+(Address,AppCode,Company,County,Email,Initials,Postcode,Responded,Surname,Tel1,Title,Town,[View]) 
+values(&amp;&amp;Address,&amp;&amp;AppCode,&amp;&amp;Company,&amp;&amp;County,&amp;&amp;Email,&amp;&amp;Initials,&amp;&amp;Postcode,&amp;&amp;Responded,&amp;&amp;Surname,&amp;&amp;Tel1,&amp;&amp;Title,&amp;&amp;Town,&amp;&amp;View)</insert>
+        <fields>
+            <field id="AckDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Address" type="VARCHAR" length="100"/>
+            <field id="AppCode" type="VARCHAR" length="14"/>
+            <field id="Company" type="VARCHAR" length="100"/>
+            <field id="ConsDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="County" type="VARCHAR" length="15"/>
+            <field id="Email" type="VARCHAR" length="75"/>
+            <field id="Initials" type="VARCHAR" length="16"/>
+            <field id="NoSigs" type="SMALLINT" length="5"/>
+            <field id="Petition" type="BIT" length="1"/>
+            <field id="Postcode" type="VARCHAR" length="8"/>
+            <field id="PreviousView" type="VARCHAR" length="200"/>
+            <field id="Ref" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Responded" type="BIT" length="1"/>
+            <field id="Surname" type="VARCHAR" length="75"/>
+            <field id="Tel1" type="VARCHAR" length="16"/>
+            <field id="Title" type="VARCHAR" length="16"/>
+            <field id="Town" type="VARCHAR" length="20"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+            <field id="View" type="VARCHAR" length="3"/>
+        </fields>
+    </dbResource>
+</ebase>

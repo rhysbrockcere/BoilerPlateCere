@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Non-members of each committee - table" database="SQLE645S1" table="true" preparedStatement="false" id="CE_MC_VW_COMMITTEE_NON_MEMBERS_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_MC_VW_Committee_non_members</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY Surname, Firstname</additional>
+        <fields>
+            <field id="Councillor_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Firstname" type="VARCHAR" length="50"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+            <field id="committee_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

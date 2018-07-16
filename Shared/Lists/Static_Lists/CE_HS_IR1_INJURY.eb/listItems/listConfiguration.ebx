@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="ABR"/>
+    <item id="2" returnVal="AMP"/>
+    <item id="3" returnVal="ASP"/>
+    <item id="4" returnVal="BRU"/>
+    <item id="5" returnVal="ANI"/>
+    <item id="6" returnVal="INS"/>
+    <item id="7" returnVal="DIS"/>
+    <item id="8" returnVal="ELE"/>
+    <item id="9" returnVal="FRA"/>
+    <item id="10" returnVal="LAC"/>
+    <item id="11" returnVal="MUL"/>
+    <item id="12" returnVal="MUS"/>
+    <item id="13" returnVal="SPR"/>
+    <item id="14" returnVal="STR"/>
+</items>

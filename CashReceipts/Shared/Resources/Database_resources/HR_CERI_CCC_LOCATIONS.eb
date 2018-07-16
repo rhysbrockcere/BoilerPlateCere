@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="CERi Location table" database="CERESQLS1_ITRENT2012" preparedStatement="false" id="HR_CERI_CCC_LOCATIONS">
+        <columns>*</columns>
+        <from>Ceri_Docs_Test.dbo.CCC_Locations</from>
+        <fields>
+            <field id="ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Location_CY" type="VARCHAR" length="255"/>
+            <field id="Location_EN" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

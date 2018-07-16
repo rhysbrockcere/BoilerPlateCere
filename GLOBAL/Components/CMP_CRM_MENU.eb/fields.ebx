@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="CUST_CUSTOMER_ID" type="INTEGER" labelTextRef="TXT13" displayType="TEXT" displayLength="17" id="50">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_FIRSTNAME" type="CHAR" labelTextRef="TXT10" maxLength="500" displayType="TEXT" displayLength="60" id="20">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_SURNAME" type="CHAR" labelTextRef="TXT11" maxLength="500" displayType="TEXT" displayLength="60" id="30">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUST_TITLE" type="CHAR" labelTextRef="TXT12" maxLength="50" displayType="TEXT" displayLength="50" id="40">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="FIELD1" type="CHAR" eventField="true" labelTextRef="TXT9" displayType="TEXT" id="10"/>
+    <field name="LINK_TEXT" type="CHAR" labelTextRef="TXT15" displayType="TEXT" id="70"/>
+    <field name="RETURN_FORM_NAME" type="CHAR" labelTextRef="TXT18" displayType="TEXT" id="80"/>
+    <field name="WHERE_CLAUSE" type="CHAR" labelTextRef="TXT14" displayType="TEXT" id="60"/>
+</fields>

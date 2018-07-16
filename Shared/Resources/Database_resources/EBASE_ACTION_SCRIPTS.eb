@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="UFS" preparedStatement="false" id="EBASE_ACTION_SCRIPTS">
+        <columns>*</columns>
+        <from>action_scripts</from>
+        <where>project_id=&amp;&amp;project_id AND action_script_id=&amp;&amp;action_script_id</where>
+        <fields>
+            <field id="PREFERRED_FORM" type="VARCHAR" length="50"/>
+            <field id="action_script_id" type="VARCHAR" length="50" required="true" key="true"/>
+            <field id="action_script_text" type="LONGVARCHAR" length="2147483647"/>
+            <field id="created_date" type="VARCHAR" length="20"/>
+            <field id="created_user" type="VARCHAR" length="20"/>
+            <field id="last_updated_date" type="VARCHAR" length="20"/>
+            <field id="last_updated_user" type="VARCHAR" length="20"/>
+            <field id="project_id" type="VARCHAR" length="50" required="true" key="true"/>
+        </fields>
+    </dbResource>
+</ebase>

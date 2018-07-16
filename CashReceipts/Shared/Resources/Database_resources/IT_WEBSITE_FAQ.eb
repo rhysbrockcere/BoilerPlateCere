@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="IT Website FAQ Table" database="DFIT_CENTRAL" preparedStatement="false" id="IT_WEBSITE_FAQ">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_Website_FAQ</from>
+        <where>FAQ_ID=&amp;&amp;FAQ_ID</where>
+        <fields>
+            <field id="FAQ_Answer_Hyperlink" length="255"/>
+            <field id="FAQ_Answer_Text" type="VARCHAR" length="255"/>
+            <field id="FAQ_Answer_Text_Welsh" type="VARCHAR" length="255"/>
+            <field id="FAQ_Category_ID" type="VARCHAR" length="50"/>
+            <field id="FAQ_Department" length="4"/>
+            <field id="FAQ_ID" type="INTEGER" length="10" required="true" key="true"/>
+            <field id="FAQ_Keywords" length="100"/>
+            <field id="FAQ_Question" type="VARCHAR" length="100"/>
+            <field id="FAQ_Question_Welsh" type="VARCHAR" length="255"/>
+            <field id="FAQ_Service_ID" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

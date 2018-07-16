@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="IT_PHONEBOOK_LOCATIONS_ID">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_Phonebook_Locations</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address_1" type="VARCHAR" length="100"/>
+            <field id="Address_2" type="VARCHAR" length="100"/>
+            <field id="Address_3" type="VARCHAR" length="100"/>
+            <field id="Address_4" type="VARCHAR" length="100"/>
+            <field id="County" type="VARCHAR" length="50"/>
+            <field id="Location" type="VARCHAR" length="250"/>
+            <field id="Location_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Postcode" length="8"/>
+            <field id="Status" length="1"/>
+            <field id="Type" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

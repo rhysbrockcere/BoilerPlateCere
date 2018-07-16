@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="GIS_OPTION_2" dateImported="2013-05-22T10:59:50.437+01:00">
+        <columns>Problem_Code, Option2_EN, Option2_CY, Option_Ref</columns>
+        <from>Juneset_Test.dbo.VW_Option_2</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Option2_CY" input="false"/>
+            <field id="Option2_EN" input="false"/>
+            <field id="Option_Ref" input="false"/>
+            <field id="Problem_Code" type="INTEGER" input="false"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" output="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

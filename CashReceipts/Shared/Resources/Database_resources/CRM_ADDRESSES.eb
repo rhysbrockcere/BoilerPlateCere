@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="CRM_ADDRESSES">
+        <columns>*</columns>
+        <from>CCC_Global_Lists.dbo.Addresses</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Addr1" type="VARCHAR" length="100"/>
+            <field id="Addr2" type="VARCHAR" length="100"/>
+            <field id="Addr3" type="VARCHAR" length="100"/>
+            <field id="Addr4" type="VARCHAR" length="100"/>
+            <field id="Addr5" type="VARCHAR" length="100"/>
+            <field id="Address" type="VARCHAR" length="524"/>
+            <field id="CCUPRN" type="BIGINT" length="19"/>
+            <field id="Imported" type="TIMESTAMP" length="16"/>
+            <field id="PostCode" type="VARCHAR" length="10"/>
+            <field id="PropertyReference" type="VARCHAR" length="50"/>
+            <field id="UPRN" type="VARCHAR" length="50"/>
+            <field id="USRN" type="INTEGER" length="10"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+            <field id="X_COORDINATE" type="INTEGER" length="10"/>
+            <field id="Y_COORDINATE" type="INTEGER" length="10"/>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

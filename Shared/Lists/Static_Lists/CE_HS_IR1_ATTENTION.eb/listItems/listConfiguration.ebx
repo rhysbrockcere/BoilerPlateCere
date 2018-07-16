@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="NON"/>
+    <item id="2" returnVal="FIA"/>
+    <item id="3" returnVal="SOD"/>
+    <item id="4" returnVal="TTH"/>
+</items>

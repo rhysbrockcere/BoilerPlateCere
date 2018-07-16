@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="CRM_WEB_USER_ACCESS">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.web_Sec_User_Groups</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Form_ID" type="VARCHAR" length="100"/>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" required="true" persistent="false" dynamic="true"/>
+            <field id="Group_ID" type="INTEGER"/>
+        </fields>
+    </dbResource>
+</ebase>

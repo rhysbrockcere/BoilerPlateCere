@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Flying Start Note Type Lookup table" database="SQLE645S1" table="true" preparedStatement="false" id="FS_NOTE_TYPE_TBL">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Note_Type</from>
+        <additional>order by Note_Description</additional>
+        <fields>
+            <field id="Note_Description" type="VARCHAR" length="50"/>
+            <field id="Note_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DFIT_CENTRAL" preparedStatement="false" id="IT_TR_MENU_FUNCTIONS">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_TR_Menu_Functions</from>
+        <fields>
+            <field id="Department" type="VARCHAR" length="50"/>
+            <field id="DispLanguage" type="VARCHAR" length="50"/>
+            <field id="DisplaySeq" type="INTEGER" length="10"/>
+            <field id="DisplayText" type="VARCHAR" length="100"/>
+            <field id="ReturnValue" length="10"/>
+            <field id="SectionName" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

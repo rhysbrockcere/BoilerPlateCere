@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Shows all meeting on date grouped by committee type" database="SQLE645S1" table="true" preparedStatement="false" id="CE_MC_VW_TIMETABLE_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_MC_VW_Timetable</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY Meeting_date, Type_ID</additional>
+        <fields>
+            <field id="Aft_ID" type="INTEGER" length="10"/>
+            <field id="Afternoon" type="VARCHAR" length="100"/>
+            <field id="Committee_type" type="VARCHAR" length="50"/>
+            <field id="Eve_ID" type="INTEGER" length="10"/>
+            <field id="Evening" type="VARCHAR" length="100"/>
+            <field id="Meeting_date" type="TIMESTAMP" length="16"/>
+            <field id="Morn_ID" type="INTEGER" length="10"/>
+            <field id="Morning" type="VARCHAR" length="100"/>
+            <field id="Type_ID" type="NUMBER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

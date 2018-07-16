@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webFormComponent exportVersion="51" type="PART_PAGE" template="/Presentation/Presentation_Templates/CEREDIGION_INTERNET_SW" firstPage="DUMMY_PAGE_03102003" preferredScriptFolder="/Scripts" id="CMP_REDIRECT" dateImported="2016-04-15T12:12:37.667+01:00">
+        <linkedTexts>
+            <linkedText>/GLOBAL_Messages</linkedText>
+            <linkedText>/Shared_Texts</linkedText>
+        </linkedTexts>
+    </webFormComponent>
+</ebase>

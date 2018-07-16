@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="PORTAL_SECURITYQUESTIONS" dateCreated="2013-12-04T13:11:27.217Z" dateImported="2016-02-01T10:26:18.047Z">
+        <columns>Question, Language, ID, Enabled</columns>
+        <from>CS_CRM.dbo.ptl_SecurityQuestions</from>
+        <where>Enabled='True'</where>
+        <fields>
+            <field id="Enabled" type="BIT" input="false"/>
+            <field id="ID" type="INTEGER" input="false"/>
+            <field id="Language" input="false"/>
+            <field id="Question" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

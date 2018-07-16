@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Contract Permanent Element details" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_ELEPERM">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.VW_ELEPERM</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="EP_INPUT_VAL" type="DECIMAL" length="9"/>
+            <field id="EP_PERM_VAL" type="DECIMAL" length="9"/>
+            <field id="ORG_NO" type="DECIMAL" length="2" key="true"/>
+            <field id="PAY_NO" length="4" key="true"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="CON_NO" length="10" key="true"/>
+            <field id="ELE_NO" length="4" key="true"/>
+            <field id="ELE_RUL_DESC" type="VARCHAR" length="50"/>
+            <field id="EP_EFF_D" length="8" key="true"/>
+            <field id="EP_END_D" length="8"/>
+        </fields>
+    </dbResource>
+</ebase>

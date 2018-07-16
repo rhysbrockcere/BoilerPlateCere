@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DAFYDD_TEST" preparedStatement="false" id="COURSE_TYPES">
+        <columns>types</columns>
+        <from>Test_Dafydd.dbo.course_types</from>
+        <where>types = &amp;&amp;types</where>
+        <fields>
+            <field id="types" type="VARCHAR"/>
+        </fields>
+    </dbResource>
+</ebase>

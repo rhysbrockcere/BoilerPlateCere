@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <webFormComponent type="PART_PAGE" template="/Presentation/Presentation_Templates/Ceredigion2017" firstPage="DUMMY_PAGE_03102003" preferredScriptFolder="/Scripts/Address" id="Address" dateCreated="2017-03-22T10:17:47.916Z">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+        </sharedFunctionScripts>
+    </webFormComponent>
+</ebase>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Outstanding - uncompleted survey forms" database="SQLE645S1" table="true" preparedStatement="false" id="DHPW_TS09_VW_OUTSTANDING_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DHPW_TS09_VW_Outstanding</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY email</additional>
+        <fields>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="70" persistent="false"/>
+            <field id="department" type="VARCHAR" length="10"/>
+            <field id="email" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

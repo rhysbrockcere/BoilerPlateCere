@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DHPW Pass Plus Scheme" database="SQLE648S1" table="true" preparedStatement="false" id="DHPW_PASS_PLUS_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DHPW_Pass_Plus_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Driving_Pass_Year" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Feedback_Email_Sent" type="TIMESTAMP" length="16"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Passenger_Hours" length="2"/>
+            <field id="Passenger_Mins" length="2"/>
+            <field id="Session_Date" type="TIMESTAMP" length="16"/>
+            <field id="Session_EndHours" length="2"/>
+            <field id="Session_EndMins" length="2"/>
+            <field id="Session_StartHours" length="2"/>
+            <field id="Session_StartMins" length="2"/>
+            <field id="Theory_Pass_Month" type="VARCHAR" length="3" readOnly="true"/>
+            <field id="Theory_Pass_Year" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Theory_Test_Date" type="TIMESTAMP" length="16"/>
+            <field id="Venue" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMBER" length="300" persistent="false"/>
+            <field id="attendee_title" type="VARCHAR" length="50"/>
+            <field id="Feedback_Letter_Sent" type="TIMESTAMP" length="16"/>
+            <field id="Instructor_Name" type="VARCHAR" length="100"/>
+            <field id="Feedback_Status" type="VARCHAR" length="50"/>
+            <field id="Furthest_Location" type="VARCHAR" length="100"/>
+            <field id="Attendee_Address1" type="VARCHAR" length="100"/>
+            <field id="Attendee_Address2" type="VARCHAR" length="100"/>
+            <field id="Attendee_Address3" type="VARCHAR" length="100"/>
+            <field id="Attendee_Address4" type="VARCHAR" length="100"/>
+            <field id="Attendee_Email" type="VARCHAR" length="100"/>
+            <field id="Attendee_Forename" type="VARCHAR" length="50"/>
+            <field id="Attendee_Name" type="VARCHAR" length="101" readOnly="true"/>
+            <field id="Attendee_Postcode" type="VARCHAR" length="50"/>
+            <field id="Attendee_Ref" type="VARCHAR" length="50"/>
+            <field id="Attendee_Surname" type="VARCHAR" length="50"/>
+            <field id="Attendee_TelNo" type="VARCHAR" length="50"/>
+            <field id="Benefit_Ind" length="1"/>
+            <field id="Comments" type="VARCHAR" length="1500"/>
+            <field id="Confirmation_Email_Sent" type="TIMESTAMP" length="16"/>
+            <field id="Confirmation_Letter_Sent" type="TIMESTAMP" length="16"/>
+            <field id="Confirmation_Status" type="VARCHAR" length="50"/>
+            <field id="Driving_Hours" length="2"/>
+            <field id="Driving_Mins" length="2"/>
+            <field id="Driving_Pass_Month" type="VARCHAR" length="3" readOnly="true"/>
+            <field id="Night_Driving_Ind" length="1"/>
+            <field id="No_Candidates" type="INTEGER" length="10"/>
+            <field id="No_Night_Driving_Reason" type="VARCHAR" length="500"/>
+        </fields>
+    </dbResource>
+</ebase>

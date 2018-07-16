@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="ADMISSIONS" table="true" id="DECS_FSM_CHILDREN_TBL" dateCreated="2017-06-08T11:32:46.143+01:00">
+        <columns>*</columns>
+        <from>FSM_CHILDREN</from>
+        <fields>
+            <field id="Child_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="DOB" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="FSM_ID" type="INTEGER" length="10"/>
+            <field id="FULLNAME" type="VARCHAR" length="255"/>
+            <field id="LIVING_WITH" length="1"/>
+            <field id="SCHOOL_NAME" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Carer/Parent relationship to Child" database="SQLE645S1" table="true" preparedStatement="false" id="FS_CARE_PERIOD">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Care_Period</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+            <field id="Care_Period_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Carer_FS_ID" type="INTEGER" length="10"/>
+            <field id="Child_FS_ID" type="INTEGER" length="10"/>
+            <field id="End_Date" type="TIMESTAMP" length="16"/>
+            <field id="End_Reason" type="VARCHAR" length="20"/>
+            <field id="Relation_to_Child" type="VARCHAR" length="25"/>
+        </fields>
+    </dbResource>
+</ebase>

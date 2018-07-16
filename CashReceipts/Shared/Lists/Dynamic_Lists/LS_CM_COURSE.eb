@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE645S1" id="LS_CM_COURSE" dateCreated="2014-08-12T15:22:10.550+01:00" dateImported="2014-09-11T15:26:29.623+01:00">
+        <columns>ID, Course_Type, CourseEN, CourseCY</columns>
+        <from>LS_CM_TEST.dbo.LS_CM_Course</from>
+        <where>&amp;&amp;LIST_CLAUSE</where>
+        <additional>order by ListOrder</additional>
+        <fields>
+            <field id="CourseCY" input="false"/>
+            <field id="CourseEN" input="false"/>
+            <field id="Course_Type" input="false"/>
+            <field id="ID" type="INTEGER" input="false"/>
+            <field id="LIST_CLAUSE" type="NUMERIC" output="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLREGISTRATION_STATEMENT">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblREGISTRATION_STATEMENT</from>
+        <where>rstate_id=&amp;&amp;rstate_id</where>
+        <fields>
+            <field id="rstate_id" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="rstate_no" type="INTEGER" length="10"/>
+            <field id="tblLU_statement" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

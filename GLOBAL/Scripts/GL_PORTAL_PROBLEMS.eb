@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_PORTAL" preferredComponentProject="GLOBAL" id="GL_PORTAL_PROBLEMS" dateCreated="2013-03-04T13:29:05.087Z" dateImported="2016-10-14T14:17:24.147+01:00">
+        <scriptText>hide LOGIN_GROUP;
+show PROBLEM_GROUP;
+
+show PROBLEM_OPTS_GROUP;
+hide PROBLEM_FORGOT_GROUP;
+hide PROBLEM_RESET_BUTTON;
+
+callscript GL_PORTAL_FORGOT_PASSWORD;</scriptText>
+    </script>
+</ebase>

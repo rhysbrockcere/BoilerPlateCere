@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="ADMISSIONS" preparedStatement="false" id="DECS_FSM_MAX" dateCreated="2017-06-08T11:39:02.348+01:00">
+        <columns>MAX(FSM_ID) as FSM_ID</columns>
+        <from>FSM</from>
+        <where>FSM_ID is not null</where>
+        <fields>
+            <field id="FSM_ID" type="INTEGER" length="20" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

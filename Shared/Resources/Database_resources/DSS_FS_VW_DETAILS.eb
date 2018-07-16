@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_FS_VW_DETAILS">
+        <columns>*</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_VW_Details</from>
+        <fields>
+            <field id="Action" type="VARCHAR" length="500"/>
+            <field id="Address_ID" type="INTEGER" length="10"/>
+            <field id="Alloc_Date" type="TIMESTAMP" length="16"/>
+            <field id="Assesment_Date" type="TIMESTAMP" length="16"/>
+            <field id="Carer" type="VARCHAR" length="250"/>
+            <field id="Case_Ref" type="VARCHAR" length="50"/>
+            <field id="Case_Status" type="VARCHAR" length="5"/>
+            <field id="Child_ID" type="INTEGER" length="10"/>
+            <field id="Comp_Date" type="TIMESTAMP" length="16"/>
+            <field id="DOB" type="VARCHAR" length="50"/>
+            <field id="DRAIG" type="VARCHAR" length="50"/>
+            <field id="File_Loc" type="VARCHAR" length="50"/>
+            <field id="Letter" type="TIMESTAMP" length="16"/>
+            <field id="Ment" length="1"/>
+            <field id="Name" type="VARCHAR" length="150"/>
+            <field id="O_Score" type="VARCHAR" length="50"/>
+            <field id="Orig_Num" type="VARCHAR" length="50"/>
+            <field id="Outcome" type="VARCHAR" length="50"/>
+            <field id="Par_Sup" length="1"/>
+            <field id="Phone" type="VARCHAR" length="50"/>
+            <field id="REF_ID" type="INTEGER" length="10"/>
+            <field id="Received_Date" type="TIMESTAMP" length="16"/>
+            <field id="Ref_Agency" type="VARCHAR" length="250"/>
+            <field id="Ref_Agency_ID" type="INTEGER" length="10"/>
+            <field id="Ref_Date" type="TIMESTAMP" length="16"/>
+            <field id="Referrer" type="VARCHAR" length="150"/>
+            <field id="Staff" type="VARCHAR" length="511" readOnly="true"/>
+            <field id="Sup_Pac" length="1"/>
+            <field id="Surname" type="VARCHAR" length="150"/>
+            <field id="V_Score" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

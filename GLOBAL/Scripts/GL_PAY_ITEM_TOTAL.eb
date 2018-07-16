@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_PAYMENT" preferredComponentProject="GLOBAL" id="GL_PAY_ITEM_TOTAL">
+        <scriptText>//insertrow ITEM;
+//set ITEM-ITEMSUMMARY_DESCRIPTION = 'Test';
+//set ITEM-ITEMSUMMARY_AMOUNTINMINORUNITS = 1.05;
+//set ITEM-TAX_VAT_VATRATE = '0';
+//set ITEM-TAX_VAT_VATAMOUNTINMINORUNITS = '0';
+//set ITEM-LGITEMDETAILS_FUNDCODE = '0';
+
+set E_CMP_PAYMENT__WS_TOTAL_VALUE = 0;
+loop at table E_CMP_PAYMENT__ITEM
+	set E_CMP_PAYMENT__WS_TOTAL_VALUE = E_CMP_PAYMENT__WS_TOTAL_VALUE + E_CMP_PAYMENT__ITEM-ITEMSUMMARY_AMOUNTINMINORUNITS;
+endloop
+set E_CMP_PAYMENT__FOP_TOTAL = '£' + tostring(E_CMP_PAYMENT__WS_TOTAL_VALUE);</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Company Details held in the FCW CRM system" database="SQLE648S1" table="true" preparedStatement="false" id="FCW_COMPANY_TBL">
+        <columns>DISTINCT Company_ID, Company_Name</columns>
+        <from>FCW_CRM_Test.dbo.Tbl_Company</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Company_ID" type="INTEGER" length="10"/>
+            <field id="Company_Name" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="250" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

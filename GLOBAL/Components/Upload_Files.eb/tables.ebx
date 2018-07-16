@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Uploads" id="ed2d7082-a0eb-4143-8313-7ed7c4a62fe0">
+        <column name="DocName" type="CHAR" labelTextRef="Txt1GWRVl" displayType="TEXT" id="af9215cf-a8a9-4a4e-911d-13938f247fbd"/>
+        <column name="DocPath" type="CHAR" labelTextRef="Txt4EaHtI" displayType="TEXT" id="b3745fac-67a0-4b6a-8f3d-a9d355ca9e0e"/>
+        <column name="Remove" type="CHAR" labelTextRef="TxtA2MBXW" displayType="TEXT" id="af2b465f-bfe7-4e27-b4b1-13da81b75790"/>
+    </table>
+</tables>

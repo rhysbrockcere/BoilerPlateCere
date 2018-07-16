@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="DSS_EARLY_YEARS">
+        <columns>*</columns>
+        <from>FIS_Live.dbo.A_VIEW_EYEARS_PROVIDER</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ADR_COUNTY" type="VARCHAR" length="100"/>
+            <field id="ADR_LOCALITY" type="VARCHAR" length="100"/>
+            <field id="ADR_NUMBER" type="VARCHAR" length="100"/>
+            <field id="ADR_POSTCODE" type="VARCHAR" length="8"/>
+            <field id="ADR_STREET" type="VARCHAR" length="100"/>
+            <field id="ADR_TOWN" type="VARCHAR" length="100"/>
+            <field id="ARC_DESC" type="VARCHAR" length="100"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="pinfo_addinfo" type="CLOB" length="1073741823"/>
+            <field id="pinfo_addinfo_welsh" type="CLOB" length="1073741823"/>
+            <field id="provider_ImmediateVacancies" type="BIT" length="1"/>
+            <field id="provider_an_previously_cared" type="VARCHAR" length="10"/>
+            <field id="provider_an_previously_cared_notes" type="VARCHAR" length="100"/>
+            <field id="provider_an_previously_cared_notes_welsh" type="VARCHAR" length="500"/>
+            <field id="provider_an_previously_cared_types" type="VARCHAR" length="100"/>
+            <field id="provider_an_previously_cared_types_welsh" type="VARCHAR" length="500"/>
+            <field id="provider_available" type="VARCHAR" length="2"/>
+            <field id="provider_costday" type="DOUBLE" length="53"/>
+            <field id="provider_costhour" type="DOUBLE" length="53"/>
+            <field id="provider_costsess" type="DOUBLE" length="53"/>
+            <field id="provider_costterm" type="DOUBLE" length="53"/>
+            <field id="provider_costweek" type="DOUBLE" length="53"/>
+            <field id="provider_day" type="SMALLINT" length="5"/>
+            <field id="provider_email" type="VARCHAR" length="70"/>
+            <field id="provider_end" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_hour" type="SMALLINT" length="5"/>
+            <field id="provider_id" type="INTEGER" length="10"/>
+            <field id="provider_name" type="VARCHAR" length="100"/>
+            <field id="provider_name_welsh" type="VARCHAR" length="100"/>
+            <field id="provider_session" type="SMALLINT" length="5"/>
+            <field id="provider_start" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_telephone" type="VARCHAR" length="40"/>
+            <field id="provider_term" type="SMALLINT" length="5"/>
+            <field id="provider_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_vac_notes" type="VARCHAR" length="1000"/>
+            <field id="provider_vac_notes_welsh" type="VARCHAR" length="1000"/>
+            <field id="provider_web_site" type="VARCHAR" length="250"/>
+            <field id="provider_week" type="SMALLINT" length="5"/>
+            <field id="provtype_WebDescription" type="VARCHAR" length="70"/>
+            <field id="provtype_desc" type="VARCHAR" length="70"/>
+        </fields>
+    </dbResource>
+</ebase>

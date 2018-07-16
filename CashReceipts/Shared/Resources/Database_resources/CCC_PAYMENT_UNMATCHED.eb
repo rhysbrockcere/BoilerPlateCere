@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_CASH2012" table="true" id="CCC_PAYMENT_UNMATCHED">
+        <columns>*</columns>
+        <from>Aim_Cer_Test.dbo.CCC_Payment_Unmatched</from>
+        <fields>
+            <field id="CAN" type="INTEGER" length="10"/>
+            <field id="Machine_Code" length="5"/>
+            <field id="Pay_Amt_Base" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Ref_No" type="VARCHAR" length="50"/>
+            <field id="Ref_No2" type="VARCHAR" length="50"/>
+            <field id="Transaction_Type" length="1"/>
+            <field id="transformed_transaction_date" type="TIMESTAMP" length="23" fractionalDigits="3" readOnly="true"/>
+            <field id="Auth_Code" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

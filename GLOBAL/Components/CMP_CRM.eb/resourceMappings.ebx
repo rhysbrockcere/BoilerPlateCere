@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CRM_CUSTOMER">
+        <fieldMapping resourceField="Gender" field="GENDER"/>
+        <fieldMapping resourceField="Language" field="LANGUAGE"/>
+        <fieldMapping resourceField="Preferred_Name" field="PREFERRED_NAME"/>
+    </resourceMapping>
+    <resourceMapping id="CRM_CUSTOMER_DETAIL">
+        <fieldMapping resourceField="Address1" field="ADDRESS1"/>
+        <fieldMapping resourceField="Address2" field="ADDRESS2"/>
+        <fieldMapping resourceField="Address3" field="ADDRESS3"/>
+        <fieldMapping resourceField="Contact_Method" field="CONTACT_METHOD"/>
+        <fieldMapping resourceField="County" field="COUNTY"/>
+        <fieldMapping resourceField="Customer_ID" field="CUSTOMER_ID"/>
+        <fieldMapping resourceField="DOB" field="DOB"/>
+        <fieldMapping resourceField="Email" field="EMAIL"/>
+        <fieldMapping resourceField="Firstname" field="FIRSTNAME"/>
+        <fieldMapping resourceField="Mobile" field="MOBILE"/>
+        <fieldMapping resourceField="NI_No" field="NI_NO"/>
+        <fieldMapping resourceField="PostCode" field="POSTCODE"/>
+        <fieldMapping resourceField="Surname" field="SURNAME"/>
+        <fieldMapping resourceField="Telephone" field="TELEPHONE"/>
+        <fieldMapping resourceField="Title" field="TITLE"/>
+        <fieldMapping resourceField="Town" field="TOWN"/>
+        <fieldMapping resourceField="UPRN" field="UPRN"/>
+        <fieldMapping resourceField="Where_Clause" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+</resourceMappings>

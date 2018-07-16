@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Cardinet Telephone book - Employees table" database="DF_IT_TEL_DIR" preparedStatement="false" id="IT_EMPLOYEES_PASSWD">
+        <columns>*</columns>
+        <from>employees</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Access_Attempts" type="INTEGER" length="1"/>
+            <field id="Attempts_Logged" length="1"/>
+            <field id="Contract_No" length="7"/>
+            <field id="Date" type="DATE" length="10"/>
+            <field id="DateChanged" type="DATE" length="10"/>
+            <field id="Department" length="255"/>
+            <field id="Email" length="255"/>
+            <field id="EmailSuffix" length="25"/>
+            <field id="Emergancy_Contact" length="1"/>
+            <field id="Fax" length="255"/>
+            <field id="Firstname" length="255"/>
+            <field id="ID" type="INTEGER" length="5" key="true" readOnly="true"/>
+            <field id="Image" length="255"/>
+            <field id="JobTitle" length="255"/>
+            <field id="LineManager" length="50"/>
+            <field id="LocationID" length="255"/>
+            <field id="Location_ID" type="INTEGER" length="4"/>
+            <field id="Manager_Email" type="VARCHAR" length="50"/>
+            <field id="Mobile" length="255"/>
+            <field id="Password" length="32"/>
+            <field id="PasswordChanged" length="1"/>
+            <field id="Profile" length="255"/>
+            <field id="Section" length="100"/>
+            <field id="Section_ID" type="INTEGER" length="4"/>
+            <field id="Service" length="255"/>
+            <field id="Status" length="20"/>
+            <field id="Surname" length="255"/>
+            <field id="Team_Id" type="INTEGER" length="4"/>
+            <field id="Telephone" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="showImage" length="3"/>
+        </fields>
+    </dbResource>
+</ebase>

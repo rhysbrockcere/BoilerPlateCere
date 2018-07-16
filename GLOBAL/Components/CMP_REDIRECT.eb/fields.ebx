@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="SINGLE_URL" type="CHAR" labelTextRef="TXT8" displayType="TEXT" id="10"/>
+</fields>

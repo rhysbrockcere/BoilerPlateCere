@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="JE_PRE_DATA">
+        <columns>*</columns>
+        <from>JE_2012.dbo.Pre_Data_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ActHrs" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="CUR_ACT_HRS" type="VARCHAR" length="255"/>
+            <field id="CUR_ACT_PT" type="VARCHAR" length="255"/>
+            <field id="CUR_GRADE" type="VARCHAR" length="255"/>
+            <field id="CUR_MAX_PT" type="VARCHAR" length="255"/>
+            <field id="CUR_STD_HRS" type="VARCHAR" length="255"/>
+            <field id="Inits" type="VARCHAR" length="306" readOnly="true"/>
+            <field id="Maxpt" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="NI_Number" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Neg#Pos" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Post_No" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Post_Title" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Rate" type="DOUBLE" length="53" readOnly="true"/>
+            <field id="Salary" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Scpt" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Sex" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Status" type="VARCHAR" length="255"/>
+            <field id="StdHrs" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Sub_Group" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Surname" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Title" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Weeks" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="CUR_WEEKS" type="VARCHAR" length="255"/>
+            <field id="Department" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Establishment" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Full_Contract_No" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="Grade" type="VARCHAR" length="255" readOnly="true"/>
+            <field id="GroupCode" type="VARCHAR" length="255" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Provider details" database="SQLE645S1" preparedStatement="false" id="FIS_TBLPROVIDER_MAX">
+        <columns>MAX(provider_id) as provider_id</columns>
+        <from>eyears_test.dbo.tblPROVIDER</from>
+        <where>provider_id is not null</where>
+        <fields>
+            <field id="provider_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

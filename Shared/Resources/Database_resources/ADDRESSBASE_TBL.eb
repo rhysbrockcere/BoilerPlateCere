@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="AddressBase Mapping Data" database="POSTGRES" table="true" preparedStatement="false" id="ADDRESSBASE_TBL">
+        <columns>*</columns>
+        <from>os_addressbase_full.addressbase</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="buildingname" type="VARCHAR" length="2147483647"/>
+            <field id="buildingname_xml_lang" type="VARCHAR" length="2147483647"/>
+            <field id="buildingnumber" type="BIGINT" length="19"/>
+            <field id="changetype" type="VARCHAR" length="1"/>
+            <field id="class" type="VARCHAR" length="2147483647"/>
+            <field id="departmentname" type="VARCHAR" length="2147483647"/>
+            <field id="departmentname_xml_lang" type="VARCHAR" length="2147483647"/>
+            <field id="dependentlocality" type="VARCHAR" length="2147483647"/>
+            <field id="dependentlocality_xml_lang" type="VARCHAR" length="2147483647"/>
+            <field id="dependentthoroughfarename" type="VARCHAR" length="2147483647"/>
+            <field id="dependentthoroughfarename_xml_lang" type="VARCHAR" length="2147483647"/>
+            <field id="doubledependentlocality" type="VARCHAR" length="2147483647"/>
+            <field id="doubledependentlocality_xml_lang" type="VARCHAR" length="2147483647"/>
+            <field id="entrydate" type="VARCHAR" length="2147483647"/>
+            <field id="geom" type="OTHER" length="2147483647"/>
+            <field id="gml_id" type="VARCHAR" length="2147483647"/>
+            <field id="gml_parent_id" type="VARCHAR" length="2147483647"/>
+            <field id="lastupdatedate" type="VARCHAR" length="2147483647"/>
+            <field id="organisationname" type="VARCHAR" length="2147483647"/>
+            <field id="organisationname_xml_lang" type="VARCHAR" length="2147483647"/>
+            <field id="poboxnumber" type="VARCHAR" length="2147483647"/>
+            <field id="position" type="VARCHAR" length="2147483647"/>
+            <field id="postcode" type="VARCHAR" length="2147483647"/>
+            <field id="postcodetype" type="VARCHAR" length="2147483647"/>
+            <field id="posttown" type="VARCHAR" length="2147483647"/>
+            <field id="posttown_xml_lang" type="VARCHAR" length="2147483647"/>
+            <field id="processdate" type="VARCHAR" length="2147483647"/>
+            <field id="rpc" type="VARCHAR" length="1"/>
+            <field id="startdate" type="VARCHAR" length="2147483647"/>
+            <field id="subbuildingname" type="VARCHAR" length="2147483647"/>
+            <field id="subbuildingname_xml_lang" type="VARCHAR" length="2147483647"/>
+            <field id="throughfarename" type="VARCHAR" length="2147483647"/>
+            <field id="throughfarename_xml_lang" type="VARCHAR" length="2147483647"/>
+            <field id="toid" type="VARCHAR" length="2147483647"/>
+            <field id="udprn" type="BIGINT" length="19"/>
+            <field id="uprn" type="BIGINT" length="19"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

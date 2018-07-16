@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="CE_IMPROVEMENTS_FEEDBACK">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_Improvement_Feedback</from>
+        <where>ID=&amp;&amp;ID</where>
+        <fields>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Q1" type="VARCHAR" length="50"/>
+            <field id="Q2" type="CLOB" length="1073741823"/>
+            <field id="Q3" type="CLOB" length="1073741823"/>
+            <field id="Submitted" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

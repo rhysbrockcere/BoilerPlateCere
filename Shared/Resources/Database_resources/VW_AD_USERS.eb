@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DFIT_CENTRAL" preparedStatement="false" id="VW_AD_USERS">
+        <columns>*</columns>
+        <from>ADVIEW.dbo.VW_AD_USERS</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500"/>
+            <field id="department" type="VARCHAR" length="256"/>
+            <field id="displayName" type="VARCHAR" length="256"/>
+            <field id="employeeID" type="VARCHAR" length="256"/>
+            <field id="facsimileTelephoneNumber" type="VARCHAR" length="256"/>
+            <field id="givenName" type="VARCHAR" length="256"/>
+            <field id="manager" type="VARCHAR" length="256"/>
+            <field id="physicalDeliveryOfficeName" type="VARCHAR" length="256"/>
+            <field id="sAMAccountName" type="VARCHAR" length="256"/>
+            <field id="sn" type="VARCHAR" length="256"/>
+            <field id="telephoneNumber" type="VARCHAR" length="256"/>
+            <field id="title" type="VARCHAR" length="256"/>
+        </fields>
+    </dbResource>
+</ebase>

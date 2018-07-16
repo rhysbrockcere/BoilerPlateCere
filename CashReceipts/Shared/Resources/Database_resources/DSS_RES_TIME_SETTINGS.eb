@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_RES_TIME_SETTINGS">
+        <columns>*</columns>
+        <from>DSS_Res_Care_TEST.dbo.Time_Settings</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Mth" type="INTEGER" length="10"/>
+            <field id="System" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Year" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

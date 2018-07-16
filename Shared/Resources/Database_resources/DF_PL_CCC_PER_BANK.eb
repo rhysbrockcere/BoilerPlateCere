@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Logica Payroll Archive - Bank details" database="SQLE648S1" preparedStatement="false" id="DF_PL_CCC_PER_BANK">
+        <columns>*</columns>
+        <from>DF_Logica_Live.dbo.CCC_PL_PER_BANK</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="bank_name" type="VARCHAR" length="40"/>
+            <field id="branch_address" type="VARCHAR" length="80"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="apportionment_perc" type="NUMERIC" length="18" fractionalDigits="6"/>
+            <field id="apportionment_valu" type="NUMERIC" length="18" fractionalDigits="6"/>
+            <field id="bank_acc_num" type="VARCHAR" length="30"/>
+            <field id="bank_account_name" type="VARCHAR" length="35"/>
+            <field id="bank_account_type" type="VARCHAR" length="2"/>
+            <field id="bank_iban" type="VARCHAR" length="50"/>
+            <field id="branch_code_format" type="VARCHAR" length="4"/>
+            <field id="branch_key" type="VARCHAR" length="20"/>
+            <field id="building_soc_ref" type="VARCHAR" length="18"/>
+            <field id="building_soc_ref2" type="VARCHAR" length="18"/>
+            <field id="change_since_remit" type="VARCHAR" length="1"/>
+            <field id="currency_ref" type="VARCHAR" length="4"/>
+            <field id="pay_ref" type="VARCHAR" length="15"/>
+            <field id="person_ref" type="VARCHAR" length="10"/>
+            <field id="primary_bank_acc" type="VARCHAR" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

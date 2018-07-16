@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="HR CERi Change Of Circumstance - select latest record" database="CERESQLS1_ITRENT2012" preparedStatement="false" id="HR_CERI_CCC_CHANGE_CIRC_MAX">
+        <columns>MAX(Change_ID) AS Change_ID</columns>
+        <from>Ceri_Docs_Test.dbo.CCC_CERi_Change_Circumstances</from>
+        <fields>
+            <field id="Change_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

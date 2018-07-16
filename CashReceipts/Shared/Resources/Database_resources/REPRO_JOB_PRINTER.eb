@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="REPRO_JOB_PRINTER">
+        <columns>*</columns>
+        <from>ICT_Reprographic_Test.dbo.Job_Printer</from>
+        <fields>
+            <field id="Printer_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="Toner_Cost" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Toner_Sheets" type="INTEGER" length="10"/>
+            <field id="Sheet_Cost" type="DECIMAL" length="19" fractionalDigits="4"/>
+        </fields>
+    </dbResource>
+</ebase>

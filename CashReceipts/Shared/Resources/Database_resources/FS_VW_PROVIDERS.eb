@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FS_VW_PROVIDERS">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_VW_PROVIDERS</from>
+        <fields>
+            <field id="CC_Prov_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Provider" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

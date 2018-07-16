@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CE_TOURISM_TDB_CLIENTS">
+        <columns>*</columns>
+        <from>&amp;&amp;DBNAME .dbo.TDB_Clients_View</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Active" type="BIT" length="1"/>
+            <field id="Address" type="VARCHAR" length="406" readOnly="true"/>
+            <field id="Client_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="DBNAME" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Name" type="VARCHAR" length="100"/>
+            <field id="PostCode" type="VARCHAR" length="10"/>
+            <field id="Where_Clause" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

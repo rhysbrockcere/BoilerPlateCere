@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="OS_ADDR_CYM" id="1210">
+        <column name="ADDR1" type="CHAR" labelTextRef="TXT90" maxLength="4000" displayType="TEXT" displayLength="60" id="780">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDR2" type="CHAR" labelTextRef="TXT91" maxLength="500" displayType="TEXT" displayLength="60" id="790">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDR3" type="CHAR" labelTextRef="TXT92" maxLength="500" displayType="TEXT" displayLength="60" id="800">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDR4" type="CHAR" labelTextRef="TXT93" maxLength="500" displayType="TEXT" displayLength="60" id="810">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDR5" type="CHAR" labelTextRef="TXT94" maxLength="500" displayType="TEXT" displayLength="60" id="820">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDRESS" type="CHAR" labelTextRef="TXT96" maxLength="4000" displayType="TEXT" displayLength="60" id="840">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADMINISTRATIVE_AREA" type="CHAR" labelTextRef="TXT95" maxLength="500" displayType="TEXT" displayLength="60" id="830">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="BUILDING_NAME" type="CHAR" labelTextRef="TXT97" maxLength="500" displayType="TEXT" displayLength="60" id="850">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="BUILDING_NUMBER" type="INTEGER" labelTextRef="TXT98" displayType="TEXT" displayLength="17" id="860">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="CLASS" type="CHAR" labelTextRef="TXT99" maxLength="10" displayType="TEXT" displayLength="10" id="870">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="CLASS_P" type="CHAR" labelTextRef="TXT100" maxLength="1" displayType="TEXT" displayLength="1" id="880">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="CLASS_S" type="CHAR" labelTextRef="TXT101" maxLength="1" displayType="TEXT" displayLength="1" id="890">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="CLASS_T" type="CHAR" labelTextRef="TXT102" maxLength="6" displayType="TEXT" displayLength="6" id="900">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DEPARTMENT_NAME" type="CHAR" labelTextRef="TXT103" maxLength="500" displayType="TEXT" displayLength="60" id="910">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DEPENDANT_THOROUGHFARE_NAME" type="CHAR" labelTextRef="TXT104" maxLength="500" displayType="TEXT" displayLength="60" id="920">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DEPENDENT_LOCALITY" type="CHAR" labelTextRef="TXT105" maxLength="500" displayType="TEXT" displayLength="60" id="930">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DOUBLE_DEPENDENT_LOCALITY" type="CHAR" labelTextRef="TXT106" maxLength="500" displayType="TEXT" displayLength="60" id="940">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="EASTING" type="NUMBER" labelTextRef="TXT131" displayType="TEXT" displayLength="29" id="1190">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="LOCALITY_NAME" type="CHAR" labelTextRef="TXT107" maxLength="500" displayType="TEXT" displayLength="60" id="950">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="LOGICAL_STATUS" type="INTEGER" labelTextRef="TXT108" displayType="TEXT" displayLength="17" id="960">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="NORTHING" type="NUMBER" labelTextRef="TXT132" displayType="TEXT" displayLength="29" id="1200">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ORGANISATION_NAME" type="CHAR" labelTextRef="TXT109" maxLength="500" displayType="TEXT" displayLength="60" id="970">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_END_NUMBER" type="CHAR" labelTextRef="TXT110" maxLength="10" displayType="TEXT" displayLength="10" id="980">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_END_SUFFIX" type="CHAR" labelTextRef="TXT111" maxLength="10" displayType="TEXT" displayLength="10" id="990">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_START_NUMBER" type="CHAR" labelTextRef="TXT112" maxLength="10" displayType="TEXT" displayLength="10" id="1000">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_START_SUFFIX" type="CHAR" labelTextRef="TXT113" maxLength="10" displayType="TEXT" displayLength="10" id="1010">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_TEXT" type="CHAR" labelTextRef="TXT114" maxLength="500" displayType="TEXT" displayLength="60" id="1020">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="POST_TOWN" type="CHAR" labelTextRef="TXT116" maxLength="500" displayType="TEXT" displayLength="60" id="1040">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="POSTCODE" type="CHAR" labelTextRef="TXT115" maxLength="8" displayType="TEXT" displayLength="8" id="1030">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="POSTCODE2" type="CHAR" labelTextRef="TXT118" maxLength="7" displayType="TEXT" displayLength="7" id="1060">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PRO_ORDER" type="INTEGER" labelTextRef="TXT117" displayType="TEXT" displayLength="17" id="1050">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="RECORD_TYPE" type="INTEGER" labelTextRef="TXT119" displayType="TEXT" displayLength="17" id="1070">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_END_NUMBER" type="CHAR" labelTextRef="TXT120" maxLength="10" displayType="TEXT" displayLength="10" id="1080">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_END_SUFFIX" type="CHAR" labelTextRef="TXT121" maxLength="10" displayType="TEXT" displayLength="10" id="1090">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_START_NUMBER" type="CHAR" labelTextRef="TXT122" maxLength="10" displayType="TEXT" displayLength="10" id="1100">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_START_SUFFIX" type="CHAR" labelTextRef="TXT123" maxLength="10" displayType="TEXT" displayLength="10" id="1110">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_TEXT" type="CHAR" labelTextRef="TXT124" maxLength="500" displayType="TEXT" displayLength="60" id="1120">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="STREET_DESCRIPTION" type="CHAR" labelTextRef="TXT125" maxLength="500" displayType="TEXT" displayLength="60" id="1130">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SUB_BUILDING_NAME" type="CHAR" labelTextRef="TXT126" maxLength="500" displayType="TEXT" displayLength="60" id="1140">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="THOROUGHFARE_NAME" type="CHAR" labelTextRef="TXT127" maxLength="500" displayType="TEXT" displayLength="60" id="1150">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="TOWN_NAME" type="CHAR" labelTextRef="TXT128" maxLength="500" displayType="TEXT" displayLength="60" id="1160">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="UPRN" type="INTEGER" labelTextRef="TXT129" displayType="TEXT" displayLength="30" id="1170">
+            <validators>
+                <validator type="MAX_DIGITS" value="19"/>
+                <validator type="MAX_LENGTH" value="30"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="USRN" type="INTEGER" labelTextRef="TXT130" displayType="TEXT" displayLength="17" id="1180">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+    <table name="OS_ADDR_ENG" id="770">
+        <column name="ADDR1" type="CHAR" labelTextRef="TXT8" maxLength="4000" displayType="TEXT" displayLength="60" id="340">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDR2" type="CHAR" labelTextRef="TXT9" maxLength="500" displayType="TEXT" displayLength="60" id="350">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDR3" type="CHAR" labelTextRef="TXT10" maxLength="500" displayType="TEXT" displayLength="60" id="360">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDR4" type="CHAR" labelTextRef="TXT11" maxLength="500" displayType="TEXT" displayLength="60" id="370">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDR5" type="CHAR" labelTextRef="TXT12" maxLength="500" displayType="TEXT" displayLength="60" id="380">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADDRESS" type="CHAR" labelTextRef="TXT14" maxLength="4000" displayType="TEXT" displayLength="60" id="400">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ADMINISTRATIVE_AREA" type="CHAR" labelTextRef="TXT13" maxLength="500" displayType="TEXT" displayLength="60" id="390">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="BUILDING_NAME" type="CHAR" labelTextRef="TXT15" maxLength="500" displayType="TEXT" displayLength="60" id="410">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="BUILDING_NUMBER" type="INTEGER" labelTextRef="TXT16" displayType="TEXT" displayLength="17" id="420">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="CLASS" type="CHAR" labelTextRef="TXT17" maxLength="10" displayType="TEXT" displayLength="10" id="430">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="CLASS_P" type="CHAR" labelTextRef="TXT18" maxLength="1" displayType="TEXT" displayLength="1" id="440">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="CLASS_S" type="CHAR" labelTextRef="TXT19" maxLength="1" displayType="TEXT" displayLength="1" id="450">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="CLASS_T" type="CHAR" labelTextRef="TXT20" maxLength="6" displayType="TEXT" displayLength="6" id="460">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DEPARTMENT_NAME" type="CHAR" labelTextRef="TXT36" maxLength="500" displayType="TEXT" displayLength="60" id="470">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DEPENDANT_THOROUGHFARE_NAME" type="CHAR" labelTextRef="TXT37" maxLength="500" displayType="TEXT" displayLength="60" id="480">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DEPENDENT_LOCALITY" type="CHAR" labelTextRef="TXT40" maxLength="500" displayType="TEXT" displayLength="60" id="490">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DOUBLE_DEPENDENT_LOCALITY" type="CHAR" labelTextRef="TXT41" maxLength="500" displayType="TEXT" displayLength="60" id="500">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="EASTING" type="NUMBER" labelTextRef="TXT88" displayType="TEXT" displayLength="29" id="750">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="LOCALITY_NAME" type="CHAR" labelTextRef="TXT42" maxLength="500" displayType="TEXT" displayLength="60" id="510">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="LOGICAL_STATUS" type="INTEGER" labelTextRef="TXT43" displayType="TEXT" displayLength="17" id="520">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="NORTHING" type="NUMBER" labelTextRef="TXT89" displayType="TEXT" displayLength="29" id="760">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ORGANISATION_NAME" type="CHAR" labelTextRef="TXT44" maxLength="500" displayType="TEXT" displayLength="60" id="530">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_END_NUMBER" type="CHAR" labelTextRef="TXT45" maxLength="10" displayType="TEXT" displayLength="10" id="540">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_END_SUFFIX" type="CHAR" labelTextRef="TXT46" maxLength="10" displayType="TEXT" displayLength="10" id="550">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_START_NUMBER" type="CHAR" labelTextRef="TXT69" maxLength="10" displayType="TEXT" displayLength="10" id="560">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_START_SUFFIX" type="CHAR" labelTextRef="TXT70" maxLength="10" displayType="TEXT" displayLength="10" id="570">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PAO_TEXT" type="CHAR" labelTextRef="TXT71" maxLength="500" displayType="TEXT" displayLength="60" id="580">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="POST_TOWN" type="CHAR" labelTextRef="TXT73" maxLength="500" displayType="TEXT" displayLength="60" id="600">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="POSTCODE" type="CHAR" labelTextRef="TXT72" maxLength="8" displayType="TEXT" displayLength="8" id="590">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="POSTCODE2" type="CHAR" labelTextRef="TXT75" maxLength="7" displayType="TEXT" displayLength="7" id="620">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="PRO_ORDER" type="INTEGER" labelTextRef="TXT74" displayType="TEXT" displayLength="17" id="610">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="RECORD_TYPE" type="INTEGER" labelTextRef="TXT76" displayType="TEXT" displayLength="17" id="630">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_END_NUMBER" type="CHAR" labelTextRef="TXT77" maxLength="10" displayType="TEXT" displayLength="10" id="640">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_END_SUFFIX" type="CHAR" labelTextRef="TXT78" maxLength="10" displayType="TEXT" displayLength="10" id="650">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_START_NUMBER" type="CHAR" labelTextRef="TXT79" maxLength="10" displayType="TEXT" displayLength="10" id="660">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_START_SUFFIX" type="CHAR" labelTextRef="TXT80" maxLength="10" displayType="TEXT" displayLength="10" id="670">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SAO_TEXT" type="CHAR" labelTextRef="TXT81" maxLength="500" displayType="TEXT" displayLength="60" id="680">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="STREET_DESCRIPTION" type="CHAR" labelTextRef="TXT82" maxLength="500" displayType="TEXT" displayLength="60" id="690">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="SUB_BUILDING_NAME" type="CHAR" labelTextRef="TXT83" maxLength="500" displayType="TEXT" displayLength="60" id="700">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="THOROUGHFARE_NAME" type="CHAR" labelTextRef="TXT84" maxLength="500" displayType="TEXT" displayLength="60" id="710">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="TOWN_NAME" type="CHAR" labelTextRef="TXT85" maxLength="500" displayType="TEXT" displayLength="60" id="720">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="UPRN" type="INTEGER" labelTextRef="TXT86" displayType="TEXT" displayLength="30" id="730">
+            <validators>
+                <validator type="MAX_DIGITS" value="19"/>
+                <validator type="MAX_LENGTH" value="30"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="USRN" type="INTEGER" labelTextRef="TXT87" displayType="TEXT" displayLength="17" id="740">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+</tables>

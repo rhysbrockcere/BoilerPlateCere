@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DFIT_CENTRAL" table="true" preparedStatement="false" id="IT_TR_DCLSL_FILE">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_TR_Job</from>
+        <where>Department=&amp;&amp;Department AND SectionName=&amp;&amp;SectionName AND WorkArea=&amp;&amp;WorkArea AND Refno=&amp;&amp;Refno</where>
+        <fields>
+            <field id="Closed" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="DCLSL_ABoxno" type="VARCHAR" length="50"/>
+            <field id="DCLSL_ADate" type="VARCHAR" length="50"/>
+            <field id="DCLSL_Area" type="VARCHAR" length="50"/>
+            <field id="Department" type="VARCHAR" length="10"/>
+            <field id="Description" type="VARCHAR" length="200"/>
+            <field id="Opened" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Refno" type="VARCHAR" length="53"/>
+            <field id="SectionName" type="VARCHAR" length="60"/>
+            <field id="Status" length="6"/>
+            <field id="WorkArea" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

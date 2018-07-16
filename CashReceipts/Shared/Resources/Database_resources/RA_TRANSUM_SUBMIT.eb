@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Rent Accounting Tenancy " database="CERESQLN1_SQL2012" nativeSql="true" id="RA_TRANSUM_SUBMIT">
+        <update>INSERT INTO Rent_Accounting_TEST.dbo.Abritas_Transum (Tenancy_ID, yearno, weekno, Amount, Transaction_Type, Username, Comment, From_Date, To_Date,Unit_ID)
+select Tenancy_ID, &amp;&amp;YEARNO, &amp;&amp;WEEKNO, Rent_amount / 7 * days, 'Basic Rent', &amp;&amp;USERNAME, '', START, [END],Unit_ID
+from Rent_Accounting_TEST.dbo.VW_Abritas_Transum_Workings
+go
+
+INSERT INTO Rent_Accounting_TEST.dbo.Abritas_Transum (Tenancy_ID, yearno, weekno, Amount, Transaction_Type, Username, Comment, From_Date, To_Date,UNIT_ID)
+select Tenancy_ID, &amp;&amp;YEARNO, &amp;&amp;WEEKNO, Service_charge / 7 * days, 'Service Charge', &amp;&amp;USERNAME, '', START, [END],Unit_ID
+from Rent_Accounting_TEST.dbo.VW_Abritas_Transum_Workings</update>
+        <fields>
+            <field id="USERNAME" type="VARCHAR"/>
+            <field id="WEEKNO" type="INTEGER"/>
+            <field id="YEARNO" type="INTEGER"/>
+        </fields>
+    </dbResource>
+</ebase>

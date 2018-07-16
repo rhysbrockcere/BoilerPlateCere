@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="FOI_ACTION_DETAILS_TBL">
+        <columns>*</columns>
+        <from>FOI_TEST.dbo.FOI_Action_Details</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by Action_Date desc, ID desc</additional>
+        <fields>
+            <field id="Action_Date" type="DATE" length="23" fractionalDigits="3"/>
+            <field id="Action_Type_ID" type="INTEGER" length="10"/>
+            <field id="Assigned_to" type="VARCHAR" length="50"/>
+            <field id="Aud_Username" type="VARCHAR" length="50"/>
+            <field id="Comment" type="VARCHAR" length="2048"/>
+            <field id="Completed_by" type="VARCHAR" length="50"/>
+            <field id="Details_ID" type="INTEGER" length="10"/>
+            <field id="Reference_Doc" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

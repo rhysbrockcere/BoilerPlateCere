@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource description="Request new Passwords" accountName="Exchange" from="servicedesk@ceredigion.gov.uk" to="&amp;&amp;FOP_EMAIL" subject="New Login Details  - Online Applications" critical="true" id="IT_PWD_REQUEST">
+        <message>Please do not reply to this email as it was auto-generated
+
+You will be asked to change your password when you next login
+
+Your new password is - &amp;&amp;EMAIL_PASSWORD</message>
+        <fields>
+            <field id="EMAIL_PASSWORD"/>
+            <field id="FOP_EMAIL"/>
+        </fields>
+    </emailResource>
+</ebase>

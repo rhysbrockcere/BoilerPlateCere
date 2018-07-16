@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CE_DECLARATIONS_INTEREST_LIST">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_DEC_Interests</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by id desc</additional>
+        <fields>
+            <field id="Department" type="VARCHAR" length="50"/>
+            <field id="Designation" type="VARCHAR" length="100"/>
+            <field id="Email_Address" type="VARCHAR" length="100"/>
+            <field id="Employee_No" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Name" type="VARCHAR" length="100"/>
+            <field id="Submit_Date" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DELPHI_TEST" preparedStatement="false" id="DELPHI_SCALE_MIN">
+        <columns>*</columns>
+        <from>DELPHI.SCALE</from>
+        <where>&amp;&amp;MIN_PAY_CLAUSE</where>
+        <fields>
+            <field id="MIN_PAY_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="SCALE" length="12"/>
+            <field id="SCALE_PT" length="12"/>
+            <field id="SC_EFF_D" length="8"/>
+            <field id="VALUE" type="DECIMAL" length="9"/>
+        </fields>
+    </dbResource>
+</ebase>

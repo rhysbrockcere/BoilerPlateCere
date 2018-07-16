@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Contract Pension Values to-date details" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_PENVAL">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.PENVAL</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CON_NO" length="10" key="true"/>
+            <field id="GTN_I" length="1"/>
+            <field id="GTN_NO" type="DECIMAL" length="4"/>
+            <field id="LGPS_ADJ_VAL" type="DECIMAL" length="9"/>
+            <field id="LGPS_A_PERC" type="DECIMAL" length="9"/>
+            <field id="LGPS_CONT_VL" type="DECIMAL" length="9"/>
+            <field id="LGPS_P_PERC" type="DECIMAL" length="9"/>
+            <field id="ORG_NO" type="DECIMAL" length="2" key="true"/>
+            <field id="PAY_NO" length="4" key="true"/>
+            <field id="PEN_SCH_C" type="DECIMAL" length="2" key="true"/>
+            <field id="PRI_CON_NO" length="10"/>
+            <field id="PRI_GTN_NO" type="DECIMAL" length="4"/>
+            <field id="PRI_PAY_D" length="8"/>
+            <field id="PRI_PAY_NO" length="4"/>
+            <field id="PV_BREAK_1" length="12"/>
+            <field id="PV_BREAK_2" length="12"/>
+            <field id="PV_BREAK_3" length="12"/>
+            <field id="PV_BREAK_4" length="12"/>
+            <field id="PV_BREAK_5" length="12"/>
+            <field id="PV_CST_REQ_I" length="1"/>
+            <field id="PV_CTRL_PT" length="1"/>
+            <field id="PV_OCC_NO" length="2" key="true"/>
+            <field id="PV_PAYROLL_D" length="8" key="true"/>
+            <field id="TL_BS_ARRS" type="DECIMAL" length="9"/>
+            <field id="TL_BS_EE_PY" type="DECIMAL" length="9"/>
+            <field id="TL_BS_EE_TY" type="DECIMAL" length="9"/>
+            <field id="TL_BS_ER_PY" type="DECIMAL" length="9"/>
+            <field id="TL_BS_ER_TY" type="DECIMAL" length="9"/>
+            <field id="TL_CO_ERN_PY" type="DECIMAL" length="9"/>
+            <field id="TL_CO_ERN_TY" type="DECIMAL" length="9"/>
+            <field id="TL_PENBL_PY" type="DECIMAL" length="9"/>
+            <field id="TL_PENBL_TY" type="DECIMAL" length="9"/>
+            <field id="TL_SP_ARRS" type="DECIMAL" length="9"/>
+            <field id="TL_SP_EE_PY" type="DECIMAL" length="9"/>
+            <field id="TL_SP_EE_TY" type="DECIMAL" length="9"/>
+            <field id="TL_SP_ER_PY" type="DECIMAL" length="9"/>
+            <field id="TL_SP_ER_TY" type="DECIMAL" length="9"/>
+            <field id="TP_BS_ARR" type="DECIMAL" length="9"/>
+            <field id="TP_BS_EE_I" length="1"/>
+            <field id="TP_BS_EE_PY" type="DECIMAL" length="9"/>
+            <field id="TP_BS_EE_TY" type="DECIMAL" length="9"/>
+            <field id="TP_BS_ER_I" length="1"/>
+            <field id="TP_BS_ER_PY" type="DECIMAL" length="9"/>
+            <field id="TP_BS_ER_TY" type="DECIMAL" length="9"/>
+            <field id="TP_CO_ERN_PY" type="DECIMAL" length="9"/>
+            <field id="TP_CO_ERN_TY" type="DECIMAL" length="9"/>
+            <field id="TP_PENBL_PY" type="DECIMAL" length="9"/>
+            <field id="TP_PENBL_TY" type="DECIMAL" length="9"/>
+            <field id="TP_SP_ARR" type="DECIMAL" length="9"/>
+            <field id="TP_SP_EE_I" length="1"/>
+            <field id="TP_SP_EE_PY" type="DECIMAL" length="9"/>
+            <field id="TP_SP_EE_TY" type="DECIMAL" length="9"/>
+            <field id="TP_SP_ER_I" length="1"/>
+            <field id="TP_SP_ER_PY" type="DECIMAL" length="9"/>
+            <field id="TP_SP_ER_TY" type="DECIMAL" length="9"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

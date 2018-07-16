@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="View of Service FAQs" database="SQLE648S1" table="true" preparedStatement="false" id="IT_SERVICE_FAQ_VIEW_TBL">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.srvc_FaqView</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Category" type="VARCHAR" length="100"/>
+            <field id="Question_EN" type="VARCHAR" length="1000"/>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="ServiceName" type="VARCHAR" length="100"/>
+            <field id="SectionName" type="VARCHAR" length="60"/>
+            <field id="Section_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="TeamName" type="VARCHAR" length="100"/>
+            <field id="Team_ID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+            <field id="Service_ID" type="VARCHAR" length="10"/>
+            <field id="EnwAdran" type="VARCHAR" length="100"/>
+            <field id="FAQ_ID" type="INTEGER" length="10"/>
+            <field id="IsAdran" type="VARCHAR" length="60"/>
+            <field id="Keywords" type="VARCHAR" length="100"/>
+            <field id="Question_CY" type="VARCHAR" length="1000"/>
+            <field id="Answer_CY" type="VARCHAR" length="1000"/>
+            <field id="Answer_EN" type="VARCHAR" length="1000"/>
+            <field id="Answer_Hyperlink" type="VARCHAR" length="255"/>
+            <field id="Categori" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webFormComponent type="PART_PAGE" template="/Presentation/Presentation_Templates/Ceredigion2017" firstPage="DUMMY_PAGE_03102003" preferredScriptFolder="/Scripts/CRM_Menu" id="CRM_ACCOUNT" dateCreated="2017-05-12T10:23:21.929+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+            <sharedFunctionScript path="/Scripts/CRM_Menu/Account_Functions"/>
+        </sharedFunctionScripts>
+    </webFormComponent>
+</ebase>

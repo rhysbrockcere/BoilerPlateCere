@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="DF_BANKING_BAIL_2">
+        <columns>*</columns>
+        <from>DF_Direct_Banking_TEST.dbo.Bail_2</from>
+        <fields>
+            <field id="DB_Date" type="TIMESTAMP" length="16"/>
+            <field id="Amount" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Client_Ref" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

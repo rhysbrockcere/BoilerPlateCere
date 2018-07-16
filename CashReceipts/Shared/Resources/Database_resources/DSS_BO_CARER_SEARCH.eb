@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="DSS_BO_CARER_SEARCH">
+        <columns>*</columns>
+        <from>DSS_Boarding_Out.dbo.VW_Carer_Search</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Where_Clause" type="NUMERIC" length="500" persistent="false"/>
+            <field id="name" type="VARCHAR" length="606" readOnly="true"/>
+            <field id="Carer_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Creditor_No" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

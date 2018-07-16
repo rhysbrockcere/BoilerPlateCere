@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Audit - Child table" database="SQLE645S1" preparedStatement="false" id="FS_AUD_CHILD">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Aud_Child</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="BreastFeeding" length="1"/>
+            <field id="BreastFeeding_Dur" type="VARCHAR" length="20"/>
+            <field id="Consent_Date" type="TIMESTAMP" length="16"/>
+            <field id="End_reason" type="VARCHAR" length="10"/>
+            <field id="NN_Hearing" length="1"/>
+            <field id="Ethnicity" type="VARCHAR" length="5"/>
+            <field id="First_Child_Ind" length="1"/>
+            <field id="Forename" type="VARCHAR" length="35"/>
+            <field id="Gender" length="1"/>
+            <field id="Gestation_Length" type="VARCHAR" length="10"/>
+            <field id="Health_Visitor" type="VARCHAR" length="50"/>
+            <field id="Input_date" type="TIMESTAMP" length="16"/>
+            <field id="Carer_Giving_Info" type="VARCHAR" length="50"/>
+            <field id="Cynllun_Cwtsh" length="1"/>
+            <field id="Lang" type="VARCHAR" length="10"/>
+            <field id="Operator_ID" type="VARCHAR" length="20"/>
+            <field id="Child_FS_ID" type="INTEGER" length="10"/>
+            <field id="Consent" length="1"/>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="Dentist_Reg" length="1"/>
+            <field id="Disability_Health_Probs" type="VARCHAR" length="3"/>
+            <field id="End_date" type="DATE" length="10"/>
+            <field id="SOGS2_Addnl_Skills" type="INTEGER" length="10"/>
+            <field id="SOGS2_Assessor" type="VARCHAR" length="20"/>
+            <field id="SOGS2_Cognitive" type="INTEGER" length="10"/>
+            <field id="SOGS2_Date" type="TIMESTAMP" length="16"/>
+            <field id="SOGS2_Hear_Lang" type="INTEGER" length="10"/>
+            <field id="SOGS2_Int_Social" type="INTEGER" length="10"/>
+            <field id="SOGS2_Location" type="VARCHAR" length="20"/>
+            <field id="SOGS2_Loco" type="INTEGER" length="10"/>
+            <field id="SOGS2_Manip" type="INTEGER" length="10"/>
+            <field id="SOGS2_Outcome" length="1"/>
+            <field id="SOGS2_Outcome_Standard_Deviation" type="VARCHAR" length="10"/>
+            <field id="SOGS2_Pas_Post" type="INTEGER" length="10"/>
+            <field id="SOGS2_SC_Social" type="INTEGER" length="10"/>
+            <field id="SOGS2_Spch_Lang" type="INTEGER" length="10"/>
+            <field id="SOGS2_Visual" type="INTEGER" length="10"/>
+            <field id="Start_Status" type="VARCHAR" length="50"/>
+            <field id="Support_4Plus" length="1"/>
+            <field id="Surname" type="VARCHAR" length="35"/>
+            <field id="Middle_Names" type="VARCHAR" length="35"/>
+            <field id="Mobile_No" type="VARCHAR" length="12"/>
+            <field id="Month9_Attend" length="1"/>
+            <field id="Month9_Attend_Follow" length="1"/>
+            <field id="Multiple_Birth" type="VARCHAR" length="1"/>
+            <field id="NHS_No" type="VARCHAR" length="10"/>
+            <field id="Preferred_Forename" type="VARCHAR" length="30"/>
+            <field id="Preferred_Surname" type="VARCHAR" length="30"/>
+            <field id="Relat_to_Child" type="VARCHAR" length="10"/>
+            <field id="SOGS1_Act_Post" type="INTEGER" length="10"/>
+            <field id="SOGS1_Addnl_Skills" type="INTEGER" length="10"/>
+            <field id="SOGS1_Assessor" type="VARCHAR" length="20"/>
+            <field id="SOGS1_Cognitive" type="INTEGER" length="10"/>
+            <field id="SOGS1_Date" type="TIMESTAMP" length="16"/>
+            <field id="SOGS1_Hear_Lang" type="INTEGER" length="10"/>
+            <field id="SOGS1_Int_Social" type="INTEGER" length="10"/>
+            <field id="SOGS1_Location" type="VARCHAR" length="20"/>
+            <field id="SOGS1_Loco" type="INTEGER" length="10"/>
+            <field id="SOGS1_Manip" type="INTEGER" length="10"/>
+            <field id="SOGS1_Outcome" length="1"/>
+            <field id="SOGS1_Outcome_Standard_Deviation" type="VARCHAR" length="10"/>
+            <field id="SOGS1_Ps_Post" type="INTEGER" length="10"/>
+            <field id="SOGS1_SC_Social" type="INTEGER" length="10"/>
+            <field id="SOGS1_Spch_Lang" type="INTEGER" length="10"/>
+            <field id="SOGS1_Visual" type="INTEGER" length="10"/>
+            <field id="SOGS2_Act_Post" type="INTEGER" length="10"/>
+            <field id="AN_Contact" length="1"/>
+            <field id="AN_Fthr_Vst" type="INTEGER" length="10"/>
+            <field id="AN_Mthr_Vst" type="INTEGER" length="10"/>
+            <field id="AN_Notif" type="TIMESTAMP" length="16"/>
+            <field id="Alert" type="VARCHAR" length="1"/>
+            <field id="Bottle" type="VARCHAR" length="10"/>
+            <field id="Tel_No" type="VARCHAR" length="12"/>
+            <field id="Transaction_type" type="VARCHAR" length="10"/>
+            <field id="UPN" type="VARCHAR" length="20"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+            <field id="Weaning" length="1"/>
+            <field id="Weaning_Dur" type="VARCHAR" length="20"/>
+            <field id="Week6_Attend" length="1"/>
+            <field id="Week6_Attend_Follow" length="1"/>
+            <field id="Weight" type="VARCHAR" length="10"/>
+            <field id="Antinatal" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

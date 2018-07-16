@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Table of On-Line form Application Systems" database="SQLE648S1" table="true" preparedStatement="false" id="IT_APPLICATION_TBL">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_Application</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY App_Name</additional>
+        <fields>
+            <field id="App_Description" type="VARCHAR" length="1000"/>
+            <field id="App_Name" type="VARCHAR" length="100"/>
+            <field id="Application_ID" type="VARCHAR" length="30"/>
+            <field id="Demo_Lock" length="1"/>
+            <field id="Dev_Lock" length="1"/>
+            <field id="Live_Lock" length="1"/>
+            <field id="Public_Lock" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="60" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

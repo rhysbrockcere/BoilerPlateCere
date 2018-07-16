@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Languages" dateCreated="2017-05-09T16:18:51.370+01:00">
+        <columns>Code, Language</columns>
+        <from>sys_Languages</from>
+        <sql>select Code, case when &amp;&amp;LANG = 'EN' then Language else 'WELSH' end as Language 
+from sys_Languages</sql>
+        <fields>
+            <field id="Code" input="false"/>
+            <field id="Language" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

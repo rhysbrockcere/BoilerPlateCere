@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CRM_SURVEY">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.crm_Surveys</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Summary" type="VARCHAR" length="1000"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Description" type="VARCHAR" length="500"/>
+            <field id="Survey_No" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Q1" type="VARCHAR" length="1000"/>
+            <field id="Q2" type="VARCHAR" length="1000"/>
+            <field id="Q3" type="VARCHAR" length="1000"/>
+            <field id="Q4" type="VARCHAR" length="1000"/>
+            <field id="Q5" type="VARCHAR" length="1000"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+            <field id="Intro" type="VARCHAR" length="1000"/>
+        </fields>
+    </dbResource>
+</ebase>

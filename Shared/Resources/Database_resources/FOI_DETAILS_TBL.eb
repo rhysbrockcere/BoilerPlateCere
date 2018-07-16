@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="FOI_DETAILS_TBL">
+        <columns>ID, TYPE, STAGE, SECTION, RECEIVED_DATE, QUERY, PUBLISH_PUBLIC, POSTCODE, PHONE, ENQUIRER_TITLE, ENQUIRER_SURNAME, ENQUIRER_FIRSTNAME, EMAIL, DEPARTMENT, COUNTY, COMPLETED_OFFICER_USERNAME, COMPLETED_DATE, CHILD_ID, ASSIGNED_TO_FULLNAME, ADDRESS3, ADDRESS2, ADDRESS1, day_count, countdown,REF_NO, COMP_SUBJECT, System</columns>
+        <from>FOI_TEST.dbo.FOI_VW_Count_and_Countdown</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by countdown asc</additional>
+        <fields>
+            <field id="COUNTY" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="DEPARTMENT" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="EMAIL" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="ENQUIRER_FIRSTNAME" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="ENQUIRER_SURNAME" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="ENQUIRER_TITLE" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="PHONE" type="VARCHAR" length="20" fractionalDigits="2"/>
+            <field id="POSTCODE" type="VARCHAR" length="10" fractionalDigits="2"/>
+            <field id="PUBLISH_PUBLIC" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="QUERY" type="VARCHAR" length="5000" fractionalDigits="2"/>
+            <field id="RECEIVED_DATE" type="DATE" length="10" fractionalDigits="2"/>
+            <field id="REF_NO" type="VARCHAR" length="50"/>
+            <field id="SECTION" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="STAGE" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="TYPE" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="255"/>
+            <field id="countdown" type="VARCHAR" length="10"/>
+            <field id="day_count" type="VARCHAR" length="10"/>
+            <field id="System" type="VARCHAR" length="20"/>
+            <field id="ADDRESS1" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="ADDRESS2" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="ADDRESS3" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="ASSIGNED_TO_FULLNAME" type="VARCHAR" length="255"/>
+            <field id="CHILD_ID" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="COMPLETED_DATE" type="DATE" length="10" fractionalDigits="2"/>
+            <field id="COMPLETED_OFFICER_USERNAME" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="COMP_SUBJECT" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DHPW Travel Survey Grand Total for returned and outstanding forms" database="DSS_RES_CARE" table="true" preparedStatement="false" id="DHPW_TS_VW_GRAND_TOTAL_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DHPW_TS_VW_Grand_Total</from>
+        <fields>
+            <field id="Completed" type="INTEGER" length="10"/>
+            <field id="Outstanding" type="INTEGER" length="10"/>
+            <field id="department" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

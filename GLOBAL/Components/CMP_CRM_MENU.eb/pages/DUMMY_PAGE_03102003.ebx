@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="TXT1" pageInfoTextReference="TXT2" pageTrailerTextReference="TXT3" nextPageTextReference="TXT4" prevPageTextReference="TXT5">
+    <pageContents>
+        <component ctrl="COMPONENT1" default="L" inheritMsg="true" outputType="0" pdfFooterText="LocalTXT6" pdfHeaderText="LocalTXT7" uid="0">
+            <panel ctrl="PanZ18O6" uid="D0qPxexH">
+                <rootHtmlElementProperties classLocator="menu-wrapper" jQueryEventHandlers="@0"/>
+                <panel ctrl="PanBttfE" uid="EqzdBOAD">
+                    <rootHtmlElementProperties classLocator="menu-panel"/>
+                    <panel ctrl="pnl_user_controls" modifiers="menu" propertySet="floatLeft" uid="GJ7C8kD2">
+                        <rootHtmlElementProperties classLocator="panelLeft" idLocator="NavPanel"/>
+                        <hyperlink ctrl="HYPERLINK5_2" propertySet="Menu_Top" text="LocalTXT57" title="LocalTXT58" uid="7ZweJ9jX"/>
+                        <hyperlink ctrl="HYPERLINK6_2" onClickEvent="/Scripts/CRM_MNU_REQUESTS" propertySet="Menu_Sub" text="LocalTXT59_5" title="LocalTXT60_5" uid="BgJijYfo"/>
+                        <hyperlink ctrl="HYPERLINK7" onClickEvent="/Scripts/CRM_Account/CRM_MNU_NEW_REQUEST" propertySet="Menu_Sub" text="LocalTXT61_4" title="LocalTXT62_4" uid="5Qpe7kPc"/>
+                        <hyperlink ctrl="HYPERLINK8" propertySet="Menu_Top" text="LocalTXT63" title="LocalTXT64_3" uid="zRCMfnl"/>
+                        <hyperlink ctrl="HYPERLINK9" onClickEvent="/Scripts/CRM_MNU_BULKY_WASTE" propertySet="Menu_Sub" text="LocalTXT65_3" title="LocalTXT66" uid="AU9Yb3uq"/>
+                        <hyperlink ctrl="HYPERLINK1_2" hidden="true" onClickEvent="/Scripts/CRM_MNU_REPORTIT" propertySet="Menu_Sub" text="LocalTXT20_3" title="LocalTXT21_3" uid="7YEFlly4"/>
+                        <hyperlink ctrl="HYPERLINK16" hidden="true" onClickEvent="/Scripts/CRM_MNU_REQUESTIT" propertySet="Menu_Sub" text="LocalTXT51" title="LocalTXT52" uid="8DHkyks9"/>
+                        <hyperlink ctrl="HYPERLINK17" hidden="true" onClickEvent="/Scripts/CRM_MNU_PLANNING" propertySet="Menu_Sub" text="LocalTXT53" title="LocalTXT54" uid="9aerouDJ"/>
+                        <hyperlink ctrl="HYPERLINK18" hidden="true" href="https://www.ceredigion.gov.uk/English/Resident/Schools-Education/School-Information/School-Term-Dates/Pages/default.aspx" propertySet="Menu_Sub" target="_blank" text="LocalTXT55" title="LocalTXT56" uid="66AFG0lT" useExternalURL="true"/>
+                        <hyperlink ctrl="HYPERLINK19" hidden="true" onClickEvent="/Scripts/CRM_MNU_BUS_ROUTES" propertySet="Menu_Sub" text="LocalTXT238" title="LocalTXT239" uid="FrPWOTDw"/>
+                    </panel>
+                    <panel ctrl="PancNBw" uid="EeMklb84">
+                        <rootHtmlElementProperties classLocator="user-menu" idLocator="UserMenu"/>
+                        <panel ctrl="PANEL2_4" layoutType="@0" uid="12" width="@0">
+                            <rootHtmlElementProperties classLocator="user-menu" idLocator="UserMenu"/>
+                            <hyperlink ctrl="HLINK_MENU" onClickEvent="/Scripts/CRM_Account/CRM_MENU_GOTO_MYACCOUNT" propertySet="Menu_Top" text="LocalTXT23_3" title="LocalTXT24_3" uid="13"/>
+                            <hyperlink ctrl="HLINK_MYACCOUNT" modifiers="menu" onClickEvent="/Scripts/CRM_Account/CRM_GOTO_MYACCOUNT" propertySet="Menu_Sub" text="LocalTXT16" title="LocalTXT17" uid="25"/>
+                            <hyperlink ctrl="HLINK_PERSONAL" modifiers="menu" onClickEvent="/Scripts/CRM_Account/CRM_GOTO_PERSONAL_DETAILS" propertySet="Menu_Sub" text="LocalTXT25_7" title="LocalTXT26_2" uid="14"/>
+                            <hyperlink ctrl="HLINK_PREFERENCES" modifiers="menu" onClickEvent="/Scripts/CRM_Account/CRM_GOTO_PREFERENCES" propertySet="Menu_Sub" text="LocalTXT28_2" title="LocalTXT29_5" uid="16"/>
+                            <hyperlink ctrl="HLINK_SIGNOUT" modifiers="menu" onClickEvent="/Scripts/CRM_Account/CRM_LOGOUT" propertySet="Menu_Sub" text="LocalTXT30_5" title="LocalTXT36_2" uid="17"/>
+                        </panel>
+                    </panel>
+                </panel>
+            </panel>
+            <field beforeEvent="/Scripts/CRM_MENU_INITIALISE" buttonText="LocalTXT8" ctrl="RUNSCRIPT" displayEditor="false" displayLabelText="false" field="FIELD1" uid="10" validationEvent="/Scripts/CRM_MENU_INITIALISE"/>
+        </component>
+    </pageContents>
+</page>

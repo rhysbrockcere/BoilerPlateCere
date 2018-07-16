@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1_SQL2012" preparedStatement="false" id="CIS_USERS">
+        <columns>*</columns>
+        <from>Childrens_Services_TEST.dbo.Users</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Email" type="VARCHAR"/>
+            <field id="Password" type="VARCHAR"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC"/>
+        </fields>
+    </dbResource>
+</ebase>

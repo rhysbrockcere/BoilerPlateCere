@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" preparedStatement="false" id="ASSET_COPY">
+        <columns>*</columns>
+        <from>Asset.dbo.Asset_Review_2</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Asset_No" type="VARCHAR" length="50"/>
+            <field id="Date" type="VARCHAR" length="50"/>
+            <field id="Exempt_Status" type="VARCHAR" length="50"/>
+            <field id="IP" length="10"/>
+            <field id="Location_ID" type="VARCHAR" length="50"/>
+            <field id="MAC_Address" type="VARCHAR" length="50"/>
+            <field id="Make" type="VARCHAR" length="50"/>
+            <field id="Model" type="VARCHAR" length="50"/>
+            <field id="Production_Status" type="VARCHAR" length="50"/>
+            <field id="Scanned_By" type="VARCHAR" length="50"/>
+            <field id="Serial" type="VARCHAR" length="50"/>
+            <field id="Tel_No" type="VARCHAR" length="50"/>
+            <field id="Time" type="VARCHAR" length="50"/>
+            <field id="Type_ID" type="VARCHAR" length="50"/>
+            <field id="User_Name" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

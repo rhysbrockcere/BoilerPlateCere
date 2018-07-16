@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="CE_HS_INCIDENTTYPE" dateImported="2015-01-07T17:21:13.063Z">
+        <columns>Code, EN, CY</columns>
+        <from>CE_HS_LIVE.dbo.CE_HS_IR1_INCIDENT</from>
+        <fields>
+            <field id="CY" input="false"/>
+            <field id="Code" input="false"/>
+            <field id="EN" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

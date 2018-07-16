@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="EBASE_ERRORS">
+        <fieldMapping resourceField="Error_Date" field="DATE"/>
+        <fieldMapping resourceField="Error" field="EMAIL_ERROR"/>
+        <fieldMapping resourceField="Form" field="EMAIL_FORM"/>
+        <fieldMapping resourceField="Email" field="EMAIL_FROM"/>
+        <fieldMapping resourceField="Page" field="EMAIL_PAGE"/>
+        <fieldMapping resourceField="Project" field="EMAIL_PROJECT"/>
+        <fieldMapping resourceField="Server" field="EMAIL_SERVER"/>
+    </resourceMapping>
+    <resourceMapping id="ERROR_EMAIL">
+        <fieldMapping resourceField="EMAIL_ERROR" field="EMAIL_ERROR"/>
+        <fieldMapping resourceField="EMAIL_FORM" field="EMAIL_FORM"/>
+        <fieldMapping resourceField="EMAIL_FROM" field="EMAIL_FROM"/>
+        <fieldMapping resourceField="EMAIL_PAGE" field="EMAIL_PAGE"/>
+        <fieldMapping resourceField="EMAIL_PROJECT" field="EMAIL_PROJECT"/>
+        <fieldMapping resourceField="EMAIL_SERVER" field="EMAIL_SERVER"/>
+        <fieldMapping resourceField="EMAIL_TO" field="EMAIL_TO"/>
+    </resourceMapping>
+    <resourceMapping id="ERROR_EMAIL_SW">
+        <fieldMapping resourceField="EMAIL_ERROR" field="EMAIL_ERROR"/>
+        <fieldMapping resourceField="EMAIL_FORM" field="EMAIL_FORM"/>
+        <fieldMapping resourceField="EMAIL_PAGE" field="EMAIL_PAGE"/>
+        <fieldMapping resourceField="EMAIL_PROJECT" field="EMAIL_PROJECT"/>
+        <fieldMapping resourceField="EMAIL_SERVER" field="EMAIL_SERVER"/>
+    </resourceMapping>
+</resourceMappings>

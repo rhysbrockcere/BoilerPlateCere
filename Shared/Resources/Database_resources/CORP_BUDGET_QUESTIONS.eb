@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1" preparedStatement="false" id="CORP_BUDGET_QUESTIONS">
+        <columns>*</columns>
+        <from>corp_budget_challenge.dbo.Questions_2015</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+            <field id="Challenge_ID" type="INTEGER" length="10" key="true"/>
+            <field id="Q1" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q10" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q11" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q12" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q13" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q14" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q15" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q16" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q17" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q18" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q19" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q2" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q20" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q21" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q22" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q23" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q24" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q25" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q26" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q27" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q28" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q29" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q3" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q30" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q31" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q32" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q33" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q34" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q35" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q36" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q4" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q5" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q6" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q7" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q8" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Q9" type="NUMERIC" length="18" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

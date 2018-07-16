@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_GOTO_MAIN_MENU" dateImported="2013-11-13T09:31:50.927Z">
+        <scriptText>goto page MAIN_MENU;</scriptText>
+    </script>
+</ebase>

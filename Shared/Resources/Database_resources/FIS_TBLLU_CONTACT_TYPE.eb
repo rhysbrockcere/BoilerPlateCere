@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Contact Type" database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_CONTACT_TYPE">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_CONTACT_TYPE</from>
+        <where>&amp;&amp;WHERE_CLAUSE_CONTACT_TYPE</where>
+        <fields>
+            <field id="CTTP_CODE" type="VARCHAR" length="5"/>
+            <field id="CTTP_DESC" type="VARCHAR" length="60"/>
+            <field id="CTTP_DRIVER" type="INTEGER" length="10"/>
+            <field id="CTTP_ESCORT" type="INTEGER" length="10"/>
+            <field id="CTTP_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="CTTP_MOD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CTTP_MOD_USER" type="VARCHAR" length="128"/>
+            <field id="END_YEAR" type="INTEGER" length="10"/>
+            <field id="REPLACEMENT_REF" type="INTEGER" length="10"/>
+            <field id="START_YEAR" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE_CONTACT_TYPE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="cttp_headteacher" type="INTEGER" length="10"/>
+            <field id="cttp_parent" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

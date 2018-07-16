@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Building Closure - Registered Users" database="SQLE648S1" preparedStatement="false" id="CE_BC_USER_REGISTER">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_BC_User_Register</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Email" type="VARCHAR" length="100"/>
+            <field id="Forename" type="VARCHAR" length="50"/>
+            <field id="Language" type="VARCHAR" length="50"/>
+            <field id="Password" type="VARCHAR" length="50"/>
+            <field id="Postcode" type="VARCHAR" length="8"/>
+            <field id="Status" type="VARCHAR" length="10"/>
+            <field id="StopInd" type="VARCHAR" length="1"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="User_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+            <field id="mobile_no" type="VARCHAR" length="11"/>
+        </fields>
+    </dbResource>
+</ebase>

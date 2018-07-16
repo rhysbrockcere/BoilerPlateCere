@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1_SQL2012" preparedStatement="false" id="CTAXPAYERTEMP">
+        <columns>*</columns>
+        <from>&amp;&amp;SELECT_CLAUSE</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Accountref" type="VARCHAR" length="16"/>
+            <field id="Address1" type="VARCHAR" length="100"/>
+            <field id="Address2" type="VARCHAR" length="100"/>
+            <field id="Address3" type="VARCHAR" length="100"/>
+            <field id="Address4" type="VARCHAR" length="100"/>
+            <field id="Address5" type="VARCHAR" length="100"/>
+            <field id="BusinessName" type="VARCHAR" length="100"/>
+            <field id="BusinessRef" type="VARCHAR" length="16"/>
+            <field id="BusinessType" type="VARCHAR" length="100"/>
+            <field id="ContactName" type="VARCHAR" length="50"/>
+            <field id="EAddress" type="VARCHAR" length="100"/>
+            <field id="EMailAddress" type="VARCHAR" length="100"/>
+            <field id="FaxNo" type="VARCHAR"/>
+            <field id="Forename" type="VARCHAR" length="50"/>
+            <field id="Indicators" type="VARCHAR" length="50"/>
+            <field id="NumField" type="VARCHAR" length="10"/>
+            <field id="Payerref" type="VARCHAR" length="50"/>
+            <field id="Postcode" type="VARCHAR" length="10"/>
+            <field id="PropertyReference" type="VARCHAR" length="16"/>
+            <field id="SELECT_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="StringField" type="VARCHAR" length="20"/>
+            <field id="Surname" type="VARCHAR" length="64"/>
+            <field id="TelNoWork" type="VARCHAR" length="20"/>
+            <field id="Title" type="VARCHAR" length="6"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="datefrom" type="VARCHAR" length="11"/>
+            <field id="dateto" type="VARCHAR" length="11"/>
+            <field id="faxno" type="VARCHAR"/>
+            <field id="telno" type="VARCHAR" length="32"/>
+        </fields>
+    </dbResource>
+</ebase>

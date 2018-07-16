@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DF_IT_TEL_DIR" table="true" preparedStatement="false" id="EMPLOYEES_TRANS">
+        <columns>*</columns>
+        <from>employees</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY ID</additional>
+        <fields>
+            <field id="Access_Attempts" type="INTEGER" length="1"/>
+            <field id="Attempts_Logged" length="1"/>
+            <field id="Contract_No" type="VARCHAR" length="50"/>
+            <field id="Date" type="DATE" length="10"/>
+            <field id="DateChanged" type="DATE" length="10"/>
+            <field id="Department" type="VARCHAR" length="255"/>
+            <field id="Email" type="VARCHAR" length="255"/>
+            <field id="EmailSuffix" type="VARCHAR" length="25"/>
+            <field id="Emergancy_Consent" length="1"/>
+            <field id="Emergancy_Contact" length="1"/>
+            <field id="Fax" type="VARCHAR" length="255"/>
+            <field id="Firstname" type="VARCHAR" length="255"/>
+            <field id="ID" description="auto_increment" type="INTEGER" length="5" readOnly="true"/>
+            <field id="Image" type="VARCHAR" length="255"/>
+            <field id="JobTitle" type="VARCHAR" length="255"/>
+            <field id="KH" length="1"/>
+            <field id="LineManager" type="VARCHAR" length="50"/>
+            <field id="LocationID" type="VARCHAR" length="255"/>
+            <field id="Location_ID" type="INTEGER" length="4"/>
+            <field id="Login_Attempts" type="INTEGER" length="1"/>
+            <field id="MT" length="1"/>
+            <field id="Manager_Email" type="VARCHAR" length="50"/>
+            <field id="Mobile" type="VARCHAR" length="255"/>
+            <field id="Password" type="VARCHAR" length="32"/>
+            <field id="PasswordChanged" length="1"/>
+            <field id="Profile" type="VARCHAR" length="255"/>
+            <field id="Section" type="VARCHAR" length="100"/>
+            <field id="Section_ID" type="INTEGER" length="4"/>
+            <field id="Service" type="VARCHAR" length="255"/>
+            <field id="Status" type="VARCHAR" length="20"/>
+            <field id="Surname" type="VARCHAR" length="255"/>
+            <field id="Team_Id" type="INTEGER" length="4"/>
+            <field id="Tele" length="1"/>
+            <field id="Telephone" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="250" persistent="false"/>
+            <field id="showImage" length="3"/>
+        </fields>
+    </dbResource>
+</ebase>

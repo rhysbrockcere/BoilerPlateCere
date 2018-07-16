@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CERESQLN1" id="ICT_IDPRO_COMPANIES" dateCreated="2013-09-12T09:54:41.577+01:00">
+        <columns>distinct (Company) as company</columns>
+        <from>idpro.dbo.CEREDIGION_EXTERNAL</from>
+        <fields>
+            <field id="company" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

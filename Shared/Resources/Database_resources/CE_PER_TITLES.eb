@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_PER_TITLES">
+        <columns>*</columns>
+        <from>CE_Personnel_TEST.dbo.CE_Per_Titles</from>
+        <fields>
+            <field id="Per_Spec_ID" type="BIGINT" length="19"/>
+            <field id="Title_CY" type="VARCHAR" length="50"/>
+            <field id="Title_EN" type="VARCHAR" length="50"/>
+            <field id="Title_ID" type="BIGINT" length="19" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

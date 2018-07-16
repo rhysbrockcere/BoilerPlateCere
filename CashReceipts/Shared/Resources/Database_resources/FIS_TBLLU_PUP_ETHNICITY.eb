@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_PUP_ETHNICITY">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_PUP_ETHNICITY</from>
+        <where>&amp;&amp;WHERE_CLAUSE_ETHNICITY</where>
+        <fields>
+            <field id="ETH_CODE" type="VARCHAR" length="10"/>
+            <field id="ETH_DESC" type="VARCHAR" length="50"/>
+            <field id="ETH_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="ETH_MOD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ETH_MOD_USER" type="VARCHAR" length="128"/>
+            <field id="Merged_Code" type="VARCHAR" length="255"/>
+            <field id="Merged_Desc" type="VARCHAR" length="255"/>
+            <field id="REPLACEMENT_REF" type="INTEGER" length="10"/>
+            <field id="ReferencesLookup" type="INTEGER" length="10"/>
+            <field id="START_YEAR" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE_ETHNICITY" type="NUMERIC" length="500" persistent="false"/>
+            <field id="end_YEAR" type="INTEGER" length="10"/>
+            <field id="tblLU_ETH_CAT" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

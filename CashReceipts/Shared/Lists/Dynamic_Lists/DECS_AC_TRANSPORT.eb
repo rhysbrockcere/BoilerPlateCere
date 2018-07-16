@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="DECS_AC_TRANSPORT" dateCreated="2013-08-05T13:40:01.773+01:00" dateImported="2013-10-31T14:25:03.407Z">
+        <columns>TransportName, TransportId</columns>
+        <from>IT_Central.dbo.DECS_AC_Transport</from>
+        <fields>
+            <field id="TransportId" type="INTEGER" input="false"/>
+            <field id="TransportName" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

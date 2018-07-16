@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="GBL_SITELIST" dateCreated="2012-08-14T08:50:14.230+01:00">
+        <columns>id,dept_name</columns>
+        <from>ccc_global_lists.dbo.[site-list]</from>
+        <fields>
+            <field id="dept_name" input="false"/>
+            <field id="id" type="TINYINT" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

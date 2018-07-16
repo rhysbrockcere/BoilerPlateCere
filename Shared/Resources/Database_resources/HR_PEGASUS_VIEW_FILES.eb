@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="HR_PEGASUS_VIEW_FILES">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.Pegasus_View_Files</from>
+        <fields>
+            <field id="Cash" type="NUMERIC" length="38" fractionalDigits="2"/>
+            <field id="Employees" type="INTEGER" length="10"/>
+            <field id="FILENAME" type="VARCHAR" length="50"/>
+            <field id="Records" type="INTEGER" length="10"/>
+            <field id="Time" type="NUMERIC" length="38" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

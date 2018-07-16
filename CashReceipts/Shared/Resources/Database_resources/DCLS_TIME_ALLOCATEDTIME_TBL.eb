@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="DCLS_TIME_ALLOCATEDTIME_TBL">
+        <columns>*</columns>
+        <from>DCLS_Time_Test.dbo.AllocatedTime</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by JDate DESC, TimeEntered DESC</additional>
+        <fields>
+            <field id="Duration" type="NUMBER" length="53"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="JDate" type="DATE" length="50"/>
+            <field id="Job" type="VARCHAR" length="50"/>
+            <field id="Notes" type="CLOB" length="1073741823"/>
+            <field id="RefNo" type="INTEGER" length="53"/>
+            <field id="StaffID" type="VARCHAR" length="3"/>
+            <field id="System" type="VARCHAR" length="50"/>
+            <field id="TimeEntered" type="VARCHAR" length="6"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

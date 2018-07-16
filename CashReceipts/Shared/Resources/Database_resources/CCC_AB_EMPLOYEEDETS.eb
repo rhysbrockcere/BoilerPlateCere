@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="CCC_AB_EMPLOYEEDETS">
+        <columns>*</columns>
+        <from>CCC_Absence_TEST.dbo.EmployeeDets</from>
+        <fields>
+            <field id="BUILDING BASED AT" type="VARCHAR" length="255"/>
+            <field id="DATE OF BIRTH" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="DATE OF COMM;" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="DEPT; SECTION" type="VARCHAR" length="255"/>
+            <field id="EMPLOYEE NAME" type="VARCHAR" length="255"/>
+            <field id="HOME COST CODE" type="VARCHAR" length="255"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="LEAVE ENT;" type="DOUBLE" length="53"/>
+            <field id="ORIGINAL AUTHORITY" type="VARCHAR" length="255"/>
+            <field id="REMARKS AND NOTES" type="VARCHAR" length="255"/>
+            <field id="SALARY SCALE" type="VARCHAR" length="255"/>
+            <field id="SPINAL CL; PT;" type="VARCHAR" length="255"/>
+            <field id="WORKS NO;" type="DOUBLE" length="53"/>
+        </fields>
+    </dbResource>
+</ebase>

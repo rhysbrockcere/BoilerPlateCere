@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="SC_TICKETS">
+        <columns>*</columns>
+        <from>SC_Parking_Test.dbo.Tickets</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="App_Date" type="TIMESTAMP" length="16"/>
+            <field id="Payment_Card" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Payment_DD" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Permit_Length" type="INTEGER" length="10"/>
+            <field id="Address1" type="VARCHAR" length="500"/>
+            <field id="Address2" type="VARCHAR" length="500"/>
+            <field id="Address3" type="VARCHAR" length="500"/>
+            <field id="Address4" type="VARCHAR" length="500"/>
+            <field id="Address5" type="VARCHAR" length="500"/>
+            <field id="CP_ID" type="INTEGER" length="10"/>
+            <field id="Cancelled_By" type="VARCHAR" length="50"/>
+            <field id="Cancelled_Date" type="TIMESTAMP" length="16"/>
+            <field id="Postcode" type="VARCHAR" length="50"/>
+            <field id="Version" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Del_Method" type="VARCHAR" length="50"/>
+            <field id="Del_Location" type="VARCHAR" length="50"/>
+            <field id="Printed_Date" type="TIMESTAMP" length="16"/>
+            <field id="Registration" type="VARCHAR" length="50"/>
+            <field id="Sent_By" type="VARCHAR" length="50"/>
+            <field id="Sent_Date" type="TIMESTAMP" length="16"/>
+            <field id="Stage" type="VARCHAR" length="50"/>
+            <field id="Telephone" type="VARCHAR" length="50"/>
+            <field id="Cancelled_Reason" type="VARCHAR" length="500"/>
+            <field id="Printed_By" type="VARCHAR" length="50"/>
+            <field id="Ticket_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="Valid_From" type="TIMESTAMP" length="16"/>
+            <field id="Valid_To" type="TIMESTAMP" length="16"/>
+            <field id="Company" type="VARCHAR" length="250"/>
+            <field id="DD_Length" type="INTEGER" length="10"/>
+            <field id="DD_Ref" type="VARCHAR" length="50"/>
+            <field id="Email" type="VARCHAR" length="250"/>
+            <field id="Generate_Date" type="TIMESTAMP" length="16"/>
+            <field id="Generated_By" type="VARCHAR" length="50"/>
+            <field id="Issue_Ref" type="INTEGER" length="10"/>
+            <field id="Lang" type="VARCHAR" length="50"/>
+            <field id="Make" type="VARCHAR" length="250"/>
+            <field id="Model" type="VARCHAR" length="250"/>
+            <field id="Name" type="VARCHAR" length="500"/>
+            <field id="Pay_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="RECEIPT" nextPage="PAYMENT" pageHeaderTextRef="TXT1" pageInfoTextReference="TXT2" pageTrailerTextReference="TXT3" nextPageTextReference="TXT4" prevPageTextReference="TXT5">
+    <styleSheets>
+        <styleSheet ref="$ws/Web_Resources/Style_Sheets/EBASE_DEFAULT.css" disabled="true" relation="stylesheet" media="all"/>
+        <styleSheet ref="$ws/Web_Resources/Style_Sheets/PDF_STYLE.css" relation="stylesheet" media="all"/>
+    </styleSheets>
+    <pageContents>
+        <page ctrl="PAGE1" displayOnly="true" outputType="0" pdfFooterText="LocalTXT6" pdfHeaderText="LocalTXT7" uid="0">
+            <pDFPageStyleProperties backgroundColor="#FFFFFF"/>
+            <gridControl columnWidths="50%,50%" columns="2" ctrl="GRIDCONTROL1" rows="1" uid="50">
+                <gridCell column="1" columnspan="1" ctrl="GRIDCELL1_2" row="1" rowspan="1" uid="51">
+                    <image alternativeText="LocalTXT8_3" ctrl="IMAGE1" imageURL="CCC/crest_ceredigion.jpg" mouseOverText="LocalTXT9_3" newLine="true" uid="52"/>
+                </gridCell>
+                <gridCell column="2" columnspan="1" ctrl="GRIDCELL2_2" layoutType="VERTICAL_BOX" row="1" rowspan="1" uid="53">
+                    <layoutProperties>
+                        <VERTICAL_BOX cellHAlign="Right" hAlign="Right" vAlign="Top"/>
+                        <FIELD editorHAlign="Left" fullWidthHAlign="Left" infoHAlign="Left" labelHAlign="Left"/>
+                    </layoutProperties>
+                    <text ctrl="TEXT1_2" text="LocalTXT10_3" uid="54"/>
+                </gridCell>
+            </gridControl>
+            <horizontalLine ctrl="HORIZONTALLINE1" uid="55"/>
+            <text ctrl="TEXT2" text="LocalTXT237" textBold="Bold" textFont="Arial, Helvetica, sans-serif" textSize="35px" uid="214"/>
+            <gridControl columnWidths="49%,2%,49%" columns="3" ctrl="GRIDCONTROL2" rows="1" uid="56">
+                <gridCell column="1" columnspan="1" ctrl="GRIDCELL3" layoutType="FIELD" row="1" rowspan="1" uid="57">
+                    <groupPanel ctrl="GROUPPANEL1" groupHeaderText="LocalTXT11_3" groupInfoText="LocalTXT12_3" groupTrailerText="LocalTXT13_3" layoutType="FIELD" uid="58">
+                        <layoutProperties>
+                            <FIELD editorWidth="82%" infoWidth="16%" labelWidth="2%"/>
+                        </layoutProperties>
+                        <field beforeEvent="/Scripts/GL_JS_PAY_STATUS_FULL" buttonText="LocalTXT24" ctrl="FIELDCONTROL17" displayInfoText="false" displayLabelText="false" field="ITEM-ACCOUNTNAME" uid="61"/>
+                        <field buttonText="LocalTXT165" ctrl="FIELDCONTROL18" displayInfoText="false" displayLabelText="false" field="ITEM-ADDRESS_ADDRESS1" uid="62"/>
+                        <field buttonText="LocalTXT166" ctrl="FIELDCONTROL19" displayInfoText="false" displayLabelText="false" field="ITEM-ADDRESS_ADDRESS2" uid="63"/>
+                        <field buttonText="LocalTXT167" ctrl="FIELDCONTROL20" displayInfoText="false" displayLabelText="false" field="ITEM-ADDRESS_ADDRESS3" uid="64"/>
+                        <field buttonText="LocalTXT168" ctrl="FIELDCONTROL21" displayInfoText="false" displayLabelText="false" field="ITEM-ADDRESS_ADDRESS4" uid="65"/>
+                        <field buttonText="LocalTXT169" ctrl="FIELDCONTROL22" displayInfoText="false" displayLabelText="false" field="ITEM-ADDRESS_POSTCODE" uid="66"/>
+                    </groupPanel>
+                </gridCell>
+                <gridCell column="2" columnspan="1" ctrl="GRIDCELL7" row="1" rowspan="1" uid="211"/>
+                <gridCell column="3" columnspan="1" ctrl="GRIDCELL4" layoutType="FIELD" row="1" rowspan="1" uid="59">
+                    <groupPanel ctrl="GROUPPANEL2_2" groupHeaderText="LocalTXT14_3" groupInfoText="LocalTXT15_2" groupTrailerText="LocalTXT16_2" layoutType="FIELD" uid="60">
+                        <layoutProperties>
+                            <FIELD editorWidth="52%" infoWidth="2%" labelWidth="46%"/>
+                        </layoutProperties>
+                        <field buttonText="LocalTXT244" ctrl="FIELDCONTROL30" field="RES_ITEM-CAN" uid="186"/>
+                        <field buttonText="LocalTXT171" ctrl="FIELDCONTROL24" field="RES_AUTHCODE" uid="208"/>
+                        <field buttonText="LocalTXT219" ctrl="FIELDCONTROL25" field="PAY_DATE" uid="159"/>
+                    </groupPanel>
+                </gridCell>
+            </gridControl>
+            <fieldTable ctrl="TABLE3" displayInfoPrefix="@0" field="RECEIPT_TBL" includePageNumbers="@0" insertable="false" numVisibleRows="20" showInfoMessage="@0" tableHeaderText="LocalTXT172" tableInfoText="LocalTXT173" tableTrailerText="LocalTXT174" uid="168">
+                <tablePage ctrl="TABLEPAGE3" default="L" uid="169">
+                    <fieldColumn buttonText="LocalTXT226" ctrl="FIELDCOLUMN10" field="RECEIPT_TBL-ITEM" uid="170" width="50%"/>
+                    <fieldColumn buttonText="LocalTXT246" ctrl="FIELDCOLUMN16" field="RECEIPT_TBL-UNIT" hAlign="Right" uid="189" width="9%">
+                        <stripeProperties hAlign="Right"/>
+                    </fieldColumn>
+                    <fieldColumn buttonText="LocalTXT231" ctrl="FIELDCOLUMN15" field="RECEIPT_TBL-QUANTITY" hAlign="Right" uid="175" width="8%">
+                        <stripeProperties hAlign="Right"/>
+                    </fieldColumn>
+                    <fieldColumn buttonText="LocalTXT227" ctrl="FIELDCOLUMN11" field="RECEIPT_TBL-NET" hAlign="Right" uid="171" width="8%">
+                        <stripeProperties hAlign="Right"/>
+                    </fieldColumn>
+                    <fieldColumn buttonText="LocalTXT229" ctrl="FIELDCOLUMN13" field="RECEIPT_TBL-VAT_AMOUNT" hAlign="Right" uid="173" width="8%">
+                        <stripeProperties hAlign="Right"/>
+                    </fieldColumn>
+                    <fieldColumn buttonText="LocalTXT232" ctrl="FIELDCOLUMN14" field="RECEIPT_TBL-VAT_RATE" hAlign="Right" uid="177" width="9%">
+                        <stripeProperties hAlign="Right"/>
+                    </fieldColumn>
+                    <fieldColumn buttonText="LocalTXT228" ctrl="FIELDCOLUMN12" field="RECEIPT_TBL-GROSS" hAlign="Right" uid="172" width="8%">
+                        <stripeProperties hAlign="Right"/>
+                    </fieldColumn>
+                </tablePage>
+            </fieldTable>
+            <gridControl columnWidths="50%,50%" columns="2" ctrl="GRIDCONTROL3" rows="1" uid="178">
+                <gridCell column="1" columnspan="1" ctrl="GRIDCELL5" row="1" rowspan="1" uid="179"/>
+                <gridCell column="2" columnspan="1" ctrl="GRIDCELL6" layoutType="FIELD" row="1" rowspan="1" uid="180">
+                    <fieldTable ctrl="TABLE4" displayInfoPrefix="@0" displayScrollTopBottomIcons="@0" field="RECEIPT_TOT" includePageNumbers="@0" insertable="false" showColumnHeaders="false" showInfoMessage="@0" tableHeaderText="LocalTXT249" tableInfoText="LocalTXT250" tableTrailerText="LocalTXT251" uid="194">
+                        <tablePage ctrl="TABLEPAGE4" default="L" uid="195">
+                            <fieldColumn buttonText="LocalTXT252" ctrl="FIELDCOLUMN17" field="RECEIPT_TOT-NAME" uid="196" width="50%"/>
+                            <fieldColumn buttonText="LocalTXT253" ctrl="FIELDCOLUMN18" field="RECEIPT_TOT-AMOUNT" hAlign="Right" uid="197" width="50%">
+<stripeProperties hAlign="Right"/>
+                            </fieldColumn>
+                        </tablePage>
+                    </fieldTable>
+                </gridCell>
+            </gridControl>
+        </page>
+    </pageContents>
+</page>

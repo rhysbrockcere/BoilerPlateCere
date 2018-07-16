@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="CCC_AB_CERTTYPES">
+        <columns>*</columns>
+        <from>CCC_Absence_TEST.dbo.CertTypes</from>
+        <fields>
+            <field id="CertCode" type="VARCHAR" length="50"/>
+            <field id="CertDesc" type="CLOB" length="1073741823"/>
+        </fields>
+    </dbResource>
+</ebase>

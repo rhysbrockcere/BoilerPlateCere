@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Contract Element History details" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_CONELE">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.CONELE</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CE_ALOW_PM_V" length="1"/>
+            <field id="CE_DD_PROC_I" length="1"/>
+            <field id="CE_ELE_CST_C" length="24"/>
+            <field id="CE_NI_I" length="1"/>
+            <field id="CE_PRIORITY" length="4"/>
+            <field id="CE_RUL_TYPE" length="1"/>
+            <field id="CE_START_D" length="8"/>
+            <field id="CE_STOP_D" length="8"/>
+            <field id="CE_SUSPEND_I" length="1"/>
+            <field id="CE_SUS_STA_D" length="8"/>
+            <field id="CE_SUS_STO_D" length="8"/>
+            <field id="CON_NO" length="10" key="true"/>
+            <field id="ELE_NO" length="4" key="true"/>
+            <field id="EO_OCC_COUNT" type="DECIMAL" length="2"/>
+            <field id="EV_OCC_COUNT" type="DECIMAL" length="2"/>
+            <field id="ORG_NO" type="DECIMAL" length="2" key="true"/>
+            <field id="PAY_NO" length="4" key="true"/>
+            <field id="REFERENCE" length="24"/>
+            <field id="TL_CASH_TP" type="DECIMAL" length="9"/>
+            <field id="TL_UNITS_TP" type="DECIMAL" length="9"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

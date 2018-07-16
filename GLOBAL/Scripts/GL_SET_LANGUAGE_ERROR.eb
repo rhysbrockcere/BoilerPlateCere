@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_SET_LANGUAGE_ERROR" dateCreated="2014-01-16T12:09:14.953Z" dateImported="2016-10-10T14:17:42.633+01:00">
+        <scriptText>if [ERROR_TRAP = 'Y']
+	set ERROR_TRAP = '';
+	
+	//GE - 19/05/2016 - Causing Crash!!
+	//goto $PREVIOUS_PAGE;
+endif
+
+if [ $USERVAR1 != '' ]
+	set $LANGUAGE = $USERVAR1;
+endif
+set $USERVAR1 = '';
+
+if [$LANGUAGE = 'CY']
+	set ERROR_TEXT_DIS = ERROR_TEXT_CY;
+else
+	set ERROR_TEXT_DIS = ERROR_TEXT_EN;
+endif</scriptText>
+    </script>
+</ebase>

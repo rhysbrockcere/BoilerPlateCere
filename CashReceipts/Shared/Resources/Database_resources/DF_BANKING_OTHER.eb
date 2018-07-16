@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="DF_BANKING_OTHER">
+        <columns>*</columns>
+        <from>DF_Direct_Banking_TEST.dbo.Banking_Other</from>
+        <where>Identified &lt;&gt; 'Y' or Identified IS NULL</where>
+        <additional>ORDER BY AccDate DESC</additional>
+        <fields>
+            <field id="AccDate" type="TIMESTAMP" length="16"/>
+            <field id="AccRef" type="VARCHAR" length="50"/>
+            <field id="Account" type="VARCHAR" length="255"/>
+            <field id="AccountRef" type="VARCHAR" length="255"/>
+            <field id="Amount" type="VARCHAR" length="255"/>
+            <field id="Cash" type="DECIMAL" length="18" fractionalDigits="2"/>
+            <field id="Text3" type="VARCHAR" length="255"/>
+            <field id="Date" type="VARCHAR" length="255"/>
+            <field id="ID" type="INTEGER" length="18" readOnly="true"/>
+            <field id="Identified" type="VARCHAR" length="50"/>
+            <field id="SortCode" type="VARCHAR" length="255"/>
+            <field id="Text1" type="VARCHAR" length="255"/>
+            <field id="Text2" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

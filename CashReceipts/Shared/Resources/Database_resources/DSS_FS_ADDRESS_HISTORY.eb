@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_FS_ADDRESS_HISTORY">
+        <columns>*</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_Address_History</from>
+        <fields>
+            <field id="Address_ID" type="INTEGER" length="10"/>
+            <field id="Date_Changed" type="TIMESTAMP" length="16"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Ref_ID" type="INTEGER" length="10"/>
+            <field id="Username" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

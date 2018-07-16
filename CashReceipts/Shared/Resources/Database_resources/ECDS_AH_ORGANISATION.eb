@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Housing Register - Property Owner Organisation details" database="SQLE648S1" id="ECDS_AH_ORGANISATION">
+        <columns>*</columns>
+        <from>ECDS_Housing_Test.dbo.AH_Organisation</from>
+        <fields>
+            <field id="Org_Email" type="VARCHAR" length="200"/>
+            <field id="Org_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Org_Name" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

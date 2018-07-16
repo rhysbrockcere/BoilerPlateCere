@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource accountName="Exchange" from="&amp;&amp;COUNTY_EMAIL" to="dafydd.morgan@ceredigion.gov.uk; Alun.Morgan@ceredigion.gov.uk; jackie.sinnett-jones@ceredigion.gov.uk; Cheryl.Evans@ceredigion.gov.uk" subject="Free School Meals Confirmation" critical="true" html="true" id="DECS_FSM_CONF" dateCreated="2017-06-08T11:35:48.636+01:00">
+        <message>SEND EMAIL TO &amp;&amp;EMAIL_SENT_TO
+&lt;br&gt;Confirmation E-mail.   
+&lt;br&gt;
+&lt;br&gt;Free School Meals ID - &amp;&amp;MAX_FSM_ID
+&lt;br&gt;Date &amp;&amp;FSM_SUBMIT_DATE
+&lt;br&gt;
+&lt;br&gt;We have received your application for Free School Meals and will be in contact with you shortly.
+&lt;br&gt;
+</message>
+        <fields>
+            <field id="COUNTY_EMAIL"/>
+            <field id="EMAIL_SENT_TO"/>
+            <field id="FSM_SUBMIT_DATE"/>
+            <field id="MAX_FSM_ID"/>
+        </fields>
+    </emailResource>
+</ebase>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Rent Accounting - PERSON details" database="CERESQLN1_SQL2012" table="true" preparedStatement="false" id="RA_PERSON">
+        <columns>*</columns>
+        <from>Rent_Accounting_TEST.dbo.RA_Person</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PERSON</where>
+        <additional>order by persname, perfnames, persin</additional>
+        <fields>
+            <field id="mobileno" type="VARCHAR" length="50"/>
+            <field id="persac" type="VARCHAR" length="50"/>
+            <field id="survey" type="VARCHAR" length="50"/>
+            <field id="ninumber" type="VARCHAR" length="50"/>
+            <field id="organisation" type="VARCHAR" length="50"/>
+            <field id="perdob" type="VARCHAR" length="50"/>
+            <field id="persex" type="VARCHAR" length="50"/>
+            <field id="transg" type="VARCHAR" length="50"/>
+            <field id="worktelno" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE_PERSON" type="NUMERIC" length="500" persistent="false"/>
+            <field id="a8_nat" type="VARCHAR" length="50"/>
+            <field id="audits" type="VARCHAR" length="50"/>
+            <field id="auditt" type="VARCHAR" length="50"/>
+            <field id="auditu" type="VARCHAR" length="50"/>
+            <field id="commfo" type="VARCHAR" length="50"/>
+            <field id="commme" type="VARCHAR" length="50"/>
+            <field id="contad" type="VARCHAR" length="50"/>
+            <field id="contaddr1" type="VARCHAR" length="50"/>
+            <field id="contaddr2" type="VARCHAR" length="50"/>
+            <field id="contaddr3" type="VARCHAR" length="50"/>
+            <field id="contaddr4" type="VARCHAR" length="50"/>
+            <field id="contpstc" type="VARCHAR" length="50"/>
+            <field id="contsr" type="VARCHAR" length="50"/>
+            <field id="conttelno" type="VARCHAR" length="50"/>
+            <field id="countr" type="VARCHAR" length="50"/>
+            <field id="curren" type="VARCHAR" length="50"/>
+            <field id="dateofdeath" type="VARCHAR" length="50"/>
+            <field id="emailid" type="VARCHAR" length="50"/>
+            <field id="ethnic" type="VARCHAR" length="50"/>
+            <field id="faxno" type="VARCHAR" length="50"/>
+            <field id="lastauditdt" type="VARCHAR" length="50"/>
+            <field id="marsta" type="VARCHAR" length="50"/>
+            <field id="perfnames" type="VARCHAR" length="50"/>
+            <field id="persin" type="VARCHAR" length="50"/>
+            <field id="persname" type="VARCHAR" length="50"/>
+            <field id="persti" type="VARCHAR" length="50"/>
+            <field id="pregnancyduedate" type="VARCHAR" length="50"/>
+            <field id="religb" type="VARCHAR" length="50"/>
+            <field id="sexori" type="VARCHAR" length="50"/>
+            <field id="perref" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

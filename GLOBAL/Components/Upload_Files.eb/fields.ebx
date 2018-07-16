@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Max_Uploads" type="INTEGER" defaultValue="3" labelTextRef="Txt9HuZJE" displayType="TEXT" id="452e6b4a-5e95-45df-9478-6c1d35be776f"/>
+</fields>

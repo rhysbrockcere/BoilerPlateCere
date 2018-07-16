@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="IT_Central - CE_SURVERY - Flood Survey 2014" database="SQLE648S1" id="CE_SURVEY_10_FLOOD_SURVEY_2014">
+        <columns>SURVEYID, Q11, Q10, Q09, Q08_3, Q08_2, Q08_1, Q08, Q07_OTHER, Q07_3, Q07_2, Q07_1, Q07, Q06, Q05, Q04B, Q04A, Q04, Q03, Q02, Q01</columns>
+        <from>IT_Central_Test.dbo.CE_SURVEY_10_FLOOD_SURVEY_2014</from>
+        <fields>
+            <field id="Q08_2" type="VARCHAR" length="250"/>
+            <field id="Q08_Reason" type="VARCHAR" length="5000"/>
+            <field id="Q01" type="VARCHAR" length="5000"/>
+            <field id="Q02" type="VARCHAR" length="250"/>
+            <field id="Q03" type="VARCHAR" length="250"/>
+            <field id="Q04" type="VARCHAR" length="250"/>
+            <field id="Q04A" type="VARCHAR" length="250"/>
+            <field id="Q04B" type="VARCHAR" length="250"/>
+            <field id="Q05" type="VARCHAR" length="250"/>
+            <field id="Q06" type="VARCHAR" length="250"/>
+            <field id="Q07_1" type="VARCHAR" length="250"/>
+            <field id="Q07_2" type="VARCHAR" length="250"/>
+            <field id="Q07_3" type="VARCHAR" length="250"/>
+            <field id="Q07_Reason" type="VARCHAR" length="5000"/>
+            <field id="Q08_1" type="VARCHAR" length="250"/>
+            <field id="Q08_3" type="VARCHAR" length="250"/>
+            <field id="Q09" type="VARCHAR" length="5000"/>
+            <field id="Q10" type="VARCHAR" length="5000"/>
+            <field id="Q11" type="VARCHAR" length="5000"/>
+            <field id="SURVEYID" type="INTEGER" length="19" readOnly="true"/>
+            <field id="email" type="VARCHAR" length="100"/>
+            <field id="LANGUAGE_USED" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

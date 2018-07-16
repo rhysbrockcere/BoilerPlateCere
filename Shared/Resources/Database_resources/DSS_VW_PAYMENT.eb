@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Residential Care- Payment History View" database="DSS_RES_CARE" table="true" preparedStatement="false" id="DSS_VW_PAYMENT">
+        <columns>*</columns>
+        <from>DSS_Res_Care.dbo.VW_Payment</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>Order by Estab_name,Client_Name</additional>
+        <fields>
+            <field id="AVC_Amount" type="NUMERIC" length="21" fractionalDigits="2" readOnly="true"/>
+            <field id="AVC_Fin_Code" type="VARCHAR" length="10" readOnly="true"/>
+            <field id="Client_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Client_Name" type="VARCHAR" length="101" readOnly="true"/>
+            <field id="Contract_Amount" type="NUMERIC" length="21" fractionalDigits="2" readOnly="true"/>
+            <field id="Contract_Fin_Code" type="VARCHAR" length="13" readOnly="true"/>
+            <field id="Creditor_No" type="INTEGER" length="10"/>
+            <field id="Deposit_Amount" type="NUMERIC" length="19" fractionalDigits="2"/>
+            <field id="Deposit_Fin_Code" type="VARCHAR" length="9" readOnly="true"/>
+            <field id="End_Date" type="TIMESTAMP" length="16"/>
+            <field id="Estab_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Estab_name" type="VARCHAR" length="50"/>
+            <field id="INPUT_DATE" type="TIMESTAMP" length="16"/>
+            <field id="Notes" type="VARCHAR" length="50"/>
+            <field id="Operator_ID" type="VARCHAR" length="4"/>
+            <field id="Party_ID" type="VARCHAR" length="8"/>
+            <field id="Payment_ID" type="NUMERIC" length="10" readOnly="true"/>
+            <field id="Personnal_Allow_Amount" type="NUMERIC" length="21" fractionalDigits="2" readOnly="true"/>
+            <field id="Personnal_Allow_Fin_Code" type="VARCHAR" length="10" readOnly="true"/>
+            <field id="Personnal_Deposit_Amount" type="NUMERIC" length="19" fractionalDigits="2"/>
+            <field id="Personnal_Deposit_Fin_Code" type="VARCHAR" length="9" readOnly="true"/>
+            <field id="Placement_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="70" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

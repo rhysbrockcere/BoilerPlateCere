@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <presentationTemplate id="EBASE_DEFAULT" dateCreated="2012-05-03T14:02:24.903+01:00" dateImported="2014-01-16T16:03:53.337Z" finalPageMsgClass="finalPageMessages" showTopNavButtons="false" finalPageTableClass="finalPageTable" finalPageContentsClass="pageBodyContents" formHeaderClass="formHeader" jspLeftWidth="10%" useFormHeader="true" finalPageHeaderClass="finalPageHeading" formPanelWidth="80%" jspRightWidth="10%" prevPageImage="images/Previous_Icon.gif" finalPageClass="pageBody" finishImage="images/LastPage_Icon.gif" nextPageImage="images/Next_Icon.gif" finalPageReturnButtonClass="finalPageReturnButton" finalPageInfoClass="finalPageInfo">
+        <clientScripts>
+            <clientScript path="shared/jq/js/General/domain.js" charset="ISO-8859-1"/>
+        </clientScripts>
+        <styleSheets>
+            <styleSheet ref="$ws/Web_Resources/Style_Sheets/EBASE_DEFAULT.css"/>
+        </styleSheets>
+        <propertySets>
+            <staticMenuItem ctrl="Menu Item" default="true" errorMsgClass="errorMessage" imageClass="menuItemImage" imagePosition="None" inheritMsg="false" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </staticMenuItem>
+            <imageColumn columnCellClass="tableImageColumnCell" columnDataClass="tableImageColumn" ctrl="Image Column" default="true" errorMsgClass="errorMessage" inheritMsg="false" warningMsgClass="warningMessage"/>
+            <dynamicMenuItem ctrl="Dynamic Menu Item" default="true" errorMsgClass="errorMessage" inheritMsg="false" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </dynamicMenuItem>
+            <fieldTable addRowClass="tableAddRowButton" columnHeadingClass="tableColumnHeader" ctrl="Table" currentPageClass="tableCurrentPageNumber" default="true" deletableCellClass="tableDeleteRowCell" deletableDataClass="tableDeleteRowData" errorMsgClass="tableErrorMessage" headerClass="tableHeader" inactiveScrollDownIcon="@0" inactiveScrollToBottomIcon="@0" inactiveScrollToTopIcon="@0" inactiveScrollUpIcon="@0" infoClass="tableInfo" inheritMsg="false" navigationBarClass="tableRowInformation" navigationClass="tableHorizontalScrollIcon" pageNumbersClass="tablePageNumber" patternTextClass="tableColumnPattern" scrollDownIcon="@0" scrollToBottomIcon="@0" scrollToTopIcon="@0" scrollUpIcon="@0" selectableCellClass="tableSelectRowCell" selectableDataClass="tableSelectRowData" stripeColor="#FFFFFF" tableClass="table" tableGridClass="tableGrid" tablePageScrollClass="tablePageScrollIcon" tableRowCellClass="tableRowCell" tableRowDataClass="tableRowData" tableSortClass="tableSortIcon" trailerClass="tableTrailer" warningMsgClass="tableWarningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+                <navigationStyleProperties borderStyle="@0" borderWidth="@0"/>
+            </fieldTable>
+            <prevPageButton cssClass="previousPageButton" ctrl="Previous Page Button" default="true" inheritMsg="false" newLine="false"/>
+            <horizontalMenu cssClass="horizontalMenu" ctrl="Horizontal Menu" default="true" errorMsgClass="errorMessage" hoverStyle="background-color:white;border-right:#999999 solid 1px;cursor:pointer;padding:0px;" hoverTextStyle="color:#365799;" inheritMsg="false" itemClass="horizontalMenuItem" leafClass="horizontalMenuLeaf" leafHoverStyle="background-color: white;border-right: #999999 solid 1px;cursor: pointer;padding: 0px;" leafHoverTextStyle="color:#365799; " leafSelectedClass="horizontalMenuSelectedLeaf" leafSelectedTextClass="horizontalMenuSelectedLeafText" leafTextClass="horizontalMenuLeafText" secondLevelClass="verticalMenuSecondLevel" secondLevelHoverTextStyle="color:black;" secondLevelLeafClass="verticalMenuSecondLevelLeaf" secondLevelLeafSelectedClass="verticalMenuSecondLevelSelectedLeaf" secondLevelLeafSelectedTextClass="verticalMenuSecondLevelSelectedLeafText" secondLevelLeafTextClass="verticalMenuSecondLevelLeafText" secondLevelSelectedClass="verticalMenuSecondLevelSelected" secondLevelSelectedTextClass="verticalMenuSecondLevelSelectedText" secondLevelTextClass="verticalMenuSecondLevelText" selectedClass="horizontalMenuSelected" selectedTextClass="horizontalMenuSelectedText" textClass="horizontalMenuItemText" topLevelClass="horizontalMenuTopLevel" topLevelHoverStyle="background-color: white;border-right: #999999 solid 1px;cursor: pointer;padding: 0px;" topLevelHoverTextStyle="color:#365799; " topLevelLeafClass="horizontalMenuTopLevelLeaf" topLevelLeafHoverStyle="background-color: #FFFFFF;border-right: #999999 solid 1px;cursor: pointer;padding: 0px;" topLevelLeafHoverTextStyle="color:#365799; " topLevelLeafSelectedClass="horizontalMenuTopLevelSelectedLeaf" topLevelLeafSelectedTextClass="horizontalMenuTopLevelSelectedLeafText" topLevelLeafTextClass="horizontalMenuTopLevelLeafText" topLevelSelectedClass="horizontalMenuTopLevelSelected" topLevelSelectedTextClass="horizontalMenuTopLevelSelectedText" topLevelTextClass="horizontalMenuTopLevelText" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </horizontalMenu>
+            <finishButton cssClass="finishButton" ctrl="Finish Button" default="true" inheritMsg="false" newLine="false"/>
+            <legacyButton cssClass="legacyButtonPanel" ctrl="Legacy Button Panel" default="true" finishClass="finishButton" inheritMsg="false" nextClass="nextPageButton" prevClass="previousPageButton" restoreClass="restoreButton" saveClass="saveButton" width="@0"/>
+            <nextPageButton cssClass="nextPageButton" ctrl="Next Page Button" default="true" inheritMsg="false" newLine="false"/>
+            <groupPanel contentClass="groupContent" cssClass="groupPanel" ctrl="Group Panel" default="true" errorMsgClass="errorMessage" headerClass="groupHeader" infoClass="groupInfo" inheritMsg="false" layoutType="FIELD" trailerClass="groupTrailer" warningMsgClass="warningMessage" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </groupPanel>
+            <button cssClass="button" ctrl="Button" default="true" errorMsgClass="errorMessage" inheritMsg="false" newLine="false" warningMsgClass="warningMessage"/>
+            <tab ctrl="Tab" default="true" errorMsgClass="errorMessage" imageClass="tabImage" imagePosition="None" inheritMsg="false" layoutType="FIELD" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </tab>
+            <horizontalLine cssClass="horizontalLine" ctrl="Horizontal Line" default="true" inheritMsg="false"/>
+            <gridControl columnWidths="33.0%,33.0%,34.0%" columns="3" cssClass="grid" ctrl="Grid" default="true" errorMsgClass="errorMessage" gridClass="gridStyle" inheritMsg="false" rows="3" warningMsgClass="warningMessage" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </gridControl>
+            <text cssClass="textControl" ctrl="Text" default="true" inheritMsg="false" newLine="false"/>
+            <panel cssClass="panel" ctrl="Panel" default="true" errorMsgClass="errorMessage" inheritMsg="false" layoutType="FIELD" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </panel>
+            <saveButton cssClass="saveButton" ctrl="Save Button" default="true" inheritMsg="false" newLine="false"/>
+            <titlepanel ctrl="Titled Panel" default="true" errorMsgClass="errorMessage" imagePosition="None" inheritMsg="false" panelClass="titlePanelContent" panelColor="#E9ECF6" textClass="titleText" titlePanelBorderColor="#8496C6" titlebarClass="titlePanelTitlebar" titlebarColor="#8496C6" warningMsgClass="warningMessage" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </titlepanel>
+            <fieldColumn ctrl="Table Column" default="true" errorMsgClass="errorMessage" inheritMsg="false" warningMsgClass="warningMessage"/>
+            <hyperlink ctrl="Hyperlink" default="true" inheritMsg="false" newLine="false" useExternalURL="true"/>
+            <image cssClass="image" ctrl="Image" default="true" errorMsgClass="errorMessage" inheritMsg="false" warningMsgClass="warningMessage"/>
+            <restoreButton cssClass="restoreButton" ctrl="Restore Button" default="true" inheritMsg="false" newLine="false"/>
+            <verticalMenu backgroundClass="verticalMenuBackground" cssClass="verticalMenu" ctrl="Vertical Menu" default="true" errorMsgClass="errorMessage" fourthLevelBackgroundClass="verticalMenuFourthLevelBackground" fourthLevelClass="verticalMenuFourthLevel" fourthLevelHoverStyle="background-color:white;" fourthLevelHoverTextStyle="color:#365799; " fourthLevelLeafClass="verticalMenuFourthLevelLeaf" fourthLevelLeafHoverStyle="background-color:white;" fourthLevelLeafHoverTextStyle="color:#365799; " fourthLevelLeafSelectedClass="verticalMenuFourthLevelSelectedLeaf" fourthLevelLeafSelectedTextClass="verticalMenuFourthLevelSelectedLeafText" fourthLevelLeafTextClass="verticalMenuFourthLevelLeafText" fourthLevelSelectedClass="verticalMenuFourthLevelSelected" fourthLevelSelectedTextClass="verticalMenuFourthLevelSelectedText" fourthLevelTextClass="verticalMenuFourthLevelText" hoverStyle="background-color:white;" hoverTextStyle="color:#365799;" inheritMsg="false" itemClass="verticalMenuItem" leafClass="verticalMenuLeaf" leafHoverStyle="background-color:white;" leafHoverTextStyle="color:#365799;" leafSelectedClass="verticalMenuSelectedLeaf" leafSelectedTextClass="verticalMenuSelectedLeafText" leafTextClass="verticalMenuLeafText" secondLevelBackgroundClass="verticalMenuSecondLevelBackground" secondLevelClass="verticalMenuSecondLevel" secondLevelHoverStyle="background-color:white;" secondLevelHoverTextStyle="color:#365799;" secondLevelLeafClass="verticalMenuSecondLevelLeaf" secondLevelLeafHoverStyle="background-color:white;" secondLevelLeafHoverTextStyle="color:#365799;" secondLevelLeafSelectedClass="verticalMenuSecondLevelSelectedLeaf" secondLevelLeafSelectedTextClass="verticalMenuSecondLevelSelectedLeafText" secondLevelLeafTextClass="verticalMenuSecondLevelLeafText" secondLevelSelectedClass="verticalMenuSecondLevelSelected" secondLevelSelectedTextClass="verticalMenuSecondLevelSelectedText" secondLevelTextClass="verticalMenuSecondLevelText" selectedClass="verticalMenuSelected" selectedTextClass="verticalMenuSelectedText" textClass="verticalMenuItemText" textStyle=" " thirdLevelBackgroundClass="verticalMenuThirdLevelBackground" thirdLevelClass="verticalMenuThirdLevel" thirdLevelHoverStyle="background-color:white;" thirdLevelHoverTextStyle="color:#365799; " thirdLevelLeafClass="verticalMenuThirdLevelLeaf" thirdLevelLeafHoverStyle="background-color:white;" thirdLevelLeafHoverTextStyle="color:#365799; " thirdLevelLeafSelectedClass="verticalMenuThirdLevelSelectedLeaf" thirdLevelLeafSelectedTextClass="verticalMenuThirdLevelSelectedLeafText" thirdLevelLeafTextClass="verticalMenuThirdLevelLeafText" thirdLevelSelectedClass="verticalMenuThirdLevelSelected" thirdLevelSelectedTextClass="verticalMenuThirdLevelSelectedText" thirdLevelTextClass="verticalMenuThirdLevelText" topLevelBackgroundClass="verticalMenuTopLevelBackground" topLevelClass="verticalMenuTopLevel" topLevelHoverStyle="background-color:white;" topLevelHoverTextStyle="color:#365799;" topLevelLeafClass="verticalMenuTopLevelLeaf" topLevelLeafHoverStyle="background-color:white;" topLevelLeafHoverTextStyle="color:#365799; " topLevelLeafSelectedClass="verticalMenuTopLevelSelectedLeaf" topLevelLeafSelectedTextClass="verticalMenuTopLevelSelectedLeafText" topLevelLeafTextClass="verticalMenuTopLevelLeafText" topLevelSelectedClass="verticalMenuTopLevelSelected" topLevelSelectedTextClass="verticalMenuTopLevelSelectedText" topLevelTextClass="verticalMenuTopLevelText" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </verticalMenu>
+            <gridCell column="0" columnspan="1" cssClass="gridCell" ctrl="Grid Cell" default="true" errorMsgClass="errorMessage" inheritMsg="false" row="0" rowspan="1" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </gridCell>
+            <pagePanel cssClass="pagePanelTable" ctrl="Page Panel" default="true" errorMsgClass="errorMessage" headerClass="pagePanelHeader" infoClass="pagePanelInfo" inheritMsg="false" layoutType="FIELD" style=" " trailerClass="pagePanelTrailer" warningMsgClass="warningMessage" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </pagePanel>
+            <buttonColumn columnCellClass="tableButtonColumnCell" columnDataClass="tableButtonColumn" ctrl="Button Column" default="true" errorMsgClass="errorMessage" inheritMsg="false" warningMsgClass="warningMessage"/>
+            <message ctrl="Message" default="true" errorMsgClass="errorMessage" inheritMsg="false" newLine="false" warningMsgClass="warningMessage"/>
+            <component contentClass="pageBodyContents" cssClass="pageBody" ctrl="Component" default="true" errorMsgClass="errorMessage" formPanelWidth="80%" localMsg="false" outputType="0" warningMsgClass="warningMessage" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </component>
+            <field ctrl="Field" default="true" editorClass="fieldEditor" errorMsgClass="errorMessage" helpButImage="shared/images/help.gif" helpClass="fieldHelp" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" labelClass="fieldLabel" newLine="false" patternTextClass="fieldPattern" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;" vAlign="@0" warningMsgClass="warningMessage"/>
+            <page contentClass="pageBodyContents" cssClass="pageBody" ctrl="Page" default="true" errorMsgClass="errorMessage" formPanelWidth="80%" jSPBottom="NULL" jSPLeft="NULL" jSPLeftWidth="10%" jSPRight="NULL" jSPRightWidth="10%" jSPTop="NULL" localMsg="false" outputType="0" warningMsgClass="warningMessage" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </page>
+            <tabSet cssClass="tabSet" ctrl="Tab Set" default="true" errorMsgClass="errorMessage" hoverTextStyle="color:#365799;cursor:pointer; background-color:white; " inheritMsg="false" panelClass="tabSetContent" selectedTextStyle="color:#365799;" spaceBetweenTabs="5px" tabAllColor="@0" tabBorderColor="#999999" tabColor="#F2F2F2" tabSelectedColor="#FFFFFF" unselectedTextStyle="color:#404040;" warningMsgClass="warningMessage" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTable"/>
+                    <HORIZONTAL_BOX cellVAlign="@0" tableClass="horizontalLayoutTable" vAlign="@0"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="fieldLayoutEditorCell" editorWidth="60%" helpCellClass="fieldLayoutHelpCell" labelCellClass="fieldLayoutLabelCell" labelWidth="35%" tableClass="fieldLayoutTable"/>
+                </layoutProperties>
+            </tabSet>
+        </propertySets>
+    </presentationTemplate>
+</ebase>

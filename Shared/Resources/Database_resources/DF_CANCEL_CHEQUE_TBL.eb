@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="All Cheques to be cancelled - table version" database="SQLE645S1" table="true" preparedStatement="false" id="DF_CANCEL_CHEQUE_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DF_Cancel_Cheque</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Acc_Cancel" length="1"/>
+            <field id="Acc_Cert_Date" type="TIMESTAMP" length="16"/>
+            <field id="Acc_Cert_by" type="VARCHAR" length="20"/>
+            <field id="Acc_Destroy" length="1"/>
+            <field id="Acc_Other" type="VARCHAR" length="100"/>
+            <field id="Acc_Replace" length="1"/>
+            <field id="Acc_Stop" length="1"/>
+            <field id="Acc_XLS" length="1"/>
+            <field id="Adm_Cert_Date" type="TIMESTAMP" length="16"/>
+            <field id="Adm_Cert_by" type="VARCHAR" length="20"/>
+            <field id="Adm_Destroyed" length="1"/>
+            <field id="Adm_Documented" length="1"/>
+            <field id="Admin_ref" type="VARCHAR" length="10"/>
+            <field id="Amount" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Auth_Date" type="TIMESTAMP" length="16"/>
+            <field id="Auth_by" type="VARCHAR" length="20"/>
+            <field id="Cheque_Date" type="TIMESTAMP" length="16"/>
+            <field id="Cheque_No" type="BIGINT" length="19"/>
+            <field id="Chq_Returned_etc" type="VARCHAR" length="1"/>
+            <field id="Completed_by" type="VARCHAR" length="20"/>
+            <field id="Created_Date" type="TIMESTAMP" length="16"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Pay_Cert_Date" type="TIMESTAMP" length="16"/>
+            <field id="Pay_Cert_by" type="VARCHAR" length="20"/>
+            <field id="Pay_CncRplc" length="1"/>
+            <field id="Pay_CncRplc_Date" type="TIMESTAMP" length="16"/>
+            <field id="Pay_XLS" length="1"/>
+            <field id="Payee" type="VARCHAR" length="50"/>
+            <field id="Reason" type="VARCHAR" length="100"/>
+            <field id="Ref" type="VARCHAR" length="20"/>
+            <field id="Status" type="VARCHAR" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

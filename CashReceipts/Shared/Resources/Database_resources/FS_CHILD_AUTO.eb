@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Flying Start System - Child details" database="SQLE645S1" table="true" preparedStatement="false" id="FS_CHILD_AUTO">
+        <columns>Child_Name, surname,forename,middle_names, child_FS_id</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_VW_Autocomplete_Child</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by surname, forename</additional>
+        <fields>
+            <field id="Child_FS_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Child_Name" type="VARCHAR" length="100"/>
+            <field id="Forename" type="VARCHAR" length="35"/>
+            <field id="Middle_Names" type="VARCHAR" length="35"/>
+            <field id="Surname" type="VARCHAR" length="35"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

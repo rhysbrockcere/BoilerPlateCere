@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="CS_RB_NEW_HOME">
+        <columns>*</columns>
+        <from>CS_RB_Forms.dbo.Moving_To_New_Home</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Landlord_Name" type="VARCHAR" length="100"/>
+            <field id="Landlord_PostCode" type="VARCHAR" length="10"/>
+            <field id="Landlord_Town" type="VARCHAR" length="200"/>
+            <field id="New_Address1" type="VARCHAR" length="200"/>
+            <field id="New_Address2" type="VARCHAR" length="200"/>
+            <field id="New_County" type="VARCHAR" length="200"/>
+            <field id="New_PostCode" type="VARCHAR" length="10"/>
+            <field id="New_Town" type="VARCHAR" length="200"/>
+            <field id="Previous_Address1" type="VARCHAR" length="200"/>
+            <field id="Previous_Address2" type="VARCHAR" length="200"/>
+            <field id="Previous_County" type="VARCHAR" length="200"/>
+            <field id="Previous_PostCode" type="VARCHAR" length="10"/>
+            <field id="Previous_Town" type="VARCHAR" length="200"/>
+            <field id="Purchased" type="BIT" length="1"/>
+            <field id="Tenancy_End" type="TIMESTAMP" length="16"/>
+            <field id="Tenancy_Start" type="TIMESTAMP" length="16"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+            <field id="Adults" type="INTEGER" length="10"/>
+            <field id="CRM_Enquiry_ID" type="INTEGER" length="10"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Occupied" type="TIMESTAMP" length="16"/>
+            <field id="Date_Of_Sale" type="TIMESTAMP" length="16"/>
+            <field id="Direct_Debit" type="BIT" length="1"/>
+            <field id="Forward_Address1" type="VARCHAR" length="200"/>
+            <field id="Forward_Address2" type="VARCHAR" length="200"/>
+            <field id="Forward_County" type="VARCHAR" length="200"/>
+            <field id="Forward_Post_Code" type="VARCHAR" length="10"/>
+            <field id="Forward_Town" type="VARCHAR" length="200"/>
+            <field id="Furnished" type="BIT" length="1"/>
+            <field id="Furniture_Moved_In" type="TIMESTAMP" length="16"/>
+            <field id="ID" type="INTEGER" length="10" key="true"/>
+            <field id="Landlord_Address1" type="VARCHAR" length="200"/>
+            <field id="Landlord_Address2" type="VARCHAR" length="200"/>
+            <field id="Landlord_County" type="VARCHAR" length="200"/>
+        </fields>
+    </dbResource>
+</ebase>

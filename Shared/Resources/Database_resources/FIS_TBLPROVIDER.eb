@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Provider details" database="SQLE645S1" preparedStatement="false" id="FIS_TBLPROVIDER">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblPROVIDER</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PROVIDER</where>
+        <fields>
+            <field id="TBLLU_PROV_DAY_CARE_TYPE" type="INTEGER" length="10"/>
+            <field id="provider_4yrolds" type="TINYINT" length="3"/>
+            <field id="provider_an_currently_caring_number" type="INTEGER" length="100"/>
+            <field id="provider_an_equal_op_policy" length="1"/>
+            <field id="provider_an_equal_op_policy_notes" type="VARCHAR" length="500"/>
+            <field id="provider_an_info_from" type="VARCHAR" length="500"/>
+            <field id="provider_an_previously_cared" length="1"/>
+            <field id="provider_an_previously_cared_notes" type="VARCHAR" length="500"/>
+            <field id="provider_an_previously_cared_notes_welsh" type="VARCHAR" length="500"/>
+            <field id="provider_an_previously_cared_types" type="VARCHAR" length="500"/>
+            <field id="provider_an_previously_cared_types_welsh" type="VARCHAR" length="500"/>
+            <field id="provider_avail_end" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_avail_start" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_available" type="VARCHAR" length="2"/>
+            <field id="provider_closing_time" type="VARCHAR" length="5"/>
+            <field id="provider_com_welsh" type="VARCHAR" length="10"/>
+            <field id="provider_contactforcostdetails" type="BIT" length="1"/>
+            <field id="provider_contactforvacdetails" type="BIT" length="1"/>
+            <field id="provider_costbyarr" type="SMALLINT" length="5"/>
+            <field id="provider_costday" type="DOUBLE" length="53"/>
+            <field id="provider_costhour" type="DOUBLE" length="53"/>
+            <field id="provider_costsess" type="DOUBLE" length="53"/>
+            <field id="provider_costterm" type="DOUBLE" length="53"/>
+            <field id="provider_costweek" type="DOUBLE" length="53"/>
+            <field id="provider_crb_policy" type="BIT" length="1"/>
+            <field id="provider_created" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_cuser" type="VARCHAR" length="40"/>
+            <field id="provider_day" type="SMALLINT" length="5"/>
+            <field id="provider_directions" type="VARCHAR" length="1000"/>
+            <field id="provider_donotfund" type="BIT" length="1"/>
+            <field id="provider_email" type="VARCHAR" length="70"/>
+            <field id="provider_emailltr" type="SMALLINT" length="5"/>
+            <field id="provider_end" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_fax" type="VARCHAR" length="70"/>
+            <field id="provider_formref" type="VARCHAR" length="30"/>
+            <field id="provider_formret" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_formsent" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_free" type="BIT" length="1"/>
+            <field id="provider_grantreg" type="SMALLINT" length="5"/>
+            <field id="provider_hour" type="SMALLINT" length="5"/>
+            <field id="provider_hours_open" type="DECIMAL" length="5" fractionalDigits="1"/>
+            <field id="provider_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="provider_label" type="BIT" length="1"/>
+            <field id="provider_last_updated" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_letter" type="SMALLINT" length="5"/>
+            <field id="provider_ltrsent" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_maintained_sch" type="BIT" length="1"/>
+            <field id="provider_mobile" type="VARCHAR" length="15"/>
+            <field id="provider_name" type="VARCHAR" length="100"/>
+            <field id="provider_name_welsh" type="VARCHAR" length="100"/>
+            <field id="provider_no_terms" type="SMALLINT" length="5"/>
+            <field id="provider_open" type="BIT" length="1"/>
+            <field id="provider_open_funded" type="TINYINT" length="3"/>
+            <field id="provider_open_time" type="VARCHAR" length="5"/>
+            <field id="provider_paf" type="BIT" length="1"/>
+            <field id="provider_partnership" type="BIT" length="1"/>
+            <field id="provider_print" type="SMALLINT" length="5"/>
+            <field id="provider_qualstaff" type="TINYINT" length="3"/>
+            <field id="provider_qualstaff_34yrchd" type="TINYINT" length="3"/>
+            <field id="provider_ref_procedure" type="VARCHAR" length="1000"/>
+            <field id="provider_reg_exempt" type="BIT" length="1"/>
+            <field id="provider_service_description" type="VARCHAR" length="5000"/>
+            <field id="provider_session" type="SMALLINT" length="5"/>
+            <field id="provider_staff" type="TINYINT" length="3"/>
+            <field id="provider_staff_34yrchd" type="TINYINT" length="3"/>
+            <field id="provider_start" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_telephone" type="VARCHAR" length="40"/>
+            <field id="provider_term" type="SMALLINT" length="5"/>
+            <field id="provider_train_subscr_no" type="VARCHAR" length="254"/>
+            <field id="provider_transport" type="SMALLINT" length="5"/>
+            <field id="provider_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_upd_user" type="VARCHAR" length="128"/>
+            <field id="provider_url" type="VARCHAR" length="300"/>
+            <field id="provider_usecontactaddress" type="INTEGER" length="10"/>
+            <field id="provider_vac_agefrom" type="SMALLINT" length="5"/>
+            <field id="provider_vac_ageto" type="SMALLINT" length="5"/>
+            <field id="provider_vac_notes" type="VARCHAR" length="1000"/>
+            <field id="provider_vac_notes_welsh" type="VARCHAR" length="1000"/>
+            <field id="provider_vac_update" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_vendorId" length="12"/>
+            <field id="provider_web_site" type="VARCHAR" length="250"/>
+            <field id="provider_week" type="SMALLINT" length="5"/>
+            <field id="provider_weeks_in_term" type="DECIMAL" length="20" fractionalDigits="10"/>
+            <field id="provider_weeks_open" type="TINYINT" length="3"/>
+            <field id="tblLETTER_TYPE" type="INTEGER" length="10"/>
+            <field id="tblLU_CHILDMINDER_NETWORK" type="INTEGER" length="10"/>
+            <field id="tblLU_EEF_ENTITLEMENT" type="INTEGER" length="10"/>
+            <field id="tblLU_FUNDING_PROV_TYPE" type="INTEGER" length="10"/>
+            <field id="tblLU_LOCATION_OF_CARE" type="INTEGER" length="10"/>
+            <field id="tblLU_PROVIDER_TYPE" type="INTEGER" length="10"/>
+            <field id="tblLU_PUP_LANGUAGE" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+            <field id="tblSCHOOL" type="INTEGER" length="10"/>
+            <field id="provider_addprov_4" type="TINYINT" length="3"/>
+            <field id="provider_addprov_cenwk" type="TINYINT" length="3"/>
+            <field id="provider_addprov_more38wks" type="TINYINT" length="3"/>
+            <field id="provider_addprov_more4" type="TINYINT" length="3"/>
+            <field id="provider_addprov_more7half" type="TINYINT" length="3"/>
+            <field id="provider_agmax_unreg" type="SMALLINT" length="5"/>
+            <field id="provider_agmaxch" type="INTEGER" length="10"/>
+            <field id="provider_agmaxvacs" type="INTEGER" length="10"/>
+            <field id="provider_agmaxvacsunreg" type="INTEGER" length="10"/>
+            <field id="provider_agtotsess" type="INTEGER" length="10"/>
+            <field id="provider_agtotwait" type="INTEGER" length="10"/>
+            <field id="provider_an_access_to_training" type="VARCHAR" length="500"/>
+            <field id="provider_an_currently_caring" length="1"/>
+            <field id="WHERE_CLAUSE_PROVIDER" type="NUMERIC" length="500" persistent="false"/>
+            <field id="provider_ImmediateVacancies" type="BIT" length="1"/>
+            <field id="provider_3yrolds" type="TINYINT" length="3"/>
+            <field id="PROVIDER_ISPP_UPLOAD" type="TINYINT" length="3"/>
+            <field id="PROVIDER_NONSTANDARDHOURS" type="BIT" length="1"/>
+            <field id="PROVIDER_PROFSTATSTAFF" type="TINYINT" length="3"/>
+            <field id="PROVIDER_PROFSTATSTAFF_34YRCHD" type="TINYINT" length="3"/>
+        </fields>
+    </dbResource>
+</ebase>

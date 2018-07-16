@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="CRM_ALIAS">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.enq_Alias_View</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Alias_EN" type="VARCHAR" length="100"/>
+            <field id="Alias_ID" type="INTEGER" length="10"/>
+            <field id="Available_FAQs" length="1"/>
+            <field id="Category" type="VARCHAR" length="100"/>
+            <field id="Desc_EN" type="VARCHAR" length="500"/>
+            <field id="Internet_Page" type="VARCHAR" length="120"/>
+            <field id="Intranet_Page" type="VARCHAR" length="100"/>
+            <field id="Resp_Officer" type="VARCHAR" length="100"/>
+            <field id="add_Form_ID" type="VARCHAR" length="100"/>
+            <field id="add_Information" type="VARCHAR" length="2000"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

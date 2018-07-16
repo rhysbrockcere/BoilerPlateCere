@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS - CSIR Inspections" database="SQLE645S1" table="true" preparedStatement="false" id="FIS_TBLREGISTRATION_INSPECTION_TBL">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblREGISTRATION_INSPECTION</from>
+        <where>&amp;&amp;WHERE_CLAUSE_INSPECTION</where>
+        <fields>
+            <field id="WHERE_CLAUSE_INSPECTION" type="NUMERIC" length="500" persistent="false"/>
+            <field id="rinsp_date" type="TIMESTAMP" length="16"/>
+            <field id="rinsp_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="rinsp_inspector" type="VARCHAR" length="60"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

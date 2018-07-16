@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Reprographics - Main Job" database="SQLE648S1" preparedStatement="false" id="REPRO_JOB_MAIN_MAX">
+        <columns>MAX(JOB_ID) as Max_ID</columns>
+        <from>ICT_Reprographic_Test.dbo.Job_Main</from>
+        <fields>
+            <field id="Max_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

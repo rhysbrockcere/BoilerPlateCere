@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="CCC_AB_TBLPAYROLL">
+        <columns>*</columns>
+        <from>CCC_Absence_TEST.dbo.tblPayroll</from>
+        <fields>
+            <field id="EndDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="StartDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+        </fields>
+    </dbResource>
+</ebase>

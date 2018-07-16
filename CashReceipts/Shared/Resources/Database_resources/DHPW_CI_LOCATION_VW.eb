@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Cleaning Inspections - Location with Latest Inspection details" database="DHPWSQL" table="true" preparedStatement="false" id="DHPW_CI_LOCATION_VW" dateCreated="2017-09-26T11:40:17.479+01:00">
+        <columns>*</columns>
+        <from>CleaningInsp_TEST.dbo.CI_Locations_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Comments" type="CLOB" length="1073741823"/>
+            <field id="Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Days_Remaining" type="INTEGER" length="10" readOnly="true"/>
+            <field id="InspFreqSum" type="INTEGER" length="10"/>
+            <field id="InspFreqWint" type="INTEGER" length="10"/>
+            <field id="InspID" type="INTEGER" length="10"/>
+            <field id="Insp_Month" type="VARCHAR" length="30" readOnly="true"/>
+            <field id="Insp_Quarter" length="12" readOnly="true"/>
+            <field id="Inspector" type="VARCHAR" length="10"/>
+            <field id="Inspector_Name" type="VARCHAR" length="101" readOnly="true"/>
+            <field id="Last_Inspection_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Location" type="VARCHAR" length="50"/>
+            <field id="Location_Type" length="20"/>
+            <field id="Reason" type="VARCHAR" length="1"/>
+            <field id="Season" type="VARCHAR" length="10"/>
+            <field id="Standard" type="VARCHAR" length="1"/>
+            <field id="Status" type="VARCHAR" length="18" readOnly="true"/>
+            <field id="Target_Date" type="TIMESTAMP" length="23" fractionalDigits="3" readOnly="true"/>
+            <field id="UPRN" length="12"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="30" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

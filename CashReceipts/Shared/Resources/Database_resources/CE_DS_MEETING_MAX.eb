@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Democratic Service - Meeting - Max Id" database="SQLE648S1" preparedStatement="false" id="CE_DS_MEETING_MAX">
+        <columns>MAX(ID) AS ID</columns>
+        <from>CE_Democratic_Services_TEST.dbo.CE_DS_Meeting</from>
+        <fields>
+            <field id="Id" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

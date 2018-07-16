@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CE_EP_CONTACT_LANG">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_EP_Contact_Lang</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ID" type="VARCHAR" length="50"/>
+            <field id="Lang" type="VARCHAR" length="50"/>
+            <field id="Num" type="VARCHAR" length="10" readOnly="true"/>
+            <field id="Verbal" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="Written" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

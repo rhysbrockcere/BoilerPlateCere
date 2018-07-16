@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Registration CSIW Registration Status" database="SQLE645S1" table="true" preparedStatement="false" id="FIS_TBLLU_REGSTATUS_TBL">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_REGSTATUS</from>
+        <where>rstat_id=rstat_id</where>
+        <fields>
+            <field id="rstat_code" type="VARCHAR" length="4"/>
+            <field id="rstat_desc" type="VARCHAR" length="50"/>
+            <field id="rstat_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="rstat_ofstedimport" type="BIT" length="1"/>
+            <field id="rstat_resigned" type="BIT" length="1"/>
+            <field id="rstat_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="rstat_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

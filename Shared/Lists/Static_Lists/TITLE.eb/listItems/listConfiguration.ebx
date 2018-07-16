@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="Miss"/>
+    <item id="2" returnVal="Mr"/>
+    <item id="3" returnVal="Mrs"/>
+    <item id="4" returnVal="Ms"/>
+    <item id="5" returnVal="Dr"/>
+    <item id="6" returnVal="Cllr"/>
+    <item id="7" returnVal="Rev."/>
+    <item id="8" returnVal="Prof."/>
+    <item id="9" returnVal="Other"/>
+</items>

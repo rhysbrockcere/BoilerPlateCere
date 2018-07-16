@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_CASH2012" table="true" preparedStatement="false" id="AIM_M_BALANCE_TBL">
+        <columns>*</columns>
+        <from>Aim_Cer_Live.dbo.AIM_M_BALANCE</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Active" type="BIT" length="1"/>
+            <field id="Addr1" type="VARCHAR" length="50"/>
+            <field id="Addr2" type="VARCHAR" length="50"/>
+            <field id="Addr3" type="VARCHAR" length="50"/>
+            <field id="Addr4" type="VARCHAR" length="50"/>
+            <field id="Balance" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Balance_Date" type="INTEGER" length="10"/>
+            <field id="Cross_Ref_No" type="VARCHAR" length="50"/>
+            <field id="Deleted" type="BIT" length="1"/>
+            <field id="Email" type="VARCHAR" length="255"/>
+            <field id="ForeName" type="VARCHAR" length="50"/>
+            <field id="Fund_Code" length="5" key="true"/>
+            <field id="Last_Updated" type="INTEGER" length="10"/>
+            <field id="Last_User_Code" length="5"/>
+            <field id="Max_Amount_Limit" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="NextLineNumber" type="INTEGER" length="10"/>
+            <field id="Opening_Balance" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Post_Code" type="VARCHAR" length="10"/>
+            <field id="Ref_No" type="VARCHAR" length="50" key="true"/>
+            <field id="Severity" length="2"/>
+            <field id="Site_Id" type="SMALLINT" length="5" key="true"/>
+            <field id="Stop_Code" length="5"/>
+            <field id="Stop_Message" type="VARCHAR" length="50"/>
+            <field id="Sub_Reference" type="VARCHAR" length="50" key="true"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="User_Long1" type="INTEGER" length="10"/>
+            <field id="User_Long2" type="INTEGER" length="10"/>
+            <field id="User_Long3" type="INTEGER" length="10"/>
+            <field id="User_Long4" type="INTEGER" length="10"/>
+            <field id="User_Long5" type="INTEGER" length="10"/>
+            <field id="User_String1" type="VARCHAR" length="50"/>
+            <field id="User_String2" type="VARCHAR" length="50"/>
+            <field id="User_String3" type="VARCHAR" length="50"/>
+            <field id="User_String4" type="VARCHAR" length="50"/>
+            <field id="User_String5" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

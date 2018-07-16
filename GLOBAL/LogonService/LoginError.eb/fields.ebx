@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="User" type="CHAR" labelTextRef="Txt9hkKIc" displayType="TEXT"/>
+    <field name="err_Action" type="CHAR" parameter="true" labelTextRef="Txt67aYUX" displayType="TEXT"/>
+    <field name="err_Category" type="CHAR" parameter="true" labelTextRef="Txt71qYel" displayType="TEXT"/>
+    <field name="err_Message" type="CHAR" parameter="true" labelTextRef="Txt3qBAeV_2" displayType="TEXT" html="true"/>
+    <field name="err_Team" type="CHAR" labelTextRef="Txt93vUrq" displayType="TEXT"/>
+    <field name="err_Title" type="CHAR" parameter="true" labelTextRef="Txt3VTX0A" displayType="TEXT"/>
+</fields>

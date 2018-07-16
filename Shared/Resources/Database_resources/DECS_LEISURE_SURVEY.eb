@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="DECS_LEISURE_SURVEY">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DECS_Leisure_Survey</from>
+        <where>Leisure_Centre=&amp;&amp;Leisure_Centre</where>
+        <fields>
+            <field id="Age" length="10"/>
+            <field id="Bowls" length="10"/>
+            <field id="Catering_Services" length="10"/>
+            <field id="Class" length="10"/>
+            <field id="Cleanliness" length="10"/>
+            <field id="Coffee_Shop" length="10"/>
+            <field id="Communication" length="10"/>
+            <field id="Distance" length="10"/>
+            <field id="Exterior" length="10"/>
+            <field id="Facilities_Quality" length="10"/>
+            <field id="Fitness_Suite" length="10"/>
+            <field id="Food_Quality" length="10"/>
+            <field id="Gender" length="10"/>
+            <field id="Identify_Staff" length="10"/>
+            <field id="Instructed_Games" length="10"/>
+            <field id="Leisure_Centre" length="10"/>
+            <field id="Other" length="10"/>
+            <field id="Outdoor_Facilities" length="10"/>
+            <field id="Overall_Satisfaction" length="10"/>
+            <field id="Overall_Services" length="10"/>
+            <field id="Overall_VFM" length="10"/>
+            <field id="Parking" length="10"/>
+            <field id="Programme_Quality" length="10"/>
+            <field id="Programme_Range" length="10"/>
+            <field id="Service" length="10"/>
+            <field id="Sports_Hall" length="10"/>
+            <field id="Squash" length="10"/>
+            <field id="Swimming" length="10"/>
+            <field id="Travelled_From" length="10"/>
+            <field id="Usage" length="10"/>
+            <field id="Vending_Quality" length="10"/>
+            <field id="Vending_Range" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>
