@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CCC_PORTAL_PAYMENT">
+        <fieldMapping resourceField="Status" field="PAY_STATUS"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="CCC_PORTAL_STATUS">
+        <tableMapping table="PSTATUS"/>
+        <fieldMapping resourceField="Status" field="PSTATUS-STATUS"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="EPAYMENT">
+        <tableMapping resourceField="dataItem" table="DATAITEM"/>
+        <tableMapping resourceField="eMail" table="EMAIL"/>
+        <tableMapping resourceField="item" table="ITEM"/>
+        <tableMapping resourceField="item.2" table="ITEM.2"/>
+        <fieldMapping resourceField="applySurcharge" field="APPLYSURCHARGE"/>
+        <fieldMapping resourceField="authCode" field="AUTHCODE"/>
+        <fieldMapping resourceField="authDetail_amount" field="AUTHDETAIL_AMOUNT"/>
+        <fieldMapping resourceField="authDetail_can" field="AUTHDETAIL_CAN"/>
+        <fieldMapping resourceField="authDetail_message" field="AUTHDETAIL_MESSAGE"/>
+        <fieldMapping resourceField="backURL" field="BACKURL"/>
+        <fieldMapping resourceField="cancelURL" field="CANCELURL"/>
+        <fieldMapping resourceField="cardHolderName" field="CARDHOLDERNAME"/>
+        <fieldMapping resourceField="cart_maxAmount" field="CART_MAXAMOUNT"/>
+        <fieldMapping resourceField="cart_minAmount" field="CART_MINAMOUNT"/>
+        <fieldMapping resourceField="code" field="DATAITEM-CODE"/>
+        <fieldMapping resourceField="value" field="DATAITEM-VALUE"/>
+        <fieldMapping resourceField="firstPortalStage" field="FIRSTPORTALSTAGE"/>
+        <fieldMapping resourceField="accountCode" field="ITEM-ACCOUNTCODE"/>
+        <fieldMapping resourceField="accountName" field="ITEM-ACCOUNTNAME"/>
+        <fieldMapping resourceField="address_address1" field="ITEM-ADDRESS_ADDRESS1"/>
+        <fieldMapping resourceField="address_address2" field="ITEM-ADDRESS_ADDRESS2"/>
+        <fieldMapping resourceField="address_address3" field="ITEM-ADDRESS_ADDRESS3"/>
+        <fieldMapping resourceField="address_address4" field="ITEM-ADDRESS_ADDRESS4"/>
+        <fieldMapping resourceField="address_postCode" field="ITEM-ADDRESS_POSTCODE"/>
+        <fieldMapping resourceField="amount" field="ITEM-AMOUNT"/>
+        <fieldMapping resourceField="areaCode" field="ITEM-AREACODE"/>
+        <fieldMapping resourceField="balance" field="ITEM-BALANCE"/>
+        <fieldMapping resourceField="billingAddress_address1" field="ITEM-BILLINGADDRESS_ADDRESS1"/>
+        <fieldMapping resourceField="billingAddress_address2" field="ITEM-BILLINGADDRESS_ADDRESS2"/>
+        <fieldMapping resourceField="billingAddress_address3" field="ITEM-BILLINGADDRESS_ADDRESS3"/>
+        <fieldMapping resourceField="billingAddress_address4" field="ITEM-BILLINGADDRESS_ADDRESS4"/>
+        <fieldMapping resourceField="billingAddress_postCode" field="ITEM-BILLINGADDRESS_POSTCODE"/>
+        <fieldMapping resourceField="editable_maxAmount" field="ITEM-EDITABLE_MAXAMOUNT"/>
+        <fieldMapping resourceField="editable_minAmount" field="ITEM-EDITABLE_MINAMOUNT"/>
+        <fieldMapping resourceField="fundCode" field="ITEM-FUNDCODE"/>
+        <fieldMapping resourceField="fundName" field="ITEM-FUNDNAME"/>
+        <fieldMapping resourceField="item1" field="ITEM-ITEM1"/>
+        <fieldMapping resourceField="item2" field="ITEM-ITEM2"/>
+        <fieldMapping resourceField="locationCode" field="ITEM-LOCATIONCODE"/>
+        <fieldMapping resourceField="miscellaneousPaymentMessage" field="ITEM-MISCELLANEOUSPAYMENTMESSAGE"/>
+        <fieldMapping resourceField="overrideUserCode" field="ITEM-OVERRIDEUSERCODE"/>
+        <fieldMapping resourceField="postcode" field="ITEM-POSTCODE"/>
+        <fieldMapping resourceField="quantity" field="ITEM-QUANTITY"/>
+        <fieldMapping resourceField="reference" field="ITEM-REFERENCE"/>
+        <fieldMapping resourceField="reference2" field="ITEM-REFERENCE2"/>
+        <fieldMapping resourceField="sourceCode" field="ITEM-SOURCECODE"/>
+        <fieldMapping resourceField="telNo" field="ITEM-TELNO"/>
+        <fieldMapping resourceField="tranCode" field="ITEM-TRANCODE"/>
+        <fieldMapping resourceField="userLong1" field="ITEM-USERLONG1"/>
+        <fieldMapping resourceField="userLong2" field="ITEM-USERLONG2"/>
+        <fieldMapping resourceField="userLong3" field="ITEM-USERLONG3"/>
+        <fieldMapping resourceField="userString1" field="ITEM-USERSTRING1"/>
+        <fieldMapping resourceField="userString2" field="ITEM-USERSTRING2"/>
+        <fieldMapping resourceField="userString3" field="ITEM-USERSTRING3"/>
+        <fieldMapping resourceField="userString4" field="ITEM-USERSTRING4"/>
+        <fieldMapping resourceField="vatAmount" field="ITEM-VATAMOUNT"/>
+        <fieldMapping resourceField="vatCode" field="ITEM-VATCODE"/>
+        <fieldMapping resourceField="vatRate" field="ITEM-VATRATE"/>
+        <fieldMapping resourceField="amount.2" field="ITEM_2-AMOUNT_2"/>
+        <fieldMapping resourceField="can" field="ITEM_2-CAN"/>
+        <fieldMapping resourceField="fundCode.2" field="ITEM_2-FUNDCODE_2"/>
+        <fieldMapping resourceField="reference2.2" field="ITEM_2-REFERENCE2_2"/>
+        <fieldMapping resourceField="reference.2" field="ITEM_2-REFERENCE_2"/>
+        <fieldMapping resourceField="language" field="LANGUAGE"/>
+        <fieldMapping resourceField="mop" field="MOP"/>
+        <fieldMapping resourceField="number" field="NUMBER"/>
+        <fieldMapping resourceField="reqStatus_message" field="REQSTATUS_MESSAGE"/>
+        <fieldMapping resourceField="requestID" field="REQUESTID"/>
+        <fieldMapping resourceField="responseCode" field="RESPONSECODE"/>
+        <fieldMapping resourceField="returnURL" field="RETURNURL"/>
+        <fieldMapping resourceField="source" field="SOURCE"/>
+        <fieldMapping resourceField="statusCode" field="STATUSCODE"/>
+        <fieldMapping resourceField="surchargeRate" field="SURCHARGERATE"/>
+        <fieldMapping resourceField="surcharge_amount" field="SURCHARGE_AMOUNT"/>
+        <fieldMapping resourceField="surcharge_fundCode" field="SURCHARGE_FUNDCODE"/>
+        <fieldMapping resourceField="surcharge_reference" field="SURCHARGE_REFERENCE"/>
+        <fieldMapping resourceField="totalStages" field="TOTALSTAGES"/>
+        <fieldMapping resourceField="type" field="TYPE"/>
+        <fieldMapping resourceField="userID" field="USERID"/>
+    </resourceMapping>
+    <resourceMapping id="PAYRES">
+        <tableMapping resourceField="item" table="RES_ITEM"/>
+        <fieldMapping resourceField="authCode" field="RES_AUTHCODE"/>
+        <fieldMapping resourceField="authDetail_amount" field="RES_AUTHDETAIL_AMOUNT"/>
+        <fieldMapping resourceField="authDetail_can" field="RES_AUTHDETAIL_CAN"/>
+        <fieldMapping resourceField="authDetail_message" field="RES_AUTHDETAIL_MESSAGE"/>
+        <fieldMapping resourceField="amount" field="RES_ITEM-AMOUNT"/>
+        <fieldMapping resourceField="can" field="RES_ITEM-CAN"/>
+        <fieldMapping resourceField="fundCode" field="RES_ITEM-FUNDCODE"/>
+        <fieldMapping resourceField="reference" field="RES_ITEM-REFERENCE"/>
+        <fieldMapping resourceField="reference2" field="RES_ITEM-REFERENCE2"/>
+        <fieldMapping resourceField="mop" field="RES_MOP"/>
+        <fieldMapping resourceField="reqStatus_message" field="RES_REQSTATUS_MESSAGE"/>
+        <fieldMapping resourceField="requestID" field="RES_REQUESTID"/>
+        <fieldMapping resourceField="responseCode" field="RES_RESPONSECODE"/>
+        <fieldMapping resourceField="statusCode" field="RES_STATUSCODE"/>
+        <fieldMapping resourceField="surcharge_amount" field="RES_SURCHARGE_AMOUNT"/>
+        <fieldMapping resourceField="surcharge_fundCode" field="RES_SURCHARGE_FUNDCODE"/>
+        <fieldMapping resourceField="surcharge_reference" field="RES_SURCHARGE_REFERENCE"/>
+    </resourceMapping>
+</resourceMappings>

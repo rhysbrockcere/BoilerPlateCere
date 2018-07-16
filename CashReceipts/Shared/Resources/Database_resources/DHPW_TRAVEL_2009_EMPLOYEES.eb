@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Travel Survey Employees - all employees not responding to 1st survey" database="SQLE645S1" preparedStatement="false" id="DHPW_TRAVEL_2009_EMPLOYEES">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DHPW_Travel_2009_Employees</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="department" type="VARCHAR" length="10"/>
+            <field id="Name" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="70" persistent="false"/>
+            <field id="email" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Democratic Services - Attendance details" database="SQLE648S1" preparedStatement="false" id="CE_DS_ATTENDANCE">
+        <columns>*</columns>
+        <from>CE_Democratic_Services_TEST.dbo.CE_DS_Attendance</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Absence_Reason" type="VARCHAR" length="255"/>
+            <field id="Councillor_Id" type="INTEGER" length="10"/>
+            <field id="Date_Last_Updated" type="TIMESTAMP" length="16"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Meeting_ID" type="INTEGER" length="10"/>
+            <field id="Membership_ID" type="INTEGER" length="10"/>
+            <field id="Status" type="VARCHAR" length="255"/>
+            <field id="Updated_By" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

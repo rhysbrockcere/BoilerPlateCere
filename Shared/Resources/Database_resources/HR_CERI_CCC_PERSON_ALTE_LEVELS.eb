@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="HR CERi - Person ALTE skills" database="CERESQLS1_ITRENT2012" preparedStatement="false" id="HR_CERI_CCC_PERSON_ALTE_LEVELS">
+        <columns>*</columns>
+        <from>TLIVE.dbo.CCC_CERi_Person_ALTE_Levels</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ALTE_Listening_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ALTE_Reading_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ALTE_Reading_Level" type="INTEGER" length="10"/>
+            <field id="ALTE_Writing_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ALTE_Writing_Level" type="INTEGER" length="10"/>
+            <field id="reference_no" type="VARCHAR" length="80"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="ALTE_Listening_Level" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

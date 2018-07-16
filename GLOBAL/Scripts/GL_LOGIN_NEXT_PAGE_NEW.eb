@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_LOGIN_NEXT_PAGE_NEW" dateImported="2016-09-06T15:35:54.770+01:00">
+        <scriptText>// If the form is CE_EP_PERSONAL_ADMIN, the Password will not check if it needs to be changed and has expired.
+// This is to save time when access is require in an emergancy
+
+if [$FORMID = 'CE_EP_PERSONAL_ADMIN']
+	set ACCESS_TIME = $SYSTEM_DATETIME;
+	set APP = $FORMID;
+	set APP_SERVER = replace($UFS_SERVER_NAME, '.ceredigion.gov.uk','');
+	set ACCESS_DETAILS = 'Login Successful';
+	callscript GL_INSERT_ACCESS_LOG;
+	set LOGIN_ATTEMPTS = 0;
+	set WHERE_CLAUSE = 'Username = \'' + ENK_USER + '\'';
+	update IT_PHONEBOOK_PASSWORDS;
+	goto page $NEXT_PAGE;
+endif
+
+// If you request a new password then PASSWORD_CHANGE is set to 'Y' this means that you need to change your password once you first login.
+// The system also requires you to change your passwork every 40 days
+
+log PASSWORD_CHANGE;
+log DATE_CHANGED;
+
+if [PASSWORD_CHANGE = 'Y' or $SYSTEM_DATE &gt;= DATE_CHANGED + 40]
+	show NEW_PWD_DETAILS_GROUP;
+	hide LOGIN_PANEL;
+	hide REQUEST_GROUP;
+	hide OPTION_GROUP;
+	message 'Please reset your password below';
+else
+	set ACCESS_TIME = $SYSTEM_DATETIME;
+	set APP = $FORMID;
+	set APP_SERVER = replace($UFS_SERVER_NAME, '.ceredigion.gov.uk','');
+	if [FOP_NEW_PASSWORD != '']
+		set ACCESS_DETAILS = 'Login Successful - Password Changed';
+	else
+		set ACCESS_DETAILS = 'Login Successful';
+	endif
+	callscript GL_INSERT_ACCESS_LOG;
+	if [LOGIN_ATTEMPTS &gt;= 1]
+		set LOGIN_ATTEMPTS = 0;
+		set WHERE_CLAUSE = 'Username = \'' + ENK_USER + '\'';
+		update IT_PHONEBOOK_PASSWORDS;
+	endif
+	if [uppercase(USERNAME) = 'SMW_ADMIN' or uppercase(USERNAME) = 'SMW_USER' or uppercase(USERNAME) = 'SMW_NONE']
+		set USERNAME = 'stevenw';
+	endif
+	goto page $NEXT_PAGE;
+endif</scriptText>
+    </script>
+</ebase>

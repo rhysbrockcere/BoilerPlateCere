@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project version="5.2.0" name="GLOBAL">
+    <dependencies>
+        <dependency>Shared</dependency>
+        <dependency>CRM_Common</dependency>
+    </dependencies>
+</project>

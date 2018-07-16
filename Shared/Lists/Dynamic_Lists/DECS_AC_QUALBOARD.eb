@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="DECS_AC_QUALBOARD" dateCreated="2013-08-05T23:00:49.023+01:00" dateImported="2013-10-31T14:25:02.923Z">
+        <columns>QualID, QualBoard</columns>
+        <from>IT_Central.dbo.DECS_AC_QUALBOARD</from>
+        <fields>
+            <field id="QualBoard" input="false"/>
+            <field id="QualID" type="INTEGER" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

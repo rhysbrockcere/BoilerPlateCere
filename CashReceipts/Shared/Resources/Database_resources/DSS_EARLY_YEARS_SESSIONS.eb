@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" preparedStatement="false" id="DSS_EARLY_YEARS_SESSIONS">
+        <columns>*</columns>
+        <from>FIS_Live.dbo.A_VIEW_EYEARS_SESSION_TIMES</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY (CASE WHEN pavail_day = 'Monday' THEN 0 WHEN pavail_day = 'Tuesday' THEN 1 WHEN pavail_day = 'Wednesday' THEN 2 WHEN pavail_day = 'Thursday' THEN
+                       3 WHEN pavail_day = 'Friday' THEN 4 WHEN pavail_day = 'Saturday' THEN 5 WHEN pavail_day = 'Sunday' THEN 6 END), pavail_start</additional>
+        <fields>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="pavail_day" type="VARCHAR" length="10"/>
+            <field id="pavail_day_welsh" type="VARCHAR" length="20"/>
+            <field id="pavail_end" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="pavail_start" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provider_id" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

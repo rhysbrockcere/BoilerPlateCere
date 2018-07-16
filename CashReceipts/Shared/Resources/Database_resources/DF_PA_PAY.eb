@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Payroll Group details" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_PAY">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.PAY</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ALLOW_ONLGTN" length="1"/>
+            <field id="ALOW_NEG_NET" length="1"/>
+            <field id="AUTO_GEN" length="1"/>
+            <field id="CHK_DGT_ADL" length="8"/>
+            <field id="CON_DGT_ADL" length="8"/>
+            <field id="CON_NO_FMT" length="10"/>
+            <field id="COSTING_ADL" length="8"/>
+            <field id="COURT_ADL" length="8"/>
+            <field id="EE_AEO_CST_C" length="24"/>
+            <field id="EE_NI_COST_C" length="24"/>
+            <field id="EE_PENS_ADL" length="8"/>
+            <field id="EE_PN_COST_C" length="24"/>
+            <field id="EE_TX_COST_C" length="24"/>
+            <field id="ER_FEE_CST_C" length="24"/>
+            <field id="ER_NI_COST_C" length="24"/>
+            <field id="ER_PENS_ADL" length="8"/>
+            <field id="GTN_ADL_1" length="8"/>
+            <field id="GTN_ADL_10" length="8"/>
+            <field id="GTN_ADL_11" length="8"/>
+            <field id="GTN_ADL_12" length="8"/>
+            <field id="GTN_ADL_13" length="8"/>
+            <field id="GTN_ADL_2" length="8"/>
+            <field id="GTN_ADL_3" length="8"/>
+            <field id="GTN_ADL_4" length="8"/>
+            <field id="GTN_ADL_5" length="8"/>
+            <field id="GTN_ADL_6" length="8"/>
+            <field id="GTN_ADL_7" length="8"/>
+            <field id="GTN_ADL_8" length="8"/>
+            <field id="GTN_ADL_9" length="8"/>
+            <field id="GTN_NO" type="DECIMAL" length="4"/>
+            <field id="HOL_CALC_I" length="1"/>
+            <field id="HOL_INPUT_I" length="1"/>
+            <field id="HOL_NI_ADL" length="8"/>
+            <field id="HOL_PAYMT_I" length="1"/>
+            <field id="HTRAN_TAB" length="8"/>
+            <field id="HTRAN_VAL" length="8"/>
+            <field id="LIVE_STATUS" length="1"/>
+            <field id="LST_O_CON" length="10"/>
+            <field id="LST_U_CON" length="10"/>
+            <field id="MANPAY_CST_I" length="1"/>
+            <field id="MAX_GROSS" type="DECIMAL" length="9"/>
+            <field id="MAX_NET" type="DECIMAL" length="9"/>
+            <field id="MODULUS_NO" type="DECIMAL" length="2"/>
+            <field id="MOD_TABLE" length="35"/>
+            <field id="MOD_WEIGHT1" type="DECIMAL" length="4"/>
+            <field id="MOD_WEIGHT2" type="DECIMAL" length="4"/>
+            <field id="MOD_WEIGHT3" type="DECIMAL" length="4"/>
+            <field id="MOD_WEIGHT4" type="DECIMAL" length="4"/>
+            <field id="MOD_WEIGHT5" type="DECIMAL" length="4"/>
+            <field id="MOD_WEIGHT6" type="DECIMAL" length="4"/>
+            <field id="MOD_WEIGHT7" type="DECIMAL" length="4"/>
+            <field id="MOD_WEIGHT8" type="DECIMAL" length="4"/>
+            <field id="MOD_WEIGHT9" type="DECIMAL" length="4"/>
+            <field id="NEG_POS" length="1"/>
+            <field id="NET_PY_CST_C" length="24"/>
+            <field id="NI_ADL" length="8"/>
+            <field id="NI_BASIS" length="1"/>
+            <field id="ORG_NO" type="DECIMAL" length="2" key="true"/>
+            <field id="PAYMENTS_ADL" length="8"/>
+            <field id="PAYROLL_D" length="8"/>
+            <field id="PAYROLL_NAME" length="32"/>
+            <field id="PAYSLIP_D" length="8"/>
+            <field id="PAY_FREQ" length="1"/>
+            <field id="PAY_NO" length="4" key="true"/>
+            <field id="PEN_PAY_I" length="1"/>
+            <field id="PERMIT_NO" length="12"/>
+            <field id="PREV_PAY_D" length="8"/>
+            <field id="PROC_PAY_HOL" length="1"/>
+            <field id="PY_BRK_1_DSC" length="20"/>
+            <field id="PY_BRK_1_TBL" length="7"/>
+            <field id="PY_BRK_1_TTL" length="12"/>
+            <field id="PY_BRK_2_DSC" length="20"/>
+            <field id="PY_BRK_2_TBL" length="7"/>
+            <field id="PY_BRK_2_TTL" length="12"/>
+            <field id="PY_BRK_3_DSC" length="20"/>
+            <field id="PY_BRK_3_TBL" length="7"/>
+            <field id="PY_BRK_3_TTL" length="12"/>
+            <field id="PY_BRK_4_DSC" length="20"/>
+            <field id="PY_BRK_4_TBL" length="7"/>
+            <field id="PY_BRK_4_TTL" length="12"/>
+            <field id="PY_BRK_5_DSC" length="20"/>
+            <field id="PY_BRK_5_TBL" length="7"/>
+            <field id="PY_BRK_5_TTL" length="12"/>
+            <field id="PY_ELEPERM_D" length="8"/>
+            <field id="PY_HM_COST_C" length="24"/>
+            <field id="PY_HOL_PDS" length="2"/>
+            <field id="PY_NORM_PDS" length="2"/>
+            <field id="PY_PROC_STAT" length="1"/>
+            <field id="PY_SPARE_1_C" length="24"/>
+            <field id="PY_SPARE_2_C" length="24"/>
+            <field id="PY_TX_FROM" length="2"/>
+            <field id="PY_TX_TO" length="2"/>
+            <field id="PY_TX_YR" type="DECIMAL" length="4"/>
+            <field id="PY_TX_YR_END" type="DECIMAL" length="2"/>
+            <field id="RCAL_SEL_ADL" length="8"/>
+            <field id="RND_CF_CST_C" length="24"/>
+            <field id="SEP_HOL_NI" length="1"/>
+            <field id="STOP_DMT_ADL" length="8"/>
+            <field id="STRT_DMT_ADL" length="8"/>
+            <field id="S_DEDNS_PDR" length="8"/>
+            <field id="S_EEPENS_PDR" length="8"/>
+            <field id="S_ERPENS_PDR" length="8"/>
+            <field id="S_PAYMTS_PDR" length="8"/>
+            <field id="S_POS_RB_PDR" length="8"/>
+            <field id="S_POS_RE_PDR" length="8"/>
+            <field id="S_PRE_RB_PDR" length="8"/>
+            <field id="S_PRE_RE_PDR" length="8"/>
+            <field id="S_START_PDR" length="8"/>
+            <field id="S_STOP_PDR" length="8"/>
+            <field id="S_VALMRG_PDR" length="8"/>
+            <field id="TAX_ADL" length="8"/>
+            <field id="TC_CUT_OFF_I" length="1"/>
+            <field id="TC_NIL_NET_I" length="1"/>
+            <field id="TC_TO_LV_D_I" length="1"/>
+            <field id="TIME_BASIS" length="1"/>
+            <field id="VOL_DED_ADL" length="8"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

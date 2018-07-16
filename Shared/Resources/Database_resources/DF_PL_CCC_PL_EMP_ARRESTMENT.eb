@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Logica Payroll Archive - Arrestment - Student_loan" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PL_CCC_PL_EMP_ARRESTMENT">
+        <columns>*</columns>
+        <from>DF_Logica_LIVE.dbo.CCC_PL_EMP_ARRESTMENT_STULOAN</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="arrest_type_name" type="VARCHAR" length="30"/>
+            <field id="arrestment_status" type="VARCHAR" length="2"/>
+            <field id="arrestment_type" type="VARCHAR" length="1"/>
+            <field id="conjoined" type="VARCHAR" length="1"/>
+            <field id="creditor_ref" type="VARCHAR" length="10"/>
+            <field id="daily_rate" type="NUMERIC" length="18" fractionalDigits="6"/>
+            <field id="days_to_be_paid" type="NUMERIC" length="10"/>
+            <field id="deduction_dischrgd" type="VARCHAR" length="1"/>
+            <field id="deduction_priority" type="NUMERIC" length="2"/>
+            <field id="deduction_table" type="VARCHAR" length="2"/>
+            <field id="deduction_value" type="NUMERIC" length="18" fractionalDigits="6"/>
+            <field id="deo_employee_ref" type="VARCHAR" length="12"/>
+            <field id="effective_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="emp_ref" type="VARCHAR" length="2"/>
+            <field id="end_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="frequency_of_order" type="VARCHAR" length="2"/>
+            <field id="issuer_reference" type="VARCHAR" length="30"/>
+            <field id="occurrence" type="NUMERIC" length="10"/>
+            <field id="opening_balance" type="NUMERIC" length="18" fractionalDigits="6"/>
+            <field id="pay_ref" type="VARCHAR" length="15"/>
+            <field id="person_ref" type="VARCHAR" length="10"/>
+            <field id="protected_type" type="VARCHAR" length="1"/>
+            <field id="protected_value" type="NUMERIC" length="18" fractionalDigits="6"/>
+            <field id="start_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="stud_loan_plan" type="VARCHAR" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

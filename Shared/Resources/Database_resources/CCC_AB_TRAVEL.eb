@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="CCC_AB_TRAVEL">
+        <columns>*</columns>
+        <from>CCC_Absence_TEST.dbo.Travel</from>
+        <fields>
+            <field id="Car Reg No" type="VARCHAR" length="50"/>
+            <field id="IDD" type="INTEGER" length="10"/>
+            <field id="Mileage" type="INTEGER" length="10"/>
+            <field id="Month" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Odometer" type="INTEGER" length="10"/>
+            <field id="Staff No" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

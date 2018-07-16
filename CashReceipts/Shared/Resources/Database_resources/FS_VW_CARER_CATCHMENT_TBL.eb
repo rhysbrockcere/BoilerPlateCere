@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Distinct List of Carers by Catchment area - from Area when Registered onto a course." database="SQLE645S1" table="true" preparedStatement="false" id="FS_VW_CARER_CATCHMENT_TBL">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_VW_Carer_Catchment_Areas</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by Surname</additional>
+        <fields>
+            <field id="Carer_FS_ID" type="INTEGER" length="10"/>
+            <field id="Catchment_Area" type="VARCHAR" length="25"/>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="Forenames" type="VARCHAR" length="50"/>
+            <field id="Gender" length="1"/>
+            <field id="Surname" type="VARCHAR" length="30"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="90" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

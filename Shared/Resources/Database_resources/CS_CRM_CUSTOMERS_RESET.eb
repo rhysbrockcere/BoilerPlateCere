@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CS_CRM_CUSTOMERS_RESET">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.CRM_Customers</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="EEA" type="VARCHAR" length="2000"/>
+            <field id="Firstname" type="VARCHAR" length="2000"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Password" type="VARCHAR" length="2000"/>
+            <field id="Question" type="VARCHAR" length="50"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="Answer" type="VARCHAR" length="2000"/>
+            <field id="Attempts" type="INTEGER" length="10"/>
+            <field id="Check_Link" type="VARCHAR" length="500"/>
+            <field id="DOB" type="VARCHAR" length="2000"/>
+            <field id="Surname" type="VARCHAR" length="2000"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

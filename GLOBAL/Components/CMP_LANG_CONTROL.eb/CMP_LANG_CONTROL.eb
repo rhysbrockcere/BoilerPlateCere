@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webFormComponent exportVersion="79" type="PART_PAGE" template="/Presentation/Presentation_Templates/EBASE_DEFAULT" firstPage="DUMMY_PAGE_03102003" preferredScriptFolder="/Scripts" id="CMP_LANG_CONTROL" dateImported="2013-04-22T13:04:13.760+01:00">
+        <linkedTexts>
+            <linkedText>/GLOBAL_Messages</linkedText>
+            <linkedText>/Shared_Texts</linkedText>
+        </linkedTexts>
+    </webFormComponent>
+</ebase>

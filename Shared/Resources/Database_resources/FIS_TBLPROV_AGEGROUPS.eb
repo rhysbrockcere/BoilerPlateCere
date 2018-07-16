@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Provider Age group" database="SQLE645S1" preparedStatement="false" id="FIS_TBLPROV_AGEGROUPS">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblPROV_AGEGROUPS</from>
+        <where>provag_id=&amp;&amp;provag_id</where>
+        <fields>
+            <field id="provag_current" type="INTEGER" length="10"/>
+            <field id="provag_id" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="provag_noavail" type="INTEGER" length="10"/>
+            <field id="provag_nosess" type="INTEGER" length="10"/>
+            <field id="provag_own" type="INTEGER" length="10"/>
+            <field id="provag_regfor" type="INTEGER" length="10"/>
+            <field id="provag_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="provag_upd_user" type="VARCHAR" length="128"/>
+            <field id="provag_vacs" type="INTEGER" length="10"/>
+            <field id="provag_waitlist" type="INTEGER" length="10"/>
+            <field id="provag_wrap_around" type="BIT" length="1"/>
+            <field id="tblLU_AGE_GROUPS" type="INTEGER" length="10"/>
+            <field id="tblPROVIDER" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

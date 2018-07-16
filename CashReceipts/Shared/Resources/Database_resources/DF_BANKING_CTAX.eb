@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="DF_BANKING_CTAX">
+        <columns>*</columns>
+        <from>DF_Direct_Banking_TEST.dbo.Banking</from>
+        <where>AccRef like '7%' and AccRef NOT LIKE '% %' and Text2 not like '% DWP %' and Text2 not like '% ESA%CWP%' and Text3 not like '%CEREDIGION C852521%' and Text3 not like '&quot;DDR&quot;'</where>
+        <additional>ORDER BY AccDate DESC</additional>
+        <fields>
+            <field id="AccDate" type="TIMESTAMP" length="16"/>
+            <field id="AccRef" type="VARCHAR" length="50"/>
+            <field id="Account" type="VARCHAR" length="255"/>
+            <field id="AccountRef" type="VARCHAR" length="255"/>
+            <field id="Amount" type="VARCHAR" length="255"/>
+            <field id="Cash" type="DECIMAL" length="18" fractionalDigits="2"/>
+            <field id="Date" type="VARCHAR" length="255"/>
+            <field id="ID" type="INTEGER" length="18" readOnly="true"/>
+            <field id="Identified" type="VARCHAR" length="50"/>
+            <field id="SortCode" type="VARCHAR" length="255"/>
+            <field id="Text1" type="VARCHAR" length="255"/>
+            <field id="Text2" type="VARCHAR" length="255"/>
+            <field id="Text3" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

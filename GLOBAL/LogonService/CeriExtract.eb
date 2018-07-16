@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" id="CeriExtract" dateCreated="2016-09-21T14:10:07.434+01:00">
+        <columns>*</columns>
+        <from>sys_CeriExtract</from>
+        <where>username = &amp;&amp;USERNAME</where>
+        <additional>order by Name</additional>
+        <fields>
+            <field id="Email" type="VARCHAR" length="4000"/>
+            <field id="Manager_Email" type="VARCHAR" length="4000"/>
+            <field id="Manager_Name" type="VARCHAR" length="161"/>
+            <field id="Manager_Position" type="VARCHAR" length="80"/>
+            <field id="Manager_Position_ID" type="VARCHAR" length="10"/>
+            <field id="Manager_Reference_No" type="VARCHAR" length="80"/>
+            <field id="Manager_username" type="VARCHAR" length="4000"/>
+            <field id="Team_Name" type="VARCHAR" length="80"/>
+            <field id="Username" type="VARCHAR" length="4000"/>
+            <field id="con_pos_ref_no" type="VARCHAR" length="80"/>
+            <field id="Name" type="VARCHAR" length="161"/>
+            <field id="position_id" type="VARCHAR" length="10"/>
+            <field id="Position_Name" type="VARCHAR" length="80"/>
+            <field id="team_id" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

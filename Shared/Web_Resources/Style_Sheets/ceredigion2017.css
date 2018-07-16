@@ -1,0 +1,605 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	margin: 0 0 50px; /* bottom = footer height */
+	background-color: #F7F5F5;
+	background-image: url(../Images/Clic_Arrow.png);
+	background-repeat: no-repeat;
+	background-position: 50px center;
+	background-attachment: fixed;
+}
+
+*{
+/*	outline: none; */
+}
+
+
+td #language-select {
+  font-size: 1em;
+  text-align:center;
+}
+
+td #language-select a {
+  text-decoration:none;
+}
+
+
+
+#language-select { height: 100%}
+#language-select a {
+display: table;
+position: relative;
+height: 100%;
+width: 100%;
+}
+
+#language-select span {
+	display: table-cell;
+	text-align:center;
+	vertical-align: middle;
+	padding:5px 10px;
+}
+#language-select {
+	height: inherit;
+}
+
+@-moz-document url-prefix() { 
+  #language-select {
+     height: 100%;
+  }
+}
+
+.headerTitle{
+	padding:0px 5px
+}
+
+.headerLogo{
+	padding:5px 0px; 
+	max-height:55px; 
+	margin-left:5px
+}
+
+.footer {
+  background-image: url(../Images/footer_border.gif);
+  background-position: top left;
+  background-repeat: repeat-x;
+  padding-top: 15px;
+  padding-bottom: 0px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
+}
+
+.spacer8 { padding-left:0px !important}
+.help-box{ 
+	padding:20px; 
+	display:none;
+	margin-bottom: 15px
+}
+
+a{ 
+	white-space: nowrap; 
+	cursor: pointer;  
+	text-decoration:none
+}
+a:hover {
+  text-decoration: underline;
+}
+.addressSelect{ width:200px }
+.mandatory {
+    cursor: help;
+    margin-left: 5px;
+}
+
+label, .label{
+	font-weight:bold;
+}
+.fieldText span label {
+    font-weight: normal;
+    width:100%;
+}
+.helpText   { 
+    margin-bottom: 5px;}
+
+div.label{ 
+	padding-right:10px;
+}
+
+labelbel .labelReduce{ margin-rigt:0px}
+.fieldPanel{ margin-left:0px}
+.fieldPanel > div {
+    margin-bottom: 1em;
+}
+.fieldText{
+	vertical-align:middle;
+
+}
+.fieldText div{	padding-top:2px}
+
+.content{
+	max-width: 860px;
+	margin: 0px auto 10px;
+}
+
+.wrapper {
+	/*	min-height: calc(100vh - 160px);*/
+}
+
+.flexbox{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.flexbox > *{
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+td, tr{
+	padding: 0;
+}
+
+td[class*='tableContentCell'] > div[class*='Editor']{
+	width:100%;
+}
+
+td[class*='tableContentCell'] > div[class*='Editor'] > *{
+	width:100%;
+}
+
+.bodyCenter
+{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.bodyMaxWidth
+{
+	max-width: 1000px;
+}
+
+@media print 
+{
+  .bodyMaxWidth
+  { 
+  	width: 100%;
+  	max-width: none;
+  }
+
+}
+
+.marginAuto
+{
+	margin: 0 auto;
+}
+
+.fixToBottomOfParent{
+	position:absolute;
+	bottom:0;
+}
+
+/* Text Styles */
+.h1,.h2,.h3,.h4,.h5,.h6 
+{
+  line-height:1.5em !important;
+  margin:0 0 .25em !important;
+}
+
+/* Styling for <h1> - <h6> tags, when these are used in HTML texts or controls */
+h1 
+{
+	margin: .67em 0;
+  font-weight: bold; 
+}
+
+h2
+{
+	margin: .75em 0;
+  font-weight: bold; 
+}
+
+h3
+{
+	margin: .83em 0;
+  font-weight: bold; 
+}
+
+h4
+{
+	margin: 1.12em 0;
+  font-weight: bold; 
+}
+
+h5
+{
+	margin: 1.5em 0;
+  font-weight: normal; 
+}
+
+h6
+{
+	margin: 1.67em 0;
+  font-weight: normal; 
+} 
+/* table end border removes */
+td:first-child
+{
+	border-left-width: 0px;
+}
+
+td:last-child
+{
+	border-right-width: 0px;
+}
+
+.button 
+{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor:pointer;
+  display:inline-block;
+  vertical-align:baseline;
+  text-decoration:none;
+  padding:10px 20px;
+  line-height:1.1em;
+  text-align:center;
+  text-decoration:none;
+  font-weight:500;
+  border:none;
+}
+
+.buttonSmall {
+	padding: 7px 10px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=date],
+input[type=number],
+input[type=datetime-local],
+textarea,
+select 
+{
+  border-style: solid;
+  border-width: 2px;
+  outline:0 none; 
+  margin:0;
+  padding:0.4em 0.5em;
+  border-radius: 4px;
+}
+
+input[type=password] {
+	padding:0.4em 0.75em;
+}
+
+input:focus,input[type=text]:focus,
+input[type=password]:focus,
+input[type=radio]:focus,
+textarea:focus,
+input[type=checkbox]:focus,
+select:focus
+{
+  border-color:#0012b3;
+  /* margin:0;
+ padding:0.4em 0.5em;*/
+}
+
+span > input[type=radio]
+{
+	margin-right:1em;
+	margin-left:0.3em;
+	margin-bottom:0.5em;
+}
+
+td span > input[type=radio]
+{
+	margin-bottom:0.4em;
+}
+
+td > input[type=radio]
+{
+	margin-left:0.3em;
+	margin-bottom:0.2em;
+}
+
+/*
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
+    outline: thin dotted;
+    outline-offset: -2px;
+}
+*/
+input:focus[type="radio"],input:focus[type="checkbox"] {
+    outline: 2px solid #0012b3 !important;
+}
+input:focus.button{ background-color:	#000}
+
+textarea 
+{
+  overflow:auto;
+  resize:both;
+  vertical-align:top;
+  display:block;
+}
+
+div.form-field label 
+{
+  cursor:pointer;
+}
+
+div.form-field-info 
+{
+	margin-top: 0.25em;
+}
+
+.errorMessage {
+  background-image: url('$ws/Web_Resources/Images/error.png');
+  background-repeat: no-repeat;
+  background-position:0px 5px;
+  padding: 0.4em 0.8em 0.4em 21px;
+  text-align:left;
+}
+
+.warningMessage 
+{
+  background-image: url('$ws/Web_Resources/Images/warning.png');
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  padding: 0.4em 0.8em 0.4em 25px;
+}
+
+.borderCurvey,
+.border
+{
+  border-style: solid;
+  border-width: 2px;
+}
+
+.borderCurvey
+{
+	-webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+}
+
+.eb-TabSet div.eb-TabSet-Header > ul > li,
+.eb-TabSet-Reverse div.eb-TabSet-Header > ul > li
+{
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+}
+
+.eb-TabSet-Curvey div.eb-TabSet-Header > ul > li
+{
+	border-radius: 5px 5px 0 0;
+}
+
+.imageCircle
+{
+	border-radius:50%;
+}
+
+.imageRounded
+{
+	border-radius:6px;
+}
+
+.imageThumbnail
+{
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-radius:4px;
+	display:inline-block;
+	height:auto;
+	line-height:1.42857143;
+	max-width:100%;
+	padding:4px;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+/* Following rules are used with the DataEntryLabelsAbove property sets */
+.form-fields 
+{
+	padding: 0.4em;
+}
+
+.form-field 
+{
+	line-height:1.4em;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	vertical-align:baseline;
+	margin-bottom:0.5em;
+}
+
+div.form-field ul,li 
+{
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+  margin:0;
+  padding:0;
+}
+
+div.form-field ul 
+{
+  list-style:none;
+  margin:0 0 0.4em 0.8em;
+}
+
+div.form-field-info {
+	margin-top: 0.25em;
+}
+
+/* End of rules for DataEntryLabelsAbove property sets */
+/* Hide site navigation when in an iframe */
+html.framed .hideWhileEmbedded {
+    display: none;
+}
+
+.hidden,.sr-only {
+    position: absolute;
+    margin: -1px 0 0 -1px;
+    padding: 0;
+    display: block;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    outline: 0;
+  }
+
+/* George
+ *  Bring calendar icon inline with input when in vertical box layout
+ */
+
+input[class*="Calendar"] {
+	float:right;
+	padding-top:3px;
+}
+
+/* George's added extra's for dashboard compatibility */
+
+.btnTogglePanel {
+	float:right;
+}
+
+.btnToggleNestedTable {
+	float:left;
+	margin-top:3px;
+}
+
+.contentPane, .contentPaneBorder {
+  border-radius: 6px;
+  padding:10px;
+  transition: background 0.25s ease-in-out 0s;
+	display:block !important;
+	margin-bottom:10px;
+}
+
+.pnlNestedDetail {
+	margin-bottom:5px;
+	padding: 5px 0px;
+	width:100%;
+}
+
+.pnlNestedDetail .spLabel {
+	padding-left:10px;
+}
+
+.pnlNestedDetail table {
+	width:100%
+}
+
+/*******************************************************/
+
+.toggleTitle {
+	transition: background-color 0.5s ease;
+	background-color:#fff;
+	border-radius:5px;
+}
+
+.toggleTitle:hover {
+	cursor:pointer;
+	background-color: rgba(178, 198, 222, 0.5);
+}
+
+.toggleTitle:after {
+	content: "\f078";
+  font-family: FontAwesome;
+  color: #d43f3a;
+  padding-right:0px;
+}
+
+.toggleTitle.DOWN:after {
+	content: "\f077";
+}
+
+.expandPanel{
+	transition: background-color 0.5s ease;
+	background-color:#fff;
+	border-radius:5px;
+	position:relative;
+	padding:5px 0px;
+}
+
+.expandPanel:hover{
+	cursor:pointer;
+	background-color: rgba(247, 246, 207, 1);
+}
+
+.expandPanel:before {
+	content: "\f054";
+	margin-left:-20px;
+  font-family: FontAwesome;
+  color: #d43f3a;
+  position: absolute;
+  padding: 4px 0px 0px 0px;
+}
+
+.expandPanel.DOWN:before {
+	content: "\f078";
+}
+
+.contentPanel {
+	text-indent: 0;
+	transition: background-color 0.5s ease;
+	background-color:#fff;
+	padding-left: 10px;
+	margin-left:10px;
+	border-left: 2px solid rgba(35, 87, 158, 0.4); 
+}
+
+.contentPanel:hover {
+	background-color: rgba(247, 246, 207, 1);
+}
+
+
+.Horizontal-Menu {
+	padding:0.1em;
+}
+
+.MenuItem-Top {
+	padding:0.5em 1em;
+	border-radius: 3px;
+}
+
+.DropDownMenuItem {
+	padding:0.5em 3em 0.5em 1em;
+	border: 1px solid #ccc !important;
+}
+
+#PageLoading {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top:0;
+	left: 0;
+	background: #fff;
+	z-index:9999;
+	padding-top: 200px;
+	text-align:center;
+	color: #000;
+}

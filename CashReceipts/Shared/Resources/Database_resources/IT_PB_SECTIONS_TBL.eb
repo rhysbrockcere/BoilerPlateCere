@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="IT_PB_SECTIONS_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_PB_Sections</from>
+        <fields>
+            <field id="ID" type="INTEGER" length="16"/>
+            <field id="Level1" type="VARCHAR" length="2000"/>
+            <field id="Level2" type="VARCHAR" length="2000"/>
+            <field id="Level3" type="VARCHAR" length="2000"/>
+            <field id="Level4" type="VARCHAR" length="2000"/>
+            <field id="Level5" type="VARCHAR" length="2000"/>
+            <field id="Level6" type="VARCHAR" length="2000"/>
+            <field id="Level7" type="VARCHAR" length="2000"/>
+            <field id="Level8" type="VARCHAR" length="2000"/>
+            <field id="OU" type="VARCHAR" length="2000"/>
+        </fields>
+    </dbResource>
+</ebase>

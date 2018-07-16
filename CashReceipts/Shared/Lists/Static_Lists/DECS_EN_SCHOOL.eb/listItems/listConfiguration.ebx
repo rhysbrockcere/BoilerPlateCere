@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="Aberteifi Uwchradd"/>
+    <item id="2" returnVal="Ysgol Gyfun Aberaeron"/>
+    <item id="3" returnVal="Bro Pedr"/>
+    <item id="4" returnVal="Bro Teifi"/>
+    <item id="5" returnVal="Henry Richards"/>
+    <item id="6" returnVal="Penweddig"/>
+    <item id="7" returnVal="Penglais"/>
+    <item id="8" returnVal="PRU"/>
+    <item id="9" returnVal="EHE"/>
+</items>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive -  Post structure" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_VW_POST_STRUCTURE">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.VW_POST_STRUCTURE</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CREAT_D" length="8"/>
+            <field id="END_D" length="8"/>
+            <field id="ORG_NO" type="DECIMAL" length="2"/>
+            <field id="PL_START_D" length="8"/>
+            <field id="POST_NO" length="12"/>
+            <field id="REP_POST_NO" length="12"/>
+            <field id="STATUS_I" length="1"/>
+            <field id="TITLE" length="32"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="reportee_title" length="32"/>
+        </fields>
+    </dbResource>
+</ebase>

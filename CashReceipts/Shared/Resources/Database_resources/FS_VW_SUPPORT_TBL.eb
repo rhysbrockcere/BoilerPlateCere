@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" preparedStatement="false" id="FS_VW_SUPPORT_TBL">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_VW_SUPPORT</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY Start_Date desc</additional>
+        <fields>
+            <field id="Amount_Delivered" type="VARCHAR" length="10"/>
+            <field id="Child_FS_ID" type="VARCHAR" length="10"/>
+            <field id="Support_Type" type="VARCHAR" length="50"/>
+            <field id="Content_Type" type="VARCHAR" length="50"/>
+            <field id="Distance_Travelled" type="VARCHAR" length="10"/>
+            <field id="End_date" type="TIMESTAMP" length="16"/>
+            <field id="Note_Comment" type="VARCHAR" length="500"/>
+            <field id="Note_ID" type="VARCHAR" length="10"/>
+            <field id="Prof_type" type="VARCHAR" length="50"/>
+            <field id="Staff_Fullname" type="VARCHAR" length="100"/>
+            <field id="Staff_ID" type="VARCHAR" length="20"/>
+            <field id="Start_date" type="TIMESTAMP" length="16"/>
+            <field id="Support_Content_Type_ID" type="INTEGER" length="10"/>
+            <field id="Support_ID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

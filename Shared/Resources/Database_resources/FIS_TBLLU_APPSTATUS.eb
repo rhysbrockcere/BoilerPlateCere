@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Registration Applicatio Status" database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_APPSTATUS">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_APPSTATUS</from>
+        <where>&amp;&amp;WHERE_CLAUSE_APPSTATUS</where>
+        <fields>
+            <field id="WHERE_CLAUSE_APPSTATUS" type="NUMERIC" length="500" persistent="false"/>
+            <field id="astat_desc" type="VARCHAR" length="50"/>
+            <field id="astat_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="astat_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="astat_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

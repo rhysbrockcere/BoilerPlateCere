@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm beforeEvent="/LogonService/GL_checkCredentials" formHeaderTextRef="Txt4NlHTG" htmlTitleTextRef="TxtCqjsd" finishButtonTextRef="TxtkuRHp" backButtonSupport="yes" ajax="false" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/LogonService/Profile" id="UserProfile" dateCreated="2017-09-07T10:04:50.823+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+        </sharedFunctionScripts>
+        <resources>
+            <resource name="CeriExtract_Tbl" path="/LogonService/CeriExtract_Tbl"/>
+            <resource name="FormAccess" path="/LogonService/FormAccess"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt5Kv7Q7" restoreButtonTextRef="Txt5eOVLA" saveInfoTextRef="TxtwJc4H" restoreInfoTextRef="Txt4nLFOs"/>
+        <finalPage headerTextRef="Txt4Ghkgz" infoTextRef="TxtAXSN99" returnTextRef="Txt1Oz9jI" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

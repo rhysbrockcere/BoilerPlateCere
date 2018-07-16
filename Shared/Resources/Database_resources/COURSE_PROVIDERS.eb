@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="UFS" preparedStatement="false" id="COURSE_PROVIDERS">
+        <columns>*</columns>
+        <from>course_providers</from>
+        <fields>
+            <field id="COURSE_PROVIDER" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

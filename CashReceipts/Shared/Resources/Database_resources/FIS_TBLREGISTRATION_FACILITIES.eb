@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLREGISTRATION_FACILITIES">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblREGISTRATION_FACILITIES</from>
+        <where>regfac_id=&amp;&amp;regfac_id</where>
+        <fields>
+            <field id="regfac_id" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="regfac_notes" type="VARCHAR" length="4000"/>
+            <field id="tblLU_FACILITIES" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

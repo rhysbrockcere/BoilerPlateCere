@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="TXT1" pageInfoTextReference="TXT2" pageTrailerTextReference="TXT3" nextPageTextReference="TXT4" prevPageTextReference="TXT5">
+    <pageContents>
+        <component ctrl="COMPONENT1" default="L" inheritMsg="true" outputType="0" pdfFooterText="LocalTXT6" pdfHeaderText="LocalTXT7" uid="0">
+            <groupPanel ctrl="GROUPPANEL1" groupHeaderText="LocalTXT22" groupInfoText="LocalTXT23" groupTrailerText="LocalTXT24" layoutType="@0" uid="1">
+                <text ctrl="TEXT1" text="LocalTXT149" uid="77"/>
+                <field buttonText="LocalTXT27" ctrl="FIELDCONTROL1" field="SEARCH_ADDRESS" uid="2"/>
+                <field buttonText="LocalTXT28" ctrl="FIELDCONTROL2" field="SEARCH_POSTCODE" uid="3"/>
+                <button buttonText="LocalTXT29" ctrl="BUTTON1" mouseOverText="LocalTXT30" newLine="false" onClickEvent="/Scripts/GL_ADDRESS_OS_SEARCH" uid="4"/>
+                <hyperlink ctrl="ADDRESS_LINK" hidden="true" onClickEvent="/Scripts/GL_ADDRESS_OS_NOT_LISTED" text="LocalTXT38" title="LocalTXT39" uid="56"/>
+                <field buttonText="LocalTXT48" ctrl="FIELDCONTROL3" field="ADDRESS_LIST" hidden="true" immedEvent="/Scripts/GL_ADDRESS_OS_SELECT" immediateValidation="true" uid="35"/>
+            </groupPanel>
+            <groupPanel ctrl="ADDR_GROUP" displayOnly="true" groupHeaderText="LocalTXT66" groupInfoText="LocalTXT67" groupTrailerText="LocalTXT68" hidden="true" layoutType="@0" uid="43">
+                <panel ctrl="PANEL1" style="display:none;" uid="71">
+                    <field buttonText="LocalTXT147" ctrl="FIELDCONTROL4" displayEditor="true" displayInfoText="false" displayLabelText="true" field="OS_UPRN" uid="70"/>
+                    <field buttonText="LocalTXT148" ctrl="FIELDCONTROL5" field="OS_ADMINISTRATIVE_AREA" uid="75"/>
+                </panel>
+                <field buttonText="LocalTXT59" ctrl="FOP_ADDR1" field="OS_ADDR1" uid="36"/>
+                <field buttonText="LocalTXT60" ctrl="FOP_ADDR2" field="OS_ADDR2" uid="37"/>
+                <field buttonText="LocalTXT61" ctrl="FOP_ADDR3" field="OS_ADDR3" uid="38"/>
+                <field buttonText="LocalTXT62" ctrl="FOP_ADDR4" field="OS_ADDR4" uid="39"/>
+                <field buttonText="LocalTXT63" ctrl="FOP_ADDR5" field="OS_ADDR5" uid="40"/>
+                <field buttonText="LocalTXT64" ctrl="FIELDCONTROL9" field="OS_COUNTRY" uid="41"/>
+                <field buttonText="LocalTXT65" ctrl="FIELDCONTROL10" field="OS_POSTCODE" uid="42"/>
+            </groupPanel>
+        </component>
+    </pageContents>
+</page>

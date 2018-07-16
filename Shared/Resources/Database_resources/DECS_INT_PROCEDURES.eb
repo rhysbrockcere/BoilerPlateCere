@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DECS_INT_PROCEDURES">
+        <columns>*</columns>
+        <from>DECS_Archives_RTL_TEST.dbo.Int_Procedures</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Bus_Proc_Employee" type="VARCHAR" length="10"/>
+            <field id="Bus_Proc_Neg" type="VARCHAR" length="10"/>
+            <field id="Bus_Proc_Neg_Comment" type="VARCHAR" length="1000"/>
+            <field id="Bus_Proc_Prob_Comment" type="VARCHAR" length="1000"/>
+            <field id="Bus_Proc_Problems" type="VARCHAR" length="10"/>
+            <field id="Bus_Proc_Sat" type="VARCHAR" length="10"/>
+            <field id="Bus_Proc_Sat_Comment" type="VARCHAR" length="1000"/>
+            <field id="Disposal_Reg_Comment" type="VARCHAR" length="1000"/>
+            <field id="Disposal_Register" type="VARCHAR" length="10"/>
+            <field id="Disposal_Register_Comment" type="VARCHAR" length="1000"/>
+            <field id="Disposal_Regular" type="VARCHAR" length="10"/>
+            <field id="Elec_Rec_Fail_Comment" type="VARCHAR" length="1000"/>
+            <field id="Elec_Rec_Failure" type="VARCHAR" length="10"/>
+            <field id="Elec_Rec_Shared" type="VARCHAR" length="1000"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Interview_ID" type="INTEGER" length="10"/>
+            <field id="Legislation" type="VARCHAR" length="10"/>
+            <field id="Legislation_Comment" type="VARCHAR" length="1000"/>
+            <field id="Section_Role" type="VARCHAR" length="1000"/>
+            <field id="Stakeholders" type="VARCHAR" length="1000"/>
+            <field id="Storage_Ext_Comment" type="VARCHAR" length="1000"/>
+            <field id="Storage_External" type="VARCHAR" length="10"/>
+            <field id="Storage_Sect_Comment" type="VARCHAR" length="1000"/>
+            <field id="Storage_Section" type="VARCHAR" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

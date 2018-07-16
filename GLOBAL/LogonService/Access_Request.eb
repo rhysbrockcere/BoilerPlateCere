@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <emailResource accountName="Exchange" from="&amp;&amp;User_Email" to="cs.ccm@ceredigion.gov.uk" bcc="georgee@ceredigion.gov.uk" subject="CLIC Access Request" html="true" id="Access_Request" dateCreated="2017-02-08T11:26:27.592Z">
+        <message>&lt;html&gt;&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+	&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+	&lt;style type="text/css"&gt;
+		&lt;!-- .ReadMsgBody {
+			width: 100%;
+		}
+
+		.ExternalClass {
+			width: 100%;
+		}
+
+		.ExternalClass * {
+			line-height: 110%
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		#maintable {
+			width: 650px;
+		}
+
+		@media screen and (max-width: 650px) {
+			body {
+				margin: 0 !important;
+			}
+			table[id=wrapper] {
+				width: 100%!important;
+				padding: 0px 0px !important;
+			}
+			table[id=wrapper] #maintable {
+				width: 100% !important;
+				max-width: 650px !important;
+				min-width: 320px !important;
+			}
+			table[id=wrapper] .show {
+				width: 100%;
+				display: block !important;
+			}
+			table[id=wrapper] .hide {
+				width: 0px !important;
+				display: none !important;
+			}
+		}
+
+    /* iOS and Android Tweek */
+    div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
+    a[x-apple-data-detectors] {color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important;}
+    /* iOS and Android Tweek */
+		--&gt;
+	&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body bgcolor="#f0f1eb" bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased; text-size-adjust: none; margin: 0px; padding: 0px;" cz-shortcut-listen="true"&gt;
+
+					&lt;table border="0" cellpadding="10" cellspacing="0" width="650" id="maintable" bgcolor="#FFFFFF" align="center"&gt;
+						&lt;tbody&gt;
+							&lt;tr&gt;
+							  &lt;td class="hide" bgcolor="#efe809"&gt; 
+							  &lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td width="600" height="20" class="hide"&gt;
+                                	&lt;div style="color:#555555;line-height:120%;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size:14px; padding:10px;"&gt;
+                                        &lt;p&gt;Action:&lt;strong&gt; &amp;&amp;ACTION&lt;/strong&gt;&lt;/p&gt;
+                                        &lt;p&gt;Category:&lt;strong&gt; &amp;&amp;CATEGORY &lt;/strong&gt;&lt;/p&gt;
+                                        &lt;p&gt;Team:&lt;strong&gt; &amp;&amp;TEAM &lt;/strong&gt;&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/td&gt;
+							&lt;/tr&gt;
+							
+						&lt;/tbody&gt;
+					&lt;/table&gt;     
+&lt;/body&gt;
+&lt;/html&gt;</message>
+        <fields>
+            <field id="ACTION"/>
+            <field id="CATEGORY"/>
+            <field id="TEAM"/>
+            <field id="User_Email"/>
+        </fields>
+    </emailResource>
+</ebase>

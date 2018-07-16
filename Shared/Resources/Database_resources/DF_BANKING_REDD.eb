@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="DF_BANKING_REDD">
+        <columns>SUM(Cash) AS REDD</columns>
+        <from>DF_Direct_Banking_TEST.dbo.Banking</from>
+        <where>AccRef like '7%' and Text2 not like '% DWP %' and (Text3 like '%CEREDIGION C852521%' or Text3 = '&quot;DDR&quot;')</where>
+        <fields>
+            <field id="REDD" type="DECIMAL" length="18" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

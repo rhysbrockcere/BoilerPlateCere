@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="FCW_COURSE_DATE_MAX">
+        <columns>MAX(Course_Date_ID) as Course_Date_ID</columns>
+        <from>FCW_CRM_Test.dbo.Tbl_Course_Date</from>
+        <fields>
+            <field id="Course_Date_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

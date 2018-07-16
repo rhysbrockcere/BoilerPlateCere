@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CE_STARTER">
+        <columns>*</columns>
+        <from>CE_Personnel_TEST.dbo.CE_Starter</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Cost_Code" length="10"/>
+            <field id="Expiry_Date" type="TIMESTAMP" length="16"/>
+            <field id="Firstname" type="VARCHAR" length="500"/>
+            <field id="Per_Gender" length="1"/>
+            <field id="Per_Mar_Sta" length="2"/>
+            <field id="Per_Nationality" length="1"/>
+            <field id="Per_No" length="10"/>
+            <field id="Per_Title" length="10"/>
+            <field id="Per_Username" type="VARCHAR" length="50"/>
+            <field id="Per_Welsh" length="1"/>
+            <field id="Politically" length="1"/>
+            <field id="Post" type="VARCHAR" length="50"/>
+            <field id="Post_Ref" length="15"/>
+            <field id="Post_Variation" type="VARCHAR" length="50"/>
+            <field id="Pri_CRB_Check" length="1"/>
+            <field id="Pri_Work_Address_2" type="VARCHAR" length="50"/>
+            <field id="Pri_Work_Address_3" type="VARCHAR" length="50"/>
+            <field id="Pri_Work_Address_4" type="VARCHAR" length="50"/>
+            <field id="Pri_Work_Postcode" type="VARCHAR" length="50"/>
+            <field id="Reason_Code" length="2"/>
+            <field id="Spinal_Point" length="10"/>
+            <field id="Starter_ID" type="INTEGER" length="10"/>
+            <field id="Surname" type="VARCHAR" length="500"/>
+            <field id="Temp_From" type="TIMESTAMP" length="16"/>
+            <field id="Temp_To" type="TIMESTAMP" length="16"/>
+            <field id="Terms" type="VARCHAR" length="500"/>
+            <field id="Type_Starter" length="2"/>
+            <field id="Username" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="Work_Address_1" type="VARCHAR" length="20"/>
+            <field id="Work_Address_2" type="VARCHAR" length="50"/>
+            <field id="Work_Address_3" type="VARCHAR" length="50"/>
+            <field id="Work_Address_4" type="VARCHAR" length="50"/>
+            <field id="Work_Permit" length="1"/>
+            <field id="Work_Postcode" type="VARCHAR" length="50"/>
+            <field id="Date_Attachment" type="TIMESTAMP" length="16"/>
+            <field id="Grade" length="10"/>
+            <field id="Pri_CRB_Type" length="1"/>
+            <field id="App_ID" type="BIGINT" length="8"/>
+            <field id="CRB_Check" length="1"/>
+            <field id="CRB_Type" length="1"/>
+            <field id="Car" length="1"/>
+            <field id="Contract_Type_1" length="1"/>
+            <field id="Contract_Type_2" length="1"/>
+            <field id="Date_Commencement" type="TIMESTAMP" length="16"/>
+            <field id="Date_Submit" type="TIMESTAMP" length="16"/>
+            <field id="Driving" length="1"/>
+            <field id="Hours" length="10"/>
+            <field id="Lang" length="1"/>
+            <field id="Max_Point" length="10"/>
+            <field id="NP_Pay" length="1"/>
+            <field id="Per_DOB" type="TIMESTAMP" length="16"/>
+            <field id="Per_Date_Delphi" type="TIMESTAMP" length="16"/>
+            <field id="Per_Date_Notification" type="TIMESTAMP" length="16"/>
+            <field id="Per_Disabled" length="1"/>
+            <field id="Per_Ethnic_Origin" length="2"/>
+            <field id="Pri_Cost_Code" length="10"/>
+            <field id="Pri_Grade" length="10"/>
+            <field id="Pri_Hours" length="10"/>
+            <field id="Pri_Max_Point" length="10"/>
+            <field id="Pri_Politically" length="1"/>
+            <field id="Pri_Post_Ref" length="15"/>
+            <field id="Pri_Spinal_Point" length="10"/>
+            <field id="Pri_Car" length="1"/>
+            <field id="Pri_Work_Address_1" type="VARCHAR" length="20"/>
+        </fields>
+    </dbResource>
+</ebase>

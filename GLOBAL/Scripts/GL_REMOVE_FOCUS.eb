@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_REMOVE_FOCUS" dateImported="2013-05-22T10:59:47.543+01:00">
+        <scriptText>setfocus $NULL;</scriptText>
+    </script>
+</ebase>

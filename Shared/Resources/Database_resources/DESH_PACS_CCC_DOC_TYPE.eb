@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Planning Application Search" database="SQLE648S1" preparedStatement="false" id="DESH_PACS_CCC_DOC_TYPE">
+        <columns>*</columns>
+        <from>PacsData.dbo.CCC_DocType</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="DocType" type="VARCHAR" length="50"/>
+            <field id="DocType_CY" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

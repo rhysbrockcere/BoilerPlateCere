@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CORP_SS_MANAGER_EMAILS">
+        <columns>*</columns>
+        <from>Absence_Update.dbo.Manager_Emails</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Email" type="VARCHAR" length="4000" readOnly="true"/>
+            <field id="M_Email" type="VARCHAR" length="4000" readOnly="true"/>
+            <field id="M_Username" type="VARCHAR" length="4000" readOnly="true"/>
+            <field id="PersonID" type="INTEGER" length="10"/>
+            <field id="Username" type="VARCHAR" length="4000" readOnly="true"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="FCW_ADDRESS_VW">
+        <columns>*</columns>
+        <from>FCW_CRM_Test.dbo.VW_Address_list</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Address" type="VARCHAR" length="266" readOnly="true"/>
+            <field id="Address_ID" type="INTEGER" length="10"/>
+            <field id="Archive" length="1"/>
+            <field id="County" type="VARCHAR" length="50"/>
+            <field id="House" type="VARCHAR" length="50"/>
+            <field id="Postcode" type="VARCHAR" length="10"/>
+            <field id="Street" type="VARCHAR" length="50"/>
+            <field id="Town" type="VARCHAR" length="50"/>
+            <field id="Village" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

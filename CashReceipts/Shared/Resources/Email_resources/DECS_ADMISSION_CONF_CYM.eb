@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource accountName="Exchange" from="&amp;&amp;COUNTY_EMAIL_WELSH" to="dafydd.morgan@ceredigion.gov.uk; Alun.Morgan@ceredigion.gov.uk; jackie.sinnett-jones@ceredigion.gov.uk; Cheryl.Evans@ceredigion.gov.uk" subject="Cadarnhad am gais" critical="true" html="true" id="DECS_ADMISSION_CONF_CYM">
+        <message>SEND EMAIL TO &amp;&amp;EMAIL_SENT_TO
+&lt;br&gt;Cadarnhad trwy E-bost.
+&lt;br&gt;
+&lt;br&gt;Rhif Cais &amp;&amp;MAX_ADMISSION_ID
+&lt;br&gt;Dyddiad &amp;&amp;DATE_RECEIVED
+&lt;br&gt; 
+&lt;br&gt;Mae’ch cais wedi dod i law a dyma grynhoi’r manylion isod.
+&lt;br&gt;
+&lt;br&gt;Rydych wedi gwneud cais am le i’ch plentyn &amp;&amp;PUPIL_NAME &amp;&amp;PUPIL_SURNAME, dyddiad geni &amp;&amp;PUPIL_DOB yn 
+&lt;br&gt;
+&lt;br&gt;&amp;&amp;SCHOOL_CHOICES
+&lt;br&gt;&amp;&amp;EMAIL_TEXT2
+&lt;br&gt;&amp;&amp;EMAIL_TEXT1
+&lt;br&gt;Caiff penderfyniad ei anfon cyn gynted ag y bydd y Tîm Derbyniadau wedi prosesu’r cais.  Bydd hyn yn dilyn amserlen a amlygwyd yn y &lt;a href ="&amp;&amp;COUNTY_WEB_WELSH" target="_blank"&gt;Llawlyfr Gwybodaeth i Rieni&lt;/a&gt;. 
+&lt;br&gt;&amp;&amp;EMAIL_TEXT3_CYM
+&lt;br&gt;
+&lt;br&gt;Cyfrifoldeb y rhiant/gwarcheidwad yw rhoi gwybod i'r Tîm Derbyniadau o unrhyw newidiadau i'r cais hwn. Gallwch gysylltu â ni ar &amp;&amp;COUNTY_TEL neu trwy e-bost ar 
+&lt;a href="mailto: &amp;&amp;COUNTY_EMAIL_WELSH"&gt;&amp;&amp;COUNTY_EMAIL_WELSH&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;Ni fydd unrhyw gyfrifoldeb yn cael ei gymryd ar gyfer leoedd a broseswyd neu a gynigir yn anghywir ac yna eu tynnu'n ôl o ganlyniad i fanylion anghywir  ar y ffurflen gais.
+&lt;br&gt;
+&lt;br&gt;Y Tîm Derbyniadau
+&lt;br&gt;
+&lt;br&gt;&amp;&amp;COUNTY_TEL
+</message>
+        <fields>
+            <field id="COUNTY_EMAIL_WELSH"/>
+            <field id="COUNTY_TEL"/>
+            <field id="COUNTY_WEB_WELSH"/>
+            <field id="DATE_RECEIVED"/>
+            <field id="EMAIL_SENT_TO"/>
+            <field id="EMAIL_TEXT1"/>
+            <field id="EMAIL_TEXT2"/>
+            <field id="FOP_LOOKED_AFTER_COUNTY"/>
+            <field id="MAX_ADMISSION_ID"/>
+            <field id="PUPIL_DOB"/>
+            <field id="PUPIL_FIRSTNAME"/>
+            <field id="PUPIL_NAME"/>
+            <field id="PUPIL_SURNAME"/>
+            <field id="SCHOOL_CHOICES"/>
+            <field id="EMAIL_TEXT3_CYM"/>
+        </fields>
+    </emailResource>
+</ebase>

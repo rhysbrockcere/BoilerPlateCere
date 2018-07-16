@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="DSS_FP_FACTORS_TBL">
+        <columns>*</columns>
+        <from>DSS_Foster_Portal_Test.dbo.Factors</from>
+        <fields>
+            <field id="Factor" type="VARCHAR" length="150"/>
+            <field id="Factor_Code" type="VARCHAR" length="50"/>
+            <field id="Factor_Question_1" type="VARCHAR" length="500"/>
+            <field id="Factor_Question_2" type="VARCHAR" length="500"/>
+        </fields>
+    </dbResource>
+</ebase>

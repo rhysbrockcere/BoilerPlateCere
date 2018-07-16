@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="IT_PHONEBOOK_DEPARTMENT">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_Phonebook_Department</from>
+        <fields>
+            <field id="DepartmentName" type="VARCHAR" length="100"/>
+            <field id="Department_ID" type="VARCHAR" length="10"/>
+            <field id="EnwAdran" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

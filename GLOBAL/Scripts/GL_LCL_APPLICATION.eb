@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_LCL_APPLICATION" dateCreated="2012-12-12T12:29:50.463Z" dateImported="2016-09-06T15:35:54.443+01:00">
+        <scriptText>// Used to validtae if the system is locked out in the IT_LOCKED_SYSEM table
+// Used to validate users IN IT_APPLICTION_USER table 
+// Used in component CMP_LOGIN
+
+set FOP_APP_FOUND = 'N';
+
+set WHERE_CLAUSE = 'Username = \'' + USERNAME + '\'';
+
+fetch LCL_APPLICATION_USER;
+set FOP_APP_FOUND=$FOUND;
+
+if [FOP_APP_FOUND = 'N']
+
+	set ACCESS_TIME = $SYSTEM_DATETIME;
+	set ACCESS_DETAILS = 'Incorrect Permissions';
+	insert LCL_ACCESS_LOG;
+	message E,100010;
+
+endif</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webFormComponent exportVersion="1" type="MULTI_PAGE" template="/Presentation/Presentation_Templates/EBASE_THEMES" firstPage="RECEIPT" preferredScriptFolder="/Scripts" id="CMP_PAYMENT_FULL" dateCreated="2016-01-18T10:58:57.303Z">
+        <linkedTexts>
+            <linkedText>/GLOBAL_Messages</linkedText>
+            <linkedText>/Shared_Texts</linkedText>
+        </linkedTexts>
+        <resources>
+            <resource name="CCC_PORTAL_PAYMENT" path="/Resources/Database_resources/CCC_PORTAL_PAYMENT"/>
+            <resource name="CCC_PORTAL_STATUS" path="/Resources/Database_resources/CCC_PORTAL_STATUS"/>
+            <resource name="EPAY_TEST" path="/Resources/SOAP_Web_Service_Resources/EPAY_TEST"/>
+            <resource name="EPAYMENT" path="/Resources/XML_Resources/EPAYMENT"/>
+            <resource name="PAY_IT" path="/Resources/SOAP_Web_Service_Resources/PAY_IT"/>
+            <resource name="PAYRES" path="/Resources/XML_Resources/PAYRES"/>
+        </resources>
+    </webFormComponent>
+</ebase>

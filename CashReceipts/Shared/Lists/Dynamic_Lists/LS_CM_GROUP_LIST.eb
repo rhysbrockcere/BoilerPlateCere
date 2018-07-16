@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CERESQLS1_PLUS2" id="LS_CM_GROUP_LIST" dateImported="2014-09-11T15:26:29.670+01:00">
+        <columns>ID as ActivityGroupID</columns>
+        <from>CER_Members.dbo.ActivityGroups</from>
+        <additional>order by ID</additional>
+        <fields>
+            <field id="ActivityGroupID" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

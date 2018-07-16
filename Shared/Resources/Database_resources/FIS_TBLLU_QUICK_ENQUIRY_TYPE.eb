@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_QUICK_ENQUIRY_TYPE">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_QUICK_ENQUIRY_TYPE</from>
+        <fields>
+            <field id="qet_desc" type="VARCHAR" length="100"/>
+            <field id="qet_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="qet_not_active" type="BIT" length="1"/>
+            <field id="qet_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="qet_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

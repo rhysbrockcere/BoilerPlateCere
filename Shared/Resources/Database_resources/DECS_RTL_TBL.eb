@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="DECS_RTL_TBL">
+        <columns>top (500) *</columns>
+        <from>DECS_Archives_RTL_TEST.dbo.RTL_List</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by ID</additional>
+        <fields>
+            <field id="Action" type="VARCHAR" length="20"/>
+            <field id="Bay" type="VARCHAR" length="20"/>
+            <field id="Box" type="VARCHAR" length="20"/>
+            <field id="Date entered" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Department" type="VARCHAR" length="50"/>
+            <field id="Description" type="VARCHAR" length="255"/>
+            <field id="First Date" type="VARCHAR" length="10"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Last Date" type="VARCHAR" length="10"/>
+            <field id="Reference No" type="VARCHAR" length="50"/>
+            <field id="Relevant Date" type="VARCHAR" length="50"/>
+            <field id="Room" type="VARCHAR" length="20"/>
+            <field id="SW" type="VARCHAR" length="50"/>
+            <field id="Shelf" type="VARCHAR" length="20"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

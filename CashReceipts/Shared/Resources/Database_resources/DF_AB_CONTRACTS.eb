@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="DF_AB_CONTRACTS">
+        <columns>*</columns>
+        <from>Absence_Dev.dbo.Delphi_Contracts
+</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ContractNo" type="VARCHAR" length="50"/>
+            <field id="PayrollID" type="INTEGER" length="10"/>
+            <field id="PersonID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="PayrollNo" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

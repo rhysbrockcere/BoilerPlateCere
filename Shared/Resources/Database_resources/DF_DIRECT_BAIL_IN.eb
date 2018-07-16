@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="DF_DIRECT_BAIL_IN">
+        <columns>*</columns>
+        <from>DF_Direct_Banking_TEST.dbo.DF_Direct_Bail_IN</from>
+        <fields>
+            <field id="Ref No#" type="VARCHAR" length="255"/>
+            <field id="Client Ref#" type="VARCHAR" length="255"/>
+            <field id="Case No#" type="VARCHAR" length="255"/>
+            <field id="Name" type="VARCHAR" length="255"/>
+            <field id="Address" type="VARCHAR" length="255"/>
+            <field id="Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Rec#" type="VARCHAR" length="255"/>
+            <field id="Client" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Direct" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Bail#" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Client O/S" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Uncl# Cq#" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Method" type="VARCHAR" length="255"/>
+            <field id="DB_Date" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

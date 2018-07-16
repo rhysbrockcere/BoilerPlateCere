@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Audit - all health visits" database="SQLE645S1" preparedStatement="false" id="FS_AUD_HEALTH_VISIT">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Aud_Health_Visit</from>
+        <fields>
+            <field id="Bookstart" type="INTEGER" length="10"/>
+            <field id="Breastfeeding_Ind" type="INTEGER" length="1"/>
+            <field id="Child_FS_ID" type="INTEGER" length="10"/>
+            <field id="Created_by" type="VARCHAR" length="20"/>
+            <field id="First_Visit" length="1"/>
+            <field id="Input_date" type="TIMESTAMP" length="16"/>
+            <field id="Joint_Visit" type="VARCHAR" length="1"/>
+            <field id="Lang" type="VARCHAR" length="50"/>
+            <field id="Location" type="VARCHAR" length="15"/>
+            <field id="Note_ID" type="INTEGER" length="10"/>
+            <field id="Operator_ID" type="VARCHAR" length="20"/>
+            <field id="Prof_type" type="VARCHAR" length="50"/>
+            <field id="Risk_level" type="VARCHAR" length="6"/>
+            <field id="Staff_ID" type="VARCHAR" length="20"/>
+            <field id="Transaction_type" type="VARCHAR" length="10"/>
+            <field id="Visit_Date" type="TIMESTAMP" length="16"/>
+            <field id="Visit_ID" type="INTEGER" length="10" key="true"/>
+            <field id="Visit_Parent" type="VARCHAR" length="50"/>
+            <field id="Visit_Type" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

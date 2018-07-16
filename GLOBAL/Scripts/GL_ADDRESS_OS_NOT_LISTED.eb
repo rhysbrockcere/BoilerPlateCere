@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_ADDRESS_CERE" preferredComponentProject="GLOBAL" id="GL_ADDRESS_OS_NOT_LISTED" dateImported="2016-07-12T11:20:27.083+01:00">
+        <scriptText>show ADDR_GROUP;
+show OS_ADDR1;
+show OS_ADDR2;
+show OS_ADDR3;
+show OS_ADDR4;
+hide OS_ADDR5;
+hide OS_COUNTRY;
+unset ADDR_GROUP DISPLAYONLY;
+set OS_ADDR1 = '';
+set OS_ADDR2 = '';
+set OS_ADDR3 = '';
+set OS_ADDR4 = '';
+set OS_ADDR5 = '';
+set OS_COUNTRY = '';
+set OS_POSTCODE = '';</scriptText>
+    </script>
+</ebase>

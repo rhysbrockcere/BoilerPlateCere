@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DHPWSQL" id="DHPW_PL_TEST">
+        <columns>*</columns>
+        <from>DHPW_PL_TEST</from>
+        <fields>
+            <field id="AGENT" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="APPLICANT" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="APPLICATION_NUMBER" type="VARCHAR" length="8" fractionalDigits="2"/>
+            <field id="APPLICATION_TYPE" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="DATE_RECEIVED" type="DATE" length="10" fractionalDigits="2"/>
+            <field id="DESCRIPTION" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="DESH_PLANNING_OFFICER" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="DHPW_CASE_OFFICER" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="GRID_REFERRENCE" type="VARCHAR" length="14" fractionalDigits="2"/>
+            <field id="LOCATION" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="REFERRED_FROM" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="SELECT_APPL_NUM" type="VARCHAR" length="255" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

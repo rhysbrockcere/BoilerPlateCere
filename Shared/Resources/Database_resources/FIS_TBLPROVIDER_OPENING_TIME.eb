@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLPROVIDER_OPENING_TIME">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblPROVIDER_OPENING_TIME</from>
+        <where>pot_id=&amp;&amp;pot_id</where>
+        <fields>
+            <field id="pot_id" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="pot_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="pot_upd_user" type="VARCHAR" length="128"/>
+            <field id="tblLU_OPENING_TIME" type="INTEGER" length="10"/>
+            <field id="tblPROVIDER" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

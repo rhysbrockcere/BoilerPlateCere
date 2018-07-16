@@ -1,0 +1,2068 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	/*
+	line-height: 1;
+	*/
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*****  CSS for mobile devices ********/
+
+@media only screen and (max-width : 480px) {
+
+	#hWrapper{
+		width: 83%;
+	}
+
+	#Wrapper{
+		width: 84%;
+	}
+
+}
+
+/****************************************/
+
+html, body {
+	height: 100%
+}
+
+body {
+	font-family: "PT Sans" !important;
+	background: #EEEEEE;
+}
+
+.wrapper {
+	min-height:90vh;
+	/*min-height:100%;*/
+	background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 940px;
+/* 
+The overflow-y:hidden could cause dropdowns to be chopped off at the bottom of the page, however I am hoping that all pages
+*/
+	overflow-y: hidden;
+	position:relative;
+
+}
+
+.spFloatRight {
+	float:right;
+	width:63%;
+	clear:none;
+}
+
+.spFloatLeft {
+	float:left;
+	width:34%;
+	clear:none;
+	border-right: 1px solid #ccc
+}
+
+.panelLeft {
+	float:left;
+}
+
+.panelRight {
+	float:right;
+}
+
+.pnlNestedDetail {
+	margin-bottom:5px;
+	padding: 5px 0px;
+	width:100%;
+}
+
+.pnlNestedDetail .spLabelCell {
+	text-align: left;
+	/*color: #616D7A;*/
+	font-weight: bold;
+}
+
+.pnlNestedDetail .spLabel {
+	padding-left:10px;
+}
+
+.pnlNestedDetail table {
+	width:100%
+}
+
+.flexWrap {
+	display: flex !important;
+    margin-bottom: 10px;
+    width: 100%;
+	flex-wrap:wrap;
+}
+
+.flex {
+    height: 100%;
+    padding: 0px 10px 10px 0px;
+    /*width:30%;
+	min-width:250px;*/
+	flex-shrink:0;
+	margin-top:10px;
+}
+
+.contentPane, .contentPaneBorder, .contentPaneThickBorder {
+	background-color: #f7f7f7;
+    border-radius: 6px;
+    padding:10px;
+    transition: background 0.25s ease-in-out 0s;
+	display:block !important;
+	margin-bottom:10px;
+}
+
+.contentPaneBorder {
+	border: 1px dotted #404040;
+}
+
+.contentPaneThickBorder {
+	box-shadow: 0px 0px 5px #999;
+	border:medium #ccc solid;
+}
+
+.spacer-small {
+	height:5px;
+	display:block !important;
+}
+
+.spacer-medium {
+	height:10px;
+	display:block !important;
+}
+
+.spacer-large {
+	height:20px;
+	display:block !important;
+}
+
+.spGroupHeader
+{
+	color: rgb(59, 130, 184) !important;
+	font-size: 18pt;
+	font-weight: bold;
+	padding: 10px 0px;
+}
+
+.spGroupHeader_Small
+{
+	display:block;
+	color: #333;
+	font-size: 12pt;
+	font-weight: bold;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom:20px;
+}
+
+.spGroupBorder {
+	clear:left;
+}
+
+.panel {
+	padding:10px 0px 0px 0px;
+	width:100%
+}
+
+.spGroupContent div, .spTitlePanelContent div, .spPanel div {
+	clear: left;
+	float: left;
+	/*
+	margin-bottom: 5px;
+	*/
+	width:100%;
+}
+
+.spGroupContent-Inline {
+
+}
+
+.spGroupContent > div, .spPanel > div {
+	/*
+	margin-bottom: 10px
+	*/
+}
+
+.spGroupContent > div > div > div > div {
+	margin-bottom:3px
+} 
+
+.eb-LAYOUT {
+	margin-bottom:10px !important;
+}
+
+.spLabel {
+	/*color: #555;*/
+	/*position:absolute;*/
+}
+
+.spLabel-inline {
+	color: #555;
+	min-width: 190px;
+	text-align:right;
+}
+
+.spField-inline {
+
+}
+
+.sameLine {
+	clear: none;
+}
+
+.spPanel
+{
+	clear: left;
+	float: left;
+}
+
+.breadcrumb {
+	width: 100%;
+	margin:-10px 0px 10px 0px;
+}
+
+.quoteBlock, .quoteIndent {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 0 20px 10px;
+    border-left: 5px solid #750CE8;
+/*   
+	-webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+*/
+}
+
+.quoteIndent {
+    border-left: 5px solid #E8890C;
+	margin-left:40px;
+}
+
+.spFormHeader
+{
+	background-color: #3B82B8;
+	color: #FFFFFF !important;
+	font-size: 26pt;
+	font-weight: normal;
+	margin: 0 auto;
+	padding: 5px 10px;
+	text-align: center;
+	max-width: 940px;
+}
+
+.spTabHeader ul li {
+	padding: 0 5px 0 0; 
+}
+
+.spTabHeader ul li span {
+    color: #FFFFFF;
+    margin: 0;
+    padding: 9px 30px;
+}
+
+.spTabHeader ul li:hover {
+   
+}
+
+.spTabContents {
+	border: none !important;
+	padding:10px;
+	width:98% !important;
+}
+
+.spTabContents div {
+    clear: both;
+    float: left;
+}
+
+/* Compact Tabset */
+.spTabHeaderCompact ul li {
+	margin: 0 2px 2px 0;
+	border: 1px solid #000;
+}
+
+.spTabHeaderCompact ul li span:hover {
+	color: #fff !important;
+}
+
+.spTabHeaderCompact ul li span {
+   /* color: #FFFFFF; */
+    margin: 0;
+    padding: 5px 15px 5px 7px;
+}
+
+.spTabHeaderCompact ul li:hover {
+   
+}
+/*************************/
+
+.spTabStyle {
+	border: none;
+}
+
+div[class*="-TabPanelSurround"]
+{
+	background-color: #FFFFFF;
+	/*overflow: hidden;
+	padding: 18px;*/
+	border: 1px solid #285F79 !important;
+}
+
+div[class*="-TabPanelSurround"] div > div
+{
+	/*margin-bottom: 6px;*/
+}
+
+td #eb_top {
+	height: 110px;
+	background-color:#000;
+}
+
+/**** JQuery Styling Override ****/
+
+.ui-autocomplete-loading {
+        background: white url('shared/images/ui-anim_basic_16x16.gif') right center no-repeat;
+}
+
+.ui-buttonset table {
+	height:0px;
+}
+
+.ui-widget{
+	font:inherit;
+}
+
+.ui-autocomplete {
+		max-height: 300px;
+		width: 300px;
+		overflow-y: auto;
+		/* prevent horizontal scrollbar */
+		overflow-x: hidden;
+		/* add padding to account for vertical scrollbar */
+		padding-right: 20px;
+}
+
+.ui-datepicker-trigger {
+	border:0px;
+	cursor:pointer;
+    padding: 0px 0px 0px 5px;
+    position: absolute;
+}
+
+span .ui-widget, .ui-datepicker-month, .ui-datepicker-year, .ui-datepicker  {
+	font-family: "PT Sans" !important;
+	font-size: 12pt !important;
+	line-height: 1.2em;
+}
+
+select .ui-datepicker-year {
+	background-color: #000;
+}
+
+.ui-datepicker  {
+	z-index:500 !important;
+}
+
+/*div .ui-widget input {
+	font-family: "PT Sans" !important;
+}
+*/
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: "PT Sans" !important;
+	font-size: 10pt;
+}
+
+.ui-spinner {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #FFFFFF inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+    outline: 0 none;
+}
+
+.ui-spinner-active {
+	 border-color: 1px solid #CB8916;
+}
+
+.ui-spinner-input {
+	background-color: #E8EEEF;
+	box-shadow:none;
+	margin:0px;
+	padding:6px;
+}
+
+/*
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background:none;
+	border:none;
+}
+*/
+
+/**************************************/
+
+.spInputStyle table tr td {
+    height: 31px;
+}
+
+.eb-17-EditorInput {
+    font-weight: normal;
+}
+
+.spFieldStyle input, .spFieldStyle label {
+    margin-right: 10px;
+}
+
+.spEditorCell-inline {
+	padding-left:20px;
+}
+
+.spFieldGridTable {
+
+}
+.spFieldLabelCell {
+
+}
+.spFieldEditorCell {
+	left:250px;
+}
+.spFieldHelpCell  {
+
+}
+
+/* Stop IOS styling buttons etc. */
+
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+	-webkit-appearance: none;
+	border-radius: 0px;
+}
+
+/********************/
+
+input, select {
+	font-family: "PT Sans" !important;
+	background-color: #E8EEEF;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	/* 
+	line-height: 1.2em;
+	*/
+	outline: 0 none;
+	padding: 6px;
+
+} 
+
+option {
+    font-family: "PT Sans" !important;
+}
+
+textarea {
+	font-family: "PT Sans" !important;
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+	font-family: "PT Sans";
+	outline: 0 none;
+	padding: 4px 7px;
+/*	width: 552px;*/
+}
+
+.textControl {
+	font-size: 1em !important;
+}
+
+strong {
+	font-weight: bold;
+}
+
+select:-ms-expand {
+	display: none;
+}
+
+/*
+select {	
+	font-family: "PT Sans" !important;
+	-webkit-appearance: none;  
+    -moz-appearance: none;  
+	
+	background: url("images/blue/dropdown.png")#E8EEEF no-repeat;
+	background-position: 95% 55%;
+    min-width: 120px;
+	text-indent: 0.01px;
+	text-overflow: "";
+	padding: 6px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+}
+*/
+
+#progressbar {
+	margin-bottom:5px;
+}
+
+.progress-label {
+    margin-top: 7px;
+    position: absolute;
+    color: white;
+    padding-left: 10px;
+	width:300px !important;
+}
+
+input[type=image] {
+	border:none;
+	background:none;
+}
+
+input[type=radio] {
+	border:none;
+	background:none;
+}
+
+input[type="checkbox"] {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+}
+
+input[type="text"] {
+	min-width: 100px;
+}
+
+input:focus, textarea:focus, select:focus {  
+     border-color: #CB8916;
+}
+
+div .spHelpStyle {
+	display:none !important;
+} 
+
+.ui-buttonset table {
+	height:0px;
+}
+
+.ebPanelDEFAULT table {
+	height:0px;
+}
+
+.button
+{
+	background-color: rgba(255, 204, 51, 1);
+	border: 1px solid #CB8916;
+	padding: 7px 22px;
+	font-weight:bold;
+}
+
+.fixedWidth
+{
+	width:150px;
+}
+
+.btnTogglePanel {
+	float:right;
+}
+
+.btnToggleNestedTable {
+	float:left;
+	margin-top:3px;
+}
+
+.button:hover {
+	background-color: #F2B749;
+	border-color: #885C0B !important;
+}
+
+.smallButton
+{
+	background-color: #555555;
+	color: #fff; 
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	border:none;
+	font-size:1em;
+	min-width:0px;
+}
+
+.smallButton:hover {
+	background:#bbbbbb;
+	color: #555555;
+}
+
+.smallText {
+	color: #666666;
+	font-size: 0.8em;
+	margin: 18px 0 0 !importnant;
+	text-align: left;
+}
+
+.warningText {
+	color: #FF0000;
+	font-weight:bold;
+}
+
+span#dateTime {
+	color: #666666;
+    font-weight: bold;
+    letter-spacing: 2px;
+	margin:0px;
+}
+
+a:link
+{
+	color: #0072BC;
+}
+
+.spHyperlink
+{
+	color: #0072BC;
+	text-decoration:underline;
+}
+
+table a:visited
+{
+	color: #b10069;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+/* Headings */
+
+h1 {
+	font-family:"PT Sans";
+	font-size: 20pt;
+	color:#616D7A;
+	font-style:normal;
+	font-weight:normal;
+}
+
+h2 {
+	font-family:"PT Sans";
+	font-size: 18pt;
+	/*color:#616D7A;*/
+	color:#3b82b8;
+	font-style:normal;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+h3 {
+	font-family:"PT Sans";
+	font-size: 16pt;
+	color:#616D7A;
+	font-style:normal;
+	font-weight:normal;
+}
+
+h4 {
+	font-family:"PT Sans";
+	font-size: 14pt;
+	color:#616D7A;
+	font-style:normal;
+	font-weight:bold;
+	padding:0px 0px 10px 0px;
+}
+
+h5 {
+	font-family:"PT Sans";
+	font-size: 12pt;
+	color:#616D7A;
+	font-style:normal;
+	font-weight:bold;
+	padding:0px 0px 5px 0px;
+}
+
+ol, ul {
+	list-style: disc inside none;
+	padding: 5px;
+}
+
+li {
+	padding: 0px 0px 10px 0px;
+}
+
+.infoText, .warningText, .errorText {
+
+}
+
+.infoText {
+	color: #00529B;
+}
+
+.warningText {
+	color: #9F6000;	
+}
+
+.errorText {
+	color: #A52A2A;
+}
+ 
+
+.spBox{
+	background-color: #fff;
+	color: #000;
+	background-image: none;
+}
+
+.ui-autocomplete-loading {
+        background: white url('shared/images/ui-anim_basic_16x16.gif') right center no-repeat;
+}
+
+span .ui-widget, .ui-datepicker-month, .ui-datepicker-year, .ui-datepicker  {
+	font-size: 12pt !important;
+	line-height: 1.2em;
+}
+
+select .ui-datepicker-year {
+	background-color: #000;
+}
+
+/*
+div .ui-widget input {
+	font-family: "PT Sans" !important;
+	font-size: 12pt !important;
+	line-height: 1.2em;
+}
+*/
+.ui-autocomplete {
+	max-height: 300px;
+	width: 400px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+}
+
+/**** Field Grid Styling ******/
+
+.spFieldGridTable {
+	border:solid #336699 0px;
+	border-collapse:collapse;
+	width:100%;
+	margin:0;
+}
+
+.spFieldLabelCell {
+	text-align:left;
+	vertical-align:top;
+	padding-bottom:10px;
+	width: 25%;
+}
+
+.spFieldLabelCell span {
+	text-align:left;
+}
+
+.spFieldEditorCell {
+	background-color:none;
+	text-align:left;
+	vertical-align:top;
+	padding-bottom:10px;
+}
+
+.spFieldEditorCell span {
+/*	vertical-align:top;*/
+}
+
+.spFieldHelpCell {
+	background-color:#FFFFFF;
+	text-align:left;
+	vertical-align:top;
+	padding:0px;
+}
+
+.spEditorCell {
+	/*vertical-align:top;*/
+}
+
+/**** Title Panel Style *******/
+
+.spTitlePanelContent {
+
+}
+
+.titlePanel  {
+    width: 100%;
+    margin: 0px 0px -10px -8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    display: block;
+}
+
+.titleText {
+    color: rgb(59, 130, 184) !important;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.titlePanelTitlebar {
+	padding:10px 0px;
+}
+
+/*
+.spTitlePanelContent input, .spTitlePanelContent textarea {
+    background-color: #FFFFFF;
+}
+*/
+.spTitlePanelContent {
+	
+}
+
+/***** Table Styling *******/
+
+.spRepeaterRow {
+	width:99% !important;
+	margin: 0px 5px;
+	border-bottom: 1px dashed #555;
+}
+
+.spTableRowData {
+	/*background-color: #ccc;*/
+}
+
+.spSelectColumn {
+	
+}
+
+.spTableRowInfo td div {
+	width: 20px;
+}
+
+.spTableRowInfo td a {
+	width: 20px;
+}
+
+.spTablePageNum {
+	background-color: #BBBBBB;
+	color: #FFFFFF;
+    padding: 6px 8px 8px 6px;
+	text-decoration: none;
+	float:none !important;
+	display:block;
+    margin: 0;
+}
+
+.spTableCurrentPageNum {
+	color: #FFFFFF;
+	background-color: #629AC5;
+	padding: 6px 8px 8px 6px;
+	text-decoration: none;
+	float:none !important;
+	display:block;
+    margin: 0;
+}
+
+.spTableNav {
+	background-color: #BBBBBB;
+	color: #FFFFFF;
+    padding: 2px 5px 4px;
+	text-decoration: none;
+	float:none !important;
+    margin: 0;
+}
+
+.spTableNav img {
+	padding: 2px 5px;
+	vertical-align: middle;
+	background:none;
+}
+
+.spTableNav img:hover {
+	background-color: #4F8EBF;
+}
+
+.spTableRowInfo td {
+    line-height:14px;
+}
+
+
+.spTableRowInfo td > div {
+    margin: 0;
+    /*padding: 9px 5px 10px;*/
+}
+
+.spTableColumnHeader {
+	text-align:left;
+	color: #555;
+	font-weight: bold;
+	padding:3px;
+}
+
+.spTableOuter {
+	margin-top:10px;
+	border-bottom: 1px solid #555;
+	border-left: 1px solid #555;
+	border-right: 1px solid #555;
+}
+
+/*
+td[class*="-navSpacerRight"]:hover, td[class*="-navSpacerLeft"]:hover {
+	background-color: #4F8EBF;
+}
+
+/*tr[class*="-tableRow"]:nth-child(2n) {
+    background-color: #E8EEEF;
+}
+*/
+.spTableGrid th {
+    border-bottom: 1px solid #555;
+	border-top: 1px solid #555;
+	background:#9ccef5;
+    /*padding: 5px 5px;
+    vertical-align: middle;*/
+}
+
+.spTableRowCell {
+    padding: 3px 5px;
+}
+
+.spTableSort {
+	
+}
+
+.spTableAddRow
+{
+	background-color: #E79E18;
+	border: 2px solid #CB8916;
+	box-shadow: 0 1px 0 0 #F7E0BE inset;
+	color: #fff;
+	font-size:11pt;
+	padding: 5px 15px;
+	text-shadow: 1px 1px 0 #CB8916;
+}
+
+.spTableAddRowCell
+{
+	text-align:left;
+	vertical-align:center;
+	padding:3px;
+}
+
+.spTableHeader {
+	background-color: #3B82B8;
+	font-family:"PT Sans";
+	font-size: 18pt;
+	/*color:#616D7A;*/
+	color:#ffffff;
+	font-style:normal;
+	font-weight:normal;
+	border-top: 1px solid #555;
+	text-align:center;
+	padding:3px 0px;
+}
+
+.spTableInfo {
+	padding:5px;
+}
+
+.spTableTrailer {
+	padding:5px;
+	border-top: 1px solid #555;
+}
+
+.spTableRecordInfo {
+	color:#555555;
+	display:block;
+	padding:3px 10px;
+}
+
+.spTableRowInfo {
+    border-top: 1px solid #555;
+	background:#BBBBBB;
+}
+
+.spTableRowInfo td a:hover {
+    background-color: #4F8EBF;
+	color:#fff;
+	text-decoration:none;
+}
+
+.spSelectDeleteColumn {
+	text-align:center;
+}
+
+.ebTableRowDataDEFAULT
+{
+color:#000000;
+font-weight:normal;
+font-style:normal;
+}
+
+.TableRowInfo
+{
+color:#000000;
+padding:5px;
+text-align:left;
+font-weight:normal;
+font-style:normal;
+}
+
+.ebGridDEFAULT
+{
+width:100%;
+}
+
+.ebGridStyleDEFAULT
+{
+width:100%;
+}
+
+.ebGridCellStyleDEFAULT
+{
+vertical-align:top;
+}
+
+.verticalLayoutTableDEFAULT
+{
+width:100%;
+}
+
+/***** Repeater Styling *******/
+
+.spRepeaterRow {
+	width:99% !important;
+	margin: 0px 5px;
+	border-bottom: 1px dashed #555;
+}
+
+.repeaterRowData {
+	/*background-color: #ccc;*/
+}
+
+.repeaterSelectColumn {
+	
+}
+
+.repeaterRowInfo td div {
+	width: 20px;
+}
+
+.repeaterRowInfo td a {
+	width: 20px;
+}
+
+.repeaterPageNum {
+    padding: 6px 8px 8px 6px;
+	text-decoration: none;
+	float:none !important;
+	display:block;
+    margin: 0;
+}
+
+.repeaterCurrentPageNum {
+	font-weight: bold;
+	padding: 6px 8px 8px 6px;
+	text-decoration: none;
+	float:none !important;
+	display:block;
+    margin: 0;
+}
+
+.repeaterNav {
+    padding: 2px 5px 4px;
+	text-decoration: none;
+	float:none !important;
+    margin: 0;
+}
+
+.repeaterNav img {
+	padding: 2px 5px;
+	vertical-align: middle;
+	background:none;
+}
+
+.repeaterNav img:hover {
+	
+}
+
+.repeaterRowInfo td {
+    line-height:14px;
+}
+
+
+.repeaterRowInfo td > div {
+    margin: 0;
+    /*padding: 9px 5px 10px;*/
+}
+
+.repeaterColumnHeader {
+	text-align:left;
+	color: #555;
+	font-weight: bold;
+	padding:3px;
+}
+
+.repeaterOuter {
+	
+}
+
+/*
+td[class*="-navSpacerRight"]:hover, td[class*="-navSpacerLeft"]:hover {
+	background-color: #4F8EBF;
+}
+
+/*tr[class*="-tableRow"]:nth-child(2n) {
+    background-color: #E8EEEF;
+}
+*/
+.repeaterGrid th {
+    border-bottom: 1px solid #555;
+	border-top: 1px solid #555;
+	background:#9ccef5;
+    /*padding: 5px 5px;
+    vertical-align: middle;*/
+}
+
+.repeaterRowCell {
+    padding: 3px 5px;
+}
+
+.repeaterHeader {
+	background-color: #3B82B8;
+	font-family:"PT Sans";
+	font-size: 18pt;
+	/*color:#616D7A;*/
+	color:#ffffff;
+	font-style:normal;
+	font-weight:normal;
+	border-top: 1px solid #555;
+	text-align:center;
+	padding:3px 0px;
+}
+
+.repeaterInfo {
+	padding:5px;
+}
+
+.repeaterTrailer {
+	padding:5px;
+	border-top: 1px solid #555;
+}
+
+.repeaterRecordInfo {
+	color:#555555;
+	display:block;
+	padding:3px 10px;
+}
+
+.repeaterRowInfo td a:hover {
+	font-weight:bold;
+	color:#d23600;
+	text-decoration: none;
+}
+
+.repeaterRowInfo {
+	color:#000000;
+	padding:5px;
+	text-align:left;
+	font-weight:normal;
+	font-style:normal;
+	margin-top:5px;
+}
+
+/***********************************
+Start Control Tab
+***********************************/
+.tabImage
+{
+	height:16px;
+	border:none;
+background-color:rgb(255,255,255);
+background-image:none;
+}
+/***********************************
+Start Control Horizontal Menu
+***********************************/
+.horizontalMenu
+{
+	cursor: pointer;
+	background-color: #F2F2F2; 
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+	border: #999999 solid 1px;
+}
+
+.pagePanelTable .horizontalMenu{
+	width: 99.9%;
+}
+
+.groupPanel .horizontalMenu{
+	width: 99%;
+}
+
+.spMenu li {
+	padding:0px !important;
+}
+
+.horizontalMenuTopLevel
+{
+	background-color: #F2F2F2;
+	background-image:url(images/sortDesc.png);
+	background-repeat:no-repeat;
+	background-position:90% 50%; 
+	vertical-align: middle;
+	min-width:150px;
+}
+
+.horizontalMenuTopLevel:hover
+{
+	background-color: #abcff8;
+}
+
+.horizontalMenuTopLevelText
+{
+	color: #404040;
+	vertical-align: middle;
+	padding: 0px 10px;
+	line-height: 2.0;
+}
+
+.horizontalMenuTopLevelLeaf
+{
+	background-color: #F2F2F2; 
+	padding: 0px;
+	min-width:150px;
+}
+
+.horizontalMenuTopLevelLeaf:hover
+{
+	background-color:#abcff8; 
+}
+
+.horizontalMenuTopLevelLeafText
+{
+	color: #404040;
+	line-height: 2.0;
+	padding: 0px 10px;
+}
+
+.horizontalMenuTopLevelSelected
+{	
+	background-color: #abcff8;
+	width:150px;
+	background-image:url(images/sortDesc.png);
+	background-repeat:no-repeat;
+	background-position:90% 50%; 
+}
+
+.horizontalMenuTopLevelSelectedText
+{
+	font-weight:bold;
+	line-height: 2.0;
+	padding: 0px 10px;
+}
+
+.horizontalMenuTopLevelSelectedLeaf
+{
+	background-color: #abcff8;
+	padding: 0px;
+	min-width:150px;
+}
+
+.horizontalMenuTopLevelSelectedLeafText
+{
+	font-weight:bold;
+	line-height: 2.0;
+	padding: 0px 10px;
+}
+
+.horizontalMenuItem
+{
+	background-color: #F2F2F2; 
+	border: #999999 solid 1px; 
+	padding: 0px;	
+}
+
+.horizontalMenuTopLevel ul, .horizontalMenuItem ul, .horizontalMenuTopLevelSelected ul{
+	
+}
+
+.horizontalMenuItemText
+{
+	color: #404040;
+	padding: 0px;
+	line-height: 2.0;
+	padding: 0px 10px;
+}
+
+.horizontalMenuLeaf
+{
+	background-color: #F2F2F2; 
+	border: #999999 solid 1px; 
+	padding: 0px;
+	min-width:150px;
+}
+
+.horizontalMenuLeaf:hover
+{
+	background-color: #abcff8;
+}
+
+
+.horizontalMenuLeafText
+{
+	color: #404040;
+	line-height: 2.0;
+	padding: 0px 10px;
+}
+
+.horizontalMenuSelected
+{
+	background-color: #abcff8;
+	border: #999999 solid 1px;
+	padding: 0px;
+}
+
+.horizontalMenuSelectedText
+{
+	font-weight:bold;
+	line-height: 2.0;
+	padding: 0px 10px;
+}
+
+.horizontalMenuSelectedLeaf
+{	
+	background-color: #abcff8;
+	border: #999999 solid 1px;
+	padding: 0px;
+}
+
+.horizontalMenuSelectedLeafText
+{
+	font-weight:bold;
+	line-height: 2.0;
+	padding: 0px 10px;
+}
+
+
+
+/***********************************
+Start Control Vertical Menu
+***********************************/
+.verticalMenu
+{
+	cursor: pointer;
+	background-color: #ededed;
+	padding:5px;
+	margin-right:10px;
+	min-width:150px;
+}
+/****************************
+Vertical Menu Dropdown level
+*****************************/
+.verticalMenuBackground
+{
+	background-color:white;
+	padding:2px;
+}
+
+.verticalMenuTopLevel ul, .verticalMenuItem ul, .verticalMenuTopLevelSelected ul, .verticalMenuSelected ul{
+	border-bottom: #999999 solid 1px;
+}
+
+.verticalMenuItem
+{
+	padding: 2px;
+	background-color:white;
+}
+
+.verticalMenuItemText
+{
+	color: black;
+	padding:5px;
+}
+
+.verticalMenuLeaf
+{
+	padding: 2px;
+	background-color:white;
+}
+.verticalMenuLeafText
+{
+	color: black;
+	padding:5px;
+}
+.verticalMenuSelected
+{
+	padding: 2px;
+	background-color:rgb(255,255,153);
+}
+.verticalMenuSelectedText
+{
+	color: black;
+	padding:5px;
+}
+.verticalMenuSelectedLeaf
+{
+	padding: 2px;
+	background-color:rgb(255,255,153);
+}
+.verticalMenuSelectedLeafText
+{
+	color: black;
+	padding:5px;
+}
+/*****************************
+Vertical Menu Top(First)-Level
+******************************/
+.verticalMenuTopLevelBackground
+{
+	padding: 2px;
+}
+
+.verticalMenuTopLevel
+{
+
+	padding: 2px;
+}
+
+.verticalMenuTopLevel:hover
+{
+	padding: 2px;
+}
+
+.verticalMenuTopLevelText
+{
+	color: black;
+	padding:5px;
+}
+
+.verticalMenuTopLevelLeaf
+{
+	min-width:100px;
+	padding: 2px 2px;
+	border-left:#999999 solid 2px;
+}
+
+.verticalMenuTopLevelLeaf:hover
+{
+	padding: 2px 2px;
+	border-left:#4b8ac7 solid 2px;
+}
+
+.verticalMenuTopLevelLeafText
+{
+	color: black;
+	padding:5px;
+	line-height:3;
+}
+
+.verticalMenuTopLevelLeafText:hover
+{
+	color: #4b8ac7;
+	padding:5px;
+	font-weight:bold;
+	
+}
+
+.verticalMenuTopLevelSelectedLeaf
+{
+	padding: 2px;
+	border-left: #8b820b solid 2px;
+	line-height:3;
+}
+.verticalMenuTopLevelSelectedLeafText
+{
+	font-weight:bold;
+	padding:5px;
+	color:#8b820b;
+}
+.verticalMenuTopLevelSelected
+{
+	padding: 2px;	
+}
+.verticalMenuTopLevelSelectedText
+{
+	color: black;
+	padding:5px;
+}
+/**************************
+Vertical Menu Second-Level
+***************************/
+.verticalMenuSecondLevelBackground
+{
+}
+.verticalMenuSecondLevel
+{
+	padding: 2px 2px;
+}
+.verticalMenuSecondLevelText
+{
+	color: black;
+	padding:5px;
+	line-height: 3;
+}
+.verticalMenuSecondLevelLeaf
+{
+	padding: 2px 2px;
+
+}
+.verticalMenuSecondLevelLeafText
+{
+	color: black;
+	padding:5px;
+
+}
+.verticalMenuSecondLevelSelected
+{
+	background-color: #CCCCFF;
+	padding: 2px 2px;
+}
+.verticalMenuSecondLevelSelectedText
+{
+	color: black;
+	padding:5px;
+}
+.verticalMenuSecondLevelSelectedLeaf
+{
+	background-color: #CCCCFF;
+	padding: 2px 2px;
+}
+.verticalMenuSecondLevelSelectedLeafText
+{
+	color: black;
+	padding:5px;
+}
+/**************************
+Vertical Menu Third-Level
+***************************/
+.verticalMenuThirdLevelBackground
+{
+	background-color: #cccccc;
+}
+.verticalMenuThirdLevel
+{
+	background-color: #cccccc;
+	padding: 0px;
+}
+.verticalMenuThirdLevelText
+{
+	color: #404040;
+	padding: 10px;
+	line-height: 3;
+}
+.verticalMenuThirdLevelLeaf
+{
+	background-color: #cccccc;
+	padding: 0px;
+}
+.verticalMenuThirdLevelLeafText
+{
+	color: #404040;
+	padding: 10px;
+	line-height: 2.0;
+}
+.verticalMenuThirdLevelSelected
+{
+	background-color: #666666;
+	padding: 0px;
+}
+.verticalMenuThirdLevelSelectedText
+{
+	color: #BDCF4A;
+	padding: 10px;
+}
+.verticalMenuThirdLevelSelectedLeaf
+{
+	background-color: #666666;
+	padding: 0px;
+}
+.verticalMenuThirdLevelSelectedLeafText
+{
+	color: #BDCF4A;
+	padding: 10px;
+}
+/**************************
+Vertical Menu Fourth-Level
+***************************/
+.verticalMenuFourthLevelBackground
+{
+	background-color: #cccccc;
+}
+.verticalMenuFourthLevel
+{
+	background-color: #cccccc;
+	padding: 0px;
+}
+.verticalMenuFourthLevelText
+{
+	color: #404040;
+	padding: 10px;
+	line-height: 3;
+}
+.verticalMenuFourthLevelLeaf
+{
+	background-color: #cccccc;
+	padding: 0px;
+	border: #999999 solid 1px;
+}
+.verticalMenuFourthLevelLeafText
+{
+	color: #404040;
+	padding: 10px;
+
+}
+.verticalMenuFourthLevelSelected
+{
+	background-color: #666666;
+	padding: 0px;
+}
+.verticalMenuFourthLevelSelectedText
+{
+	color: #BDCF4A;
+	padding: 10px;
+}
+.verticalMenuFourthLevelSelectedLeaf
+{
+	background-color: #666666;
+	padding: 0px;
+}
+.verticalMenuFourthLevelSelectedLeafText
+{
+	color: #BDCF4A;
+	padding: 10px;
+}
+/********************************
+Text Control
+********************************/
+.textControl
+{
+	text-align:left;
+}
+/********************************
+Start Menu Item
+********************************/
+.menuItemImage
+{
+	border:none;
+}
+
+/* System Styles */
+
+.mainblock
+{
+margin-top:0.5em;
+}
+
+.mainblockNoBorder
+{
+margin-top:0.5em;
+}
+/* Highlight Styles */
+
+.PSTATUS
+{
+
+color:#20626D;
+background-color:#F2B749;
+text-align:left;
+font-weight:bold;
+font-style:normal;
+font-family:Arial, Helvetica, sans-serif;
+font-variant:normal;
+padding:10px;
+padding-right:20px;
+padding-left:20px;
+}
+
+.BFIELD
+{
+
+color:#000000;
+background-color:#FF0000;
+text-align:left;
+font-weight:normal;
+font-style:normal;
+}
+
+.TAB_IN
+{
+
+color:#000000;
+background-color:#EEEEEE;
+text-align:left;
+font-weight:normal;
+font-style:normal;
+}
+
+.TAB_OUT
+{
+
+color:#000000;
+background-color:#CCCCFF;
+text-align:left;
+font-weight:normal;
+font-style:normal;
+}
+
+/*.WARNING
+{
+color:#CC3333;
+font-weight:bold;
+}
+*/
+.WTABLE
+{
+
+color:red;
+text-align:left;
+font-style:normal;
+}
+
+.STABLE
+{
+
+color:rgb(0,0,0);
+text-align:left;
+font-style:normal;
+background-color:silver;
+}
+
+.SICKTABLES
+{
+
+color:red;
+text-align:left;
+font-style:normal;
+}
+
+.SICKTABLEC
+{
+
+color:#AD6C10;
+text-align:left;
+font-style:normal;
+}
+
+.ALTABLE
+{
+
+color:rgb(0,153,0);
+text-align:left;
+font-style:normal;
+}
+
+.ALRTABLE
+{
+
+color:#AC20CC;
+text-align:left;
+font-style:normal;
+}
+
+.OTHTABLE
+{
+
+color:rgb(0,0,204);
+text-align:left;
+font-style:normal;
+}
+
+.BANKTABLE
+{
+
+color:rgb(0,0,0);
+text-align:left;
+font-style:normal;
+}
+
+.ALERT
+{
+	color:#000000;
+	background-color:#FFCC33;
+	text-align:left;
+	font-weight:normal;
+	font-style:normal;
+}
+
+.ATABLE
+{
+
+	color:rgb(153,153,0);
+	text-align:left;
+	font-style:normal;
+}
+
+.RED
+{
+	color:#FF0000;
+	background-color:#FFFFFF;
+	text-align:left;
+	font-weight:normal;
+	font-style:normal;
+}
+
+.NEWRED
+{
+	color:#FF0000;
+	text-align:left;
+	font-weight:normal;
+	font-style:normal;
+}
+
+.VALRED
+{
+	color:#FF0000;
+    background-color: #F28A8A;
+}
+
+.mandatory label {
+	color: red !important;
+
+}
+
+/* Tooltip Styling */
+
+.eb-LAYOUT {
+	/*float: left;*/
+	clear:left;
+	margin-bottom:30px;
+}
+
+.ui-tooltip {
+	background: #666;
+	color: white;
+	border: none;
+	padding: 0;
+	opacity: 1;
+	font-size:0.8em;
+}
+
+.ui-tooltip-content {
+	position: relative;
+	padding: 1em;
+}
+
+.ui-tooltip-content::after {
+	content: '';
+	position: absolute;
+	border: 1px solid;
+	display: block;
+	width: 0;
+}
+
+.right .ui-tooltip-content::after {
+	top: 10px;
+	left: -10px;
+	border-color:
+	transparent #666;
+	border-width: 10px 10px 10px 0;
+} 
+
+/**** Chosen Dropdown Override Styling *****/
+
+.chosen-container-single .chosen-single {
+	background-color: #E8EEEF;
+	background-image:none;
+	border: 1px solid #CCCCCC;
+    border-radius: 3px;
+	outline: 0 none;
+    box-shadow: 0 0 3px #FFFFFF inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    padding: 3px 6px;
+	min-width:100px;
+	z-index:400;
+	height: 30px;
+}
+
+.chosen-container-active .chosen-single {
+	border: 1px solid #CB8916;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+    background-image: none;
+    border: 1px solid #CB8916;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+}
+
+.chosen-container .chosen-drop {
+	border-left: 1px solid #CB8916;
+	border-right: 1px solid #CB8916;
+	border-bottom: 1px solid #CB8916;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+	border-radius: 3px;
+	background-color: #E8EEEF;
+	min-width:114px;
+}
+
+.chosen-container-single .chosen-single div {
+    padding: 3px 0;
+}
+
+.chosen-container-single .chosen-drop {
+    background-clip: padding-box;
+    border-radius: 0 0 3px 3px;
+    margin-top: -1px;
+}
+.chosen-container .chosen-drop {
+   border-top: 1px solid #CB8916;
+}
+
+.chosen-container-single .chosen-search input[type="text"] {
+	width:93%;
+}
+
+.WARNING {
+	border-color: #CC3333 !importnant;
+	color:#CC3333 !importnant;
+	font-weight:bold !important;
+}
+.tableErrorMessage
+{
+	color: #FF0000;
+	border-bottom: #FF0000 solid 1px;
+	font-weight: normal;
+	padding: 0.3em;
+	font-style: italic;
+	background-color: #F2F2F2;
+}
+.tableWarningMessage
+{
+	background-color: rgb(255,255,255);
+	padding: 0.3em;
+	color: rgb(102,102,255);
+	font-weight: normal;
+}
+
+.user-menu {
+	float:right;
+}
+
+.menu-panel {
+	background-color:#EEEEEE;
+	padding:0px;
+	width:100%;
+}
+
+.menu-panel a, .menu-panel a:hover, .menu-panel ul li a, .user-menu a, .user-menu a:hover, .user-menu ul li a  {
+	font-size:1em !important;
+	font-family: "PT Sans" !important;
+}
+
+.sm {
+	border-radius: 0px !important;
+}
+
+.panel .sm {
+	z-index: 1;
+}
+
+.sm-clean > li > ul::before, .sm-clean > li > ul::after {
+	border:none !important;
+}
+
+.spErrorMessage, .spWarningMessage, .spInfoMessage, .spConfirmMessage, .spBox, .spNotice {
+	display:block;
+	background-color: #FFBABA;
+	background-image: url("images/error24.png");
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	/*border: 1px solid;*/
+	border-radius: 5px;
+	color: #A52A2A;
+	margin: 0px 10px 0px 0px;
+	padding: 7px 7px 7px 40px;
+	/*width: 92% !important;*/
+	clear: left;
+    width: auto !important;
+    font-size: 0.9em;
+}
+
+.spInfoMessage {
+	background-color: #BDE5F8;
+	background-image: url("images/info24.png");
+	color: #00529B;
+}
+.spWarningMessage{
+	background-color: #FEEFB3;
+	background-image: url("images/warning24.png");
+	color: #9F6000;
+}
+
+.spConfirmMessage{
+	background-color: #DFF2BF;
+	background-image: url("images/success24.png");
+	color: #4F8A10;
+}
+
+.spNotice{
+	background-color:  #BDE5F8;
+	background-image: none;
+	color: #262525;
+	padding:10px 7px;
+}
+
+.spNotice > h1 {
+	color: #D6272F;
+	font-size: 20pt;
+}
+
+.inputHighlight {
+	border-color:#CC3333;
+	background-color: #FFBABA;
+	color:#CC3333;
+	font-weight:bold;
+}
+
+.inputCellHighlight {
+	background-color: #F28A8A;
+	border-radius: 5px;
+	padding:5px;
+	width: auto !important;
+}
+
+.repeaterPageNum, .repeaterCurrentPageNum {
+	vertical-align:middle;
+}
+

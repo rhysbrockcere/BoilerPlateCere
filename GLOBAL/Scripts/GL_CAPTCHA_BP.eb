@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_CAPTCHA_BP" dateImported="2016-10-14T14:17:24.257+01:00">
+        <scriptText>// ---------------------------------------------------------------------------------
+// This script sets the Captcha Sound File
+// ---------------------------------------------------------------------------------
+	set soundFile = substring($ufs_request_url,1,length($ufs_request_url) - 7) + 'image_sounds/s_' + $session_id + '.wav?' + tostring($SYSTEM_DATETIME);</scriptText>
+    </script>
+</ebase>

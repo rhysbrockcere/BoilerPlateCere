@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="FOI_DETAILS_COMPLETE">
+        <columns>COMPLETED_DATE, COMPLETED_OFFICER_USERNAME, COMPLETION_DETAILS, EXEMPTION_ID, LESSONS_LEARNT, COMP_OUTCOME, COMP_COSTS, COMPLETED_STATUS</columns>
+        <from>FOI_TEST.dbo.FOI_Details</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="COMPLETED_OFFICER_USERNAME" type="VARCHAR" length="255"/>
+            <field id="COMPLETED_STATUS" type="VARCHAR" length="10"/>
+            <field id="COMPLETION_DETAILS" type="VARCHAR" length="2048"/>
+            <field id="COMP_COSTS" type="INTEGER" length="10" fractionalDigits="2"/>
+            <field id="COMP_OUTCOME" type="VARCHAR" length="255"/>
+            <field id="EXEMPTION_ID" type="INTEGER" length="50"/>
+            <field id="LESSONS_LEARNT" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="255" persistent="false"/>
+            <field id="COMPLETED_DATE" type="DATE" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

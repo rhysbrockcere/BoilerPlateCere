@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" preparedStatement="false" id="GIS_REPORT_ISSUE_TBL_OLD">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.GIS_Report_Issue</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>&amp;&amp;ORDER</additional>
+        <fields>
+            <field id="Add_Info" type="VARCHAR" length="1000"/>
+            <field id="Address_County" type="VARCHAR" length="50"/>
+            <field id="Address_Flat" type="VARCHAR" length="50"/>
+            <field id="Address_House_Name" type="VARCHAR" length="50"/>
+            <field id="Address_House_Num" type="VARCHAR" length="50"/>
+            <field id="Address_Postcode" type="VARCHAR" length="8"/>
+            <field id="Address_Street" type="VARCHAR" length="500"/>
+            <field id="Address_Town" type="VARCHAR" length="50"/>
+            <field id="Address_Village" type="VARCHAR" length="100"/>
+            <field id="Contact_Email" type="VARCHAR" length="50"/>
+            <field id="Contact_Firstname" type="VARCHAR" length="50"/>
+            <field id="Contact_Surname" type="VARCHAR" length="50"/>
+            <field id="Contact_Tel" type="VARCHAR" length="20"/>
+            <field id="Date_Noticed" type="TIMESTAMP" length="16"/>
+            <field id="ISSUE_REF" type="VARCHAR" length="50"/>
+            <field id="Issue_Code" length="10"/>
+            <field id="Issue_Other" type="VARCHAR" length="50"/>
+            <field id="Loc_Info" type="VARCHAR" length="300"/>
+            <field id="Loc_Postcode" type="VARCHAR" length="50"/>
+            <field id="Loc_Street" type="VARCHAR" length="100"/>
+            <field id="Loc_Town" type="VARCHAR" length="50"/>
+            <field id="Mayrise_Number" type="VARCHAR" length="50"/>
+            <field id="ORDER" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Q1" type="VARCHAR" length="50"/>
+            <field id="Q2" type="VARCHAR" length="50"/>
+            <field id="Q3" type="VARCHAR" length="50"/>
+            <field id="Q4" type="VARCHAR" length="1000"/>
+            <field id="Q5" length="1"/>
+            <field id="Q6" length="10"/>
+            <field id="Q7" length="10"/>
+            <field id="Status" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="X" length="10"/>
+            <field id="Y" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

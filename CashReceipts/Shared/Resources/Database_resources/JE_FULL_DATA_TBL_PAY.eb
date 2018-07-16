@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="JE_FULL_DATA_TBL_PAY">
+        <columns>*</columns>
+        <from>JE_2012.dbo.Full_Data</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by Date_Entered DESC</additional>
+        <fields>
+            <field id="ActHrs" type="DOUBLE" length="53"/>
+            <field id="Con_DOC" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Con_DOT" type="VARCHAR" length="255"/>
+            <field id="Contract_No" type="DOUBLE" length="53"/>
+            <field id="DELPHI_Full_Time_Salary" type="DOUBLE" length="53"/>
+            <field id="DOB" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Date_Entered" type="TIMESTAMP" length="16"/>
+            <field id="Department" type="VARCHAR" length="255"/>
+            <field id="Establishment" type="VARCHAR" length="255"/>
+            <field id="FTE" type="DOUBLE" length="53"/>
+            <field id="Full_Contract_No" type="VARCHAR" length="255"/>
+            <field id="Full_Payroll_No" type="VARCHAR" length="255"/>
+            <field id="Grade" type="VARCHAR" length="255"/>
+            <field id="Grd_Sal" type="DOUBLE" length="53"/>
+            <field id="Hrly_Rate" type="DOUBLE" length="53"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Ints" type="VARCHAR" length="255"/>
+            <field id="JE_Post_Title" type="VARCHAR" length="255"/>
+            <field id="JE_Ref" type="VARCHAR" length="255"/>
+            <field id="MaxPt" type="DOUBLE" length="53"/>
+            <field id="NEW_ACT_SCPT" type="DOUBLE" length="53"/>
+            <field id="NEW_GRADE" type="VARCHAR" length="255"/>
+            <field id="NEW_MAX_SCP" type="DOUBLE" length="53"/>
+            <field id="NEW_MIN_SCP" type="DOUBLE" length="53"/>
+            <field id="NI_Number" type="VARCHAR" length="255"/>
+            <field id="Notes" type="VARCHAR" length="255"/>
+            <field id="Org_DOC" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Payroll_Rate" type="DOUBLE" length="53"/>
+            <field id="Payroll_Salary" type="VARCHAR" length="255"/>
+            <field id="PersonalNo" type="VARCHAR" length="255"/>
+            <field id="Personal_No1" type="DOUBLE" length="53"/>
+            <field id="Pos_Neg_Paid" type="VARCHAR" length="255"/>
+            <field id="Post_Number" type="VARCHAR" length="255"/>
+            <field id="Post_Title" type="VARCHAR" length="255"/>
+            <field id="Revised_Hrs_Teaching_Assts_Levels_1234_amended_07082012" type="DOUBLE" length="53"/>
+            <field id="Revised_circle_type" type="VARCHAR" length="255"/>
+            <field id="Revised_weeks_excluding_retainer_amended_07082012" type="DOUBLE" length="53"/>
+            <field id="Score" type="DOUBLE" length="53"/>
+            <field id="Score1" type="VARCHAR" length="50"/>
+            <field id="Scpt" type="DOUBLE" length="53"/>
+            <field id="Sex" type="VARCHAR" length="255"/>
+            <field id="StdHrs" type="DOUBLE" length="53"/>
+            <field id="Sub_Group" type="VARCHAR" length="255"/>
+            <field id="Surname" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Weeks" type="DOUBLE" length="53"/>
+            <field id="new_full_time_salary" type="DOUBLE" length="53"/>
+            <field id="new_max_salary" type="DOUBLE" length="53"/>
+            <field id="new_min_salary" type="DOUBLE" length="53"/>
+            <field id="revised_new_full_time_salary" type="DOUBLE" length="53"/>
+            <field id="trimmed_contract_number" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

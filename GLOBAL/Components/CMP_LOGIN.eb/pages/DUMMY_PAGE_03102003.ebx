@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="38120000" pageInfoTextReference="38120001" pageTrailerTextReference="38120002" nextPageTextReference="38120003" prevPageTextReference="38120004">
+    <pageContents>
+        <component contentClass="@T" contentStyle="@T" cssClass="@T" ctrl="COMPONENT1" default="L" errorMsgClass="@T" errorMsgStyle="@T" inheritMsg="true" layoutType="FIELD" localMsg="false" outputType="0" style="@T" uid="0" warningMsgClass="@T" warningMsgStyle="@T" width="@0">
+            <layoutProperties>
+                <FIELD editorCellClass="@T" editorCellStyle="@T" editorWidth="@T" helpCellClass="@T" helpCellStyle="@T" labelCellClass="@T" labelCellStyle="@T" labelWidth="@T" tableClass="@T" tableStyle="@T"/>
+            </layoutProperties>
+            <panel ctrl="PANEL1" inheritMsg="false" layoutType="@0" localMsg="true" uid="30">
+                <groupPanel ctrl="LOGIN_GROUP" groupHeaderText="Local38120053" groupInfoText="Local38120054" groupTrailerText="Local38120055" grpId34="LOGIN_DETAILS" inheritMsg="false" msgControls="45" uid="2">
+                    <message ctrl="MESSAGE1" uid="45"/>
+                    <field beforeEvent="/Scripts/GL_DESIGNER_LOGIN_NEW" ctrl="FIELDCONTROL1" displayEditor="true" displayInfoText="true" displayLabelText="true" field="USERNAME" fopId="150" uid="3"/>
+                    <field ctrl="FIELDCONTROL2" displayEditor="true" displayInfoText="true" displayLabelText="true" field="LOGIN_FOP_PASSWORD" fopId="20" uid="4"/>
+                    <panel ctrl="LOGIN_PANEL" inheritMsg="false" layoutType="FIELD" msgControls="45" uid="44">
+                        <field buttonText="Local38120058" ctrl="FIELDCONTROL3" displayEditor="true" displayInfoText="true" displayLabelText="true" field="LOGIN_BUTTON" fopId="30" immedEvent="/Scripts/GL_VAL_PASSWORD_2_NEW,/Scripts/GL_VAL_APPLICATION_NEW,/Scripts/GL_LOGIN_NEXT_PAGE_NEW" immediateValidation="true" inheritMsg="false" msgControls="45" uid="5"/>
+                        <field buttonText="Local38120132" ctrl="FIELDCONTROL4" displayEditor="true" displayInfoText="true" displayLabelText="true" field="CANCEL_BUTTON" fopId="230" immedEvent="/Scripts/GL_RETURNFROM_FORM" immediateValidation="true" newLine="false" uid="6"/>
+                        <field ctrl="FIELDCONTROL5" displayEditor="true" displayInfoText="true" displayLabelText="true" field="FOP_MESSAGE_LABEL" fopId="40" uid="7"/>
+                        <field buttonText="Local38120068" ctrl="FIELDCONTROL6" displayEditor="true" displayInfoText="true" displayLabelText="true" field="CHANGE_PASSWORD_BUTTON" fopId="70" immedEvent="/Scripts/GL_SHOW_PASSWORD_UPDATE_GROUP,/Scripts/GL_HIDE_PASSWORD_REQUEST_GROUP" immediateValidation="true" uid="8"/>
+                        <field ctrl="FIELDCONTROL7" displayEditor="true" displayInfoText="true" displayLabelText="true" field="FOP_MESSAGE_LABEL_2" fopId="60" uid="9"/>
+                        <field buttonText="Local38120063" ctrl="FIELDCONTROL8" displayEditor="true" displayInfoText="true" displayLabelText="true" field="REQUEST_PASSWORD_BUTTON" fopId="50" immedEvent="/Scripts/GL_REQ_PASSWORD_NEW,/Scripts/GL_HIDE_PASSWORD_UPDATE_GROUP,/Scripts/GL_SHOW_PASSWORD_REQUEST_GROUP" immediateValidation="true" uid="10"/>
+                    </panel>
+                </groupPanel>
+                <groupPanel ctrl="NEW_PWD_DETAILS_GROUP" groupHeaderText="Local38120071" groupInfoText="Local38120072" groupTrailerText="Local38120073" grpId34="NEW_PWD_DETAILS" hidden="true" inheritMsg="false" msgControls="46" uid="12">
+                    <message ctrl="MESSAGE2" uid="46"/>
+                    <field buttonText="LocalTXT19" ctrl="FIELDCONTROL16" field="FOP_CURR_PASSWORD" uid="71"/>
+                    <field ctrl="FIELDCONTROL9" displayEditor="true" displayInfoText="true" displayLabelText="true" field="FOP_NEW_PASSWORD" fopId="80" uid="13"/>
+                    <field ctrl="FIELDCONTROL10" displayEditor="true" displayInfoText="true" displayLabelText="true" field="FOP_CONFIRM_PASSWORD" fopId="90" uid="14"/>
+                    <field buttonText="Local38120078" ctrl="FIELDCONTROL11" displayEditor="true" displayInfoText="true" displayLabelText="true" field="SET_PASSWORD_BUTTON" fopId="100" immedEvent="/Scripts/GL_VAL_PASSWORD_RULES_NEW,/Scripts/GL_VAL_PASSWORD_CONFIRM,/Scripts/GL_UPDATE_PASSWORD_2_NEW,/Scripts/GL_HIDE_PASSWORD_UPDATE_GROUP,/Scripts/GL_VAL_PASSWORD_2_NEW,/Scripts/GL_VAL_APPLICATION_NEW,/Scripts/GL_LOGIN_NEXT_PAGE_NEW" immediateValidation="true" uid="15"/>
+                    <field buttonText="Local38120078_2" ctrl="FIELDCONTROL11_2" displayEditor="true" displayInfoText="true" displayLabelText="true" field="SET_PASSWORD_BUTTON" fopId="100" immedEvent="/Scripts/GL_SHOW_LOGIN_GROUP" immediateValidation="true" newLine="false" uid="64"/>
+                </groupPanel>
+                <groupPanel ctrl="REQUEST_GROUP" groupHeaderText="Local38120085" groupInfoText="Local38120086" groupTrailerText="Local38120087" grpId34="REQUEST" hidden="true" inheritMsg="false" localMsg="true" uid="17">
+                    <field ctrl="FIELDCONTROL12" displayEditor="true" displayInfoText="true" displayLabelText="true" displayOnly="true" field="FOP_NAME" fopId="120" uid="18"/>
+                    <field ctrl="FIELDCONTROL13" displayEditor="true" displayInfoText="true" displayLabelText="true" displayOnly="true" field="DEPARTMENTNAME" fopId="130" uid="19"/>
+                    <field ctrl="FIELDCONTROL14" displayEditor="true" displayInfoText="true" displayLabelText="true" displayOnly="true" field="EMAIL" fopId="10" uid="20"/>
+                    <field ctrl="FIELDCONTROL15" displayEditor="true" displayInfoText="true" displayLabelText="true" displayOnly="true" field="TELE" fopId="160" uid="21"/>
+                </groupPanel>
+                <groupPanel ctrl="OPTION_GROUP" groupHeaderText="Local38120095" groupInfoText="Local38120096" groupTrailerText="Local38120097" grpId34="OPTION" hidden="true" inheritMsg="false" localMsg="true" uid="25">
+                    <field buttonText="Local38120090" ctrl="FIELDCONTROL18" displayEditor="true" displayInfoText="true" displayLabelText="true" field="REQUEST_PASSWORD_BUTTON_2" fopId="190" immedEvent="/Scripts/GL_SHOW_LOGIN_GROUP,/Scripts/GL_REQUEST_PASSWORD_NEW" immediateValidation="true" uid="26"/>
+                    <field buttonText="Local38120090_2" ctrl="FIELDCONTROL18_2" displayEditor="true" displayInfoText="true" displayLabelText="true" field="REQUEST_PASSWORD_BUTTON_2" fopId="190" immedEvent="/Scripts/GL_SHOW_LOGIN_GROUP" immediateValidation="true" newLine="false" uid="63"/>
+                </groupPanel>
+            </panel>
+            <field buttonText="LocalTXT21" ctrl="FIELDCONTROL17" default="L" displayEditor="false" displayInfoText="false" displayLabelText="false" editorCellStyle="display:none;" editorClass="fieldEditor" errorMsgClass="errorMessage" field="CALLSCRIPTS" fieldStyle="display:none;" helpButImage="shared/images/help.gif" helpClass="fieldHelp" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" labelClass="fieldLabel" patternTextClass="fieldPattern" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;" uid="72" vAlign="@0" validationEvent="/Scripts/GL_SHOW_PASSWORD_REQUEST_GROUP,/Scripts/GL_HIDE_PASSWORD_UPDATE_GROUP,/Scripts/GL_LCL_APPLICATION,/Scripts/GL_LCL_LOGIN_NEXT_PAGE" warningMsgClass="warningMessage"/>
+        </component>
+    </pageContents>
+</page>

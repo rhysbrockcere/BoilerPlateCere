@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="All cheques for amendments" database="SQLE645S1" preparedStatement="false" id="DF_CHEQUE_AMEND">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DF_Cheque_Amend</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Acc_Amended" length="1"/>
+            <field id="Acc_Cert_Date" type="TIMESTAMP" length="16"/>
+            <field id="Acc_Cert_by" type="VARCHAR" length="20"/>
+            <field id="Acc_Other" type="VARCHAR" length="100"/>
+            <field id="Acc_Written" length="1"/>
+            <field id="Acc_XLS" length="1"/>
+            <field id="Adm_Cert_Date" type="TIMESTAMP" length="16"/>
+            <field id="Adm_Cert_by" type="VARCHAR" length="20"/>
+            <field id="Admin_Ref" type="VARCHAR" length="9"/>
+            <field id="Amount" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Auth_Date" type="TIMESTAMP" length="16"/>
+            <field id="Auth_by" type="VARCHAR" length="20"/>
+            <field id="CTax_Ref" length="9"/>
+            <field id="Change_Address" type="VARCHAR" length="100"/>
+            <field id="Change_Name" type="VARCHAR" length="50"/>
+            <field id="Change_Other" type="VARCHAR" length="100"/>
+            <field id="Cheque_Date" type="TIMESTAMP" length="16"/>
+            <field id="Cheque_No" type="BIGINT" length="19"/>
+            <field id="Completed_by" type="VARCHAR" length="20"/>
+            <field id="Created_Date" type="TIMESTAMP" length="16"/>
+            <field id="HBen_Ref" type="VARCHAR" length="9"/>
+            <field id="ID" type="INTEGER" length="10" key="true"/>
+            <field id="Payee" type="VARCHAR" length="50"/>
+            <field id="Reason" type="VARCHAR" length="100"/>
+            <field id="Ref" type="VARCHAR" length="20"/>
+            <field id="SectionName" type="VARCHAR" length="10"/>
+            <field id="Status" type="VARCHAR" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

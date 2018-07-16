@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DSS_RES_CARE" table="true" preparedStatement="false" id="DSS_BO_VW_PLACEMENT">
+        <columns>*</columns>
+        <from>DSS_Boarding_Out.dbo.VW_Placement</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="End_Date" type="TIMESTAMP" length="16"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Forename" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="500"/>
+            <field id="Party_ID" type="VARCHAR" length="8"/>
+            <field id="Personal_Allow_Amount" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Personal_Deposit_Amount" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Placement_ID" type="INTEGER" length="10"/>
+            <field id="Short_Stay_End_Date" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE" type="INTEGER" length="500" persistent="false"/>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="AVC_Amount" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Carer_ID" type="INTEGER" length="10"/>
+            <field id="Child_ID" type="INTEGER" length="10"/>
+            <field id="Contract_Amount" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Contract_Type" type="VARCHAR" length="1"/>
+            <field id="Creditor_No" type="INTEGER" length="10"/>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="Deposit_Amount" type="NUMERIC" length="18" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

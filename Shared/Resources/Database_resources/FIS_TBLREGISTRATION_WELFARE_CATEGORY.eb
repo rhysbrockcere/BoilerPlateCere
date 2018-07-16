@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLREGISTRATION_WELFARE_CATEGORY">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblREGISTRATION_WELFARE_CATEGORY</from>
+        <where>RWC_ID=&amp;&amp;RWC_ID</where>
+        <fields>
+            <field id="RWC_END_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="RWC_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="RWC_REQ" type="VARCHAR" length="4000"/>
+            <field id="RWC_START_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="RWC_UPD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="RWC_UPD_USER" type="VARCHAR" length="128"/>
+            <field id="tblLU_WELFARE_CATEGORY" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

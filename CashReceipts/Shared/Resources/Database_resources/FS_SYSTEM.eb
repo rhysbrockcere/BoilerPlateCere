@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Flying Start - System Version information" database="SQLE645S1" preparedStatement="false" id="FS_SYSTEM">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_System</from>
+        <fields>
+            <field id="Version" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="LS_CM_MEMBERSPREFERENCES">
+        <columns>*</columns>
+        <from>CER_Members.dbo.MembersPreferences</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="EmailsForMktgInd" type="TINYINT" length="3"/>
+            <field id="FaxForMktgInd" type="TINYINT" length="3"/>
+            <field id="MailsForMktgInd" type="TINYINT" length="3"/>
+            <field id="MemberID" type="INTEGER" length="10"/>
+            <field id="SMSForMktgInd" type="TINYINT" length="3"/>
+            <field id="TelephonesForMktgInd" type="TINYINT" length="3"/>
+            <field id="ThirdPartyMktgInd" type="TINYINT" length="3"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="rowguid" length="36"/>
+        </fields>
+    </dbResource>
+</ebase>

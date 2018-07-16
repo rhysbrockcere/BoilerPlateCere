@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="ADDRESS1" type="CHAR" labelTextRef="TXT8" maxLength="255" displayType="TEXT" displayLength="60" id="10">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ADDRESS2" type="CHAR" labelTextRef="TXT9" maxLength="255" displayType="TEXT" displayLength="60" id="20">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="ADDRESS3" type="CHAR" labelTextRef="TXT10" maxLength="255" displayType="TEXT" displayLength="60" id="30">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CONTACT_METHOD" type="CHAR" labelTextRef="TXT11" maxLength="10" displayType="TEXT" displayLength="10" id="40">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="COUNTY" type="CHAR" labelTextRef="TXT12" maxLength="255" displayType="TEXT" displayLength="60" id="50">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CUSTOMER_ID" type="INTEGER" eventField="true" parameter="true" labelTextRef="TXT13" displayType="TEXT" displayLength="17" id="60">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="DOB" type="DATETIME" labelTextRef="TXT14" displayType="TEXT" valuePattern="" id="70">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="EMAIL" type="CHAR" labelTextRef="TXT15" maxLength="500" displayType="TEXT" displayLength="60" id="80">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="FIELD1" type="CHAR" eventField="true" labelTextRef="TXT27" displayType="TEXT" id="210"/>
+    <field name="FIRSTNAME" type="CHAR" labelTextRef="TXT16" maxLength="500" displayType="TEXT" displayLength="60" id="90">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="GENDER" type="CHAR" labelTextRef="TXT29" maxLength="50" displayType="SELECT" displayLength="50" staticList="/Lists/Static_Lists/GENDER" id="230">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="LANGUAGE" type="CHAR" labelTextRef="TXT25" maxLength="2" displayType="SELECT" displayLength="2" staticList="/Lists/Static_Lists/LANGUAGE_EN_CY" id="220">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="MOBILE" type="CHAR" labelTextRef="TXT17" maxLength="250" displayType="TEXT" displayLength="60" id="100">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="NI_NO" type="CHAR" labelTextRef="TXT18" maxLength="50" displayType="TEXT" displayLength="50" id="110">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PASSWORD" type="CHAR" labelTextRef="TXT36" displayType="PASSWORD" id="190"/>
+    <field name="POSTCODE" type="CHAR" labelTextRef="TXT19" maxLength="18" displayType="TEXT" displayLength="18" id="120">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PREFERRED_NAME" type="CHAR" labelTextRef="TXT30" maxLength="100" displayType="TEXT" displayLength="60" id="240">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PRM_ID" type="CHAR" parameter="true" labelTextRef="TXT31" displayType="TEXT" id="250"/>
+    <field name="SURNAME" type="CHAR" labelTextRef="TXT20" maxLength="500" displayType="TEXT" displayLength="60" id="130">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="TELEPHONE" type="CHAR" labelTextRef="TXT21" maxLength="250" displayType="TEXT" displayLength="60" id="140">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="TITLE" type="CHAR" labelTextRef="TXT22" maxLength="50" displayType="SELECT" displayLength="50" staticList="/Lists/Static_Lists/TITLE" id="150">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="TOWN" type="CHAR" labelTextRef="TXT23" maxLength="255" displayType="TEXT" displayLength="60" id="160">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="UPRN" type="INTEGER" labelTextRef="TXT24" displayType="TEXT" id="170">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="USERNAME" type="CHAR" labelTextRef="TXT35" displayType="TEXT" id="200"/>
+    <field name="WHERE_CLAUSE" type="CHAR" labelTextRef="TXT28" displayType="TEXT" id="180"/>
+</fields>

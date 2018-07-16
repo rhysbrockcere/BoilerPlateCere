@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_PORTAL" id="GL_PORTAL_CHECK" dateCreated="2013-03-04T15:40:51.183Z" dateImported="2016-10-14T14:17:24.070+01:00">
+        <scriptText>if [CONFIRM != '' and EEA != '']
+	set WHERE_CLAUSE = 'PORTAL = \'' + $FORMID + '\'';
+	fetch PORTAL_BLOCKS;
+	if [$FOUND = 'Y']
+		set WHERE_CLAUSE = 'Check_Link = \'' + CONFIRM + '\' and Email = \'' + encrypt(EEA, 'DECRYPT') + '\'';
+		fetch PORTAL_ACCESS_VW;
+		if [$FOUND = 'Y']
+			if [ACCESS_STATUS = 'Request']
+				hide LOGIN_GROUP;
+				show CONFIRM_GROUP;
+				set WHERE_CLAUSE = 'Check_Link = \'' + CONFIRM + '\' and Customer_ID = \'' + tostring(ACCESS_ID) + '\' and Portal = \'' + $FORMID + '\'';
+				set ACCESS_STATUS = 'Authenticated';
+				update PORTAL_ACCESS_UPD;
+				set WHERE_CLAUSE = 'Customer_ID = \'' + tostring(ACCESS_ID) + '\' and Status = \'Email Sent\'';
+				fetch PORTAL_LOGINS_CHECK;
+				if [$FOUND = 'Y']
+					set LOGIN_STATUS = 'Email Confirmed';
+					update PORTAL_LOGINS_UPD;
+				endif
+				set WHERE_CLAUSE = 'System = \'' + $FORMID + '\'';
+				fetch PORTAL_REG_EMAIL_SETTINGS;
+				if [$FOUND = 'Y']
+					set EMAIL_MESSAGE = 'Please login to the system to view and verify the details for ' + CUST_FIRSTNAME + ' ' + CUST_SURNAME + '&lt;BR&gt;&lt;BR&gt;';
+					if [startswith($UFS_SERVER_NAME, 'forms.')]
+						set EMAIL_MESSAGE = EMAIL_MESSAGE + '&lt;a href="http://eformslive4.ceredigion.gov.uk/ufs/ufsmain?formid=' + EMAIL_SYSTEM_ADMIN_FORM + '"&gt;Please click here to access the system&lt;/a&gt;';
+					else
+						set EMAIL_MESSAGE = EMAIL_MESSAGE + '&lt;a href="http://' + $UFS_SERVER_NAME + '/ufs/ufsmain?formid=' + EMAIL_SYSTEM_ADMIN_FORM + '"&gt;Please click here to access the system&lt;/a&gt;';
+					endif
+				else
+					set EMAIL_TO = 'peter.evans@ceredigion.gov.uk';
+					set EMAIL_FROM = 'portal@ceredigion.gov.uk';
+					set EMAIL_SUBJECT = 'A new request for access to the Online Portal has been recieved';
+					set EMAIL_MESSAGE = 'Please login to the system to view and verify the details for ' + CUST_FIRSTNAME + ' ' + CUST_SURNAME + '&lt;BR&gt;&lt;BR&gt;';
+					set EMAIL_MESSAGE = EMAIL_MESSAGE + '&lt;a href="http://' + $UFS_SERVER_NAME + '/ufs/ufsmain?formid=' + $FORMID + '"&gt;Please click here to access the system&lt;/a&gt;';
+				endif
+				sendmail PORTAL_CMP_EMAIL;
+			else
+				if [ACCESS_ACCOUNT_STATUS = 'Confirmed' or ACCESS_ATTEMPTS = 99999999]
+					hide LOGIN_GROUP;
+					show PASSWORD_GROUP;					
+				endif
+			endif
+		endif
+	else
+		set WHERE_CLAUSE = 'Check_Link = \'' + CONFIRM + '\' and Email = \'' + encrypt(EEA, 'DECRYPT') + '\'';
+		fetch PORTAL_ACCESS_CHECK;
+		hide LOGIN_GROUP;
+		show PASSWORD_GROUP;	
+	endif
+endif</scriptText>
+    </script>
+</ebase>

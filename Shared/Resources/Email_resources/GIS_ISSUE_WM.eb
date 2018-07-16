@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource description="email to inform that a new issue has been reported" accountName="localhost" from="forms@ceredigion.gov.uk" to="&amp;&amp;DEPOT_EMAIL" bcc="stevenw@ceredigion.gov.uk" subject="Mayrise Number &amp;&amp;MAYRISE_NUMBER has been raised for a &amp;&amp;PROBLEM_TYPE_EN ON THE TESTING SYSTEM" html="true" id="GIS_ISSUE_WM">
+        <message>This email has been sent from the &lt;b&gt;TESTING SYSTEM&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+Mayrise number :- &lt;b&gt;&amp;&amp;MAYRISE_NUMBER&lt;/b&gt;&lt;br&gt;
+&lt;br&gt;
+&amp;&amp;MESSAGE_TEXT&lt;br&gt;</message>
+        <fields>
+            <field id="DEPOT_EMAIL"/>
+            <field id="MAYRISE_NUMBER"/>
+            <field id="MESSAGE_TEXT"/>
+            <field id="PROBLEM_TYPE_EN"/>
+        </fields>
+    </emailResource>
+</ebase>

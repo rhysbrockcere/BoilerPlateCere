@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CUSTOMER">
+        <fieldMapping resourceField="other_title" field="Other_Title"/>
+        <fieldMapping resourceField="Title" field="Title"/>
+    </resourceMapping>
+</resourceMappings>

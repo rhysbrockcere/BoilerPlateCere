@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource description="Email for errors" accountName="Exchange" from="&amp;&amp;EMAIL_FROM" to="&amp;&amp;EMAIL_TO" subject="Ebase Error - An Error has occurred on &amp;&amp;EMAIL_PROJECT - &amp;&amp;EMAIL_FORM" critical="true" id="ERROR_EMAIL">
+        <message>The following error has occured:
+
+&amp;&amp;EMAIL_ERROR
+
+SERVER - &amp;&amp;EMAIL_SERVER
+PROJECT - &amp;&amp;EMAIL_PROJECT
+FORM - &amp;&amp;EMAIL_FORM
+PAGE - &amp;&amp;EMAIL_PAGE</message>
+        <fields>
+            <field id="EMAIL_ERROR"/>
+            <field id="EMAIL_FORM"/>
+            <field id="EMAIL_FROM"/>
+            <field id="EMAIL_PAGE"/>
+            <field id="EMAIL_PROJECT"/>
+            <field id="EMAIL_SERVER"/>
+            <field id="EMAIL_TO"/>
+        </fields>
+    </emailResource>
+</ebase>

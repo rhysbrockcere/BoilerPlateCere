@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_ACCOMM_NEEDS">
+        <columns>Q16, Q15E, Q15D, Q15C, Q15B, Q15A, Q14J, Q14I, Q14H, Q14G, Q14F, Q14E, Q14D, Q14C, Q14B, Q14A, Q13M, Q13L, Q13K, Q13J, Q13I, Q13H, Q13G, Q13F, Q13E, Q13D, Q13C, Q13B, Q13A, Q12B, Q12A, Q11, Q10B, Q10A, Q09B, Q09A, Q08F, Q08E, Q08D, Q08C, Q08B, Q08A, Q07E, Q07D, Q07C, Q07B, Q07A, Q06E, Q06D, Q06C, Q06B, Q06A, Q05I, Q05H, Q05G, Q05F, Q05E, Q05D, Q05C, Q05B, Q05A, Q04, Q03A, Q03, Q02, Q01</columns>
+        <from>DSS_Surveys_TEST.dbo.DSS_ACCOMM_NEEDS</from>
+        <fields>
+            <field id="Q01" type="VARCHAR" length="250"/>
+            <field id="Q02" type="VARCHAR" length="250"/>
+            <field id="Q03" type="VARCHAR" length="250"/>
+            <field id="Q03A" type="VARCHAR" length="250"/>
+            <field id="Q04" type="VARCHAR" length="250"/>
+            <field id="Q05A" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q05B" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q05C" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q05D" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q05E" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q05F" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q05G" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q05H" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q05I" type="VARCHAR" length="1"/>
+            <field id="Q06A" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q06B" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q06C" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q06D" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q06E" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q07A" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q07B" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q07C" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q07D" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q07E" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="Q08A" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q08B" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q08C" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q08D" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q08E" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q08F" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q09A" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="Q09B" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="Q10A" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="Q10B" type="VARCHAR" length="255" fractionalDigits="2"/>
+            <field id="Q11" type="VARCHAR" length="255"/>
+            <field id="Q12A" type="VARCHAR" length="255"/>
+            <field id="Q12B" type="VARCHAR" length="255"/>
+            <field id="Q13A" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13B" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13C" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13D" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13E" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13F" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13G" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13H" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13I" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13J" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13K" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13L" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q13M" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14A" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14B" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14C" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14D" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14E" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14F" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14G" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14H" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14I" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q14J" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q15A" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q15B" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q15C" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q15D" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q15E" type="VARCHAR" length="1" fractionalDigits="2"/>
+            <field id="Q16" type="VARCHAR" length="250"/>
+        </fields>
+    </dbResource>
+</ebase>

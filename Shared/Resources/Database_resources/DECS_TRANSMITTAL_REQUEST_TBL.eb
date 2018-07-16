@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="DECS_TRANSMITTAL_REQUEST_TBL">
+        <columns>*</columns>
+        <from>DECS_Archives_RTL_TEST.dbo.DECS_Requests</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by Request_Date</additional>
+        <fields>
+            <field id="Email" type="VARCHAR" length="50"/>
+            <field id="Files" type="INTEGER" length="10"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Request_Date" type="TIMESTAMP" length="10"/>
+            <field id="Request_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Request_Location" type="VARCHAR" length="250"/>
+            <field id="Request_Option" type="VARCHAR" length="50"/>
+            <field id="Request_Status" type="VARCHAR" length="50"/>
+            <field id="Request_Username" type="VARCHAR" length="100"/>
+            <field id="Response_Date" type="TIMESTAMP" length="10"/>
+            <field id="Response_Username" type="VARCHAR" length="100"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

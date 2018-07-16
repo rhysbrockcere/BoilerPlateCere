@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Address" columnPrefix="Addr" id="f9b2b016-4e12-4557-a0d0-a5139aec5e9c">
+        <column name="Address1" type="CHAR" labelTextRef="Txt8xdX0n" displayType="TEXT" id="7e068da2-0d29-4956-8ed6-87e1243e0024"/>
+        <column name="Address2" type="CHAR" labelTextRef="Txt6x9ZeX" displayType="TEXT" id="1a144503-97d9-434e-9e8d-05c6be187d97"/>
+        <column name="Address3" type="CHAR" labelTextRef="TxtHHpLh" displayType="TEXT" id="56d4582a-2cf6-4a01-a877-2874fe854d3c"/>
+        <column name="Address4" type="CHAR" labelTextRef="Txt8K7jJ" displayType="TEXT" id="582a27ed-5448-41b8-b760-1aa22faabeae"/>
+        <column name="Address5" type="CHAR" labelTextRef="Txt5PKcat" displayType="TEXT" id="e151d0aa-e23e-4590-8182-3d422a61f903"/>
+        <column name="AddressFull" type="CHAR" labelTextRef="Txt4zZzA3" displayType="TEXTAREA" id="a3e05ccb-45b2-4c8c-9c78-a2b817726244"/>
+        <column name="ID" type="INTEGER" labelTextRef="Txt1uvy6u" displayType="TEXT" id="4d9eabf3-245a-49cc-8f49-0aa336f81953"/>
+        <column name="Lat" type="CHAR" labelTextRef="Txt6iIJu9" displayType="TEXT" id="576869a2-133f-417f-b889-76d5ca0dae96"/>
+        <column name="Long" type="CHAR" labelTextRef="Txt88Ixhc" displayType="TEXT" id="8e928b3e-4d7a-43eb-ab5e-31f77f8a2d32"/>
+        <column name="Postcode" type="CHAR" labelTextRef="TxtAGnigp" displayType="TEXT" displayLength="10" id="a58543bb-78a4-429b-ae50-21b76663edd0"/>
+        <column name="UPRN" type="CHAR" labelTextRef="Txt1YtGD" displayType="TEXT" id="40a06f76-0cb4-434c-ada3-7d8fefdfed56"/>
+    </table>
+</tables>

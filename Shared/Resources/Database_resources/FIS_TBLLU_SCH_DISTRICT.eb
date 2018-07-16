@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_SCH_DISTRICT">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_SCH_DISTRICT</from>
+        <where>&amp;&amp;WHERE_CLAUSE_SCH_DISTRICT</where>
+        <fields>
+            <field id="DIST_CODE" type="VARCHAR" length="3"/>
+            <field id="DIST_DESC" type="VARCHAR" length="35"/>
+            <field id="DIST_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="DIST_MOD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="DIST_MOD_USER" type="VARCHAR" length="128"/>
+            <field id="WHERE_CLAUSE_SCH_DISTRICT" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

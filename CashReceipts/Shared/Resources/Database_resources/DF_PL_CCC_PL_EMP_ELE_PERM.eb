@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Logica - Payroll Archive - Permanent elements" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PL_CCC_PL_EMP_ELE_PERM">
+        <columns>*</columns>
+        <from>DF_Logica_LIVE.dbo.CCC_PL_EMP_ELE_PERM</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="EFF_D" type="VARCHAR" length="8" readOnly="true"/>
+            <field id="ELEMENT_CODE" type="VARCHAR" length="6"/>
+            <field id="PAY_REF" type="VARCHAR" length="15"/>
+            <field id="VALUE" type="NUMERIC" length="18" fractionalDigits="6"/>
+            <field id="name" type="VARCHAR" length="12"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="PERSON_REF" type="VARCHAR" length="10"/>
+            <field id="EMP_REF" type="VARCHAR" length="2"/>
+        </fields>
+    </dbResource>
+</ebase>

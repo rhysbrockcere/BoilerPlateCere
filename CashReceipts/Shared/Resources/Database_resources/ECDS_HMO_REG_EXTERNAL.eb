@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="HMO Registered Properties" database="POSTGRES" table="true" id="ECDS_HMO_REG_EXTERNAL">
+        <columns>*</columns>
+        <from>ccc_housing.&quot;HMO_REG_EXTERNAL&quot;</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="WHERE_CLAUSE" length="500" required="true" persistent="false" dynamic="true"/>
+            <field id="conditional_amodal" length="254"/>
+            <field id="easting_dwyreiniad" type="INTEGER" length="10"/>
+            <field id="expiry_date_diwedd" type="DATE" length="13"/>
+            <field id="geom" type="OTHER" length="2147483647"/>
+            <field id="gid" type="INTEGER" length="10" key="true"/>
+            <field id="habitable_rooms_byw" type="INTEGER" length="10"/>
+            <field id="licencee_daliwr" length="254"/>
+            <field id="manager_rheolwr" length="254"/>
+            <field id="northing_gogleddiad" type="INTEGER" length="10"/>
+            <field id="occupants_deiliad" type="INTEGER" length="10"/>
+            <field id="p_basement_seler" type="INTEGER" length="10"/>
+            <field id="p_bathrooms_ymolchi" type="INTEGER" length="10"/>
+            <field id="p_bedroom_cysgu" type="INTEGER" length="10"/>
+            <field id="p_detail_disgrifiad" length="254"/>
+            <field id="p_kitchens_ceginau" type="INTEGER" length="10"/>
+            <field id="p_lounge_lle_byw" type="INTEGER" length="10"/>
+            <field id="p_no_flats_fflatiau" type="INTEGER" length="10"/>
+            <field id="p_no_wc_toiledau" type="INTEGER" length="10"/>
+            <field id="p_storeys_lloriau" type="INTEGER" length="10"/>
+            <field id="pcommercial_masnachol" length="254"/>
+            <field id="premises_type_math_ty" length="254"/>
+            <field id="prop_age_oedran_ty" length="254"/>
+            <field id="property_adeilad" length="254"/>
+            <field id="pshop_type_math_siop" length="254"/>
+            <field id="reference_cyfeirnod" length="254"/>
+            <field id="revoke_date_dirymu" type="DATE" length="13"/>
+            <field id="start_date_cychwyn" type="DATE" length="13"/>
+            <field id="status_statws" length="254"/>
+            <field id="type_math" length="254"/>
+            <field id="website" length="254"/>
+            <field id="wefan" length="254"/>
+        </fields>
+    </dbResource>
+</ebase>

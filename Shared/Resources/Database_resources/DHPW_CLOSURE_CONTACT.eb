@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DFIT_CENTRAL" table="true" preparedStatement="false" id="DHPW_CLOSURE_CONTACT">
+        <columns>*</columns>
+        <from>DHPW_Road_Closures.dbo.TBL_Closure_Contact</from>
+        <fields>
+            <field id="Contact_Email" length="30"/>
+            <field id="Contact_Name" length="100" required="true" key="true"/>
+            <field id="Contact_Tel_No" length="12"/>
+        </fields>
+    </dbResource>
+</ebase>

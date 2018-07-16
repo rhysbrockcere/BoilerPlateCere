@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CE_EP_OTHER_SKILLS">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_EP_Other_Skills</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Certified" length="1"/>
+            <field id="ID" type="VARCHAR" length="50"/>
+            <field id="Skill_Level" type="VARCHAR" length="50"/>
+            <field id="Skill_Num" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Skill_Type" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="Other" type="VARCHAR" length="200"/>
+        </fields>
+    </dbResource>
+</ebase>

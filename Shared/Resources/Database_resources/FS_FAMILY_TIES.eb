@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Flying Start Family Ties View" database="SQLE645S1" table="true" preparedStatement="false" id="FS_FAMILY_TIES">
+        <columns>DISTINCT Carer_FS_ID, Relation_to_Child, Forenames, Surname, Name</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_VW_Family_Ties</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by Surname</additional>
+        <fields>
+            <field id="Carer_FS_ID" type="VARCHAR" length="10"/>
+            <field id="Forenames" type="VARCHAR" length="100"/>
+            <field id="Name" type="VARCHAR" length="250"/>
+            <field id="Relation_to_Child" type="VARCHAR" length="50"/>
+            <field id="Surname" type="VARCHAR" length="100"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

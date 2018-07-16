@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DECS Community Benefits - Application Status Lookup" database="SQLE648S1" table="true" preparedStatement="false" id="DECS_CB_APPLICATION_STATUS_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DECS_CB_Application_Status</from>
+        <fields>
+            <field id="Application_Status" type="VARCHAR" length="50" required="true" key="true"/>
+        </fields>
+    </dbResource>
+</ebase>

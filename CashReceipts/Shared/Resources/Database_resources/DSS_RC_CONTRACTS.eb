@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="DSS_RC_CONTRACTS">
+        <columns>*</columns>
+        <from>DSS_Res_Care_TEST.dbo.Lookup_Contract</from>
+        <fields>
+            <field id="Contract_Cost_Centre_Code" type="VARCHAR" length="8"/>
+            <field id="Contract_Description" type="VARCHAR" length="50"/>
+            <field id="Contract_Type" type="VARCHAR" length="1" required="true" key="true"/>
+        </fields>
+    </dbResource>
+</ebase>

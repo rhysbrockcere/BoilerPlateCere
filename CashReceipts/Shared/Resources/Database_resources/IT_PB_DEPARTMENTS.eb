@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DF_IT_TEL_DIR" table="true" preparedStatement="false" id="IT_PB_DEPARTMENTS">
+        <columns>*</columns>
+        <from>departments</from>
+        <fields>
+            <field id="ID" description="auto_increment" type="INTEGER" length="11" required="true" key="true" readOnly="true"/>
+            <field id="department" type="VARCHAR" length="10"/>
+            <field id="orgChart" type="VARCHAR" length="255"/>
+            <field id="section" type="VARCHAR" length="60"/>
+            <field id="service" type="VARCHAR" length="60"/>
+        </fields>
+    </dbResource>
+</ebase>

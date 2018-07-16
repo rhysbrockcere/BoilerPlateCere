@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="DF_CTRS">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DF_CTRS</from>
+        <fields>
+            <field id="Backdate_Period" type="VARCHAR" length="50"/>
+            <field id="Backdate_Period_Reasonable" type="VARCHAR" length="50"/>
+            <field id="Backdate_Period_Reasonable_Other" type="VARCHAR" length="500"/>
+            <field id="Date_Completed" type="TIMESTAMP" length="16"/>
+            <field id="Entitled_Views" type="VARCHAR" length="1000"/>
+            <field id="Extended_Payments" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Other_Organisations" type="VARCHAR" length="50"/>
+            <field id="Other_Views" type="VARCHAR" length="1000"/>
+            <field id="Outline_Period" type="VARCHAR" length="50"/>
+            <field id="Outline_Period_Other" type="VARCHAR" length="500"/>
+            <field id="Pay_Views" type="VARCHAR" length="1000"/>
+            <field id="Understand_CTRS" type="VARCHAR" length="50"/>
+            <field id="Views" type="VARCHAR" length="1000"/>
+            <field id="WWP_disregard" type="VARCHAR" length="50"/>
+            <field id="What_Organisations" type="VARCHAR" length="1000"/>
+        </fields>
+    </dbResource>
+</ebase>

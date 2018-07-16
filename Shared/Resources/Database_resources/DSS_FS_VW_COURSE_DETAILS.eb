@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_FS_VW_COURSE_DETAILS">
+        <columns>*</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_VW_Course_Details</from>
+        <fields>
+            <field id="Catchment_Area" type="VARCHAR" length="25"/>
+            <field id="Completed" length="1"/>
+            <field id="Course_ID" type="BIGINT" length="19"/>
+            <field id="Course_Loc" length="1"/>
+            <field id="Course_Title" type="VARCHAR" length="100"/>
+            <field id="Course_Title_ID" type="INTEGER" length="10"/>
+            <field id="Course_Title_Other" type="VARCHAR" length="150"/>
+            <field id="Date_Completed" type="TIMESTAMP" length="16"/>
+            <field id="Language" length="1"/>
+            <field id="Loc_Details" type="VARCHAR" length="100"/>
+            <field id="Sessions" type="INTEGER" length="10"/>
+            <field id="Start_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Status" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

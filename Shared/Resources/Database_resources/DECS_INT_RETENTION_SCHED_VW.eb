@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Retention Schedule Table" database="SQLE648S1" table="true" preparedStatement="false" id="DECS_INT_RETENTION_SCHED_VW">
+        <columns>*</columns>
+        <from>DECS_Archives_RTL_TEST.dbo.Int_Retention_Sched_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by Series_Name</additional>
+        <fields>
+            <field id="Approved" type="VARCHAR" length="50"/>
+            <field id="Approved_At" type="TIMESTAMP" length="16"/>
+            <field id="Approved_By" type="VARCHAR" length="50"/>
+            <field id="Apr_Notes" type="VARCHAR" length="2000"/>
+            <field id="Disposal_Action" type="VARCHAR" length="50"/>
+            <field id="Further_Comment" type="VARCHAR" length="2000"/>
+            <field id="Interview_ID" type="INTEGER" length="10"/>
+            <field id="LGCS_Level_1" type="VARCHAR" length="150"/>
+            <field id="LGCS_Level_2" type="VARCHAR" length="150"/>
+            <field id="LGCS_Level_3" type="VARCHAR" length="150"/>
+            <field id="Name" type="VARCHAR" length="501" readOnly="true"/>
+            <field id="Notes" type="VARCHAR" length="2000"/>
+            <field id="Off_Copy_Holder" type="VARCHAR" length="250"/>
+            <field id="Original_Location" type="VARCHAR" length="500"/>
+            <field id="Original_Records" type="VARCHAR" length="50"/>
+            <field id="Project_Contact" type="VARCHAR" length="150"/>
+            <field id="Project_ID" type="INTEGER" length="10"/>
+            <field id="Rent_Approved_By" type="VARCHAR" length="50"/>
+            <field id="Rent_Approved_Date" type="TIMESTAMP" length="16"/>
+            <field id="Rent_Completed_By" type="VARCHAR" length="50"/>
+            <field id="Rent_Completed_Date" type="TIMESTAMP" length="16"/>
+            <field id="Rent_Status" type="VARCHAR" length="50"/>
+            <field id="Rentention_ID" type="INTEGER" length="10"/>
+            <field id="Ret_Required" type="VARCHAR" length="1000"/>
+            <field id="Ret_Subject" type="VARCHAR" length="50"/>
+            <field id="Ret_Subject_Comment" type="VARCHAR" length="500"/>
+            <field id="Series_ID" type="INTEGER" length="10"/>
+            <field id="Series_Name" type="VARCHAR" length="500"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CERESQLS1_PLUS2" id="LS_CM_SITE_LIST" dateCreated="2014-08-11T15:13:38.560+01:00" dateImported="2014-09-11T15:26:29.700+01:00">
+        <columns>DISTINCT (SiteID) as SiteID</columns>
+        <from>CER_Members.dbo.Members</from>
+        <where>SiteID &lt;&gt; 'HO'</where>
+        <additional>order by SiteID</additional>
+        <fields>
+            <field id="SiteID" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

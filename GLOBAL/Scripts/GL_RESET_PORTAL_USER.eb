@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_RESET_PORTAL_USER" dateImported="2016-10-14T14:17:24.240+01:00">
+        <scriptText>//PGE 20170721: CAPTCHa not working on eforms5servers
+//if [INPUT_CHARACTERS_2 = getsessionvariable('captcha')]
+
+	set WHERE_CLAUSE = 'Email = \'' + FOP_EMAIL + '\' and Status = \'Active\' and Account_Status = \'Active\' and Portal = \'' + $FORMID + '\'';
+	fetch PORTAL_ACCESS_VW;
+	if [$FOUND = 'N']
+		set UPDATEERROR = 'Y';
+	else
+		set WHERE_CLAUSE = 'Customer_ID = \'' + tostring(ACCESS_ID) + '\'';
+		fetch PORTAL_LOGINS_UPD;
+		callscript JS_GL_PASSWORDGEN;
+		set LOGIN_ATTEMPTS = 99999999;
+		set LOGIN_PASSWORD = encrypt(PASSWORD, 'ENCRYPT');
+		update PORTAL_LOGINS_UPD;
+		set EMAIL_FROM = 'portal@ceredigion.gov.uk';
+		set EMAIL_TO = FOP_EMAIL;
+		set EMAIL_SUBJECT = 'Online Portal password reset';
+		set EMAIL_MESSAGE = 'Please do not reply to this email as it was auto-generated&lt;BR&gt;&lt;BR&gt;';
+		set EMAIL_MESSAGE = EMAIL_MESSAGE + 'You will be asked to change your password when you next login&lt;BR&gt;&lt;BR&gt;';
+		set EMAIL_MESSAGE = EMAIL_MESSAGE + 'Your new password is - ' + PASSWORD;
+		set EMAIL_MESSAGE = EMAIL_MESSAGE + '&lt;BR&gt;&lt;BR&gt;Regards&lt;BR&gt;Ceredigion County Council';
+		sendmail PORTAL_CMP_EMAIL;
+		show LOGIN_GROUP;
+		hide PROBLEM_GROUP;	
+		message W, 100049;
+	endif
+else
+	callscript GL_CAP_REFRESH;
+	message W, 100048;
+endif
+//20170711- Captcha not working on V5</scriptText>
+    </script>
+</ebase>

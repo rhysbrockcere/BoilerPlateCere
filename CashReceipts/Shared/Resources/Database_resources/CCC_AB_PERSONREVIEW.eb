@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="CCC_AB_PERSONREVIEW">
+        <columns>*</columns>
+        <from>CCC_Absence_TEST.dbo.PersonReview</from>
+        <fields>
+            <field id="PersonID" type="INTEGER" length="10"/>
+            <field id="ReviewDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ReviewType" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

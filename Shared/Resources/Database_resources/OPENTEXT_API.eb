@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Link table to select BUN path from ID supplied" database="SQLE645S1" preparedStatement="false" id="OPENTEXT_API">
+        <columns>*</columns>
+        <from>IT_Central.dbo.OPENTEXT_API</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="API_BUN_Path" type="VARCHAR" length="50"/>
+            <field id="API_Folder_Name" type="VARCHAR" length="50"/>
+            <field id="API_ID" type="INTEGER" length="20"/>
+            <field id="API_System" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

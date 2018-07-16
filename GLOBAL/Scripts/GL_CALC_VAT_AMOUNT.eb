@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_ADDRESS_OS" id="GL_CALC_VAT_AMOUNT" dateCreated="2017-04-26T10:40:31.481+01:00">
+        <scriptText>set PAY_CMP_PAYMENT_FULL__ITEM-VATRATE = 0;
+set PAY_CMP_PAYMENT_FULL__ITEM-VATAMOUNT = 0;
+if [uppercase(PAY_CMP_PAYMENT_FULL__ITEM-VATCODE) = 'S']
+	set PAY_CMP_PAYMENT_FULL__ITEM-VATRATE = 20;
+	set PAY_CMP_PAYMENT_FULL__ITEM-VATAMOUNT = (PAY_CMP_PAYMENT_FULL__ITEM-AMOUNT /120) *PAY_CMP_PAYMENT_FULL__ITEM-VATRATE;
+endif</scriptText>
+    </script>
+</ebase>

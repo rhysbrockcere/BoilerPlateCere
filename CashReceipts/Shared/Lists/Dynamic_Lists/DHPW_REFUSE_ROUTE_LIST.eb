@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="DHPW_REFUSE_ROUTE_LIST" dateImported="2016-08-23T09:31:13.727+01:00">
+        <columns>DISTINCT UPRN,E_Address,W_Address</columns>
+        <from>int_Refuse_Postcode_Lookup_VW_TBL</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="E_Address" input="false"/>
+            <field id="UPRN" input="false"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" output="false"/>
+            <field id="W_Address" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

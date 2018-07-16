@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DECS_INT_RISK">
+        <columns>*</columns>
+        <from>DECS_Archives_RTL_TEST.dbo.Int_Risk</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Date_Closed" type="TIMESTAMP" length="16"/>
+            <field id="Date_Entered" type="TIMESTAMP" length="16"/>
+            <field id="Description" type="VARCHAR" length="1000"/>
+            <field id="Interview_ID" type="INTEGER" length="10"/>
+            <field id="Mit_Action" type="VARCHAR" length="500"/>
+            <field id="Owner" type="VARCHAR" length="250"/>
+            <field id="Risk_Main" type="VARCHAR" length="250"/>
+            <field id="Risk_Sub" type="VARCHAR" length="250"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Risk_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

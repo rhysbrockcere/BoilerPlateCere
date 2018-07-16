@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DHPWSQL" preparedStatement="false" id="DHPW_BUILDING_INSPECTIONS_MAX">
+        <columns>MAX(InspectionNo) AS InspectionNo</columns>
+        <from>BuildingInspections_TEST.dbo.Inspections</from>
+        <fields>
+            <field id="InspectionNo" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

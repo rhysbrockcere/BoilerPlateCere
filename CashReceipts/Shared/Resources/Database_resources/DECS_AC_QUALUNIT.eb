@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Alternative Curriculum-Examination Unit" database="SQLE648S1" table="true" preparedStatement="false" id="DECS_AC_QUALUNIT">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DECS_CN_QUALUNIT</from>
+        <fields>
+            <field id="UnitId" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="UnitName" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Fees and Charges Service Area Item" database="SQLE648S1" preparedStatement="false" id="FC_ITEMS_DELETE">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.FC_Items</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Category" type="VARCHAR" length="255"/>
+            <field id="Financial_Code" type="VARCHAR" length="255"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Include_in_Basket_Ind" type="VARCHAR" length="255"/>
+            <field id="Item" type="VARCHAR" length="255"/>
+            <field id="ItemOrder" type="INTEGER" length="10"/>
+            <field id="Notes" type="VARCHAR" length="255"/>
+            <field id="Percent_Rate" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="Service_ID" type="INTEGER" length="10"/>
+            <field id="Type" type="VARCHAR" length="255"/>
+            <field id="Unit" type="VARCHAR" length="255"/>
+            <field id="UnitPrice" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="VAT_code" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

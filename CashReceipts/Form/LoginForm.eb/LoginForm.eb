@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <webForm formHeaderTextRef="Txt88qlmF" htmlTitleTextRef="TxtXW4aq" finishButtonTextRef="Txt9B7nGS" backButtonSupport="yes" docType="HTML5" firstPage="Credentials_Page" id="LoginForm" dateCreated="2018-07-13T10:24:29.074+01:00">
+        <saveRestore enabled="false" saveButtonTextRef="Txt3BUXOZ" restoreButtonTextRef="Txt9qSqec" saveInfoTextRef="Txt4wk9q0" restoreInfoTextRef="Txt8hzHIq"/>
+        <finalPage headerTextRef="Txt4olZZw" infoTextRef="Txt4hm38y" returnTextRef="Txt5D0mUH" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="DSS_FS_REQUEST_TAF_TBL">
+        <columns>*</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_Request_TAF</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address_UPRN" type="VARCHAR" length="50"/>
+            <field id="Birth_Hist" type="VARCHAR" length="1000"/>
+            <field id="Child_Cont" type="VARCHAR" length="50"/>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="Ethnicity" type="VARCHAR" length="50"/>
+            <field id="GP" type="VARCHAR" length="250"/>
+            <field id="Gender" type="VARCHAR" length="50"/>
+            <field id="Health_Visitor" type="VARCHAR" length="50"/>
+            <field id="Lang" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="150"/>
+            <field id="PC_Agency" type="VARCHAR" length="250"/>
+            <field id="PC_Contact_Num" type="VARCHAR" length="50"/>
+            <field id="PC_Job" type="VARCHAR" length="500"/>
+            <field id="PC_Key_Agency" type="VARCHAR" length="250"/>
+            <field id="PC_Key_Contact" type="VARCHAR" length="500"/>
+            <field id="PC_Key_Name" type="VARCHAR" length="250"/>
+            <field id="PC_Key_Worker" type="VARCHAR" length="50"/>
+            <field id="PC_Name" type="VARCHAR" length="250"/>
+            <field id="PC_UPRN" type="VARCHAR" length="50"/>
+            <field id="Parent_Cont" type="VARCHAR" length="50"/>
+            <field id="Req_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Request_Accept" type="VARCHAR" length="50"/>
+            <field id="Request_Accept_Date" type="TIMESTAMP" length="16"/>
+            <field id="Request_Accept_User" type="VARCHAR" length="50"/>
+            <field id="Request_Date" type="TIMESTAMP" length="16"/>
+            <field id="Request_Status" type="VARCHAR" length="50"/>
+            <field id="Request_User" type="VARCHAR" length="50"/>
+            <field id="SCH_EYS" type="VARCHAR" length="250"/>
+            <field id="SE_Needs" type="VARCHAR" length="250"/>
+            <field id="Surname" type="VARCHAR" length="150"/>
+            <field id="TAF_Asses" type="VARCHAR" length="50"/>
+            <field id="Tel_Home" type="VARCHAR" length="50"/>
+            <field id="Tel_Mobile" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

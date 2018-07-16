@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Logica Payroll system - Pemsion Membership details" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PL_CCC_PL_EMP_PENSION">
+        <columns>*</columns>
+        <from>DF_Logica_LIVE.dbo.CCC_PL_EMP_PENSION</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="ae_optout_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ae_pension" type="VARCHAR" length="1"/>
+            <field id="authorise_status" type="VARCHAR" length="2"/>
+            <field id="avc_ee_cont_type" type="VARCHAR" length="2"/>
+            <field id="avc_ee_rate_elem" type="VARCHAR" length="6"/>
+            <field id="avc_element" type="VARCHAR" length="6"/>
+            <field id="avc_er_cont_type" type="VARCHAR" length="2"/>
+            <field id="avc_er_rate_elem" type="VARCHAR" length="6"/>
+            <field id="contracted_out_num" type="VARCHAR" length="10"/>
+            <field id="date_joined" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="date_left_scheme" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ee_actual_sal_paid" type="VARCHAR" length="1"/>
+            <field id="ee_cont_element" type="VARCHAR" length="6"/>
+            <field id="ee_rate_elem" type="VARCHAR" length="6"/>
+            <field id="emp_ref" type="VARCHAR" length="2"/>
+            <field id="er_actual_sal_paid" type="VARCHAR" length="1"/>
+            <field id="er_avc_element" type="VARCHAR" length="6"/>
+            <field id="er_cont_element" type="VARCHAR" length="6"/>
+            <field id="er_rate_elem" type="VARCHAR" length="6"/>
+            <field id="hold_ee_avc" type="VARCHAR" length="1"/>
+            <field id="hold_ee_cont" type="VARCHAR" length="1"/>
+            <field id="hold_er_avc" type="VARCHAR" length="1"/>
+            <field id="hold_er_cont" type="VARCHAR" length="1"/>
+            <field id="offset_unpd_leave" type="VARCHAR" length="1"/>
+            <field id="pay_ref" type="VARCHAR" length="15"/>
+            <field id="pens_pay_avc_ee" type="NUMERIC" length="10"/>
+            <field id="pens_pay_avc_er" type="NUMERIC" length="10"/>
+            <field id="pension_scheme_ref" type="VARCHAR" length="4"/>
+            <field id="person_ref" type="VARCHAR" length="10"/>
+            <field id="qualifying_scheme" type="VARCHAR" length="1"/>
+            <field id="scheme_name" type="VARCHAR" length="20"/>
+            <field id="year_end_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="rate_effective_date" type="DATE" length="10"/>
+            <field id="ee_contribution" type="NUMERIC"/>
+            <field id="er_contribution" type="NUMERIC" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1" preparedStatement="false" id="GIS_ADDR_CERE">
+        <columns>*</columns>
+        <from>BS7666_CER.dbo.CCC_Address</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ADDR1" type="VARCHAR" length="344"/>
+            <field id="ADDR2" type="VARCHAR" length="100"/>
+            <field id="ADDR3" type="VARCHAR" length="30"/>
+            <field id="ADDR4" type="VARCHAR" length="30"/>
+            <field id="ADDRESS" type="VARCHAR" length="521"/>
+            <field id="Accountref" type="VARCHAR" length="16"/>
+            <field id="POSTCODE" type="VARCHAR" length="8"/>
+            <field id="USRN" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" required="true" persistent="false"/>
+            <field id="easting" type="DECIMAL" length="12" fractionalDigits="4"/>
+            <field id="language" type="VARCHAR" length="3"/>
+            <field id="northing" type="DECIMAL" length="12" fractionalDigits="4"/>
+            <field id="uprn" type="DOUBLE" length="53"/>
+            <field id="usage" type="VARCHAR" length="160"/>
+        </fields>
+    </dbResource>
+</ebase>

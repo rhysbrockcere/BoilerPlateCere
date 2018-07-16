@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="TxtAsEXrP" pageInfoTextReference="Txt1qR99n" pageTrailerTextReference="Txt4ZOCvo" nextPageTextReference="Txt5JiCTh" prevPageTextReference="Txt2vHGSd">
+    <pageContents>
+        <component ctrl="CmpbvnjM" inheritMsg="true" outputType="0" pdfFooterText="LocalTxt4xQjXf" pdfHeaderText="LocalTxt5VAaYr" uid="2dcEtLnm">
+            <panel ctrl="pnlPostcode" layoutType="FIELD" uid="QtqMdAqo">
+                <layoutProperties>
+                    <FIELD editorWidth="60%" labelHAlign="Right" labelWidth="30%"/>
+                </layoutProperties>
+                <field buttonText="LocalTxt9HL9dk" ctrl="Fld12Oicm" field="PostcodeSearch" modifiers="postcode, mandatory" propertySet="Postcode" uid="NCqEWBp3"/>
+                <gridControl columnWidths="30%,60%,10%" columns="3" ctrl="Grd10ajmA" rows="1" uid="Q46c38iX">
+                    <gridCell column="1" columnspan="1" ctrl="GrcYaO2w" row="1" rowspan="1" uid="R1FmsQ7L"/>
+                    <gridCell column="2" columnspan="1" ctrl="GrcX2Z9x" row="1" rowspan="1" uid="7EmoLEBs">
+                        <button buttonText="LocalTxt51NWvV" ctrl="butFind" mouseOverText="LocalTxt4oGkho" onClickEvent="/Scripts/Address/FindAddress" uid="8D9aBMB7"/>
+                    </gridCell>
+                    <gridCell column="3" columnspan="1" ctrl="GrcvcY5O" row="1" rowspan="1" uid="9K7Jlkcn"/>
+                </gridControl>
+            </panel>
+            <panel ctrl="pnlSelectAddress" hidden="true" layoutType="FIELD" uid="78WWUoBD">
+                <layoutProperties>
+                    <FIELD editorWidth="60%" labelHAlign="Right" labelWidth="30%"/>
+                </layoutProperties>
+                <field buttonText="LocalTxtrTtDY" ctrl="txtSelectAddress" field="SelectAddresses" immedEvent="/Scripts/Address/SelectAddress" immediateValidation="true" uid="2Nnw9mlo">
+                    <editorHtmlElementProperties classLocator="addressSelect"/>
+                </field>
+                <gridControl columnWidths="30%,60%,10%" columns="3" ctrl="ControlAddress_2" rows="1" uid="IvjCWakR">
+                    <gridCell column="1" columnspan="1" ctrl="GrcGmeb7_2" row="1" rowspan="1" uid="JaCYUZLf"/>
+                    <gridCell column="2" columnspan="1" ctrl="GrcquCmN_2" row="1" rowspan="1" uid="7AuDe2mA">
+                        <button buttonText="LocalTxt94YvD2_2" ctrl="butEdit" mouseOverText="LocalTxt3VXGNn_2" onClickEvent="/Scripts/Address/EditAddress" uid="7kCOYxL1"/>
+                    </gridCell>
+                    <gridCell column="3" columnspan="1" ctrl="Grc2YxMB_2" row="1" rowspan="1" uid="RWhPEUtg"/>
+                </gridControl>
+            </panel>
+            <panel ctrl="pnlFullAddress" layoutType="FIELD" uid="Jtu967NC">
+                <layoutProperties>
+                    <FIELD editorWidth="60%" labelHAlign="Right" labelWidth="30%"/>
+                </layoutProperties>
+                <field buttonText="LocalTxt9s67DF" ctrl="FldrO3qc" displayLabelText="false" displayOnly="true" field="Addr-AddressFull" modifiers="mandatory" uid="KVg2gisr"/>
+            </panel>
+            <panel ctrl="pnlAddress" hidden="true" layoutType="FIELD" uid="9MlEEjhZ">
+                <layoutProperties>
+                    <FIELD editorWidth="60%" labelHAlign="Right" labelWidth="30%"/>
+                </layoutProperties>
+                <field buttonText="LocalTxtAHMK60" ctrl="ctlAddress1" displayLabelText="true" field="Addr-Address1" modifiers="mandatory" uid="IynKfBZh"/>
+                <field buttonText="LocalTxt9nyWLG" ctrl="ctlAddress2" displayEditor="true" displayLabelText="false" field="Addr-Address2" uid="7NmCGkZv"/>
+                <field buttonText="LocalTxt2nCh5P" ctrl="ctlAddress3" displayLabelText="false" field="Addr-Address3" uid="QsRWOOK3"/>
+                <field buttonText="LocalTxt9IQD1X" ctrl="ctlAddress4" displayLabelText="true" field="Addr-Address4" modifiers="mandatory" uid="S8cVOVM4"/>
+                <field buttonText="LocalTxt7hJLx3" ctrl="ctlAddress5" displayLabelText="true" field="Addr-Address5" uid="AN4dbttd"/>
+                <field buttonText="LocalTxt5LDTSC" ctrl="ctlAddressPostcode" field="Addr-Postcode" modifiers="postcode, mandatory" propertySet="Postcode" uid="4VMoi0cb"/>
+            </panel>
+        </component>
+    </pageContents>
+</page>

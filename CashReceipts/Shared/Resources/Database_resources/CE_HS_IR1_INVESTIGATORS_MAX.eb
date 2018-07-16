@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_HS_IR1_INVESTIGATORS_MAX">
+        <columns>MAX(Investigator_ID) as Investigator_ID</columns>
+        <from>CE_HS_TEST.dbo.CE_HS_IR1_Investigators</from>
+        <fields>
+            <field id="Investigator_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

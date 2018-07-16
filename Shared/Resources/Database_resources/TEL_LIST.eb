@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" preparedStatement="false" id="TEL_LIST">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.Tel_List</from>
+        <fields>
+            <field id="Contact_Type" type="VARCHAR" length="15"/>
+            <field id="Date" type="VARCHAR" length="60"/>
+            <field id="Department" type="VARCHAR" length="60"/>
+            <field id="Email" type="VARCHAR" length="60"/>
+            <field id="EmailSuffix" type="VARCHAR" length="60"/>
+            <field id="Fax" type="VARCHAR" length="60"/>
+            <field id="Firstname" type="VARCHAR" length="60"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Image" type="VARCHAR" length="60"/>
+            <field id="JobTitle" type="VARCHAR" length="60"/>
+            <field id="LineManager" type="VARCHAR" length="60"/>
+            <field id="LocationID" type="VARCHAR" length="60"/>
+            <field id="Location_ID" length="4"/>
+            <field id="Mobile" type="VARCHAR" length="60"/>
+            <field id="New_Location" type="VARCHAR" length="60"/>
+            <field id="New_Section" type="VARCHAR" length="60"/>
+            <field id="New_Team" type="VARCHAR" length="60"/>
+            <field id="Profile" type="VARCHAR" length="255"/>
+            <field id="Section" type="VARCHAR" length="60"/>
+            <field id="Section_ID" type="INTEGER" length="10"/>
+            <field id="Service" type="VARCHAR" length="600"/>
+            <field id="Status" type="VARCHAR" length="60"/>
+            <field id="Surname" type="VARCHAR" length="60"/>
+            <field id="Team_Id" type="INTEGER" length="10"/>
+            <field id="Telephone" type="VARCHAR" length="60"/>
+            <field id="showImage" type="VARCHAR" length="60"/>
+        </fields>
+    </dbResource>
+</ebase>

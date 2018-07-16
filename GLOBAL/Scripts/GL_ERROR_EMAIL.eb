@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_ERROR_EMAIL" dateCreated="2013-02-12T15:20:54.370Z" dateImported="2016-10-10T14:17:43.587+01:00">
+        <scriptText>hide EMAIL_FROM;
+
+hide SUBMIT;
+
+show THANK_YOU;
+
+highlight FIELD THANK_YOU WARNING;
+
+set EMAIL_ERROR = $ABORT_MESSAGE;
+
+set EMAIL_FORM = $FORMID;
+
+set EMAIL_SERVER = $UFS_SERVER_NAME;
+
+set EMAIL_PROJECT = $PROJECT;
+
+set EMAIL_PAGE = $ABORT_PAGE;
+
+if [EMAIL_SERVER = 'eformsdev4.ceredigion.gov.uk']
+	set EMAIL_TO = 'peter.evans@ceredigion.gov.uk; steven.wride@ceredigion.gov.uk; george.eadon@ceredigion.gov.uk; dafydd.morgan@ceredigion.gov.uk';
+else
+	set EMAIL_TO = 'servicedesk@ceredigion.gov.uk';
+endif
+
+//sendmail ERROR_EMAIL with attachments 'C:/Program Files/ebaseXi/UfsServer/tomcat/logs/ufsserver.log'; - Removed for V5
+sendmail ERROR_EMAIL with attachments 'C:/Program Files/ebaseXi/UfsServer/tomcat/logs/ebase-server.log';
+
+set DATE = $SYSTEM_DATETIME;
+
+insert EBASE_ERRORS;
+
+goto page ERROR_PAGE;</scriptText>
+    </script>
+</ebase>

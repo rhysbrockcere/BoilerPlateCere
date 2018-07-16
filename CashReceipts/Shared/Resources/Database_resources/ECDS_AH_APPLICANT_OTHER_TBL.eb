@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Housing Application - Applicant Other Person Details" database="SQLE648S1" table="true" preparedStatement="false" id="ECDS_AH_APPLICANT_OTHER_TBL">
+        <columns>*</columns>
+        <from>ECDS_Housing_Test.dbo.AH_Applicant</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>AND Type = 'Other'</additional>
+        <fields>
+            <field id="Applicant_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Application_ID" type="INTEGER" length="10"/>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="Email_Address" type="VARCHAR" length="250"/>
+            <field id="Email_Updates" type="VARCHAR" length="1"/>
+            <field id="Forenames" type="VARCHAR" length="250"/>
+            <field id="Gender" type="VARCHAR" length="1"/>
+            <field id="Home_Number" type="VARCHAR" length="50"/>
+            <field id="Marital_Status" type="VARCHAR" length="50"/>
+            <field id="Mobile_Number" type="VARCHAR" length="50"/>
+            <field id="Title" type="VARCHAR" length="50"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMBER" length="300" persistent="false"/>
+            <field id="Relationship" type="VARCHAR" length="50"/>
+            <field id="Surname" type="VARCHAR" length="250"/>
+            <field id="Work_Number" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

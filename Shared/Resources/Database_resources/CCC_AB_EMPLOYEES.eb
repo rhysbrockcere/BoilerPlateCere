@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="CCC_AB_EMPLOYEES">
+        <columns>*</columns>
+        <from>CCC_Absence_TEST.dbo.Employees</from>
+        <fields>
+            <field id="Base" type="VARCHAR" length="50"/>
+            <field id="Birthday" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Car User" type="VARCHAR" length="50"/>
+            <field id="Checker" type="VARCHAR" length="50"/>
+            <field id="Commenced" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="First Name" type="VARCHAR" length="50"/>
+            <field id="Group" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Initials" type="VARCHAR" length="50"/>
+            <field id="Leave Entitlement" type="REAL" length="24"/>
+            <field id="Left?" type="VARCHAR" length="10"/>
+            <field id="Reconciled" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Staff No" type="INTEGER" length="10"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="selected" type="BIT" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

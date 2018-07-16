@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CORP_SS_FILE_ABSENCES">
+        <columns>*</columns>
+        <from>Abs_Uploads.dbo.File_Absences</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Start Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Type" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Certified" type="VARCHAR" length="255"/>
+            <field id="Contract No" type="VARCHAR" length="255"/>
+            <field id="End AM/PM" type="VARCHAR" length="255"/>
+            <field id="End Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="No of Days" type="DOUBLE" length="53"/>
+            <field id="Sick Reason" type="VARCHAR" length="255"/>
+            <field id="Start AM/PM" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

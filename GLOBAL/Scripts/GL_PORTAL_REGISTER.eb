@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_PORTAL" preferredComponentProject="GLOBAL" id="GL_PORTAL_REGISTER" dateCreated="2013-03-04T13:24:24.080Z" dateImported="2016-10-14T14:17:24.193+01:00">
+        <scriptText>hide LOGIN_GROUP;
+show REGISTER_GROUP;
+unhighlight all;
+callscript GL_CAP_REFRESH;
+set INPUT_CHARACTERS_1 = '';
+
+set WHERE_CLAUSE = 'Enabled = \'True\'';
+fetchtable QUESTIONS;
+
+if [$LANGUAGE = 'CY']
+	set QUESTION_NUM = buildlistfromtable('LOGIN_QUESTION', 'QUESTIONS', 'QUESTIONS-QUESTION_CY', 'QUESTIONS-ID');
+else
+	set QUESTION_NUM = buildlistfromtable('LOGIN_QUESTION', 'QUESTIONS', 'QUESTIONS-QUESTION', 'QUESTIONS-ID');
+endif</scriptText>
+    </script>
+</ebase>

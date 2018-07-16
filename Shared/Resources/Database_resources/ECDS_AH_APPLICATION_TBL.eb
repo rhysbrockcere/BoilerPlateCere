@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="ECDS_AH_APPLICATION_TBL">
+        <columns>*</columns>
+        <from>ECDS_Housing_Test.dbo.Application_Applicants_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="AH_Type_Discount_Ind" type="VARCHAR" length="50"/>
+            <field id="AH_Type_Rent_Ind" type="VARCHAR" length="50"/>
+            <field id="AH_Type_Shared_Ind" type="VARCHAR" length="50"/>
+            <field id="Access_Rent_Market" type="VARCHAR" length="50"/>
+            <field id="Annual_Salary" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Application_Date" type="TIMESTAMP" length="16"/>
+            <field id="Application_ID" type="INTEGER" length="10"/>
+            <field id="Approx_Amount" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Cere_10years_in_20" type="VARCHAR" length="50"/>
+            <field id="Cere_5_Years" type="VARCHAR" length="50"/>
+            <field id="Cere_Adaptable_Property" type="VARCHAR" length="50"/>
+            <field id="Cere_Adaptable_Reason" type="VARCHAR" length="1000"/>
+            <field id="Cere_Caredfor10" type="VARCHAR" length="50"/>
+            <field id="Cere_Caredfor5" type="VARCHAR" length="50"/>
+            <field id="Cere_Carer_Indicator" type="VARCHAR" length="50"/>
+            <field id="Cere_Lived_Ind" type="VARCHAR" length="50"/>
+            <field id="Cere_Relation" type="VARCHAR" length="50"/>
+            <field id="Connection_Details" type="VARCHAR" length="2000"/>
+            <field id="Connection_Employment" type="VARCHAR" length="50"/>
+            <field id="Connection_Family" type="VARCHAR" length="50"/>
+            <field id="Connection_Other" type="VARCHAR" length="50"/>
+            <field id="Connection_Prev_Addr" type="VARCHAR" length="50"/>
+            <field id="Date_Last_Updated" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Effective_Date" type="TIMESTAMP" length="16"/>
+            <field id="Eligible_Ind" type="VARCHAR" length="50"/>
+            <field id="Household_Employed" type="VARCHAR" length="50"/>
+            <field id="Household_Hours_Worked" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Interest_Bungalow" type="VARCHAR" length="50"/>
+            <field id="Interest_Flat" type="VARCHAR" length="50"/>
+            <field id="Interest_House" type="VARCHAR" length="50"/>
+            <field id="Interest_Mobility" type="VARCHAR" length="50"/>
+            <field id="Interest_Other" type="VARCHAR" length="50"/>
+            <field id="Interest_Other_Text" type="VARCHAR" length="1000"/>
+            <field id="Interest_Self_Build" type="VARCHAR" length="50"/>
+            <field id="Interest_Sheltered" type="VARCHAR" length="50"/>
+            <field id="Key_Worker_Address_1" type="VARCHAR" length="500"/>
+            <field id="Key_Worker_Address_2" type="VARCHAR" length="500"/>
+            <field id="Key_Worker_Address_3" type="VARCHAR" length="500"/>
+            <field id="Key_Worker_Address_4" type="VARCHAR" length="500"/>
+            <field id="Key_Worker_Address_5" type="VARCHAR" length="500"/>
+            <field id="Key_Worker_Employer" type="VARCHAR" length="500"/>
+            <field id="Key_Worker_Full_Time" type="VARCHAR" length="50"/>
+            <field id="Key_Worker_Hours" type="VARCHAR" length="50"/>
+            <field id="Key_Worker_Ind" type="VARCHAR" length="50"/>
+            <field id="Key_Worker_Permanaent" type="VARCHAR" length="50"/>
+            <field id="Key_Worker_Postcode" type="VARCHAR" length="10"/>
+            <field id="Key_Worker_Role" type="VARCHAR" length="50"/>
+            <field id="Key_Worker_Start" type="TIMESTAMP" length="16"/>
+            <field id="Key_Worker_Title" type="VARCHAR" length="500"/>
+            <field id="Main_Applicant_id" type="INTEGER" length="10"/>
+            <field id="Main_DOB" type="TIMESTAMP" length="16"/>
+            <field id="Main_Email_Address" type="VARCHAR" length="250"/>
+            <field id="Main_Email_Updates" type="VARCHAR" length="1"/>
+            <field id="Main_Forenames" type="VARCHAR" length="250"/>
+            <field id="Main_Fullname" type="VARCHAR" length="501" readOnly="true"/>
+            <field id="Main_Gender" type="VARCHAR" length="1"/>
+            <field id="Main_Home_Number" type="VARCHAR" length="50"/>
+            <field id="Main_Marital_Status" type="VARCHAR" length="50"/>
+            <field id="Main_Mobile_Number" type="VARCHAR" length="50"/>
+            <field id="Main_Person_ID" type="INTEGER" length="10"/>
+            <field id="Main_Person_Type" type="VARCHAR" length="50"/>
+            <field id="Main_Relationship" type="VARCHAR" length="250"/>
+            <field id="Main_Surname" type="VARCHAR" length="250"/>
+            <field id="Main_Title" type="VARCHAR" length="50"/>
+            <field id="Main_Work_Number" type="VARCHAR" length="50"/>
+            <field id="Max_Deposit" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Max_Price" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Notes" type="VARCHAR" length="2000"/>
+            <field id="Other_Income" type="VARCHAR" length="50"/>
+            <field id="Own_Details" type="VARCHAR" length="1000"/>
+            <field id="Own_Other_Property" type="VARCHAR" length="50"/>
+            <field id="Own_Selling_Ind" type="VARCHAR" length="50"/>
+            <field id="Partner_Applicant_id" type="INTEGER" length="10"/>
+            <field id="Partner_DOB" type="TIMESTAMP" length="16"/>
+            <field id="Partner_Email_Address" type="VARCHAR" length="250"/>
+            <field id="Partner_Email_Updates" type="VARCHAR" length="1"/>
+            <field id="Partner_Forenames" type="VARCHAR" length="250"/>
+            <field id="Partner_Fullname" type="VARCHAR" length="501" readOnly="true"/>
+            <field id="Partner_Gender" type="VARCHAR" length="1"/>
+            <field id="Partner_Home_Number" type="VARCHAR" length="50"/>
+            <field id="Partner_Marital_Status" type="VARCHAR" length="50"/>
+            <field id="Partner_Mobile_Number" type="VARCHAR" length="50"/>
+            <field id="Partner_Person_ID" type="INTEGER" length="10"/>
+            <field id="Partner_Person_Type" type="VARCHAR" length="50"/>
+            <field id="Partner_Relationship" type="VARCHAR" length="250"/>
+            <field id="Partner_Same_Address" type="VARCHAR" length="50"/>
+            <field id="Partner_Surname" type="VARCHAR" length="250"/>
+            <field id="Partner_Title" type="VARCHAR" length="50"/>
+            <field id="Partner_Work_Number" type="VARCHAR" length="50"/>
+            <field id="Primary_Residence" type="VARCHAR" length="50"/>
+            <field id="Single_Joint" type="VARCHAR" length="50"/>
+            <field id="Size" type="VARCHAR" length="50"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="Updated_by" type="VARCHAR" length="50"/>
+            <field id="Verify_5years_Residency" length="1"/>
+            <field id="Verify_Bedrooms" type="VARCHAR" length="50"/>
+            <field id="Verify_Carer" length="1"/>
+            <field id="Verify_Discount_For_Sale" length="1"/>
+            <field id="Verify_FTE_Retired" length="1"/>
+            <field id="Verify_Income" length="1"/>
+            <field id="Verify_Intermediate_Rent" length="1"/>
+            <field id="Verify_KeyWorker" length="1"/>
+            <field id="Verify_Own_OtherProperty" length="1"/>
+            <field id="Verify_Sole_Residency" length="1"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

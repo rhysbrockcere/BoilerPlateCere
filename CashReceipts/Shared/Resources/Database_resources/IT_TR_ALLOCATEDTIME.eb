@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DFIT_CENTRAL" table="true" preparedStatement="false" id="IT_TR_ALLOCATEDTIME">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_TR_AllocatedTime</from>
+        <where>Department=&amp;&amp;Department AND SectionName=&amp;&amp;SectionName AND EmployeeID=&amp;&amp;EmployeeID and JDate=&amp;&amp;JDate</where>
+        <fields>
+            <field id="Department" type="VARCHAR" length="10"/>
+            <field id="Duration" type="DOUBLE" length="53"/>
+            <field id="EmployeeID" type="VARCHAR" length="50"/>
+            <field id="JDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Notes" type="VARCHAR" length="255"/>
+            <field id="RefNo" type="VARCHAR" length="53"/>
+            <field id="SectionName" type="VARCHAR" length="60"/>
+            <field id="TimeEntered" length="6"/>
+            <field id="WorkArea" type="VARCHAR" length="50"/>
+            <field id="WorkType" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

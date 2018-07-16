@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="ICT_NEW_USER_REQUEST">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.ICT_NewUserRequest</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Contract_Type" type="TINYINT" length="3"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Authorised" type="TIMESTAMP"/>
+            <field id="Date_Completed" type="TIMESTAMP"/>
+            <field id="Date_Created" type="TIMESTAMP"/>
+            <field id="Reject_Reason" type="CLOB"/>
+            <field id="Rejected_By" type="VARCHAR" length="50"/>
+            <field id="Serio_Ref" type="VARCHAR" length="50"/>
+            <field id="Service_ID" type="VARCHAR" length="10"/>
+            <field id="Software_Requirements" type="CLOB" length="2147483647"/>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Status" length="1"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Tel" type="VARCHAR" length="15"/>
+            <field id="Username" type="VARCHAR" length="100"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+            <field id="CCC_Employee" length="1"/>
+            <field id="External_Company" type="VARCHAR" length="100"/>
+            <field id="External_Company_Type" type="VARCHAR" length="100"/>
+            <field id="Forename" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Ignore_Payroll" type="BIT" length="1"/>
+            <field id="Initial" type="VARCHAR" length="5"/>
+            <field id="Job_Description" type="VARCHAR" length="100"/>
+            <field id="Job_Title" type="VARCHAR" length="100"/>
+            <field id="Line_Manager" type="VARCHAR" length="20"/>
+            <field id="Line_Manager_Name" type="VARCHAR" length="50"/>
+            <field id="Location_ID" type="INTEGER" length="10"/>
+            <field id="Mobile" type="VARCHAR" length="15"/>
+            <field id="Mobile_Cost_Code" type="VARCHAR" length="50"/>
+            <field id="Modified_By" type="VARCHAR"/>
+            <field id="NI_No" length="9"/>
+            <field id="New_Mobile" type="BIT"/>
+            <field id="New_Phone" type="BIT"/>
+            <field id="Notes" type="CLOB" length="2147483647"/>
+            <field id="Payroll_No" length="10"/>
+            <field id="Previous_Employment" type="BIT" length="1"/>
+            <field id="Previous_Username" type="VARCHAR" length="20"/>
+            <field id="Reject_Date" type="TIMESTAMP"/>
+            <field id="Asset_Tag" length="11"/>
+            <field id="Authorised_By" type="VARCHAR" length="50"/>
+            <field id="Completed_By" type="VARCHAR" length="50"/>
+            <field id="Computer_Type" length="1"/>
+            <field id="Contract_End_Date" type="DATE" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP"/>
+        </fields>
+    </dbResource>
+</ebase>

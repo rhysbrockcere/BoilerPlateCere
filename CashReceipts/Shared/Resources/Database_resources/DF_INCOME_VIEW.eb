@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="DF_INCOME_VIEW">
+        <columns>*</columns>
+        <from>DF_Direct_Banking_TEST.dbo.Income_View</from>
+        <fields>
+            <field id="Count" type="INTEGER" length="10"/>
+            <field id="Total" type="NUMERIC" length="38" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<development version="5.2.0" id="c9da6aa2-401a-4601-9212-f3e8c3dada3b" name="LoginService" description="" createdOnDate="2017-01-24T16:51:31.852Z">
+    <workspaceFiles>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/cccLogin"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/cccLogin_Resource"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/CeriExtract"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/CeriExtract_Tbl"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/FormAccess"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/FormSettings"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/GL_CheckAccess"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/GL_checkCredentials"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/LoginError"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/LoginLogic"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/LoginService"/>
+        <workspaceFile type="Folder" projectName="GLOBAL" entityPath="/LogonService/Profile"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/LogonService/Roles"/>
+    </workspaceFiles>
+</development>

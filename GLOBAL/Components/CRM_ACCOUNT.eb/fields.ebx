@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="FIELD1" type="CHAR" eventField="true" labelTextRef="TXT9" displayType="TEXT" id="249124ec-c8ec-4f9b-82ca-290558937d72"/>
+</fields>

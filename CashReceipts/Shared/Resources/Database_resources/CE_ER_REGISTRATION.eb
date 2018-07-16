@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_ER_REGISTRATION">
+        <columns>*</columns>
+        <from>IT_CENTRAL_TEST.dbo.CE_Electoral_Registration</from>
+        <where>&amp;&amp;Where_Clause</where>
+        <fields>
+            <field id="County" type="VARCHAR" length="100"/>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Processed" type="TIMESTAMP" length="16"/>
+            <field id="Email" type="VARCHAR" length="100"/>
+            <field id="Exclude" type="BIT" length="1"/>
+            <field id="Forename" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Initial" type="VARCHAR" length="5"/>
+            <field id="Prev_Address2" type="VARCHAR" length="100"/>
+            <field id="Prev_County" type="VARCHAR" length="100"/>
+            <field id="Prev_Post_Code" type="VARCHAR" length="10"/>
+            <field id="Prev_Remove" type="BIT" length="1"/>
+            <field id="Prev_Town" type="VARCHAR" length="100"/>
+            <field id="Signed" type="CLOB" length="1073741823"/>
+            <field id="Status" type="VARCHAR" length="1"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Tel" type="VARCHAR" length="20"/>
+            <field id="Town" type="VARCHAR" length="100"/>
+            <field id="Verified" type="BIT" length="1"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+            <field id="Address_1" type="VARCHAR" length="100"/>
+            <field id="Address_2" type="VARCHAR" length="100"/>
+            <field id="Age" type="INTEGER" length="10"/>
+            <field id="Mobile" type="VARCHAR" length="20"/>
+            <field id="Processed_By" type="VARCHAR" length="50"/>
+            <field id="Application_Type" type="VARCHAR" length="10"/>
+            <field id="Nationality" type="VARCHAR" length="50"/>
+            <field id="Post_Code" type="VARCHAR" length="10"/>
+            <field id="Prev_Address1" type="VARCHAR" length="100"/>
+            <field id="Remove_Reason" type="VARCHAR" length="500"/>
+        </fields>
+    </dbResource>
+</ebase>

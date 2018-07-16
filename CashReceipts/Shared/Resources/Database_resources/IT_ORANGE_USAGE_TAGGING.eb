@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="IT_ORANGE_USAGE_TAGGING">
+        <columns>*</columns>
+        <from>IT_Orange.dbo.IT_Orange_Usage_Tagging</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Payroll Ref" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="business cost" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="business cost (VAT exempt)" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="business data vol" type="VARCHAR" length="255"/>
+            <field id="business duration" type="VARCHAR" length="16"/>
+            <field id="business events" type="VARCHAR" length="255"/>
+            <field id="business vol" type="DOUBLE" length="53"/>
+            <field id="call vol" type="DOUBLE" length="53"/>
+            <field id="cost" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="data vol" type="VARCHAR" length="255"/>
+            <field id="duration" type="VARCHAR" length="16"/>
+            <field id="events" type="VARCHAR" length="255"/>
+            <field id="personal cost" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="personal cost (VAT exempt)" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="personal data vol" type="VARCHAR" length="255"/>
+            <field id="personal duration" type="VARCHAR" length="16"/>
+            <field id="personal events" type="VARCHAR" length="255"/>
+            <field id="personal vol" type="VARCHAR" length="255"/>
+            <field id="phone" type="VARCHAR" length="255"/>
+            <field id="username" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_ITRENT2012" table="true" id="DAF_IMAGES_TBL">
+        <columns>*</columns>
+        <from>TDEV.dbo.CCC_Expenses</from>
+        <additional>order by updated_d desc</additional>
+        <fields>
+            <field id="Expr1" type="VARCHAR" length="80"/>
+            <field id="con_pos_ref_no" type="VARCHAR" length="80"/>
+            <field id="doc" type="BLOB" length="2147483647"/>
+            <field id="doc_attach_nm" type="VARCHAR" length="80"/>
+            <field id="doc_type" type="VARCHAR" length="10"/>
+            <field id="doc_type_nm" type="VARCHAR" length="80"/>
+            <field id="filename" type="VARCHAR" length="255"/>
+            <field id="fst_grp_id" type="VARCHAR" length="10"/>
+            <field id="fst_inp_lay_nm" type="VARCHAR" length="80"/>
+            <field id="fst_ref_no" type="VARCHAR" length="80"/>
+            <field id="fst_start_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="key_item" type="VARCHAR" length="255"/>
+            <field id="party_nm" type="VARCHAR" length="80"/>
+            <field id="reference_no" type="VARCHAR" length="80"/>
+            <field id="the_desc" type="VARCHAR" length="80"/>
+            <field id="updated_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="updated_t" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+        </fields>
+    </dbResource>
+</ebase>

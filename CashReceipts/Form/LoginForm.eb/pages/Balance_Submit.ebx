@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Balance_Submit" pageHeaderTextRef="Txt4CPrID" pageInfoTextReference="Txt8515N1" pageTrailerTextReference="Txt3CNfjy" nextPageTextReference="Txt9UjFHs" prevPageTextReference="Txt5E3R2b">
+    <pageContents>
+        <page ctrl="PagLuTnc_2" outputType="0" pdfFooterText="LocalTxt3tMrnY" pdfHeaderText="LocalTxt8hjiSZ" uid="FLNqFhSD">
+            <header ctrl="HeadMQqgY_2" uid="3UKL8SLH"/>
+            <panel ctrl="PannEX07_2" uid="DJ30G1Wj">
+                <field buttonText="LocalTxt1aUG9k" ctrl="FldSa5RZ_2" field="FieldSum" immediateValidation="true" mandatory="true" uid="7mCcqDv4"/>
+                <button buttonText="LocalTxt9hLfgw" ctrl="SubmitBtn" mouseOverText="LocalTxt3SOblg" uid="NMgM6fx8"/>
+            </panel>
+            <footer ctrl="FootIJ4QP_2" uid="RC5oQS2X">
+                <nav ctrl="Nav4EnmO_2" uid="1ATQt1Ei"/>
+            </footer>
+        </page>
+    </pageContents>
+</page>

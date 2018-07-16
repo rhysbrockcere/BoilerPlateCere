@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/DASHBOARD" id="CRM_MNU_PLANNING" dateCreated="2016-03-01T12:05:24.057Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+var params = {};
+params.PARAM_POSTCODE = fields.CUST_POSTCODE.value.substring(0,6);
+params.PARAM_WEEKLY_SEARCH = 'Y';
+params.LANGUAGE = system.variables.$LANGUAGE.value;
+
+form.gotoForm("DESH_PLANNING_APPS",params);</scriptText>
+    </script>
+</ebase>

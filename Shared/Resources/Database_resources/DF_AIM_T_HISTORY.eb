@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" preparedStatement="false" id="DF_AIM_T_HISTORY">
+        <columns>*</columns>
+        <from>Aim_Cer_Live.dbo.AIM_T_HISTORY</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Auth_Type" type="VARCHAR" length="1"/>
+            <field id="Card_Code" length="5"/>
+            <field id="From_Transaction_Date" type="INTEGER" length="10"/>
+            <field id="Import_Code" type="VARCHAR" length="10"/>
+            <field id="Import_File_Date" type="INTEGER" length="10"/>
+            <field id="Import_Record_Number" type="INTEGER" length="10"/>
+            <field id="Import_Record_Type" type="SMALLINT" length="5"/>
+            <field id="Issue_Number" type="VARCHAR" length="3"/>
+            <field id="Key_Swipe" type="SMALLINT" length="5"/>
+            <field id="Line_Number" type="SMALLINT" length="5"/>
+            <field id="LinkCAN" type="INTEGER" length="10"/>
+            <field id="Link_Machine_Code" length="5"/>
+            <field id="Machine_Code" length="5" required="true" key="true"/>
+            <field id="Balance" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Batch_Number" type="INTEGER" length="10"/>
+            <field id="Location_Code" length="5"/>
+            <field id="Card_Mnemonic" type="VARCHAR" length="10"/>
+            <field id="Card_Number" type="VARCHAR" length="255"/>
+            <field id="Merchant_Number" type="VARCHAR" length="20"/>
+            <field id="Misc" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Narrative" type="VARCHAR" length="255"/>
+            <field id="Other_Indicators" type="BIT" length="1"/>
+            <field id="Override_User_Code" length="5"/>
+            <field id="Pay_Amt_Base" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Pay_Amt_NonBase" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Pay_Code" length="5"/>
+            <field id="Pay_Reference" type="VARCHAR" length="50"/>
+            <field id="Portal_ID" type="INTEGER" length="10"/>
+            <field id="Post_Code" type="VARCHAR" length="10"/>
+            <field id="Posted" type="BIT" length="1"/>
+            <field id="Posting_Date" type="INTEGER" length="10"/>
+            <field id="Process_Date" type="INTEGER" length="10"/>
+            <field id="Quantity" type="SMALLINT" length="5"/>
+            <field id="Receipt_Cancelled" type="BIT" length="1"/>
+            <field id="Receipt_Code" length="5"/>
+            <field id="Ref_No" type="VARCHAR" length="50"/>
+            <field id="Ref_No2" type="VARCHAR" length="50"/>
+            <field id="Response_Verbosity" length="1"/>
+            <field id="Reversal" type="BIT" length="1"/>
+            <field id="Reversed" type="BIT" length="1"/>
+            <field id="SAN" type="INTEGER" length="10"/>
+            <field id="Settlement_Interface" type="SMALLINT" length="5"/>
+            <field id="Site_Id" type="SMALLINT" length="5" required="true" key="true"/>
+            <field id="Socket_Number" type="INTEGER" length="10"/>
+            <field id="Sort_Code" type="VARCHAR" length="10"/>
+            <field id="Source_Code" length="5"/>
+            <field id="Split_Seq_No" type="INTEGER" length="10"/>
+            <field id="Start_Date" type="VARCHAR" length="4"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Surrendered" type="BIT" length="1"/>
+            <field id="System_Code" length="5"/>
+            <field id="ThreeD_Secure_Ind" length="2"/>
+            <field id="Tran_Amt_Base" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Tran_Amt_NonBase" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Tran_Code" type="VARCHAR" length="10"/>
+            <field id="Transaction_Date" type="INTEGER" length="10" required="true" key="true"/>
+            <field id="Transaction_Token" type="VARCHAR" length="255"/>
+            <field id="Transaction_Type" length="1"/>
+            <field id="Unique_Tran_ID" type="VARCHAR" length="50"/>
+            <field id="User_Code" length="5"/>
+            <field id="User_Long1" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="User_Long2" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="User_Long3" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="User_Long4" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="User_String1" type="VARCHAR" length="50"/>
+            <field id="User_String2" type="VARCHAR" length="50"/>
+            <field id="User_String3" type="VARCHAR" length="50"/>
+            <field id="User_String4" type="VARCHAR" length="50"/>
+            <field id="User_String5" type="VARCHAR" length="50"/>
+            <field id="VAT_Amt_Base" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="VAT_Amt_NonBase" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="VAT_Code" length="5"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="150" persistent="false"/>
+            <field id="AFund_Code" length="5"/>
+            <field id="APay_Code" length="5"/>
+            <field id="AVV_CVV_Response" length="6"/>
+            <field id="Account_Code" type="VARCHAR" length="10"/>
+            <field id="Account_Name" type="VARCHAR" length="50"/>
+            <field id="Account_Surname" type="VARCHAR" length="50"/>
+            <field id="Address_1" type="VARCHAR" length="50"/>
+            <field id="Address_2" type="VARCHAR" length="50"/>
+            <field id="Address_3" type="VARCHAR" length="50"/>
+            <field id="Address_4" type="VARCHAR" length="50"/>
+            <field id="Area_Code" length="5"/>
+            <field id="Auth_Code" type="VARCHAR" length="8"/>
+            <field id="Fund_Code" length="5"/>
+            <field id="CAN" type="INTEGER" length="10" required="true" key="true"/>
+            <field id="Card_Number_Long" type="VARCHAR" length="25"/>
+            <field id="Card_Tran_Type" type="VARCHAR" length="2"/>
+            <field id="CashBack_Amount" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Email" type="VARCHAR" length="255"/>
+            <field id="Entry_Date" type="INTEGER" length="10"/>
+            <field id="Expiry_Date" type="VARCHAR" length="4"/>
+            <field id="External_User_Name" type="VARCHAR" length="50"/>
+            <field id="Group_Number" type="INTEGER" length="10"/>
+            <field id="Link_Transaction_Date" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Latest Standard Hours" database="SQLE648S1" preparedStatement="false" id="DF_PA_ZCCC_STHRS">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.ZCCC_STHRS</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CON_NO" length="10"/>
+            <field id="ORG_NO" type="DECIMAL" length="2"/>
+            <field id="PAY_NO" length="4"/>
+            <field id="STHRS" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1_SQL2012" preparedStatement="false" id="RA_VW_TRANSUM_GROUPED_PERREF">
+        <columns>*</columns>
+        <from>Rent_Accounting_TEST.dbo.RA_VW_Transum_Grouped_PerRef</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PERREF</where>
+        <fields>
+            <field id="Balance" type="DECIMAL" length="38" fractionalDigits="2"/>
+            <field id="WHERE_CLAUSE_PERREF" type="NUMERIC" length="500" persistent="false"/>
+            <field id="perref" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

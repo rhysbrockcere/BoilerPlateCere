@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="ICT_UC_SYSTEMS">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.ICT_BC_Systems</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Company_ID" type="INTEGER" length="10"/>
+            <field id="Sys_Status" type="VARCHAR" length="50"/>
+            <field id="System_Email" type="VARCHAR" length="150"/>
+            <field id="System_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="System_Name" type="VARCHAR" length="500"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

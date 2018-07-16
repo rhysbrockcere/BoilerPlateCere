@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DHPWSQL" id="DHPW_KEYHOLDERS">
+        <columns>*</columns>
+        <from>Keyholders.dbo.Keyholders</from>
+        <fields>
+            <field id="Email" type="CLOB" length="2147483647"/>
+            <field id="Forename" type="CLOB" length="2147483647"/>
+            <field id="Last_Updated" type="CLOB" length="2147483647"/>
+            <field id="Mobile" type="CLOB" length="2147483647"/>
+            <field id="Other" type="CLOB" length="2147483647"/>
+            <field id="Premises_Name" type="CLOB" length="2147483647"/>
+            <field id="Role" type="CLOB" length="2147483647"/>
+            <field id="Surname" type="CLOB" length="2147483647"/>
+            <field id="Tel_Home" type="CLOB" length="2147483647"/>
+            <field id="Title" type="CLOB" length="2147483647"/>
+        </fields>
+    </dbResource>
+</ebase>

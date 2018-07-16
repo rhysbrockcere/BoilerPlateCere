@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webFormComponent exportVersion="170" type="PART_PAGE" template="/Presentation/Presentation_Templates/EBASE_DEFAULT" firstPage="DUMMY_PAGE_03102003" preferredScriptFolder="/Scripts" id="CMP_LOGIN" dateImported="2016-06-16T12:52:50.283+01:00">
+        <linkedTexts>
+            <linkedText>/GLOBAL_Messages</linkedText>
+            <linkedText>/Shared_Texts</linkedText>
+        </linkedTexts>
+        <resources>
+            <resource name="IT_ACCESS_LOG" path="/Resources/Database_resources/IT_ACCESS_LOG"/>
+            <resource name="IT_ACCESS_LOG_LIVE" path="/Resources/Database_resources/IT_ACCESS_LOG_LIVE"/>
+            <resource name="IT_APPLICATION" path="/Resources/Database_resources/IT_APPLICATION"/>
+            <resource name="IT_APPLICATION_USER" path="/Resources/Database_resources/IT_APPLICATION_USER"/>
+            <resource name="IT_LOCKED_OUT" path="/Resources/Email_resources/IT_LOCKED_OUT"/>
+            <resource name="IT_PHONEBOOK_DETAILS_VW" path="/Resources/Database_resources/IT_PHONEBOOK_DETAILS_VW"/>
+            <resource name="IT_PHONEBOOK_PASSWORD_CHECK" path="/Resources/Database_resources/IT_PHONEBOOK_PASSWORD_CHECK"/>
+            <resource name="IT_PHONEBOOK_PASSWORD_VW" path="/Resources/Database_resources/IT_PHONEBOOK_PASSWORD_VW"/>
+            <resource name="IT_PHONEBOOK_PASSWORDS" path="/Resources/Database_resources/IT_PHONEBOOK_PASSWORDS"/>
+            <resource name="IT_PHONEBOOK_USER" path="/Resources/Database_resources/IT_PHONEBOOK_USER"/>
+            <resource name="IT_PWD_REQUEST" path="/Resources/Email_resources/IT_PWD_REQUEST"/>
+            <resource name="IT_SYSTEM_CLOSED" path="/Resources/Email_resources/IT_SYSTEM_CLOSED"/>
+        </resources>
+    </webFormComponent>
+</ebase>

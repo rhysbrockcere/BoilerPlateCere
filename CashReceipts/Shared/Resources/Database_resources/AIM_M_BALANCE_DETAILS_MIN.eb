@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_CASH2012" preparedStatement="false" id="AIM_M_BALANCE_DETAILS_MIN">
+        <columns>MIN(User_Long1) as User_Long1</columns>
+        <from>Aim_Cer_Live.dbo.AIM_M_BALANCE</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="User_Long1" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

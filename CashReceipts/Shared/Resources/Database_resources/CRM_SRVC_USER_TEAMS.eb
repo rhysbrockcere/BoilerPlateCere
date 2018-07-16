@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CRM_SRVC_USER_TEAMS">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.srvc_User_Teams</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="TeamName" type="VARCHAR" length="50"/>
+            <field id="Username" type="VARCHAR" length="50"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

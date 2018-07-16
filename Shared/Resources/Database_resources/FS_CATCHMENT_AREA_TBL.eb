@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Flying Start Catchment Area" database="SQLE645S1" table="true" preparedStatement="false" id="FS_CATCHMENT_AREA_TBL">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Catchment_Area</from>
+        <additional>Order by Catchment_Area</additional>
+        <fields>
+            <field id="Catchment_Area" type="VARCHAR"/>
+            <field id="Catchment_ID" type="VARCHAR"/>
+            <field id="Catchment_Start_Date" type="DATE" length="10"/>
+            <field id="Catchment_WAG_Title" type="VARCHAR"/>
+        </fields>
+    </dbResource>
+</ebase>

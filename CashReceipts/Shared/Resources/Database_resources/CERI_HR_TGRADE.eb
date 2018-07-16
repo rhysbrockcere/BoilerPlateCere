@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="CERi HR  - Grade Lookup table" database="CERESQLS1_ITRENT2012" preparedStatement="false" id="CERI_HR_TGRADE">
+        <columns>*</columns>
+        <from>TTEST.trentadm.tgrade</from>
+        <fields>
+            <field id="grade_id" type="VARCHAR" length="10" required="true" key="true"/>
+            <field id="grade_nm" type="VARCHAR" length="80"/>
+            <field id="grade_nm_sdx" type="VARCHAR" length="10"/>
+            <field id="grade_nm_upc" type="VARCHAR" length="80"/>
+            <field id="grade_ref_cd" type="VARCHAR" length="80"/>
+            <field id="grade_rep_cd" type="VARCHAR" length="10"/>
+            <field id="hesa_grade" type="VARCHAR" length="10"/>
+            <field id="last_mod_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="last_mod_t" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="last_mod_user_id" type="VARCHAR" length="20"/>
+            <field id="party_id" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

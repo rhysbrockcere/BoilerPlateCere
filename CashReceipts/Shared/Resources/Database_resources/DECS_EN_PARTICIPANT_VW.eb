@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DECS Participant - View" database="SQLE648S1" preparedStatement="false" id="DECS_EN_PARTICIPANT_VW">
+        <columns>*</columns>
+        <from>IT_Central.dbo.DECS_EN_PARTICIPANT_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address1" type="VARCHAR" length="100"/>
+            <field id="Address2" type="VARCHAR" length="100"/>
+            <field id="Address3" type="VARCHAR" length="100"/>
+            <field id="Address4" type="VARCHAR" length="100"/>
+            <field id="AlternativeContactNumber" type="VARCHAR" length="12"/>
+            <field id="BarrierA" type="INTEGER" length="10"/>
+            <field id="BarrierB" type="INTEGER" length="10"/>
+            <field id="BarrierBS" type="INTEGER" length="10"/>
+            <field id="BarrierC" type="INTEGER" length="10"/>
+            <field id="BarrierDA" type="INTEGER" length="10"/>
+            <field id="BarrierE" type="INTEGER" length="10"/>
+            <field id="BarrierETA" type="INTEGER" length="10"/>
+            <field id="BarrierFSM" type="INTEGER" length="10"/>
+            <field id="BarrierH" type="INTEGER" length="10"/>
+            <field id="BarrierIC" type="INTEGER" length="10"/>
+            <field id="BarrierLC" type="INTEGER" length="10"/>
+            <field id="BarrierM" type="INTEGER" length="10"/>
+            <field id="BarrierNO" type="INTEGER" length="10"/>
+            <field id="BarrierOB" type="INTEGER" length="10"/>
+            <field id="BarrierP" type="INTEGER" length="10"/>
+            <field id="BarrierR" type="INTEGER" length="10"/>
+            <field id="BarrierSEN" type="INTEGER" length="10"/>
+            <field id="BarrierSM" type="INTEGER" length="10"/>
+            <field id="BarrierVU" type="INTEGER" length="10"/>
+            <field id="BarrierYP" type="INTEGER" length="10"/>
+            <field id="CompletionDate" type="TIMESTAMP" length="16"/>
+            <field id="ContactNumber" type="VARCHAR" length="12"/>
+            <field id="ContactPrevious" type="VARCHAR" length="10"/>
+            <field id="ContactRef" type="VARCHAR" length="10"/>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="DestCourseCompleted" type="VARCHAR" length="100"/>
+            <field id="DisabilityInd" length="1"/>
+            <field id="EarlyLeaverInd" length="1"/>
+            <field id="EmploymentDuration" type="VARCHAR" length="15"/>
+            <field id="EmploymentHours" type="NUMERIC" length="2" fractionalDigits="2"/>
+            <field id="EmploymentStatus" type="VARCHAR" length="50"/>
+            <field id="EngagementID" type="INTEGER" length="10"/>
+            <field id="EthnicGroup" type="VARCHAR" length="50"/>
+            <field id="EthnicOther" type="VARCHAR" length="50"/>
+            <field id="Ethnicity" type="VARCHAR" length="50"/>
+            <field id="Firstname" type="VARCHAR" length="50"/>
+            <field id="FurtherLearningInd" length="1"/>
+            <field id="Gender" length="1"/>
+            <field id="HealthConditionInd" length="1"/>
+            <field id="Id" length="36"/>
+            <field id="InterviewInd" length="1"/>
+            <field id="LoneParent" length="1"/>
+            <field id="MigrantInd" length="1"/>
+            <field id="NINumber" type="VARCHAR" length="9"/>
+            <field id="OtherQualification" type="VARCHAR" length="50"/>
+            <field id="PaidEmploymentInd" length="1"/>
+            <field id="ParticipantName" type="VARCHAR" length="101" readOnly="true"/>
+            <field id="ParticipantRef" type="VARCHAR" length="10"/>
+            <field id="PartnerRef" type="VARCHAR" length="10"/>
+            <field id="Postcode" type="VARCHAR" length="9"/>
+            <field id="PreferredLanguage" type="VARCHAR" length="20"/>
+            <field id="QualificationGained" type="VARCHAR" length="50"/>
+            <field id="QualificationHighest" type="VARCHAR" length="50"/>
+            <field id="QualificationPartGained" type="VARCHAR" length="50"/>
+            <field id="QualificationTarget" type="VARCHAR" length="50"/>
+            <field id="ReadWelsh" length="1"/>
+            <field id="SEDSIndependenceEntry" type="INTEGER" length="10"/>
+            <field id="SEDSIndependenceExit" type="INTEGER" length="10"/>
+            <field id="SEDSInteractionEntry" type="INTEGER" length="10"/>
+            <field id="SEDSInteractionExit" type="INTEGER" length="10"/>
+            <field id="SEDSMotivationEntry" type="INTEGER" length="10"/>
+            <field id="SEDSMotivationExit" type="INTEGER" length="10"/>
+            <field id="SEDSRespectEntry" type="INTEGER" length="10"/>
+            <field id="SEDSRespectExit" type="INTEGER" length="10"/>
+            <field id="School" type="VARCHAR" length="50"/>
+            <field id="SpeakWelsh" length="1"/>
+            <field id="StartDate" type="TIMESTAMP" length="16"/>
+            <field id="StartingAge" type="VARCHAR" length="10"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Title" type="VARCHAR" length="4"/>
+            <field id="UPN" type="VARCHAR" length="13"/>
+            <field id="UnderstandWelsh" length="1"/>
+            <field id="UnitaryAuthority" type="VARCHAR" length="50"/>
+            <field id="VoluntaryWorkInd" length="1"/>
+            <field id="WEFOConsentInd" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+            <field id="WriteWelsh" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Registration Type Lookup" database="SQLE645S1" table="true" preparedStatement="false" id="FIS_TBLLU_REGISTRATION_TYPE_TBL">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_REGISTRATION_TYPE</from>
+        <where>RT_ID=RT_ID</where>
+        <fields>
+            <field id="RT_CODE" type="VARCHAR" length="3"/>
+            <field id="RT_DESC" type="VARCHAR" length="100"/>
+            <field id="RT_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

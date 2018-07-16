@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_SET_LANGUAGE" dateImported="2015-12-11T11:58:00.027Z">
+        <scriptText>if [ $USERVAR1 != '' ]
+	set $LANGUAGE = $USERVAR1;
+endif
+set $USERVAR1 = '';</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/LogonService/Profile/Profile_Load,/LogonService/Profile/getUsername" pageHeaderTextRef="Txt2B3Hqx" pageInfoTextReference="Txt76Tzdk" pageTrailerTextReference="TxtA7tJWW" nextPageTextReference="Txt4VtN3Z" prevPageTextReference="Txt7y6NQj">
+    <pageContents>
+        <page ctrl="PagTBYHj" outputType="0" pdfFooterText="LocalTxt2gVyT" pdfHeaderText="LocalTxtAlGbtA" uid="15Fqp58h">
+            <componentPlaceHolder name="CMP_LANG_CONTROL" prefix="LANGCMP_LANG_CONTROL"/>
+            <panel ctrl="PanIpXEP" layoutType="FIELD" propertySet="Central Box" uid="5rOlCMQj" width="50%">
+                <field buttonText="LocalTxt3ldsZS" ctrl="User_Dropdown" field="Username" immedEvent="/LogonService/Profile/getUsername" immediateValidation="true" uid="J7aVgKdQ"/>
+                <field buttonText="LocalTxt9roV8G" ctrl="Position_Dropdown" displayInfoText="true" field="Position_Select" immedEvent="/LogonService/Profile/getPosition" immediateValidation="true" uid="18L7DDlk"/>
+                <button buttonText="LocalTxt3EI5gz" ctrl="cmdSetPosition" mouseOverText="LocalTxt4qeEcB" uid="81UKcXLE"/>
+            </panel>
+            <panel ctrl="PanlPIRM" displayOnly="true" layoutType="FIELD" propertySet="Central Box" uid="Otl26Uqh" width="50%">
+                <text ctrl="Texl46Cw_2" text="LocalTxt1kvYAA_2" uid="3m6o7Irp"/>
+                <field buttonText="LocalTxt4cfzk4" ctrl="FldDNPH0" field="CeriExtract-Username" uid="305Nv9IL"/>
+                <field buttonText="LocalTxt97paF7" ctrl="FldfmIkl" field="CeriExtract-con_pos_ref_no" uid="7tjSKsl7"/>
+                <field buttonText="LocalTxttksjb" ctrl="FldEPxxm" field="CeriExtract-Name" uid="R6vcwywX"/>
+                <field buttonText="LocalTxt1g89Rq" ctrl="Fld7CP44" field="CeriExtract-position_id" uid="RBKvJtEF"/>
+                <field buttonText="LocalTxt5rOAEU" ctrl="Fldb5y0L" field="CeriExtract-Position_Name" uid="DHRO4et9"/>
+                <field buttonText="LocalTxt8BhdFn" ctrl="FldtpHhh" field="CeriExtract-team_id" uid="EAzP6EYu"/>
+                <field buttonText="LocalTxt7FcOge" ctrl="FldMV1HB" field="CeriExtract-Team_Name" uid="PmtOqcxZ"/>
+                <field buttonText="LocalTxt1jFewS" ctrl="Fld4ptyX" field="CeriExtract-Email" uid="O9corajH"/>
+            </panel>
+            <panel ctrl="Pan5IvrK" displayOnly="true" layoutType="FIELD" propertySet="Central Box" uid="GWK7RAMt" width="50%">
+                <text ctrl="Texl46Cw" text="LocalTxt1kvYAA" uid="BsV5zxJr"/>
+                <field buttonText="LocalTxtiXDyy" ctrl="FldvwhM8" field="CeriExtract-Manager_username" uid="DvV5kqDc"/>
+                <field buttonText="LocalTxt7b6an8" ctrl="Fldd1DQ4" field="CeriExtract-Manager_Name" uid="3Ei62od1"/>
+                <field buttonText="LocalTxt7xhQyw" ctrl="FldoySgt" field="CeriExtract-Manager_Position_ID" uid="9cicaoBh"/>
+                <field buttonText="LocalTxt2WkjLF" ctrl="Fld4sle3" field="CeriExtract-Manager_Position" uid="6qDMjYo7"/>
+                <field buttonText="LocalTxt3ckPhR" ctrl="FldasCkp" field="CeriExtract-Manager_Email" uid="McfxFruN"/>
+            </panel>
+            <panel ctrl="PanlPIRM_2" displayOnly="true" layoutType="FIELD" propertySet="Central Box" uid="Ob2bXeJu" width="50%">
+                <text ctrl="Texl46Cw_3" text="LocalTxt1kvYAA_3" uid="8cMQ8YZO"/>
+                <repeater ctrl="ReplYOBO" field="Access" uid="6cQWxyaM">
+                    <repeaterRow ctrl="Repr7PA5q" uid="KQxP1Mhx">
+                        <field buttonText="LocalTxt3hu0ql" ctrl="Fld76hNV" displayLabelText="false" field="Access-Role" hyperlink="true" immedEvent="/LogonService/Profile/goto_Form" uid="JRkCeWEc"/>
+                    </repeaterRow>
+                </repeater>
+            </panel>
+        </page>
+    </pageContents>
+</page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CS_RB_DISABLEMENT_REDUCTION">
+        <fieldMapping resourceField="Signature" field="Signature"/>
+    </resourceMapping>
+    <resourceMapping id="CS_RB_MOVE_FROM_BUSINESS">
+        <fieldMapping resourceField="Signature" field="Signature"/>
+    </resourceMapping>
+</resourceMappings>

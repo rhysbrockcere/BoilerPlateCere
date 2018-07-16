@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="LS_CM_MAIL_MERGE">
+        <columns>*</columns>
+        <from>LS_CM_TEST.dbo.LS_CM_Mail_Merge</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="AskFor" type="VARCHAR" length="100"/>
+            <field id="BookingDate1" type="TIMESTAMP" length="16"/>
+            <field id="BookingDate2" type="TIMESTAMP" length="16"/>
+            <field id="Cost1" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Cost2" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="CourseID" type="INTEGER" length="10"/>
+            <field id="DirectLine" type="VARCHAR" length="50"/>
+            <field id="Email" type="VARCHAR" length="250"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="MailDate" type="TIMESTAMP" length="16"/>
+            <field id="MemberID" type="INTEGER" length="10"/>
+            <field id="StartDate" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Weeks" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="ICT_CCDB_VERSION">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.ICT_CCDB_Versions</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CreatedBy" length="10"/>
+            <field id="DateCreated" type="TIMESTAMP" length="16"/>
+            <field id="Description" type="CLOB" length="2147483647"/>
+            <field id="MajorVersion" type="INTEGER" length="10" required="true" key="true"/>
+            <field id="MinorVersion" type="SMALLINT" length="5" required="true" key="true"/>
+            <field id="SystemID" type="INTEGER" length="10" required="true" key="true"/>
+            <field id="WHERE_CLAUSE" type="VARCHAR" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

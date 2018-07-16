@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_FS_VW_COURSE_ATTEND">
+        <columns>*</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_VW_Course_Attend</from>
+        <fields>
+            <field id="Course_ID" type="INTEGER" length="10"/>
+            <field id="Name" type="VARCHAR" length="150"/>
+            <field id="Reg_ID" type="INTEGER" length="10"/>
+            <field id="Surname" type="VARCHAR" length="150"/>
+        </fields>
+    </dbResource>
+</ebase>

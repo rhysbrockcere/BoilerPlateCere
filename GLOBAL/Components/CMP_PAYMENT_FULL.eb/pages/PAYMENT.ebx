@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="PAYMENT" pageHeaderTextRef="TXT8" pageInfoTextReference="TXT9" pageTrailerTextReference="TXT10" nextPageTextReference="TXT11" prevPageTextReference="TXT12">
+    <pageContents>
+        <page ctrl="PAGE2" outputType="0" pdfFooterText="LocalTXT13" pdfHeaderText="LocalTXT14" uid="2">
+            <field buttonText="LocalTXT235" ctrl="FIELDCONTROL26" displayInfoText="false" displayLabelText="false" editorStyle="display:none;" field="STATUS" uid="205">
+                <editorHtmlElementProperties idLocator="status"/>
+            </field>
+            <field buttonText="LocalTXT233" ctrl="FIELDCONTROL23" displayInfoText="false" displayLabelText="false" editorStyle="display:none;" field="ERRORCODE" uid="204">
+                <editorHtmlElementProperties idLocator="errorcode"/>
+            </field>
+            <field beforeEvent="/Scripts/GL_JS_PAYMENT" buttonText="LocalTXT161" ctrl="FIELDCONTROL16" field="WS_BUILD" uid="4"/>
+            <groupPanel ctrl="GROUPPANEL2" groupHeaderText="LocalTXT135" groupInfoText="LocalTXT136" groupTrailerText="LocalTXT137" uid="5">
+                <panel ctrl="WAIT_PANEL" hidden="true" layoutType="HORIZONTAL_BOX" uid="6">
+                    <layoutProperties>
+                        <HORIZONTAL_BOX hAlign="Center"/>
+                    </layoutProperties>
+                    <text ctrl="TEXT1" text="LocalTXT153" uid="7"/>
+                </panel>
+                <gridControl columnWidths="50%,50%" columns="2" ctrl="PAYMENT_GRID" rows="1" uid="8">
+                    <gridCell column="1" columnspan="1" ctrl="GRIDCELL1" default="L" errorMsgClass="errorMessage" row="1" rowspan="1" textColor="#404040" uid="9" vAlign="Top" warningMsgClass="warningMessage">
+                        <groupPanel ctrl="GROUPPANEL3" groupHeaderText="LocalTXT138" groupInfoText="LocalTXT139" groupTrailerText="LocalTXT140" uid="10">
+                            <field buttonText="LocalTXT151" ctrl="FIELDCONTROL13" displayOnly="true" field="SINGLE_DESC" uid="11"/>
+                            <field buttonText="LocalTXT152" ctrl="FIELDCONTROL14" displayOnly="true" field="SINGLE_FEE" uid="12"/>
+                            <fieldTable ctrl="TABLE1" displayOnly="true" field="ITEM" hidden="true" tableHeaderText="LocalTXT91" tableInfoText="LocalTXT92" tableTrailerText="LocalTXT93" uid="13">
+<tablePage ctrl="TABLEPAGE1" default="L" uid="14">
+    <fieldColumn buttonText="LocalTXT141" ctrl="FIELDCOLUMN1" field="ITEM-REFERENCE" uid="15"/>
+    <fieldColumn buttonText="LocalTXT142" ctrl="FIELDCOLUMN2" field="ITEM-FUNDNAME" uid="16"/>
+    <fieldColumn buttonText="LocalTXT143" ctrl="FIELDCOLUMN3" field="ITEM-ACCOUNTNAME" uid="17"/>
+    <fieldColumn buttonText="LocalTXT144" ctrl="FIELDCOLUMN4" field="ITEM-AMOUNT" uid="18"/>
+</tablePage>
+                            </fieldTable>
+                        </groupPanel>
+                        <groupPanel ctrl="PAYMENT_GROUP" groupHeaderText="LocalTXT29" groupInfoText="LocalTXT30" groupTrailerText="LocalTXT31" uid="19">
+                            <spacer ctrl="SPACER1" uid="20"/>
+                            <panel ctrl="PANEL1" layoutType="HORIZONTAL_BOX" uid="21">
+<layoutProperties>
+    <HORIZONTAL_BOX hAlign="Left" spacerSize="10px"/>
+</layoutProperties>
+<button buttonText="LocalTXT32" ctrl="MP_BUTTON" mouseOverText="LocalTXT33" uid="22">
+    <rootHtmlElementProperties idLocator="paySubmit"/>
+</button>
+<button buttonText="LocalTXT154" ctrl="BUTTON3" mouseOverText="LocalTXT155" onClickEvent="/Scripts/GL_CANCEL_PAYMENT" uid="23"/>
+                            </panel>
+                            <field buttonText="LocalTXT158" ctrl="FOCUS_FIELD_CONT" displayEditor="true" displayInfoText="false" displayLabelText="false" editorStyle="display:none;" field="FOCUS_FIELD" uid="24"/>
+                            <html ctrl="HTML1" htmlText="LocalTXT94" uid="25"/>
+                            <button buttonText="LocalTXT90" ctrl="BUTTON2" mouseOverText="LocalTXT96" onClickEvent="/Scripts/GL_JS_PAY_STATUS,/Scripts/GL_GOTO_NEXT_PAGE" style="cursor:pointer;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;display:none;" uid="26">
+<rootHtmlElementProperties htmlEventHandlers="onclick;$(&quot;*&quot;).css(&quot;cursor&quot;, &quot;progress&quot;); " idLocator="statusButton"/>
+                            </button>
+                            <button buttonText="LocalTXT156" ctrl="BUTTON4" mouseOverText="LocalTXT157" onClickEvent="/Scripts/GL_JS_PAY_CANCEL" style="display:none;" uid="27">
+<rootHtmlElementProperties idLocator="statusCancel"/>
+                            </button>
+                            <field buttonText="LocalTXT126" ctrl="FIELDCONTROL15" displayInfoText="false" displayLabelText="false" editorStyle="display:none;" field="RES_XML" uid="28">
+<editorHtmlElementProperties idLocator="resXml"/>
+<rootHtmlElementProperties idLocator="@0"/>
+                            </field>
+                        </groupPanel>
+                    </gridCell>
+                    <gridCell column="2" columnspan="1" ctrl="GRIDCELL2" default="L" errorMsgClass="errorMessage" row="1" rowspan="1" textColor="#404040" uid="29" vAlign="Top" warningMsgClass="warningMessage">
+                        <groupPanel ctrl="RES_GROUP" displayOnly="true" groupHeaderText="LocalTXT127" groupInfoText="LocalTXT128" groupTrailerText="LocalTXT129" hidden="true" uid="30">
+                            <field buttonText="LocalTXT106" ctrl="FIELDCONTROL1" field="RES_AUTHCODE" uid="31"/>
+                            <field buttonText="LocalTXT107" ctrl="FIELDCONTROL2" field="RES_AUTHDETAIL_AMOUNT" uid="32"/>
+                            <field buttonText="LocalTXT108" ctrl="FIELDCONTROL3" field="RES_AUTHDETAIL_CAN" uid="33"/>
+                            <field buttonText="LocalTXT109" ctrl="FIELDCONTROL4" field="RES_AUTHDETAIL_MESSAGE" uid="34"/>
+                            <field buttonText="LocalTXT110" ctrl="FIELDCONTROL5" field="RES_MOP" uid="35"/>
+                            <field buttonText="LocalTXT111" ctrl="FIELDCONTROL6" field="RES_REQSTATUS_MESSAGE" uid="36"/>
+                            <field buttonText="LocalTXT112" ctrl="FIELDCONTROL7" field="RES_REQUESTID" uid="37"/>
+                            <field buttonText="LocalTXT113" ctrl="FIELDCONTROL8" field="RES_RESPONSECODE" uid="38"/>
+                            <field buttonText="LocalTXT114" ctrl="FIELDCONTROL9" field="RES_STATUSCODE" uid="39"/>
+                            <field buttonText="LocalTXT147" ctrl="FIELDCONTROL10" field="RES_SURCHARGE_AMOUNT" uid="40"/>
+                            <field buttonText="LocalTXT148" ctrl="FIELDCONTROL11" field="RES_SURCHARGE_FUNDCODE" uid="41"/>
+                            <field buttonText="LocalTXT149" ctrl="FIELDCONTROL12" field="RES_SURCHARGE_REFERENCE" uid="42"/>
+                            <fieldTable ctrl="TABLE2" field="RES_ITEM" insertable="false" tableHeaderText="LocalTXT120" tableInfoText="LocalTXT121" tableTrailerText="LocalTXT122" uid="43">
+<tablePage ctrl="TABLEPAGE2" default="L" uid="44">
+    <fieldColumn buttonText="LocalTXT123" ctrl="FIELDCOLUMN5" field="RES_ITEM-AMOUNT" uid="45" width="20%"/>
+    <fieldColumn buttonText="LocalTXT124" ctrl="FIELDCOLUMN6" field="RES_ITEM-CAN" uid="46" width="20%"/>
+    <fieldColumn buttonText="LocalTXT130" ctrl="FIELDCOLUMN7" field="RES_ITEM-FUNDCODE" uid="47" width="20%"/>
+    <fieldColumn buttonText="LocalTXT131" ctrl="FIELDCOLUMN8" field="RES_ITEM-REFERENCE" uid="48" width="20%"/>
+    <fieldColumn buttonText="LocalTXT132" ctrl="FIELDCOLUMN9" field="RES_ITEM-REFERENCE2" uid="49" width="20%"/>
+</tablePage>
+                            </fieldTable>
+                        </groupPanel>
+                    </gridCell>
+                </gridControl>
+            </groupPanel>
+        </page>
+    </pageContents>
+</page>

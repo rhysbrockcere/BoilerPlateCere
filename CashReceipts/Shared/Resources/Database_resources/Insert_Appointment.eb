@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource debug="true" database="CRM" table="true" nativeSql="true" id="Insert_Appointment" dateCreated="2017-08-01T16:24:21.450+01:00">
+        <columns>*</columns>
+        <from>app_Slots CROSS JOIN
+app_Slots AS app_Slots_2</from>
+        <where>(app_Slots.Schedule_ID =
+                      (SELECT Schedule_ID
+                       FROM      app_Slots AS app_Slots_1
+                       WHERE   (Slot_ID = app_Slots_2.Slot_ID))) AND (app_Slots.Start BETWEEN app_Slots_2.Start AND DATEADD(minute, &amp;&amp;App_Duration - 1, app_Slots_2.Start)) AND 
+                  (app_Slots_2.Slot_ID =  &amp;&amp;Slot_ID)</where>
+        <select>select app_Slots.*
+from app_Slots CROSS JOIN
+app_Slots AS app_Slots_2 
+where (app_Slots.Schedule_ID =
+                      (SELECT Schedule_ID
+                       FROM      app_Slots AS app_Slots_1
+                       WHERE   (Slot_ID = app_Slots_2.Slot_ID))) AND (app_Slots.Start BETWEEN app_Slots_2.Start AND DATEADD(minute, &amp;&amp;App_Duration - 1, app_Slots_2.Start)) AND 
+                  (app_Slots_2.Slot_ID =  &amp;&amp;SlotID)</select>
+        <update>update app_Slots CROSS JOIN
+app_Slots AS app_Slots_2
+set Created_By=&amp;&amp;Created_By,Date_Created=&amp;&amp;Date_Created,Date_Modified=&amp;&amp;Date_Modified,Modified_By=&amp;&amp;Modified_By,Position_ID=&amp;&amp;Position_ID,Start=&amp;&amp;Start,Status=&amp;&amp;Status,Enquirey_ID=&amp;&amp;Enquiery_ID 
+where Slot_ID=&amp;&amp;Slot_ID</update>
+        <delete>delete from app_Slots 
+where Slot_ID=&amp;&amp;Slot_ID</delete>
+        <insert>insert into app_Slots 
+(Created_By,Date_Created,Date_Modified,Modified_By,Position_ID,Slot_ID,Start,Status) 
+values(&amp;&amp;Created_By,&amp;&amp;Date_Created,&amp;&amp;Date_Modified,&amp;&amp;Modified_By,&amp;&amp;Position_ID,&amp;&amp;Slot_ID,&amp;&amp;Start,&amp;&amp;Status)</insert>
+        <fields>
+            <field id="App_Duration" type="INTEGER" length="10" readOnly="true" persistent="false"/>
+            <field id="Category_ID" length="10" readOnly="true" persistent="false"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Enquiry_ID" type="INTEGER" length="10" persistent="false"/>
+            <field id="Location_ID" type="INTEGER" length="10" persistent="false"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Position_ID" type="VARCHAR" length="50"/>
+            <field id="Schedule_ID" type="INTEGER" length="10" persistent="false"/>
+            <field id="SlotID" type="INTEGER" length="10" required="true" key="true" persistent="false"/>
+            <field id="Slot_ID" type="INTEGER" length="10" required="true" key="true"/>
+            <field id="Start" type="TIMESTAMP" length="16"/>
+            <field id="Status" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

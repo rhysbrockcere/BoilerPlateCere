@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DF_IT_TEL_DIR" table="true" preparedStatement="false" id="IT_SCHOOLS">
+        <columns>*</columns>
+        <from>schools</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address" type="VARCHAR" length="255"/>
+            <field id="Date" type="DATE" length="10"/>
+            <field id="Email" type="VARCHAR" length="50"/>
+            <field id="Headteacher" type="VARCHAR" length="50"/>
+            <field id="ID" description="auto_increment" type="INTEGER" length="3" required="true" key="true" readOnly="true"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Status" type="VARCHAR" length="20"/>
+            <field id="Telephone" type="VARCHAR" length="50"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

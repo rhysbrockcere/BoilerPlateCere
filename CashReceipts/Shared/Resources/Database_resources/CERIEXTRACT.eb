@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_ITRENT2012" preparedStatement="false" id="CERIEXTRACT">
+        <columns>*</columns>
+        <from>Ceri_Docs_Live.dbo.CERiExtract</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="scale_pt_vl_min" type="DOUBLE" length="53"/>
+            <field id="scale_ref_cd" type="VARCHAR" length="80"/>
+            <field id="teacher_i" type="VARCHAR" length="3"/>
+            <field id="the_desc" type="VARCHAR" length="80"/>
+            <field id="title" type="VARCHAR" length="80"/>
+            <field id="weeks_worked" type="DOUBLE" length="53"/>
+            <field id="COUNTRY" type="VARCHAR" length="80"/>
+            <field id="Email" type="VARCHAR" length="4000"/>
+            <field id="Man_Email" type="VARCHAR" length="4000"/>
+            <field id="Man_ID" type="VARCHAR" length="10"/>
+            <field id="Man_Username" type="VARCHAR" length="4000"/>
+            <field id="Manager" type="VARCHAR" length="161"/>
+            <field id="Manager_Con" type="VARCHAR" length="80"/>
+            <field id="Manager_Title" type="VARCHAR" length="80"/>
+            <field id="Name" type="VARCHAR" length="242"/>
+            <field id="PARTY_ID2_POST_LINK" type="INTEGER" length="10"/>
+            <field id="PARTY_ID_POST_LINK" type="VARCHAR" length="10"/>
+            <field id="PARTY_LNK_D_POST_LINK" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="PARTY_LNK_ED_POST_LINK" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="UNIT_NM_03" type="VARCHAR" length="80"/>
+            <field id="UNIT_NM_04" type="VARCHAR" length="80"/>
+            <field id="UNIT_NM_05" type="VARCHAR" length="80"/>
+            <field id="UNIT_NM_06" type="VARCHAR" length="80"/>
+            <field id="Username" type="VARCHAR" length="4000"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="act_scale_pt_ref_cd" type="VARCHAR" length="80"/>
+            <field id="addr_1" type="VARCHAR" length="80"/>
+            <field id="addr_2" type="VARCHAR" length="80"/>
+            <field id="addr_3" type="VARCHAR" length="80"/>
+            <field id="addr_4" type="VARCHAR" length="80"/>
+            <field id="addr_5" type="VARCHAR" length="80"/>
+            <field id="addr_6" type="VARCHAR" length="80"/>
+            <field id="birth_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="con_pos_ref_no" type="VARCHAR" length="80"/>
+            <field id="con_pos_ref_no_pos" type="VARCHAR" length="80"/>
+            <field id="cont_rel_srv_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="cont_rel_srv_day" type="INTEGER" length="10"/>
+            <field id="cont_rel_srv_month" type="INTEGER" length="10"/>
+            <field id="contract_basis" type="VARCHAR" length="80"/>
+            <field id="contract_type" type="VARCHAR" length="80"/>
+            <field id="contractual_hours" type="DOUBLE" length="53"/>
+            <field id="cost_code" type="VARCHAR" length="240"/>
+            <field id="forename1" type="VARCHAR" length="80"/>
+            <field id="forename2" type="VARCHAR" length="80"/>
+            <field id="fte_hours" type="DOUBLE" length="53"/>
+            <field id="grade" type="VARCHAR" length="80"/>
+            <field id="grade_act_vl" type="DOUBLE" length="53"/>
+            <field id="grade_ref_cd" type="VARCHAR" length="80"/>
+            <field id="occupancy_type" type="VARCHAR" length="10"/>
+            <field id="omax_scale_pt_ref_cd" type="VARCHAR" length="80"/>
+            <field id="omin_scale_pt_ref_cd" type="VARCHAR" length="80"/>
+            <field id="party_id2" type="VARCHAR" length="10"/>
+            <field id="party_id3" type="VARCHAR" length="10"/>
+            <field id="party_id_con" type="VARCHAR" length="10"/>
+            <field id="party_id_grade" type="VARCHAR" length="10"/>
+            <field id="party_id_pos" type="VARCHAR" length="10"/>
+            <field id="party_lnk_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="party_nm" type="VARCHAR" length="80"/>
+            <field id="party_nm_con" type="VARCHAR" length="80"/>
+            <field id="party_nm_grade" type="VARCHAR" length="80"/>
+            <field id="party_nm_pos" type="VARCHAR" length="80"/>
+            <field id="party_ref_no_con" type="VARCHAR" length="80"/>
+            <field id="party_ref_no_grade" type="VARCHAR" length="80"/>
+            <field id="party_ref_no_pos" type="VARCHAR" length="80"/>
+            <field id="party_ref_no_post" type="INTEGER" length="10"/>
+            <field id="per_ss_no" type="VARCHAR" length="80"/>
+            <field id="person_id" type="VARCHAR" length="10"/>
+            <field id="rec_srv_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="reference_no" type="VARCHAR" length="80"/>
+            <field id="scale_nm" type="VARCHAR" length="80"/>
+            <field id="scale_pt_vl_current" type="DOUBLE" length="53"/>
+            <field id="scale_pt_vl_max" type="DOUBLE" length="53"/>
+            <field id="starting_d" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="surname" type="VARCHAR" length="80"/>
+            <field id="t_and_c_item" type="VARCHAR" length="80"/>
+        </fields>
+    </dbResource>
+</ebase>

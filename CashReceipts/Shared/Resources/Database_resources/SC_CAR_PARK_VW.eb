@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="SC_CAR_PARK_VW">
+        <columns>*</columns>
+        <from>SC_Parking_Test.dbo.Car_Park_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="Unit_12" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="Unit_3" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="Unit_6" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="Unit_9" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="VAT_code" type="VARCHAR" length="50" readOnly="true"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Area" type="VARCHAR" length="250"/>
+            <field id="Area_CY" type="VARCHAR" length="250"/>
+            <field id="CP_ID" type="INTEGER" length="10"/>
+            <field id="End_Month" type="INTEGER" length="10"/>
+            <field id="Financial_Code" type="VARCHAR" length="50" readOnly="true"/>
+            <field id="Name" type="VARCHAR" length="500"/>
+            <field id="Name_CY" type="VARCHAR" length="500"/>
+            <field id="Start_Month" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

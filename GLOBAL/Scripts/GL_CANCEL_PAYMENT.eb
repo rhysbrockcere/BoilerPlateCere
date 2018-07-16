@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_PAYMENT_FULL" preferredComponentProject="GLOBAL" id="GL_CANCEL_PAYMENT" dateImported="2017-01-30T13:51:59.283Z">
+        <scriptText>set WHERE_CLAUSE = 'id = \'' + tostring(PAYMENTID) + '\'';
+set PAY_STATUS = 'CANCELLED';
+update CCC_PORTAL_PAYMENT;
+goto page $PREVIOUS_PAGE;</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Report_Error/Error_Load" pageHeaderTextRef="Txt9q0mbz" pageInfoTextReference="Txt42RZC3" pageTrailerTextReference="Txt83uoZ6" nextPageTextReference="Txt9j3ifl" prevPageTextReference="Txt7nO2Vj">
+    <pageContents>
+        <page ctrl="PagkFWsD" outputType="0" pdfFooterText="LocalTxt8XhzCz" pdfHeaderText="LocalTxt1lg9c8" uid="5xJ06uG4">
+            <panel ctrl="PanDmd7i" propertySet="PagePanel" topMargin="10px" uid="GD2s6nqD" width="500px">
+                <panel allPadding="10px" borderColor="#FF0000" borderRadius="5px" borderStyle="Solid" borderWidth="1px" ctrl="pnlSearch" inheritMsg="false" layoutType="VERTICAL_BOX" msgControls="Akv8ByIr" uid="RzwBXbS3">
+                    <layoutProperties>
+                        <VERTICAL_BOX cellHAlign="Center" spacerSize="10px"/>
+                    </layoutProperties>
+                    <message ctrl="msgSearch" uid="Akv8ByIr"/>
+                    <html ctrl="HtmcsFgJ" default="L" htmlText="LocalTxt7gbMRs" uid="BiM8mLnp"/>
+                    <text ctrl="TexYaK3R" text="LocalTxt26nD03" uid="7xqMi8F7"/>
+                    <text ctrl="txtReported" hidden="true" text="LocalTxt1ChRdm" uid="9byLAXkj"/>
+                    <button buttonText="LocalTxt1IlhLP" ctrl="cmd_Request" hidden="true" mouseOverText="LocalTxt4xkaEq" onClickEvent="/LogonService/Request_Access" uid="FKJpxlJ6"/>
+                    <button buttonText="LocalTxtAfMxUZ" ctrl="cmdHub" mouseOverText="LocalTxt7gwAtr" onClickEvent="/Report_Error/ReturnToForm" uid="B7LSV8Lg"/>
+                </panel>
+                <panel allPadding="10px" borderColor="#0066FF" borderRadius="5px" borderStyle="Solid" borderWidth="1px" ctrl="PanM8kVp" displayOnly="true" layoutType="FIELD" textSize="10pt" topMargin="10px" uid="DDm879Te">
+                    <layoutProperties>
+                        <VERTICAL_BOX cellHAlign="Center"/>
+                    </layoutProperties>
+                    <panel ctrl="Panj4QiQ" layoutType="VERTICAL_BOX" uid="4JqlL7Rh">
+                        <layoutProperties>
+                            <VERTICAL_BOX cellHAlign="Center"/>
+                        </layoutProperties>
+                        <text ctrl="Tex4wyuo" text="LocalTxt4QdrAW" uid="FyO9fa5f"/>
+                    </panel>
+                    <field buttonText="LocalTxt77C12V" ctrl="Fldi6JGX" field="err_Server" uid="OjtkALwd"/>
+                    <field buttonText="LocalTxt7qhllh" ctrl="FldQgSs2" field="err_Form_ID" uid="9k8hEnTj"/>
+                    <field buttonText="LocalTxt3C68WY" ctrl="Fld14Nlji" field="err_Page" uid="decZWKy"/>
+                    <field buttonText="LocalTxt516xmx" ctrl="FldcniFn" field="User" uid="BJdgWo7t"/>
+                    <field buttonText="LocalTxt5wtOC2" ctrl="FldD8jzC" field="Session_ID" uid="3U4yGf8O"/>
+                    <field buttonText="LocalTxthnopo" ctrl="FldIGL78" field="err_Message" uid="Jb6atYyK"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

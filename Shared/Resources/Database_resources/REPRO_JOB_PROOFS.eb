@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="REPRO_JOB_PROOFS">
+        <columns>*</columns>
+        <from>ICT_Reprographic_Test.dbo.Job_Proofs</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Accepted" type="VARCHAR" length="50"/>
+            <field id="Ammendments" type="VARCHAR" length="2000"/>
+            <field id="Filename" type="VARCHAR" length="500"/>
+            <field id="Proof_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Proof_Number" type="INTEGER" length="10"/>
+            <field id="Proof_Returned" type="TIMESTAMP" length="16"/>
+            <field id="Proof_Returned_By" type="VARCHAR" length="50"/>
+            <field id="Proof_Sent" type="TIMESTAMP" length="16"/>
+            <field id="Proof_Sent_By" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

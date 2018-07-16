@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CIS_COURSE">
+        <columns>*</columns>
+        <from>ICT_Training_Test.dbo.CIS_Course</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Active" length="1"/>
+            <field id="Cost" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="CourseID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Course_Code" type="VARCHAR" length="5"/>
+            <field id="Course_Title_CY" type="VARCHAR" length="250"/>
+            <field id="Course_Title_EN" type="VARCHAR" length="250"/>
+            <field id="Ledger_Code" type="VARCHAR" length="50"/>
+            <field id="VAT_Code" length="1"/>
+            <field id="VAT_Rate" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Sys" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

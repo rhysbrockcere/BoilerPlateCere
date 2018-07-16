@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Detail Code Lookup table for DSS Residential Care Payment System Contracts" database="DSS_RES_CARE" preparedStatement="false" id="DSS_LOOKUP_ACCOMODATION">
+        <columns>*</columns>
+        <from>DSS_Res_Care.dbo.Lookup_Accomodation</from>
+        <where>Accom_ID=&amp;&amp;FOP_ACCOMODATION_TYPE</where>
+        <fields>
+            <field id="Accom_Description" type="VARCHAR" length="50"/>
+            <field id="FOP_ACCOMODATION_TYPE" type="VARCHAR" length="2" persistent="false"/>
+            <field id="Accom_Pers_Allow_Code" type="VARCHAR" length="4"/>
+            <field id="Accom_Detail_Code" type="VARCHAR" length="4"/>
+            <field id="Accom_ID" type="VARCHAR" length="2"/>
+        </fields>
+    </dbResource>
+</ebase>

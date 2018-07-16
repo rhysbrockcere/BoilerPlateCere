@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" id="FS_SUPPORT_CONTENT_TYPE_TBL">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Support_Content_Type</from>
+        <fields>
+            <field id="Support_Content_Type_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Content_Type" type="VARCHAR" length="50"/>
+            <field id="Support_Type" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="DELPHI_EST_NAME">
+        <columns>*</columns>
+        <from>Absence.dbo.Delphi_Est_Name</from>
+        <fields>
+            <field id="ESTABLISHMENT_NAME" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

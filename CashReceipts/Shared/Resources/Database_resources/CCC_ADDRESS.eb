@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Comino Addresses" database="CERESQLN1_SQL2012" preparedStatement="false" id="CCC_ADDRESS">
+        <columns>*</columns>
+        <from>cmdata.dbo.CCAddress</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Addr1" type="VARCHAR" length="100"/>
+            <field id="Addr2" type="VARCHAR" length="100"/>
+            <field id="Addr3" type="VARCHAR" length="100"/>
+            <field id="Addr4" type="VARCHAR" length="100"/>
+            <field id="Addr5" type="VARCHAR" length="100"/>
+            <field id="AddressStatus" type="VARCHAR" length="10"/>
+            <field id="AliasAddressCount" type="INTEGER" length="10"/>
+            <field id="AreaCode" type="VARCHAR" length="5"/>
+            <field id="CountryID" type="VARCHAR" length="40"/>
+            <field id="CountyID" type="VARCHAR" length="40"/>
+            <field id="PostCode" type="VARCHAR" length="18"/>
+            <field id="ProcessNo" type="INTEGER" length="10"/>
+            <field id="PropertyReference" type="VARCHAR" length="16"/>
+            <field id="RealUPRN" type="VARCHAR" length="12"/>
+            <field id="UPRN" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="WalkCode" type="VARCHAR" length="5"/>
+            <field id="modDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="modType" length="1"/>
+            <field id="modUser" type="VARCHAR" length="20"/>
+        </fields>
+    </dbResource>
+</ebase>

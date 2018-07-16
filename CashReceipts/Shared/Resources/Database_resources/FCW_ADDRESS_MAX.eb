@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Cusotmer and Company Address held with FCW CRM system" database="SQLE648S1" preparedStatement="false" id="FCW_ADDRESS_MAX">
+        <columns>MAX(Address_ID) as Address_ID</columns>
+        <from>FCW_CRM_Test.dbo.Tbl_Address</from>
+        <fields>
+            <field id="Address_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

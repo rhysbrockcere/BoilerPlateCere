@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_ITRENT2012" table="true" preparedStatement="false" id="LF_TRAVEL_FEEDER_TBL">
+        <columns>*</columns>
+        <from>Feeders_Test.dbo.Travel_Feeder</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by ID</additional>
+        <fields>
+            <field id="Batch" type="VARCHAR" length="50"/>
+            <field id="CC" type="VARCHAR" length="4"/>
+            <field id="Cash" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Cost_Code" type="VARCHAR" length="50"/>
+            <field id="Effective_Date" type="TIMESTAMP" length="16"/>
+            <field id="Element" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Input_Date" type="TIMESTAMP" length="16"/>
+            <field id="Input_user" type="VARCHAR" length="50"/>
+            <field id="Month" type="INTEGER" length="10"/>
+            <field id="Name" type="VARCHAR" length="500"/>
+            <field id="PAY_NO" type="VARCHAR" length="50"/>
+            <field id="Unit" type="NUMBER" length="18" fractionalDigits="2"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Year" type="INTEGER" length="10"/>
+            <field id="Claim_Date" type="TIMESTAMP" length="16"/>
+            <field id="Claim_Auth" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

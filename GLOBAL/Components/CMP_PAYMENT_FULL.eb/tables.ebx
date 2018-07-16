@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="DATAITEM" id="1140">
+        <column name="CODE" type="CHAR" labelTextRef="TXT41" maxLength="50" displayType="TEXT" displayLength="50" id="1200">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="VALUE" type="CHAR" labelTextRef="TXT42" maxLength="50" displayType="TEXT" displayLength="50" id="1210">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+    </table>
+    <table name="EMAIL" id="1150"/>
+    <table name="ITEM" id="10">
+        <column name="ACCOUNTCODE" type="CHAR" labelTextRef="TXT43" maxLength="5" displayType="TEXT" displayLength="5" id="40">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="ACCOUNTNAME" type="CHAR" defaultValue="Name" labelTextRef="TXT44" maxLength="50" displayType="TEXT" displayLength="50" id="50">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="ADDRESS_ADDRESS1" type="CHAR" defaultValue="Address" labelTextRef="TXT45" maxLength="50" displayType="TEXT" displayLength="50" id="60">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="ADDRESS_ADDRESS2" type="CHAR" labelTextRef="TXT46" maxLength="50" displayType="TEXT" displayLength="50" id="70">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="ADDRESS_ADDRESS3" type="CHAR" labelTextRef="TXT47" maxLength="50" displayType="TEXT" displayLength="50" id="80">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="ADDRESS_ADDRESS4" type="CHAR" labelTextRef="TXT48" maxLength="50" displayType="TEXT" displayLength="50" id="90">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="ADDRESS_POSTCODE" type="CHAR" defaultValue="Postcode" labelTextRef="TXT49" maxLength="10" displayType="TEXT" displayLength="10" id="100">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="AMOUNT" type="NUMBER" labelTextRef="TXT50" displayType="TEXT" id="110"/>
+        <column name="AREACODE" type="CHAR" labelTextRef="TXT51" maxLength="5" displayType="TEXT" displayLength="5" id="120">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="BALANCE" type="NUMBER" labelTextRef="TXT52" displayType="TEXT" id="130"/>
+        <column name="BILLINGADDRESS_ADDRESS1" type="CHAR" labelTextRef="TXT53" maxLength="50" displayType="TEXT" displayLength="50" id="140">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="BILLINGADDRESS_ADDRESS2" type="CHAR" labelTextRef="TXT54" maxLength="50" displayType="TEXT" displayLength="50" id="150">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="BILLINGADDRESS_ADDRESS3" type="CHAR" labelTextRef="TXT55" maxLength="50" displayType="TEXT" displayLength="50" id="160">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="BILLINGADDRESS_ADDRESS4" type="CHAR" labelTextRef="TXT56" maxLength="50" displayType="TEXT" displayLength="50" id="170">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="BILLINGADDRESS_POSTCODE" type="CHAR" labelTextRef="TXT57" maxLength="10" displayType="TEXT" displayLength="10" id="180">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="EDITABLE_MAXAMOUNT" type="INTEGER" labelTextRef="TXT58" displayType="TEXT" id="190">
+            <validators>
+                <validator type="DEC_DIG"/>
+                <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+                <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+            </validators>
+        </column>
+        <column name="EDITABLE_MINAMOUNT" type="INTEGER" labelTextRef="TXT59" displayType="TEXT" id="200">
+            <validators>
+                <validator type="DEC_DIG"/>
+                <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+                <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+            </validators>
+        </column>
+        <column name="FUNDCODE" type="CHAR" labelTextRef="TXT60" maxLength="5" displayType="TEXT" displayLength="5" id="210">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="FUNDNAME" type="CHAR" labelTextRef="TXT61" maxLength="50" displayType="TEXT" displayLength="50" id="220">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="ITEM1" type="CHAR" labelTextRef="TXT62" maxLength="50" displayType="TEXT" displayLength="50" id="230">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="ITEM2" type="CHAR" labelTextRef="TXT63" maxLength="50" displayType="TEXT" displayLength="50" id="240">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="LOCATIONCODE" type="CHAR" labelTextRef="TXT64" maxLength="5" displayType="TEXT" displayLength="5" id="250">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="MISCELLANEOUSPAYMENTMESSAGE" type="CHAR" labelTextRef="TXT65" maxLength="50" displayType="TEXT" displayLength="50" id="260">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="OVERRIDEUSERCODE" type="CHAR" labelTextRef="TXT66" maxLength="5" displayType="TEXT" displayLength="5" id="270">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="POSTCODE" type="CHAR" labelTextRef="TXT67" maxLength="50" displayType="TEXT" displayLength="50" id="280">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="QUANTITY" type="INTEGER" labelTextRef="TXT68" displayType="TEXT" id="290">
+            <validators>
+                <validator type="DEC_DIG"/>
+                <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+                <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+            </validators>
+        </column>
+        <column name="REFERENCE" type="CHAR" labelTextRef="TXT69" maxLength="50" displayType="TEXT" displayLength="50" id="300">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="REFERENCE2" type="CHAR" labelTextRef="TXT70" maxLength="50" displayType="TEXT" displayLength="50" id="310">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="SOURCECODE" type="CHAR" labelTextRef="TXT71" maxLength="5" displayType="TEXT" displayLength="5" id="320">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="TELNO" type="CHAR" labelTextRef="TXT72" maxLength="50" displayType="TEXT" displayLength="50" id="330">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="TRANCODE" type="CHAR" labelTextRef="TXT73" maxLength="5" displayType="TEXT" displayLength="5" id="340">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="UNIT" type="CURRENCY" labelTextRef="TXT170" maxLength="255" displayType="TEXT" id="1870"/>
+        <column name="USERLONG1" type="INTEGER" labelTextRef="TXT74" displayType="TEXT" id="350">
+            <validators>
+                <validator type="DEC_DIG"/>
+                <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+                <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+            </validators>
+        </column>
+        <column name="USERLONG2" type="INTEGER" labelTextRef="TXT75" displayType="TEXT" id="360">
+            <validators>
+                <validator type="DEC_DIG"/>
+                <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+                <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+            </validators>
+        </column>
+        <column name="USERLONG3" type="INTEGER" labelTextRef="TXT76" displayType="TEXT" id="370">
+            <validators>
+                <validator type="DEC_DIG"/>
+                <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+                <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+            </validators>
+        </column>
+        <column name="USERSTRING1" type="CHAR" labelTextRef="TXT77" maxLength="50" displayType="TEXT" displayLength="50" id="380">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="USERSTRING2" type="CHAR" labelTextRef="TXT78" maxLength="50" displayType="TEXT" displayLength="50" id="390">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="USERSTRING3" type="CHAR" labelTextRef="TXT79" maxLength="50" displayType="TEXT" displayLength="50" id="400">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="USERSTRING4" type="CHAR" labelTextRef="TXT80" maxLength="50" displayType="TEXT" displayLength="50" id="410">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="VATAMOUNT" type="CURRENCY" labelTextRef="TXT81" displayType="TEXT" id="420"/>
+        <column name="VATCODE" type="CHAR" labelTextRef="TXT82" maxLength="5" displayType="TEXT" displayLength="5" id="430">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="VATRATE" type="NUMBER" labelTextRef="TXT83" maxLength="50" displayType="TEXT" displayLength="50" id="440"/>
+    </table>
+    <table name="ITEM.2" id="1690">
+        <column name="AMOUNT_2" type="NUMBER" labelTextRef="TXT84" displayType="TEXT" id="1700"/>
+        <column name="CAN" type="INTEGER" labelTextRef="TXT85" displayType="TEXT" id="1710">
+            <validators>
+                <validator type="DEC_DIG"/>
+                <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+                <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+            </validators>
+        </column>
+        <column name="FUNDCODE_2" type="CHAR" labelTextRef="TXT86" maxLength="5" displayType="TEXT" displayLength="5" id="1720">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+        <column name="REFERENCE2_2" type="CHAR" labelTextRef="TXT88" maxLength="50" displayType="TEXT" displayLength="50" id="1730">
+            <validators>
+                <validator type="MIN_LENGTH" value="0"/>
+            </validators>
+        </column>
+        <column name="REFERENCE_2" type="CHAR" labelTextRef="TXT87" maxLength="50" displayType="TEXT" displayLength="50" id="1740">
+            <validators>
+                <validator type="MIN_LENGTH" value="1"/>
+            </validators>
+        </column>
+    </table>
+    <table name="PSTATUS" id="1180">
+        <column name="STATUS" type="CHAR" labelTextRef="TXT164" maxLength="50" displayType="TEXT" displayLength="50" id="1680">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+    <table name="RECEIPT_TBL" id="1820">
+        <column name="GROSS" type="CURRENCY" labelTextRef="TXT222" maxLength="255" displayType="TEXT" id="1780"/>
+        <column name="ITEM" type="CHAR" labelTextRef="TXT220" maxLength="255" displayType="TEXT" id="1760"/>
+        <column name="NET" type="CURRENCY" labelTextRef="TXT221" maxLength="255" displayType="TEXT" id="1770"/>
+        <column name="QUANTITY" type="INTEGER" labelTextRef="TXT225" maxLength="255" displayType="TEXT" id="1810"/>
+        <column name="UNIT" type="CURRENCY" labelTextRef="TXT245" maxLength="255" displayType="TEXT" id="1880"/>
+        <column name="VAT_AMOUNT" type="CURRENCY" labelTextRef="TXT223" maxLength="255" displayType="TEXT" id="1790"/>
+        <column name="VAT_RATE" type="INTEGER" labelTextRef="TXT224" maxLength="255" displayType="TEXT" id="1800"/>
+    </table>
+    <table name="RECEIPT_TOT" id="1910">
+        <column name="AMOUNT" type="CURRENCY" labelTextRef="TXT248" maxLength="255" displayType="TEXT" id="1900"/>
+        <column name="NAME" type="CHAR" labelTextRef="TXT247" maxLength="255" displayType="TEXT" id="1890"/>
+    </table>
+    <table name="RES_ITEM" id="20">
+        <column name="AMOUNT" type="INTEGER" labelTextRef="TXT115" displayType="TEXT" id="490">
+            <validators>
+                <validator type="DEC_DIG"/>
+                <validator type="MIN_VALUE_INCLUSIVE" value="-32768"/>
+                <validator type="MAX_VALUE_INCLUSIVE" value="32767"/>
+            </validators>
+        </column>
+        <column name="CAN" type="INTEGER" labelTextRef="TXT116" displayType="TEXT" id="500">
+            <validators>
+                <validator type="DEC_DIG"/>
+                <validator type="MIN_VALUE_INCLUSIVE" value="-32768"/>
+                <validator type="MAX_VALUE_INCLUSIVE" value="32767"/>
+            </validators>
+        </column>
+        <column name="FUNDCODE" type="CHAR" labelTextRef="TXT117" displayType="TEXT" id="510"/>
+        <column name="REFERENCE" type="CHAR" labelTextRef="TXT118" displayType="TEXT" id="520"/>
+        <column name="REFERENCE2" type="CHAR" labelTextRef="TXT119" displayType="TEXT" id="530"/>
+    </table>
+</tables>

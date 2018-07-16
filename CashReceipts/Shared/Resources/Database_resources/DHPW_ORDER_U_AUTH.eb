@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DHPW_ORDERS" preparedStatement="false" id="DHPW_ORDER_U_AUTH">
+        <columns>top(1) *</columns>
+        <from>dbo.User_Auth_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY Code2</additional>
+        <fields>
+            <field id="Code1" type="VARCHAR" length="50"/>
+            <field id="Code2" type="VARCHAR" length="50"/>
+            <field id="Code3" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="4000" readOnly="true"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="mail" type="VARCHAR" length="4000"/>
+        </fields>
+    </dbResource>
+</ebase>

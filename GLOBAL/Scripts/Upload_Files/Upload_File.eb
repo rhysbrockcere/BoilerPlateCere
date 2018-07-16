@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="Javascript" preferredComponentPath="/Components/Upload_Files" id="Upload_File" dateCreated="2018-02-26T16:11:38.856Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+if (tables.Uploads.rowCount &gt;= fields.Max_Uploads.value) { //Only allow a maximum of 3 files to be uploaded
+	event.owner.addErrorMessageText(texts.msg115);
+}
+
+var opts = new UploadOptions();
+//opts.directory = "c:/temp";                                   // Backslashes should be escaped e.g. c:\\temp
+opts.maxFileSize = "10M";                                     		// Files larger than 5MB can’t be uploaded       
+opts.acceptedMimeTypes = [ "image/*", "application/pdf" ];   		// Limit the file types shown in the browse panel 
+opts.fileTypes = [ "png", "gif", "jpg", "pdf", "doc", "docx", "doc", "xlsx", "xls", "jpeg"];  // Only these file types can be uploaded
+
+form.uploadFileFromBrowser(opts);                            		// Invoke the upload 
+
+var fullPath = system.variables.$FILE_NAME.value;
+
+if (fullPath) {
+   // Show info message if file uploaded successfully
+   //event.owner.addWarningMessage(1013, [filePath]);
+
+   //Insert row into the table and populate the columns
+   tables.Uploads.insertRow();
+   tables.Uploads.DocName.value = fullPath.replace(/^.*[\\\/]/, '');
+   tables.Uploads.DocPath.value = fullPath;
+
+}
+</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="FCW_CUSTOMER">
+        <columns>*</columns>
+        <from>FCW_CRM_Test.dbo.VW_Cust_Comp</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="DOB" type="DATE" length="16"/>
+            <field id="Email_Comp" type="VARCHAR" length="50"/>
+            <field id="Job_Title" type="VARCHAR" length="150"/>
+            <field id="Location_ID" type="INTEGER" length="10"/>
+            <field id="Mob_Num" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Tel_Num" type="VARCHAR" length="50"/>
+            <field id="Tel_Num_Comp" type="VARCHAR" length="50"/>
+            <field id="Title" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Web" type="VARCHAR" length="150"/>
+            <field id="Address_ID" type="INTEGER" length="10"/>
+            <field id="Archive" length="1"/>
+            <field id="Company_ID" type="INTEGER" length="10"/>
+            <field id="Company_Name" type="VARCHAR" length="500"/>
+            <field id="Email" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="School Closure table" database="SQLW648S1" preparedStatement="false" id="CE_BC_SCHOOL_CLOSURES">
+        <columns>*</columns>
+        <from>[School Closures].[dbo].[Closures]</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+            <field id="callerid" type="VARCHAR" length="50"/>
+            <field id="date" type="VARCHAR" length="10"/>
+            <field id="fullschoolname" type="VARCHAR" length="200"/>
+            <field id="schoolid" type="INTEGER" length="10"/>
+            <field id="schoolname" type="VARCHAR" length="100"/>
+            <field id="schoolstatus" length="10"/>
+            <field id="timecalled" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="updateid" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

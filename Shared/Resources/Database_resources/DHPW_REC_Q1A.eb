@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" preparedStatement="false" id="DHPW_REC_Q1A">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DHPW_Rec_Q1a</from>
+        <additional>Order by ID</additional>
+        <fields>
+            <field id="Eng" type="VARCHAR" length="1000"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Wel" type="VARCHAR" length="1000"/>
+        </fields>
+    </dbResource>
+</ebase>

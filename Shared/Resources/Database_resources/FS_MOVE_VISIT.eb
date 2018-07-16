@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" nativeSql="true" id="FS_MOVE_VISIT">
+        <update>insert into FS_Flying_Start_TEST.dbo.FS_Aud_Health_Visit 
+(Visit_ID, Visit_Date, Child_FS_ID, Staff_ID, Prof_type, Location, Lang, First_Visit, Bookstart, Created_by, Input_date,
+                         Risk_Level, Visit_Type, Joint_Visit, Note_ID, Visit_Parent, Breastfeeding_Ind, Operator_ID, Transaction_type)
+select  Visit_ID, Visit_Date, Child_FS_ID, Staff_ID, Prof_type, Location, Lang, First_Visit, Bookstart, Created_by, getdate(),
+Risk_Level, Visit_Type, Joint_Visit, Note_ID, Visit_Parent, Breastfeeding_Ind, &amp;&amp;DELETE_USER, 'DELETE'
+from FS_Flying_Start_TEST.dbo.FS_Health_Visit
+where Visit_ID = &amp;&amp;ID
+
+insert into FS_Flying_Start_TEST.dbo.FS_Aud_Note
+(Note_ID, Child_FS_ID, Carer_FS_ID, Note_Comment, Note_Date, Note_Author, Date_Input, Operator_ID, Operation, Note_Type_ID)
+select Note_ID, Child_FS_ID, Carer_FS_ID, Note_Comment, Note_Date, Note_Author, getdate(), &amp;&amp;DELETE_USER, 'DELETE', Note_Type_ID
+from FS_Flying_Start_TEST.dbo.FS_Note
+where Note_ID = &amp;&amp;NOTE_ID
+
+DELETE from FS_Flying_Start_TEST.dbo.FS_Health_Visit
+where Visit_ID = &amp;&amp;ID
+
+DELETE from FS_Flying_Start_TEST.dbo.FS_Note
+where Note_ID = &amp;&amp;NOTE_ID</update>
+        <fields>
+            <field id="DELETE_USER" type="VARCHAR" length="30"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="NOTE_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

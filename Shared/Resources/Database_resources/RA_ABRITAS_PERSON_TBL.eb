@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1_SQL2012" table="true" preparedStatement="false" id="RA_ABRITAS_PERSON_TBL">
+        <columns>*</columns>
+        <from>Rent_Accounting_TEST.dbo.Abritas_Person</from>
+        <where>&amp;&amp;WHERE_CLAUSE_ABRITAS</where>
+        <fields>
+            <field id="Household" type="VARCHAR" length="70"/>
+            <field id="Household_ID" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE_ABRITAS" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

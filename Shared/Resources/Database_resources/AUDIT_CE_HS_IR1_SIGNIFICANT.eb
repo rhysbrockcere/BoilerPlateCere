@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="AUDIT_CE_HS_IR1_SIGNIFICANT">
+        <columns>*</columns>
+        <from>CE_HS_TEST.dbo.AUDIT_CE_HS_IR1_Significant</from>
+        <fields>
+            <field id="Audit_Action" type="VARCHAR" length="50"/>
+            <field id="Audit_Date" type="TIMESTAMP" length="16"/>
+            <field id="Audit_User" type="VARCHAR" length="50"/>
+            <field id="IRI_Ref" type="NUMERIC" length="18"/>
+            <field id="SIGN_ID" type="INTEGER" length="10"/>
+            <field id="Significant_Completion_Date" type="VARCHAR" length="50"/>
+            <field id="Significant_Description" type="VARCHAR" length="250"/>
+            <field id="Significant_Number" type="BIGINT" length="19"/>
+            <field id="Significant_Priority" type="VARCHAR" length="50"/>
+            <field id="Significant_Responsible_Person" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

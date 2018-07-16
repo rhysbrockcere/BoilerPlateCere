@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="SC_TICKETS_MAX">
+        <columns>MAX(Ticket_ID) AS MT_ID</columns>
+        <from>SC_Parking_Test.dbo.Tickets</from>
+        <fields>
+            <field id="MT_ID" type="INTEGER" length="19"/>
+        </fields>
+    </dbResource>
+</ebase>

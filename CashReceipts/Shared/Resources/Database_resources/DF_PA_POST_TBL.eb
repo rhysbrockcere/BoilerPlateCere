@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Post Search details" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_POST_TBL">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.POST</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="BKGD_INV_I" length="1"/>
+            <field id="CAR_STATUS_I" length="1"/>
+            <field id="CASH_VAL" type="DECIMAL" length="9"/>
+            <field id="COST_CODE" length="24"/>
+            <field id="CPA_INV_I" length="1"/>
+            <field id="CREAT_BY" length="6"/>
+            <field id="CREAT_D" length="8"/>
+            <field id="CREAT_REAS" length="2"/>
+            <field id="CTTE_CD" length="4"/>
+            <field id="END_D" length="8"/>
+            <field id="EXTRA_C1" length="1"/>
+            <field id="EXTRA_C2" length="1"/>
+            <field id="EXTRA_C3" length="10"/>
+            <field id="EXTRA_D1" length="8"/>
+            <field id="ID_CARD_I" length="1"/>
+            <field id="INTEREST_I" length="1"/>
+            <field id="JOB_NO" length="12"/>
+            <field id="JT_STAFF_W" length="6"/>
+            <field id="LGMB_C" length="12"/>
+            <field id="LOCN" length="32"/>
+            <field id="MANAGER_I" length="1"/>
+            <field id="NEGB_C" length="5"/>
+            <field id="NES_IND_CLAS" length="4"/>
+            <field id="NES_OCC_CLAS" length="5"/>
+            <field id="ORG_NO" type="DECIMAL" length="2" required="true" key="true"/>
+            <field id="PAY_FREQ" length="1"/>
+            <field id="POL_RESTR_I" length="1"/>
+            <field id="POST_NO" length="12" required="true" key="true"/>
+            <field id="RELIGION" length="1"/>
+            <field id="SERV_COND" length="4"/>
+            <field id="SHARE_I" length="1"/>
+            <field id="SOC_WORK_I" length="1"/>
+            <field id="SSDS_LINE_NO" type="DECIMAL" length="4"/>
+            <field id="STATUS_I" length="1"/>
+            <field id="TEACH_I" length="1"/>
+            <field id="TITLE" length="32"/>
+            <field id="TYPE_I" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

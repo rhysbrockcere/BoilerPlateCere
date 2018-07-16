@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Request for leave" database="DFIT_CENTRAL" preparedStatement="false" id="IT_LEAVE_REQUEST">
+        <columns>*</columns>
+        <from>IT_Leave_Request.dbo.leave_details</from>
+        <fields>
+            <field id="email" length="10"/>
+            <field id="end_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="leave_reason" length="50"/>
+            <field id="leave_type" length="10"/>
+            <field id="name" length="30"/>
+            <field id="no_of_days" type="NUMERIC" length="10"/>
+            <field id="request_id" type="INTEGER" length="10" required="true" key="true"/>
+            <field id="start_am" length="2"/>
+            <field id="start_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="start_pm" length="2"/>
+        </fields>
+    </dbResource>
+</ebase>

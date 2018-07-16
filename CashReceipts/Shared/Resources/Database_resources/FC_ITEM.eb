@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="FC_ITEM">
+        <columns>*</columns>
+        <from>DF_Fees_Charges.dbo.Items</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="UnitPrice" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="VAT_code" type="VARCHAR" length="50"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+            <field id="Archive" type="BIT" length="1"/>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Effective_date" type="TIMESTAMP" length="16" fractionalDigits="2"/>
+            <field id="Financial_Code" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Include_in_Basket" type="BIT" length="1"/>
+            <field id="Item" type="VARCHAR" length="255"/>
+            <field id="ItemOrder" type="INTEGER" length="10"/>
+            <field id="Item_CY" type="VARCHAR" length="255"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="New_Effective_Date" type="TIMESTAMP" length="16" fractionalDigits="2"/>
+            <field id="New_Percent_Rate" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="New_UnitPrice" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="Notes" type="VARCHAR" length="500"/>
+            <field id="Notes_CY" type="VARCHAR" length="500"/>
+            <field id="Percent_Rate" type="NUMERIC" length="16" fractionalDigits="2"/>
+            <field id="Percentage" type="BIT" length="1"/>
+            <field id="Review_Date" type="TIMESTAMP" length="16"/>
+            <field id="Reviewed" type="BIT" length="1"/>
+            <field id="Reviewed_By" type="VARCHAR" length="50"/>
+            <field id="Short_Description" type="VARCHAR" length="50"/>
+            <field id="Short_Description_CY" type="VARCHAR" length="50"/>
+            <field id="Statutory" type="BIT" length="1"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="Unit" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

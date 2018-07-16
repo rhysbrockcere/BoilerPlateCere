@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_CP_ACTION">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_CP_Action</from>
+        <fields>
+            <field id="ACT_ID" type="INTEGER" length="10"/>
+            <field id="Action" type="VARCHAR" length="2000"/>
+            <field id="BU_Dept" type="VARCHAR" length="50"/>
+            <field id="BU_ID" type="INTEGER" length="10"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Links" type="VARCHAR" length="2000"/>
+            <field id="OBJ_ID" type="INTEGER" length="10"/>
+            <field id="Officer" type="VARCHAR" length="250"/>
+            <field id="Outcome" type="VARCHAR" length="2000"/>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="TH_ID" type="INTEGER" length="10"/>
+            <field id="Target_Date" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

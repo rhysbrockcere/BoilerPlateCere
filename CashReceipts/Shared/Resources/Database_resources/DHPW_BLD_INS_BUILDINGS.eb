@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DHPWSQL" preparedStatement="false" id="DHPW_BLD_INS_BUILDINGS">
+        <columns>*</columns>
+        <from>BuildingInspections_TEST.dbo.Buildings</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="BuildingNo" type="VARCHAR" length="50" readOnly="true"/>
+            <field id="BuildingTypeNo" type="INTEGER" length="10"/>
+            <field id="InspectorNo" type="INTEGER" length="10"/>
+            <field id="LastInspected" type="TIMESTAMP" length="16"/>
+            <field id="LastInspectedForAsbestos" type="TIMESTAMP" length="16"/>
+            <field id="Location" type="VARCHAR" length="50"/>
+            <field id="Postcode" type="VARCHAR" length="50"/>
+            <field id="Street" type="VARCHAR" length="50"/>
+            <field id="Updated" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

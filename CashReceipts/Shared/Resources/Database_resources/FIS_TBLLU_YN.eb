@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_YN">
+        <columns>*</columns>
+        <from>eyears_live.dbo.TblLU_YN</from>
+        <fields>
+            <field id="yn_desc" length="1"/>
+            <field id="yn_int" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

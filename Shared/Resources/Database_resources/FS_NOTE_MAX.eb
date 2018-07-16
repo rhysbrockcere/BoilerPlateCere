@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Note field for Flying Start - linked by CHILD_FS_ID and/or CARER_FS_ID" database="SQLE645S1" preparedStatement="false" id="FS_NOTE_MAX">
+        <columns>MAX(Note_ID) as Note_ID</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Note</from>
+        <where>Note_ID is not null</where>
+        <fields>
+            <field id="Note_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="DFIT_CENTRAL" table="true" preparedStatement="false" id="IT_HD_JOB_TABLE">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_HD_Job</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="BillAmount" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="BillCode" length="10"/>
+            <field id="BillDate" type="TIMESTAMP" length="16"/>
+            <field id="Category" type="VARCHAR" length="50"/>
+            <field id="JDate" type="TIMESTAMP" length="16"/>
+            <field id="JTime" length="5"/>
+            <field id="JobNum" type="BIGINT" length="19" required="true" key="true"/>
+            <field id="JobType" type="VARCHAR" length="50"/>
+            <field id="NeededByDate" type="TIMESTAMP" length="16"/>
+            <field id="Notes" type="VARCHAR" length="300"/>
+            <field id="Priority" type="SMALLINT" length="5"/>
+            <field id="Problem" type="VARCHAR" length="300"/>
+            <field id="Status" length="10"/>
+            <field id="TermDate" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC"/>
+            <field id="TermTime" length="5"/>
+            <field id="Type" length="10"/>
+            <field id="UserID" type="VARCHAR" length="50"/>
+            <field id="AssignedTo" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

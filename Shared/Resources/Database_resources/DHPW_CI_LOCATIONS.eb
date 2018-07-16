@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Inspection Locations" database="DHPW_TEST" table="true" preparedStatement="false" id="DHPW_CI_LOCATIONS">
+        <columns>*</columns>
+        <from>Cleaninginsp_TEST.dbo.Locations</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="LocTypeID" type="INTEGER" length="10"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="UPRN" length="12" required="true" key="true"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

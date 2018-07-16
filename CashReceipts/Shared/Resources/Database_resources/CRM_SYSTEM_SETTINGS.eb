@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="CRM_SYSTEM_SETTINGS">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.sys_Settings</from>
+        <fields>
+            <field id="SP_Bucket_DL" type="VARCHAR" length="50"/>
+            <field id="SP_Bucket_URL" type="VARCHAR" length="500"/>
+            <field id="System_Version" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="CardiCo_Folder" type="VARCHAR" length="500"/>
+        </fields>
+    </dbResource>
+</ebase>

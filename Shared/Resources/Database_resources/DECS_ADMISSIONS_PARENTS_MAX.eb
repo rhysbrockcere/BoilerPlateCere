@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="ADMISSIONS" preparedStatement="false" id="DECS_ADMISSIONS_PARENTS_MAX">
+        <columns>MAX(PARENT_ID) as PARENT_ID</columns>
+        <from>Parents</from>
+        <where>PARENT_ID is not null</where>
+        <fields>
+            <field id="PARENT_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

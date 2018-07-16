@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="DECS_AC_PARTICIPANT" dateCreated="2013-08-02T14:59:20.637+01:00" dateImported="2013-10-31T14:25:02.657Z">
+        <columns>ISNULL(UPPER(Surname),' ') + ', ' + ISNULL(Firstname,' ') + ',' + ISNULL(CONVERT(varchar(10), DOB, 103),'') as Fullname, Surname, ParticipantRef, Firstname, DOB</columns>
+        <from>IT_Central.dbo.DECS_AC_Participant</from>
+        <additional>ORDER BY Surname,Firstname</additional>
+        <fields>
+            <field id="DOB" type="TIMESTAMP" input="false"/>
+            <field id="Firstname" input="false"/>
+            <field id="Fullname" input="false"/>
+            <field id="ParticipantRef" input="false"/>
+            <field id="Surname" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

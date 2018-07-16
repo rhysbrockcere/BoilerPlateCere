@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="LF_ELEMENT_CODES_LIST" dateCreated="2013-11-13T11:43:07.683Z">
+        <columns>ID, Ele_Type, Ele_Std_Desc, Ele_Order, Ele_Description, Ele_Code</columns>
+        <from>Logica_Feeders_Test.dbo.Element_Codes</from>
+        <additional>order by Ele_Order</additional>
+        <fields>
+            <field id="ID" type="INTEGER" input="false"/>
+            <field id="Ele_Type" input="false"/>
+            <field id="Ele_Std_Desc" input="false"/>
+            <field id="Ele_Order" type="INTEGER" input="false"/>
+            <field id="Ele_Description" input="false"/>
+            <field id="Ele_Code" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

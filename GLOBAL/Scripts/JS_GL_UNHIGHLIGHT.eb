@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Components/FOSTER_PORTAL" preferredComponentProject="GLOBAL" id="JS_GL_UNHIGHLIGHT" dateImported="2013-04-22T13:04:26.137+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+////////////////////////////////////////////////////////////////
+// Script to unhighlight any fields with a specified modifier //
+////////////////////////////////////////////////////////////////
+
+// Script requires the field MOD to be set on the form
+var mod = fields.MOD.getValue();
+
+// each time the scripts finds the specified modifier it will execute the code below
+for each (var m in form.currentPage.getControlsByModifier(mod))
+{
+		// resets the field color to be the default
+		m.setEditorStyle(&quot;color=''&quot;);
+		m.setLabelStyle(&quot;color=''&quot;);			
+
+}</scriptText>
+    </script>
+</ebase>

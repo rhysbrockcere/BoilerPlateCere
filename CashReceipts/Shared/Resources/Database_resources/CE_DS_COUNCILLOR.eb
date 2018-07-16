@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Democratic Services - Councillor details" database="SQLE648S1" preparedStatement="false" id="CE_DS_COUNCILLOR">
+        <columns>*</columns>
+        <from>CE_Democratic_Services_TEST.dbo.CE_DS_Councillor</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address1" type="VARCHAR" length="255"/>
+            <field id="Address2" type="VARCHAR" length="255"/>
+            <field id="Address3" type="VARCHAR" length="255"/>
+            <field id="Address4" type="VARCHAR" length="255"/>
+            <field id="Date_Last_Updated" type="TIMESTAMP" length="16"/>
+            <field id="End_Date" type="DATE" length="12"/>
+            <field id="Forename" type="VARCHAR" length="255"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Mobile" type="VARCHAR" length="255"/>
+            <field id="Party_ID" type="INTEGER" length="10"/>
+            <field id="Political_Group_ID" type="INTEGER" length="10"/>
+            <field id="Postcode" type="VARCHAR" length="255"/>
+            <field id="Start_Date" type="DATE" length="12"/>
+            <field id="Surname" type="VARCHAR" length="255"/>
+            <field id="Telephone" type="VARCHAR" length="255"/>
+            <field id="Updated_By" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="Ward_ID" type="INTEGER" length="10"/>
+            <field id="email" type="VARCHAR" length="255"/>
+            <field id="image_large" type="VARCHAR" length="255"/>
+            <field id="image_thumbnail" type="VARCHAR" length="255"/>
+            <field id="website" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

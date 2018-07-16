@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_FS_DETAILS_UNALLOC">
+        <columns>COUNT(REF_ID) as Unalloc_Count</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_Details</from>
+        <where>Staff IS NULL and Case_Status = 'Opened'</where>
+        <fields>
+            <field id="Unalloc_Count" type="BIGINT" length="19"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Registration ESTYN Inspection" database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_INSPECT_TYPE">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_INSPECT_TYPE</from>
+        <where>&amp;&amp;WHERE_CLAUSE_ESTYN_INSPECT</where>
+        <fields>
+            <field id="WHERE_CLAUSE_ESTYN_INSPECT" type="NUMERIC" length="500" persistent="false"/>
+            <field id="instyp_desc" type="VARCHAR" length="50"/>
+            <field id="instyp_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="instyp_upd_date" type="TIMESTAMP" length="16"/>
+            <field id="instyp_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

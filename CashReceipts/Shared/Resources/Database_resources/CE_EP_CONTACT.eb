@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_EP_CONTACT">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.CE_EP_Contact</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="COUNCIL_EQUIP" length="1"/>
+            <field id="BROADBAND" length="1"/>
+            <field id="FIRST_AID_HELD" length="1"/>
+            <field id="CRB_APPROVED" length="1"/>
+            <field id="Email" type="VARCHAR" length="100"/>
+            <field id="FIRST_AID_DATE" type="DATE" length="16"/>
+            <field id="CRB_DATE" type="DATE" length="16"/>
+            <field id="CRB_TYPE" length="1"/>
+            <field id="DRIVING_LICENCE_FULL" length="1"/>
+            <field id="DRIVING_LICENSE_HGV" length="1"/>
+            <field id="DRIVING_LICENSE_PSV" length="1"/>
+            <field id="EMERGENCY_CONSENT" length="1"/>
+            <field id="Forename" type="VARCHAR" length="100"/>
+            <field id="ID" type="VARCHAR" length="50"/>
+            <field id="Location_ID" type="VARCHAR" length="100"/>
+            <field id="Mobile" type="VARCHAR" length="20"/>
+            <field id="NEAREST_OFFICE" type="VARCHAR" length="50"/>
+            <field id="Phone" type="VARCHAR" length="20"/>
+            <field id="Surname" type="VARCHAR" length="100"/>
+            <field id="Username" type="VARCHAR" length="250"/>
+            <field id="VEHICLE_AVAILABLE" length="1"/>
+            <field id="Volunteer" type="VARCHAR" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="Updated" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

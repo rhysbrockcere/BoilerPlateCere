@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CeriExtract_Tbl">
+        <tableMapping table="CeriExtract"/>
+        <fieldMapping resourceField="Email" field="CeriExtract-Email"/>
+        <fieldMapping resourceField="Manager_Email" field="CeriExtract-Manager_Email"/>
+        <fieldMapping resourceField="Manager_Name" field="CeriExtract-Manager_Name"/>
+        <fieldMapping resourceField="Manager_Position" field="CeriExtract-Manager_Position"/>
+        <fieldMapping resourceField="Manager_Position_ID" field="CeriExtract-Manager_Position_ID"/>
+        <fieldMapping resourceField="Manager_Reference_No" field="CeriExtract-Manager_Reference_No"/>
+        <fieldMapping resourceField="Manager_username" field="CeriExtract-Manager_username"/>
+        <fieldMapping resourceField="Name" field="CeriExtract-Name"/>
+        <fieldMapping resourceField="Position_Name" field="CeriExtract-Position_Name"/>
+        <fieldMapping resourceField="Team_Name" field="CeriExtract-Team_Name"/>
+        <fieldMapping resourceField="Username" field="CeriExtract-Username"/>
+        <fieldMapping resourceField="Reference_No" field="CeriExtract-con_pos_ref_no"/>
+        <fieldMapping resourceField="position_id" field="CeriExtract-position_id"/>
+        <fieldMapping resourceField="team_id" field="CeriExtract-team_id"/>
+        <fieldMapping resourceField="Username" field="Username"/>
+        <fieldMapping resourceField="Where_Clause" field="Where_Clause"/>
+    </resourceMapping>
+    <resourceMapping id="FormAccess">
+        <tableMapping table="Access"/>
+        <fieldMapping resourceField="Role" field="Access-Role"/>
+        <fieldMapping resourceField="Role_ID" field="Access-Role_ID"/>
+        <fieldMapping resourceField="Username" field="Username"/>
+    </resourceMapping>
+</resourceMappings>

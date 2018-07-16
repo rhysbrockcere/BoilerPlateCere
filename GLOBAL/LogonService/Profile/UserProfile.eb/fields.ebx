@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Position_Select" type="CHAR" labelTextRef="Txt8m2Xeq" helpTextRef="Txt20C90r" listHeaderText="none" displayType="SELECT"/>
+    <field name="Username" type="CHAR" labelTextRef="TxtAOstyL" listHeaderText="none" maxLength="4000" displayType="SELECT" displayLength="60" dynamicList="/Lists/People">
+        <listMappings display="Name" return="Username"/>
+    </field>
+    <field name="Where_Clause" type="CHAR" labelTextRef="TxtAeqIEz" displayType="TEXT"/>
+</fields>

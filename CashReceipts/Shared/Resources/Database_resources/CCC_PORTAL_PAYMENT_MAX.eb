@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Capita Payment Portal Max Id" database="CERESQLS1_CASH2012" preparedStatement="false" id="CCC_PORTAL_PAYMENT_MAX">
+        <columns>MAX(id) AS MAX_ID</columns>
+        <from>Aim_Cer_Live.dbo.ccc_portal_payment</from>
+        <fields>
+            <field id="MAX_ID" type="INTEGER" length="10" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

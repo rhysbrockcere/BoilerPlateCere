@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="CREDENTIAL">
+        <column name="ID" type="CHAR"/>
+        <column name="VALUE" type="CHAR"/>
+    </table>
+    <table name="CUSTOMROLE">
+        <column name="ROLEID" type="CHAR"/>
+    </table>
+    <table name="Roles">
+        <column name="RoleID" type="CHAR"/>
+        <column name="Username" type="CHAR"/>
+    </table>
+</tables>

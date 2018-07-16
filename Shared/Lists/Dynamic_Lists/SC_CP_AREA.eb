@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="SC_CP_AREA" dateImported="2017-02-01T12:21:29.337Z">
+        <columns>distinct Area_CY, Area</columns>
+        <from>SC_Parking_Test.dbo.Car_Parks</from>
+        <where>Status='Active' and Type=&amp;&amp;Type</where>
+        <additional>order by Area</additional>
+        <fields>
+            <field id="Area" input="false"/>
+            <field id="Area_CY" input="false"/>
+            <field id="Type" output="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

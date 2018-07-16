@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="**Dynamic" preparedStatement="false" id="URL_AUDIT">
+        <columns>*</columns>
+        <from>URLChecker.dbo.URL_Audit</from>
+        <fields>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="Timestamp" type="TIMESTAMP" length="16"/>
+            <field id="URL_Address" type="VARCHAR" length="500"/>
+            <field id="URL_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

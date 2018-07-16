@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="LF_FIN_MONTHS" dateCreated="2013-05-01T15:44:26.653+01:00">
+        <columns>Month, Fin_Num, Act_Num</columns>
+        <from>Logica_Feeders_Test.dbo.Fin_Month</from>
+        <additional>order by Act_Num</additional>
+        <fields>
+            <field id="Act_Num" type="INTEGER" input="false"/>
+            <field id="Fin_Num" type="INTEGER" input="false"/>
+            <field id="Month" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

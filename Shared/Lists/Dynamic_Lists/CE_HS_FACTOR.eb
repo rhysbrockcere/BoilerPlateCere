@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="CE_HS_FACTOR" dateImported="2015-01-07T17:21:13.033Z">
+        <columns>Factor_EN, Factor_CY, Factor</columns>
+        <from>CE_HS_LIVE.dbo.CE_HS_IR1_Factor</from>
+        <fields>
+            <field id="Factor" input="false"/>
+            <field id="Factor_CY" input="false"/>
+            <field id="Factor_EN" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

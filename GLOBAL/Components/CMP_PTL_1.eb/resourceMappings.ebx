@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CS_CRM_CUSTOMERS">
+        <fieldMapping resourceField="Created_By" field="CUST_CREATED_BY"/>
+        <fieldMapping resourceField="Created_By_Dept" field="CUST_CREATED_BY_DEPT"/>
+        <fieldMapping resourceField="Date_Created" field="CUST_DATE_CREATED"/>
+        <fieldMapping resourceField="Date_Modified" field="CUST_DATE_MODIFIED"/>
+        <fieldMapping resourceField="DOB" field="CUST_DOB"/>
+        <fieldMapping resourceField="Email" field="CUST_EMAIL"/>
+        <fieldMapping resourceField="Firstname" field="CUST_FIRSTNAME"/>
+        <fieldMapping resourceField="ID" field="CUST_ID"/>
+        <fieldMapping resourceField="Surname" field="CUST_SURNAME"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="CS_CRM_CUSTOMER_CHECK">
+        <fieldMapping resourceField="ID" field="CUST_ID"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_ACCESS">
+        <fieldMapping resourceField="Check_Link" field="ACCESS_CHECK_LINK"/>
+        <fieldMapping resourceField="Customer_ID" field="ACCESS_CUSTOMER_ID"/>
+        <fieldMapping resourceField="ID" field="ACCESS_ID"/>
+        <fieldMapping resourceField="Portal" field="ACCESS_PORTAL"/>
+        <fieldMapping resourceField="Status" field="ACCESS_STATUS"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_ACCESS_CHECK">
+        <fieldMapping resourceField="Attempts" field="ACCESS_ATTEMPTS"/>
+        <fieldMapping resourceField="Status" field="ACCESS_STATUS"/>
+        <fieldMapping resourceField="Email" field="CUST_EMAIL"/>
+        <fieldMapping resourceField="Firstname" field="CUST_FIRSTNAME"/>
+        <fieldMapping resourceField="ID" field="CUST_ID"/>
+        <fieldMapping resourceField="Surname" field="CUST_SURNAME"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_ACCESS_LOG">
+        <fieldMapping resourceField="Access_Date" field="ACCESS_ACCESS_DATE"/>
+        <fieldMapping resourceField="Cust_ID" field="ACCESS_CUST_ID"/>
+        <fieldMapping resourceField="FormID" field="ACCESS_FORMID"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_ACCESS_UPD">
+        <fieldMapping resourceField="Check_Link" field="ACCESS_CHECK_LINK"/>
+        <fieldMapping resourceField="Status" field="ACCESS_STATUS"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_ACCESS_VW">
+        <fieldMapping resourceField="Account_Status" field="ACCESS_ACCOUNT_STATUS"/>
+        <fieldMapping resourceField="Attempts" field="ACCESS_ATTEMPTS"/>
+        <fieldMapping resourceField="Check_Link" field="ACCESS_CHECK_LINK"/>
+        <fieldMapping resourceField="Email" field="ACCESS_EMAIL"/>
+        <fieldMapping resourceField="Firstname" field="ACCESS_FIRSTNAME"/>
+        <fieldMapping resourceField="ID" field="ACCESS_ID"/>
+        <fieldMapping resourceField="Password" field="ACCESS_PASSWORD"/>
+        <fieldMapping resourceField="Portal" field="ACCESS_PORTAL"/>
+        <fieldMapping resourceField="Status" field="ACCESS_STATUS"/>
+        <fieldMapping resourceField="Surname" field="ACCESS_SURNAME"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_BLOCKS">
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_CMP_EMAIL">
+        <fieldMapping resourceField="EMAIL_FROM" field="EMAIL_FROM"/>
+        <fieldMapping resourceField="EMAIL_MESSAGE" field="EMAIL_MESSAGE"/>
+        <fieldMapping resourceField="EMAIL_SUBJECT" field="EMAIL_SUBJECT"/>
+        <fieldMapping resourceField="EMAIL_TO" field="EMAIL_TO"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_LOGINS">
+        <fieldMapping resourceField="Answer" field="LOGIN_ANSWER"/>
+        <fieldMapping resourceField="Attempts" field="LOGIN_ATTEMPTS"/>
+        <fieldMapping resourceField="Customer_ID" field="LOGIN_CUSTOMER_ID"/>
+        <fieldMapping resourceField="Password" field="LOGIN_PASSWORD"/>
+        <fieldMapping resourceField="Question" field="LOGIN_QUESTION"/>
+        <fieldMapping resourceField="Status" field="LOGIN_STATUS"/>
+        <fieldMapping resourceField="Username" field="LOGIN_USERNAME"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_LOGINS_CHECK">
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_LOGINS_UPD">
+        <fieldMapping resourceField="Attempts" field="LOGIN_ATTEMPTS"/>
+        <fieldMapping resourceField="Password" field="LOGIN_PASSWORD"/>
+        <fieldMapping resourceField="Status" field="LOGIN_STATUS"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_REG_EMAIL_SETTINGS">
+        <fieldMapping resourceField="Email_From" field="EMAIL_FROM"/>
+        <fieldMapping resourceField="Email_Subject" field="EMAIL_SUBJECT"/>
+        <fieldMapping resourceField="System" field="EMAIL_SYSTEM"/>
+        <fieldMapping resourceField="System_Admin_Form" field="EMAIL_SYSTEM_ADMIN_FORM"/>
+        <fieldMapping resourceField="Email_To" field="EMAIL_TO"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_SECURITYQUESTIONS_TBL">
+        <tableMapping table="QUESTIONS"/>
+        <fieldMapping resourceField="Enabled" field="QUESTIONS-ENABLED"/>
+        <fieldMapping resourceField="ID" field="QUESTIONS-ID"/>
+        <fieldMapping resourceField="Question" field="QUESTIONS-QUESTION"/>
+        <fieldMapping resourceField="Question_CY" field="QUESTIONS-QUESTION_CY"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="PORTAL_SEQUENCES">
+        <fieldMapping resourceField="ID" field="SEQ_ID"/>
+        <fieldMapping resourceField="Next_ID" field="SEQ_NEXT_ID"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+</resourceMappings>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_DELPHI_GRADES">
+        <columns>*</columns>
+        <from>CE_Personnel_TEST.dbo.CE_Delphi_Grades</from>
+        <fields>
+            <field id="Grade" type="VARCHAR" length="50"/>
+            <field id="Max_Spine_Point" type="INTEGER" length="10"/>
+            <field id="Min_Spine_Point" type="INTEGER" length="10"/>
+            <field id="Pay_Scale" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

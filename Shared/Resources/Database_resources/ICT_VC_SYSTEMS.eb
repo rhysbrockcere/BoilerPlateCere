@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1" table="true" id="ICT_VC_SYSTEMS">
+        <columns>*</columns>
+        <from>ict_version_control.dbo.Systems</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Description" type="CLOB" length="1073741823"/>
+            <field id="Live_Version" type="DECIMAL" length="18" fractionalDigits="2"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Responsible_Officer" type="VARCHAR" length="50"/>
+            <field id="State" type="VARCHAR" length="50"/>
+            <field id="System_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Test_Version" type="DECIMAL" length="18" fractionalDigits="2"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

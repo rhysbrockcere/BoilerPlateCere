@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Accredited By" database="SQLE645S1" preparedStatement="false" id="FIS_TBLLU_ACCRED_BY">
+        <columns>*</columns>
+        <from>eyears_live.dbo.tblLU_ACCRED_BY</from>
+        <where>&amp;&amp;WHERE_CLAUSE_ACCRED</where>
+        <fields>
+            <field id="WHERE_CLAUSE_ACCRED" type="NUMERIC" length="500" persistent="false"/>
+            <field id="accred_desc" type="VARCHAR" length="100"/>
+            <field id="accred_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="accred_upd_date" type="TIMESTAMP" length="16"/>
+            <field id="accred_upd_user" type="VARCHAR" length="128"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Superannuable Payment Element Occurrences" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_VW_ELEOCC_PAY_ELE_SUP">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.VW_ELEOCC_PAY_ELE_SUP</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CON_NO" length="10"/>
+            <field id="ELE_NO" length="4"/>
+            <field id="ELE_RUL_DESC" length="16"/>
+            <field id="EO_ADJ_CASH" type="DECIMAL" length="9"/>
+            <field id="EO_ADJ_INPUT" type="DECIMAL" length="9"/>
+            <field id="EO_BREAK_1" length="12"/>
+            <field id="EO_BREAK_2" length="12"/>
+            <field id="EO_BREAK_3" length="12"/>
+            <field id="EO_BREAK_4" length="12"/>
+            <field id="EO_BREAK_5" length="12"/>
+            <field id="EO_CASH_VAL" type="DECIMAL" length="9"/>
+            <field id="EO_CST_REQ_I" length="1"/>
+            <field id="EO_EXT_I" length="1"/>
+            <field id="EO_HRS_PAID" type="DECIMAL" length="9"/>
+            <field id="EO_ID_FLAG" length="1"/>
+            <field id="EO_INPUT_VAL" type="DECIMAL" length="9"/>
+            <field id="EO_OCC_CST_C" length="24"/>
+            <field id="EO_OCC_NO" length="2"/>
+            <field id="EO_PAYROLL_D" length="8"/>
+            <field id="EO_RATE_I" length="1"/>
+            <field id="EO_RECAL_ADJ" type="DECIMAL" length="9"/>
+            <field id="EO_RECAL_OCC" length="2"/>
+            <field id="EO_START_D" length="8"/>
+            <field id="EO_STOP_D" length="8"/>
+            <field id="GTN_I" length="1"/>
+            <field id="GTN_NO" type="DECIMAL" length="4"/>
+            <field id="ORG_NO" type="DECIMAL" length="2"/>
+            <field id="OTHER_GTN_NO" type="DECIMAL" length="4"/>
+            <field id="PAYMT_MADE_I" length="1"/>
+            <field id="PAY_NO" length="4"/>
+            <field id="RATE_USED" type="DECIMAL" length="9"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="IT_PB_SECTIONS">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_PB_Sections</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ID" type="INTEGER" length="16" readOnly="true"/>
+            <field id="Level1" type="VARCHAR" length="2000"/>
+            <field id="Level2" type="VARCHAR" length="2000"/>
+            <field id="Level3" type="VARCHAR" length="2000"/>
+            <field id="Level4" type="VARCHAR" length="2000"/>
+            <field id="Level5" type="VARCHAR" length="2000"/>
+            <field id="Level6" type="VARCHAR" length="2000"/>
+            <field id="Level7" type="VARCHAR" length="2000"/>
+            <field id="Level8" type="VARCHAR" length="2000"/>
+            <field id="OU" type="VARCHAR" length="2000"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

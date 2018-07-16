@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CE_TOURISM_TDB_PAYMENTS">
+        <columns>*</columns>
+        <from>&amp;&amp;DBNAME .dbo.tdb_Payments</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Account_ID" type="INTEGER" length="10"/>
+            <field id="Amount" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="DBNAME" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Date" type="TIMESTAMP" length="16"/>
+            <field id="Invoice_No" type="INTEGER" length="10"/>
+            <field id="Notes" type="VARCHAR" length="500"/>
+            <field id="Payment_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Where_Clause" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

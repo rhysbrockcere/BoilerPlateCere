@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="DESH_HRA">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DESH_HRA</from>
+        <where>EmailAddress=&amp;&amp;EmailAddress</where>
+        <fields>
+            <field id="Answer" length="1"/>
+            <field id="Department" length="10"/>
+            <field id="EmailAddress" type="VARCHAR" length="50" required="true" key="true"/>
+        </fields>
+    </dbResource>
+</ebase>

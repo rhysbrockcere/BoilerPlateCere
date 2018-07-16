@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" table="true" preparedStatement="false" id="DESH_REHOUSED_WITHAPP">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DESH_Rehoused_WithApp</from>
+        <where>&amp;&amp;REHOUSED_WHERE_CLAUSE</where>
+        <fields>
+            <field id="DOB" type="DATE" length="30"/>
+            <field id="FirstNames" type="VARCHAR" length="30"/>
+            <field id="ID" type="VARCHAR" length="30" required="true"/>
+            <field id="LivingApart" length="1"/>
+            <field id="REHOUSED_WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+            <field id="RelToApp" type="VARCHAR" length="30"/>
+            <field id="Sex" type="VARCHAR" length="30"/>
+            <field id="Surname" type="VARCHAR" length="30"/>
+            <field id="Title" type="VARCHAR" length="30"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CRM_EMAIL">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.crm_Emails</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Action_ID" type="INTEGER" length="10"/>
+            <field id="Email_ID" type="INTEGER" length="10" key="true"/>
+            <field id="From_Address" type="VARCHAR" length="100"/>
+            <field id="Message" type="CLOB" length="1073741823"/>
+            <field id="Recipient" type="VARCHAR" length="100"/>
+            <field id="Subject" type="VARCHAR" length="500"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

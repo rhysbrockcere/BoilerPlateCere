@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Components/CMP_CRM" preferredComponentProject="GLOBAL" id="CRM_GET_CUSTOMER" dateCreated="2016-05-18T15:56:28.760+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+/*
+ * Check to see if the cutomer ID parameter has been set
+ * Parameter is used when loading the form from a link e.g. customer services portal
+ */
+
+var CustID = 0;
+
+if (fields.PRM_ID.value != null) {
+	try {
+		CustID = EncryptionServices.decrypt(fields.PRM_ID.value);
+	}
+	catch (e) {
+		crmLog(0, &quot;ERROR&quot;, &quot;Unable to decrypt customer ID = &quot; + fields.PRM_ID.value, &quot;WEB&quot;, 3);
+		CustID = 0;
+	}	
+}
+else {
+	//Check to see if the customer is already logged in using the cookie
+	CustID = checkLoginStatus();
+}
+
+log (&quot;Returned CustID = &quot; + CustID);
+
+crmLog(0, &quot;DEBUG&quot;, &quot;Customer ID = &quot; + CustID, &quot;WEB&quot;, 3);
+
+/*
+ * For now this script will check to see if a customer is logged in.
+ * IF customer is logged in then their personal details are looked up so they can be used on the parent form.
+ * IF NO customer is logged in then the compenent will automatically go to the next page
+ */
+ 
+if (CustID &gt; 0) {
+	fields.WHERE_CLAUSE.value = 'customer_id = \'' + CustID + '\'';
+	resources.CRM_CUSTOMER_DETAIL.fetch();
+	
+	crmLog(0, &quot;DEBUG&quot;, &quot;Customer ID &gt; 0.... Going to next page!&quot;, &quot;WEB&quot;, 3);
+	
+	form.gotoPage(form.nextPage);
+
+}
+else {
+	var check = formRequireLogin(system.variables.$FORMID.value);
+	
+	log (&quot;Check = &quot; + check);
+
+	crmLog(0, &quot;DEBUG&quot;, &quot;Login required for this form? &quot; + check, &quot;WEB&quot;, 3);
+	
+	if (check == false) {
+		form.gotoPage(form.nextPage);
+	}
+	else {
+		if (client.mobile) {
+			controls.PNL_RIGHT.cssClass('panel');		
+		}
+		highlightMandatoryFields('r');
+	}
+	
+}
+
+</scriptText>
+    </script>
+</ebase>

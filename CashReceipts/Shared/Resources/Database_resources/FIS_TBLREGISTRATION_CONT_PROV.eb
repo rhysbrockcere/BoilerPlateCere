@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLREGISTRATION_CONT_PROV">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblREGISTRATION_CONT_PROV</from>
+        <where>&amp;&amp;WHERE_CLAUSE_REGISTRATION_CONT_PROV_RESOURCE</where>
+        <fields>
+            <field id="RCP_CC" type="BIT" length="1"/>
+            <field id="RCP_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="RCP_MC" type="BIT" length="1"/>
+            <field id="RCP_UPD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="RCP_UPD_USER" type="VARCHAR" length="128"/>
+            <field id="WHERE_CLAUSE_REGISTRATION_CONT_PROV_RESOURCE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="tblPROVIDER" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION_CONTACT" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

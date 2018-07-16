@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLENQUIRER">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblENQUIRER</from>
+        <where>&amp;&amp;WHERE_CLAUSE_ENQUIRER</where>
+        <fields>
+            <field id="enqr_addr1" type="VARCHAR" length="60"/>
+            <field id="enqr_gridref_n" type="VARCHAR" length="8"/>
+            <field id="enqr_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="enqr_locality" type="VARCHAR" length="100"/>
+            <field id="enqr_noenq" type="SMALLINT" length="5"/>
+            <field id="enqr_notes" type="CLOB" length="2147483647"/>
+            <field id="enqr_paf" type="BIT" length="1"/>
+            <field id="enqr_pcode" type="VARCHAR" length="8"/>
+            <field id="ADR_LINE3" type="VARCHAR" length="100"/>
+            <field id="ADR_NUMBER" type="VARCHAR" length="100"/>
+            <field id="ADR_STREET" type="VARCHAR" length="100"/>
+            <field id="WHERE_CLAUSE_ENQUIRER" type="NUMERIC" length="500" persistent="false"/>
+            <field id="enqr_UPRN" type="VARCHAR" length="50"/>
+            <field id="enqr_USRN" type="VARCHAR" length="50"/>
+            <field id="enqr_county" type="VARCHAR" length="100"/>
+            <field id="enqr_createdate" type="TIMESTAMP" length="16"/>
+            <field id="enqr_createuser" type="VARCHAR" length="18"/>
+            <field id="enqr_createuser_id" type="INTEGER" length="10"/>
+            <field id="enqr_dob" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="enqr_email" type="VARCHAR" length="70"/>
+            <field id="enqr_emailltr" type="SMALLINT" length="5"/>
+            <field id="enqr_fax" type="VARCHAR" length="40"/>
+            <field id="enqr_firstcont" type="SMALLINT" length="5"/>
+            <field id="enqr_fname" type="VARCHAR" length="35"/>
+            <field id="enqr_gender" length="1"/>
+            <field id="enqr_gridref_e" type="VARCHAR" length="8"/>
+            <field id="enqr_addr2" type="VARCHAR" length="35"/>
+            <field id="enqr_addr3" type="VARCHAR" length="35"/>
+            <field id="enqr_addr4" type="VARCHAR" length="60"/>
+            <field id="enqr_anonymous" type="BIT" length="1"/>
+            <field id="enqr_permission" type="SMALLINT" length="5"/>
+            <field id="enqr_primary" type="VARCHAR" length="100"/>
+            <field id="enqr_secondary" type="VARCHAR" length="100"/>
+            <field id="enqr_sname" type="VARCHAR" length="35"/>
+            <field id="enqr_street" type="VARCHAR" length="100"/>
+            <field id="enqr_tel" type="VARCHAR" length="40"/>
+            <field id="enqr_time_taken" type="VARCHAR" length="10"/>
+            <field id="enqr_title" type="VARCHAR" length="15"/>
+            <field id="enqr_town" type="VARCHAR" length="100"/>
+            <field id="enqr_upd_date" type="TIMESTAMP" length="16"/>
+            <field id="enqr_upd_user" type="VARCHAR" length="128"/>
+            <field id="enqr_welsh" type="INTEGER" length="10"/>
+            <field id="tblLU_AREA" type="INTEGER" length="10"/>
+            <field id="tblLU_EMPLOYMENT_STATUS" type="INTEGER" length="10"/>
+            <field id="tblLU_ENQUIRER_TYPE" type="INTEGER" length="10"/>
+            <field id="tblLU_PUP_ETHNICITY" type="INTEGER" length="10"/>
+            <field id="tblLU_SCH_DISTRICT" type="INTEGER" length="10"/>
+            <field id="tblLU_SCH_PARISH" type="INTEGER" length="10"/>
+            <field id="tblLU_WARD" type="INTEGER" length="10"/>
+            <field id="tbllu_FAMILY_STATUS" type="INTEGER" length="10"/>
+            <field id="tbllu_sd_specneeds" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

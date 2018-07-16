@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Rent Accounting - Property linked through tenancy and Occupancy to Person" database="CERESQLN1_SQL2012" table="true" preparedStatement="false" id="RA_PROPERTY_TENANCY_PERSON_TBL">
+        <columns>*</columns>
+        <from>Rent_Accounting_TEST.dbo.RA_Property_Tenancy_Person</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PERSON</where>
+        <fields>
+            <field id="WHERE_CLAUSE_PERSON" type="NUMERIC" length="300" persistent="false"/>
+            <field id="checkd" type="VARCHAR" length="50"/>
+            <field id="couple" type="VARCHAR" length="50"/>
+            <field id="housen" type="VARCHAR" length="50"/>
+            <field id="occend" type="VARCHAR" length="50"/>
+            <field id="occstart" type="VARCHAR" length="50"/>
+            <field id="perdob" type="VARCHAR" length="50"/>
+            <field id="perfnames" type="VARCHAR" length="50"/>
+            <field id="perref" type="VARCHAR" length="50"/>
+            <field id="persex" type="VARCHAR" length="50"/>
+            <field id="persin" type="VARCHAR" length="50"/>
+            <field id="persname" type="VARCHAR" length="50"/>
+            <field id="persti" type="VARCHAR" length="50"/>
+            <field id="proadd1" type="VARCHAR" length="50"/>
+            <field id="proadd2" type="VARCHAR" length="50"/>
+            <field id="proadd3" type="VARCHAR" length="50"/>
+            <field id="proadd4" type="VARCHAR" length="50"/>
+            <field id="propref" type="VARCHAR" length="50"/>
+            <field id="propstcd" type="VARCHAR" length="50"/>
+            <field id="rentgp" type="VARCHAR" length="50"/>
+            <field id="ten1in" type="VARCHAR" length="50"/>
+            <field id="ten1sname" type="VARCHAR" length="50"/>
+            <field id="ten1ti" type="VARCHAR" length="50"/>
+            <field id="ten2in" type="VARCHAR" length="50"/>
+            <field id="ten2sname" type="VARCHAR" length="50"/>
+            <field id="ten2ti" type="VARCHAR" length="50"/>
+            <field id="tenaltkey" type="VARCHAR" length="50"/>
+            <field id="tenenddate" type="VARCHAR" length="50"/>
+            <field id="tenind" type="VARCHAR" length="50"/>
+            <field id="tenstartdate" type="VARCHAR" length="50"/>
+            <field id="tensuffix" type="INTEGER" length="10"/>
+            <field id="tentyp" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

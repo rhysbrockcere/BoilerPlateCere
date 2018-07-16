@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="I am entitled to a discount"/>
+    <item id="2" returnVal="I am NOT entitled to a discount"/>
+    <item id="3" returnVal="I am entitled to an exemption"/>
+    <item id="4" returnVal="I am NOT entitled to an exemption"/>
+</items>

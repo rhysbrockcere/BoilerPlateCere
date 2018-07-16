@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Contract Taxcode History details" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_TAXCODE">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.TAXCODE</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="CON_NO" length="10" key="true"/>
+            <field id="ORG_NO" type="DECIMAL" length="2" key="true"/>
+            <field id="P38S_I" length="1"/>
+            <field id="P46_I" length="1"/>
+            <field id="PAY_NO" length="4" key="true"/>
+            <field id="TAX_BASIS" length="1"/>
+            <field id="TAX_C" length="10"/>
+            <field id="TXC_AUTH_C" length="4"/>
+            <field id="TXC_EFF_D" length="8" key="true"/>
+            <field id="TXC_END_D" length="8"/>
+            <field id="TXC_ISSUE_D" length="8"/>
+            <field id="TXC_SPARE1_I" length="1"/>
+            <field id="TXC_SPARE2_I" length="1"/>
+            <field id="TXC_SPARE3_I" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

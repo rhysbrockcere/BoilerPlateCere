@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="CCC_AB_ABSENCES">
+        <columns>*</columns>
+        <from>CCC_Absence_TEST.dbo.Absences</from>
+        <fields>
+            <field id="AmPm" type="VARCHAR" length="50"/>
+            <field id="CalcType" type="VARCHAR" length="50"/>
+            <field id="Certificate" type="BIT" length="1"/>
+            <field id="DateAmended" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="DateCreated" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="EndDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ExportDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="NoOfDays" type="REAL" length="24"/>
+            <field id="PayrollNo" type="INTEGER" length="10"/>
+            <field id="PersonID" type="INTEGER" length="10"/>
+            <field id="Reason" type="VARCHAR" length="50"/>
+            <field id="StartDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

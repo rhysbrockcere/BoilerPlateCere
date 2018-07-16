@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="Txt1LoRFT" pageInfoTextReference="Txt5ZzY42" pageTrailerTextReference="TxtAQ0eGN" nextPageTextReference="Txt4K5fOD" prevPageTextReference="Txt1Sifw4">
+    <pageContents>
+        <component ctrl="CmpwgIi0" inheritMsg="true" outputType="0" pdfFooterText="LocalTxt9ywfqe" pdfHeaderText="LocalTxt4TADhR" uid="PBc6BIsK">
+            <panel ctrl="PannBSkG" layoutType="FIELD" uid="8vDn5UjO">
+                <text ctrl="Texhkr8z" text="LocalTxt1vorT2" uid="SFNiZIGP"/>
+            </panel>
+        </component>
+    </pageContents>
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="CRM_SRVC_CATEGORY">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.srvc_Categories</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Available_FAQs" length="1"/>
+            <field id="Categori" type="VARCHAR" length="100"/>
+            <field id="Category" type="VARCHAR" length="100"/>
+            <field id="Category_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Description" type="VARCHAR" length="1000"/>
+            <field id="Disgrifiad" type="VARCHAR" length="1000"/>
+            <field id="Ebase_Form_ID" type="VARCHAR" length="50"/>
+            <field id="Ebost" type="VARCHAR" length="50"/>
+            <field id="Email" type="VARCHAR" length="50"/>
+            <field id="ExpiryDate" type="TIMESTAMP" length="16"/>
+            <field id="Gwas1" type="VARCHAR" length="255"/>
+            <field id="Gwas2" type="VARCHAR" length="255"/>
+            <field id="Internet_Feedback_Page" type="VARCHAR" length="50"/>
+            <field id="Page_URL" type="VARCHAR" length="500"/>
+            <field id="Priority" length="1"/>
+            <field id="Requires_Location" type="BIT" length="1"/>
+            <field id="Resp_Officer" type="VARCHAR" length="100"/>
+            <field id="Section_ID" type="INTEGER" length="10"/>
+            <field id="Serv1" type="VARCHAR" length="255"/>
+            <field id="Serv2" type="VARCHAR" length="255"/>
+            <field id="Service_ID" type="VARCHAR" length="10"/>
+            <field id="Service_Manager" type="VARCHAR" length="50"/>
+            <field id="Team_ID" type="INTEGER" length="10"/>
+            <field id="Tel_No" type="VARCHAR" length="110"/>
+            <field id="WHERE_CLAUSE" persistent="false" dynamic="true"/>
+            <field id="add_Form_ID" type="VARCHAR" length="100"/>
+            <field id="add_Information" type="VARCHAR" length="2000"/>
+            <field id="cs_enabled" type="BIT" length="1"/>
+            <field id="SLA_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

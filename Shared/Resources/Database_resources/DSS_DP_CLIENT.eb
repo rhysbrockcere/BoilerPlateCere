@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_DP_CLIENT">
+        <columns>*</columns>
+        <from>DSS_Direct_Payments_TEST.dbo.Clients</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address2" type="VARCHAR" length="100"/>
+            <field id="ClientGroup" type="INTEGER" length="10"/>
+            <field id="Client_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="County" type="VARCHAR" length="100"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Creditor_Name" type="VARCHAR" length="50"/>
+            <field id="Creditor_No" type="VARCHAR" length="50"/>
+            <field id="Address1" type="VARCHAR" length="100"/>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Date_Modified" type="TIMESTAMP" length="16"/>
+            <field id="Draig_No" type="VARCHAR" length="50"/>
+            <field id="Managed" type="BIT" length="1"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Notes" type="VARCHAR" length="500"/>
+            <field id="PostCode" type="VARCHAR" length="20"/>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Suitable_Person" type="BIT" length="1"/>
+            <field id="Town" type="VARCHAR" length="100"/>
+            <field id="Type" type="VARCHAR" length="20"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+            <field id="Diverse_ID" type="VARCHAR" length="10"/>
+            <field id="End_Date" type="TIMESTAMP" length="20"/>
+        </fields>
+    </dbResource>
+</ebase>

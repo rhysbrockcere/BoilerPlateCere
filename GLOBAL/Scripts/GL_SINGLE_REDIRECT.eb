@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_SINGLE_REDIRECT" dateCreated="2014-07-30T16:12:27.927+01:00" dateImported="2016-10-14T14:18:52.803+01:00">
+        <scriptText>////////// IIS Single Signon Redirect Script //////////
+
+if [contains($UFS_REQUEST_URL, ':3030')]
+
+	////////// Create URL without :3030 - IIS Single Signon //////////
+	
+	set SINGLE_URL = 'http://' + $UFS_SERVER_NAME + '/ufs/ufsmain?formid=' + $FORMID + '&amp;LANGUAGE=' + $LANGUAGE;
+
+	////////// Add Parameters for Absence System //////////
+
+	if [$FORMID = 'DF_ABSENCE_ADMIN' or $FORMID = 'SELF_SERVICE']
+		if [PARAM_EID != '']
+			set SINGLE_URL = SINGLE_URL + '&amp;PARAM_EID=' + PARAM_EID;
+		endif
+		if [PARAM_LINK != '']
+			set SINGLE_URL = SINGLE_URL + '&amp;PARAM_LINK=' + PARAM_LINK;
+		endif
+		if [PARAM_USER != '']
+			set SINGLE_URL = SINGLE_URL + '&amp;PARAM_USER=' + PARAM_USER;
+		endif
+	endif	
+
+	////////// Add Parameters for FOI System //////////
+
+	if [$FORMID = 'FOI']
+		if [PARAM_ID != '']
+			set SINGLE_URL = SINGLE_URL + '&amp;PARAM_ID=' + PARAM_ID;
+		endif
+		if [PARAM_SYSTEM != '']
+			set SINGLE_URL = SINGLE_URL + '&amp;PARAM_SYSTEM=' + PARAM_SYSTEM;
+		endif
+	endif	
+
+	////////// Add Parameters for Fileroom System //////////
+
+	if [$FORMID = 'DECS_FILEROOM_REQUEST']
+		if [PARAM_PREVIOUS_FORM != '']
+			set SINGLE_URL = SINGLE_URL + '&amp;PARAM_PREVIOUS_FORM=' + PARAM_PREVIOUS_FORM;
+		endif
+	endif	
+
+	////////// Add Parameters for Accountancy System //////////
+
+	if [$FORMID = 'DF_FIN']
+		if [PARAM_ID != '']
+			set SINGLE_URL = SINGLE_URL + '&amp;PARAM_ID=' + PARAM_ID;
+		endif
+		if [PARAM_SYS != '']
+			set SINGLE_URL = SINGLE_URL + '&amp;PARAM_SYS=' + PARAM_SYS;
+		endif
+	endif	
+
+	////////// Add Parameters for DHPW Order System //////////
+
+	if [$FORMID = 'DHPW_ORDER']
+		if [PAR_ID != '']
+			set SINGLE_URL = SINGLE_URL + '&amp;PAR_ID=' + PAR_ID;
+		endif
+	endif	
+
+endif
+
+////////// LIVE Redirect and JSP Changes - IIS Single Signon //////////
+
+if [$USER != '']
+	callscript GL_SINGLE_REDIRECT_JSP;
+else
+	if [contains($UFS_REQUEST_URL, ':3030')]
+		goto URL SINGLE_URL;
+	else
+		callscript GL_SINGLE_REDIRECT_JSP;
+	endif
+endif</scriptText>
+    </script>
+</ebase>

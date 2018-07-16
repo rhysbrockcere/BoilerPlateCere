@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLADDRESS_MAX">
+        <columns>MAX(ADR_ID) as ADR_ID</columns>
+        <from>eyears_test.dbo.tblADDRESS</from>
+        <where>ADR_ID is not null</where>
+        <fields>
+            <field id="ADR_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

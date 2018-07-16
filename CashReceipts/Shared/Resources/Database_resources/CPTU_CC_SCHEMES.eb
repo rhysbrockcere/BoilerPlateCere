@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="CPTU_CC_SCHEMES">
+        <columns>*</columns>
+        <from>IT_Central.dbo.CPTU_CC_Schemes</from>
+        <fields>
+            <field id="Description" type="VARCHAR" length="100"/>
+            <field id="Scheme_No" type="INTEGER" length="10" required="true" key="true"/>
+        </fields>
+    </dbResource>
+</ebase>

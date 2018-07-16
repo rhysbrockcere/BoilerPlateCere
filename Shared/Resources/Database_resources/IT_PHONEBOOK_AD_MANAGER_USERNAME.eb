@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="IT_PHONEBOOK_AD_MANAGER_USERNAME">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_Phonebook_AD_Manager_Username</from>
+        <fields>
+            <field id="Expr2" type="VARCHAR" length="4000"/>
+            <field id="department" type="VARCHAR" length="4000"/>
+            <field id="displayName" type="VARCHAR" length="4000"/>
+            <field id="employeeID" type="VARCHAR" length="4000"/>
+            <field id="facsimileTelephoneNumber" type="VARCHAR" length="4000"/>
+            <field id="givenName" type="VARCHAR" length="4000"/>
+            <field id="mail" type="VARCHAR" length="4000"/>
+            <field id="manager" type="VARCHAR" length="4000"/>
+            <field id="managerName" type="VARCHAR" length="4000" readOnly="true"/>
+            <field id="managerSection" type="VARCHAR" length="4000" readOnly="true"/>
+            <field id="managerUsername" type="VARCHAR" length="4000"/>
+            <field id="physicalDeliveryOfficeName" type="VARCHAR" length="4000"/>
+            <field id="sAMAccountName" type="VARCHAR" length="4000"/>
+            <field id="sn" type="VARCHAR" length="4000"/>
+            <field id="telephoneNumber" type="VARCHAR" length="4000"/>
+            <field id="title" type="VARCHAR" length="4000"/>
+        </fields>
+    </dbResource>
+</ebase>

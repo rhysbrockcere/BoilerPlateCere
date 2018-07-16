@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DSS_FS_VW_COURSE_DATE_OTHER">
+        <columns>*</columns>
+        <from>DSS_Family_Support_TEST.dbo.DSS_FS_VW_Course_Date_Other</from>
+        <fields>
+            <field id="Course_ID" type="BIGINT" length="19"/>
+            <field id="Course_Title_ID" type="INTEGER" length="10"/>
+            <field id="Start_Date" type="VARCHAR" length="203" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

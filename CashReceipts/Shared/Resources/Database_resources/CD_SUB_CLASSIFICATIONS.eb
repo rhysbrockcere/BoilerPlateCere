@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="UFS" table="true" preparedStatement="false" id="CD_SUB_CLASSIFICATIONS">
+        <columns>*</columns>
+        <from>cd_sub_classifications</from>
+        <fields>
+            <field id="CLASSIFICATION" type="VARCHAR" length="50"/>
+            <field id="SUB_CLASSIFICATION" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

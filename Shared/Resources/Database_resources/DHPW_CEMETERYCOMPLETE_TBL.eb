@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DHPW Cemetery - Public Search table" database="DHPWSQL" table="true" preparedStatement="false" id="DHPW_CEMETERYCOMPLETE_TBL">
+        <columns>*</columns>
+        <from>DTETest.dbo.usrInventoryCemeteryComplete</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="BurialTypeDescription" type="VARCHAR" length="50"/>
+            <field id="BurialTypeID" type="INTEGER" length="10"/>
+            <field id="CoffinMaterial" type="VARCHAR" length="50"/>
+            <field id="CoffinSize" type="VARCHAR" length="50"/>
+            <field id="CoffinTypeDescription" type="VARCHAR" length="50"/>
+            <field id="ContactID" type="INTEGER" length="10"/>
+            <field id="CurrentDeedHolder" type="BIT" length="1"/>
+            <field id="DateOfBurial" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="DateOfDeath" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="DatePurchased" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="DeceasedAddress1" type="VARCHAR" length="100"/>
+            <field id="DeceasedAddress2" type="VARCHAR" length="50"/>
+            <field id="DeceasedAddress3" type="VARCHAR" length="50"/>
+            <field id="DeceasedCounty" type="VARCHAR" length="50"/>
+            <field id="DeceasedOtherNames" type="VARCHAR" length="50"/>
+            <field id="DeceasedPostCode" type="VARCHAR" length="50"/>
+            <field id="DeceasedSurname" type="VARCHAR" length="50"/>
+            <field id="DeceasedTown" type="VARCHAR" length="50"/>
+            <field id="DeedHolderAddress1" type="VARCHAR" length="100"/>
+            <field id="DeedHolderAddress2" type="VARCHAR" length="50"/>
+            <field id="DeedHolderAddress3" type="VARCHAR" length="50"/>
+            <field id="DeedHolderAltPhone" type="VARCHAR" length="50"/>
+            <field id="DeedHolderCounty" type="VARCHAR" length="50"/>
+            <field id="DeedHolderPhone" type="VARCHAR" length="50"/>
+            <field id="DeedHolderPostCode" type="VARCHAR" length="50"/>
+            <field id="DeedHolderTown" type="VARCHAR" length="50"/>
+            <field id="DepthofBurialDescription" type="VARCHAR" length="50"/>
+            <field id="FeatureCode" type="VARCHAR" length="50"/>
+            <field id="Firstname" type="VARCHAR" length="100"/>
+            <field id="GrantNumber" type="VARCHAR" length="50"/>
+            <field id="GraveTypeDescription" type="VARCHAR" length="50"/>
+            <field id="InventoryID" type="INTEGER" length="10"/>
+            <field id="LicenceLengthDescription" type="VARCHAR" length="50"/>
+            <field id="LicenceLengthID" type="INTEGER" length="10"/>
+            <field id="LocationDescription" type="VARCHAR" length="255"/>
+            <field id="PlaceOfDeath" type="VARCHAR" length="50"/>
+            <field id="Plot" type="VARCHAR" length="50"/>
+            <field id="RefrenceNumber" type="VARCHAR" length="50"/>
+            <field id="Surname" type="VARCHAR" length="100"/>
+            <field id="Title" type="VARCHAR" length="10"/>
+            <field id="UndertakerName" type="VARCHAR" length="100"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

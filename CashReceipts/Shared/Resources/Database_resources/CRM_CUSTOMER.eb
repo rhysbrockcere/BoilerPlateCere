@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CRM_CUSTOMER">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.crm_Customers</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <select>select * 
+from CS_CRM.dbo.crm_Customers 
+where &amp;&amp;WHERE_CLAUSE</select>
+        <update>update CS_CRM.dbo.crm_Customers
+set EEA=&amp;&amp;EEA,Firstname=&amp;&amp;Firstname,Mobile=&amp;&amp;Mobile,Status=&amp;&amp;Status,Surname=&amp;&amp;Surname,Telephone=&amp;&amp;Telephone,Title=&amp;&amp;Title, modified_by=&amp;&amp;Modified_By, date_modified = getdate(),
+password=&amp;&amp;Password,verified=&amp;&amp;Verified, current_address_id=&amp;&amp;Current_Address_ID,DOB=&amp;&amp;DOB, Attempts=&amp;&amp;Attempts, Last_Login=&amp;&amp;Last_Login, Enabled=&amp;&amp;Enabled,Language=&amp;&amp;Language,
+contact_method=&amp;&amp;Contact_Method
+where &amp;&amp;WHERE_CLAUSE</update>
+        <insert>insert into CS_CRM.dbo.crm_Customers 
+(Created_By,Date_Created,EEA,Firstname,Mobile,Status,Surname,Telephone,Title,Password,Verified,Enabled,Question,Answer,DOB,Language,Contact_Method) 
+values(&amp;&amp;Created_By,getdate(),&amp;&amp;EEA,&amp;&amp;Firstname,&amp;&amp;Mobile,&amp;&amp;Status,&amp;&amp;Surname,&amp;&amp;Telephone,&amp;&amp;Title,&amp;&amp;Password,&amp;&amp;Verified,&amp;&amp;Enabled,&amp;&amp;Question,&amp;&amp;Answer,&amp;&amp;DOB,&amp;&amp;Language,&amp;&amp;Contact_Method)</insert>
+        <fields>
+            <field id="Gender" type="VARCHAR" length="50"/>
+            <field id="Preferred_Name" type="VARCHAR" length="100"/>
+            <field id="Comments" type="VARCHAR" length="1000"/>
+            <field id="Contact_Method" type="VARCHAR" length="10"/>
+            <field id="Created_By" type="VARCHAR" length="50"/>
+            <field id="Created_By_Dept" type="VARCHAR" length="50"/>
+            <field id="Current_Address_ID" type="INTEGER"/>
+            <field id="DOB" type="TIMESTAMP" length="16"/>
+            <field id="Date_Created" type="TIMESTAMP"/>
+            <field id="Date_Modified" type="TIMESTAMP"/>
+            <field id="Email" type="VARCHAR" length="500"/>
+            <field id="Firstname" type="VARCHAR" length="500"/>
+            <field id="HB_Ref" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10" key="true"/>
+            <field id="Language" type="VARCHAR" length="2"/>
+            <field id="Mobile" type="VARCHAR" length="20"/>
+            <field id="Modified_By" type="VARCHAR" length="50"/>
+            <field id="Modified_By_Dept" type="VARCHAR" length="50"/>
+            <field id="NI_No" type="VARCHAR" length="50"/>
+            <field id="Other_Title" type="VARCHAR" length="10"/>
+            <field id="P_CTAX" type="BIT"/>
+            <field id="P_PLAN" type="BIT"/>
+            <field id="P_WASTE" type="BIT"/>
+            <field id="Revs_Account_Ref" type="VARCHAR" length="50"/>
+            <field id="Surname" type="VARCHAR" length="500"/>
+            <field id="Telephone" type="VARCHAR" length="20"/>
+            <field id="Title" type="VARCHAR" length="10"/>
+            <field id="Verified" type="BIT" length="1"/>
+            <field id="Where_Clause" persistent="false" dynamic="true"/>
+        </fields>
+    </dbResource>
+</ebase>

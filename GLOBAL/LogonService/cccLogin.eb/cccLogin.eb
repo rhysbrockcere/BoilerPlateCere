@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <integrationService systemService="true" contentType="Logon" integrationEvent="/LogonService/LoginLogic" id="cccLogin" dateCreated="2017-01-20T13:10:48.829Z">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+        </sharedFunctionScripts>
+        <resources>
+            <resource name="cccLogin_Resource" path="/LogonService/cccLogin_Resource"/>
+            <resource name="CeriExtract" path="/LogonService/CeriExtract"/>
+            <resource name="Roles" path="/LogonService/Roles"/>
+        </resources>
+        <webServiceConfigurations>
+            <webServiceConfiguration name="cccLogin" enabled="true" soapVersion="http://schemas.xmlsoap.org/wsdl/soap/"/>
+        </webServiceConfigurations>
+    </integrationService>
+</ebase>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="OS_ADDRESS_CYM">
+        <tableMapping table="OS_ADDR_CYM"/>
+        <fieldMapping resourceField="ADDR1" field="OS_ADDR_CYM-ADDR1"/>
+        <fieldMapping resourceField="ADDR2" field="OS_ADDR_CYM-ADDR2"/>
+        <fieldMapping resourceField="ADDR3" field="OS_ADDR_CYM-ADDR3"/>
+        <fieldMapping resourceField="ADDR4" field="OS_ADDR_CYM-ADDR4"/>
+        <fieldMapping resourceField="ADDR5" field="OS_ADDR_CYM-ADDR5"/>
+        <fieldMapping resourceField="Address" field="OS_ADDR_CYM-ADDRESS"/>
+        <fieldMapping resourceField="ADMINISTRATIVE_AREA" field="OS_ADDR_CYM-ADMINISTRATIVE_AREA"/>
+        <fieldMapping resourceField="BUILDING_NAME" field="OS_ADDR_CYM-BUILDING_NAME"/>
+        <fieldMapping resourceField="BUILDING_NUMBER" field="OS_ADDR_CYM-BUILDING_NUMBER"/>
+        <fieldMapping resourceField="Class" field="OS_ADDR_CYM-CLASS"/>
+        <fieldMapping resourceField="Class_P" field="OS_ADDR_CYM-CLASS_P"/>
+        <fieldMapping resourceField="Class_S" field="OS_ADDR_CYM-CLASS_S"/>
+        <fieldMapping resourceField="Class_T" field="OS_ADDR_CYM-CLASS_T"/>
+        <fieldMapping resourceField="DEPARTMENT_NAME" field="OS_ADDR_CYM-DEPARTMENT_NAME"/>
+        <fieldMapping resourceField="DEPENDANT_THOROUGHFARE_NAME" field="OS_ADDR_CYM-DEPENDANT_THOROUGHFARE_NAME"/>
+        <fieldMapping resourceField="DEPENDENT_LOCALITY" field="OS_ADDR_CYM-DEPENDENT_LOCALITY"/>
+        <fieldMapping resourceField="DOUBLE_DEPENDENT_LOCALITY" field="OS_ADDR_CYM-DOUBLE_DEPENDENT_LOCALITY"/>
+        <fieldMapping resourceField="easting" field="OS_ADDR_CYM-EASTING"/>
+        <fieldMapping resourceField="LOCALITY_NAME" field="OS_ADDR_CYM-LOCALITY_NAME"/>
+        <fieldMapping resourceField="LOGICAL_STATUS" field="OS_ADDR_CYM-LOGICAL_STATUS"/>
+        <fieldMapping resourceField="northing" field="OS_ADDR_CYM-NORTHING"/>
+        <fieldMapping resourceField="ORGANISATION_NAME" field="OS_ADDR_CYM-ORGANISATION_NAME"/>
+        <fieldMapping resourceField="PAO_END_NUMBER" field="OS_ADDR_CYM-PAO_END_NUMBER"/>
+        <fieldMapping resourceField="PAO_END_SUFFIX" field="OS_ADDR_CYM-PAO_END_SUFFIX"/>
+        <fieldMapping resourceField="PAO_START_NUMBER" field="OS_ADDR_CYM-PAO_START_NUMBER"/>
+        <fieldMapping resourceField="PAO_START_SUFFIX" field="OS_ADDR_CYM-PAO_START_SUFFIX"/>
+        <fieldMapping resourceField="PAO_TEXT" field="OS_ADDR_CYM-PAO_TEXT"/>
+        <fieldMapping resourceField="POSTCODE" field="OS_ADDR_CYM-POSTCODE"/>
+        <fieldMapping resourceField="Postcode2" field="OS_ADDR_CYM-POSTCODE2"/>
+        <fieldMapping resourceField="POST_TOWN" field="OS_ADDR_CYM-POST_TOWN"/>
+        <fieldMapping resourceField="PRO_ORDER" field="OS_ADDR_CYM-PRO_ORDER"/>
+        <fieldMapping resourceField="RECORD_TYPE" field="OS_ADDR_CYM-RECORD_TYPE"/>
+        <fieldMapping resourceField="SAO_END_NUMBER" field="OS_ADDR_CYM-SAO_END_NUMBER"/>
+        <fieldMapping resourceField="SAO_END_SUFFIX" field="OS_ADDR_CYM-SAO_END_SUFFIX"/>
+        <fieldMapping resourceField="SAO_START_NUMBER" field="OS_ADDR_CYM-SAO_START_NUMBER"/>
+        <fieldMapping resourceField="SAO_START_SUFFIX" field="OS_ADDR_CYM-SAO_START_SUFFIX"/>
+        <fieldMapping resourceField="SAO_TEXT" field="OS_ADDR_CYM-SAO_TEXT"/>
+        <fieldMapping resourceField="STREET_DESCRIPTION" field="OS_ADDR_CYM-STREET_DESCRIPTION"/>
+        <fieldMapping resourceField="SUB_BUILDING_NAME" field="OS_ADDR_CYM-SUB_BUILDING_NAME"/>
+        <fieldMapping resourceField="THOROUGHFARE_NAME" field="OS_ADDR_CYM-THOROUGHFARE_NAME"/>
+        <fieldMapping resourceField="TOWN_NAME" field="OS_ADDR_CYM-TOWN_NAME"/>
+        <fieldMapping resourceField="UPRN" field="OS_ADDR_CYM-UPRN"/>
+        <fieldMapping resourceField="USRN" field="OS_ADDR_CYM-USRN"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="OS_ADDRESS_ENG">
+        <tableMapping table="OS_ADDR_ENG"/>
+        <fieldMapping resourceField="ADDR1" field="OS_ADDR_ENG-ADDR1"/>
+        <fieldMapping resourceField="ADDR2" field="OS_ADDR_ENG-ADDR2"/>
+        <fieldMapping resourceField="ADDR3" field="OS_ADDR_ENG-ADDR3"/>
+        <fieldMapping resourceField="ADDR4" field="OS_ADDR_ENG-ADDR4"/>
+        <fieldMapping resourceField="ADDR5" field="OS_ADDR_ENG-ADDR5"/>
+        <fieldMapping resourceField="Address" field="OS_ADDR_ENG-ADDRESS"/>
+        <fieldMapping resourceField="ADMINISTRATIVE_AREA" field="OS_ADDR_ENG-ADMINISTRATIVE_AREA"/>
+        <fieldMapping resourceField="BUILDING_NAME" field="OS_ADDR_ENG-BUILDING_NAME"/>
+        <fieldMapping resourceField="BUILDING_NUMBER" field="OS_ADDR_ENG-BUILDING_NUMBER"/>
+        <fieldMapping resourceField="Class" field="OS_ADDR_ENG-CLASS"/>
+        <fieldMapping resourceField="Class_P" field="OS_ADDR_ENG-CLASS_P"/>
+        <fieldMapping resourceField="Class_S" field="OS_ADDR_ENG-CLASS_S"/>
+        <fieldMapping resourceField="Class_T" field="OS_ADDR_ENG-CLASS_T"/>
+        <fieldMapping resourceField="DEPARTMENT_NAME" field="OS_ADDR_ENG-DEPARTMENT_NAME"/>
+        <fieldMapping resourceField="DEPENDANT_THOROUGHFARE_NAME" field="OS_ADDR_ENG-DEPENDANT_THOROUGHFARE_NAME"/>
+        <fieldMapping resourceField="DEPENDENT_LOCALITY" field="OS_ADDR_ENG-DEPENDENT_LOCALITY"/>
+        <fieldMapping resourceField="DOUBLE_DEPENDENT_LOCALITY" field="OS_ADDR_ENG-DOUBLE_DEPENDENT_LOCALITY"/>
+        <fieldMapping resourceField="easting" field="OS_ADDR_ENG-EASTING"/>
+        <fieldMapping resourceField="LOCALITY_NAME" field="OS_ADDR_ENG-LOCALITY_NAME"/>
+        <fieldMapping resourceField="LOGICAL_STATUS" field="OS_ADDR_ENG-LOGICAL_STATUS"/>
+        <fieldMapping resourceField="northing" field="OS_ADDR_ENG-NORTHING"/>
+        <fieldMapping resourceField="ORGANISATION_NAME" field="OS_ADDR_ENG-ORGANISATION_NAME"/>
+        <fieldMapping resourceField="PAO_END_NUMBER" field="OS_ADDR_ENG-PAO_END_NUMBER"/>
+        <fieldMapping resourceField="PAO_END_SUFFIX" field="OS_ADDR_ENG-PAO_END_SUFFIX"/>
+        <fieldMapping resourceField="PAO_START_NUMBER" field="OS_ADDR_ENG-PAO_START_NUMBER"/>
+        <fieldMapping resourceField="PAO_START_SUFFIX" field="OS_ADDR_ENG-PAO_START_SUFFIX"/>
+        <fieldMapping resourceField="PAO_TEXT" field="OS_ADDR_ENG-PAO_TEXT"/>
+        <fieldMapping resourceField="POSTCODE" field="OS_ADDR_ENG-POSTCODE"/>
+        <fieldMapping resourceField="Postcode2" field="OS_ADDR_ENG-POSTCODE2"/>
+        <fieldMapping resourceField="POST_TOWN" field="OS_ADDR_ENG-POST_TOWN"/>
+        <fieldMapping resourceField="PRO_ORDER" field="OS_ADDR_ENG-PRO_ORDER"/>
+        <fieldMapping resourceField="RECORD_TYPE" field="OS_ADDR_ENG-RECORD_TYPE"/>
+        <fieldMapping resourceField="SAO_END_NUMBER" field="OS_ADDR_ENG-SAO_END_NUMBER"/>
+        <fieldMapping resourceField="SAO_END_SUFFIX" field="OS_ADDR_ENG-SAO_END_SUFFIX"/>
+        <fieldMapping resourceField="SAO_START_NUMBER" field="OS_ADDR_ENG-SAO_START_NUMBER"/>
+        <fieldMapping resourceField="SAO_START_SUFFIX" field="OS_ADDR_ENG-SAO_START_SUFFIX"/>
+        <fieldMapping resourceField="SAO_TEXT" field="OS_ADDR_ENG-SAO_TEXT"/>
+        <fieldMapping resourceField="STREET_DESCRIPTION" field="OS_ADDR_ENG-STREET_DESCRIPTION"/>
+        <fieldMapping resourceField="SUB_BUILDING_NAME" field="OS_ADDR_ENG-SUB_BUILDING_NAME"/>
+        <fieldMapping resourceField="THOROUGHFARE_NAME" field="OS_ADDR_ENG-THOROUGHFARE_NAME"/>
+        <fieldMapping resourceField="TOWN_NAME" field="OS_ADDR_ENG-TOWN_NAME"/>
+        <fieldMapping resourceField="UPRN" field="OS_ADDR_ENG-UPRN"/>
+        <fieldMapping resourceField="USRN" field="OS_ADDR_ENG-USRN"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="OS_PROPERTIES">
+        <fieldMapping resourceField="ADMINISTRATIVE_AREA" field="OS_ADMINISTRATIVE_AREA"/>
+        <fieldMapping resourceField="easting" field="OS_EASTING"/>
+        <fieldMapping resourceField="E_ADDR1" field="OS_E_ADDR1"/>
+        <fieldMapping resourceField="E_ADDR2" field="OS_E_ADDR2"/>
+        <fieldMapping resourceField="E_ADDR3" field="OS_E_ADDR3"/>
+        <fieldMapping resourceField="E_ADDR4" field="OS_E_ADDR4"/>
+        <fieldMapping resourceField="E_ADDR5" field="OS_E_ADDR5"/>
+        <fieldMapping resourceField="northing" field="OS_NORTHING"/>
+        <fieldMapping resourceField="POSTCODE" field="OS_POSTCODE"/>
+        <fieldMapping resourceField="UPRN" field="OS_UPRN"/>
+        <fieldMapping resourceField="USRN" field="OS_USRN"/>
+        <fieldMapping resourceField="W_ADDR1" field="OS_W_ADDR1"/>
+        <fieldMapping resourceField="W_ADDR2" field="OS_W_ADDR2"/>
+        <fieldMapping resourceField="W_ADDR3" field="OS_W_ADDR3"/>
+        <fieldMapping resourceField="W_ADDR4" field="OS_W_ADDR4"/>
+        <fieldMapping resourceField="W_ADDR5" field="OS_W_ADDR5"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="OS_PROPERTIES_TBL">
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+</resourceMappings>

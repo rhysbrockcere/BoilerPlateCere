@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="LANG_CODE" type="CHAR" clientAccessible="ReadWrite" labelTextRef="TxtAJTZd6" displayType="TEXT" id="87e0f1d3-fc48-4acb-8a49-6be4d4642289"/>
+</fields>

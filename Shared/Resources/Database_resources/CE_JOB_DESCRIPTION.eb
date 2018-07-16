@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_JOB_DESCRIPTION">
+        <columns>*</columns>
+        <from>CE_Personnel_TEST.dbo.CE_Job_Description</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Accountability_CY" type="VARCHAR" length="2000"/>
+            <field id="Accountability_EN" type="VARCHAR" length="2000"/>
+            <field id="Creator" type="VARCHAR" length="100"/>
+            <field id="Des_Status" type="VARCHAR" length="50"/>
+            <field id="Duty_ARPR_CY" type="VARCHAR" length="1000"/>
+            <field id="Duty_ARPR_EN" type="VARCHAR" length="1000"/>
+            <field id="Duty_Comm_CY" type="VARCHAR" length="1000"/>
+            <field id="Duty_Comm_EN" type="VARCHAR" length="1000"/>
+            <field id="Duty_Inno_CY" type="VARCHAR" length="1000"/>
+            <field id="Duty_Inno_EN" type="VARCHAR" length="1000"/>
+            <field id="Duty_Other_CY" type="VARCHAR" length="1000"/>
+            <field id="Duty_Other_EN" type="VARCHAR" length="1000"/>
+            <field id="Duty_Phys_CY" type="VARCHAR" length="1000"/>
+            <field id="Duty_Phys_EN" type="VARCHAR" length="1000"/>
+            <field id="Job_Des_ID" type="BIGINT" length="19"/>
+            <field id="Job_Purpose_CY" type="VARCHAR" length="500"/>
+            <field id="Job_Purpose_EN" type="VARCHAR" length="500"/>
+            <field id="Line_Manager_Title" type="VARCHAR" length="100"/>
+            <field id="Loc_Other_CY" type="VARCHAR" length="500"/>
+            <field id="Loc_Other_EN" type="VARCHAR" length="500"/>
+            <field id="S_M_Resp_CY" type="VARCHAR" length="1000"/>
+            <field id="S_M_Resp_EN" type="VARCHAR" length="1000"/>
+            <field id="Version" type="BIGINT" length="19"/>
+            <field id="Version_Date" type="DATE" length="19"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

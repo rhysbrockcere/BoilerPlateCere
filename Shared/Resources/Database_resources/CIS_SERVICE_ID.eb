@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1_SQL2012" preparedStatement="false" id="CIS_SERVICE_ID">
+        <columns>&amp;&amp;SELECT_CLAUSE</columns>
+        <from>Childrens_Services_TEST.dbo.Services</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ID" type="VARCHAR"/>
+            <field id="SELECT_CLAUSE" type="NUMERIC"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC"/>
+        </fields>
+    </dbResource>
+</ebase>

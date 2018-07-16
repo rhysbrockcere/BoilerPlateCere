@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="DECS_AC_EMPLOYER" dateCreated="2013-10-10T21:53:01.413+01:00" dateImported="2013-10-31T14:25:02.457Z">
+        <columns>EmployerName</columns>
+        <from>IT_Central.dbo.DECS_AC_Employer</from>
+        <fields>
+            <field id="EmployerID" type="INTEGER" input="false"/>
+            <field id="EmployerName" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

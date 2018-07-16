@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Location details" database="SQLE648S1" preparedStatement="false" id="IT_LOCATION">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_Location</from>
+        <additional>order by LocationID</additional>
+        <fields>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="LocationID" type="VARCHAR" length="50"/>
+            <field id="NewID" type="VARCHAR" length="4"/>
+            <field id="Postcode" length="10"/>
+            <field id="Status" length="10"/>
+            <field id="Address" type="VARCHAR" length="255"/>
+        </fields>
+    </dbResource>
+</ebase>

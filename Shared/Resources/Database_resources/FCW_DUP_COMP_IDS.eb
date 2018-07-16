@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="FCW_DUP_COMP_IDS">
+        <columns>*</columns>
+        <from>FCW_CRM_Test.dbo.SW_Dup_Comp_Ids</from>
+        <additional>order by Company_ID</additional>
+        <fields>
+            <field id="Company_ID" type="INTEGER" length="10"/>
+            <field id="Company_Name" type="VARCHAR" length="500"/>
+            <field id="SW_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

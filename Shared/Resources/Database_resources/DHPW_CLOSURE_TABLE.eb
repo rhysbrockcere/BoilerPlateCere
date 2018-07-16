@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DHPW Road Closure Database" database="DFIT_CENTRAL" table="true" preparedStatement="false" id="DHPW_CLOSURE_TABLE">
+        <columns>*</columns>
+        <from>DHPW_Road_Closures.dbo.TBL_Closure</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Active_Ind" length="1"/>
+            <field id="Closure_ID" type="INTEGER" length="4" required="true" key="true"/>
+            <field id="Closure_Reason" length="40"/>
+            <field id="Closure_Type" length="10"/>
+            <field id="Contact_Name" length="50"/>
+            <field id="Eastings" type="INTEGER" length="10"/>
+            <field id="End_Date" type="DATE" length="10"/>
+            <field id="End_Time" length="10"/>
+            <field id="Location" length="40"/>
+            <field id="Map_Zoom_Level" type="INTEGER" length="10"/>
+            <field id="Road_ID" length="10"/>
+            <field id="Start_Date" type="DATE" length="10"/>
+            <field id="Start_Time" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="75" persistent="false"/>
+            <field id="Northings" type="INTEGER" length="10"/>
+            <field id="Operating_Hours" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

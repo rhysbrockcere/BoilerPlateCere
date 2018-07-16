@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="External Emergency Contacts" database="SQLE648S1" table="true" preparedStatement="false" id="CE_EXT_CONTACTS">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_Directory</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ALL_CONTACTS" length="1"/>
+            <field id="EXT_COMPANY" length="50"/>
+            <field id="EXT_CONTACT" length="50"/>
+            <field id="Emergency_plan_ind" length="1"/>
+            <field id="Ext_company_name" type="VARCHAR" length="50"/>
+            <field id="Ext_contact_name" type="VARCHAR" length="50"/>
+            <field id="Ext_division" type="VARCHAR" length="50"/>
+            <field id="Ext_fax" type="VARCHAR" length="50"/>
+            <field id="Ext_home_phone" type="VARCHAR" length="50"/>
+            <field id="Ext_job_title" type="VARCHAR" length="50"/>
+            <field id="Ext_mobile" type="VARCHAR" length="50"/>
+            <field id="Ext_office_phone" type="VARCHAR" length="50"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Password" length="10"/>
+            <field id="Profile" type="VARCHAR" length="255"/>
+            <field id="Status" type="VARCHAR" length="10"/>
+            <field id="Type" type="VARCHAR" length="20"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+            <field id="ddate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+        </fields>
+    </dbResource>
+</ebase>

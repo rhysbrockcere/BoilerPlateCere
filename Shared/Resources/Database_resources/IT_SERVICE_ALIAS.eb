@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Service aliases" database="SQLE648S1" preparedStatement="false" id="IT_SERVICE_ALIAS">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.srvc_Alias</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Alias_CY" type="VARCHAR" length="100"/>
+            <field id="Alias_EN" type="VARCHAR" length="100"/>
+            <field id="Alias_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="Desc_CY" type="VARCHAR" length="500"/>
+            <field id="Desc_EN" type="VARCHAR" length="500"/>
+            <field id="Internet_Page" type="VARCHAR" length="120"/>
+            <field id="Intranet_Page" type="VARCHAR" length="100"/>
+            <field id="Public_Facing_Ind" length="1"/>
+            <field id="WHERE_CLAUSE" type="INTEGER" length="100" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

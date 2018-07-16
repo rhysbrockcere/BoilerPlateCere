@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DHPW cleaning inspections Seasons" debug="true" database="DHPW_TEST" preparedStatement="false" id="DHPW_CI_SEASON">
+        <columns>*</columns>
+        <from>Cleaninginsp_TEST.dbo.Season</from>
+        <fields>
+            <field id="Season" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

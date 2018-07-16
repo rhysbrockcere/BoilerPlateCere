@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DECS_BOX_MAX">
+        <columns>MAX(Box_Number) as Max_Box</columns>
+        <from>DECS_Archives_RTL_TEST.dbo.Box_Locations</from>
+        <fields>
+            <field id="Max_Box" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

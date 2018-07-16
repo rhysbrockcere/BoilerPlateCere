@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="All stationery orders" database="SQLE645S1" table="true" preparedStatement="false" id="DF_PROC_ORDER_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DF_Proc_Order</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="AuthorisedBy" type="VARCHAR" length="20"/>
+            <field id="Authorised" length="1"/>
+            <field id="AuthorisedDate" type="TIMESTAMP" length="23"/>
+            <field id="Category" type="VARCHAR" length="15"/>
+            <field id="ClosedDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CostCode" type="VARCHAR" length="10"/>
+            <field id="Description" type="VARCHAR" length="50"/>
+            <field id="IssuedDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ItemID" type="INTEGER" length="10"/>
+            <field id="OrderDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="OrderID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Price" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="ProductCode" type="VARCHAR" length="10"/>
+            <field id="Qty" type="INTEGER" length="10"/>
+            <field id="SectionName" type="VARCHAR" length="5"/>
+            <field id="Status" type="VARCHAR" length="10"/>
+            <field id="SubmittedBy" type="VARCHAR" length="20"/>
+            <field id="SubmittedDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="UOP" type="VARCHAR" length="4"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

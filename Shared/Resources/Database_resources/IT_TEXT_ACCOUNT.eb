@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="24X SMS Account details" database="SQLE648S1" preparedStatement="false" id="IT_TEXT_ACCOUNT">
+        <columns>*</columns>
+        <from>IT_Central.dbo.IT_Text_Account</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="TXT_Account_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Txt_Account_Name" length="10"/>
+            <field id="Txt_Account_Ref" length="11"/>
+            <field id="Txt_Email_Source" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+            <field id="txt_username" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

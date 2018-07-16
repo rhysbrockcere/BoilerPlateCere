@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="SC_PICKUP_LOCATIONS_LIST" dateCreated="2016-09-05T16:43:36.800+01:00" dateImported="2017-02-01T12:21:29.260Z">
+        <columns>Location_CY, Location, ID</columns>
+        <from>SC_Parking.dbo.Pickup_Locations</from>
+        <fields>
+            <field id="Location_CY" input="false"/>
+            <field id="ID" type="INTEGER" input="false"/>
+            <field id="Location" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

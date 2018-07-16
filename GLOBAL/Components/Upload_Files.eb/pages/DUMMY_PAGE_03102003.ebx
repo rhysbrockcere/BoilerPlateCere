@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="TxtPcQkM" pageInfoTextReference="Txt8dSnt" pageTrailerTextReference="Txt19WycL" nextPageTextReference="Txt8hJMi0" prevPageTextReference="Txt4YPLSh">
+    <pageContents>
+        <component ctrl="CmpPonrJ" inheritMsg="true" outputType="0" pdfFooterText="LocalTxtABgjS2" pdfHeaderText="LocalTxt1cRGgE" uid="5jow2n3i">
+            <panel ctrl="PanzqPmE" uid="2eCJ1XAh">
+                <panel ctrl="PanfFAgp" uid="ACPiTajF">
+                    <rootHtmlElementProperties classLocator="@0"/>
+                    <text ctrl="Texotclk" text="LocalTxt9suPpy" uid="QSp0yTtP">
+                        <rootHtmlElementProperties classLocator="helpText"/>
+                    </text>
+                </panel>
+                <repeater ctrl="Repbqh0N" displayOnly="true" field="Uploads" layoutType="@0" uid="F4cqx8Ij">
+                    <repeaterRow allMargin="@0" allPadding="@0" bottomMargin="@0" bottomPadding="@0" ctrl="ReprFmAJX" layoutType="@0" leftMargin="@0" leftPadding="@0" rightMargin="@0" rightPadding="@0" topMargin="@0" topPadding="@0" uid="IzazviUj">
+                        <hyperlink ctrl="Lnka4i4J" onClickEvent="/Scripts/Upload_Files/Remove_Attachment" rightMargin="10px" text="LocalTxt6pRARY_2" title="LocalTxt9breC8_2" uid="9Djex8M0"/>
+                        <field buttonText="LocalTxt5BlAH3" ctrl="Fld13Xy9R" displayLabelText="false" field="Uploads-DocName" uid="2FjgOIDm"/>
+                    </repeaterRow>
+                </repeater>
+                <button buttonText="LocalTxt9hIBrP" ctrl="But1Klxf" mouseOverText="LocalTxt8XiDuJ" onClickEvent="/Scripts/Upload_Files/Upload_File" uid="xngNOxK"/>
+            </panel>
+        </component>
+    </pageContents>
+</page>

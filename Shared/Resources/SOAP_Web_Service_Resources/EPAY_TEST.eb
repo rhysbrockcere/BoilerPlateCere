@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <resource type="WS" id="EPAY_TEST">
+        <params>
+            <param name="BINDCTX">XB</param>
+            <param name="DOCDEFportalReqFault">{http://schemas.xmlsoap.org/soap/envelope/}Fault</param>
+            <param name="DOCDEFportalReqRequest">{http://www.capita-software-services.com/scp/simple}scpSimpleInvokeRequest</param>
+            <param name="DOCDEFportalReqResponse">{http://www.capita-software-services.com/scp/simple}scpSimpleInvokeResponse</param>
+            <param name="DOCIDS">portalReqRequest,portalReqResponse,portalReqFault</param>
+            <param name="NAMESPACES">com=https://support.capita-software.co.uk/selfservice/?commonFoundation,sim=http://www.capita-software-services.com/scp/simple,base=http://www.capita-software-services.com/scp/base,soapenv=http://schemas.xmlsoap.org/soap/envelope/</param>
+            <param name="XSBhttp://schemas.xmlsoap.org/soap/envelope/">&lt;?xml version='1.0' encoding='UTF-8' ?&gt;&#xD;
+&#xD;
+&lt;!-- Schema for the SOAP/1.1 envelope&#xD;
+&#xD;
+Portions © 2001 DevelopMentor.&#xD;
+© 2001 W3C (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved.&#xD;
+&#xD;
+This document is governed by the W3C Software License [1] as described in the FAQ [2].&#xD;
+[1] http://www.w3.org/Consortium/Legal/copyright-software-19980720&#xD;
+[2] http://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD&#xD;
+By obtaining, using and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:&#xD;
+&#xD;
+Permission to use, copy, modify, and distribute this software and its documentation, with or without modification,  for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the software and documentation or portions thereof, including modifications, that you make:&#xD;
+&#xD;
+1.  The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.&#xD;
+&#xD;
+2.  Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, a short notice of the following form (hypertext is preferred, text is permitted) should be used within the body of any redistributed or derivative code: &quot;Copyright © 2001 World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/&quot;&#xD;
+&#xD;
+3.  Notice of any changes or modifications to the W3C files, including the date changes were made. (We recommend you provide URIs to the location from which the code is derived.)&#xD;
+&#xD;
+Original W3C files; http://www.w3.org/2001/06/soap-envelope&#xD;
+Changes made:&#xD;
+     - reverted namespace to http://schemas.xmlsoap.org/soap/envelope/&#xD;
+     - reverted mustUnderstand to only allow 0 and 1 as lexical values&#xD;
+	 - made encodingStyle a global attribute 20020825&#xD;
+	 - removed default value from mustUnderstand attribute declaration&#xD;
+&#xD;
+THIS SOFTWARE AND DOCUMENTATION IS PROVIDED &quot;AS IS,&quot; AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.&#xD;
+&#xD;
+COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.&#xD;
+&#xD;
+The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the software without specific, written prior permission. Title to copyright in this software and any associated documentation will at all times remain with copyright holders.&#xD;
+&#xD;
+--&gt;&#xD;
+&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&#xD;
+           xmlns:tns=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&#xD;
+           targetNamespace=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; &gt;&#xD;
+&#xD;
+&#xD;
+  &lt;!-- Envelope, header and body --&gt;&#xD;
+  &lt;xs:element name=&quot;Envelope&quot; type=&quot;tns:Envelope&quot; /&gt;&#xD;
+  &lt;xs:complexType name=&quot;Envelope&quot; &gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+      &lt;xs:element ref=&quot;tns:Header&quot; minOccurs=&quot;0&quot; /&gt;&#xD;
+      &lt;xs:element ref=&quot;tns:Body&quot; minOccurs=&quot;1&quot; /&gt;&#xD;
+&#xD;
+      &lt;xs:any namespace=&quot;##other&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot; processContents=&quot;lax&quot; /&gt;&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+    &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot; /&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+  &lt;xs:element name=&quot;Header&quot; type=&quot;tns:Header&quot; /&gt;&#xD;
+  &lt;xs:complexType name=&quot;Header&quot; &gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+      &lt;xs:any namespace=&quot;##other&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot; processContents=&quot;lax&quot; /&gt;&#xD;
+&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+    &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot; /&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+  &lt;xs:element name=&quot;Body&quot; type=&quot;tns:Body&quot; /&gt;&#xD;
+  &lt;xs:complexType name=&quot;Body&quot; &gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+      &lt;xs:any namespace=&quot;##any&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot; processContents=&quot;lax&quot; /&gt;&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+    &lt;xs:anyAttribute namespace=&quot;##any&quot; processContents=&quot;lax&quot; &gt;&#xD;
+&#xD;
+	  &lt;xs:annotation&gt;&#xD;
+	    &lt;xs:documentation&gt;&#xD;
+		  Prose in the spec does not specify that attributes are allowed on the Body element&#xD;
+		&lt;/xs:documentation&gt;&#xD;
+	  &lt;/xs:annotation&gt;&#xD;
+	&lt;/xs:anyAttribute&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+&#xD;
+  &lt;!-- Global Attributes.  The following attributes are intended to be usable via qualified attribute names on any complex type referencing them.  --&gt;&#xD;
+  &lt;xs:attribute name=&quot;mustUnderstand&quot; &gt;&#xD;
+     &lt;xs:simpleType&gt;&#xD;
+&#xD;
+     &lt;xs:restriction base='xs:boolean'&gt;&#xD;
+	   &lt;xs:pattern value='0|1' /&gt;&#xD;
+	 &lt;/xs:restriction&gt;&#xD;
+   &lt;/xs:simpleType&gt;&#xD;
+  &lt;/xs:attribute&gt;&#xD;
+  &lt;xs:attribute name=&quot;actor&quot; type=&quot;xs:anyURI&quot; /&gt;&#xD;
+&#xD;
+  &lt;xs:simpleType name=&quot;encodingStyle&quot; &gt;&#xD;
+    &lt;xs:annotation&gt;&#xD;
+&#xD;
+	  &lt;xs:documentation&gt;&#xD;
+	    'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification&#xD;
+	  &lt;/xs:documentation&gt;&#xD;
+	&lt;/xs:annotation&gt;&#xD;
+    &lt;xs:list itemType=&quot;xs:anyURI&quot; /&gt;&#xD;
+  &lt;/xs:simpleType&gt;&#xD;
+&#xD;
+  &lt;xs:attribute name=&quot;encodingStyle&quot; type=&quot;tns:encodingStyle&quot; /&gt;&#xD;
+  &lt;xs:attributeGroup name=&quot;encodingStyle&quot; &gt;&#xD;
+    &lt;xs:attribute ref=&quot;tns:encodingStyle&quot; /&gt;&#xD;
+&#xD;
+  &lt;/xs:attributeGroup&gt;&#xD;
+&#xD;
+  &lt;xs:element name=&quot;Fault&quot; type=&quot;tns:Fault&quot; /&gt;&#xD;
+  &lt;xs:complexType name=&quot;Fault&quot; final=&quot;extension&quot; &gt;&#xD;
+    &lt;xs:annotation&gt;&#xD;
+	  &lt;xs:documentation&gt;&#xD;
+	    Fault reporting structure&#xD;
+	  &lt;/xs:documentation&gt;&#xD;
+	&lt;/xs:annotation&gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+&#xD;
+      &lt;xs:element name=&quot;faultcode&quot; type=&quot;xs:QName&quot; /&gt;&#xD;
+      &lt;xs:element name=&quot;faultstring&quot; type=&quot;xs:string&quot; /&gt;&#xD;
+      &lt;xs:element name=&quot;faultactor&quot; type=&quot;xs:anyURI&quot; minOccurs=&quot;0&quot; /&gt;&#xD;
+      &lt;xs:element name=&quot;detail&quot; type=&quot;tns:detail&quot; minOccurs=&quot;0&quot; /&gt;&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+  &lt;xs:complexType name=&quot;detail&quot;&gt;&#xD;
+    &lt;xs:sequence&gt;&#xD;
+      &lt;xs:any namespace=&quot;##any&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot; processContents=&quot;lax&quot; /&gt;&#xD;
+&#xD;
+    &lt;/xs:sequence&gt;&#xD;
+    &lt;xs:anyAttribute namespace=&quot;##any&quot; processContents=&quot;lax&quot; /&gt;&#xD;
+  &lt;/xs:complexType&gt;&#xD;
+&#xD;
+&lt;/xs:schema&gt;</param>
+            <param name="XSDhttp://schemas.xmlsoap.org/soap/encoding/">&lt;xs:schema targetNamespace=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:tns=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+
+ &lt;xs:attribute name=&quot;root&quot;&gt;
+   &lt;xs:annotation&gt;
+     &lt;xs:documentation&gt;
+	   'root' can be used to distinguish serialization roots from other
+       elements that are present in a serialization but are not roots of
+       a serialized value graph
+	 &lt;/xs:documentation&gt;
+   &lt;/xs:annotation&gt;
+   &lt;xs:simpleType&gt;
+
+     &lt;xs:restriction base=&quot;xs:boolean&quot;&gt;
+	   &lt;xs:pattern value=&quot;0|1&quot;/&gt;
+	 &lt;/xs:restriction&gt;
+   &lt;/xs:simpleType&gt;
+ &lt;/xs:attribute&gt;
+
+  &lt;xs:attributeGroup name=&quot;commonAttributes&quot;&gt;
+    &lt;xs:annotation&gt;
+	  &lt;xs:documentation&gt;
+
+	    Attributes common to all elements that function as accessors or
+        represent independent (multi-ref) values.  The href attribute is
+        intended to be used in a manner like CONREF.  That is, the element
+        content should be empty iff the href attribute appears
+	  &lt;/xs:documentation&gt;
+	&lt;/xs:annotation&gt;
+    &lt;xs:attribute name=&quot;id&quot; type=&quot;xs:ID&quot;/&gt;
+    &lt;xs:attribute name=&quot;href&quot; type=&quot;xs:anyURI&quot;/&gt;
+    &lt;xs:anyAttribute namespace=&quot;##other&quot; processContents=&quot;lax&quot;/&gt;
+  &lt;/xs:attributeGroup&gt;
+
+  &lt;!-- Global Attributes.  The following attributes are intended to be usable via qualified attribute names on any complex type referencing them. --&gt;
+
+  &lt;!-- Array attributes. Needed to give the type and dimensions of an array's contents, and the offset for partially-transmitted arrays. --&gt;
+
+
+  &lt;xs:simpleType name=&quot;arrayCoordinate&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+
+  &lt;xs:attribute name=&quot;arrayType&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;xs:attribute name=&quot;offset&quot; type=&quot;tns:arrayCoordinate&quot;/&gt;
+
+  &lt;xs:attributeGroup name=&quot;arrayAttributes&quot;&gt;
+    &lt;xs:attribute ref=&quot;tns:arrayType&quot;/&gt;
+    &lt;xs:attribute ref=&quot;tns:offset&quot;/&gt;
+  &lt;/xs:attributeGroup&gt;
+
+  &lt;xs:attribute name=&quot;position&quot; type=&quot;tns:arrayCoordinate&quot;/&gt;
+
+  &lt;xs:attributeGroup name=&quot;arrayMemberAttributes&quot;&gt;
+
+    &lt;xs:attribute ref=&quot;tns:position&quot;/&gt;
+  &lt;/xs:attributeGroup&gt;
+
+  &lt;xs:group name=&quot;Array&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:any maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; namespace=&quot;##any&quot; processContents=&quot;lax&quot;/&gt;
+	&lt;/xs:sequence&gt;
+  &lt;/xs:group&gt;
+
+  &lt;xs:element name=&quot;Array&quot; type=&quot;tns:Array&quot;/&gt;
+  &lt;xs:complexType name=&quot;Array&quot;&gt;
+
+    &lt;xs:annotation&gt;
+	  &lt;xs:documentation&gt;
+	   'Array' is a complex type for accessors identified by position
+	  &lt;/xs:documentation&gt;
+	&lt;/xs:annotation&gt;
+    &lt;xs:group minOccurs=&quot;0&quot; ref=&quot;tns:Array&quot;/&gt;
+    &lt;xs:attributeGroup ref=&quot;tns:arrayAttributes&quot;/&gt;
+    &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;!-- 'Struct' is a complex type for accessors identified by name.
+       Constraint: No element may be have the same name as any other,
+       nor may any element have a maxOccurs &gt; 1. --&gt;
+
+
+  &lt;xs:element name=&quot;Struct&quot; type=&quot;tns:Struct&quot;/&gt;
+
+  &lt;xs:group name=&quot;Struct&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:any maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; namespace=&quot;##any&quot; processContents=&quot;lax&quot;/&gt;
+	&lt;/xs:sequence&gt;
+  &lt;/xs:group&gt;
+
+  &lt;xs:complexType name=&quot;Struct&quot;&gt;
+    &lt;xs:group minOccurs=&quot;0&quot; ref=&quot;tns:Struct&quot;/&gt;
+
+    &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;!-- 'Base64' can be used to serialize binary data using base64 encoding
+       as defined in RFC2045 but without the MIME line length limitation. --&gt;
+
+  &lt;xs:simpleType name=&quot;base64&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:base64Binary&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+
+ &lt;!-- Element declarations corresponding to each of the simple types in the
+      XML Schemas Specification. --&gt;
+
+  &lt;xs:element name=&quot;duration&quot; type=&quot;tns:duration&quot;/&gt;
+
+  &lt;xs:complexType name=&quot;duration&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:duration&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;dateTime&quot; type=&quot;tns:dateTime&quot;/&gt;
+
+  &lt;xs:complexType name=&quot;dateTime&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:dateTime&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+
+
+  &lt;xs:element name=&quot;NOTATION&quot; type=&quot;tns:NOTATION&quot;/&gt;
+  &lt;xs:complexType name=&quot;NOTATION&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:QName&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+
+  &lt;xs:element name=&quot;time&quot; type=&quot;tns:time&quot;/&gt;
+
+  &lt;xs:complexType name=&quot;time&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:time&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;date&quot; type=&quot;tns:date&quot;/&gt;
+
+  &lt;xs:complexType name=&quot;date&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:date&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;gYearMonth&quot; type=&quot;tns:gYearMonth&quot;/&gt;
+
+  &lt;xs:complexType name=&quot;gYearMonth&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:gYearMonth&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;gYear&quot; type=&quot;tns:gYear&quot;/&gt;
+
+  &lt;xs:complexType name=&quot;gYear&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:gYear&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;gMonthDay&quot; type=&quot;tns:gMonthDay&quot;/&gt;
+
+  &lt;xs:complexType name=&quot;gMonthDay&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:gMonthDay&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;gDay&quot; type=&quot;tns:gDay&quot;/&gt;
+
+  &lt;xs:complexType name=&quot;gDay&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:gDay&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;gMonth&quot; type=&quot;tns:gMonth&quot;/&gt;
+
+  &lt;xs:complexType name=&quot;gMonth&quot;&gt;
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:gMonth&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;boolean&quot; type=&quot;tns:boolean&quot;/&gt;
+  &lt;xs:complexType name=&quot;boolean&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:boolean&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;base64Binary&quot; type=&quot;tns:base64Binary&quot;/&gt;
+  &lt;xs:complexType name=&quot;base64Binary&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:base64Binary&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;hexBinary&quot; type=&quot;tns:hexBinary&quot;/&gt;
+  &lt;xs:complexType name=&quot;hexBinary&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+     &lt;xs:extension base=&quot;xs:hexBinary&quot;&gt;
+       &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+     &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;float&quot; type=&quot;tns:float&quot;/&gt;
+  &lt;xs:complexType name=&quot;float&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:float&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;double&quot; type=&quot;tns:double&quot;/&gt;
+  &lt;xs:complexType name=&quot;double&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:double&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;anyURI&quot; type=&quot;tns:anyURI&quot;/&gt;
+  &lt;xs:complexType name=&quot;anyURI&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:anyURI&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;QName&quot; type=&quot;tns:QName&quot;/&gt;
+  &lt;xs:complexType name=&quot;QName&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:QName&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+
+  &lt;xs:element name=&quot;string&quot; type=&quot;tns:string&quot;/&gt;
+  &lt;xs:complexType name=&quot;string&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:string&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;normalizedString&quot; type=&quot;tns:normalizedString&quot;/&gt;
+  &lt;xs:complexType name=&quot;normalizedString&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:normalizedString&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;token&quot; type=&quot;tns:token&quot;/&gt;
+  &lt;xs:complexType name=&quot;token&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:token&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;language&quot; type=&quot;tns:language&quot;/&gt;
+  &lt;xs:complexType name=&quot;language&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:language&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;Name&quot; type=&quot;tns:Name&quot;/&gt;
+  &lt;xs:complexType name=&quot;Name&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:Name&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;NMTOKEN&quot; type=&quot;tns:NMTOKEN&quot;/&gt;
+  &lt;xs:complexType name=&quot;NMTOKEN&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:NMTOKEN&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;NCName&quot; type=&quot;tns:NCName&quot;/&gt;
+  &lt;xs:complexType name=&quot;NCName&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:NCName&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;NMTOKENS&quot; type=&quot;tns:NMTOKENS&quot;/&gt;
+  &lt;xs:complexType name=&quot;NMTOKENS&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:NMTOKENS&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;ID&quot; type=&quot;tns:ID&quot;/&gt;
+  &lt;xs:complexType name=&quot;ID&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:ID&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;IDREF&quot; type=&quot;tns:IDREF&quot;/&gt;
+  &lt;xs:complexType name=&quot;IDREF&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:IDREF&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;ENTITY&quot; type=&quot;tns:ENTITY&quot;/&gt;
+  &lt;xs:complexType name=&quot;ENTITY&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:ENTITY&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;IDREFS&quot; type=&quot;tns:IDREFS&quot;/&gt;
+  &lt;xs:complexType name=&quot;IDREFS&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:IDREFS&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;ENTITIES&quot; type=&quot;tns:ENTITIES&quot;/&gt;
+  &lt;xs:complexType name=&quot;ENTITIES&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:ENTITIES&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;decimal&quot; type=&quot;tns:decimal&quot;/&gt;
+  &lt;xs:complexType name=&quot;decimal&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:decimal&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;integer&quot; type=&quot;tns:integer&quot;/&gt;
+  &lt;xs:complexType name=&quot;integer&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:integer&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;nonPositiveInteger&quot; type=&quot;tns:nonPositiveInteger&quot;/&gt;
+  &lt;xs:complexType name=&quot;nonPositiveInteger&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:nonPositiveInteger&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;negativeInteger&quot; type=&quot;tns:negativeInteger&quot;/&gt;
+  &lt;xs:complexType name=&quot;negativeInteger&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:negativeInteger&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;long&quot; type=&quot;tns:long&quot;/&gt;
+  &lt;xs:complexType name=&quot;long&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:long&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;int&quot; type=&quot;tns:int&quot;/&gt;
+  &lt;xs:complexType name=&quot;int&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:int&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;short&quot; type=&quot;tns:short&quot;/&gt;
+  &lt;xs:complexType name=&quot;short&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:short&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;byte&quot; type=&quot;tns:byte&quot;/&gt;
+  &lt;xs:complexType name=&quot;byte&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:byte&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;nonNegativeInteger&quot; type=&quot;tns:nonNegativeInteger&quot;/&gt;
+  &lt;xs:complexType name=&quot;nonNegativeInteger&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:nonNegativeInteger&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;unsignedLong&quot; type=&quot;tns:unsignedLong&quot;/&gt;
+  &lt;xs:complexType name=&quot;unsignedLong&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:unsignedLong&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;unsignedInt&quot; type=&quot;tns:unsignedInt&quot;/&gt;
+  &lt;xs:complexType name=&quot;unsignedInt&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:unsignedInt&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;unsignedShort&quot; type=&quot;tns:unsignedShort&quot;/&gt;
+  &lt;xs:complexType name=&quot;unsignedShort&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:unsignedShort&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;unsignedByte&quot; type=&quot;tns:unsignedByte&quot;/&gt;
+  &lt;xs:complexType name=&quot;unsignedByte&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:unsignedByte&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;positiveInteger&quot; type=&quot;tns:positiveInteger&quot;/&gt;
+  &lt;xs:complexType name=&quot;positiveInteger&quot;&gt;
+
+    &lt;xs:simpleContent&gt;
+      &lt;xs:extension base=&quot;xs:positiveInteger&quot;&gt;
+        &lt;xs:attributeGroup ref=&quot;tns:commonAttributes&quot;/&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:simpleContent&gt;
+  &lt;/xs:complexType&gt;
+
+  &lt;xs:element name=&quot;anyType&quot;/&gt;
+&lt;/xs:schema&gt;</param>
+            <param name="XSDhttps://sbsctest.e-paycapita.com/scp/scpws/scpSimpleClient.wsdl">&lt;xs:schema attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;unqualified&quot; targetNamespace=&quot;http://www.capita-software-services.com/portal-api&quot; xmlns=&quot;http://www.capita-software-services.com/portal-api&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:tns=&quot;http://www.capita-software-services.com/scp/simple&quot; xmlns:sch3=&quot;http://www.capita-software-services.com/scp/base&quot; xmlns:sch2=&quot;http://www.capita-software-services.com/scp/simple&quot; xmlns:sch1=&quot;https://support.capita-software.co.uk/selfservice/?commonFoundation&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:sch0=&quot;http://www.capita-software-services.com/portal-api&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Schema Version: 8.0.0.0&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Schema Description: Type definitions for use by Secure Bureau Service&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:simpleType name=&quot;generalShortString&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;35&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalString&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;50&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalIntermediateString&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;100&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalMediumString&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;255&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalLongString&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;2048&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalShortStringEmpty&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;0&quot;/&gt;&lt;xs:maxLength value=&quot;35&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalStringEmpty&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;0&quot;/&gt;&lt;xs:maxLength value=&quot;50&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalMediumStringEmpty&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;0&quot;/&gt;&lt;xs:maxLength value=&quot;255&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalLongStringEmpty&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;0&quot;/&gt;&lt;xs:maxLength value=&quot;2048&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalAmount&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Amount in minor currency units(pence/cents), leading sign&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:int&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalAmountPositive&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Amount in minor currency units(pence/cents)&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:positiveInteger&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalAmountNonZero&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Amount in minor currency units(pence/cents), leading sign, zero not allowed&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:int&quot;&gt;&lt;xs:pattern value=&quot;[\-+]?[0]*[1-9]\d*&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalInteger&quot;&gt;&lt;xs:restriction base=&quot;xs:int&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalShort&quot;&gt;&lt;xs:restriction base=&quot;xs:short&quot;&gt;&lt;xs:minInclusive value=&quot;1&quot;/&gt;&lt;xs:maxInclusive value=&quot;32767&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalDecimal&quot;&gt;&lt;xs:restriction base=&quot;xs:decimal&quot;&gt;&lt;xs:fractionDigits value=&quot;4&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalDecimalPositive&quot;&gt;&lt;xs:restriction base=&quot;generalDecimal&quot;&gt;&lt;xs:minExclusive value=&quot;0&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalDate&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Use the xml date/time format eg 2003-09-26T15:32:00&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:dateTime&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalDateMMYY&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Date format MMYY&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;(([1][0-2])|([0][1-9]))[0-9][0-9]&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalDateMMYYallow0000&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Date format MMYY&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;[0][0][0][0]|((([1][0-2])|([0][1-9]))[0-9][0-9])&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalCode&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;5&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalBoolean&quot;&gt;&lt;xs:restriction base=&quot;xs:boolean&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;generalSequenceNumber&quot;&gt;&lt;xs:restriction base=&quot;xs:positiveInteger&quot;&gt;&lt;xs:totalDigits value=&quot;5&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;systemCode&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;ACP   - AXIS Common Payments&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ACR   - AXIS Counter Receipting&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ADD   - AXIS Direct Debits&lt;/xs:documentation&gt;&lt;xs:documentation&gt;AIM   - AXIS Income Management&lt;/xs:documentation&gt;&lt;xs:documentation&gt;AIP   - AXIS Internet Payments&lt;/xs:documentation&gt;&lt;xs:documentation&gt;AOS   - AXIS On-line Services&lt;/xs:documentation&gt;&lt;xs:documentation&gt;API   - AXIS Payments Interface&lt;/xs:documentation&gt;&lt;xs:documentation&gt;APN   - AXIS PAYe.NET&lt;/xs:documentation&gt;&lt;xs:documentation&gt;APP   - AXIS Payment Portal&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ARP   - AXIS Remittance&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ASR   - AXIS Speech Recognition&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ATP   - AXIS Telephone Payments&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ATT   - AXIS Touch Tone&lt;/xs:documentation&gt;&lt;xs:documentation&gt;DIR   - Direct Authorisations from Third Parties&lt;/xs:documentation&gt;&lt;xs:documentation&gt;EXT   - EXTERNAL SYSTEM&lt;/xs:documentation&gt;&lt;xs:documentation&gt;HPAY  - AXIS Health PAYe.NET&lt;/xs:documentation&gt;&lt;xs:documentation&gt;MAPN  - Managed AXIS PAYe.NET&lt;/xs:documentation&gt;&lt;xs:documentation&gt;MHPAY - Managed AXIS Health PAYe.NET&lt;/xs:documentation&gt;&lt;xs:documentation&gt;MOTO  - AXIS Mail Order Telephone Order&lt;/xs:documentation&gt;&lt;xs:documentation&gt;PCR   - Perception&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SBS   - Secure Bureau Service&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SCM   - AXIS SafeCom&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SCP   - AXIS Stored Card Portal&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SGW   - AXIS Smart Gateway&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SMS   - AXIS Short Message Service&lt;/xs:documentation&gt;&lt;xs:documentation&gt;THY   - Thyron&lt;/xs:documentation&gt;&lt;xs:documentation&gt;TVWAP - AXIS DigiTV&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;ACP&quot;/&gt;&lt;xs:enumeration value=&quot;ACR&quot;/&gt;&lt;xs:enumeration value=&quot;ADD&quot;/&gt;&lt;xs:enumeration value=&quot;AIM&quot;/&gt;&lt;xs:enumeration value=&quot;AIP&quot;/&gt;&lt;xs:enumeration value=&quot;AOS&quot;/&gt;&lt;xs:enumeration value=&quot;API&quot;/&gt;&lt;xs:enumeration value=&quot;APN&quot;/&gt;&lt;xs:enumeration value=&quot;APP&quot;/&gt;&lt;xs:enumeration value=&quot;ARP&quot;/&gt;&lt;xs:enumeration value=&quot;ASR&quot;/&gt;&lt;xs:enumeration value=&quot;ATP&quot;/&gt;&lt;xs:enumeration value=&quot;ATT&quot;/&gt;&lt;xs:enumeration value=&quot;DIR&quot;/&gt;&lt;xs:enumeration value=&quot;EXT&quot;/&gt;&lt;xs:enumeration value=&quot;HPAY&quot;/&gt;&lt;xs:enumeration value=&quot;MAPN&quot;/&gt;&lt;xs:enumeration value=&quot;MHPAY&quot;/&gt;&lt;xs:enumeration value=&quot;MOTO&quot;/&gt;&lt;xs:enumeration value=&quot;PCR&quot;/&gt;&lt;xs:enumeration value=&quot;SCM&quot;/&gt;&lt;xs:enumeration value=&quot;SCP&quot;/&gt;&lt;xs:enumeration value=&quot;SGW&quot;/&gt;&lt;xs:enumeration value=&quot;SMS&quot;/&gt;&lt;xs:enumeration value=&quot;THY&quot;/&gt;&lt;xs:enumeration value=&quot;TVWAP&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;systemCodeDirect&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;DIR  - Direct Authorisations from Third Parties&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;DIR&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;siteID&quot;&gt;&lt;xs:restriction base=&quot;xs:unsignedShort&quot;&gt;&lt;xs:maxInclusive value=&quot;32767&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;uniqueTranID&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;12&quot;/&gt;&lt;xs:maxLength value=&quot;12&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;isoCode&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Three digit ISO code&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;[0-9]{3}&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;userName&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;25&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;sourceCode&quot;&gt;&lt;xs:restriction base=&quot;generalCode&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;languageCode&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:length value=&quot;2&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;linkCAN&quot;&gt;&lt;xs:restriction base=&quot;xs:positiveInteger&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;san&quot;&gt;&lt;xs:restriction base=&quot;xs:positiveInteger&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;recordSource&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;0 - Holding&lt;/xs:documentation&gt;&lt;xs:documentation&gt;1 - History&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;0&quot;/&gt;&lt;xs:enumeration value=&quot;1&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;track2Data&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Mandatory if card swiped, otherwise should not be present&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:maxLength value=&quot;100&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;cardNumber&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Mandatory on keyed and chip card transactions, should not be present for swiped&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;([0-9]{12,19})&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;issueNumber&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;[0-9]?[0-9]&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;keySwipe&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;0 - Signed voucher&lt;/xs:documentation&gt;&lt;xs:documentation&gt;1 - Mail order/telephone order/CNP&lt;/xs:documentation&gt;&lt;xs:documentation&gt;2 - Continuous authority&lt;/xs:documentation&gt;&lt;xs:documentation&gt;3 - PIN verified (on-line)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;4 - PIN verified (off-line)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;5 - Signed voucher (swiped)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;6 - Signed voucher (keyed)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;7 - Unattended device without PIN&lt;/xs:documentation&gt;&lt;xs:documentation&gt;8 - PIN verified transaction (recovered after sale)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;9 - Signed voucher (recovered after sale)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;G - Secure e-commerce transaction with cardholder certificate&lt;/xs:documentation&gt;&lt;xs:documentation&gt;H - Non-authenticated security transaction with SET merchant certificate&lt;/xs:documentation&gt;&lt;xs:documentation&gt;J - Non-authenticated security transaction without SET merchant certificate (e.g. SSL)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;K - Non-secure transaction&lt;/xs:documentation&gt;&lt;xs:documentation&gt;R - Reversal (used in reversal file only)&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;0&quot;/&gt;&lt;xs:enumeration value=&quot;1&quot;/&gt;&lt;xs:enumeration value=&quot;2&quot;/&gt;&lt;xs:enumeration value=&quot;3&quot;/&gt;&lt;xs:enumeration value=&quot;4&quot;/&gt;&lt;xs:enumeration value=&quot;5&quot;/&gt;&lt;xs:enumeration value=&quot;6&quot;/&gt;&lt;xs:enumeration value=&quot;7&quot;/&gt;&lt;xs:enumeration value=&quot;8&quot;/&gt;&lt;xs:enumeration value=&quot;9&quot;/&gt;&lt;xs:enumeration value=&quot;G&quot;/&gt;&lt;xs:enumeration value=&quot;H&quot;/&gt;&lt;xs:enumeration value=&quot;J&quot;/&gt;&lt;xs:enumeration value=&quot;K&quot;/&gt;&lt;xs:enumeration value=&quot;R&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;cardType&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Mandatory on card transactions&lt;/xs:documentation&gt;&lt;xs:documentation&gt;D - Debit Card&lt;/xs:documentation&gt;&lt;xs:documentation&gt;C - Credit Card&lt;/xs:documentation&gt;&lt;xs:documentation&gt;N - No Auth&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:length value=&quot;1&quot;/&gt;&lt;xs:enumeration value=&quot;D&quot;/&gt;&lt;xs:enumeration value=&quot;C&quot;/&gt;&lt;xs:enumeration value=&quot;N&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;merchantNumber&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;20&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;cardTranType&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Mandatory on card transactions&lt;/xs:documentation&gt;&lt;xs:documentation&gt;09 - Sale, keyed (cardholder not present(CNP), mail order/batch)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;10 - Sale, swiped or chip (cardholder present)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;20 - Sale, keyed (cardholder present / magstripe fallback only)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;B2 - Sale, e-commerce, keyed (CNP)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Z1 - Sale, swiped, voice-authorization&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Z2 - Sale, keyed, voice-authorization&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Z9 - Sale, keyed, voice-authorization (CNP)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;47 - Refund, keyed (CNP, mail order/batch)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;58 - Refund, swiped or chip (cardholder present)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;61 - Refund, keyed (cardholder present / magstripe fallback only)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;B4 - Refund, e-commerce, keyed (CNP)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;25 - Sale reversal&lt;/xs:documentation&gt;&lt;xs:documentation&gt;86 - Refund reversal&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;09&quot;/&gt;&lt;xs:enumeration value=&quot;10&quot;/&gt;&lt;xs:enumeration value=&quot;20&quot;/&gt;&lt;xs:enumeration value=&quot;B2&quot;/&gt;&lt;xs:enumeration value=&quot;Z1&quot;/&gt;&lt;xs:enumeration value=&quot;Z2&quot;/&gt;&lt;xs:enumeration value=&quot;Z9&quot;/&gt;&lt;xs:enumeration value=&quot;47&quot;/&gt;&lt;xs:enumeration value=&quot;58&quot;/&gt;&lt;xs:enumeration value=&quot;61&quot;/&gt;&lt;xs:enumeration value=&quot;B4&quot;/&gt;&lt;xs:enumeration value=&quot;25&quot;/&gt;&lt;xs:enumeration value=&quot;86&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;eCommerceTerminalType&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;For E-commerce transactions&lt;/xs:documentation&gt;&lt;xs:documentation&gt;22 - Chip and Pin transaction&lt;/xs:documentation&gt;&lt;xs:documentation&gt;25 - Unattended Chip and Pin transaction, controlled by merchant&lt;/xs:documentation&gt;&lt;xs:documentation&gt;30 - Secure transaction with cardholder certificate&lt;/xs:documentation&gt;&lt;xs:documentation&gt;31 - Non-authenticated security transaction with SET merchant certificate&lt;/xs:documentation&gt;&lt;xs:documentation&gt;32 - Non-authenticated security transaction without SET merchant certificate(eg SSL)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;33 - No additional information (considered as unsecured)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;35 - Unattended Chip and Pin transaction, controlled by cardholder&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:length value=&quot;2&quot;/&gt;&lt;xs:enumeration value=&quot;22&quot;/&gt;&lt;xs:enumeration value=&quot;25&quot;/&gt;&lt;xs:enumeration value=&quot;30&quot;/&gt;&lt;xs:enumeration value=&quot;31&quot;/&gt;&lt;xs:enumeration value=&quot;32&quot;/&gt;&lt;xs:enumeration value=&quot;33&quot;/&gt;&lt;xs:enumeration value=&quot;35&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;cardSecurityCode&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;[0-9][0-9][0-9]?[0-9]&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;houseNumber&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:maxLength value=&quot;10&quot;/&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;postCode&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:maxLength value=&quot;10&quot;/&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;securityAttempted&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;M - MasterCard Secure&lt;/xs:documentation&gt;&lt;xs:documentation&gt;V - Verified By Visa&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;M&quot;/&gt;&lt;xs:enumeration value=&quot;V&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;securityResult&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;Y&quot;/&gt;&lt;xs:enumeration value=&quot;A&quot;/&gt;&lt;xs:enumeration value=&quot;U&quot;/&gt;&lt;xs:enumeration value=&quot;N&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;eci&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;[0-9][0-9]&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;surchargeType&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;F - Fixed Amount&lt;/xs:documentation&gt;&lt;xs:documentation&gt;N - None&lt;/xs:documentation&gt;&lt;xs:documentation&gt;P - Percentage&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:length value=&quot;1&quot;/&gt;&lt;xs:enumeration value=&quot;F&quot;/&gt;&lt;xs:enumeration value=&quot;N&quot;/&gt;&lt;xs:enumeration value=&quot;P&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;cardMnemonic&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:length value=&quot;4&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;cardDescription&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;VISA&quot;/&gt;&lt;xs:enumeration value=&quot;MASTERCARD&quot;/&gt;&lt;xs:enumeration value=&quot;AMERICAN EXPRESS&quot;/&gt;&lt;xs:enumeration value=&quot;LASER&quot;/&gt;&lt;xs:enumeration value=&quot;DINERS&quot;/&gt;&lt;xs:enumeration value=&quot;JCBC&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;statusCode&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;0 - Operation completed successfully&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Non-zero - Operation failed, more details available in description&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:int&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;responseCode&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Card Authorisation Response Codes:-&lt;/xs:documentation&gt;&lt;xs:documentation&gt;From the underlying application. Some examples:&lt;/xs:documentation&gt;&lt;xs:documentation&gt;00 - Transaction Authorized&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Non-zero - Transaction Not Authorized, some possible values are given below&lt;/xs:documentation&gt;&lt;xs:documentation&gt;02 - Referral B&lt;/xs:documentation&gt;&lt;xs:documentation&gt;05 - Declined&lt;/xs:documentation&gt;&lt;xs:documentation&gt;30 - Bank validation failed, invalid merchant etc&lt;/xs:documentation&gt;&lt;xs:documentation&gt;54 - Expired Card&lt;/xs:documentation&gt;&lt;xs:documentation&gt;91 - Comms Fault&lt;/xs:documentation&gt;&lt;xs:documentation&gt;92 - Manual Auth&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Validate Card Response Codes:-&lt;/xs:documentation&gt;&lt;xs:documentation&gt;0 - Request processed successfully&lt;/xs:documentation&gt;&lt;xs:documentation&gt;10 - Request failed schema validation exception&lt;/xs:documentation&gt;&lt;xs:documentation&gt;20 - Request failed data access exception&lt;/xs:documentation&gt;&lt;xs:documentation&gt;30 - Request failed validation exception&lt;/xs:documentation&gt;&lt;xs:documentation&gt;90 - Request failed other error&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Stored Card Response Codes:-&lt;/xs:documentation&gt;&lt;xs:documentation&gt;0 - Request processed successfully&lt;/xs:documentation&gt;&lt;xs:documentation&gt;5 - Card not found&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;[0-9A-Z][0-9]?&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;maskedCardNumber&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Card number with all but first six and last four digits masked with asterisks&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;[0-9]{6}\*+[0-9]{4}&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;responseAVVCVV&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;\d{6}&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;surchargeRate&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Percentage rate on which surcharge is based, not present for fixed rate surcharges&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:decimal&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;cardLastFourDigits&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;[0-9][0-9][0-9][0-9]&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;panEntryMethod&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;ECOM   - E-Commerce (Default)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;CNP    - Card Not Present&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;ECOM&quot;/&gt;&lt;xs:enumeration value=&quot;CNP&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;portalAction&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;authorise (Default)&lt;/xs:documentation&gt;&lt;xs:documentation&gt;storeOnly&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;authorise&quot;/&gt;&lt;xs:enumeration value=&quot;storeOnly&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;phone&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;|\+[1-9][0-9]{8}[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;email&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;|[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,6}&quot;/&gt;&lt;xs:whiteSpace value=&quot;replace&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;integrator&quot;&gt;&lt;xs:restriction base=&quot;xs:positiveInteger&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;lineId&quot;&gt;&lt;xs:restriction base=&quot;xs:token&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;50&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;bacsReference&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;[A-Za-z0-9.\-/&amp;amp; ]{1,18}&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;bankSortCode&quot;&gt;&lt;xs:restriction base=&quot;xs:token&quot;&gt;&lt;xs:pattern value=&quot;[0-9]{6}&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;bankAccountNumber&quot;&gt;&lt;xs:restriction base=&quot;xs:token&quot;&gt;&lt;xs:pattern value=&quot;[0-9]{8}&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;httpUrl&quot;&gt;&lt;xs:restriction base=&quot;xs:token&quot;&gt;&lt;xs:pattern value=&quot;https?://.+&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;/xs:schema&gt;</param>
+            <param name="XSDhttps://sbsctest.e-paycapita.com/scp/scpws/scpSimpleClient.wsdl(2)">&lt;xs:schema attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;https://support.capita-software.co.uk/selfservice/?commonFoundation&quot; xmlns:tns=&quot;https://support.capita-software.co.uk/selfservice/?commonFoundation&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:sch3=&quot;http://www.capita-software-services.com/scp/base&quot; xmlns:sch2=&quot;http://www.capita-software-services.com/scp/simple&quot; xmlns:sch1=&quot;https://support.capita-software.co.uk/selfservice/?commonFoundation&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:sch0=&quot;http://www.capita-software-services.com/portal-api&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Schema Version: 7.4.2.0&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Schema Description: Type definitions for use by Common Foundation&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:element name=&quot;credentials&quot; type=&quot;tns:credentials&quot;/&gt;&lt;xs:complexType name=&quot;credentials&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;subject&quot; type=&quot;tns:subject&quot;/&gt;&lt;xs:element name=&quot;requestIdentification&quot; type=&quot;tns:requestIdentification&quot;/&gt;&lt;xs:element name=&quot;signature&quot; type=&quot;tns:signature&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;subject&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;subjectType&quot; type=&quot;tns:subjectType&quot;/&gt;&lt;xs:element name=&quot;identifier&quot; type=&quot;xs:int&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;systemCode&quot; nillable=&quot;true&quot; type=&quot;tns:systemCode&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;requestIdentification&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;uniqueReference&quot; type=&quot;xs:string&quot;/&gt;&lt;xs:element name=&quot;timeStamp&quot; type=&quot;tns:timeStamp&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;signature&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;algorithm&quot; type=&quot;tns:algorithm&quot;/&gt;&lt;xs:element name=&quot;hmacKeyID&quot; type=&quot;xs:int&quot;/&gt;&lt;xs:element name=&quot;digest&quot; type=&quot;xs:string&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:simpleType name=&quot;timeStamp&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:pattern value=&quot;(20)\d\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])([0-1]\d|2[0-3])([0-5]\d)([0-5]\d)&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;algorithm&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Original&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;Original&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;subjectType&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;Capita Site&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Integrator&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Other Security Entity&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Secure Bureau Service Site&lt;/xs:documentation&gt;&lt;xs:documentation&gt;Capita Portal&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;CapitaSite&quot;/&gt;&lt;xs:enumeration value=&quot;Integrator&quot;/&gt;&lt;xs:enumeration value=&quot;OtherSecurityEntity&quot;/&gt;&lt;xs:enumeration value=&quot;SecureBureauServiceSite&quot;/&gt;&lt;xs:enumeration value=&quot;CapitaPortal&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;systemCode&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;ACP   - AXIS Common Payments&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ACR   - AXIS Counter Receipting&lt;/xs:documentation&gt;&lt;xs:documentation&gt;AIM   - AXIS Income Management&lt;/xs:documentation&gt;&lt;xs:documentation&gt;AIP   - AXIS Internet Payments&lt;/xs:documentation&gt;&lt;xs:documentation&gt;API   - AXIS Payments Interface&lt;/xs:documentation&gt;&lt;xs:documentation&gt;APN   - AXIS PAYe.NET&lt;/xs:documentation&gt;&lt;xs:documentation&gt;APP   - AXIS Payment Portal&lt;/xs:documentation&gt;&lt;xs:documentation&gt;AOS   - AXIS On-line Services&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ASR   - AXIS Speech Recognition&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ATP   - AXIS Telephone Payments&lt;/xs:documentation&gt;&lt;xs:documentation&gt;ATT   - AXIS Touch Tone&lt;/xs:documentation&gt;&lt;xs:documentation&gt;DIR   - Direct Authorisations from Third Parties&lt;/xs:documentation&gt;&lt;xs:documentation&gt;EXT   - EXTERNAL SYSTEM&lt;/xs:documentation&gt;&lt;xs:documentation&gt;HPAY  - AXIS Health PAYe.NET&lt;/xs:documentation&gt;&lt;xs:documentation&gt;MAPN  - Managed AXIS PAYe.NET&lt;/xs:documentation&gt;&lt;xs:documentation&gt;MHPAY - Managed AXIS Health PAYe.NET&lt;/xs:documentation&gt;&lt;xs:documentation&gt;MOTO  - AXIS Mail Order Telephone Order&lt;/xs:documentation&gt;&lt;xs:documentation&gt;PCR   - Perception&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SBS   - Secure Bureau Service&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SCM   - AXIS SafeCom&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SCP   - Stored Card Portal&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SGW   - AXIS Smart Gateway&lt;/xs:documentation&gt;&lt;xs:documentation&gt;SMS   - AXIS Short Message Service&lt;/xs:documentation&gt;&lt;xs:documentation&gt;THY   - Thyron&lt;/xs:documentation&gt;&lt;xs:documentation&gt;TVWAP - AXIS DigiTV&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;ACP&quot;/&gt;&lt;xs:enumeration value=&quot;ACR&quot;/&gt;&lt;xs:enumeration value=&quot;AIM&quot;/&gt;&lt;xs:enumeration value=&quot;AIP&quot;/&gt;&lt;xs:enumeration value=&quot;API&quot;/&gt;&lt;xs:enumeration value=&quot;APN&quot;/&gt;&lt;xs:enumeration value=&quot;APP&quot;/&gt;&lt;xs:enumeration value=&quot;AOS&quot;/&gt;&lt;xs:enumeration value=&quot;ASR&quot;/&gt;&lt;xs:enumeration value=&quot;ATP&quot;/&gt;&lt;xs:enumeration value=&quot;ATT&quot;/&gt;&lt;xs:enumeration value=&quot;DIR&quot;/&gt;&lt;xs:enumeration value=&quot;EXT&quot;/&gt;&lt;xs:enumeration value=&quot;HPAY&quot;/&gt;&lt;xs:enumeration value=&quot;MAPN&quot;/&gt;&lt;xs:enumeration value=&quot;MHPAY&quot;/&gt;&lt;xs:enumeration value=&quot;MOTO&quot;/&gt;&lt;xs:enumeration value=&quot;PCR&quot;/&gt;&lt;xs:enumeration value=&quot;SBS&quot;/&gt;&lt;xs:enumeration value=&quot;SCM&quot;/&gt;&lt;xs:enumeration value=&quot;SCP&quot;/&gt;&lt;xs:enumeration value=&quot;SGW&quot;/&gt;&lt;xs:enumeration value=&quot;SMS&quot;/&gt;&lt;xs:enumeration value=&quot;THY&quot;/&gt;&lt;xs:enumeration value=&quot;TVWAP&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;/xs:schema&gt;</param>
+            <param name="XSDhttps://sbsctest.e-paycapita.com/scp/scpws/scpSimpleClient.wsdl(3)">&lt;xs:schema attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.capita-software-services.com/scp/simple&quot; xmlns=&quot;http://www.capita-software-services.com/scp/simple&quot; xmlns:scpbase=&quot;http://www.capita-software-services.com/scp/base&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:tns=&quot;http://www.capita-software-services.com/scp/simple&quot; xmlns:sch3=&quot;http://www.capita-software-services.com/scp/base&quot; xmlns:sch2=&quot;http://www.capita-software-services.com/scp/simple&quot; xmlns:sch1=&quot;https://support.capita-software.co.uk/selfservice/?commonFoundation&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:sch0=&quot;http://www.capita-software-services.com/portal-api&quot;&gt;&lt;xs:import namespace=&quot;http://www.capita-software-services.com/scp/base&quot;/&gt;&lt;xs:element name=&quot;scpSimpleInvokeRequest&quot; type=&quot;scpSimpleInvokeRequest&quot;/&gt;&lt;xs:element name=&quot;scpSimpleInvokeResponse&quot; type=&quot;scpbase:scpInvokeResponse&quot;/&gt;&lt;xs:element name=&quot;scpSimpleQueryRequest&quot; type=&quot;scpbase:scpQueryRequest&quot;/&gt;&lt;xs:element name=&quot;scpSimpleQueryResponse&quot; type=&quot;scpSimpleQueryResponse&quot;/&gt;&lt;xs:complexType name=&quot;scpSimpleInvokeRequest&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;scpbase:scpInvokeRequest&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;sale&quot; type=&quot;simpleSale&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;simpleSale&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;scpbase:saleBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;postageAndPacking&quot; type=&quot;scpbase:postageAndPacking&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;surchargeable&quot; type=&quot;surchargeable&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;items&quot;&gt;&lt;xs:complexType&gt;&lt;xs:sequence&gt;&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;item&quot; type=&quot;simpleItem&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;/xs:element&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;surchargeable&quot;&gt;&lt;xs:sequence&gt;&lt;xs:choice&gt;&lt;xs:element name=&quot;applyScpConfig&quot;&gt;&lt;xs:complexType&gt;&lt;xs:complexContent&gt;&lt;xs:restriction base=&quot;xs:anyType&quot;/&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;/xs:element&gt;&lt;xs:element name=&quot;surcharge&quot; type=&quot;scpbase:surchargeItemDetails&quot;/&gt;&lt;/xs:choice&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;simpleItem&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;scpbase:itemBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;surchargeable&quot; type=&quot;xs:boolean&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;scpSimpleQueryResponse&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;scpbase:scpQueryResponse&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;paymentResult&quot; type=&quot;simplePaymentResult&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;simplePaymentResult&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;scpbase:paymentResultBase&quot;&gt;&lt;xs:choice minOccurs=&quot;0&quot;&gt;&lt;xs:element name=&quot;paymentDetails&quot; type=&quot;simplePayment&quot;/&gt;&lt;xs:element name=&quot;errorDetails&quot; type=&quot;scpbase:errorDetails&quot;/&gt;&lt;/xs:choice&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;simplePayment&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;scpbase:paymentBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;saleSummary&quot; type=&quot;simpleSaleSummary&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;surchargeDetails&quot; type=&quot;scpbase:surchargeDetails&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;simpleSaleSummary&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;items&quot;&gt;&lt;xs:complexType&gt;&lt;xs:sequence&gt;&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;itemSummary&quot; type=&quot;simpleItemSummary&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;/xs:element&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;simpleItemSummary&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;scpbase:itemSummaryBase&quot;/&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;/xs:schema&gt;</param>
+            <param name="XSDhttps://sbsctest.e-paycapita.com/scp/scpws/scpSimpleClient.wsdl(4)">&lt;xs:schema attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.capita-software-services.com/scp/base&quot; xmlns=&quot;http://www.capita-software-services.com/scp/base&quot; xmlns:cft=&quot;https://support.capita-software.co.uk/selfservice/?commonFoundation&quot; xmlns:cpt=&quot;http://www.capita-software-services.com/portal-api&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:tns=&quot;http://www.capita-software-services.com/scp/simple&quot; xmlns:sch3=&quot;http://www.capita-software-services.com/scp/base&quot; xmlns:sch2=&quot;http://www.capita-software-services.com/scp/simple&quot; xmlns:sch1=&quot;https://support.capita-software.co.uk/selfservice/?commonFoundation&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:sch0=&quot;http://www.capita-software-services.com/portal-api&quot;&gt;&lt;xs:import namespace=&quot;http://www.capita-software-services.com/portal-api&quot;/&gt;&lt;xs:import namespace=&quot;https://support.capita-software.co.uk/selfservice/?commonFoundation&quot;/&gt;&lt;xs:element name=&quot;scpVersionRequest&quot; type=&quot;scpVersionRequest&quot;/&gt;&lt;xs:element name=&quot;scpVersionResponse&quot; type=&quot;scpVersionResponse&quot;/&gt;&lt;xs:complexType name=&quot;requestWithCredentials&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element ref=&quot;cft:credentials&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;scpVersionRequest&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;requestWithCredentials&quot;/&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;scpVersionResponse&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;version&quot; type=&quot;xs:string&quot;/&gt;&lt;xs:element name=&quot;schemaVersion&quot; type=&quot;xs:string&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;scpInvokeRequest&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;requestWithCredentials&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;requestType&quot; type=&quot;requestType&quot;/&gt;&lt;xs:element name=&quot;requestId&quot; type=&quot;xs:token&quot;/&gt;&lt;xs:element name=&quot;routing&quot; type=&quot;routing&quot;/&gt;&lt;xs:element name=&quot;panEntryMethod&quot; type=&quot;cpt:panEntryMethod&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;additionalInstructions&quot; type=&quot;additionalInstructions&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;billing&quot; type=&quot;billingDetails&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:simpleType name=&quot;requestType&quot;&gt;&lt;xs:restriction base=&quot;xs:token&quot;&gt;&lt;xs:enumeration value=&quot;payOnly&quot;/&gt;&lt;xs:enumeration value=&quot;authoriseOnly&quot;/&gt;&lt;xs:enumeration value=&quot;storeOnly&quot;/&gt;&lt;xs:enumeration value=&quot;payAndStore&quot;/&gt;&lt;xs:enumeration value=&quot;payAndAutoStore&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:complexType name=&quot;routing&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;returnUrl&quot; type=&quot;returnUrl&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;backUrl&quot; type=&quot;cpt:httpUrl&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;errorUrl&quot; type=&quot;cpt:httpUrl&quot;/&gt;&lt;xs:element name=&quot;siteId&quot; type=&quot;xs:int&quot;/&gt;&lt;xs:element name=&quot;scpId&quot; type=&quot;xs:int&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:simpleType name=&quot;returnUrl&quot;&gt;&lt;xs:union memberTypes=&quot;cpt:httpUrl scpSpecialUrl&quot;/&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;scpSpecialUrl&quot;&gt;&lt;xs:restriction base=&quot;xs:token&quot;&gt;&lt;xs:enumeration value=&quot;scp:close&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:complexType name=&quot;additionalInstructions&quot;&gt;&lt;xs:all&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;merchantCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;countryCode&quot; type=&quot;cpt:isoCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;currencyCode&quot; type=&quot;cpt:isoCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;acceptedCards&quot; type=&quot;acceptedCards&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;language&quot; type=&quot;cpt:languageCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;stageIndicator&quot; type=&quot;stageIndicator&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;responseInterface&quot; type=&quot;responseInterface&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;cardholderID&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;integrator&quot; type=&quot;xs:positiveInteger&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;styleCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;frameworkCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;systemCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;/xs:all&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;acceptedCards&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;includes&quot; type=&quot;acceptedCardList&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;excludes&quot; type=&quot;acceptedCardList&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;acceptedCardList&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;card&quot; type=&quot;acceptedCardType&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;stageIndicator&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;firstPortalStage&quot; type=&quot;stageNumber&quot;/&gt;&lt;xs:element name=&quot;totalStages&quot; type=&quot;stageNumber&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:simpleType name=&quot;stageNumber&quot;&gt;&lt;xs:restriction base=&quot;xs:byte&quot;&gt;&lt;xs:minInclusive value=&quot;1&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;responseInterface&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;scpWebService&quot;/&gt;&lt;xs:enumeration value=&quot;commonPaymentsFormPost&quot;/&gt;&lt;xs:enumeration value=&quot;xmlFormPost&quot;/&gt;&lt;xs:enumeration value=&quot;htmlFormPost&quot;/&gt;&lt;xs:enumeration value=&quot;planningFormPost&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:complexType name=&quot;billingDetails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;card&quot; type=&quot;card&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;cardHolderDetails&quot; type=&quot;cardHolderDetails&quot;/&gt;&lt;/xs:sequence&gt;&lt;xs:attribute default=&quot;true&quot; name=&quot;editable&quot; type=&quot;xs:boolean&quot; use=&quot;optional&quot;/&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;card&quot;&gt;&lt;xs:sequence&gt;&lt;xs:choice&gt;&lt;xs:element name=&quot;cardDetails&quot; type=&quot;cardDetails&quot;/&gt;&lt;xs:element name=&quot;storedCardKey&quot; type=&quot;storedCardKey&quot;/&gt;&lt;/xs:choice&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;paymentGroupCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;cardDetails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;cardNumber&quot; type=&quot;cpt:cardNumber&quot;/&gt;&lt;xs:element name=&quot;expiryDate&quot; type=&quot;cpt:generalDateMMYY&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;startDate&quot; type=&quot;cpt:generalDateMMYY&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;issueNumber&quot; type=&quot;cpt:issueNumber&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;cardSecurityCode&quot; type=&quot;cpt:cardSecurityCode&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;storedCardKey&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;token&quot; type=&quot;xs:string&quot;/&gt;&lt;xs:element name=&quot;lastFourDigits&quot; type=&quot;cpt:cardLastFourDigits&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;cardHolderDetails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;cardHolderName&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;address&quot; type=&quot;address&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;contact&quot; type=&quot;contact&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;address&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;address1&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;address2&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;address3&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;address4&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;county&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;country&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;postcode&quot; type=&quot;cpt:postCode&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;contact&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;telephone&quot; type=&quot;cpt:phone&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;mobile&quot; type=&quot;cpt:phone&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;email&quot; type=&quot;cpt:email&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;saleBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;saleSummary&quot; type=&quot;summaryData&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;deliveryDetails&quot; type=&quot;contactDetails&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;lgSaleDetails&quot; type=&quot;lgSaleDetails&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;summaryData&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;description&quot;&gt;&lt;xs:simpleType&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:minLength value=&quot;1&quot;/&gt;&lt;xs:maxLength value=&quot;100&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;/xs:element&gt;&lt;xs:element name=&quot;amountInMinorUnits&quot; type=&quot;cpt:generalAmount&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;reference&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;displayableReference&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;contactDetails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;name&quot; type=&quot;threePartName&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;address&quot; type=&quot;address&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;contact&quot; type=&quot;contact&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;threePartName&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;surname&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;title&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;forename&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;lgSaleDetails&quot;&gt;&lt;xs:all&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;areaCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;locationCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;sourceCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;userName&quot; type=&quot;cpt:userName&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;userCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;/xs:all&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;postageAndPacking&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;pnpSummary&quot; type=&quot;summaryData&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;tax&quot; type=&quot;taxItem&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;lgPnpDetails&quot; type=&quot;lgPnpDetails&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;taxItem&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;vat&quot; type=&quot;vatItem&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;vatItem&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;vatBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;vatAmountInMinorUnits&quot; type=&quot;cpt:generalAmount&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;vatBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;vatCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element name=&quot;vatRate&quot; type=&quot;cpt:generalDecimal&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;lgPnpDetails&quot;&gt;&lt;xs:all&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;fundCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;pnpCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;pnpOptionCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;pnpOptionDescription&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;/xs:all&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;surchargeItemDetails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;fundCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;reference&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element name=&quot;surchargeInfo&quot; type=&quot;surchargeInfo&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;tax&quot; type=&quot;taxSurcharge&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;surchargeInfo&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;cardSurchargeRate&quot; type=&quot;cardSurchargeRate&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;cardSurchargeRate&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;surchargeCardType&quot; type=&quot;acceptedCardType&quot;/&gt;&lt;xs:element name=&quot;surchargeBasis&quot; type=&quot;surchargeBasis&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;acceptedCardType&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;cardDescription&quot; type=&quot;cpt:cardDescription&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;cardType&quot; type=&quot;cardType&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:simpleType name=&quot;cardType&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;CREDIT&quot;/&gt;&lt;xs:enumeration value=&quot;DEBIT&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:complexType name=&quot;surchargeBasis&quot;&gt;&lt;xs:annotation&gt;&lt;xs:documentation&gt;At least one of surchargeFixed and/or surchargeRate
+				is required
+			&lt;/xs:documentation&gt;&lt;/xs:annotation&gt;&lt;xs:all&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;surchargeFixed&quot; type=&quot;cpt:generalAmountPositive&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;surchargeRate&quot; type=&quot;cpt:generalDecimalPositive&quot;/&gt;&lt;/xs:all&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;taxSurcharge&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;vat&quot; type=&quot;vatSurcharge&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;vatSurcharge&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;vatBase&quot;/&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;itemBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;itemSummary&quot; type=&quot;summaryData&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;tax&quot; type=&quot;taxItem&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;quantity&quot; type=&quot;cpt:generalShort&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;notificationEmails&quot; type=&quot;notificationEmails&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;lgItemDetails&quot; type=&quot;lgItemDetails&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerInfo&quot; type=&quot;customerInfo&quot;/&gt;&lt;xs:element name=&quot;lineId&quot; type=&quot;cpt:lineId&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;notificationEmails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element maxOccurs=&quot;5&quot; name=&quot;email&quot; type=&quot;cpt:email&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;additionalEmailMessage&quot; type=&quot;cpt:generalLongString&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;lgItemDetails&quot;&gt;&lt;xs:all&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;fundCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;isFundItem&quot; type=&quot;xs:boolean&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;additionalReference&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;narrative&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;accountName&quot; type=&quot;threePartName&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;accountAddress&quot; type=&quot;address&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;contact&quot; type=&quot;contact&quot;/&gt;&lt;/xs:all&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;customerInfo&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerString1&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerString2&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerString3&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerString4&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerString5&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerNumber1&quot; type=&quot;xs:int&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerNumber2&quot; type=&quot;xs:int&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerNumber3&quot; type=&quot;xs:int&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;customerNumber4&quot; type=&quot;xs:int&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;bankDetails&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;bacsBankAccount&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;bacsReference&quot; type=&quot;cpt:bacsReference&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;bacsBankAccount&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;sortCode&quot; type=&quot;cpt:bankSortCode&quot;/&gt;&lt;xs:element name=&quot;bacsAccountNumber&quot; type=&quot;cpt:bankAccountNumber&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;scpInvokeResponse&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;scpResponse&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;invokeResult&quot;&gt;&lt;xs:complexType&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;status&quot; type=&quot;status&quot;/&gt;&lt;xs:choice&gt;&lt;xs:element name=&quot;redirectUrl&quot; type=&quot;xs:token&quot;/&gt;&lt;xs:element name=&quot;errorDetails&quot; type=&quot;errorDetails&quot;/&gt;&lt;/xs:choice&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;/xs:element&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;scpResponse&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;requestId&quot; type=&quot;xs:token&quot;/&gt;&lt;xs:element name=&quot;scpReference&quot; type=&quot;xs:string&quot;/&gt;&lt;xs:element name=&quot;transactionState&quot; type=&quot;transactionState&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:simpleType name=&quot;transactionState&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;IN_PROGRESS&quot;/&gt;&lt;xs:enumeration value=&quot;COMPLETE&quot;/&gt;&lt;xs:enumeration value=&quot;INVALID_REFERENCE&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:simpleType name=&quot;status&quot;&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:enumeration value=&quot;SUCCESS&quot;/&gt;&lt;xs:enumeration value=&quot;INVALID_REQUEST&quot;/&gt;&lt;xs:enumeration value=&quot;CARD_DETAILS_REJECTED&quot;/&gt;&lt;xs:enumeration value=&quot;CANCELLED&quot;/&gt;&lt;xs:enumeration value=&quot;LOGGED_OUT&quot;/&gt;&lt;xs:enumeration value=&quot;NOT_ATTEMPTED&quot;/&gt;&lt;xs:enumeration value=&quot;ERROR&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;xs:complexType name=&quot;errorDetails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;errorId&quot; type=&quot;xs:string&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;errorMessage&quot; type=&quot;xs:string&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;scpQueryRequest&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;requestWithCredentials&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;siteId&quot; type=&quot;xs:int&quot;/&gt;&lt;xs:element name=&quot;scpReference&quot; type=&quot;xs:string&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;scpQueryResponse&quot;&gt;&lt;xs:complexContent&gt;&lt;xs:extension base=&quot;scpResponse&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;storeCardResult&quot; type=&quot;storeCardResult&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;emailResult&quot; type=&quot;emailResult&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:extension&gt;&lt;/xs:complexContent&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;storeCardResult&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;status&quot; type=&quot;status&quot;/&gt;&lt;xs:choice minOccurs=&quot;0&quot;&gt;&lt;xs:element name=&quot;storedCardDetails&quot; type=&quot;storedCardDetails&quot;/&gt;&lt;xs:element name=&quot;errorDetails&quot; type=&quot;errorDetails&quot;/&gt;&lt;/xs:choice&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;storedCardDetails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;storedCardKey&quot; type=&quot;storedCardKey&quot;/&gt;&lt;xs:element name=&quot;cardDescription&quot; type=&quot;cpt:cardDescription&quot;/&gt;&lt;xs:element name=&quot;cardType&quot; type=&quot;cardType&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;emailResult&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;status&quot; type=&quot;status&quot;/&gt;&lt;xs:element name=&quot;errorDetails&quot; type=&quot;errorDetails&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;paymentResultBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;status&quot; type=&quot;status&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;paymentBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;paymentHeader&quot; type=&quot;paymentHeader&quot;/&gt;&lt;xs:element name=&quot;authDetails&quot; type=&quot;authDetails&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;paymentHeader&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;transactionDate&quot; type=&quot;cpt:generalDate&quot;/&gt;&lt;xs:element name=&quot;machineCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element name=&quot;uniqueTranId&quot;&gt;&lt;xs:simpleType&gt;&lt;xs:restriction base=&quot;xs:string&quot;&gt;&lt;xs:length value=&quot;12&quot;/&gt;&lt;/xs:restriction&gt;&lt;/xs:simpleType&gt;&lt;/xs:element&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;authDetails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;authCode&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element name=&quot;amountInMinorUnits&quot; type=&quot;cpt:generalAmount&quot;/&gt;&lt;xs:element name=&quot;maskedCardNumber&quot; type=&quot;cpt:maskedCardNumber&quot;/&gt;&lt;xs:element name=&quot;cardDescription&quot; type=&quot;cpt:cardDescription&quot;/&gt;&lt;xs:element name=&quot;cardType&quot; type=&quot;cardType&quot;/&gt;&lt;xs:element name=&quot;merchantNumber&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;expiryDate&quot; type=&quot;cpt:generalDateMMYY&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;continuousAuditNumber&quot; type=&quot;cpt:generalSequenceNumber&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;itemSummaryBase&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;lineId&quot; type=&quot;cpt:lineId&quot;/&gt;&lt;xs:element name=&quot;continuousAuditNumber&quot; type=&quot;cpt:generalSequenceNumber&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;xs:complexType name=&quot;surchargeDetails&quot;&gt;&lt;xs:sequence&gt;&lt;xs:element name=&quot;fundCode&quot; type=&quot;cpt:generalCode&quot;/&gt;&lt;xs:element name=&quot;reference&quot; type=&quot;cpt:generalString&quot;/&gt;&lt;xs:element name=&quot;amountInMinorUnits&quot; type=&quot;cpt:generalAmount&quot;/&gt;&lt;xs:element name=&quot;surchargeBasis&quot; type=&quot;surchargeBasis&quot;/&gt;&lt;xs:element minOccurs=&quot;0&quot; name=&quot;continuousAuditNumber&quot; type=&quot;cpt:generalSequenceNumber&quot;/&gt;&lt;xs:element name=&quot;vatAmountInMinorUnits&quot; type=&quot;cpt:generalAmount&quot;/&gt;&lt;/xs:sequence&gt;&lt;/xs:complexType&gt;&lt;/xs:schema&gt;</param>
+            <param name="|simpleInvoke|CHARACTER_ENCODING">UTF-8</param>
+            <param name="|simpleInvoke|DEBUG">true</param>
+            <param name="|simpleInvoke|ERROR_ON_FAULT">true</param>
+            <param name="|simpleInvoke|FAULT_DOC">portalReqFault</param>
+            <param name="|simpleInvoke|ID">WS</param>
+            <param name="|simpleInvoke|REQUEST_DOCS">portalReqRequest</param>
+            <param name="|simpleInvoke|RESPONSE_DOCS">portalReqResponse</param>
+            <param name="|simpleInvoke|SESSION_COOKIE">false</param>
+            <param name="|simpleInvoke|SOAP_VERSION">http://schemas.xmlsoap.org/wsdl/soap/</param>
+            <param name="|simpleInvoke|TARGET_URL">https://sbsctest.e-paycapita.com/portal/PortalServlet</param>
+        </params>
+        <fields>
+            <field id="userName" XB_STYPE="{http://www.capita-software-services.com/portal-api}userName" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:lgSaleDetails/base:userName"/>
+            <field id="userCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:lgSaleDetails/base:userCode"/>
+            <field id="pnpSummary_description" required="true" XB_STYPE="{http://www.capita-software-services.com/scp/base}summaryData/{http://www.capita-software-services.com/scp/base}description" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:pnpSummary/base:description"/>
+            <field id="pnpSummary_amountInMinorUnits" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:pnpSummary/base:amountInMinorUnits"/>
+            <field id="notificationEmails_email" repeatable="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}email" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:items/sim:item/base:notificationEmails/base:email"/>
+            <field id="requestId.2" XB_STYPE="{http://www.w3.org/2001/XMLSchema}token" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqResponse" RO="false" XB_QUERY="/sim:scpSimpleInvokeResponse/base:requestId"/>
+            <field id="scpReference" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqResponse" RO="false" XB_QUERY="/sim:scpSimpleInvokeResponse/base:scpReference"/>
+            <field id="transactionState" required="true" XB_STYPE="{http://www.capita-software-services.com/scp/base}transactionState" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqResponse" RO="false" XB_QUERY="/sim:scpSimpleInvokeResponse/base:transactionState"/>
+            <field id="status" required="true" XB_STYPE="{http://www.capita-software-services.com/scp/base}status" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqResponse" RO="false" XB_QUERY="/sim:scpSimpleInvokeResponse/base:invokeResult/base:status"/>
+            <field id="redirectUrl" XB_STYPE="{http://www.w3.org/2001/XMLSchema}token" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqResponse" RO="false" XB_QUERY="/sim:scpSimpleInvokeResponse/base:invokeResult/base:redirectUrl"/>
+            <field id="errorId" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqResponse" RO="false" XB_QUERY="/sim:scpSimpleInvokeResponse/base:invokeResult/base:errorDetails/base:errorId"/>
+            <field id="errorMessage" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqResponse" RO="false" XB_QUERY="/sim:scpSimpleInvokeResponse/base:invokeResult/base:errorDetails/base:errorMessage"/>
+            <field id="faultcode" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}QName" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqFault" RO="false" XB_QUERY="/soapenv:Fault/faultcode"/>
+            <field id="faultstring" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqFault" RO="false" XB_QUERY="/soapenv:Fault/faultstring"/>
+            <field id="faultactor" XB_STYPE="{http://www.w3.org/2001/XMLSchema}anyURI" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqFault" RO="false" XB_QUERY="/soapenv:Fault/faultactor"/>
+            <field id="siteId" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}int" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:routing/base:siteId"/>
+            <field id="scpId" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}int" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:routing/base:scpId"/>
+            <field id="panEntryMethod" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}panEntryMethod" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:panEntryMethod"/>
+            <field id="merchantCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:merchantCode"/>
+            <field id="countryCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}isoCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:countryCode"/>
+            <field id="currencyCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}isoCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:currencyCode"/>
+            <field id="language" XB_STYPE="{http://www.capita-software-services.com/portal-api}languageCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:language"/>
+            <field id="firstPortalStage" required="true" XB_STYPE="{http://www.capita-software-services.com/scp/base}stageNumber" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:stageIndicator/base:firstPortalStage"/>
+            <field id="totalStages" required="true" XB_STYPE="{http://www.capita-software-services.com/scp/base}stageNumber" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:stageIndicator/base:totalStages"/>
+            <field id="responseInterface" XB_STYPE="{http://www.capita-software-services.com/scp/base}responseInterface" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:responseInterface"/>
+            <field id="cardholderID" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:cardholderID"/>
+            <field id="integrator" XB_STYPE="{http://www.w3.org/2001/XMLSchema}positiveInteger" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:integrator"/>
+            <field id="styleCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:styleCode"/>
+            <field id="subject_systemCode" XB_STYPE="{https://support.capita-software.co.uk/selfservice/?commonFoundation}systemCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="2" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/com:credentials/com:subject/com:systemCode"/>
+            <field id="uniqueReference" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/com:credentials/com:requestIdentification/com:uniqueReference"/>
+            <field id="timeStamp" required="true" XB_STYPE="{https://support.capita-software.co.uk/selfservice/?commonFoundation}timeStamp" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/com:credentials/com:requestIdentification/com:timeStamp"/>
+            <field id="digest" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/com:credentials/com:signature/com:digest"/>
+            <field id="pnpSummary_reference" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:pnpSummary/base:reference"/>
+            <field id="hmacKeyID" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}int" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/com:credentials/com:signature/com:hmacKeyID"/>
+            <field id="deliveryDetails_address_country" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:address/base:country"/>
+            <field id="deliveryDetails_address_postcode" XB_STYPE="{http://www.capita-software-services.com/portal-api}postCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:address/base:postcode"/>
+            <field id="pnpOptionCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:lgPnpDetails/base:pnpOptionCode"/>
+            <field id="pnpOptionDescription" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:lgPnpDetails/base:pnpOptionDescription"/>
+            <field id="surcharge_fundCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:surchargeable/sim:surcharge/base:fundCode"/>
+            <field id="surcharge_reference" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:surchargeable/sim:surcharge/base:reference"/>
+            <field id="surcharge_tax_vat_vatCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:surchargeable/sim:surcharge/base:tax/base:vat/base:vatCode"/>
+            <field id="surcharge_tax_vat_vatRate" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalDecimal" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:surchargeable/sim:surcharge/base:tax/base:vat/base:vatRate"/>
+            <field id="includes_card" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:acceptedCards/base:includes/base:card">
+                <field id="cardDescription" XB_STYPE="{http://www.capita-software-services.com/portal-api}cardDescription" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:cardDescription"/>
+                <field id="cardType" XB_STYPE="{http://www.capita-software-services.com/scp/base}cardType" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:cardType"/>
+            </field>
+            <field id="item" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:items/sim:item">
+                <field id="itemSummary_description" required="true" XB_STYPE="{http://www.capita-software-services.com/scp/base}summaryData/{http://www.capita-software-services.com/scp/base}description" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="base:itemSummary/base:description"/>
+                <field id="itemSummary_amountInMinorUnits" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="base:itemSummary/base:amountInMinorUnits"/>
+                <field id="itemSummary_reference" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:itemSummary/base:reference"/>
+                <field id="itemSummary_displayableReference" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:itemSummary/base:displayableReference"/>
+                <field id="tax_vat_vatCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:tax/base:vat/base:vatCode"/>
+                <field id="tax_vat_vatRate" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalDecimal" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="base:tax/base:vat/base:vatRate"/>
+                <field id="tax_vat_vatAmountInMinorUnits" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="base:tax/base:vat/base:vatAmountInMinorUnits"/>
+                <field id="quantity" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalShort" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:quantity"/>
+                <field id="additionalEmailMessage" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalLongString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:notificationEmails/base:additionalEmailMessage"/>
+                <field id="lgItemDetails_fundCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:fundCode"/>
+                <field id="isFundItem" XB_STYPE="{http://www.w3.org/2001/XMLSchema}boolean" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:isFundItem"/>
+                <field id="additionalReference" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:additionalReference"/>
+                <field id="narrative" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:narrative"/>
+                <field id="accountName_surname" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="base:lgItemDetails/base:accountName/base:surname"/>
+                <field id="accountName_title" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:accountName/base:title"/>
+                <field id="accountName_forename" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:accountName/base:forename"/>
+                <field id="accountAddress_address1" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:accountAddress/base:address1"/>
+                <field id="accountAddress_address2" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:accountAddress/base:address2"/>
+                <field id="accountAddress_address3" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:accountAddress/base:address3"/>
+                <field id="accountAddress_address4" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:accountAddress/base:address4"/>
+                <field id="accountAddress_county" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:accountAddress/base:county"/>
+                <field id="accountAddress_country" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:accountAddress/base:country"/>
+                <field id="accountAddress_postcode" XB_STYPE="{http://www.capita-software-services.com/portal-api}postCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:accountAddress/base:postcode"/>
+                <field id="lgItemDetails_contact_telephone" XB_STYPE="{http://www.capita-software-services.com/portal-api}phone" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:contact/base:telephone"/>
+                <field id="lgItemDetails_contact_mobile" XB_STYPE="{http://www.capita-software-services.com/portal-api}phone" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:contact/base:mobile"/>
+                <field id="lgItemDetails_contact_email" XB_STYPE="{http://www.capita-software-services.com/portal-api}email" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:lgItemDetails/base:contact/base:email"/>
+                <field id="customerString1" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:customerInfo/base:customerString1"/>
+                <field id="customerString2" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:customerInfo/base:customerString2"/>
+                <field id="customerString3" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:customerInfo/base:customerString3"/>
+                <field id="customerString4" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:customerInfo/base:customerString4"/>
+                <field id="customerString5" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:customerInfo/base:customerString5"/>
+                <field id="customerNumber1" XB_STYPE="{http://www.w3.org/2001/XMLSchema}int" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:customerInfo/base:customerNumber1"/>
+                <field id="customerNumber2" XB_STYPE="{http://www.w3.org/2001/XMLSchema}int" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:customerInfo/base:customerNumber2"/>
+                <field id="customerNumber3" XB_STYPE="{http://www.w3.org/2001/XMLSchema}int" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:customerInfo/base:customerNumber3"/>
+                <field id="customerNumber4" XB_STYPE="{http://www.w3.org/2001/XMLSchema}int" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:customerInfo/base:customerNumber4"/>
+                <field id="lineId" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}lineId" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="base:lineId"/>
+                <field id="surchargeable" XB_STYPE="{http://www.w3.org/2001/XMLSchema}boolean" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="sim:surchargeable"/>
+            </field>
+            <field id="frameworkCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:frameworkCode"/>
+            <field id="additionalInstructions_systemCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:systemCode"/>
+            <field id="editable" XB_STYPE="{http://www.w3.org/2001/XMLSchema}boolean" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/@editable"/>
+            <field id="cardNumber" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}cardNumber" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:card/base:cardDetails/base:cardNumber"/>
+            <field id="expiryDate" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalDateMMYY" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:card/base:cardDetails/base:expiryDate"/>
+            <field id="startDate" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalDateMMYY" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:card/base:cardDetails/base:startDate"/>
+            <field id="issueNumber" XB_STYPE="{http://www.capita-software-services.com/portal-api}issueNumber" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:card/base:cardDetails/base:issueNumber"/>
+            <field id="cardSecurityCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}cardSecurityCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:card/base:cardDetails/base:cardSecurityCode"/>
+            <field id="token" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}string" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:card/base:storedCardKey/base:token"/>
+            <field id="lastFourDigits" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}cardLastFourDigits" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:card/base:storedCardKey/base:lastFourDigits"/>
+            <field id="paymentGroupCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:card/base:paymentGroupCode"/>
+            <field id="cardHolderName" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:cardHolderName"/>
+            <field id="cardHolderDetails_address_address1" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:address/base:address1"/>
+            <field id="cardHolderDetails_address_address2" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:address/base:address2"/>
+            <field id="cardHolderDetails_address_address3" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" DOC="portalReqRequest" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:address/base:address3"/>
+            <field id="cardHolderDetails_address_address4" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:address/base:address4"/>
+            <field id="cardHolderDetails_address_county" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:address/base:county"/>
+            <field id="cardHolderDetails_address_country" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:address/base:country"/>
+            <field id="cardHolderDetails_address_postcode" XB_STYPE="{http://www.capita-software-services.com/portal-api}postCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:address/base:postcode"/>
+            <field id="cardHolderDetails_contact_telephone" XB_STYPE="{http://www.capita-software-services.com/portal-api}phone" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:contact/base:telephone"/>
+            <field id="cardHolderDetails_contact_mobile" XB_STYPE="{http://www.capita-software-services.com/portal-api}phone" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:contact/base:mobile"/>
+            <field id="cardHolderDetails_contact_email" XB_STYPE="{http://www.capita-software-services.com/portal-api}email" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:billing/base:cardHolderDetails/base:contact/base:email"/>
+            <field id="saleSummary_description" required="true" XB_STYPE="{http://www.capita-software-services.com/scp/base}summaryData/{http://www.capita-software-services.com/scp/base}description" XB_AUTOGEN="true" DOC="portalReqRequest" XB_WRITE_EMPTY="1" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:saleSummary/base:description"/>
+            <field id="saleSummary_amountInMinorUnits" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:saleSummary/base:amountInMinorUnits"/>
+            <field id="saleSummary_reference" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:saleSummary/base:reference"/>
+            <field id="saleSummary_displayableReference" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:saleSummary/base:displayableReference"/>
+            <field id="name_surname" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:name/base:surname"/>
+            <field id="name_title" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:name/base:title"/>
+            <field id="name_forename" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:name/base:forename"/>
+            <field id="deliveryDetails_address_address1" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:address/base:address1"/>
+            <field id="deliveryDetails_address_address2" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:address/base:address2"/>
+            <field id="deliveryDetails_address_address3" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:address/base:address3"/>
+            <field id="deliveryDetails_address_address4" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:address/base:address4"/>
+            <field id="deliveryDetails_address_county" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:address/base:county"/>
+            <field id="excludes_card" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:additionalInstructions/base:acceptedCards/base:excludes/base:card">
+                <field id="cardDescription.2" XB_STYPE="{http://www.capita-software-services.com/portal-api}cardDescription" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:cardDescription"/>
+                <field id="cardType.2" XB_STYPE="{http://www.capita-software-services.com/scp/base}cardType" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:cardType"/>
+            </field>
+            <field id="deliveryDetails_contact_mobile" XB_STYPE="{http://www.capita-software-services.com/portal-api}phone" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:contact/base:mobile"/>
+            <field id="algorithm" required="true" XB_STYPE="{https://support.capita-software.co.uk/selfservice/?commonFoundation}algorithm" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/com:credentials/com:signature/com:algorithm"/>
+            <field id="subjectType" required="true" XB_STYPE="{https://support.capita-software.co.uk/selfservice/?commonFoundation}subjectType" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/com:credentials/com:subject/com:subjectType"/>
+            <field id="deliveryDetails_contact_email" XB_STYPE="{http://www.capita-software-services.com/portal-api}email" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:contact/base:email"/>
+            <field id="areaCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:lgSaleDetails/base:areaCode"/>
+            <field id="locationCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:lgSaleDetails/base:locationCode"/>
+            <field id="sourceCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:lgSaleDetails/base:sourceCode"/>
+            <field id="pnpSummary_displayableReference" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalString" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:pnpSummary/base:displayableReference"/>
+            <field id="postageAndPacking_tax_vat_vatCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:tax/base:vat/base:vatCode"/>
+            <field id="postageAndPacking_tax_vat_vatRate" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalDecimal" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:tax/base:vat/base:vatRate"/>
+            <field id="postageAndPacking_tax_vat_vatAmountInMinorUnits" required="true" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalAmount" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:tax/base:vat/base:vatAmountInMinorUnits"/>
+            <field id="lgPnpDetails_fundCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:lgPnpDetails/base:fundCode"/>
+            <field id="pnpCode" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalCode" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:postageAndPacking/base:lgPnpDetails/base:pnpCode"/>
+            <field id="identifier" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}int" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/com:credentials/com:subject/com:identifier"/>
+            <field id="requestType" required="true" XB_STYPE="{http://www.capita-software-services.com/scp/base}requestType" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:requestType"/>
+            <field id="requestId" required="true" XB_STYPE="{http://www.w3.org/2001/XMLSchema}token" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:requestId"/>
+            <field id="returnUrl" required="true" XB_STYPE="{http://www.capita-software-services.com/scp/base}returnUrl" XB_AUTOGEN="true" XB_WRITE_EMPTY="1" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:routing/base:returnUrl"/>
+            <field id="backUrl" XB_STYPE="{http://www.capita-software-services.com/portal-api}httpUrl" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:routing/base:backUrl"/>
+            <field id="errorUrl" XB_STYPE="{http://www.capita-software-services.com/portal-api}httpUrl" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/base:routing/base:errorUrl"/>
+            <field id="cardSurchargeRate" repeatable="true" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/sim:surchargeable/sim:surcharge/base:surchargeInfo/base:cardSurchargeRate">
+                <field id="surchargeCardType_cardDescription" XB_STYPE="{http://www.capita-software-services.com/portal-api}cardDescription" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:surchargeCardType/base:cardDescription"/>
+                <field id="surchargeCardType_cardType" XB_STYPE="{http://www.capita-software-services.com/scp/base}cardType" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:surchargeCardType/base:cardType"/>
+                <field id="surchargeFixed" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalAmountPositive" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:surchargeBasis/base:surchargeFixed"/>
+                <field id="surchargeRate" XB_STYPE="{http://www.capita-software-services.com/portal-api}generalDecimalPositive" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" RO="false" XB_QUERY="base:surchargeBasis/base:surchargeRate"/>
+            </field>
+            <field id="deliveryDetails_contact_telephone" XB_STYPE="{http://www.capita-software-services.com/portal-api}phone" XB_AUTOGEN="true" XB_WRITE_EMPTY="0" DOC="portalReqRequest" RO="false" XB_QUERY="/sim:scpSimpleInvokeRequest/sim:sale/base:deliveryDetails/base:contact/base:telephone"/>
+        </fields>
+    </resource>
+</ebase>

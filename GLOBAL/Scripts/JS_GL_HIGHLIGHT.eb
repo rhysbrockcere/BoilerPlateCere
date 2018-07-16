@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Components/FOSTER_PORTAL" preferredComponentProject="GLOBAL" id="JS_GL_HIGHLIGHT" dateCreated="2013-06-05T09:34:51.313+01:00" dateImported="2013-04-22T13:04:26.013+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+////////////////////////////////////////////////////////////////
+// Script to highlight any fields with a specified modifier //
+////////////////////////////////////////////////////////////////
+
+// Script requires the field MOD to be set on the form
+var mod = fields.MOD.getValue();
+
+// each time the scripts finds the specified modifier it will execute the code below
+for each (var m in form.currentPage.getControlsByModifier(mod))
+{
+		// set the check variable to be the value of the field
+		var check = m.field.getValue();
+
+		// Checks to see if the field has a value
+		if (check == null) {
+			// if the field is null the label and editor will be highlighted in RED
+			m.setEditorStyle(&quot;color='#FF0000'&quot;);
+			m.setLabelStyle(&quot;color='#FF0000'&quot;);
+			m.setEditorClass(&quot;inputHighlight&quot;);
+		} else {
+			// resets the field color to be the default if the field has a value
+			m.setEditorStyle(&quot;color=''&quot;);
+			m.setLabelStyle(&quot;color=''&quot;);
+			m.setEditorClass(&quot;&quot;);			
+		}
+}</scriptText>
+    </script>
+</ebase>

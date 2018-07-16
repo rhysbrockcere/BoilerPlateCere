@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <presentationTemplate id="Intranet17" dateCreated="2015-01-09T14:33:29.353Z" dateImported="2016-08-23T10:00:34.593+01:00" showTopNavButtons="false" jspRightWidth="0" jspTopStatic="true" prevPageImage="shared/images/back_white_20_transparent.gif" formHeaderClass="formHeader formName" jspLeftWidth="0" jspTop="$ws/Web_Resources/JSP/intranet.jsp" finishImage="shared/images/C_white_20_transparent.gif" useFormHeader="true" jspBottom="$ws/Web_Resources/JSP/intranetFooter.jsp" nextPageImage="shared/images/front_white_20_transparent.gif" formPanelWidth="100%">
+        <htmlPlusPlus>&lt;link rel="apple-touch-icon" sizes="180x180" href="images/Clic/favicon/apple-touch-icon.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="images/Clic/favicon/favicon-32x32.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="images/Clic/favicon/favicon-16x16.png"&gt;
+&lt;link rel="manifest" href="images/Clic/favicon/site.webmanifest"&gt;
+&lt;link rel="mask-icon" href="images/Clic/favicon/safari-pinned-tab.svg" color="#5bbad5"&gt;
+&lt;link rel="shortcut icon" href="images/Clic/favicon/favicon.ico"&gt;
+&lt;meta name="msapplication-TileColor" content="#2b5797"&gt;
+&lt;meta name="msapplication-config" content="images/Clic/favicon/browserconfig.xml"&gt;
+&lt;meta name="theme-color" content="#ffffff"&gt;</htmlPlusPlus>
+        <clientScripts>
+            <clientScript path="jQuery/jquery-1.12.4.min.js"/>
+            <clientScript path="jQuery/jquery-ui/jquery-ui.js"/>
+            <clientScript path="jQuery/chosen/chosen.jquery.min.js"/>
+            <clientScript path="$ws/Web_Resources/Javascript/Intranet17.js"/>
+            <clientScript path="jQuery/tinymce/tinymce.min.js"/>
+            <clientScript path="$ws/Web_Resources/Javascript/currency/jquery.currency.js" charset="ISO-8859-1"/>
+            <clientScript path="jQuery/timer/idle-timer.min.js"/>
+            <clientScript path="$ws/Web_Resources/Javascript/timeout.js"/>
+        </clientScripts>
+        <styleSheets>
+            <styleSheet ref="fonts/fonts.css" relation="stylesheet" media="all"/>
+            <styleSheet ref="jQuery/jquery-ui/jquery-ui.css" relation="stylesheet" media="all"/>
+            <styleSheet ref="jQuery/chosen/chosen.min.css" relation="stylesheet" media="all"/>
+            <styleSheet ref="$ws/Web_Resources/Style_Sheets/Intranet17.css" relation="stylesheet" media="all"/>
+            <styleSheet ref="fonts/FontAwesome/font-awesome.css" relation="stylesheet" media="all"/>
+        </styleSheets>
+        <propertySets>
+            <staticMenuItem ctrl="MenuItem" default="true" errorMsgClass="errorMessage" warningMsgClass="warningMessage">
+                <errorMessageStyle backgroundColor="@0" textColor="@0"/>
+                <warningMessageStyle backgroundColor="@0" textColor="@0"/>
+            </staticMenuItem>
+            <imageColumn columnCellClass="tableImageColumnCell" columnDataClass="tableImageColumn" ctrl="Image Column" default="true" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" warningMsgClass="ebWarningMessageDEFAULT"/>
+            <dynamicMenuItem ctrl="Dynamic Menu Item" default="true" errorMsgClass="errorMessage" inheritMsg="false" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+            </dynamicMenuItem>
+            <fieldTable addRowCellClass="spTableAddRowCell" addRowClass="spTableAddRow" columnHeadingClass="spTableColumnHeader" ctrl="SelectableRows" currentPageClass="spTableCurrentPageNum" deletableCellClass="spSelectDeleteColumn" deletableDataClass="spDeleteRowData" displayInfoPrefix="false" errorMsgClass="ebErrorTableMessageDEFAULT" headerClass="spTableHeader" inactiveScrollDownIcon="@0" inactiveScrollToBottomIcon="@0" inactiveScrollToTopIcon="@0" inactiveScrollUpIcon="@0" includePageNumbers="true" infoClass="spTableInfo" infoPrefixClass="spTableNavPrefix" inheritMsg="false" maxNumberOfResultPages="10" navigationAlignBottom="C" navigationAlignTop="R" navigationBarClass="spTableRowInfo" navigationClass="spTableNav" navigationDisplay="U" numVisibleRows="10" pageNumbersClass="spTablePageNum" patternTextClass="spTablePattern" rowInformationClass="spTableRecordInfo" scrollDownIcon="$ws/Web_Resources/Images/next.png" scrollLeftIcon="$ws/Web_Resources/Images/scrollLeft.gif" scrollRightIcon="$ws/Web_Resources/Images/scrollRight.gif" scrollToBottomIcon="$ws/Web_Resources/Images/last.png" scrollToTopIcon="$ws/Web_Resources/Images/first.png" scrollUpIcon="$ws/Web_Resources/Images/previous.png" selectableCellClass="spSelectColumn" selectableDataClass="spTableSelectRowData" showInfoMessage="true" sortAscendingIcon="$ws/Web_Resources/Images/sortAsc.png" sortDescendingIcon="$ws/Web_Resources/Images/sortDesc.png" stripeColor="@0" tableClass="spTableOuter" tableGridClass="spTableGrid SelectableRows" tablePageScrollClass="spTablePageNav" tableRowCellClass="spTableRowCell" tableRowDataClass="spTableRowData" tableSortClass="spTableSort" trailerClass="spTableTrailer" unsortedIcon="$ws/Web_Resources/Images/sort.png" warningMsgClass="ebWarningTableMessageDEFAULT">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+                <navigationStyleProperties borderStyle="@0" borderWidth="@0"/>
+                <rootHtmlElementProperties classLocator="@0"/>
+            </fieldTable>
+            <fieldTable addRowCellClass="spTableAddRowCell" addRowClass="spTableAddRow" columnHeadingClass="spTableColumnHeader" ctrl="Table" currentPageClass="spTableCurrentPageNum" default="true" deletableCellClass="spSelectDeleteColumn" deletableDataClass="spDeleteRowData" displayInfoPrefix="false" errorMsgClass="ebErrorTableMessageDEFAULT" headerClass="spTableHeader" inactiveScrollDownIcon="@0" inactiveScrollToBottomIcon="@0" inactiveScrollToTopIcon="@0" inactiveScrollUpIcon="@0" includePageNumbers="true" infoClass="spTableInfo" infoPrefixClass="spTableNavPrefix" inheritMsg="false" maxNumberOfResultPages="10" navigationAlignBottom="C" navigationAlignTop="R" navigationBarClass="spTableRowInfo" navigationClass="spTableNav" navigationDisplay="U" numVisibleRows="10" pageNumbersClass="spTablePageNum" patternTextClass="spTablePattern" rowInformationClass="spTableRecordInfo" scrollDownIcon="$ws/Web_Resources/Images/next.png" scrollLeftIcon="$ws/Web_Resources/Images/scrollLeft.gif" scrollRightIcon="$ws/Web_Resources/Images/scrollRight.gif" scrollToBottomIcon="$ws/Web_Resources/Images/last.png" scrollToTopIcon="$ws/Web_Resources/Images/first.png" scrollUpIcon="$ws/Web_Resources/Images/previous.png" selectableCellClass="spSelectColumn" selectableDataClass="spTableSelectRowData" showInfoMessage="true" sortAscendingIcon="$ws/Web_Resources/Images/sortAsc.png" sortDescendingIcon="$ws/Web_Resources/Images/sortDesc.png" stripeColor="@0" tableClass="spTableOuter" tableGridClass="spTableGrid" tablePageScrollClass="spTablePageNav" tableRowCellClass="spTableRowCell" tableRowDataClass="spTableRowData" tableSortClass="spTableSort" trailerClass="spTableTrailer" unsortedIcon="$ws/Web_Resources/Images/sort.png" warningMsgClass="ebWarningTableMessageDEFAULT">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+                <navigationStyleProperties borderStyle="@0" borderWidth="@0"/>
+                <rootHtmlElementProperties classLocator="@0"/>
+            </fieldTable>
+            <prevPageButton cssClass="previousPageButton" ctrl="Previous Page Button" default="true" imageUrl="shared/images/prevpage.gif" inheritMsg="false" newLine="false"/>
+            <horizontalMenu allMargin="@0" allPadding="@0" backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" borderColor="@0" borderRadius="@0" borderStyle="@0" borderWidth="@0" bottomBorderWidth="@0" bottomMargin="@0" bottomPadding="@0" cssClass="eb-Horizontal-Menu controlBackgroundColor borderColor menuItemText" ctrl="FullWidthMenuBar" default="true" errorMsgClass="errorMessage" gapBetweenItems="1px" itemClass="menuFirstLevelBackgroundColor borderColor borderTop" leafClass="menuFirstLevelBackgroundColor borderColor borderTop" leafSelectedClass="menuFirstLevelSelectedBackgroundColor borderColor borderTop" leafSelectedTextClass="mnuFirstLevelText" leafTextClass="mnuFirstLevelText" leftBorderWidth="@0" leftMargin="@0" leftPadding="@0" markParentsAsSelected="true" rightBorderWidth="@0" rightMargin="@0" rightPadding="@0" selectedClass="menuFirstLevelSelectedBackgroundColor borderColor borderTop" selectedTextClass="mnuFirstLevelText" style="vertical-align:bottom;" textClass="mnuFirstLevelText" topBorderWidth="@0" topLevelClass="controlBackgroundColorHover controlText downArrow" topLevelLeafClass="controlBackgroundColorHover controlText" topLevelLeafSelectedClass="controlBackgroundSelectedColor controlSelectedText" topLevelSelectedClass="controlBackgroundSelectedColor controlSelectedText downArrow" topLevelSelectedTextClass="@0" topLevelTextClass="@0" topLevelTextStyle="@0" topMargin="@0" topPadding="@0" warningMsgClass="errorMessage" width="100%">
+                <errorMessageStyle backgroundColor="@0" textColor="@0"/>
+                <globalLevel hAlign="Center" itemWidth="@0">
+                    <allState lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <hoverState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" textBold="@0"/>
+                    <itemBorder borderColor="#0470ba" borderStyle="Solid" borderWidth="1px"/>
+                    <itemPadding allPadding="@0" bottomPadding=".6em" leftPadding="2.35em" rightPadding="2.35em" topPadding=".6em"/>
+                    <selectedState textBold="Bold"/>
+                </globalLevel>
+                <subMenu hAlign="@0" itemWidth="@0">
+                    <allState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <hoverState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <itemBorder borderColor="@0" borderStyle="Solid" borderWidth="1px"/>
+                    <itemPadding allPadding="@0" bottomPadding="@0" leftPadding="@0" rightPadding="@0" topPadding="@0"/>
+                    <selectedState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                </subMenu>
+                <topLevel hAlign="@0" itemWidth="@0">
+                    <allState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <hoverState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <itemBorder borderColor="@0" borderStyle="@0" borderWidth="@0" bottomBorderWidth="@0" leftBorderWidth="@0" rightBorderWidth="@0" topBorderWidth="@0"/>
+                    <itemPadding allPadding="@0" bottomPadding="@0" leftPadding="@0" rightPadding="@0" topPadding="@0"/>
+                    <selectedState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" textBold="@0"/>
+                </topLevel>
+                <warningMessageStyle backgroundColor="@0" textColor="@0"/>
+            </horizontalMenu>
+            <horizontalMenu allMargin="@0" allPadding="@0" backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" borderColor="#c5c5c5" borderRadius="@0" borderStyle="Solid" borderWidth="1px" bottomBorderWidth="@0" bottomMargin="@0" bottomPadding="@0" cssClass="eb-Horizontal-Menu controlBackgroundColorReverse borderColorReverse menuItemText" ctrl="MenuBar" errorMsgClass="errorMessage" gapBetweenItems="1px" itemClass="menuFirstLevelBackgroundColor borderColor borderTop" leafClass="menuFirstLevelBackgroundColor borderColor borderTop" leafSelectedClass="menuFirstLevelSelectedBackgroundColorReverse borderColor borderTop" leafSelectedTextClass="mnuFirstLevelTextReverse" leafTextClass="mnuFirstLevelTextReverse" leftBorderWidth="@0" leftMargin="@0" leftPadding="@0" markParentsAsSelected="false" rightBorderWidth="@0" rightMargin="@0" rightPadding="@0" selectedClass="menuFirstLevelSelectedBackgroundColor borderColor borderTop" selectedTextClass="mnuFirstLevelText" style="vertical-align:bottom;" textClass="mnuFirstLevelText" topBorderWidth="@0" topLevelClass="controlBackgroundColorHoverReverse controlTextReverse downArrowReverse" topLevelLeafClass="controlBackgroundColorHoverReverse controlTextReverse" topLevelSelectedClass="downArrowReverse" topLevelSelectedTextClass="@0" topLevelTextClass="@0" topLevelTextStyle="@0" topMargin="@0" topPadding="@0" warningMsgClass="errorMessage" width="@0">
+                <errorMessageStyle backgroundColor="@0" textColor="@0"/>
+                <globalLevel hAlign="Left" itemWidth="@0">
+                    <allState lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <hoverState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" textBold="@0"/>
+                    <itemBorder borderColor="#c5c5c5" borderStyle="Solid" borderWidth="1px"/>
+                    <itemPadding allPadding="@0" bottomPadding=".4em" leftPadding="1em" rightPadding="1em" topPadding=".4em"/>
+                    <selectedState textBold="@0"/>
+                </globalLevel>
+                <subMenu hAlign="@0" itemWidth="@0">
+                    <allState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <hoverState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <itemBorder borderColor="#c5c5c5" borderStyle="Solid" borderWidth="1px"/>
+                    <itemPadding allPadding="@0" bottomPadding=".4em" leftPadding="2em" rightPadding="2em" topPadding=".4em"/>
+                    <selectedState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                </subMenu>
+                <topLevel hAlign="@0" itemWidth="@0">
+                    <allState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <hoverState backgroundColor="#c5c5c5" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                    <itemBorder borderColor="#c5c5c5" borderStyle="Solid" borderWidth="1px" bottomBorderWidth="@0" leftBorderWidth="@0" rightBorderWidth="@0" topBorderWidth="@0"/>
+                    <itemPadding allPadding="@0" bottomPadding="@0" leftPadding="@0" rightPadding="@0" topPadding="@0"/>
+                    <selectedState backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" textBold="@0"/>
+                </topLevel>
+                <warningMessageStyle backgroundColor="@0" textColor="@0"/>
+            </horizontalMenu>
+            <finishButton cssClass="finishButton" ctrl="Finish Button" default="true" imageUrl="shared/images/finish.gif" inheritMsg="false" newLine="false"/>
+            <legacyButton cssClass="ebLegacyButtonTable" ctrl="Legacy Button Panel" default="true" finishClass="finishButton" finishImageUrl="shared/images/finish.gif" inheritMsg="false" nextClass="nextPageButton" nextImageUrl="shared/images/nextpage.gif" prevClass="previousPageButton" prevImageUrl="shared/images/prevpage.gif" restoreClass="restoreButton" saveClass="saveButton" width="@0"/>
+            <nextPageButton cssClass="nextPageButton" ctrl="Next Page Button" default="true" imageUrl="shared/images/nextpage.gif" inheritMsg="false" newLine="false"/>
+            <groupPanel contentClass="spGroupContent" cssClass="spGroupBorder" ctrl="Float-Left" default="L" errorMsgClass="ebErrorMessageDEFAULT" headerClass="spGroupHeader" infoClass="spGroupInfo" inheritMsg="false" layoutType="FIELD" trailerClass="spGroupTrailer" warningMsgClass="ebWarningMessageDEFAULT" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorHAlign="Left" helpCellClass="spFieldHelpCell" infoHAlign="Left" labelCellClass="spFieldLabelCell" labelHAlign="Right" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="spFloatLeft"/>
+            </groupPanel>
+            <groupPanel contentClass="spGroupContent" cssClass="spGroupBorder" ctrl="Float-Right" default="L" errorMsgClass="ebErrorMessageDEFAULT" headerClass="spGroupHeader" infoClass="spGroupInfo" inheritMsg="false" layoutType="FIELD" trailerClass="spGroupTrailer" warningMsgClass="ebWarningMessageDEFAULT" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorHAlign="Left" helpCellClass="spFieldHelpCell" infoHAlign="Left" labelCellClass="spFieldLabelCell" labelHAlign="Right" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="spFloatRight"/>
+            </groupPanel>
+            <groupPanel contentClass="spGroupContent" cssClass="spGroupBorder" ctrl="Group Panel" default="true" errorMsgClass="ebErrorMessageDEFAULT" headerClass="spGroupHeader" infoClass="spGroupInfo" inheritMsg="false" layoutType="FIELD" trailerClass="spGroupTrailer" warningMsgClass="ebWarningMessageDEFAULT">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorHAlign="Left" helpCellClass="spFieldHelpCell" infoHAlign="Left" labelCellClass="spFieldLabelCell" labelHAlign="Right" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+            </groupPanel>
+            <groupPanel contentClass="spGroupContent" cssClass="spGroupBorder" ctrl="ShowHelp" default="L" errorMsgClass="ebErrorMessageDEFAULT" headerClass="spGroupHeader" infoClass="spGroupInfo" inheritMsg="false" layoutType="FIELD" trailerClass="spGroupTrailer" warningMsgClass="ebWarningMessageDEFAULT">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorHAlign="Left" helpCellClass="spFieldHelpCell" infoHAlign="Left" labelCellClass="spFieldLabelCell" labelHAlign="Right" tableClass="spFieldGridTable spFieldGridTable_Help"/>
+                </layoutProperties>
+            </groupPanel>
+            <button cssClass="button" ctrl="Button" default="true" errorMsgClass="error-message" inheritMsg="false" newLine="false" warningMsgClass="warning-message">
+                <errorMessageStyle backgroundColor="@0" textColor="@0"/>
+                <rootHtmlElementProperties classLocator="@0"/>
+                <warningMessageStyle backgroundColor="@0" textColor="@0"/>
+            </button>
+            <button cssClass="greenButton" ctrl="Green-Button" default="L">
+                <rootHtmlElementProperties classLocator="greenButton"/>
+            </button>
+            <button cssClass="inlineButton button" ctrl="Inline-Button" default="L" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" newLine="false" warningMsgClass="ebWarningMessageDEFAULT"/>
+            <button cssClass="redButton" ctrl="Red-Button" default="L">
+                <rootHtmlElementProperties classLocator="redButton"/>
+            </button>
+            <tab ctrl="Tab" default="true" errorMsgClass="errorMessage" imagePosition="@0" imageStyle="background:none !important;" inheritMsg="false" warningMsgClass="warningMessage">
+                <hoverState textColor="#37587E"/>
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+            </tab>
+            <horizontalLine ctrl="Horizontal Line" default="true" inheritMsg="false">
+                <rootHtmlElementProperties classLocator="divider"/>
+            </horizontalLine>
+            <gridControl columnWidths="33.0%,33.0%,34.0%" columns="3" cssClass="spGridBorderStyle" ctrl="Grid" default="true" errorMsgClass="errorMessage" gridClass="spGridStyle" inheritMsg="false" rows="3" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+            </gridControl>
+            <text cssClass="spTextControl" ctrl="InformationText" default="L">
+                <rootHtmlElementProperties classLocator="informationText"/>
+            </text>
+            <text cssClass="spTextControl" ctrl="Text" default="true" inheritMsg="false" newLine="false"/>
+            <panel cssClass="spPanel" ctrl="Accordion" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" layoutType="@0" warningMsgClass="ebWarningMessageDEFAULT" width="100%">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorHAlign="@0" editorWidth="10%" helpCellClass="spFieldHelpCell" infoHAlign="@0" infoWidth="70%" labelCellClass="spLabelCell" labelHAlign="@0" labelVAlign="Center" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="accordion spPanel" jQueryEventHandlers="$;ready;accordion();"/>
+            </panel>
+            <panel ctrl="Button_Panel" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" layoutType="FIELD" warningMsgClass="ebWarningMessageDEFAULT" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorHAlign="@0" editorWidth="10%" helpCellClass="spFieldHelpCell" infoHAlign="@0" infoWidth="70%" labelCellClass="spLabelCell" labelHAlign="@0" labelVAlign="Top" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="button-panel-bottom"/>
+            </panel>
+            <panel cssClass="boxPanel" ctrl="Central Box" default="L"/>
+            <panel ctrl="Field Panel" default="L" layoutType="FIELD" modifiers="fieldPanel" width="100%">
+                <rootHtmlElementProperties classLocator="fieldPanel"/>
+            </panel>
+            <panel cssClass="spLoginPanel" ctrl="Login_Panel" default="L" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" layoutType="FIELD" warningMsgClass="ebWarningMessageDEFAULT" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD cellPadding="10px" cellSpacing="5px" editorCellClass="spFieldEditorCell" editorHAlign="Left" editorWidth="10%" helpCellClass="spFieldHelpCell" infoHAlign="Left" infoWidth="70%" labelCellClass="spLabelCell" labelHAlign="Right" labelVAlign="Center" tableClass="spFieldGridTable">
+                        <labelPadding rightPadding="5px"/>
+                    </FIELD>
+                </layoutProperties>
+            </panel>
+            <panel ctrl="Menu" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" layoutType="@0" warningMsgClass="ebWarningMessageDEFAULT" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorHAlign="@0" editorWidth="10%" helpCellClass="spFieldHelpCell" infoHAlign="@0" infoWidth="70%" labelCellClass="spLabelCell" labelHAlign="@0" labelVAlign="Top" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="Menu-Panel"/>
+            </panel>
+            <panel cssClass="spNavPanel" ctrl="Nav_Panel" default="L" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" layoutType="FIELD" warningMsgClass="ebWarningMessageDEFAULT" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD cellPadding="10px" cellSpacing="5px" editorCellClass="spFieldEditorCell" editorHAlign="Left" editorWidth="10%" helpCellClass="spFieldHelpCell" infoHAlign="Left" infoWidth="70%" labelCellClass="spLabelCell" labelHAlign="Right" labelVAlign="Center" tableClass="spFieldGridTable">
+                        <labelPadding rightPadding="5px"/>
+                    </FIELD>
+                </layoutProperties>
+            </panel>
+            <panel ctrl="PagePanel" default="L">
+                <rootHtmlElementProperties classLocator="pagePanel"/>
+            </panel>
+            <panel cssClass="spPanel" ctrl="Panel" default="true" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" layoutType="FIELD" warningMsgClass="ebWarningMessageDEFAULT" width="100%">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorHAlign="@0" editorWidth="30%" helpCellClass="spFieldHelpCell" infoHAlign="@0" infoWidth="10%" labelCellClass="spLabelCell" labelHAlign="@0" labelVAlign="Top" labelWidth="30%" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+            </panel>
+            <panel ctrl="Tab-Child" default="L" layoutType="FIELD">
+                <rootHtmlElementProperties idLocator="tabs-child"/>
+            </panel>
+            <panel ctrl="Tabs-Parent" default="L" topMargin="10px" width="100%">
+                <rootHtmlElementProperties idLocator="tabs" jQueryEventHandlers="$;ready;tabs();"/>
+            </panel>
+            <panel ctrl="accordion-header" default="L" errorMsgClass="ebErrorMessageDEFAULT" warningMsgClass="ebWarningMessageDEFAULT">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorWidth="10%" helpCellClass="spFieldHelpCell" infoWidth="70%" labelCellClass="spLabelCell" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="h3"/>
+            </panel>
+            <panel ctrl="floatLeft" default="L" errorMsgClass="ebErrorMessageDEFAULT" layoutType="FIELD" warningMsgClass="ebWarningMessageDEFAULT" width="60%">
+                <layoutProperties>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorWidth="25%" helpCellClass="spFieldHelpCell" infoWidth="50%" labelCellClass="spLabelCell" labelWidth="25%" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="panelLeft"/>
+            </panel>
+            <panel ctrl="floatRight" default="L" errorMsgClass="ebErrorMessageDEFAULT" layoutType="FIELD" warningMsgClass="ebWarningMessageDEFAULT" width="40%">
+                <layoutProperties>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="spFieldEditorCell" editorWidth="25%" helpCellClass="spFieldHelpCell" infoWidth="50%" labelCellClass="spLabelCell" labelWidth="25%" tableClass="spFieldGridTable"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="panelRight"/>
+            </panel>
+            <saveButton cssClass="saveButton" ctrl="Save Button" default="true" inheritMsg="false" newLine="false"/>
+            <titlepanel cssClass="titlePanel" ctrl="Titled Panel" default="true" errorMsgClass="errorMessage" imageClass="titlePanelImage" imagePosition="None" inheritMsg="false" layoutType="FLOW" panelClass="spTitlePanelContent" panelColor="@0" panelCornerType="@0" textClass="titleText" titlePanelBorderColor="@0" titlebarClass="titlePanelTitlebar" titlebarColor="@0" titlebarCornerType="@0" warningMsgClass="warningMessage" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorHAlign="Left" editorWidth="25%" helpCellClass="ebFieldHelpCellDEFAULT" infoHAlign="Left" infoWidth="50%" labelCellClass="ebFieldLabelCellDEFAULT" labelHAlign="Right" labelWidth="25%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+            </titlepanel>
+            <fieldColumn ctrl="Chosen-Dropdown" default="L" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" ivImageURL="images/tick.gif" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="chosen chosen-large"/>
+                <rootHtmlElementProperties classLocator="chosen-table-cell"/>
+            </fieldColumn>
+            <fieldColumn ctrl="Currency" default="L" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" ivImageURL="images/tick.gif" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="currency" jQueryEventHandlers="$;ready;currency();"/>
+            </fieldColumn>
+            <fieldColumn ctrl="Table Column" default="true" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" ivImageURL="images/tick.gif" warningMsgClass="ebWarningMessageDEFAULT"/>
+            <hyperlink ctrl="Field Icon" default="L" style="position:absolute;">
+                <rootHtmlElementProperties jQueryEventHandlers="$;click;if (confirm('Message Goes Here')) {&#xA;&#xA;}&#xA;e.preventDefault();"/>
+            </hyperlink>
+            <hyperlink backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" borderColor="@0" borderRadius="@0" borderStyle="@0" borderWidth="@0" bottomBorderWidth="@0" ctrl="Hyperlink" default="true" inheritMsg="false" leftBorderWidth="@0" leftMargin="@0" leftPadding="@0" lineHeight="@0" newLine="false" rightBorderWidth="@0" rightMargin="@0" rightPadding="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0" topBorderWidth="@0" useExternalURL="true"/>
+            <hyperlink ctrl="Menu_Sub" default="L">
+                <rootHtmlElementProperties classLocator="menu-sub"/>
+            </hyperlink>
+            <hyperlink ctrl="Menu_Top" default="L">
+                <rootHtmlElementProperties classLocator="menu-top"/>
+            </hyperlink>
+            <hyperlink ctrl="accordion-button" default="L">
+                <rootHtmlElementProperties classLocator="accordion-button" jQueryEventHandlers="$;click;//Stops the accordion opening / closing when the button is clicked&#xA;event.stopPropagation();&#xA;//event.preventDefault();"/>
+            </hyperlink>
+            <image cssClass="image" ctrl="Image" default="true" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" warningMsgClass="ebWarningMessageDEFAULT"/>
+            <restoreButton cssClass="restoreButton" ctrl="Restore Button" default="true" inheritMsg="false" newLine="false"/>
+            <verticalMenu backgroundClass="verticalMenuBackground" cssClass="verticalMenu" ctrl="Vertical Menu" default="true" errorMsgClass="errorMessage" hoverStyle=" border-top: #999999 solid 1px; border-left: #666666 solid 1px; border-right: #666666 solid 1px; padding: 2px; background-color:#CCCCFF;" hoverTextStyle=" color: black; font-size:small; font-family:Arial, Helvetica, sans-serif; padding:5px; line-height: 2.0;" inheritMsg="false" itemClass="verticalMenuItem" leafClass="verticalMenuLeaf" leafHoverStyle=" border-top: #999999 solid 1px; border-left: #666666 solid 1px; border-right: #666666 solid 1px; padding: 2px; background-color:#CCCCFF;" leafHoverTextStyle=" color: black; font-size:small; font-family:Arial, Helvetica, sans-serif; padding:5px; line-height: 2.0;" leafSelectedClass="verticalMenuSelectedLeaf" leafSelectedTextClass="verticalMenuSelectedLeafText" leafTextClass="verticalMenuLeafText" numberOfLevels="1" secondLevelBackgroundClass="verticalMenuSecondLevelBackground" secondLevelClass="verticalMenuSecondLevel" secondLevelHoverTextStyle="color:black;" secondLevelLeafClass="verticalMenuSecondLevelLeaf" secondLevelLeafSelectedClass="verticalMenuSecondLevelSelectedLeaf" secondLevelLeafSelectedTextClass="verticalMenuSecondLevelSelectedLeafText" secondLevelLeafTextClass="verticalMenuSecondLevelLeafText" secondLevelSelectedClass="verticalMenuSecondLevelSelected" secondLevelSelectedTextClass="verticalMenuSecondLevelSelectedText" secondLevelTextClass="verticalMenuSecondLevelText" selectedClass="verticalMenuSelected" selectedTextClass="verticalMenuSelectedText" textClass="verticalMenuItemText" topLevelBackgroundClass="verticalMenuTopLevelBackground" topLevelClass="verticalMenuTopLevel" topLevelLeafClass="verticalMenuTopLevelLeaf" topLevelLeafSelectedClass="verticalMenuTopLevelSelectedLeaf" topLevelLeafSelectedTextClass="verticalMenuTopLevelSelectedLeafText" topLevelLeafTextClass="verticalMenuTopLevelLeafText" topLevelSelectedClass="verticalMenuTopLevelSelected" topLevelSelectedTextClass="verticalMenuTopLevelSelectedText" topLevelTextClass="verticalMenuTopLevelText" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+            </verticalMenu>
+            <gridCell column="0" columnspan="1" cssClass="spGridCellStyle" ctrl="Grid Cell" default="true" errorMsgClass="errorMessage" inheritMsg="false" layoutType="FIELD" row="0" rowspan="1" vAlign="Top" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorHAlign="Left" editorWidth="10%" helpCellClass="ebFieldHelpCellDEFAULT" infoHAlign="Left" infoWidth="60%" labelCellClass="ebFieldLabelCellDEFAULT" labelHAlign="Left" labelWidth="30%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+            </gridCell>
+            <gridCell allPadding="5px" column="0" columnspan="1" cssClass="spGridCellStyle" ctrl="Vertical_Padded" errorMsgClass="errorMessage" inheritMsg="false" layoutType="VERTICAL_BOX" row="0" rowspan="1" vAlign="Top" warningMsgClass="warningMessage">
+                <layoutProperties>
+                    <VERTICAL_BOX cellHAlign="Left" hAlign="Left" layoutClass="verticalLayoutCell" spacerSize="5px" tableClass="verticalLayoutTable" vAlign="Top"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorHAlign="Left" editorWidth="10%" helpCellClass="ebFieldHelpCellDEFAULT" infoHAlign="Left" infoWidth="60%" labelCellClass="ebFieldLabelCellDEFAULT" labelHAlign="Left" labelWidth="30%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+            </gridCell>
+            <pagePanel contentClass="spGroupContent" cssClass="spGroupBorder" ctrl="Page Panel" default="true" errorMsgClass="errorMessage" headerClass="spGroupHeader" infoClass="spGroupInfo" inheritMsg="false" layoutType="@0" trailerClass="spGroupTrailer" warningMsgClass="warningMessage" width="@0">
+                <errorMessageStyle backgroundColor="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="pagePanel"/>
+                <warningMessageStyle backgroundColor="@0" textColor="@0"/>
+            </pagePanel>
+            <buttonColumn columnCellClass="tableButtonColumnCell" columnDataClass="tableButtonColumn" ctrl="Button Column" default="true" errorMsgClass="ebErrorMessageDEFAULT" inheritMsg="false" warningMsgClass="ebWarningMessageDEFAULT"/>
+            <message ctrl="Message" default="true" errorMsgClass="error-message" inheritMsg="false" newLine="false" warningMsgClass="warning-message">
+                <errorMessageStyle backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                <warningMessageStyle backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+            </message>
+            <component contentClass="pageBodyContents" cssClass="pageBody" ctrl="Component" default="true" errorMsgClass="errorMessage" localMsg="false" outputType="0" warningMsgClass="warningMessage" width="@0">
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+            </component>
+            <field ctrl="Chosen-Large" default="L" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" newLine="false" patternTextClass="spPatternStyle" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor chosen-large"/>
+                <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                <infoHtmlElementProperties classLocator="spInfo"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Chosen-Medium" default="L" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" newLine="false" patternTextClass="spPatternStyle" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor chosen-medium"/>
+                <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                <infoHtmlElementProperties classLocator="spInfo"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Chosen-Small" default="L" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" newLine="false" patternTextClass="spPatternStyle" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor chosen-small"/>
+                <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                <infoHtmlElementProperties classLocator="spInfo"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Chosen-multi-select" default="L" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="width:350px;" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpClass="spHelpStyle" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" newLine="false" patternTextClass="spPatternStyle" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor chosen-select" customAttributes="multiple" jQueryEventHandlers="$;ready;dropDown();"/>
+                <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                <infoHtmlElementProperties classLocator="spInfo"/>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Currency" default="L" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpClass="spHelpStyle" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="currency" newLine="false" patternTextClass="spPatternStyle" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor currency" htmlEventHandlers="onchange;/* Currency number format */&#xA;var regex = /^[0-9,]*(.[0-9]{2})?$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);" jQueryEventHandlers="$;ready;currency();"/>
+                <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                <infoHtmlElementProperties classLocator="spInfo"/>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="DateFuture" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="dateFuture" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor datepickerFuture" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="DatePast" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="datePast" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor datepickerPast" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="DatePicker" default="L" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="date" newLine="false" patternTextClass="spPatternStyle" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor datePicker" customAttributes="autocomplete=&quot;off&quot; placeholder=&quot;dd/mm/yyyy&quot;" jQueryEventHandlers="$;ready;datePicker();"/>
+                <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                <infoHtmlElementProperties classLocator="spInfo"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Email" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="email" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor" customAttributes="type=&quot;email&quot;" htmlEventHandlers="onchange;/* Email address format */&#xA;var regex = /^(([^&lt;&gt;()[\]\\.,;:\s@\&quot;]+(\.[^&lt;&gt;()[\]\\.,;:\s@\&quot;]+)*)|(\&quot;.+\&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Field" default="true" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor chosen" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField" jQueryEventHandlers="@0"/>
+            </field>
+            <field ctrl="Integer" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="integer" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor" customAttributes="type=&quot;number&quot;,  step=&quot;1&quot;" htmlEventHandlers="onchange;/* Integer number format */&#xA;var regex = /^[0-9]*$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Name" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="name" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor" htmlEventHandlers="onchange;/* Name format - alphabetic plus hyphen, apostrophe, full stop and space */&#xA;var regex = /^[A-Za-z\-'\.\s]*$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="National Insurance No" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="ni" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor" htmlEventHandlers="onchange;/* NI format */&#xA;var regex = /^([A-CEGHJ-PR-TW-Z]){1}([A-CEGHJ-NPR-TW-Z]){1}([0-9]){2}([0-9]){2}([0-9]){2}([A-D ]){1}?$/i;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Numeric" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="numeric" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor" htmlEventHandlers="onchange;/* Numeric number format */&#xA;var regex = /^[0-9]*\.?[0-9]*$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Phone" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="phone" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor" htmlEventHandlers="onchange;/* Telephone number format */&#xA;// var regex = /^(\()?(\+44-|\+44|0)([- 0-9\(\)]{10,16}?)$/; // for british phone numbers&#xA;var regex = /^[-\s0-9\(\)]{10,16}$/;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// a more general regex for numbers of an appropriate length&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="PostCode" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" editorStyle="@0" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpButImage="@0" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="postcode" newLine="false" patternTextClass="spPatternStyle" popupHelpStyle="@0" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor" htmlEventHandlers="onchange;/* Postcode number format */&#xA;var regex = /^[A-Z]{1,2}[0-9]{1,2}\s?[0-9][A-Z]{2}$/i;&#x9;&#xA;&#xA;/* Get the value entered */&#xA;var postcodeValue = this.value;&#xA;&#xA;/* Remove spaces */&#xA;if(postcodeValue){&#xA;&#x9;postcodeValue = postcodeValue.replace(/\s/g, &quot;&quot;);&#xA;}&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);" jQueryEventHandlers="@0"/>
+                <infoHtmlElementProperties classLocator="@0"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="Spinner" default="L" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpClass="spHelpStyle" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" newLine="false" patternTextClass="spPatternStyle" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor spinner" jQueryEventHandlers="$;ready;spinner();"/>
+                <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                <infoHtmlElementProperties classLocator="spInfo"/>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="ToggleSwitch" default="L" displayInfoText="false">
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                    <popupWindowProperties height="@0" leftPosition="@0" scrollBar="false" topPosition="@0" width="@0"/>
+                </infoProperties>
+            </field>
+            <field ctrl="VoucherNo" default="L" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpClass="help-message" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" modifiers="VoucherNo" patternTextClass="spPatternStyle" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor chosen"/>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField" htmlEventHandlers="onchange;/* Voucher Number - 4 letters, 8 numbers */&#xA;var regex = / ^[A-Z]{4}\d{8}$ /g;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+            </field>
+            <field ctrl="WYSIWIG" displayInfoText="false" displayIvAsImage="true" displayLabelText="true" editorCellClass="spEditorCell" editorCellStyle="width:97%;" editorClass="spInputStyle" editorStyle="width:100%;" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" fieldStyle="width:100%;" helpButImage="shared/images/help_whiteonbrown_30.gif" helpClass="spHelpStyle" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" newLine="false" patternTextClass="spPatternStyle" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor WYSIWIG" jQueryEventHandlers="$;ready;WYSIWIG();"/>
+                <infoHtmlElementProperties classLocator="spInfo"/>
+                <infoProperties>
+                    <popupTextProperties textFont="@0" textSize="@0"/>
+                </infoProperties>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <field ctrl="iCheckbox" default="L" displayInfoText="false" displayIvAsImage="true" editorCellClass="spEditorCell" editorClass="spInputStyle" errorMsgClass="ebErrorMessageDEFAULT" fieldClass="spFieldStyle" helpClass="spHelpStyle" helpPos="2" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" inheritMsg="false" ivImageURL="images/blue/tick.png" labelClass="spLabelStyle" labelElementClass="spLabelStyle1" newLine="false" patternTextClass="spPatternStyle" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                <editorHtmlElementProperties classLocator="spEditor iCheckBox" jQueryEventHandlers="$;ready;checkBox();"/>
+                <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                <infoHtmlElementProperties classLocator="spInfo"/>
+                <labelHtmlElementProperties classLocator="spLabel"/>
+                <rootHtmlElementProperties classLocator="spField"/>
+            </field>
+            <repeaterRow bottomPadding="5px" cssClass="repeaterRow" ctrl="Repeater Row" default="true" topPadding="5px"/>
+            <page contentClass="wrapper" cssClass="bodyStyle" ctrl="Page" default="true" errorMsgClass="error-message" formPanelWidth="NULL" jSPBottom="NULL" jSPLeft="NULL" jSPLeftWidth="NULL" jSPRight="NULL" jSPRightWidth="NULL" jSPTop="NULL" layoutType="FIELD" localMsg="false" modifiers="@0" outputType="0" warningMsgClass="warning-message" width="@0">
+                <errorMessageStyle backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" lineHeight="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                <formHeaderProperties backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" hAlign="@0" lineHeight="@0" pageContentsGap="@0" textBold="@0" textColor="@0" textDecoration="@0" textFont="@0" textItalic="@0" textSize="@0"/>
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD cellPadding="@0" editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+                <rootHtmlElementProperties classLocator="page" jQueryEventHandlers="$;ready;dropDown();&#xA;highlightDropdowns();&#xA;tabs();&#xA;accordion();"/>
+                <warningMessageStyle backgroundColor="@0" backgroundImage="@0" backgroundImagePosition="@0" backgroundImageRepeat="@0" textColor="@0"/>
+            </page>
+            <tabSet cssClass="spTabStyle" ctrl="Tab Set" default="true" errorMsgClass="errorMessage" hoverTextStyle="background-color:#37587E !important;color:#fff !important;border-radius:5px 5px 0 0 !important;" inheritMsg="false" panelClass="spTabContents" selectedTextStyle="background-color:#37587E;border-top:1px solid #285F79;border-left:1px solid #285F79;border-right:1px solid #285F79;border-radius:5px 5px 0 0;color:#fff !important;" spaceBetweenTabs="0px" tabAllColor="@0" tabBorderColor="@0" tabCornerType="@0" tabHeaderClass="spTabHeader" unselectedTextStyle="color:#263B54 !important;border-top:1px solid #285F79;border-left:1px solid #285F79;border-right:1px solid #285F79;border-radius:5px 5px 0 0;" warningMsgClass="warningMessage" width="100%">
+                <allState allPadding="@0" bottomPadding="@0" leftPadding="@0" rightPadding="@0" topPadding="@0"/>
+                <layoutProperties>
+                    <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                    <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                    <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                </layoutProperties>
+            </tabSet>
+            <repeater ctrl="Repeater" currentPageClass="repeaterCurrentPage" default="true" infoPrefixClass="repeaterNavPrefix" navigationBarClass="repeaterNavBar" numVisibleRows="10" pageNumbersClass="repeaterActivePage" rowInformationClass="repeaterRowInfo">
+                <rootHtmlElementProperties classLocator="ctrlRepeater"/>
+            </repeater>
+        </propertySets>
+    </presentationTemplate>
+</ebase>

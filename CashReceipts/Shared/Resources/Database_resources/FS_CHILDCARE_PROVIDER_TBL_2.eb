@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Childcare Providers (table)" database="SQLE645S1" table="true" preparedStatement="false" id="FS_CHILDCARE_PROVIDER_TBL_2">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_VW_Childcare_Provider</from>
+        <additional>ORDER BY Provider</additional>
+        <fields>
+            <field id="Area" type="VARCHAR" length="50"/>
+            <field id="CC_Prov_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="CSSIW_No" type="VARCHAR" length="13"/>
+            <field id="County" type="VARCHAR" length="50"/>
+            <field id="Funding_Method" type="VARCHAR"/>
+            <field id="Language" type="VARCHAR"/>
+            <field id="Leader" type="VARCHAR" length="30"/>
+            <field id="Leader_Qualified" type="VARCHAR"/>
+            <field id="Number_Staff_Below_Level_3" type="VARCHAR"/>
+            <field id="Number_Staff_Level_3" type="VARCHAR"/>
+            <field id="Postcode" type="VARCHAR" length="8"/>
+            <field id="Price" type="VARCHAR"/>
+            <field id="Primary_Catchment_Area" type="VARCHAR"/>
+            <field id="Property_name_number" type="VARCHAR" length="50"/>
+            <field id="Provider" type="VARCHAR" length="50"/>
+            <field id="Quaternary_Catchment_Area" type="VARCHAR"/>
+            <field id="Secondary_Catchment_Area" type="VARCHAR"/>
+            <field id="Sector" type="VARCHAR" length="10"/>
+            <field id="Street" type="VARCHAR" length="50"/>
+            <field id="Tertiary_Catchment_Area" type="VARCHAR"/>
+            <field id="Town" type="VARCHAR" length="50"/>
+            <field id="Type" type="VARCHAR" length="30"/>
+            <field id="tel" type="VARCHAR" length="30"/>
+            <field id="Email" type="VARCHAR" length="100"/>
+        </fields>
+    </dbResource>
+</ebase>

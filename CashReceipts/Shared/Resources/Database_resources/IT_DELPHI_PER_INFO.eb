@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Delphi - View based on Personnel and address tables PER and ADDRESS" database="DELPHI_TEST" preparedStatement="false" id="IT_DELPHI_PER_INFO">
+        <columns>*</columns>
+        <from>DELPHI.ZVW_ADDR</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ADDRESS1" length="32"/>
+            <field id="ADDRESS2" length="32"/>
+            <field id="ADDRESS3" length="32"/>
+            <field id="ADDRESS4" length="32"/>
+            <field id="EMAIL" length="60"/>
+            <field id="PER_NO" length="10"/>
+            <field id="POSTCODE" length="10"/>
+            <field id="TEL_HOME" length="20"/>
+            <field id="TEL_MOBILE" length="20"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

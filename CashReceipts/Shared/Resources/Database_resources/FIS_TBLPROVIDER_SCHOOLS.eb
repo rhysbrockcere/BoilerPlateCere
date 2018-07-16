@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLPROVIDER_SCHOOLS">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblPROVIDER_SCHOOLS</from>
+        <where>PROVSCH_ID=&amp;&amp;PROVSCH_ID</where>
+        <fields>
+            <field id="PROVSCH_UPD_USER" type="VARCHAR" length="128"/>
+            <field id="tblPROVIDER" type="INTEGER" length="10"/>
+            <field id="tblSCHOOL" type="INTEGER" length="10"/>
+            <field id="PROVSCH_AM" type="SMALLINT" length="5"/>
+            <field id="PROVSCH_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="PROVSCH_PM" type="SMALLINT" length="5"/>
+            <field id="PROVSCH_UPD_DATE" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+        </fields>
+    </dbResource>
+</ebase>

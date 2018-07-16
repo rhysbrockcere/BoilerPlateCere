@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="COR_RECORD_RETENTION_TBL">
+        <columns>*</columns>
+        <from>Corp_Retention_Test.dbo.Record_Retention</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>order by Series_Name</additional>
+        <fields>
+            <field id="MOD_User" type="VARCHAR" length="50"/>
+            <field id="Offical_Copy_Holder" type="VARCHAR" length="250"/>
+            <field id="Protective_Marking" type="VARCHAR" length="250"/>
+            <field id="Retention_Period" type="VARCHAR" length="250"/>
+            <field id="Review_Action_Disposal" type="VARCHAR" length="250"/>
+            <field id="SIRO_Date" type="TIMESTAMP" length="16"/>
+            <field id="Series_Name" type="VARCHAR" length="250"/>
+            <field id="Statutory_Provision" type="VARCHAR" length="250"/>
+            <field id="Trigger_Disposal" type="VARCHAR" length="250"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Authorising_Officer" type="VARCHAR" length="250"/>
+            <field id="BB_Disposal" type="VARCHAR" length="250"/>
+            <field id="BB_Record_Series" type="VARCHAR" length="250"/>
+            <field id="BB_Retention_Period" type="VARCHAR" length="250"/>
+            <field id="BB_Trigger_Retention" type="VARCHAR" length="250"/>
+            <field id="Business_Need" type="VARCHAR" length="250"/>
+            <field id="Created_Date" type="TIMESTAMP" length="16"/>
+            <field id="Created_User" type="VARCHAR" length="50"/>
+            <field id="Description" type="VARCHAR" length="5000"/>
+            <field id="IA_Date" type="TIMESTAMP" length="16"/>
+            <field id="ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="IO_Date" type="TIMESTAMP" length="16"/>
+            <field id="IRMS_Date" type="TIMESTAMP" length="16"/>
+            <field id="LS_Date" type="TIMESTAMP" length="16"/>
+            <field id="Level" type="INTEGER" length="10"/>
+            <field id="Level_ID" type="INTEGER" length="10"/>
+            <field id="MOD_Date" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

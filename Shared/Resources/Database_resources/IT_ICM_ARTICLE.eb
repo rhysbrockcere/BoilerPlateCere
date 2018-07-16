@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="ICM8 DB Article table" database="SQLW648S1" preparedStatement="false" id="IT_ICM_ARTICLE">
+        <columns>*</columns>
+        <from>ICM8.dbo.Article</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="AdminUserID" type="INTEGER" length="10"/>
+            <field id="ArchiveDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ArchiveParentID" type="INTEGER" length="10"/>
+            <field id="Archiveable" type="BIT" length="1"/>
+            <field id="ArticleDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ArticleDisplay" type="VARCHAR" length="5"/>
+            <field id="ArticleDisplayDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ArticleDisplayEDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ArticleHeading" type="VARCHAR" length="255"/>
+            <field id="ArticleID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="ArticleIntroText" type="VARCHAR" length="1000"/>
+            <field id="ArticleLinkText" type="VARCHAR" length="255"/>
+            <field id="ArticleParentID" type="INTEGER" length="10"/>
+            <field id="ArticleSummary" type="VARCHAR" length="1000"/>
+            <field id="ArticleTemplateID" type="INTEGER" length="10"/>
+            <field id="ArticleText" type="CLOB" length="1073741823"/>
+            <field id="ArticleUserID" type="INTEGER" length="10"/>
+            <field id="BoostValue" type="DOUBLE" length="53"/>
+            <field id="BoostedKeywords" type="VARCHAR" length="255"/>
+            <field id="EtcObjectID" type="INTEGER" length="10"/>
+            <field id="FriendlyURL" type="VARCHAR" length="127"/>
+            <field id="LastModifiedDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="LockTimeStamp" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="LockUserID" type="INTEGER" length="10"/>
+            <field id="OwnerID" type="INTEGER" length="10"/>
+            <field id="OwnerType" type="VARCHAR" length="1"/>
+            <field id="ParentData" type="VARCHAR" length="127"/>
+            <field id="PolicyID" type="INTEGER" length="10"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="UpdateDate" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="UpdateInterval" type="INTEGER" length="10"/>
+            <field id="UpdateNotes" type="VARCHAR" length="255"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="SW_TESTING_PI">
+        <columns>*</columns>
+        <from>Absence.dbo.SW_TESTING_PI</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="AmPm" type="VARCHAR" length="50"/>
+            <field id="Division" type="VARCHAR" length="50"/>
+            <field id="EmployStart" type="TIMESTAMP" length="16"/>
+            <field id="EmploymentEnd" type="TIMESTAMP" length="16"/>
+            <field id="EndDate" type="TIMESTAMP" length="16"/>
+            <field id="EndMonth" type="INTEGER" length="10" readOnly="true"/>
+            <field id="EndYear" type="INTEGER" length="10" readOnly="true"/>
+            <field id="End_AmPm" type="VARCHAR" length="50"/>
+            <field id="Initials" type="VARCHAR" length="50"/>
+            <field id="NoOfDays" type="DECIMAL" length="4" fractionalDigits="1"/>
+            <field id="PayrollNo" type="VARCHAR" length="50"/>
+            <field id="PersonID" type="INTEGER" length="10"/>
+            <field id="Section" type="VARCHAR" length="50"/>
+            <field id="StartDate" type="TIMESTAMP" length="16"/>
+            <field id="StartMonth" type="INTEGER" length="10" readOnly="true"/>
+            <field id="StartYear" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Status" type="VARCHAR" length="3"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="Username" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

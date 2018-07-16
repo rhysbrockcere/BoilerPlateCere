@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="CCC_AB_TEMPSTATS">
+        <columns>*</columns>
+        <from>CCC_Absence_TEST.dbo.TempStats</from>
+        <fields>
+            <field id="EmployEnd" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="EmployStart" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="HoursEquiv" type="REAL" length="24"/>
+            <field id="Initials" type="VARCHAR" length="50"/>
+            <field id="NoDaysSick" type="REAL" length="24"/>
+            <field id="NoPeriodsSick" type="INTEGER" length="10"/>
+            <field id="PayrollNo" type="VARCHAR" length="50"/>
+            <field id="PeriodEnd" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="PeriodStart" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

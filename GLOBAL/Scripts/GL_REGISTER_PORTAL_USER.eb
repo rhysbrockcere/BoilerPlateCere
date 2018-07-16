@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" id="GL_REGISTER_PORTAL_USER" dateCreated="2013-01-04T16:26:34.563Z" dateImported="2016-10-14T14:17:24.210+01:00">
+        <scriptText>set FLAG = '';
+unhighlight all;
+
+if [CUST_EMAIL = '' or CUST_FIRSTNAME = '' or CUST_SURNAME = '' or CUST_DOB = null or LOGIN_QUESTION = null or FOP_ANSWER = '' ] //or INPUT_CHARACTERS_1 = '']
+	set FLAG = 'Y';
+endif
+
+if [CUST_EMAIL = '']
+	set FLAG = 'Y';
+	highlight field CUST_EMAIL WARNING;
+endif
+
+if [CUST_FIRSTNAME = '']
+	set FLAG = 'Y';
+	highlight field CUST_FIRSTNAME WARNING;
+endif
+
+if [CUST_SURNAME = '']
+	set FLAG = 'Y';
+	highlight field CUST_SURNAME WARNING;
+endif
+
+if [CUST_DOB = null]
+	set FLAG = 'Y';
+	highlight field CUST_DOB WARNING;
+endif
+
+if [LOGIN_QUESTION = null]
+	set FLAG = 'Y';
+	highlight field LOGIN_QUESTION WARNING;
+endif
+
+if [FOP_ANSWER = '']
+	set FLAG = 'Y';
+	highlight field FOP_ANSWER WARNING;
+endif
+
+//pge 20170711 - captcha not working V5
+//if [INPUT_CHARACTERS_1 = '']
+//	set FLAG = 'Y';
+//	highlight field INPUT_CHARACTERS_1 WARNING;
+//endif
+
+callscript JS_GL_PORTAL_REG_REFRESH;
+
+if [FLAG = 'Y']
+//pge 20170711 - captcha not working V5
+//	callscript GL_CAP_REFRESH;
+	message E, 100034;
+else
+//pge 20170711 - captcha not working V5
+//	if [ INPUT_CHARACTERS_1 = getsessionvariable('captcha') ]
+		set WHERE_CLAUSE = 'Email like \'' + CUST_EMAIL + '\' and Portal = \'' + $FORMID + '\'';
+		fetch PORTAL_ACCESS_CHECK;
+		if [$FOUND = 'Y']
+			highlight field CUST_EMAIL WARNING;
+			callscript GL_CAP_REFRESH;
+			message E, 100043;
+		else
+			set WHERE_CLAUSE = 'Email like \'' + CUST_EMAIL + '\''; 
+			fetch CS_CRM_CUSTOMER_CHECK;
+			if [$FOUND = 'N']
+				set WHERE_CLAUSE = 'Sequence = \'Customer_ID\'';
+				fetch PORTAL_SEQUENCES;
+				set CUST_ID = SEQ_NEXT_ID;
+				set CUST_DATE_CREATED = $SYSTEM_DATETIME;
+				set CUST_DATE_MODIFIED = $SYSTEM_DATETIME;
+				set CUST_CREATED_BY = 'PORTAL';
+				set CUST_CREATED_BY_DEPT = 'PTL';
+				insert CS_CRM_CUSTOMERS;
+				set SEQ_NEXT_ID = SEQ_NEXT_ID +1;
+				update PORTAL_SEQUENCES;
+				set WHERE_CLAUSE = 'Email like \'' + CUST_EMAIL + '\''; 
+				fetch CS_CRM_CUSTOMER_CHECK;
+			endif
+			set WHERE_CLAUSE = 'Username like \'' + CUST_EMAIL + '\'';
+			fetch PORTAL_LOGINS_CHECK;
+			if [$FOUND = 'N']
+				set LOGIN_CUSTOMER_ID = CUST_ID;
+				set LOGIN_USERNAME = CUST_EMAIL;
+				set LOGIN_PASSWORD = '';
+				set LOGIN_ANSWER = encrypt(lowercase(FOP_ANSWER), 'ENCRYPT');
+				set LOGIN_ATTEMPTS = 0;
+				set LOGIN_STATUS = 'Email Sent';
+				insert PORTAL_LOGINS;
+			endif
+			set ACCESS_CUSTOMER_ID = CUST_ID;
+			set ACCESS_PORTAL = $FORMID;
+			set WHERE_CLAUSE = 'Portal = \'' + ACCESS_PORTAL + '\'';
+			fetch PORTAL_BLOCKS;
+			if [$FOUND = 'Y']
+				set ACCESS_STATUS = 'Request';
+			else
+				set ACCESS_STATUS = 'Active';
+			endif
+			if [$FORMID = 'HS_PORTAL']
+				if [contains(CUST_EMAIL, 'ceredigion.sch.uk') or contains(CUST_EMAIL, 'powys.sch.uk') or contains(CUST_EMAIL, 'powys.gov.uk') or contains(CUST_EMAIL, 'abersteve@gmail.com')]
+					set ACCESS_STATUS = 'Active';
+				else
+					set ACCESS_STATUS = 'Request';
+				endif
+			endif
+			set ACCESS_CHECK_LINK = encrypt($SYSTEM_DATETIME, 'ENCRYPT');
+			insert PORTAL_ACCESS;
+			set REG_CHECK = 'Y';
+			set EMAIL_FROM = 'portal@ceredigion.gov.uk';
+			set EMAIL_TO = CUST_EMAIL;
+			set EMAIL_SUBJECT = 'Please confirm your registration';
+			set EMAIL_MESSAGE = 'Hello ' + CUST_FIRSTNAME + ' ' + CUST_SURNAME + ',&lt;BR&gt;&lt;BR&gt;Thank you for registering with Ceredigion County Council Online Portal.&lt;BR&gt;&lt;BR&gt;';
+			set EMAIL_MESSAGE = EMAIL_MESSAGE + 'To complete your registration, please click on the link below to confirm your email address.&lt;BR&gt;&lt;BR&gt;';
+			set EMAIL_MESSAGE = EMAIL_MESSAGE + '&lt;a href="http://' + $UFS_SERVER_NAME + '/ufs/ufsmain?formid=' + $FORMID + '&amp;CONFIRM=' + ACCESS_CHECK_LINK + '&amp;EEA=' + encrypt(lowercase(CUST_EMAIL), 'ENCRYPT') + '"&gt;Please click here to confirm your email address&lt;/a&gt;&lt;BR&gt;&lt;BR&gt;';
+			set EMAIL_MESSAGE = EMAIL_MESSAGE + 'Please do not reply to this email.&lt;BR&gt;&lt;BR&gt;Regards&lt;BR&gt;Ceredigion County Council';
+			sendmail PORTAL_CMP_EMAIL;
+			hide REGISTER_GROUP;
+			show LOGIN_GROUP;
+			message W, 100049;
+		endif
+//pge 20170711 - captcha not working V5
+//	else
+//		callscript GL_CAP_REFRESH;
+//		message W, 100048;
+//	endif
+endif</scriptText>
+    </script>
+</ebase>

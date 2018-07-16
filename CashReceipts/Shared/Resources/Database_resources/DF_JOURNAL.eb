@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="DF_JOURNAL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DF_Journal</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Auth_Acc_by" type="VARCHAR" length="30"/>
+            <field id="Auth_Acc_date" type="DATE" length="16"/>
+            <field id="Authed_date" type="DATE" length="16"/>
+            <field id="Corrected_by" type="VARCHAR" length="50"/>
+            <field id="Corrected_date" type="DATE" length="16"/>
+            <field id="Created_by" type="VARCHAR" length="30"/>
+            <field id="Created_date" type="DATE" length="16"/>
+            <field id="Dept" type="VARCHAR" length="10"/>
+            <field id="Filename" type="VARCHAR" length="100"/>
+            <field id="Filepath" type="VARCHAR" length="200"/>
+            <field id="Filepath_Web" type="VARCHAR" length="500"/>
+            <field id="GLJNK_no" type="VARCHAR" length="25"/>
+            <field id="ID" type="INTEGER" length="10"/>
+            <field id="Journal_no" type="VARCHAR" length="20"/>
+            <field id="Notes" type="VARCHAR" length="1000"/>
+            <field id="Officer" type="VARCHAR" length="30"/>
+            <field id="Officer_Firstname" type="VARCHAR" length="100"/>
+            <field id="Officer_Surname" type="VARCHAR" length="100"/>
+            <field id="Period" type="INTEGER" length="10"/>
+            <field id="Posting_Year" type="INTEGER" length="10"/>
+            <field id="Processed_by" type="VARCHAR" length="30"/>
+            <field id="Processed_date" type="DATE" length="16"/>
+            <field id="Rejected_Reason" type="VARCHAR" length="500"/>
+            <field id="Rejected_by" type="VARCHAR" length="30"/>
+            <field id="Rejected_date" type="DATE" length="16"/>
+            <field id="Status" type="VARCHAR" length="15"/>
+            <field id="Suspense_Code" type="VARCHAR" length="20"/>
+            <field id="Suspense_lines" type="INTEGER" length="10"/>
+            <field id="Tot_Credits" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Tot_Debits" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Tot_lines" type="INTEGER" length="10"/>
+            <field id="Val_Test_by" type="VARCHAR" length="30"/>
+            <field id="Val_Test_date" type="DATE" length="16"/>
+            <field id="Archive" length="1"/>
+            <field id="Authed_by" type="VARCHAR" length="30"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

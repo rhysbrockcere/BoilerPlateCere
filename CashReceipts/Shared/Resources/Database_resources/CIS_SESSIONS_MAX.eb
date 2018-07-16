@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CIS_SESSIONS_MAX">
+        <columns>MAX(SessionID) as MAXID</columns>
+        <from>ICT_Training_Test.dbo.CIS_Sessions</from>
+        <fields>
+            <field id="MAXID" type="INTEGER" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

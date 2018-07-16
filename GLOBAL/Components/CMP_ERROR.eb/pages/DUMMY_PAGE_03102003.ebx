@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="37940000" pageInfoTextReference="37940001" pageTrailerTextReference="37940002" nextPageTextReference="37940003" prevPageTextReference="37940004">
+    <pageContents>
+        <component contentClass="@T" contentStyle="@T" cssClass="@T" ctrl="COMPONENT2" default="L" errorMsgClass="@T" errorMsgStyle="@T" inheritMsg="true" layoutType="FIELD" localMsg="false" outputType="0" style="@T" uid="1" warningMsgClass="@T" warningMsgStyle="@T" width="@0">
+            <layoutProperties>
+                <FIELD editorCellClass="@T" editorCellStyle="@T" editorWidth="@T" helpCellClass="@T" helpCellStyle="@T" labelCellClass="@T" labelCellStyle="@T" labelWidth="@T" tableClass="@T" tableStyle="@T"/>
+            </layoutProperties>
+            <panel ctrl="PANEL1" inheritMsg="false" localMsg="true" uid="8">
+                <field beforeEvent="/Scripts/GL_SET_LANGUAGE_ERROR,/Scripts/GL_SUPPRESS_PAGING_BUTTONS" ctrl="FIELDCONTROL1" displayEditor="true" displayInfoText="true" displayLabelText="true" field="LANGAUGE_CONTROL" fopId="20" hidden="true" uid="2" validationEvent="/Scripts/GL_SET_LANGUAGE_ERROR"/>
+                <field ctrl="FIELDCONTROL2" displayEditor="true" displayInfoText="true" displayLabelText="true" field="ERROR_TEXT" fopId="10" uid="3"/>
+                <field ctrl="FIELDCONTROL3" displayEditor="true" displayInfoText="true" displayLabelText="true" field="SPACER" fopId="50" uid="4"/>
+                <field ctrl="FIELDCONTROL4" displayEditor="true" displayInfoText="true" displayLabelText="true" field="EMAIL_FROM" fopId="30" mandatory="true" uid="5"/>
+                <field ctrl="FIELDCONTROL5" displayEditor="true" displayInfoText="true" displayLabelText="true" displayOnly="true" field="SUBMIT" fopId="80" hyperlink="true" immedEvent="/Scripts/GL_ERROR_EMAIL" immediateValidation="true" uid="6"/>
+                <field ctrl="FIELDCONTROL6" displayEditor="true" displayInfoText="true" displayLabelText="true" field="THANK_YOU" fopId="100" hidden="true" uid="7"/>
+            </panel>
+        </component>
+    </pageContents>
+</page>

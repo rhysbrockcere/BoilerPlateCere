@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="Javascript" preferredComponentPath="/Forms/CLIC_NEW_CUSTOMER" preferredComponentProject="CRM_Staff" id="GL_Validate" dateCreated="2016-07-08T17:18:47.117+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+/*
+ * This script gets field controls on the current page by their modifiers and validates the corresponding field value appropriately, if the field has a value.
+ * 
+ * In order to more easily manipulate/analyse dates, the moment.js library is used in this script.
+ * Therefore the moment script in Vault/shared/serverScripts must be included as a Shared Functions script on any form that uses this script
+ * 
+ * For more information about moment.js: http://momentjs.com/
+ */
+
+
+//===========================
+// Reset Field Panel styling
+//===========================
+
+var fieldPanels = form.currentPage.getControlsByModifier("fieldPanel");
+for each (var ctrl in fieldPanels){
+	log ("2 - Control = " + ctrl.getElementName());
+	ctrl.setCssClass("");
+}
+
+//NEED TO RESET CONTROLS AS WELL AS PANELS!!
+
+//==============================================
+// Validation flag - set true to signal to stop
+//==============================================
+var stopExecutionFlag = false;
+
+
+//=====================
+// Check field formats
+//=====================
+
+//------------------ 
+// Mandatory fields 
+//------------------ 
+var mandatoryFields = form.currentPage.getControlsByModifier("mandatory"); 
+for each (var ctrl in mandatoryFields){ 
+	if(ctrl.isShowing()){
+		log("Checking mandatory control: " + ctrl.getElementName());
+		log("Control Type: " + ctrl.getElementType());
+	  if (!ctrl.getField().value){
+	  	log("Control has no value!!");
+  	  highlightFieldPanel(ctrl);
+  	  ctrl.addErrorMessageText(texts.msg101,[ctrl.field.labelText.text],false);
+      ctrl.setCssClass("error-field");
+      stopExecutionFlag = true; 
+    }
+    else {
+    	ctrl.setCssClass("");
+    }
+  } 
+}
+
+//--------------
+// Phone fields
+//--------------
+var phoneFields = form.currentPage.getControlsByModifier("phone");
+for each (var ctrl in phoneFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			//var regex = /^(\()?(\+44-|\+44|0)([- 0-9\(\)]{10,16}?)$/; // for british phone numbers
+			var regex = /^[-\s0-9\(\)]{10,16}$/;						// a more general regex for numbers of an appropriate length
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg102,[ctrl.field.labelText.text],false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+//--------------
+// National Insurance fields
+//--------------
+var nationalInsuranceFields = form.currentPage.getControlsByModifier("ni");
+for each (var ctrl in nationalInsuranceFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+				var regex = /^([A-CEGHJ-PR-TW-Z]){1}([A-CEGHJ-NPR-TW-Z]){1}([0-9]){2}([0-9]){2}([0-9]){2}([A-D ]){1}?$/i;
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg103,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage(ctrl.field.labelText.text+" is not a valid National Insurance number", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+
+//--------------
+// Council Tax Reference fields
+//--------------
+var CTAXFields = form.currentPage.getControlsByModifier("CTAX");
+for each (var ctrl in CTAXFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+				var regex = /^(7){1}([0-9]){7}([0-9]|x){1}?$/i;
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg104,[ctrl.field.labelText.text],false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+
+//--------------
+// Business Rates fields - NOT TESTED YET!!!
+//--------------
+var CTAXFields = form.currentPage.getControlsByModifier("NNDR");
+for each (var ctrl in CTAXFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+				var regex = /^(10){1}(\d){7}$/;
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg105,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage(ctrl.field.labelText.text+" is not a valid Business Rate reference", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+
+//--------------
+// Email fields
+//--------------
+var emailFields = form.currentPage.getControlsByModifier("email");
+for each (var ctrl in emailFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			var regex = /^(([^&lt;&gt;()[\]\\.,;:\s@\"]+(\.[^&lt;&gt;()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg106,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage(ctrl.field.labelText.text+" is not a valid email address", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+//----------------
+// Address fields
+//----------------
+var nameFields = form.currentPage.getControlsByModifier("address");
+for each (var ctrl in nameFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			var regex = /^[A-Za-z0-9\-\.,' ]*$/m;		
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				log("Error Control = " + ctrl.getElementName());
+				ctrl.addErrorMessageText(texts.msg107,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage("Address lines can only contain alphabetic, numeric, hyphen, full-stop or comma characters", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+//-----------------
+// Postcode fields
+//-----------------
+var postcodeFields = form.currentPage.getControlsByModifier("postcode");
+for each (var ctrl in postcodeFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			// To uppercase
+			ctrl.getField().setValue(value.toUpperCase());
+			// Remove spaces
+			var value = value.replace(/\s/g, "");
+    	var regex = /^[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}$/i;
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg108,[ctrl.field.labelText.text],false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+//--------------
+// Name fields
+//--------------
+var nameFields = form.currentPage.getControlsByModifier("name");
+for each (var ctrl in nameFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			var regex = /^[A-Za-z\-'\. ]*$/;		
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg109,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage(ctrl.field.labelText.text+" can only contain alphabetic, hyphen, full-stop or apostrophe characters", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+
+//----------------------------
+// Numeric (character) fields
+//----------------------------
+var numericFields = form.currentPage.getControlsByModifier("numeric");
+for each (var ctrl in numericFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			var regex = /^[0-9\.,]*$/;		
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg110,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage(ctrl.field.labelText.text+" can only contain numeric characters", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+//----------------------------
+// Integer (character) fields
+//----------------------------
+var numericFields = form.currentPage.getControlsByModifier("integer");
+for each (var ctrl in numericFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			var regex = /^[0-9]*$/;		
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg110,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage(ctrl.field.labelText.text+" can only contain numeric characters", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+//----------------------------
+// Currency fields
+//----------------------------
+var numericFields = form.currentPage.getControlsByModifier("currency");
+for each (var ctrl in numericFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			var regex = /^[0-9,]*(.[0-9]{2})?$/;
+			if(!regex.test(value)){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg111,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage(ctrl.field.labelText.text+" must be in currency format", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+
+
+////----------------------------
+//// Date fields
+////----------------------------
+//var dateFields = form.currentPage.getControlsByModifier("date");
+//for each (var ctrl in dateFields){
+//	if(ctrl.isShowing()){
+//		var value = ctrl.getField().value;
+//		log("Test Date Value = " + value);
+//		if(value){
+//			var regex = /^\d{2}\/\d{2}\/\d{4}$/;		
+//			if(!regex.test(value)){
+//				highlightFieldPanel(ctrl);
+//				ctrl.addErrorMessage(ctrl.field.labelText.text+" must be a valid date (" + value + ")", false);
+//				stopExecutionFlag = true;
+//			}
+//		}
+//	}
+//}
+
+
+
+//----------------------------
+// Future Date fields
+//----------------------------
+var futureDateFields = form.currentPage.getControlsByModifier("dateFuture");
+for each (var ctrl in futureDateFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			var today = new moment();
+			value = moment(value);
+			// if the value given is before today (to the precision of 1 day) this is an error
+			if(value.isBefore(today, 'day')){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg112,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage(ctrl.field.labelText.text+" must be a date in the future", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+//----------------------------
+// Past Date fields
+//----------------------------
+var pastDateFields = form.currentPage.getControlsByModifier("datePast");
+for each (var ctrl in pastDateFields){
+	if(ctrl.isShowing()){
+		var value = ctrl.getField().value;
+		if(value){
+			var today = new moment();
+			value = moment(value);
+			// if the value given is after today (to the precision of 1 day) this is an error
+			if(value.isAfter(today, 'day')){
+				highlightFieldPanel(ctrl);
+				ctrl.addErrorMessageText(texts.msg113,[ctrl.field.labelText.text],false);
+				//ctrl.addErrorMessage(ctrl.field.labelText.text+" must be a date in the past", false);
+				stopExecutionFlag = true;
+			}
+		}
+	}
+}
+
+//--------------
+// Bank Sort fields
+//--------------
+var phoneFields = form.currentPage.getControlsByModifier("sort");
+for each (var ctrl in phoneFields){
+   if(ctrl.isShowing()){
+        var value = ctrl.getField().value;
+        if(value){
+           var regex = /^(?:\d\d-\d\d-\d\d)$/;
+           if(!regex.test(value)){
+              highlightFieldPanel(ctrl);
+              ctrl.addErrorMessageText(texts.msg124,[ctrl.field.labelText.text],false);
+              stopExecutionFlag = true;
+           }
+        }
+   }
+}
+
+//--------------
+// Bank Account Number
+//--------------
+var phoneFields = form.currentPage.getControlsByModifier("bank_account_no");
+for each (var ctrl in phoneFields){
+   if(ctrl.isShowing()){
+      var value = ctrl.getField().value;
+      if(value){
+         var regex = /^(\d){7,8}$/;
+         if(!regex.test(value)){
+              highlightFieldPanel(ctrl);
+              ctrl.addErrorMessageText(texts.msg125,[ctrl.field.labelText.text],false);
+              stopExecutionFlag = true;
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+/**
+ * Highlight the Field Panel this control is in.
+ * &lt;br&gt;&lt;br&gt;
+ * Recursively looks up the tree for the first Field Panel.
+ * 
+ * @param ctrl The control to be highlighted 
+ */
+function highlightFieldPanel(ctrl){
+	if(ctrl.hasModifier("fieldPanel")){
+		log("Highlighting panel: " + ctrl.getElementName());
+		ctrl.setCssClass("error-panel");
+	}
+	else{
+		//log(" Parent CTRL = " + ctrl.parentControl.cssClass);
+		if(ctrl.parentControl){
+			highlightFieldPanel(ctrl.parentControl);	
+		}
+	}
+}
+
+
+
+//======================================
+// End here if not all fields are valid
+//======================================
+if(stopExecutionFlag){
+	//form.addErrorMessage("Please check the highlighted fields below", false);
+	event.owner.addErrorMessageText(texts.msg114);
+}
+</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Alternative Curricilum - Transport" database="SQLE648S1" table="true" preparedStatement="false" id="DECS_AC_TRANSPORT">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DECS_AC_Transport</from>
+        <fields>
+            <field id="TransportId" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="TransportName" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

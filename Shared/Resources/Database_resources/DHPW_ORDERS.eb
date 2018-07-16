@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="DHPW_ORDERS">
+        <columns>*</columns>
+        <from>DHPW_Orders_Test.dbo.Orders</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Access" type="VARCHAR" length="200"/>
+            <field id="Area" type="VARCHAR" length="50"/>
+            <field id="BMO_Informed" type="VARCHAR" length="50"/>
+            <field id="BS_Logged" type="VARCHAR" length="50"/>
+            <field id="BS_O_Num" type="VARCHAR" length="50"/>
+            <field id="BS_R_Num" type="VARCHAR" length="50"/>
+            <field id="Building" type="VARCHAR" length="50"/>
+            <field id="Comments" type="VARCHAR" length="500"/>
+            <field id="Contact_No" type="VARCHAR" length="50"/>
+            <field id="Contractor" type="VARCHAR" length="50"/>
+            <field id="Courtesy_Call" type="VARCHAR" length="50"/>
+            <field id="Det_Code" type="VARCHAR" length="50"/>
+            <field id="Details" type="VARCHAR" length="500"/>
+            <field id="Emailed_to_C" type="VARCHAR" length="50"/>
+            <field id="Estimate" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Exp_Code" type="VARCHAR" length="50"/>
+            <field id="Form_Type" type="VARCHAR" length="50"/>
+            <field id="Job_Number" type="VARCHAR" length="50"/>
+            <field id="Location" type="VARCHAR" length="200"/>
+            <field id="Minor_Framework" length="1"/>
+            <field id="Order_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Order_number" type="VARCHAR" length="50"/>
+            <field id="Over_Limit" type="VARCHAR" length="50"/>
+            <field id="Reject_Reason" type="VARCHAR" length="500"/>
+            <field id="Req_By" type="VARCHAR" length="50"/>
+            <field id="Req_Date" type="TIMESTAMP" length="16"/>
+            <field id="Req_Time" type="VARCHAR" length="16"/>
+            <field id="Res_Other" type="VARCHAR" length="100"/>
+            <field id="Response" type="VARCHAR" length="50"/>
+            <field id="Status" type="VARCHAR" length="50"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="BS_Send" type="VARCHAR" length="50"/>
+            <field id="BS_Sent_To" type="VARCHAR" length="50"/>
+            <field id="AB_Attached" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

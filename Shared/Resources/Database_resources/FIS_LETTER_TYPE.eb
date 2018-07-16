@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_LETTER_TYPE">
+        <columns>*</columns>
+        <from>eyears_test.dbo.letter_type</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PROVIDER_TYPE_LETTER</where>
+        <fields>
+            <field id="LTYPE_ADMTYPE" type="INTEGER" length="10"/>
+            <field id="LTYPE_DISPLAYCATCHMENTCOUNTS" type="INTEGER" length="10"/>
+            <field id="LTYPE_DISPLAYCOUNTS" type="INTEGER" length="10"/>
+            <field id="LTYPE_DISPLAYPARISHCOUNTS" type="INTEGER" length="10"/>
+            <field id="LTYPE_MULTIPLECATCH" type="INTEGER" length="10"/>
+            <field id="LTYPE_REM1" type="VARCHAR" length="100"/>
+            <field id="LTYPE_REM2" type="VARCHAR" length="100"/>
+            <field id="LTYPE_REM3" type="VARCHAR" length="100"/>
+            <field id="LTYPE_respdue" type="INTEGER" length="10"/>
+            <field id="WHERE_CLAUSE_PROVIDER_TYPE_LETTER" type="NUMERIC" length="500" persistent="false"/>
+            <field id="ltype_Inactive" type="INTEGER" length="10"/>
+            <field id="ltype_amend" type="INTEGER" length="10"/>
+            <field id="ltype_code" type="VARCHAR" length="10"/>
+            <field id="ltype_desc" type="VARCHAR" length="80"/>
+            <field id="ltype_docname" type="VARCHAR" length="100"/>
+            <field id="ltype_due_days" type="INTEGER" length="10"/>
+            <field id="ltype_event_type" type="BIT" length="1"/>
+            <field id="ltype_fsmb_travel" type="BIT" length="1"/>
+            <field id="ltype_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="ltype_inc_all_pupils" type="BIT" length="1"/>
+            <field id="ltype_inc_clothing_pupils" type="BIT" length="1"/>
+            <field id="ltype_inc_entitled_pupils" type="BIT" length="1"/>
+            <field id="ltype_inc_fsm_pupils" type="BIT" length="1"/>
+            <field id="ltype_maxrem" type="INTEGER" length="10"/>
+            <field id="ltype_module_template" type="BIT" length="1"/>
+            <field id="ltype_noprint" type="INTEGER" length="10"/>
+            <field id="ltype_process_tables" type="BIT" length="1"/>
+            <field id="ltype_remind1" type="INTEGER" length="10"/>
+            <field id="ltype_rtype" type="INTEGER" length="10"/>
+            <field id="ltype_subrem" type="INTEGER" length="10"/>
+            <field id="ltype_upd_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="ltype_upd_user" type="VARCHAR" length="128"/>
+            <field id="tblAPPLICATION" type="INTEGER" length="10"/>
+            <field id="tblLU_MODULES" type="INTEGER" length="10"/>
+            <field id="tbllu_responsibility" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource description="email to thank the user for requesting the service to us" accountName="localhost" from="forms@ceredigion.gov.uk" to="&amp;&amp;CONTACT_EMAIL" subject="Diolch am adroddiadu'r problem amdano : &amp;&amp;PROBLEM_TYPE_CY : Thank you for reporting the problem about: &amp;&amp;PROBLEM_TYPE_EN" html="true" id="GIS_ISSUE_REQUESTED">
+        <message>I drafod y broblem hyn ym mhellach gyda'r Cyngor defnyddiwch rhoddwch ebost i'r cyfeiriad isod gan gynnwys Rhif Broblem islaw. &lt;br&gt; For any further contact with the Council about this problem please email the address below, referencing the Problem Number below &lt;br&gt; &lt;br&gt;
+
+Rhif Broblem/Problem Number :- &lt;b&gt; &amp;&amp;ISSUE_REF &lt;/b&gt;</message>
+        <fields>
+            <field id="CONTACT_EMAIL"/>
+            <field id="ISSUE_REF"/>
+            <field id="PROBLEM_TYPE_CY"/>
+            <field id="PROBLEM_TYPE_EMAIL"/>
+            <field id="PROBLEM_TYPE_EN"/>
+        </fields>
+    </emailResource>
+</ebase>

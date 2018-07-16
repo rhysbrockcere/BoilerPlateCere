@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/LogonService/cccLogin" id="LoginLogic" dateCreated="2016-10-06T11:51:36.305+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api); 
+importPackage(com.ebasetech.xi.services); 
+
+var userid = fields.PARAM1_VALUE.value.trim();
+
+if(getUser(userid)){
+	readUserCustomCredentials(userid);
+	readUserRoles(userid);
+}
+else { 
+	fields.ERRORCODE.value = "Authentication failed:";
+	fields.ERRORDESCRIPTION.value = "Unable to verify your username. Please contact the ICT Servicedesk on 3205 for assistance.";
+	fields.ERRORDESCRIPTION.value += " Username = " + userid; 
+}
+
+
+/************** FUNCTIONS **************/
+
+/** 
+* Checking userid against the database to make sure it exists
+* 
+* @param {string} userid 
+* @return {boolean} 
+*/ 
+
+function getUser(userid){ 
+	log ("Getting username ... " + userid);
+
+  fields.Username.value = userid;
+  resources.CeriExtract.fetch();
+
+  //check if login pwd matches the password from the database 
+  if(system.variables.$FOUND.value == 'Y'){ 
+     return true; 
+  }
+  else {
+		return false;    	
+  }
+}
+
+/** 
+* 
+* Takes an userid and populates USER_ROLES and CUSTOMROLE Table
+* * 
+* @param {string} userid 
+*/ 
+function readUserRoles(userid){
+	log ("Getting roles for username ... " + userid);
+ 	tables.Roles.Username.value = userid; 
+ 	var roles = tables.Roles.fetchTable(); 
+ 
+ 	tables.CUSTOMROLE.copyTable(tables.Roles, false); 
+ 	tables.CUSTOMROLE.updateTable(); 
+} 
+
+/** 
+* 
+* Takes an userid and populates the CREDENTIAL Table
+* * 
+* @param {string} userid 
+*/ 
+
+function readUserCustomCredentials(userid){ 
+
+	log("Getting credentials for username... " + userid);
+	
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Username";
+	tables.CREDENTIAL.VALUE.value = fields.Username.value;
+
+	//Ceri Position_ID
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Position_ID";
+	tables.CREDENTIAL.VALUE.value = fields.Position_ID.value;
+	
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Name";
+	tables.CREDENTIAL.VALUE.value = fields.Name.value;
+	
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Email";
+	tables.CREDENTIAL.VALUE.value = fields.Email.value;
+
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Position_Name";
+	tables.CREDENTIAL.VALUE.value = fields.Position_Name.value;
+
+	//Ceri Team ID
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Team_ID";
+	tables.CREDENTIAL.VALUE.value = fields.Team_ID.value;
+	
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Team_Name";
+	tables.CREDENTIAL.VALUE.value = fields.Team_Name.value;
+
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Manager_Username";
+	tables.CREDENTIAL.VALUE.value = fields.Man_Username.value;
+	
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Manager_Name";
+	tables.CREDENTIAL.VALUE.value = fields.Manager.value;
+
+	tables.CREDENTIAL.insertRow();
+	tables.CREDENTIAL.ID.value = "Manager_Email";
+	tables.CREDENTIAL.VALUE.value = fields.Man_Email.value;
+		
+	tables.CREDENTIAL.updateTable();
+} </scriptText>
+    </script>
+</ebase>

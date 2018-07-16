@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_JOB_DES_OTHER">
+        <columns>*</columns>
+        <from>CE_Personnel_TEST.dbo.CE_Job_Des_Other</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="JOB_ID" type="BIGINT" length="19"/>
+            <field id="Job_Des" type="VARCHAR" length="213" readOnly="true"/>
+            <field id="Job_Des_ID" type="BIGINT" length="19"/>
+            <field id="Section" type="VARCHAR" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

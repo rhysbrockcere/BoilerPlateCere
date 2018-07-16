@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DECS - Sick Table in HR Database" database="DECSSQL" preparedStatement="false" nativeSql="true" id="DECS_HR_SICK">
+        <columns>*</columns>
+        <from>LEA_Database.dbo.tbl_Sick</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <select>select * 
+from HR.dbo.tbl_Absence 
+where &amp;&amp;WHERE_CLAUSE</select>
+        <update>update HR.dbo.tbl_Absence 
+set ContractID=&amp;&amp;ContractID,TotalYearDays =&amp;&amp;TotalYearDays,EndDate=&amp;&amp;EndDate,Hours=&amp;&amp;Hours,LeaveType=&amp;&amp;LeaveType,NI=&amp;&amp;NI,Reason=&amp;&amp;MainReason,DaysTaken=&amp;&amp;DaysTaken,SickID=&amp;&amp;SickID,StartDate=&amp;&amp;StartDate 
+where &amp;&amp;WHERE_CLAUSE</update>
+        <delete>delete from HR.dbo.tbl_Absence 
+where &amp;&amp;WHERE_CLAUSE</delete>
+        <insert>insert into HR.dbo.tbl_Absence 
+(ContractID,TotalYearDays,EndDate,Hours,LeaveType,NI,Reason,DaysTaken ,SickID,StartDate) 
+values(&amp;&amp;ContractID,&amp;&amp;TotalYearDays,&amp;&amp;EndDate,&amp;&amp;Hours,&amp;&amp;LeaveType,&amp;&amp;NI,&amp;&amp;MainReason,&amp;&amp;DaysTaken,&amp;&amp;SickID,&amp;&amp;StartDate)</insert>
+        <fields>
+            <field id="ContractID" type="VARCHAR" length="50"/>
+            <field id="Hours" type="DECIMAL" length="18"/>
+            <field id="EndDate" type="TIMESTAMP" length="19"/>
+            <field id="LeaveType" type="VARCHAR" length="50"/>
+            <field id="MainReason" type="VARCHAR" length="50"/>
+            <field id="NI" type="VARCHAR" length="9"/>
+            <field id="DaysTaken" type="DECIMAL" length="18"/>
+            <field id="SickID" type="VARCHAR" length="50"/>
+            <field id="StartDate" type="TIMESTAMP" length="19"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="TotalYearDays" type="DECIMAL" length="18"/>
+        </fields>
+    </dbResource>
+</ebase>

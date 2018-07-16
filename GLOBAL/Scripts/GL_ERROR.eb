@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Components/CMP_ADDR_BSP" preferredComponentProject="GLOBAL" id="GL_ERROR" dateCreated="2013-02-12T15:26:34.460Z" dateImported="2016-10-10T14:17:43.290+01:00">
+        <scriptText>set ERRORCMP_ERROR__ERROR_TRAP = '';
+set ERRORCMP_ERROR__ERROR_MESSAGE_CODE = '';
+
+if [endswith($ABORT_MESSAGE, 'has been chosen as the deadlock victim. Rerun the transaction.')]
+	set ERRORCMP_ERROR__ERROR_TRAP = 'Y';
+	log $ABORT_MESSAGE;
+	//set ERROR_MESSAGE_CODE = '100053'; // -- DM - Edited prefix - 27/08/2014
+	set ERRORCMP_ERROR__ERROR_MESSAGE_CODE = '100053';
+endif
+
+if [endswith($ABORT_MESSAGE, 'resulted in an out-of-range value.')]
+	set ERRORCMP_ERROR__ERROR_TRAP = 'Y';
+	log $ABORT_MESSAGE;
+	//set ERROR_MESSAGE_CODE = '100054'; // -- DM - Edited prefix - 27/08/2014
+	set ERRORCMP_ERROR__ERROR_MESSAGE_CODE = '100054';
+endif
+
+if [ERRORCMP_ERROR__PRIORITY = '1']
+	callscript GL_ERROR_EMAIL_PRIORITY;
+endif
+
+if [ERRORCMP_ERROR__ERROR_TRAP != 'Y']
+	set JSP_LEFT = null;
+	if [$UFS_SERVER_NAME = 'eformspub4.ceredigion.gov.uk' or $UFS_SERVER_NAME = 'forms.ceredigion.gov.uk']
+		set ERRORCMP_ERROR__ERROR_TEXT_EN = 'This form has encountered an &lt;b&gt;error&lt;/b&gt;, The details of the error have been logged for further investigation &lt;br&gt; &lt;br&gt; Please try again later or you can email &lt;a href=&quot;mailto:servicedesk@ceredigion.gov.uk&quot;&gt;servicedesk@ceredigion.gov.uk&lt;/a&gt; for more information';
+		set ERRORCMP_ERROR__ERROR_TEXT_CY = 'Mae\'r ffurflen hyn wedi bwrw &lt;b&gt;problem&lt;/b&gt;, Mae\'r manylion o\'r broblem wedi ei nodi am ymholiadau pellach. Ceisiwch eto mewn ychydig amser new ebostiwch &lt;a href=&quot;mailto:servicedesk@ceredigion.gov.uk&quot;&gt;servicedesk@ceredigion.gov.uk&lt;/a&gt; am fwy o fanylion';
+	endif
+	hide ERRORCMP_ERROR__THANK_YOU on ERROR_PAGE;
+endif
+
+log $ABORT_MESSAGE;
+goto page ERROR_PAGE;</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLREGISTRATION_TRAIN_NEED">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblREGISTRATION_TRAIN_NEED</from>
+        <where>rtneed_id=&amp;&amp;rtneed_id</where>
+        <fields>
+            <field id="rtneed_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="rtneed_id" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="rtneed_identby" type="VARCHAR" length="100"/>
+            <field id="tblLU_TRAIN_NEED" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

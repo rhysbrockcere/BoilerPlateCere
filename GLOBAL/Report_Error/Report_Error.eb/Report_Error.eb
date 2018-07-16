@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm formHeaderTextRef="Txt1i69su" htmlTitleTextRef="Txt1DI3KD" finishButtonTextRef="Txt2bp9e1" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/Report_Error" id="Report_Error" dateCreated="2018-04-03T14:09:58.223+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+        </sharedFunctionScripts>
+        <resources>
+            <resource name="Int_Error_Email" path="/Report_Error/Int_Error_Email"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt5UQjcl" restoreButtonTextRef="Txt74wCS4" saveInfoTextRef="Txt6AWlFL" restoreInfoTextRef="Txt6Bx6mD"/>
+        <finalPage headerTextRef="Txt5DJ0pw" infoTextRef="Txt3Kb8Fj" returnTextRef="Txt3uYw4X" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

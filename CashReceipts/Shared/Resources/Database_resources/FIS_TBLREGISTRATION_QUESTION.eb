@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="FIS_TBLREGISTRATION_QUESTION">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblREGISTRATION_QUESTION</from>
+        <where>regquest_id=&amp;&amp;regquest_id</where>
+        <fields>
+            <field id="regquest_id" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="regquest_no" type="SMALLINT" length="5"/>
+            <field id="regquest_notes" type="VARCHAR" length="4000"/>
+            <field id="regquest_yes" type="SMALLINT" length="5"/>
+            <field id="tblLU_QUESTIONS" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

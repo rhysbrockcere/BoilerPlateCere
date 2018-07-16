@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="DESH_IMPOUNDED_DOGS_TBL">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.DESH_Impounded_Dogs</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <additional>ORDER BY Impound_Date DESC, Number DESC</additional>
+        <fields>
+            <field id="Action" type="VARCHAR" length="100"/>
+            <field id="Dog" type="VARCHAR" length="50"/>
+            <field id="Action_Date" type="TIMESTAMP" length="16"/>
+            <field id="Action_Days" type="VARCHAR" length="50"/>
+            <field id="Found" type="VARCHAR" length="100"/>
+            <field id="Gender" type="VARCHAR" length="50"/>
+            <field id="Impound_Date" type="TIMESTAMP" length="16"/>
+            <field id="Kennel" type="VARCHAR" length="50"/>
+            <field id="Kennel_ID" type="BIGINT" length="19"/>
+            <field id="Number" type="BIGINT" length="19"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="Warden" type="VARCHAR" length="50"/>
+            <field id="Comment" type="VARCHAR" length="500"/>
+        </fields>
+    </dbResource>
+</ebase>

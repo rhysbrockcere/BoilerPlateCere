@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="JE_SUP_TEMP_CIRCLE_COUNT">
+        <columns>*</columns>
+        <from>JE_2012.dbo.Sup_Temp_Circle_Count</from>
+        <fields>
+            <field id="Revised_circle_type" type="VARCHAR" length="255"/>
+            <field id="Circle_Count" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

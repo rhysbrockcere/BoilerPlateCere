@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Access_Request">
+        <fieldMapping resourceField="User_Email" field="User"/>
+        <fieldMapping resourceField="ACTION" field="err_Action"/>
+        <fieldMapping resourceField="CATEGORY" field="err_Category"/>
+        <fieldMapping resourceField="TEAM" field="err_Team"/>
+    </resourceMapping>
+    <resourceMapping id="Error_Email">
+        <fieldMapping resourceField="Error_Message" field="err_Message"/>
+    </resourceMapping>
+    <resourceMapping id="Int_Error_Email">
+        <fieldMapping resourceField="Error_Message" field="err_Message"/>
+    </resourceMapping>
+</resourceMappings>

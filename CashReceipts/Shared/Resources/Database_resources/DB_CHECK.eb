@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="DB Check" database="**Dynamic" id="DB_CHECK">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblLU_WARD</from>
+        <where>ID IS NOT NULL</where>
+        <select>select * from eyears_test.dbo.tblLU_WARD
+where id is not null</select>
+    </dbResource>
+</ebase>

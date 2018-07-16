@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLS1_CASH2012" table="true" preparedStatement="false" id="AIM_M_FUND">
+        <columns>*</columns>
+        <from>Aim_Cer_Test.dbo.AIM_M_FUND</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Abbr" length="5"/>
+            <field id="Active" type="BIT" length="1"/>
+            <field id="Allow_Invalid_Ref" type="BIT" length="1"/>
+            <field id="Allow_Overpayment" type="BIT" length="1"/>
+            <field id="Amt_Limit" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Apply_Postage" type="BIT" length="1"/>
+            <field id="Balance_Amount_Handling" length="1"/>
+            <field id="Balance_Display_Code" length="5"/>
+            <field id="Balance_Display_Type" length="1"/>
+            <field id="Balance_Function" type="VARCHAR" length="25"/>
+            <field id="Balance_Lookup" length="1"/>
+            <field id="Balance_Suspect" type="BIT" length="1"/>
+            <field id="Cash_Method_Code" length="5"/>
+            <field id="Cheque_Encashment" type="BIT" length="1"/>
+            <field id="Cheque_Method_Code" length="5"/>
+            <field id="Chksum_Code" length="5"/>
+            <field id="Default_Narrative" length="1"/>
+            <field id="Deleted" type="BIT" length="1"/>
+            <field id="Department_APN_Receipt_Address" type="BIT" length="1"/>
+            <field id="Department_APN_Receipt_Name" type="VARCHAR" length="255"/>
+            <field id="Description" type="VARCHAR" length="50"/>
+            <field id="DllProc" length="5"/>
+            <field id="DllProc2" length="5"/>
+            <field id="EMail" type="VARCHAR" length="255"/>
+            <field id="Export_As_Summary" type="BIT" length="1"/>
+            <field id="Fixed_Amt" type="BIT" length="1"/>
+            <field id="FloatType" length="1"/>
+            <field id="Fund_Code" length="5" key="true"/>
+            <field id="Fund_Type" type="VARCHAR" length="2"/>
+            <field id="Fund_Type_Code" length="1"/>
+            <field id="Item_Config_Code" length="5"/>
+            <field id="Item_Type" length="1"/>
+            <field id="Last_Updated" type="INTEGER" length="10"/>
+            <field id="Last_User_Code" length="5"/>
+            <field id="LedgerDesc" length="1"/>
+            <field id="Ledger_Code" type="VARCHAR" length="50"/>
+            <field id="Ledger_Code_Contra" type="VARCHAR" length="50"/>
+            <field id="Mask_Code" length="5"/>
+            <field id="Max_length" type="SMALLINT" length="5"/>
+            <field id="Merchant_Code" length="5"/>
+            <field id="Min_Amt_Limit" type="DECIMAL" length="19" fractionalDigits="4"/>
+            <field id="Min_Length" type="SMALLINT" length="5"/>
+            <field id="Narrative_Action" length="1"/>
+            <field id="Narrative_Function" type="VARCHAR" length="25"/>
+            <field id="Negative_Fund" type="BIT" length="1"/>
+            <field id="Opening_Bal_Exp" type="VARCHAR" length="50"/>
+            <field id="Overwrite_Name" length="1"/>
+            <field id="Payments_Made_Exp" type="VARCHAR" length="50"/>
+            <field id="Prefix" type="VARCHAR" length="50"/>
+            <field id="Range_Check_Exclusive" type="BIT" length="1"/>
+            <field id="Range_Code" length="5"/>
+            <field id="Receipt_Reqd" type="BIT" length="1"/>
+            <field id="Ref_Mask_Code" length="5"/>
+            <field id="Ref_Zero_Bal_Site_ID" type="INTEGER" length="10"/>
+            <field id="ReferenceLength" type="SMALLINT" length="5"/>
+            <field id="ReferenceStart" type="SMALLINT" length="5"/>
+            <field id="Remaining_Bal_Exp" type="VARCHAR" length="50"/>
+            <field id="Restrict_ACR" type="BIT" length="1"/>
+            <field id="Restrict_PayeNet" type="BIT" length="1"/>
+            <field id="Site_Id" type="SMALLINT" length="5" key="true"/>
+            <field id="Skip_Fund" type="BIT" length="1"/>
+            <field id="Split_Code" length="5"/>
+            <field id="Subref_Active" type="BIT" length="1"/>
+            <field id="Subref_Chksum_Code" length="5"/>
+            <field id="Subref_Mask_Code" length="5"/>
+            <field id="Subref_Max_Length" type="SMALLINT" length="5"/>
+            <field id="Subref_Prefix" type="VARCHAR" length="50"/>
+            <field id="Subref_Range_Code" length="5"/>
+            <field id="Subref_Validation_Action" length="1"/>
+            <field id="Suspect_Till_Date" type="INTEGER" length="10"/>
+            <field id="TransferNarr_Action" length="1"/>
+            <field id="Transfer_Narrative_Function" length="5"/>
+            <field id="Transfer_Remarks_Mask" length="5"/>
+            <field id="Update_Balance" type="BIT" length="1"/>
+            <field id="UseSeparateFloat" type="BIT" length="1"/>
+            <field id="Use_Surcharges" type="BIT" length="1"/>
+            <field id="VAT_Action" length="1"/>
+            <field id="VAT_Code" length="5"/>
+            <field id="Valid_Amt" type="VARCHAR" length="100"/>
+            <field id="Validation_Action" length="1"/>
+            <field id="Zero_Balance_Error_ID" type="BIGINT" length="19"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

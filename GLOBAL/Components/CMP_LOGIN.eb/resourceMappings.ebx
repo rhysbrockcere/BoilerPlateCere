@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="IT_ACCESS_LOG">
+        <fieldMapping resourceField="Details" field="ACCESS_DETAILS"/>
+        <fieldMapping resourceField="Access_Time" field="ACCESS_TIME"/>
+        <fieldMapping resourceField="Application" field="APP"/>
+        <fieldMapping resourceField="Server" field="APP_SERVER"/>
+        <fieldMapping resourceField="System_Name" field="LOGIN_FOP_SYSTEM_NAME"/>
+        <fieldMapping resourceField="Username" field="USERNAME"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="IT_ACCESS_LOG_LIVE">
+        <fieldMapping resourceField="Details" field="ACCESS_DETAILS"/>
+        <fieldMapping resourceField="Access_Time" field="ACCESS_TIME"/>
+        <fieldMapping resourceField="Application" field="APP"/>
+        <fieldMapping resourceField="Server" field="APP_SERVER"/>
+        <fieldMapping resourceField="System_Name" field="LOGIN_FOP_SYSTEM_NAME"/>
+        <fieldMapping resourceField="Username" field="USERNAME"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="IT_APPLICATION">
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="IT_APPLICATION_USER">
+        <fieldMapping resourceField="Code1" field="CODE1"/>
+        <fieldMapping resourceField="Code2" field="CODE2"/>
+        <fieldMapping resourceField="Code3" field="CODE3"/>
+        <fieldMapping resourceField="Code4" field="CODE4"/>
+        <fieldMapping resourceField="Code5" field="CODE5"/>
+        <fieldMapping resourceField="User_Type" field="USER_TYPE"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="IT_LOCKED_OUT">
+        <fieldMapping resourceField="LOGIN_FOP_SYSTEM_NAME" field="LOGIN_FOP_SYSTEM_NAME"/>
+        <fieldMapping resourceField="SERVER" field="SERVER"/>
+        <fieldMapping resourceField="USERNAME" field="USERNAME"/>
+    </resourceMapping>
+    <resourceMapping id="IT_PHONEBOOK_DETAILS_VW">
+        <fieldMapping resourceField="DepartmentName" field="DEPARTMENTNAME"/>
+        <fieldMapping resourceField="Dept" field="DEPT"/>
+        <fieldMapping resourceField="Email" field="EMAIL"/>
+        <fieldMapping resourceField="employeeID" field="EMPLOYEEID"/>
+        <fieldMapping resourceField="Firstname" field="FIRSTNAME"/>
+        <fieldMapping resourceField="HOME_COST_CODE" field="HOME_COST_CODE"/>
+        <fieldMapping resourceField="Job_Title" field="JOB_TITLE"/>
+        <fieldMapping resourceField="Location" field="LOCATION"/>
+        <fieldMapping resourceField="manager" field="MANAGER"/>
+        <fieldMapping resourceField="SectionName" field="SECTIONNAME"/>
+        <fieldMapping resourceField="Status" field="STATUS"/>
+        <fieldMapping resourceField="Surname" field="SURNAME"/>
+        <fieldMapping resourceField="Username" field="USERNAME"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="IT_PHONEBOOK_PASSWORDS">
+        <fieldMapping resourceField="Access_Attempts" field="ACCESS_ATTEMPTS"/>
+        <fieldMapping resourceField="Attempts_Logged" field="ATTEMPTS_LOGGED"/>
+        <fieldMapping resourceField="Date_Changed" field="DATE_CHANGED"/>
+        <fieldMapping resourceField="Login_Attempts" field="LOGIN_ATTEMPTS"/>
+        <fieldMapping resourceField="Password" field="PASSWORD"/>
+        <fieldMapping resourceField="Password_Change" field="PASSWORD_CHANGE"/>
+        <fieldMapping resourceField="ID" field="PID"/>
+        <fieldMapping resourceField="Username" field="USERNAME"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="IT_PHONEBOOK_PASSWORD_CHECK">
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="IT_PHONEBOOK_PASSWORD_VW">
+        <fieldMapping resourceField="Access_Attempts" field="ACCESS_ATTEMPTS"/>
+        <fieldMapping resourceField="Attempts_Logged" field="ATTEMPTS_LOGGED"/>
+        <fieldMapping resourceField="Date_Changed" field="DATE_CHANGED"/>
+        <fieldMapping resourceField="Dept" field="DEPT"/>
+        <fieldMapping resourceField="Login_Attempts" field="LOGIN_ATTEMPTS"/>
+        <fieldMapping resourceField="Password" field="PASSWORD"/>
+        <fieldMapping resourceField="Password_Change" field="PASSWORD_CHANGE"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="IT_PHONEBOOK_USER">
+        <fieldMapping resourceField="E_Name" field="ENK_USER"/>
+        <fieldMapping resourceField="Username" field="USERNAME"/>
+    </resourceMapping>
+    <resourceMapping id="IT_PWD_REQUEST">
+        <fieldMapping resourceField="EMAIL_PASSWORD" field="EMAIL_PASSWORD"/>
+        <fieldMapping resourceField="FOP_EMAIL" field="FOP_EMAIL"/>
+    </resourceMapping>
+    <resourceMapping id="IT_SYSTEM_CLOSED">
+        <fieldMapping resourceField="LOGIN_FOP_SYSTEM_NAME" field="LOGIN_FOP_SYSTEM_NAME"/>
+        <fieldMapping resourceField="SERVER" field="SERVER"/>
+        <fieldMapping resourceField="USERNAME" field="USERNAME"/>
+    </resourceMapping>
+</resourceMappings>

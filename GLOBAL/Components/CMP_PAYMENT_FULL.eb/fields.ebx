@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="APPLYSURCHARGE" type="CHAR" labelTextRef="TXT8_2" maxLength="1" displayType="TEXT" displayLength="1" id="660">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="AUTHCODE" type="CHAR" labelTextRef="TXT9_2" maxLength="50" displayType="TEXT" displayLength="50" id="670">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="AUTHDETAIL_AMOUNT" type="NUMBER" labelTextRef="TXT10_2" displayType="TEXT" id="680"/>
+    <field name="AUTHDETAIL_CAN" type="INTEGER" labelTextRef="TXT11_2" displayType="TEXT" id="690">
+        <validators>
+            <validator type="DEC_DIG"/>
+            <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+            <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+        </validators>
+    </field>
+    <field name="AUTHDETAIL_MESSAGE" type="CHAR" labelTextRef="TXT12_2" maxLength="50" displayType="TEXT" displayLength="50" id="700">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="BACKURL" type="CHAR" labelTextRef="TXT13_2" maxLength="2048" displayType="TEXT" displayLength="60" id="710">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="CANCELURL" type="CHAR" labelTextRef="TXT14_2" maxLength="2048" displayType="TEXT" displayLength="60" id="720">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="CARDHOLDERNAME" type="CHAR" labelTextRef="TXT15" maxLength="50" displayType="TEXT" displayLength="50" id="730">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="CART_MAXAMOUNT" type="INTEGER" labelTextRef="TXT16" displayType="TEXT" id="740">
+        <validators>
+            <validator type="DEC_DIG"/>
+            <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+            <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+        </validators>
+    </field>
+    <field name="CART_MINAMOUNT" type="INTEGER" labelTextRef="TXT17" displayType="TEXT" id="750">
+        <validators>
+            <validator type="DEC_DIG"/>
+            <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+            <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+        </validators>
+    </field>
+    <field name="EMAIL_I" type="CHAR" labelTextRef="TXT175" displayType="TEXT" id="1950"/>
+    <field name="EMAIL_X" type="CHAR" labelTextRef="TXT176" displayType="TEXT" id="1960"/>
+    <field name="ERRORCODE" type="CHAR" labelTextRef="TXT234" displayType="TEXT" id="1920"/>
+    <field name="FIRSTPORTALSTAGE" type="INTEGER" labelTextRef="TXT18" displayType="TEXT" id="760">
+        <validators>
+            <validator type="DEC_DIG"/>
+            <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+            <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+        </validators>
+    </field>
+    <field name="FOCUS_FIELD" type="CHAR" labelTextRef="TXT159" displayType="TEXT" id="30"/>
+    <field name="FOP_FILE" type="CHAR" labelTextRef="TXT145" displayType="TEXT" html="true" id="780"/>
+    <field name="LANGUAGE" type="CHAR" labelTextRef="TXT19" maxLength="2" displayType="TEXT" displayLength="2" id="790">
+        <validators>
+            <validator type="MIN_LENGTH" value="2"/>
+        </validators>
+    </field>
+    <field name="MOP" type="CHAR" labelTextRef="TXT20" maxLength="5" displayType="TEXT" displayLength="5" id="800">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="NUMBER" type="CHAR" labelTextRef="TXT21" maxLength="50" displayType="TEXT" displayLength="50" id="810">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="PAYMENTID" type="INTEGER" labelTextRef="TXT241" displayType="TEXT" id="1930"/>
+    <field name="PAY_DATE" type="DATETIME" labelTextRef="TXT218" displayType="TEXT" id="1750"/>
+    <field name="PAY_STATUS" type="CHAR" labelTextRef="TXT242" maxLength="50" displayType="TEXT" displayLength="50" id="1940">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PORTAL_STATUS" type="CHAR" labelTextRef="TXT162" maxLength="50" displayType="TEXT" displayLength="50" id="820">
+        <validators>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="REQSTATUS_MESSAGE" type="CHAR" labelTextRef="TXT22" maxLength="2048" displayType="TEXT" displayLength="60" id="830">
+        <validators>
+            <validator type="MIN_LENGTH" value="0"/>
+        </validators>
+    </field>
+    <field name="REQUESTID" type="CHAR" labelTextRef="TXT23" maxLength="50" displayType="TEXT" displayLength="50" id="840">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="RESPONSECODE" type="CHAR" labelTextRef="TXT25" maxLength="50" displayType="TEXT" displayLength="50" id="860">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="RES_AUTHCODE" type="INTEGER" labelTextRef="TXT97" displayType="TEXT" id="450">
+        <validators>
+            <validator type="DEC_DIG"/>
+            <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+            <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+        </validators>
+    </field>
+    <field name="RES_AUTHDETAIL_AMOUNT" type="INTEGER" labelTextRef="TXT98" displayType="TEXT" id="460">
+        <validators>
+            <validator type="DEC_DIG"/>
+            <validator type="MIN_VALUE_INCLUSIVE" value="-32768"/>
+            <validator type="MAX_VALUE_INCLUSIVE" value="32767"/>
+        </validators>
+    </field>
+    <field name="RES_AUTHDETAIL_CAN" type="INTEGER" labelTextRef="TXT99" displayType="TEXT" id="470">
+        <validators>
+            <validator type="DEC_DIG"/>
+            <validator type="MIN_VALUE_INCLUSIVE" value="-32768"/>
+            <validator type="MAX_VALUE_INCLUSIVE" value="32767"/>
+        </validators>
+    </field>
+    <field name="RES_AUTHDETAIL_MESSAGE" type="CHAR" labelTextRef="TXT100" displayType="TEXT" id="480"/>
+    <field name="RES_MOP" type="CHAR" labelTextRef="TXT101" displayType="TEXT" id="540"/>
+    <field name="RES_REQSTATUS_MESSAGE" type="CHAR" labelTextRef="TXT102" displayType="TEXT" id="550"/>
+    <field name="RES_REQUESTID" type="CHAR" labelTextRef="TXT103" displayType="TEXT" id="560"/>
+    <field name="RES_RESPONSECODE" type="CHAR" labelTextRef="TXT104" displayType="TEXT" id="570"/>
+    <field name="RES_STATUSCODE" type="CHAR" labelTextRef="TXT105" displayType="TEXT" id="580"/>
+    <field name="RES_SURCHARGE_AMOUNT" type="INTEGER" labelTextRef="TXT133" displayType="TEXT" id="590"/>
+    <field name="RES_SURCHARGE_FUNDCODE" type="CHAR" labelTextRef="TXT134" displayType="TEXT" id="600"/>
+    <field name="RES_SURCHARGE_REFERENCE" type="CHAR" labelTextRef="TXT146" displayType="TEXT" id="610"/>
+    <field name="RES_XML" type="CHAR" labelTextRef="TXT125" maxLength="5000" displayType="TEXT" id="620"/>
+    <field name="RETURNURL" type="CHAR" labelTextRef="TXT26" maxLength="2048" displayType="TEXT" displayLength="60" id="1000">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="SINGLE_DESC" type="CHAR" labelTextRef="TXT95" displayType="TEXT" id="630"/>
+    <field name="SINGLE_FEE" type="CURRENCY" labelTextRef="TXT150" displayType="TEXT" id="640"/>
+    <field name="SOURCE" type="CHAR" labelTextRef="TXT27" maxLength="1" displayType="TEXT" displayLength="1" id="1030">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="STATUS" type="CHAR" returnable="true" labelTextRef="TXT89" displayType="TEXT" id="1040"/>
+    <field name="STATUSCODE" type="INTEGER" labelTextRef="TXT28" displayType="TEXT" id="1050">
+        <validators>
+            <validator type="DEC_DIG"/>
+            <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+            <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+        </validators>
+    </field>
+    <field name="SURCHARGERATE" type="CHAR" labelTextRef="TXT34" maxLength="5" displayType="TEXT" displayLength="5" id="1060">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="SURCHARGE_AMOUNT" type="NUMBER" labelTextRef="TXT35" displayType="TEXT" id="1070"/>
+    <field name="SURCHARGE_FUNDCODE" type="CHAR" labelTextRef="TXT36" maxLength="5" displayType="TEXT" displayLength="5" id="1080">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="SURCHARGE_REFERENCE" type="CHAR" labelTextRef="TXT37" maxLength="50" displayType="TEXT" displayLength="50" id="1090">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="TOTALSTAGES" type="INTEGER" labelTextRef="TXT38" displayType="TEXT" id="1100">
+        <validators>
+            <validator type="DEC_DIG"/>
+            <validator type="MIN_VALUE_INCLUSIVE" value="-2147483648"/>
+            <validator type="MAX_VALUE_INCLUSIVE" value="2147483647"/>
+        </validators>
+    </field>
+    <field name="TOTAL_DISCOUNT" type="CURRENCY" labelTextRef="TXT239" displayType="TEXT" id="1850"/>
+    <field name="TOTAL_GROSS" type="CURRENCY" labelTextRef="TXT240" displayType="TEXT" id="1860"/>
+    <field name="TOTAL_NET" type="CURRENCY" labelTextRef="TXT236" displayType="TEXT" id="1830"/>
+    <field name="TOTAL_VAT" type="CURRENCY" labelTextRef="TXT238" displayType="TEXT" id="1840"/>
+    <field name="TYPE" type="CHAR" labelTextRef="TXT39" maxLength="4" displayType="TEXT" displayLength="4" id="1110">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="UL2" type="CHAR" labelTextRef="TXT180" displayType="TEXT" id="2000"/>
+    <field name="UL3" type="CHAR" labelTextRef="TXT181" displayType="TEXT" id="2010"/>
+    <field name="US2" type="CHAR" labelTextRef="TXT177" displayType="TEXT" id="1970"/>
+    <field name="US3" type="CHAR" labelTextRef="TXT178" displayType="TEXT" id="1980"/>
+    <field name="US4" type="CHAR" labelTextRef="TXT179" displayType="TEXT" id="1990"/>
+    <field name="USERID" type="CHAR" labelTextRef="TXT40" maxLength="10" displayType="TEXT" displayLength="10" id="1120">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="WHERE_CLAUSE" type="CHAR" labelTextRef="TXT163" maxLength="752" displayType="TEXT" displayLength="60" id="1130"/>
+    <field name="WS_BUILD" type="CHAR" eventField="true" labelTextRef="TXT160" displayType="TEXT" id="650"/>
+</fields>

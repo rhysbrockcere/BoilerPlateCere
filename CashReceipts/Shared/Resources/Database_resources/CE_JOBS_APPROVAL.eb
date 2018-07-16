@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="CE_JOBS_APPROVAL">
+        <columns>*</columns>
+        <from>CE_Personnel_TEST.dbo.CE_Jobs</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Approved" length="1"/>
+            <field id="Archive_Date" type="DATE" length="16"/>
+            <field id="BAR" type="VARCHAR" length="50"/>
+            <field id="Based" type="VARCHAR" length="10"/>
+            <field id="CRB_Check" length="1"/>
+            <field id="CRB_Type" length="1"/>
+            <field id="Closing_Date" type="DATE" length="16"/>
+            <field id="Contact" type="VARCHAR" length="75"/>
+            <field id="Contact_Email" type="VARCHAR" length="50"/>
+            <field id="Contact_Tel" type="VARCHAR" length="20"/>
+            <field id="Department" length="10"/>
+            <field id="Department_Other" type="VARCHAR" length="50"/>
+            <field id="Details_CY" type="VARCHAR" length="1500"/>
+            <field id="Details_EN" type="VARCHAR" length="1500"/>
+            <field id="Email" type="VARCHAR" length="50"/>
+            <field id="Grade_Lower" type="VARCHAR" length="15"/>
+            <field id="Grade_Upper" type="VARCHAR" length="15"/>
+            <field id="Hours" type="VARCHAR" length="50"/>
+            <field id="Internal" length="1"/>
+            <field id="Interview_Date" type="DATE" length="16"/>
+            <field id="Sent_to_Dept" type="DATE" length="16"/>
+            <field id="Status" length="1"/>
+            <field id="Submit_Date" type="DATE" length="16"/>
+            <field id="Temp_From" type="DATE" length="16"/>
+            <field id="Temp_To" type="DATE" length="16"/>
+            <field id="Updated_Date" type="DATE" length="20"/>
+            <field id="Username_Creator" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="Welsh_Reading" type="VARCHAR" length="50"/>
+            <field id="Welsh_Speaking" type="VARCHAR" length="50"/>
+            <field id="Welsh_Writing" type="VARCHAR" length="50"/>
+            <field id="JD_ID" type="INTEGER" length="10"/>
+            <field id="JD_STATUS" type="VARCHAR" length="50"/>
+            <field id="JD_VERSION" type="BIGINT" length="19"/>
+            <field id="JOB_ID" type="BIGINT" length="19"/>
+            <field id="Job_Title_CY" type="VARCHAR" length="150"/>
+            <field id="Job_Title_EN" type="VARCHAR" length="150"/>
+            <field id="PS_ID" type="INTEGER" length="10"/>
+            <field id="PS_STATUS" type="VARCHAR" length="50"/>
+            <field id="PS_VERSION" type="INTEGER" length="19"/>
+            <field id="Pay_Award" length="1"/>
+            <field id="Pay_Scale" type="VARCHAR" length="10"/>
+            <field id="Per_User" type="VARCHAR" length="50"/>
+            <field id="Point_Lower" type="VARCHAR" length="2"/>
+            <field id="Point_Lower_Max" type="VARCHAR" length="2"/>
+            <field id="Point_Upper" type="VARCHAR" length="2"/>
+            <field id="Point_Upper_Min" type="VARCHAR" length="2"/>
+            <field id="Pos_Ext" length="1"/>
+            <field id="Post_CY" type="VARCHAR" length="200"/>
+            <field id="Post_EN" type="VARCHAR" length="200"/>
+            <field id="Post_Ref" type="VARCHAR" length="50"/>
+            <field id="Post_Type" length="2"/>
+            <field id="Post_Type_Length" length="2"/>
+            <field id="REF" type="BIGINT" length="8"/>
+            <field id="ST_Ref" type="VARCHAR" length="10"/>
+            <field id="ST_Status" length="1"/>
+            <field id="Salary" type="VARCHAR" length="50"/>
+            <field id="Section" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="TXT1" pageInfoTextReference="TXT2" pageTrailerTextReference="TXT3" nextPageTextReference="TXT4" prevPageTextReference="TXT5">
+    <pageContents>
+        <component ctrl="COMPONENT1" default="L" inheritMsg="true" outputType="0" pdfFooterText="LocalTXT6" pdfHeaderText="LocalTXT7" uid="0">
+            <message ctrl="MESSAGE1" uid="4"/>
+            <groupPanel contentClass="@0" ctrl="LOGIN_GROUP" groupHeaderText="LocalTXT20" groupInfoText="LocalTXT21" groupTrailerText="LocalTXT22" uid="5">
+                <rootHtmlElementProperties idLocator="login"/>
+                <groupPanel ctrl="GROUPPANEL2" groupHeaderText="LocalTXT25" groupInfoText="LocalTXT26" groupTrailerText="LocalTXT27" uid="8">
+                    <field beforeEvent="/Scripts/GL_PORTAL_CHECK" buttonText="LocalTXT10" ctrl="FIELDCONTROL1" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="FOP_EMAIL" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="144" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <field buttonText="LocalTXT11" ctrl="FIELDCONTROL2" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="FOP_PASSWORD" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="145" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <gridControl columnWidths="35%,65%" columns="2" cssClass="ebGridDEFAULT" ctrl="GRIDCONTROL1" default="L" errorMsgClass="errorMessage" gridClass="ebGridStyleDEFAULT" rows="1" uid="141" warningMsgClass="warningMessage" width="@0">
+                        <layoutProperties>
+                            <VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+                            <COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+                            <FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                        </layoutProperties>
+                        <gridCell column="1" columnspan="1" cssClass="ebGridCellStyleDEFAULT" ctrl="GRIDCELL1" default="L" errorMsgClass="errorMessage" row="1" rowspan="1" uid="142" warningMsgClass="warningMessage">
+                            <layoutProperties>
+<VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+<COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+<FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                            </layoutProperties>
+                        </gridCell>
+                        <gridCell column="2" columnspan="1" cssClass="ebGridCellStyleDEFAULT" ctrl="GRIDCELL2" default="L" errorMsgClass="errorMessage" row="1" rowspan="1" uid="143" warningMsgClass="warningMessage">
+                            <layoutProperties>
+<VERTICAL_BOX tableClass="verticalLayoutTableDEFAULT"/>
+<COLUMN columns="2" layoutClass="columnLayoutLabelCell" tableClass="columnLayoutTable"/>
+<FIELD editorCellClass="ebFieldEditorCellDEFAULT" editorWidth="60%" helpCellClass="ebFieldHelpCellDEFAULT" labelCellClass="ebFieldLabelCellDEFAULT" labelWidth="35%" tableClass="ebFieldGridTableDEFAULT"/>
+                            </layoutProperties>
+                            <hyperlink ctrl="HYPERLINK2" onClickEvent="/Scripts/GL_PORTAL_PROBLEMS" text="LocalTXT35" title="LocalTXT36" uid="15">
+<rootHtmlElementProperties idLocator="problemLink"/>
+                            </hyperlink>
+                        </gridCell>
+                    </gridControl>
+                </groupPanel>
+                <groupPanel ctrl="GROUPPANEL3" groupHeaderText="LocalTXT28" groupInfoText="LocalTXT29" groupTrailerText="LocalTXT30" inheritMsg="false" layoutType="@0" msgControls="4" uid="12">
+                    <layoutProperties>
+                        <VERTICAL_BOX cellHAlign="Center"/>
+                        <HORIZONTAL_BOX hAlign="Center"/>
+                        <COLUMN hAlign="Center"/>
+                    </layoutProperties>
+                    <message ctrl="MESSAGE2" uid="60"/>
+                    <panel ctrl="PANEL3" layoutType="HORIZONTAL_BOX" uid="139">
+                        <layoutProperties>
+                            <HORIZONTAL_BOX hAlign="Center" spacerSize="20px"/>
+                        </layoutProperties>
+                        <button allPadding="@0" bottomPadding="@0" buttonText="LocalTXT31" ctrl="BUTTON1" inheritMsg="false" leftMargin="@0" leftPadding="@0" mouseOverText="LocalTXT32" msgControls="60" onClickEvent="/Scripts/GL_PORTAL_LOGIN" rightMargin="@0" rightPadding="@0" topPadding="@0" uid="13"/>
+                        <button allPadding="@0" bottomPadding="@0" buttonText="LocalTXT80" ctrl="BUTTON5" leftMargin="@0" leftPadding="@0" mouseOverText="LocalTXT81" onClickEvent="/Scripts/GL_PORTAL_REGISTER" rightMargin="@0" rightPadding="@0" topPadding="@0" uid="14">
+                            <rootHtmlElementProperties idLocator="registerLink"/>
+                        </button>
+                    </panel>
+                </groupPanel>
+            </groupPanel>
+            <groupPanel ctrl="CONFIRM_GROUP" groupHeaderText="LocalTXT58" groupInfoText="LocalTXT85" groupTrailerText="LocalTXT91" hidden="true" uid="129">
+                <text ctrl="TEXT1" text="LocalTXT92" uid="130"/>
+            </groupPanel>
+            <groupPanel ctrl="PASSWORD_GROUP" groupHeaderText="LocalTXT33" groupInfoText="LocalTXT43" groupTrailerText="LocalTXT95" hidden="true" uid="46">
+                <rootHtmlElementProperties idLocator="password"/>
+                <groupPanel ctrl="GROUPPANEL7" groupHeaderText="LocalTXT96" groupInfoText="LocalTXT97" groupTrailerText="LocalTXT98" uid="50">
+                    <field buttonText="LocalTXT112" ctrl="FIELDCONTROL8" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="FOP_PASSWORD1" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="154" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <field buttonText="LocalTXT113" ctrl="FIELDCONTROL11" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="FOP_PASSWORD2" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="155" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                </groupPanel>
+                <groupPanel ctrl="GROUPPANEL8" groupHeaderText="LocalTXT99" groupInfoText="LocalTXT100" groupTrailerText="LocalTXT101" inheritMsg="false" layoutType="HORIZONTAL_BOX" msgControls="4" uid="51">
+                    <layoutProperties>
+                        <HORIZONTAL_BOX hAlign="Center"/>
+                    </layoutProperties>
+                    <button buttonText="LocalTXT102" ctrl="BUTTON6" mouseOverText="LocalTXT103" onClickEvent="/Scripts/GL_PORTAL_PASSWORD_CONFIRM" rightMargin="20px" uid="52">
+                        <rootHtmlElementProperties idLocator="passwordConfirm"/>
+                    </button>
+                    <button buttonText="LocalTXT104" ctrl="BUTTON7" mouseOverText="LocalTXT105" newLine="false" onClickEvent="/Scripts/GL_PORTAL_CANCEL" uid="53">
+                        <rootHtmlElementProperties idLocator="passwordCancel"/>
+                    </button>
+                </groupPanel>
+            </groupPanel>
+            <groupPanel contentClass="@0" ctrl="REGISTER_GROUP" groupHeaderText="LocalTXT37" groupInfoText="LocalTXT38" groupTrailerText="LocalTXT39" hidden="true" inheritMsg="false" msgControls="125" uid="16">
+                <rootHtmlElementProperties idLocator="register"/>
+                <groupPanel ctrl="GROUPPANEL1" groupHeaderText="LocalTXT66" groupInfoText="LocalTXT67" groupTrailerText="LocalTXT68" uid="19">
+                    <field buttonText="LocalTXT34" ctrl="FIELDCONTROL3" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="CUST_EMAIL" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" modifiers="reg" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="146" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <field buttonText="LocalTXT44" ctrl="FIELDCONTROL4" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="CUST_FIRSTNAME" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" modifiers="reg" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="147" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <field buttonText="LocalTXT45" ctrl="FIELDCONTROL5" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="CUST_SURNAME" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" modifiers="reg" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="148" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <field buttonText="LocalTXT47" ctrl="FIELDCONTROL6" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="CUST_DOB" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" modifiers="reg" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="149" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <field buttonText="LocalTXT55" ctrl="FIELDCONTROL7" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="LOGIN_QUESTION" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" modifiers="reg" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="150" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <field buttonText="LocalTXT111" ctrl="FIELDCONTROL10" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="FOP_ANSWER" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" modifiers="reg" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="153" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <field beforeEvent="/Scripts/GL_CAPTCHA_BP" ctrl="FIELDCONTROL1_2" displayOnly="true" field="CAPTCHA" fopId="10" hidden="true" immediateValidation="true" uid="82">
+                        <editorHtmlElementProperties idLocator="codeCap"/>
+                    </field>
+                    <html ctrl="HTML1" default="L" hidden="true" htmlText="LocalTXT1_2" newLine="false" uid="83"/>
+                    <panel ctrl="PANEL2" hidden="true" layoutType="HORIZONTAL_BOX" uid="88">
+                        <layoutProperties>
+                            <HORIZONTAL_BOX hAlign="Center"/>
+                        </layoutProperties>
+                        <button buttonText="LocalTXT121" ctrl="BUTTON8" hidden="true" mouseOverText="LocalTXT124" onClickEvent="/Scripts/GL_CAPTCHA_BP,/Scripts/GL_CAP_REFRESH" uid="89">
+                            <rootHtmlElementProperties idLocator="genCode"/>
+                        </button>
+                    </panel>
+                    <html ctrl="HTML2" default="L" hidden="true" htmlText="LocalTXT3_2" uid="87"/>
+                    <field buttonText="LocalTXT61" ctrl="FIELDCONTROL9" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="INPUT_CHARACTERS_1" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" hidden="true" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" modifiers="reg" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="152" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                </groupPanel>
+                <groupPanel ctrl="GROUPPANEL4" groupHeaderText="LocalTXT69" groupInfoText="LocalTXT70" groupTrailerText="LocalTXT71" inheritMsg="false" layoutType="HORIZONTAL_BOX" msgControls="4" uid="29">
+                    <layoutProperties>
+                        <VERTICAL_BOX cellHAlign="Center"/>
+                        <HORIZONTAL_BOX hAlign="Center"/>
+                    </layoutProperties>
+                    <button buttonText="LocalTXT72" ctrl="BUTTON2" mouseOverText="LocalTXT73" onClickEvent="/Scripts/GL_REGISTER_PORTAL_GET_CUST_ID,/Scripts/GL_REGISTER_PORTAL_USER" rightMargin="20px" uid="30">
+                        <rootHtmlElementProperties idLocator="registerSubmit" jQueryEventHandlers="@0"/>
+                    </button>
+                    <button buttonText="LocalTXT74" ctrl="BUTTON3" mouseOverText="LocalTXT75" onClickEvent="/Scripts/GL_PORTAL_CANCEL" uid="31">
+                        <rootHtmlElementProperties idLocator="registerCancel"/>
+                    </button>
+                </groupPanel>
+                <message ctrl="MESSAGE3" uid="125"/>
+            </groupPanel>
+            <groupPanel ctrl="PROBLEM_GROUP" groupHeaderText="LocalTXT40" groupInfoText="LocalTXT41" groupTrailerText="LocalTXT42" hidden="true" uid="32">
+                <rootHtmlElementProperties idLocator="problem"/>
+                <groupPanel ctrl="PROBLEM_OPTS_GROUP" groupHeaderText="LocalTXT83" groupInfoText="LocalTXT86" groupTrailerText="LocalTXT87" uid="42">
+                    <rootHtmlElementProperties idLocator="probOpts"/>
+                    <hyperlink ctrl="HYPERLINK3" onClickEvent="/Scripts/GL_PORTAL_FORGOT_PASSWORD" text="LocalTXT129" title="LocalTXT130" uid="94">
+                        <rootHtmlElementProperties idLocator="linkForgotPass"/>
+                    </hyperlink>
+                </groupPanel>
+                <groupPanel ctrl="PROBLEM_FORGOT_GROUP" groupHeaderText="LocalTXT79" groupInfoText="LocalTXT133" groupTrailerText="LocalTXT134" hidden="true" uid="97">
+                    <rootHtmlElementProperties idLocator="forgotPass"/>
+                    <field buttonText="LocalTXT142" ctrl="FIELDCONTROL12" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="FOP_EMAIL" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="157" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <field beforeEvent="/Scripts/GL_CAPTCHA_BP" ctrl="FIELDCONTROL1_2_2" displayOnly="true" field="CAPTCHA" fopId="10" hidden="true" immediateValidation="true" uid="98">
+                        <editorHtmlElementProperties idLocator="codeCap"/>
+                    </field>
+                    <html ctrl="HTML1_2" default="L" hidden="true" htmlText="LocalTXT1_2_2" newLine="false" uid="99"/>
+                    <panel ctrl="PANEL2_2" hidden="true" layoutType="HORIZONTAL_BOX" uid="100">
+                        <layoutProperties>
+                            <HORIZONTAL_BOX hAlign="Center"/>
+                        </layoutProperties>
+                        <button buttonText="LocalTXT121_2" ctrl="BUTTON8_2" hidden="true" mouseOverText="LocalTXT124_2" onClickEvent="/Scripts/GL_CAPTCHA_BP,/Scripts/GL_CAP_REFRESH" uid="101">
+                            <rootHtmlElementProperties idLocator="genCodeForgot"/>
+                        </button>
+                    </panel>
+                    <field buttonText="LocalTXT143" ctrl="FIELDCONTROL13" default="L" editorClass="ebFieldEditorDEFAULT" errorMsgClass="ebErrorMessageDEFAULT" field="INPUT_CHARACTERS_2" helpClass="ebFieldHelpDEFAULT" helpWindowProperties="scrollbars=yes,menubar=no,left=200,top=200,status=no,toolbar=no,location=no,resizable=yes,width=600,height=175" hidden="true" ivImageURL="images/tick.gif" labelClass="ebFieldLabelDEFAULT" patternTextClass="ebFieldPatternDEFAULT" popupHelpStyle="font-family:&quot;Arial&quot;,&quot;Verdana&quot;,&quot;Helvetica&quot;,&quot;sans-serif&quot;;font-size:0.8em;color:#000000;background-color:#FFFFFF;text-align:left;font-weight:normal;font-style:normal;" uid="158" vAlign="@0" warningMsgClass="ebWarningMessageDEFAULT">
+                        <hyperlinkProperties textColor="blue" textFont="Verdana, Arial, Helvetica, sans-serif" textSize="0.8em"/>
+                    </field>
+                    <html ctrl="HTML2_2" default="L" hidden="true" htmlText="LocalTXT3_2_2" uid="103"/>
+                </groupPanel>
+                <groupPanel ctrl="PROBLEM_RESET_GROUP" groupHeaderText="LocalTXT88" groupInfoText="LocalTXT89" groupTrailerText="LocalTXT90" inheritMsg="false" layoutType="HORIZONTAL_BOX" msgControls="4" uid="43">
+                    <layoutProperties>
+                        <HORIZONTAL_BOX hAlign="Center"/>
+                    </layoutProperties>
+                    <button buttonText="LocalTXT135" ctrl="PROBLEM_RESET_BUTTON" hidden="true" leftMargin="@0" mouseOverText="LocalTXT136" onClickEvent="/Scripts/GL_RESET_PORTAL_USER" rightMargin="20px" uid="105">
+                        <rootHtmlElementProperties idLocator="resetPass"/>
+                    </button>
+                    <button allPadding="@0" bottomPadding="@0" buttonText="LocalTXT93" ctrl="BUTTON4" leftMargin="@0" leftPadding="@0" mouseOverText="LocalTXT94" onClickEvent="/Scripts/GL_PORTAL_CANCEL" rightMargin="@0" rightPadding="@0" topPadding="@0" uid="37">
+                        <rootHtmlElementProperties idLocator="problemCancel"/>
+                    </button>
+                </groupPanel>
+            </groupPanel>
+        </component>
+    </pageContents>
+</page>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webFormComponent exportVersion="9" type="PART_PAGE" template="/Presentation/Presentation_Templates/CEREDIGION_INTERNET_SW" firstPage="DUMMY_PAGE_03102003" preferredScriptFolder="/Scripts" id="CMP_PORTAL" dateCreated="2012-10-29T15:26:19.523Z" dateImported="2016-10-14T14:41:30.960+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/CRM_INTERGRATION"/>
+        </sharedFunctionScripts>
+        <linkedTexts>
+            <linkedText>/GLOBAL_Messages</linkedText>
+            <linkedText>/Shared_Texts</linkedText>
+        </linkedTexts>
+        <resources>
+            <resource name="CS_CRM_CUSTOMER_CHECK" path="/Resources/Database_resources/CS_CRM_CUSTOMER_CHECK"/>
+            <resource name="CS_CRM_CUSTOMERS" path="/Resources/Database_resources/CS_CRM_CUSTOMERS"/>
+            <resource name="PORTAL_ACCESS" path="/Resources/Database_resources/PORTAL_ACCESS"/>
+            <resource name="PORTAL_ACCESS_CHECK" path="/Resources/Database_resources/PORTAL_ACCESS_CHECK"/>
+            <resource name="PORTAL_ACCESS_LOG" path="/Resources/Database_resources/PORTAL_ACCESS_LOG"/>
+            <resource name="PORTAL_ACCESS_UPD" path="/Resources/Database_resources/PORTAL_ACCESS_UPD"/>
+            <resource name="PORTAL_ACCESS_VW" path="/Resources/Database_resources/PORTAL_ACCESS_VW"/>
+            <resource name="PORTAL_BLOCKS" path="/Resources/Database_resources/PORTAL_BLOCKS"/>
+            <resource name="PORTAL_CMP_EMAIL" path="/Resources/Email_resources/PORTAL_CMP_EMAIL"/>
+            <resource name="PORTAL_LOGINS" path="/Resources/Database_resources/PORTAL_LOGINS"/>
+            <resource name="PORTAL_LOGINS_CHECK" path="/Resources/Database_resources/PORTAL_LOGINS_CHECK"/>
+            <resource name="PORTAL_LOGINS_UPD" path="/Resources/Database_resources/PORTAL_LOGINS_UPD"/>
+            <resource name="PORTAL_REG_EMAIL_SETTINGS" path="/Resources/Database_resources/PORTAL_REG_EMAIL_SETTINGS"/>
+            <resource name="PORTAL_SECURITYQUESTIONS_TBL" path="/Resources/Database_resources/PORTAL_SECURITYQUESTIONS_TBL"/>
+        </resources>
+    </webFormComponent>
+</ebase>

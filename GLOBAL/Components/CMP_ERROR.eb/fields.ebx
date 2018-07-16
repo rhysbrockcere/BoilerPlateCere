@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="DATE" type="DATETIME" labelTextRef="37940037" helpTextRef="37940036" displayType="TEXT" id="170"/>
+    <field name="EMAIL_ERROR" type="CHAR" labelTextRef="37940010" helpTextRef="37940009" maxLength="30" displayType="TEXT" id="30"/>
+    <field name="EMAIL_FORM" type="CHAR" labelTextRef="37940029" helpTextRef="37940028" maxLength="30" displayType="TEXT" id="120"/>
+    <field name="EMAIL_FROM" type="CHAR" labelTextRef="37940012" helpTextRef="37940011" maxLength="default" displayType="TEXT" id="40"/>
+    <field name="EMAIL_PAGE" type="CHAR" labelTextRef="37940027" helpTextRef="37940026" maxLength="30" displayType="TEXT" id="110"/>
+    <field name="EMAIL_PROJECT" type="CHAR" labelTextRef="37940025" helpTextRef="37940024" maxLength="30" displayType="TEXT" id="100"/>
+    <field name="EMAIL_SENT" type="CHAR" labelTextRef="37940033" helpTextRef="37940032" maxLength="30" displayType="TEXT" id="140"/>
+    <field name="EMAIL_SERVER" type="CHAR" labelTextRef="37940023" helpTextRef="37940022" maxLength="30" displayType="TEXT" id="90"/>
+    <field name="EMAIL_TO" type="CHAR" labelTextRef="TXT1" displayType="TEXT" id="180"/>
+    <field name="ERROR_MESSAGE_CODE" type="CHAR" labelTextRef="TXT3" displayType="TEXT" id="200"/>
+    <field name="ERROR_TEXT" type="CHAR" labelTextRef="37940006" helpTextRef="37940005" maxLength="default" displayType="LABEL" id="10"/>
+    <field name="ERROR_TEXT_CY" type="CHAR" defaultValue="Mae'r ffurflen hyn wedi bwrw &lt;b&gt;problem&lt;/b&gt;. Mae'r Adran TCHG wedi cael y neges hefyd ac fyddwn yn edrych ymhellach arno.&lt;br&gt; &lt;br&gt; Am rhagor o wybodaeth cysylltwch gyda'r Bwrdd Cymorth ar estyniad 3205 neu drwy ebost  &lt;a href=&quot;mailto:servicedesk@ceredigion.gov.uk&quot;&gt;servicedesk@ceredigion.gov.uk&lt;/a&gt;" labelTextRef="37940016" helpTextRef="37940015" maxLength="default" displayType="TEXT" id="60"/>
+    <field name="ERROR_TEXT_DIS" type="CHAR" labelTextRef="37940018" helpTextRef="37940017" maxLength="30" displayType="TEXT" id="70"/>
+    <field name="ERROR_TEXT_EN" type="CHAR" defaultValue="This form has encountered an &lt;b&gt;error&lt;/b&gt;, The IT Department will be informed for further investigation of the problem&lt;br&gt; &lt;br&gt; For further information please contact the Service Desk on 3205 or email &lt;a href=&quot;mailto:servicedesk@ceredigion.gov.uk&quot;&gt;servicedesk@ceredigion.gov.uk&lt;/a&gt;" labelTextRef="37940014" helpTextRef="37940013" maxLength="default" displayType="TEXT" id="50"/>
+    <field name="ERROR_TRAP" type="CHAR" labelTextRef="TXT2" displayType="TEXT" id="190"/>
+    <field name="LANGAUGE_CONTROL" type="CHAR" eventField="true" labelTextRef="37940008" helpTextRef="37940007" maxLength="default" displayType="TEXT" id="20"/>
+    <field name="PRIORITY" type="CHAR" labelTextRef="TXT4" displayType="TEXT" id="210"/>
+    <field name="SPACER" type="CHAR" defaultValue="Submit" labelTextRef="37940031" helpTextRef="37940030" maxLength="default" displayType="LABEL" id="130"/>
+    <field name="SUBMIT" type="CHAR" defaultValue="Submit" labelTextRef="37940035" helpTextRef="37940034" maxLength="default" displayType="TEXT" id="150"/>
+    <field name="THANK_YOU" type="CHAR" labelTextRef="37940020" helpTextRef="37940019" maxLength="30" displayType="LABEL" id="160"/>
+</fields>

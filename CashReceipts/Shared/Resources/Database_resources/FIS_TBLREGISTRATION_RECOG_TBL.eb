@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="FIS Registration Recognised As details" database="SQLE645S1" table="true" preparedStatement="false" id="FIS_TBLREGISTRATION_RECOG_TBL">
+        <columns>*</columns>
+        <from>eyears_test.dbo.tblREGISTRATION_RECOG</from>
+        <where>&amp;&amp;WHERE_CLAUSE_RECOG_AS</where>
+        <fields>
+            <field id="WHERE_CLAUSE_RECOG_AS" type="NUMERIC" length="500" persistent="false"/>
+            <field id="rrecog_contact" type="VARCHAR" length="50"/>
+            <field id="rrecog_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="rrecog_id" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="tblLU_RECOG_AS" type="INTEGER" length="10"/>
+            <field id="tblRECOG_AS" type="INTEGER" length="10"/>
+            <field id="tblREGISTRATION" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

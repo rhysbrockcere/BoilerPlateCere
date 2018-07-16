@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Payroll Archive - Non Superannuable Payment Elements" database="SQLE648S1" table="true" preparedStatement="false" id="DF_PA_VW_ELEVAL_PAY_ELE_NSUP">
+        <columns>*</columns>
+        <from>DF_Payroll_Archive.dbo.VW_ELEVAL_PAY_ELE_NSUP</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="BAL_1_TP" type="DECIMAL" length="9"/>
+            <field id="PRI_GTN_NO" type="DECIMAL" length="4"/>
+            <field id="PRI_PAY_D" length="8"/>
+            <field id="PRI_PAY_NO" length="4"/>
+            <field id="RUL_TYPE" length="1"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="BAL_2_TP" type="DECIMAL" length="9"/>
+            <field id="BAL_3_TP" type="DECIMAL" length="9"/>
+            <field id="CON_NO" length="10"/>
+            <field id="ELE_NO" length="4"/>
+            <field id="ELE_RUL_DESC" length="16"/>
+            <field id="EV_CTRL_PNT" length="1"/>
+            <field id="BALANCE_1" type="DECIMAL" length="9"/>
+            <field id="BALANCE_2" type="DECIMAL" length="9"/>
+            <field id="BALANCE_3" type="DECIMAL" length="9"/>
+            <field id="EV_OCC_NO" length="2"/>
+            <field id="EV_PAYROLL_D" length="8"/>
+            <field id="GTN_I" length="1"/>
+            <field id="GTN_NO" type="DECIMAL" length="4"/>
+            <field id="ORG_NO" type="DECIMAL" length="2"/>
+            <field id="PAY_NO" length="4"/>
+            <field id="PRI_CON_NO" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

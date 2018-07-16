@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="SQLE648S1" id="DESH_PACS_AREACODELUT_WARD">
+        <columns>Name</columns>
+        <from>PacsData.dbo.AreaCodeLUT</from>
+        <fields>
+            <field id="Name" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

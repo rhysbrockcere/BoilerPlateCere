@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="DHPWSQL" id="DHPW_BI_BUILDINGS_AREA" dateCreated="2017-01-18T23:28:57.543Z" dateImported="2017-02-08T00:01:28.723Z">
+        <columns>DISTINCT Area</columns>
+        <from>BuildingInspections_TEST.dbo.Buildings</from>
+        <additional>ORDER BY Area</additional>
+        <fields>
+            <field id="Area" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

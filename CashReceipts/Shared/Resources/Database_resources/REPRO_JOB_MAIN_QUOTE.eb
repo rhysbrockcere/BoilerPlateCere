@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" preparedStatement="false" id="REPRO_JOB_MAIN_QUOTE">
+        <columns>*</columns>
+        <from>ICT_Reprographic_Test.dbo.Job_Main_Quote</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="500" persistent="false"/>
+            <field id="JOB_ID" type="INTEGER" length="10"/>
+            <field id="Quote" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Quote_Filename" type="VARCHAR" length="50"/>
+            <field id="Quote_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Quote_Outcome" type="VARCHAR" length="50"/>
+            <field id="Quote_Outcome_By" type="VARCHAR" length="50"/>
+            <field id="Quote_Outcome_Date" type="TIMESTAMP" length="16"/>
+            <field id="Quote_Sent" type="TIMESTAMP" length="16"/>
+            <field id="Quote_Sent_By" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

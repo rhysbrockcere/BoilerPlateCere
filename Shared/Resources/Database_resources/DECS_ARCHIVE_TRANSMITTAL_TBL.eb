@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="ARCHIVE Record Transmittal List" database="DFIT_CENTRAL" table="true" preparedStatement="false" id="DECS_ARCHIVE_TRANSMITTAL_TBL">
+        <columns>*</columns>
+        <from>DECS_Archives_RTL.dbo.Transmittal</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Action_Type" type="VARCHAR" length="20"/>
+            <field id="Archive_Status" type="VARCHAR" length="20"/>
+            <field id="Box" type="VARCHAR" length="20"/>
+            <field id="Date_Entered" type="DATE" length="16"/>
+            <field id="Department" type="VARCHAR" length="50"/>
+            <field id="Description" type="VARCHAR" length="255"/>
+            <field id="First_Date" type="VARCHAR" length="10"/>
+            <field id="ID" type="INTEGER" length="10" required="true" key="true"/>
+            <field id="Last_Date" type="VARCHAR" length="10"/>
+            <field id="Notes" type="VARCHAR" length="300"/>
+            <field id="Reference_No" type="VARCHAR" length="50"/>
+            <field id="Relevant_Date" type="VARCHAR" length="50"/>
+            <field id="username" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

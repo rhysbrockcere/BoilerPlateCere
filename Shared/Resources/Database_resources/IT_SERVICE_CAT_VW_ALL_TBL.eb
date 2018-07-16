@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Expanded Service Category Information - for Table usage" database="SQLE648S1" table="true" preparedStatement="false" id="IT_SERVICE_CAT_VW_ALL_TBL">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.srvc_CategoryView</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Team_ID" type="INTEGER" length="10"/>
+            <field id="Tel_No" type="VARCHAR" length="20"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="120" persistent="false"/>
+            <field id="Alias_CY" type="VARCHAR" length="50"/>
+            <field id="Alias_EN" type="VARCHAR" length="50"/>
+            <field id="Available_FAQS" length="1"/>
+            <field id="Categori" type="VARCHAR" length="50"/>
+            <field id="Category" type="VARCHAR" length="50"/>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="ServiceName" type="VARCHAR" length="100"/>
+            <field id="Service_ID" length="10"/>
+            <field id="Description" type="VARCHAR" length="255"/>
+            <field id="Disgrifiad" type="VARCHAR" length="255"/>
+            <field id="Ebost" type="VARCHAR" length="50"/>
+            <field id="Email" type="VARCHAR" length="50"/>
+            <field id="EnwAdran" type="VARCHAR" length="100"/>
+            <field id="EnwTim" type="VARCHAR" length="50"/>
+            <field id="ExpiryDate" type="VARCHAR" length="30"/>
+            <field id="Internet_Page" type="VARCHAR" length="70"/>
+            <field id="Intranet_Page" type="VARCHAR" length="70"/>
+            <field id="IsAdran" type="VARCHAR" length="60"/>
+            <field id="Priority" type="VARCHAR" length="1"/>
+            <field id="Public_Facing_ind" length="1"/>
+            <field id="Resp_Officer" type="VARCHAR" length="70"/>
+            <field id="SectionName" type="VARCHAR" length="60"/>
+            <field id="Section_ID" type="INTEGER" length="10"/>
+            <field id="TeamName" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

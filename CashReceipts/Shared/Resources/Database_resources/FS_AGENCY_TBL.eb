@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Flying Start Referral Agency Lookup" database="SQLE645S1" table="true" preparedStatement="false" id="FS_AGENCY_TBL">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Agency</from>
+        <additional>ORDER BY Agency_Name</additional>
+        <fields>
+            <field id="Agency_ID" type="INTEGER" length="10"/>
+            <field id="Agency_Name" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

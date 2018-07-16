@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE645S1" preparedStatement="false" id="CCC_AB_ABSENCETYPES">
+        <columns>*</columns>
+        <from>CCC_Absence_TEST.dbo.AbsenceTypes</from>
+        <fields>
+            <field id="AbsenceType" type="VARCHAR" length="50"/>
+            <field id="Desc" type="VARCHAR" length="150"/>
+            <field id="TypeForSickness" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

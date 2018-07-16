@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Table to monitor public web searches" database="SQLE645S1" preparedStatement="false" id="IT_ADDRESS_SEARCH">
+        <columns>*</columns>
+        <from>IT_Central_TEST.dbo.IT_ADDRESS_SEARCH</from>
+        <fields>
+            <field id="Count" type="BIGINT" length="19"/>
+            <field id="Date" type="TIMESTAMP" length="16"/>
+            <field id="Form_Used" type="VARCHAR" length="100"/>
+            <field id="ID" type="BIGINT" length="19" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

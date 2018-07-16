@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource description="Email to inform that a users account has been locked out" accountName="Exchange" from="forms@ceredigion.gov.uk" to="steven.wride@ceredigion.gov.uk" subject="Account Locked Out" id="IT_LOCKED_OUT">
+        <message>Username 	:- 	&amp;&amp;USERNAME
+System		:- 	&amp;&amp;LOGIN_FOP_SYSTEM_NAME
+Server		:-	&amp;&amp;SERVER</message>
+        <fields>
+            <field id="LOGIN_FOP_SYSTEM_NAME"/>
+            <field id="SERVER"/>
+            <field id="USERNAME"/>
+        </fields>
+    </emailResource>
+</ebase>

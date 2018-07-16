@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Postcode extract from LLPG system" database="SQLE645S1" preparedStatement="false" id="IT_POSTCODE_VIEW">
+        <columns>*</columns>
+        <from>Postcodes.dbo.Postcode_view</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="ADDRESS" type="VARCHAR" length="365" readOnly="true"/>
+            <field id="COUNTY_NAME" type="VARCHAR" length="30"/>
+            <field id="LOCALITY_NAME" type="VARCHAR" length="35"/>
+            <field id="PAON_START_NUM" type="SMALLINT" length="5"/>
+            <field id="PAON_START_SUFFIX" type="VARCHAR" length="50"/>
+            <field id="PAON_TEXT" type="VARCHAR" length="100"/>
+            <field id="POSTCODE" type="VARCHAR" length="8"/>
+            <field id="SAON_START_NUM" type="SMALLINT" length="5"/>
+            <field id="SAON_START_SUFFIX" type="VARCHAR" length="50"/>
+            <field id="SAON_TEXT" type="VARCHAR" length="100"/>
+            <field id="STREET_DESCRIPTOR" type="VARCHAR" length="100"/>
+            <field id="TOWN_NAME" type="VARCHAR" length="30"/>
+            <field id="UPRN" type="VARCHAR" length="15"/>
+            <field id="USRN" type="VARCHAR" length="15"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="X_COORDINATE" type="INTEGER" length="19"/>
+            <field id="Y_COORDINATE" type="INTEGER" length="19"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="QUESTIONS" id="1120">
+        <column name="ENABLED" type="BOOLEAN" labelTextRef="TXT149" displayType="CHECKBOX" id="1080">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ID" type="INTEGER" labelTextRef="TXT150" displayType="TEXT" displayLength="17" id="1090">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="QUESTION" type="CHAR" labelTextRef="TXT151" maxLength="500" displayType="TEXT" displayLength="60" id="1100">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="QUESTION_CY" type="CHAR" labelTextRef="TXT152" maxLength="500" displayType="TEXT" displayLength="60" id="1110">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+</tables>

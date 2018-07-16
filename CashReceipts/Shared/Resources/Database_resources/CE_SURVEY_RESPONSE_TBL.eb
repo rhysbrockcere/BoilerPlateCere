@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="CE_Survey_Response table" database="SQLE648S1" table="true" preparedStatement="false" id="CE_SURVEY_RESPONSE_TBL">
+        <columns>*</columns>
+        <from>IT_Central.dbo.CE_SURVEY_RESPONSE</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Q1" type="VARCHAR" length="250"/>
+            <field id="Q10" type="VARCHAR" length="250"/>
+            <field id="Q100" type="VARCHAR" length="250"/>
+            <field id="Q11" type="VARCHAR" length="250"/>
+            <field id="Q12" type="VARCHAR" length="250"/>
+            <field id="Q13" type="VARCHAR" length="250"/>
+            <field id="Q14" type="VARCHAR" length="250"/>
+            <field id="Q15" type="VARCHAR" length="250"/>
+            <field id="Q16" type="VARCHAR" length="250"/>
+            <field id="Q17" type="VARCHAR" length="250"/>
+            <field id="Q18" type="VARCHAR" length="250"/>
+            <field id="Q19" type="VARCHAR" length="250"/>
+            <field id="Q2" type="VARCHAR" length="250"/>
+            <field id="Q20" type="VARCHAR" length="250"/>
+            <field id="Q21" type="VARCHAR" length="250"/>
+            <field id="Q22" type="VARCHAR" length="250"/>
+            <field id="Q23" type="VARCHAR" length="250"/>
+            <field id="Q24" type="VARCHAR" length="250"/>
+            <field id="Q25" type="VARCHAR" length="250"/>
+            <field id="Q26" type="VARCHAR" length="250"/>
+            <field id="Q27" type="VARCHAR" length="250"/>
+            <field id="Q28" type="VARCHAR" length="250"/>
+            <field id="Q29" type="VARCHAR" length="250"/>
+            <field id="Q3" type="VARCHAR" length="250"/>
+            <field id="Q30" type="VARCHAR" length="250"/>
+            <field id="Q31" type="VARCHAR" length="250"/>
+            <field id="Q32" type="VARCHAR" length="250"/>
+            <field id="Q33" type="VARCHAR" length="250"/>
+            <field id="Q34" type="VARCHAR" length="250"/>
+            <field id="Q35" type="VARCHAR" length="250"/>
+            <field id="Q36" type="VARCHAR" length="250"/>
+            <field id="Q37" type="VARCHAR" length="250"/>
+            <field id="Q38" type="VARCHAR" length="250"/>
+            <field id="Q39" type="VARCHAR" length="250"/>
+            <field id="Q4" type="VARCHAR" length="250"/>
+            <field id="Q40" type="VARCHAR" length="250"/>
+            <field id="Q41" type="VARCHAR" length="250"/>
+            <field id="Q42" type="VARCHAR" length="250"/>
+            <field id="Q43" type="VARCHAR" length="250"/>
+            <field id="Q44" type="VARCHAR" length="250"/>
+            <field id="Q45" type="VARCHAR" length="250"/>
+            <field id="Q46" type="VARCHAR" length="250"/>
+            <field id="Q47" type="VARCHAR" length="250"/>
+            <field id="Q48" type="VARCHAR" length="250"/>
+            <field id="Q49" type="VARCHAR" length="250"/>
+            <field id="Q5" type="VARCHAR" length="250"/>
+            <field id="Q50" type="VARCHAR" length="250"/>
+            <field id="Q51" type="VARCHAR" length="250"/>
+            <field id="Q52" type="VARCHAR" length="250"/>
+            <field id="Q53" type="VARCHAR" length="250"/>
+            <field id="Q54" type="VARCHAR" length="250"/>
+            <field id="Q55" type="VARCHAR" length="250"/>
+            <field id="Q56" type="VARCHAR" length="250"/>
+            <field id="Q57" type="VARCHAR" length="250"/>
+            <field id="Q58" type="VARCHAR" length="250"/>
+            <field id="Q59" type="VARCHAR" length="250"/>
+            <field id="Q6" type="VARCHAR" length="250"/>
+            <field id="Q60" type="VARCHAR" length="250"/>
+            <field id="Q61" type="VARCHAR" length="250"/>
+            <field id="Q62" type="VARCHAR" length="250"/>
+            <field id="Q63" type="VARCHAR" length="250"/>
+            <field id="Q64" type="VARCHAR" length="250"/>
+            <field id="Q65" type="VARCHAR" length="250"/>
+            <field id="Q66" type="VARCHAR" length="250"/>
+            <field id="Q67" type="VARCHAR" length="250"/>
+            <field id="Q68" type="VARCHAR" length="250"/>
+            <field id="Q69" type="VARCHAR" length="250"/>
+            <field id="Q7" type="VARCHAR" length="250"/>
+            <field id="Q70" type="VARCHAR" length="250"/>
+            <field id="Q71" type="VARCHAR" length="250"/>
+            <field id="Q72" type="VARCHAR" length="250"/>
+            <field id="Q73" type="VARCHAR" length="250"/>
+            <field id="Q74" type="VARCHAR" length="250"/>
+            <field id="Q75" type="VARCHAR" length="250"/>
+            <field id="Q76" type="VARCHAR" length="250"/>
+            <field id="Q77" type="VARCHAR" length="250"/>
+            <field id="Q78" type="VARCHAR" length="250"/>
+            <field id="Q79" type="VARCHAR" length="250"/>
+            <field id="Q8" type="VARCHAR" length="250"/>
+            <field id="Q80" type="VARCHAR" length="250"/>
+            <field id="Q81" type="VARCHAR" length="250"/>
+            <field id="Q82" type="VARCHAR" length="250"/>
+            <field id="Q83" type="VARCHAR" length="250"/>
+            <field id="Q84" type="VARCHAR" length="250"/>
+            <field id="Q85" type="VARCHAR" length="250"/>
+            <field id="Q86" type="VARCHAR" length="250"/>
+            <field id="Q87" type="VARCHAR" length="250"/>
+            <field id="Q88" type="VARCHAR" length="250"/>
+            <field id="Q89" type="VARCHAR" length="250"/>
+            <field id="Q9" type="VARCHAR" length="250"/>
+            <field id="Q90" type="VARCHAR" length="250"/>
+            <field id="Q91" type="VARCHAR" length="250"/>
+            <field id="Q92" type="VARCHAR" length="250"/>
+            <field id="Q93" type="VARCHAR" length="250"/>
+            <field id="Q94" type="VARCHAR" length="250"/>
+            <field id="Q95" type="VARCHAR" length="250"/>
+            <field id="Q96" type="VARCHAR" length="250"/>
+            <field id="Q97" type="VARCHAR" length="250"/>
+            <field id="Q98" type="VARCHAR" length="250"/>
+            <field id="Q99" type="VARCHAR" length="250"/>
+            <field id="ResponseDate" type="VARCHAR" length="15" readOnly="true"/>
+            <field id="SurveyID" type="BIGINT" length="19"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+            <field id="Response_ID" type="INTEGER" length="8" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

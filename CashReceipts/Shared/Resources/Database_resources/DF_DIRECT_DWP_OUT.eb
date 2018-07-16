@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" id="DF_DIRECT_DWP_OUT">
+        <columns>*</columns>
+        <from>DF_Direct_Banking_TEST.dbo.DF_Direct_DWP_OUT</from>
+        <fields>
+            <field id="LA_Ref" type="VARCHAR" length="255"/>
+            <field id="Amount" type="VARCHAR" length="50"/>
+            <field id="DB_Date" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

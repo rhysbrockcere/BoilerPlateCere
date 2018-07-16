@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" id="CRM_ENQUIRY_DURATION">
+        <columns>*</columns>
+        <from>CS_CRM.dbo.crm_Enquiry_Duration</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Category" type="VARCHAR" length="100"/>
+            <field id="Date_Created" type="TIMESTAMP" length="16"/>
+            <field id="Duration" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Enquiry_ID" type="INTEGER" length="10"/>
+            <field id="Progress" type="NUMERIC" length="18"/>
+            <field id="SLA" type="VARCHAR" length="100"/>
+            <field id="SLA_Status" type="VARCHAR" length="8" readOnly="true"/>
+            <field id="SectionName" type="VARCHAR" length="60"/>
+            <field id="ServiceName" type="VARCHAR" length="100"/>
+            <field id="Status" type="VARCHAR" length="1"/>
+            <field id="Where_Clause" required="true" persistent="false" dynamic="true"/>
+            <field id="srvc_Category_ID" type="INTEGER" length="10"/>
+            <field id="Remaining" type="NUMBER" length="18" fractionalDigits="2"/>
+        </fields>
+    </dbResource>
+</ebase>

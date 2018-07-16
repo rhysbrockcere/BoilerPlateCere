@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="All Health Visitors and Family Support Workers" database="SQLE645S1" preparedStatement="false" id="FIS_STAFF_CHECK">
+        <columns>*</columns>
+        <from>eyears_test.dbo.FIS_Application_User</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Firstname" type="VARCHAR"/>
+            <field id="Job_Type" type="VARCHAR" length="30"/>
+            <field id="Surname" type="VARCHAR" length="20"/>
+            <field id="Username" type="VARCHAR"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="100" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="Audit - record of childcare" database="SQLE645S1" preparedStatement="false" id="FS_AUD_CHILDCARE">
+        <columns>*</columns>
+        <from>FS_Flying_Start_TEST.dbo.FS_Aud_Childcare</from>
+        <fields>
+            <field id="ChildCare_ID" type="INTEGER" length="10"/>
+            <field id="Child_FS_ID" type="INTEGER" length="10"/>
+            <field id="Days_per_Week" type="INTEGER" length="10"/>
+            <field id="End_Date" type="TIMESTAMP" length="16"/>
+            <field id="Input_date" type="TIMESTAMP" length="16"/>
+            <field id="Lang_Met" type="VARCHAR" length="1"/>
+            <field id="Lang_Preferred" type="VARCHAR" length="50"/>
+            <field id="Offer_Accepted" type="VARCHAR" length="20"/>
+            <field id="Offer_Type" type="VARCHAR" length="20"/>
+            <field id="Operator_ID" type="VARCHAR" length="20"/>
+            <field id="Provider_ID" type="INTEGER" length="10"/>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Transaction_type" type="VARCHAR" length="10"/>
+            <field id="Note_ID" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

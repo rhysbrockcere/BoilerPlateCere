@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="SQLE648S1" table="true" preparedStatement="false" id="CE_VW_JOB_APPS">
+        <columns>*</columns>
+        <from>CE_Personnel_TEST.dbo.CE_VW_JOB_APPS</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="APP_ID" type="BIGINT" length="19"/>
+            <field id="Post_Ref" type="VARCHAR" length="20"/>
+            <field id="Status" length="1"/>
+            <field id="Surname" type="VARCHAR" length="50"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="200" persistent="false"/>
+            <field id="Dec_Date" type="DATE" length="23"/>
+            <field id="Filename" type="VARCHAR" length="500"/>
+            <field id="Interview_Date" type="DATE" length="23"/>
+            <field id="Interview_Loc_Code" type="INTEGER" length="4"/>
+            <field id="Interview_Time" type="VARCHAR" length="10"/>
+            <field id="Intials" type="VARCHAR" length="10"/>
+            <field id="JOB_ID" type="INTEGER" length="19"/>
+        </fields>
+    </dbResource>
+</ebase>
