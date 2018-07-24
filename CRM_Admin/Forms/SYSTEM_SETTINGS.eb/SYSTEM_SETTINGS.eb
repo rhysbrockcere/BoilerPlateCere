@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm beforeEvent="/LogonService/GL_checkCredentials" formHeaderTextRef="Txt618Ws5" htmlTitleTextRef="Txt8rVQqE" finishButtonTextRef="Txt29gO78" backButtonSupport="yes" ajax="false" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" onErrorEvent="/Report_Error/Error_Handler" preferredScriptFolder="/Scripts/System" id="SYSTEM_SETTINGS" dateCreated="2018-04-13T14:48:55.390+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+        </sharedFunctionScripts>
+        <clientCallableFunctionScripts>
+            <clientCallableFunctionScript path="/Scripts/_Shared_Functions"/>
+        </clientCallableFunctionScripts>
+        <clientScripts>
+            <clientScript path="$ws/Scripts/_Client_Functions.js"/>
+        </clientScripts>
+        <linkedTexts>
+            <linkedText>/Global_Text</linkedText>
+        </linkedTexts>
+        <resources>
+            <resource name="Enquiry_Statuses" path="/Resources/Enquiry_Statuses"/>
+            <resource name="Statuses" path="/Resources/Statuses"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt2UrwTK" restoreButtonTextRef="Txt1eIfCf" saveInfoTextRef="TxtA9zq0D" restoreInfoTextRef="Txt12u5Cw"/>
+        <finalPage headerTextRef="Txt14TiWQ" infoTextRef="Txt2wsv6f" returnTextRef="Txt7tCg2u" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

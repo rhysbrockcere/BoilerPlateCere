@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Forms/CO_CHILD" id="SELECT_PROVISION" dateCreated="2018-04-19T20:44:25.087+01:00">
+        <scriptText>set WHERE_CLAUSE = 'Provision_ID = ' + tostring(Provision-Provision_ID);
+fetch CO_Provision;
+show grpProvUpdate;
+hide grpProvTable;</scriptText>
+    </script>
+</ebase>

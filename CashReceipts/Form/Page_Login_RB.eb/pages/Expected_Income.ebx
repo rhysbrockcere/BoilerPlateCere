@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Expected_Income" pageHeaderTextRef="Txt4CPrID" pageInfoTextReference="Txt8515N1" pageTrailerTextReference="Txt3CNfjy" nextPageTextReference="Txt9UjFHs" prevPageTextReference="Txt5E3R2b">
+    <pageContents>
+        <page ctrl="PagLuTnc_2" outputType="0" pdfFooterText="LocalTxt3tMrnY" pdfHeaderText="LocalTxt8hjiSZ" uid="FLNqFhSD">
+            <header ctrl="HeadMQqgY_2" uid="3UKL8SLH"/>
+            <panel ctrl="PannEX07_2" uid="DJ30G1Wj">
+                <section ctrl="Secs4RDQ" uid="OcFLvcWL"/>
+                <field buttonText="LocalTxtHIYAZ" ctrl="FldeVTQ1" displayInfoText="true" field="Expected_Income_Form_Data-Claim_Date" helpButImage="@0" mandatory="true" uid="9JfLhCED"/>
+                <field buttonText="LocalTxt80598s" ctrl="FldGWZHU" field="Expected_Income_Form_Data-Details_of_Claim" uid="59cNQUVX"/>
+                <field buttonText="LocalTxtmJJ5B" ctrl="FldXAyyO" field="Expected_Income_Form_Data-Name_Of_Payer" uid="NU4IZRpu"/>
+                <field buttonText="LocalTxt8b7nSx" ctrl="Fld108VbH" field="Expected_Income_Form_Data-AmountClaimed" uid="Oc7RhyM8"/>
+                <button buttonText="LocalTxt9hLfgw" ctrl="SubmitBtn" mouseOverText="LocalTxt3SOblg" uid="NMgM6fx8"/>
+            </panel>
+            <footer ctrl="FootIJ4QP_2" uid="RC5oQS2X">
+                <nav ctrl="Nav4EnmO_2" uid="1ATQt1Ei"/>
+            </footer>
+        </page>
+    </pageContents>
+</page>

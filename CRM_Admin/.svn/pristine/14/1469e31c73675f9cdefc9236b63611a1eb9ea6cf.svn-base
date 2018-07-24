@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm beforeEvent="/LogonService/GL_checkCredentials,/LogonService/GL_CheckAccess" formHeaderTextRef="Txt75Dwre" htmlTitleTextRef="Txt9teRau" finishButtonTextRef="Txt3wamqB" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/Scripts/Roles" id="SECURITY_ROLES" dateCreated="2017-02-07T11:44:33.398Z">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+        </sharedFunctionScripts>
+        <clientCallableFunctionScripts>
+            <clientCallableFunctionScript path="/Scripts/Internal_ClientFunctions"/>
+        </clientCallableFunctionScripts>
+        <resources>
+            <resource name="SecurityRoleActions" path="/Resources/SecurityRoleActions"/>
+            <resource name="SecurityRoles" path="/Resources/SecurityRoles"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt7CnM7C" restoreButtonTextRef="Txtjv5x7" saveInfoTextRef="Txt7Jcnor" restoreInfoTextRef="Txt6sll94"/>
+        <finalPage headerTextRef="Txt4EJlw4" infoTextRef="TxtA1mS3O" returnTextRef="Txt3sSFEJ" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

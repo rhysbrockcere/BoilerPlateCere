@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Search_Records">
+        <tableMapping table="Results"/>
+        <fieldMapping resourceField="Action" field="Results-Action"/>
+        <fieldMapping resourceField="Action_Date" field="Results-Action_Date"/>
+        <fieldMapping resourceField="Agent" field="Results-Agent"/>
+        <fieldMapping resourceField="Assigned_To" field="Results-Assigned_To"/>
+        <fieldMapping resourceField="Attachment_Name" field="Results-Attachment_Name"/>
+        <fieldMapping resourceField="BB_ApprovalStatus" field="Results-BB_ApprovalStatus"/>
+        <fieldMapping resourceField="BB_BadgeType" field="Results-BB_BadgeType"/>
+        <fieldMapping resourceField="Category" field="Results-Category"/>
+        <fieldMapping resourceField="Created_By" field="Results-Created_By"/>
+        <fieldMapping resourceField="Date_Completed" field="Results-Date_Completed"/>
+        <fieldMapping resourceField="Date_Created" field="Results-Date_Created"/>
+        <fieldMapping resourceField="Description" field="Results-Description"/>
+        <fieldMapping resourceField="Details" field="Results-Details"/>
+        <fieldMapping resourceField="DocumentType" field="Results-DocumentType"/>
+        <fieldMapping resourceField="DueDate" field="Results-DueDate"/>
+        <fieldMapping resourceField="Email" field="Results-Email"/>
+        <fieldMapping resourceField="Enquiry_Details" field="Results-Enquiry_Details"/>
+        <fieldMapping resourceField="Enquiry_ID" field="Results-Enquiry_ID"/>
+        <fieldMapping resourceField="Expr1" field="Results-Expr1"/>
+        <fieldMapping resourceField="FileName" field="Results-FileName"/>
+        <fieldMapping resourceField="FilePath" field="Results-FilePath"/>
+        <fieldMapping resourceField="FileType" field="Results-FileType"/>
+        <fieldMapping resourceField="Firstname" field="Results-Firstname"/>
+        <fieldMapping resourceField="Location" field="Results-Location"/>
+        <fieldMapping resourceField="Priority" field="Results-Priority"/>
+        <fieldMapping resourceField="Reference" field="Results-Reference"/>
+        <fieldMapping resourceField="Resolution_Notes" field="Results-Resolution_Notes"/>
+        <fieldMapping resourceField="Resolution_Status" field="Results-Resolution_Status"/>
+        <fieldMapping resourceField="Status" field="Results-Status"/>
+        <fieldMapping resourceField="Sub_Category" field="Results-Sub_Category"/>
+        <fieldMapping resourceField="Subject" field="Results-Subject"/>
+        <fieldMapping resourceField="Surname" field="Results-Surname"/>
+        <fieldMapping resourceField="Team_email" field="Results-Team_email"/>
+        <fieldMapping resourceField="Title" field="Results-Title"/>
+        <fieldMapping resourceField="Type" field="Results-Type"/>
+        <fieldMapping resourceField="state" field="Results-state"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="Where_Clause"/>
+    </resourceMapping>
+</resourceMappings>

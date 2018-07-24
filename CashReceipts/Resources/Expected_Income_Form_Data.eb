@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource description="DB Con to capture expected income form data. " database="CERESQLS1_CASH2012" table="true" preparedStatement="false" id="Expected_Income_Form_Data" dateCreated="2018-07-23T13:23:26.545+01:00">
+        <columns>*</columns>
+        <from>Aim_Cer_Test.dbo.ccc_RB_Expected_Income</from>
+        <where>ExpectedIncome_ID=&amp;&amp;ExpectedIncome_ID</where>
+        <fields>
+            <field id="AmountClaimed" type="DECIMAL" length="6" fractionalDigits="2" required="true"/>
+            <field id="Claim_Date" type="VARCHAR" length="27"/>
+            <field id="Created_By" type="VARCHAR" length="255"/>
+            <field id="Created_Date" type="VARCHAR" length="27"/>
+            <field id="Deleted" type="BIT" length="1"/>
+            <field id="Deleted_By" type="VARCHAR" length="255"/>
+            <field id="Deleted_Date" type="VARCHAR" length="27"/>
+            <field id="Details_of_Claim" type="VARCHAR" length="500"/>
+            <field id="ExpectedIncome_Business_ID" type="INTEGER" length="10"/>
+            <field id="ExpectedIncome_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Form_Owner" type="INTEGER" length="10"/>
+            <field id="Form_Status_ID" type="INTEGER" length="10"/>
+            <field id="Income_Code" type="INTEGER" length="10"/>
+            <field id="Last_Modified_By" type="VARCHAR" length="255"/>
+            <field id="Last_Modified_Date" type="VARCHAR" length="27"/>
+            <field id="Name_Of_Payer" type="VARCHAR" length="255"/>
+            <field id="VAT_Code_ID" type="INTEGER" length="10"/>
+            <field id="Date_Due_To_Be_Received" type="DATE"/>
+        </fields>
+    </dbResource>
+</ebase>

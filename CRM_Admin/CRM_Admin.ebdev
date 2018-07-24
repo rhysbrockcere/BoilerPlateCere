@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<development version="5.3.2" id="b5f1ad6f-3000-47c1-a716-cbe5a2693035" name="CRM_Admin" description="" createdOnDate="2017-01-19T13:59:16.771Z">
+    <workspaceFiles>
+        <workspaceFile type="Entity" projectName="CRM_Admin" entityPath="/CRM_Admin"/>
+        <workspaceFile type="Folder" projectName="CRM_Admin" entityPath="/Forms"/>
+        <workspaceFile type="Folder" projectName="CRM_Admin" entityPath="/Lists"/>
+        <workspaceFile type="Folder" projectName="CRM_Admin" entityPath="/Menu"/>
+        <workspaceFile type="Folder" projectName="CRM_Admin" entityPath="/Resources"/>
+        <workspaceFile type="Folder" projectName="CRM_Admin" entityPath="/Scripts"/>
+        <workspaceFile type="Project" projectName="CRM_Common"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Scripts/_GLOBAL_FUNCTIONS"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Scripts/CRM_INTEGRATION"/>
+        <workspaceFile type="Entity" projectName="GLOBAL" entityPath="/Scripts/Internal_ClientFunctions"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Presentation/Presentation_Templates/Intranet17"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Web_Resources/Javascript/Intranet17.js"/>
+        <workspaceFile type="Folder" projectName="Shared" entityPath="/Web_Resources/Javascript/jquery-ui"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Web_Resources/Javascript/jsCookie.js"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Web_Resources/JSP/intranet.jsp"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Web_Resources/JSP/intranetFooter.jsp"/>
+        <workspaceFile type="Entity" projectName="Shared" entityPath="/Web_Resources/Style_Sheets/Intranet17.css"/>
+    </workspaceFiles>
+</development>

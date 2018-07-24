@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/SECURITY" id="Filter_Categories" dateCreated="2017-01-26T11:10:52.786Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+if (fields.filter_section.value != null) {
+	fields.Filter.value = " and section_id = " + fields.filter_section.value; 
+}
+else {
+	fields.Filter.value = '';
+}
+</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Sub_Category_List" dateCreated="2018-02-15T11:07:45.351Z">
+        <columns>Sub_Category_ID, Category_Id, Label</columns>
+        <from>crm_Sub_Categories</from>
+        <additional>order by Label</additional>
+        <fields>
+            <field id="Sub_Category_ID" type="INTEGER" input="false"/>
+            <field id="Label" input="false"/>
+            <field id="Category_Id" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="Pending"/>
+    <item id="2" returnVal="Authorised"/>
+    <item id="3" returnVal="Closed"/>
+    <item id="4" returnVal="New"/>
+</items>

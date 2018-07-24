@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/WEB_FORM" id="Copy_Form" dateCreated="2018-01-29T10:45:02.479Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+fields.ID.value = 0;
+fields.Form_ID.value = crmGetSequenceID('Form_ID');
+fields.Hits.value = 0;
+fields.Page_Header_CY.value += ' (COPY)';
+fields.Page_Header_EN.value += ' (COPY)';</scriptText>
+    </script>
+</ebase>

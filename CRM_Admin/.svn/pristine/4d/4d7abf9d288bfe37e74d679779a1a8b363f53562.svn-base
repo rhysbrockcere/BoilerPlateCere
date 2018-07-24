@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CeriExtract">
+        <tableMapping table="CeriExtract"/>
+        <fieldMapping resourceField="Name" field="CeriExtract-Name"/>
+        <fieldMapping resourceField="Team_ID" field="CeriExtract-Team_ID"/>
+        <fieldMapping resourceField="Team_Name" field="CeriExtract-Team_Name"/>
+        <fieldMapping resourceField="Username" field="CeriExtract-Username"/>
+        <fieldMapping resourceField="party_nm_pos" field="CeriExtract-party_nm_pos"/>
+        <fieldMapping resourceField="Where_Clause" field="WhereClause"/>
+    </resourceMapping>
+    <resourceMapping id="CeriExtract_Teams">
+        <tableMapping table="Teams"/>
+        <fieldMapping resourceField="Level" field="Teams-Level"/>
+        <fieldMapping resourceField="Members" field="Teams-Members"/>
+        <fieldMapping resourceField="Team_ID" field="Teams-Team_ID"/>
+        <fieldMapping resourceField="Team_Name" field="Teams-Team_Name"/>
+        <fieldMapping resourceField="Team_Path" field="Teams-Team_Path"/>
+        <fieldMapping resourceField="Where_Clause" field="WhereClause"/>
+    </resourceMapping>
+    <resourceMapping id="SecurityTeamInfo">
+        <fieldMapping resourceField="Email" field="Email"/>
+        <fieldMapping resourceField="Leader" field="Leader"/>
+        <fieldMapping resourceField="Team_ID" field="Teams-Team_ID"/>
+    </resourceMapping>
+    <resourceMapping id="Security_Settings">
+        <tableMapping table="Security_Settings"/>
+        <fieldMapping resourceField="Category_ID" field="Security_Settings-Category_ID"/>
+        <fieldMapping resourceField="ID" field="Security_Settings-ID"/>
+        <fieldMapping resourceField="Role_ID" field="Security_Settings-Role_ID"/>
+        <fieldMapping resourceField="Team_ID" field="Teams-Team_ID"/>
+    </resourceMapping>
+    <resourceMapping id="Team_Members">
+        <tableMapping table="Team_Members"/>
+        <fieldMapping resourceField="contract_name" field="Team_Members-contract_name"/>
+        <fieldMapping resourceField="fullname" field="Team_Members-fullname"/>
+        <fieldMapping resourceField="position_id" field="Team_Members-position_id"/>
+        <fieldMapping resourceField="position_nm" field="Team_Members-position_nm"/>
+        <fieldMapping resourceField="team_id" field="Teams-Team_ID"/>
+    </resourceMapping>
+</resourceMappings>

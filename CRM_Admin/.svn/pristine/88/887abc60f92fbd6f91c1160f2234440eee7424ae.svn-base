@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Roles/Roles_Load" pageHeaderTextRef="Txt8gWxpn" pageInfoTextReference="Txt49Qm82" pageTrailerTextReference="Txt1opm9q" nextPageTextReference="Txt6333vY" prevPageTextReference="Txt2lWgI9">
+    <pageContents>
+        <page ctrl="PagG1sFS" localMsg="false" msgControls="AwFSkcY0" outputType="0" pdfFooterText="LocalTxt6zXSVB" pdfHeaderText="LocalTxt4LTqfi" uid="F9IAW04O">
+            <panel ctrl="PanT2GFZ" propertySet="Nav_Panel" uid="DRIy8Mhh">
+                <button buttonText="LocalTxt2CQic2" ctrl="But2RRjc" mouseOverText="LocalTxt4QZ5w0" onClickEvent="/Scripts/Roles/goto_Security" uid="JnU0EC0S"/>
+                <button buttonText="LocalTxt23PaFM" ctrl="cmd_SaveChanges_Roles" mouseOverText="LocalTxtdS7FO" newLine="false" onClickEvent="/Scripts/Roles/Save_Changes" uid="R0HsqPq0"/>
+            </panel>
+            <message ctrl="Msg5fNKD" uid="AwFSkcY0"/>
+            <panel ctrl="Pan9ZNlA" propertySet="floatLeft" uid="N5FOjUIf" width="49%">
+                <rootHtmlElementProperties classLocator="panelLeft box"/>
+                <text ctrl="Tex9j9Zu" text="LocalTxt4irNXo" uid="5M4ni84O"/>
+                <fieldTable ctrl="TblNGT27" field="SecurityRoles" insertable="true" tableHeaderText="LocalTxt16HnZj" tableInfoText="LocalTxt1kUmwa" tableTrailerText="LocalTxt4rH1hq" uid="SLA89d6c">
+                    <tablePage ctrl="TpgGiKb2" default="L" uid="Q5QYZZC1">
+                        <fieldColumn buttonText="LocalTxt9iZHmS" ctrl="ColgXmPn" field="SecurityRoles-Name" uid="IYiUXXDr" width="33%"/>
+                        <fieldColumn buttonText="LocalTxt4vGAJM" ctrl="ColsrvwV" field="SecurityRoles-Description" uid="RmPFpY4C" width="57%"/>
+                        <fieldColumn buttonText="LocalTxt8BfKGT" ctrl="ColeUiBA" displayOnly="true" field="SecurityRoles-Filter" hAlign="Center" hyperlink="true" immedEvent="/Scripts/Roles/filter_Actions" uid="NeJSIUqS" width="17%">
+                            <stripeProperties hAlign="Center"/>
+                        </fieldColumn>
+                    </tablePage>
+                </fieldTable>
+            </panel>
+            <panel ctrl="pnl_Actions" propertySet="floatRight" uid="Ho8y9IMD" width="49%">
+                <rootHtmlElementProperties classLocator="panelRight box"/>
+                <text ctrl="Tex9j9Zu_2" text="LocalTxt4irNXo_2" uid="uCCm63D"/>
+                <button buttonText="LocalTxt996WuQ" ctrl="cmdClearActionFilter" mouseOverText="LocalTxt3uvETT" onClickEvent="/Scripts/Roles/ClearActionFilter" uid="N9RLLPIh"/>
+                <fieldTable ctrl="TblXSTNe" deletable="true" field="SecurityRoleActions" insertable="true" tableHeaderText="LocalTxt9vtY3S" tableInfoText="LocalTxt4sG3LK" tableTrailerText="LocalTxt88m5pe" uid="jCOX1eX">
+                    <tablePage ctrl="TpgGDQNS" default="L" uid="Rrs8PNc">
+                        <fieldColumn buttonText="LocalTxt11s4nU" ctrl="Col6Hp8d" field="SecurityRoleActions-Role_ID" propertySet="Chosen-Dropdown" uid="2OlEWxAS"/>
+                        <fieldColumn buttonText="LocalTxt7fPdWl" ctrl="ColJRCn3" field="SecurityRoleActions-Action_ID" propertySet="Chosen-Dropdown" uid="3QBKnxCJ"/>
+                    </tablePage>
+                </fieldTable>
+            </panel>
+        </page>
+    </pageContents>
+</page>

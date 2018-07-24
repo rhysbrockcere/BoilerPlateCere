@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CeriExtract">
+        <tableMapping table="CeriExtract"/>
+        <fieldMapping resourceField="Name" field="CeriExtract-Name"/>
+        <fieldMapping resourceField="Team_ID" field="CeriExtract-Team_ID"/>
+        <fieldMapping resourceField="Team_Name" field="CeriExtract-Team_Name"/>
+        <fieldMapping resourceField="Username" field="CeriExtract-Username"/>
+        <fieldMapping resourceField="party_nm_pos" field="CeriExtract-party_nm_pos"/>
+        <fieldMapping resourceField="Where_Clause" field="WhereClause"/>
+    </resourceMapping>
+    <resourceMapping id="CeriExtract_Teams">
+        <tableMapping table="Teams"/>
+        <fieldMapping resourceField="Team_ID" field="Teams-Team_ID"/>
+        <fieldMapping resourceField="Team_Name" field="Teams-Team_Name"/>
+        <fieldMapping resourceField="UNIT_NM_03" field="Teams-UNIT_NM_03"/>
+        <fieldMapping resourceField="UNIT_NM_04" field="Teams-UNIT_NM_04"/>
+        <fieldMapping resourceField="UNIT_NM_05" field="Teams-UNIT_NM_05"/>
+        <fieldMapping resourceField="UNIT_NM_06" field="Teams-UNIT_NM_06"/>
+        <fieldMapping resourceField="Where_Clause" field="WhereClause"/>
+    </resourceMapping>
+    <resourceMapping id="SecurityTeamInfo">
+        <fieldMapping resourceField="Email" field="Email"/>
+        <fieldMapping resourceField="Leader" field="Leader"/>
+        <fieldMapping resourceField="Team_ID" field="Teams-Team_ID"/>
+    </resourceMapping>
+    <resourceMapping id="Security_Settings">
+        <tableMapping table="Security_Settings"/>
+        <fieldMapping resourceField="Category_ID" field="Security_Settings-Category_ID"/>
+        <fieldMapping resourceField="ID" field="Security_Settings-ID"/>
+        <fieldMapping resourceField="Role_ID" field="Security_Settings-Role_ID"/>
+        <fieldMapping resourceField="Team_ID" field="Teams-Team_ID"/>
+    </resourceMapping>
+</resourceMappings>

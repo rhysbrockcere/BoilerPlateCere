@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/SECURITY_ROLES" id="Save_Changes" dateCreated="2017-02-07T11:56:08.968Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+tables.SecurityRoles.updateTable();
+tables.SecurityRoleActions.updateTable();
+
+event.owner.addWarningMessage("Database tables have been updated");</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <storedProcedureResource description="Create Claims for each week per month" database="CERESQLN1_SQL2012" procedure="Childcare_Offer.dbo.CO_Insert_Provision_Claim" id="CO_Insert_Provision_Claim" dateCreated="2018-04-20T23:38:06.547+01:00"/>
+</ebase>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Categories_List_Full">
+        <tableMapping table="Categories_List_Full"/>
+        <fieldMapping resourceField="Category" field="Categories_List_Full-Category"/>
+        <fieldMapping resourceField="Email" field="Categories_List_Full-Email"/>
+        <fieldMapping resourceField="Leader" field="Categories_List_Full-Leader"/>
+        <fieldMapping resourceField="Resp_Team_ID" field="Categories_List_Full-Resp_Team_ID"/>
+        <fieldMapping resourceField="Category_ID" field="Category_ID"/>
+        <fieldMapping resourceField="Sub_Category_ID" field="Sub_Category_ID"/>
+    </resourceMapping>
+    <resourceMapping id="Web_Form">
+        <fieldMapping resourceField="Address_Block" field="Address_Block"/>
+        <fieldMapping resourceField="Allow_Anonymous" field="Allow_Anonymous"/>
+        <fieldMapping resourceField="allow_upload" field="Allow_Upload"/>
+        <fieldMapping resourceField="Category_ID" field="Category_ID"/>
+        <fieldMapping resourceField="Confirmation_Text_CY" field="Confirmation_Text_CY"/>
+        <fieldMapping resourceField="Confirmation_Text_EN" field="Confirmation_Text_EN"/>
+        <fieldMapping resourceField="Created_By" field="Created_By"/>
+        <fieldMapping resourceField="Date_Created" field="Date_Created"/>
+        <fieldMapping resourceField="Date_Modified" field="Date_Modified"/>
+        <fieldMapping resourceField="Default_Comments" field="Default_Comments"/>
+        <fieldMapping resourceField="Default_Enquiry_Type" field="Default_Enquiry_Type"/>
+        <fieldMapping resourceField="Email_Address" field="Email_Address"/>
+        <fieldMapping resourceField="Email_Confirmation_Details" field="Email_Confirmation_Details"/>
+        <fieldMapping resourceField="Email_Customer" field="Email_Customer"/>
+        <fieldMapping resourceField="Email_Form" field="Email_Form"/>
+        <fieldMapping resourceField="Email_From" field="Email_From"/>
+        <fieldMapping resourceField="Email_Subject_CY" field="Email_Subject_CY"/>
+        <fieldMapping resourceField="Email_Subject_EN" field="Email_Subject_EN"/>
+        <fieldMapping resourceField="Email_Text_EN" field="Email_Text_EN"/>
+        <fieldMapping resourceField="Email_text_CY" field="Email_text_CY"/>
+        <fieldMapping resourceField="Enabled" field="Enabled"/>
+        <fieldMapping resourceField="Form_ID" field="Form_ID"/>
+        <fieldMapping resourceField="Hits" field="Hits"/>
+        <fieldMapping resourceField="ID" field="ID"/>
+        <fieldMapping resourceField="Intro_Text_CY" field="Intro_Text_CY"/>
+        <fieldMapping resourceField="Intro_Text_EN" field="Intro_Text_EN"/>
+        <fieldMapping resourceField="Modified_By" field="Modified_By"/>
+        <fieldMapping resourceField="Next_Form_Name" field="Next_Form_Name"/>
+        <fieldMapping resourceField="Page_Header_CY" field="Page_Header_CY"/>
+        <fieldMapping resourceField="Page_Header_EN" field="Page_Header_EN"/>
+        <fieldMapping resourceField="Param1" field="Param1"/>
+        <fieldMapping resourceField="RB_Search" field="RB_Search"/>
+        <fieldMapping resourceField="Return_URL_CY" field="Return_URL_CY"/>
+        <fieldMapping resourceField="Return_URL_EN" field="Return_URL_EN"/>
+        <fieldMapping resourceField="Show_Comments" field="Show_Comments"/>
+        <fieldMapping resourceField="Show_Subject" field="Show_Subject"/>
+        <fieldMapping resourceField="Sub_Category_ID" field="Sub_Category_ID"/>
+        <fieldMapping resourceField="Summary_Text_CY" field="Summary_Text_CY"/>
+        <fieldMapping resourceField="Summary_Text_EN" field="Summary_Text_EN"/>
+        <fieldMapping resourceField="allow_select" field="allow_select"/>
+        <fieldMapping resourceField="email_required" field="email_required"/>
+        <fieldMapping resourceField="total_pages" field="total_pages"/>
+        <fieldMapping resourceField="verify" field="verify"/>
+        <fieldMapping resourceField="verify_text" field="verify_text"/>
+    </resourceMapping>
+</resourceMappings>

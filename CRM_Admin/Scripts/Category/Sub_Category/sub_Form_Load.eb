@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="Javascript" preferredComponentPath="/Forms/SUB_CATEGORY" id="sub_Form_Load" dateCreated="2017-06-28T16:12:07.470+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+if (fields.Sub_Category_ID.value &gt; 0) {
+	//Load the details
+	resources.Sub_Category.fetch();
+	resources.Category.fetch();
+	tables.Forms.fetchTable();
+}
+else {
+	resources.Category.fetch();
+	//Set some defaults
+	fields.Resp_Team_ID.value = fields.cat_Resp_Team_ID.value;
+}
+</scriptText>
+    </script>
+</ebase>

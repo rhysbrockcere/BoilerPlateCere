@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/System/Settings_Load" pageHeaderTextRef="Txt7aej6O" pageInfoTextReference="Txt4wyFIi" pageTrailerTextReference="Txt1HFu5u" nextPageTextReference="Txt8fcjWZ" prevPageTextReference="Txt7E4l6O">
+    <pageContents>
+        <page ctrl="Pag14a28O" outputType="0" pdfFooterText="LocalTxt8gz8ZP" pdfHeaderText="LocalTxt3w532Q" uid="GCRNE58I">
+            <componentPlaceHolder name="AdminMenu" prefix="mnuAdminMenu"/>
+            <panel ctrl="PancVU1L" default="L" uid="53xMLXdE">
+                <rootHtmlElementProperties classLocator="pagePanel"/>
+                <text ctrl="TexsJBSP" text="LocalTxt2L2ysM" uid="O9T9aciH"/>
+                <panel ctrl="Pan6oSkF" propertySet="Accordion" uid="70H9h0jc">
+                    <text ctrl="Tex14daJj" text="LocalTxt1j2b0N" uid="331TlqWX"/>
+                    <panel ctrl="Panf6aGG" uid="63xJNCwS">
+                        <gridControl columnWidths="50%,50%" columns="2" ctrl="GrdOzsmp" rows="1" uid="Qs135QaZ">
+                            <gridCell column="1" columnspan="1" ctrl="GrcieY8I" row="1" rowspan="1" uid="8noOMjXm">
+<text ctrl="TexdDOgq" text="LocalTxtAfiaCT" textBold="Bold" uid="GaUuuAT8"/>
+<text ctrl="TexWFWDf" text="LocalTxt3WG2V2" uid="A49Jz4co"/>
+<fieldTable addRowEvent="/Scripts/System/Status_AddRow" ctrl="TblucP2r" field="Enquiry_Statuses" insertable="true" tableHeaderText="LocalTxtAIm0uv" tableInfoText="LocalTxt6AZcHh" tableTrailerText="LocalTxtALbRyB" uid="RzXpchJj">
+    <tablePage ctrl="TpgaGBsO" default="L" uid="jO375Yk">
+        <fieldColumn buttonText="LocalTxt74AhAu" ctrl="ColMkThw" field="Enquiry_Statuses-Description" uid="JyZeglVf" width="19%"/>
+        <fieldColumn buttonText="LocalTxt2Xf8zP" ctrl="ColVEjww" field="Enquiry_Statuses-Status_CY" uid="G0Js5CjO" width="19%"/>
+        <fieldColumn buttonText="LocalTxtAKLjj3" ctrl="ColconNi" field="Enquiry_Statuses-Optional" hAlign="Center" uid="9Bn3imlm" width="19%">
+            <columnHeaderProperties hAlign="Center"/>
+            <stripeProperties hAlign="Center"/>
+        </fieldColumn>
+        <fieldColumn buttonText="LocalTxt1Z5vjR" ctrl="Col6RnKf" field="Enquiry_Statuses-Selectable" hAlign="Center" uid="QR5IzpA8" width="25%">
+            <columnHeaderProperties hAlign="Center"/>
+            <stripeProperties hAlign="Center"/>
+        </fieldColumn>
+    </tablePage>
+</fieldTable>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="GrciheWw" row="1" rowspan="1" uid="N0ZozEga">
+<text ctrl="TexdDOgq_2" text="LocalTxtAfiaCT_2" textBold="Bold" uid="1ch2ngS0"/>
+<text ctrl="TexWFWDf_2" text="LocalTxt3WG2V2_2" uid="MGNBmiDV"/>
+<panel ctrl="pnlNew" hidden="true" layoutType="@0" uid="DkfVqByy">
+    <gridControl bottomMargin="10px" columnWidths="33%,33%,34%" columns="3" ctrl="GrdO6Jj4" rows="2" uid="7R1PtNkz">
+        <gridCell column="1" columnspan="1" ctrl="GrcYrEHk" row="1" rowspan="1" uid="5Tub8E9Z">
+            <text ctrl="Tex7SZOl" text="LocalTxt6rs5OQ" uid="3QTJeDIr"/>
+        </gridCell>
+        <gridCell column="2" columnspan="1" ctrl="GrcF7gaw" row="1" rowspan="1" uid="6JaisSUW">
+            <text ctrl="TexbaCUx" text="LocalTxt2I4W3H" uid="322MwK9P"/>
+        </gridCell>
+        <gridCell column="3" columnspan="1" ctrl="GrcJ4fZR" row="1" rowspan="1" uid="DNzQDIEA">
+            <text ctrl="TexwZ84z" text="LocalTxt2r2wF8" uid="EkJOHKXY"/>
+        </gridCell>
+        <gridCell column="1" columnspan="1" ctrl="Grc2MGPh" layoutType="@0" row="2" rowspan="1" uid="IwwO1GMU">
+            <field buttonText="LocalTxt25Sq6C" ctrl="FldcwHjh" displayLabelText="false" field="Statuses-Status_ID" propertySet="Chosen-Medium" uid="KNUKimTL"/>
+        </gridCell>
+        <gridCell column="2" columnspan="1" ctrl="GrcaPnlE" layoutType="@0" row="2" rowspan="1" uid="N5CeZAXz">
+            <layoutProperties>
+                <VERTICAL_BOX cellHAlign="Center" hAlign="Center" vAlign="Top"/>
+            </layoutProperties>
+            <field buttonText="LocalTxtIaoyP" ctrl="FldrsmuD" displayLabelText="false" field="Statuses-Type_ID" propertySet="Chosen-Medium" uid="AAoidsOg"/>
+        </gridCell>
+        <gridCell column="3" columnspan="1" ctrl="Grc134Um9" layoutType="@0" row="2" rowspan="1" uid="DqiomxPw">
+            <field buttonText="LocalTxtH5BBi" ctrl="FldFXgTu" displayLabelText="false" displayOnly="true" field="Statuses-Sub_Category_ID" uid="D1Iwt18D">
+                <editorHtmlElementProperties classLocator="spEditor" idLocator="@0" jQueryEventHandlers="@0"/>
+            </field>
+            <field buttonText="LocalTxt1gtTE3" ctrl="FldI3GNE" displayLabelText="false" field="search_Category" uid="NzpyToSd">
+                <editorHtmlElementProperties classLocator="spEditor" idLocator="searchCategory" jQueryEventHandlers="$;ready;&#xA;$.widget( &quot;custom.catcomplete&quot;, $.ui.autocomplete, {&#xA; _create: function() {&#xA;   this._super();&#xA;   this.widget().menu( &quot;option&quot;, &quot;items&quot;, &quot;&gt; :not(.ui-autocomplete-category)&quot; );&#xA; },&#xA; _renderMenu: function( ul, items ) {&#xA;   var that = this,&#xA;     currentCategory = &quot;&quot;;&#xA;   $.each( items, function( index, item ) {&#xA;     var li;&#xA;     if ( item.category != currentCategory ) {&#xA;       ul.append( &quot;&lt;li class='ui-autocomplete-category' data-id=&quot; + item.ID + &quot;&gt;&quot; + item.category + &quot;&lt;/li&gt;&quot; );&#xA;       currentCategory = item.category;&#xA;     }&#xA;     li = that._renderItemData( ul, item );&#xA;     if ( item.category ) {&#xA;       li.attr( &quot;aria-label&quot;, item.category + &quot; : &quot; + item.label );&#xA;     }&#xA;   });&#xA; }&#xA;});&#xA;&#xA;// Setup the JQuery autocomplete function for the name search box&#xA;$(&quot;#searchCategory&quot;).catcomplete({ &#xA;&#x9;source: filterCategories,&#xA;&#x9;delay: 0,&#xA;&#x9;select: function(event, ui) {&#xA;&#x9;&#x9;var selected = ui.item.value;&#xA;&#x9;&#x9;ID = ui.item.ID;&#xA;&#x9;&#x9;$eb.executeFunction(&quot;setSubCategory&quot;, ID);&#xA;&#x9;&#x9;//$eb.setFieldValue(&quot;Sub_Category_ID&quot;, ID,true);&#xA;&#x9;}&#xA;});"/>
+            </field>
+        </gridCell>
+    </gridControl>
+    <panel ctrl="PanuHh7y" uid="K42UDwSZ">
+        <button buttonText="LocalTxt4BtRjO" ctrl="ButhH9Cg" mouseOverText="LocalTxt9cZnZM" onClickEvent="/Scripts/System/addStatus" uid="QYgW7U2"/>
+        <hyperlink ctrl="Lnk2Gewa" onClickEvent="/Scripts/System/CancelStatusAdd" text="LocalTxt6r5HfQ" title="LocalTxt8XVk13" uid="C2v7gFwN"/>
+    </panel>
+</panel>
+<panel ctrl="pnl_StatusVis" uid="DDBQ9dYg">
+    <fieldTable ctrl="TbldRcLG" deletable="true" displayOnly="true" field="Statuses" insertable="false" showColumnHeaders="true" tableHeaderText="LocalTxt2XtSYH" tableInfoText="LocalTxt7Nj1vz" tableTrailerText="LocalTxt4pYFm7" uid="AmEDFiPX">
+        <tablePage ctrl="Tpg7dPJY" default="L" uid="MCQRntmQ">
+            <fieldColumn buttonText="LocalTxt1u98MQ" ctrl="ColTRfoe" field="Statuses-Status_ID" uid="6yP85NoB" width="33%"/>
+            <fieldColumn buttonText="LocalTxt8tXud7" ctrl="ColP5tK4" field="Statuses-Type_ID" uid="O3jN6aZG" width="33%"/>
+            <fieldColumn buttonText="LocalTxt4ry5ic" ctrl="ColcHu3A" field="Statuses-Sub_Category_ID" propertySet="Chosen-Dropdown" uid="12fj92z4"/>
+        </tablePage>
+    </fieldTable>
+    <button buttonText="LocalTxt887Egs" ctrl="Butu0FdD" mouseOverText="LocalTxt9Dpxr2" onClickEvent="/Scripts/System/addStatusRow" uid="2B8jWXay"/>
+</panel>
+                            </gridCell>
+                        </gridControl>
+                        <panel ctrl="PanlmouY" propertySet="Button_Panel" uid="R85KocfU">
+                            <button buttonText="LocalTxt7kzwWi" ctrl="ButDF9hp" mouseOverText="LocalTxt3nAaBS" onClickEvent="/Scripts/System/Update_Statuses" uid="E5Bzt6N2"/>
+                        </panel>
+                    </panel>
+                    <text ctrl="Texegtr8" text="LocalTxt2IlIwr" uid="Fl2ft1nh"/>
+                    <panel ctrl="PanLMtaN" uid="Pz9JFKDN"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

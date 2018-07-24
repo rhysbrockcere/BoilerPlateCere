@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Search" nextPage="TeamDetails" pageHeaderTextRef="Txt2kMVTx" pageInfoTextReference="Txt3DGfpc" pageTrailerTextReference="Txt8DJWIJ" nextPageTextReference="Txt9WEKmN" prevPageTextReference="Txt47sXas">
+    <pageContents>
+        <page ctrl="Pag4oW0s" outputType="0" pdfFooterText="LocalTxt6JY0cA" pdfHeaderText="LocalTxt8FEL3q" uid="3SYC6JGb">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu_AdminMenu"/>
+            <panel ctrl="PanhaW2S" layoutType="FIELD" propertySet="PagePanel" uid="NBdBhkYm">
+                <panel ctrl="pnlSearch" inheritMsg="false" layoutType="FIELD" msgControls="IGUiZpf2" propertySet="Central Box" uid="NYNQMyGE" width="500px">
+                    <text ctrl="TexYaK3R" text="LocalTxt26nD03" uid="E15Zcenv"/>
+                    <message ctrl="msgSearch" uid="IGUiZpf2"/>
+                    <spacer ctrl="SpcnG6UC" uid="HGVwxYra"/>
+                    <field buttonText="LocalTxt6v2XxM" ctrl="FldoP1UG" field="find_user" uid="JXYlFlsZ"/>
+                    <spacer ctrl="SpcESnTO" uid="2mFMyX7V"/>
+                    <field buttonText="LocalTxt9RSrwa" ctrl="FldvGaTf" field="find_team" uid="4m9hBlvN"/>
+                    <spacer ctrl="Spc6KUVH" uid="J1QJWpwf"/>
+                    <panel ctrl="PanNBj9r" style="text-align:right;" uid="GZEn1Ek3">
+                        <button buttonText="LocalTxtlmlcN" ctrl="Butejwew" mouseOverText="LocalTxt8Zy2Jw" onClickEvent="/Scripts/Security/Search" uid="RE0v9KLl">
+                            <rootHtmlElementProperties classLocator="@0"/>
+                        </button>
+                    </panel>
+                </panel>
+                <panel ctrl="pnlTeams" hidden="true" propertySet="Central Box" uid="50jfwF68" width="600px">
+                    <text ctrl="TexNDXYL" text="LocalTxt4I9S7F" uid="RUxNtrN"/>
+                    <button buttonText="LocalTxt36OAA2" ctrl="ButiX7DO" mouseOverText="LocalTxtAJCIh6" onClickEvent="/Scripts/Security/searchAgain" uid="3n2ECQdd"/>
+                    <spacer ctrl="Spc2XHOA" uid="J72PJ4OL"/>
+                    <repeater ctrl="Rep75Lcu" field="Teams" uid="8cCgPYk0">
+                        <repeaterRow ctrl="ReprpCfPu" uid="9Ivv76wo">
+                            <gridControl columnWidths="10%,90%" columns="2" ctrl="GrdTChEt" rows="1" uid="LBurYSRT">
+<gridCell column="1" columnspan="1" ctrl="GrcuJRdI" layoutType="FLOW" row="1" rowspan="1" uid="Ph3fUTT2">
+    <html ctrl="HtmUvIeZ_2" default="L" htmlText="LocalTxtL76jJ_2" uid="3W0Q4k1m"/>
+</gridCell>
+<gridCell column="2" columnspan="1" ctrl="Grc3Qz3Y" layoutType="FLOW" row="1" rowspan="1" uid="MyluLgTc">
+    <field buttonText="LocalTxt9KYG1S" ctrl="FldeC8zx" displayLabelText="false" field="Teams-Team_Name" hyperlink="true" immedEvent="/Scripts/Security/gotoTeamDetails" uid="LKe3F3vw"/>
+</gridCell>
+                            </gridControl>
+                        </repeaterRow>
+                    </repeater>
+                </panel>
+                <panel ctrl="pnlUsers" hidden="true" propertySet="Central Box" uid="5JoR7iFQ" width="600px">
+                    <text ctrl="TexNDXYL_2" text="LocalTxt4I9S7F_2" uid="6Nl3a9xR"/>
+                    <button buttonText="LocalTxt36OAA2_2" ctrl="ButiX7DO_2" mouseOverText="LocalTxtAJCIh6_2" onClickEvent="/Scripts/Security/searchAgain" uid="RyUYIVtO"/>
+                    <repeater ctrl="RepnDENT" field="CeriExtract" layoutType="VERTICAL_BOX" uid="7XNfbl9w" width="100%">
+                        <repeaterRow ctrl="ReprqLew7" displayOnly="true" layoutType="VERTICAL_BOX" uid="cvHJuj" width="Fill">
+                            <gridControl columnWidths="5%,31.35%,31.35%,31.35%" columns="4" ctrl="GrdmFub3" rows="1" uid="Pw106Oon" width="100%">
+<gridCell column="1" columnspan="1" ctrl="Grc5jl2w" layoutType="FLOW" row="1" rowspan="1" uid="9WD12OV3">
+    <html ctrl="HtmUvIeZ" default="L" htmlText="LocalTxtL76jJ" uid="7tBBdfMY"/>
+</gridCell>
+<gridCell column="2" columnspan="1" ctrl="GrcygELC" layoutType="@0" row="1" rowspan="1" uid="QPzAkmjl">
+    <field buttonText="LocalTxt4ANLxN" ctrl="Fldx7caY" displayLabelText="false" field="CeriExtract-Username" uid="NgopBl5U"/>
+</gridCell>
+<gridCell column="3" columnspan="1" ctrl="Grc1Sd3B" layoutType="@0" row="1" rowspan="1" uid="ITwXwTIW">
+    <field buttonText="LocalTxt7uqRnB" ctrl="Fld1b9wl" displayLabelText="false" field="CeriExtract-Name" uid="9cCzRS3C"/>
+</gridCell>
+<gridCell column="4" columnspan="1" ctrl="GrcVzvoS" layoutType="@0" row="1" rowspan="1" uid="MoXAfgvO">
+    <field buttonText="LocalTxt29GX8s" ctrl="FldK2HJI" displayLabelText="false" field="CeriExtract-Team_Name" hyperlink="true" immedEvent="/Scripts/Security/getTeam,/Scripts/Security/gotoTeamDetails" uid="5iWTzcVt"/>
+</gridCell>
+                            </gridControl>
+                        </repeaterRow>
+                    </repeater>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

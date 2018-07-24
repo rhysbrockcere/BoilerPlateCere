@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Active" type="BOOLEAN" defaultValue="1" labelTextRef="Txt4fihVa" displayType="CHECKBOX"/>
+    <field name="Created_By" type="CHAR" labelTextRef="Txt7Bv46l" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="Date_Created" type="DATETIME" labelTextRef="Txt82DcYK" displayType="TEXT"/>
+    <field name="Date_Modified" type="DATETIME" labelTextRef="Txt6K5Mx0" displayType="TEXT"/>
+    <field name="Description" type="CHAR" labelTextRef="Txt3iuGGx" maxLength="500" displayType="TEXTAREA" displayLength="60"/>
+    <field name="Ebase_Form_ID" type="CHAR" labelTextRef="Txt1HtLhb" maxLength="50" displayType="SELECT" displayLength="30" dynamicList="/Lists/Web_Forms">
+        <listMappings display="FormName" return="Form_ID"/>
+    </field>
+    <field name="Form_Date" type="DATE" labelTextRef="Txt7IoZs7" displayType="TEXT"/>
+    <field name="Form_URL" type="CHAR" labelTextRef="Txt1SrEZf" maxLength="255" displayType="TEXT" displayLength="80"/>
+    <field name="ID" type="INTEGER" parameter="true" labelTextRef="Txt3e7ASv" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Modified_By" type="CHAR" labelTextRef="Txt4F7Rl9" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="Name" type="CHAR" labelTextRef="Txt3pREav" maxLength="255" displayType="TEXT" displayLength="60"/>
+    <field name="Parameter1" type="CHAR" labelTextRef="Txt3BweTL" helpTextRef="Txt2yxNUb" maxLength="50" displayType="TEXT" displayLength="30"/>
+    <field name="Parameter2" type="CHAR" labelTextRef="TxtAKBkcm" helpTextRef="Txt4xkimT" maxLength="50" displayType="TEXT" displayLength="30"/>
+    <field name="Parameter3" type="CHAR" labelTextRef="Txt1mszuX" helpTextRef="Txt1zdXp0" maxLength="50" displayType="TEXT" displayLength="30"/>
+    <field name="Sub_Category_ID" type="INTEGER" returnable="true" parameter="true" labelTextRef="Txt4IHDcW" helpTextRef="Txt4Sxwj3" displayType="SELECT" displayLength="17" dynamicList="/Lists/Sub_Categories" listBuildOption="each">
+        <listMappings display="Sub_Category" return="Sub_Category_ID"/>
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Type" type="CHAR" defaultValue="Eform" labelTextRef="Txt3mWhNN" displayType="RADIO" labelPosition="right" staticList="/Lists/Form_Type"/>
+</fields>

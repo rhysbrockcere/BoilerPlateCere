@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Web_Forms" dateCreated="2017-07-04T09:31:13.844+01:00">
+        <columns>Form_ID, Page_Header_En as FormName</columns>
+        <from>web_Contact_Forms</from>
+        <where>enabled = '1' and Next_Form_Name is not null</where>
+        <fields>
+            <field id="Form_ID" type="INTEGER" input="false"/>
+            <field id="FormName" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

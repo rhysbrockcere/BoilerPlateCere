@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="TargetServer_SubCategories" dateCreated="2013-06-27T16:00:03.870+01:00">
+        <columns>sub_category_ID, Category as Name</columns>
+        <from>&amp;&amp;ServerName .dbo.crm_Category_List_Full</from>
+        <where>sub_category_id &gt; 0</where>
+        <additional>order by Name</additional>
+        <fields>
+            <field id="ServerName" type="CHAR" output="false" persistent="false" dynamic="true"/>
+            <field id="sub_category_ID" type="INTEGER" input="false"/>
+            <field id="Name" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

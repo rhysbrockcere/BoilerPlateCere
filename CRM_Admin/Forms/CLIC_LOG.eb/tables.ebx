@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="crm_Log">
+        <column name="Action" type="CHAR" labelTextRef="Txt3rJr3i" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Browser_IP" type="CHAR" labelTextRef="Txt9sPFK5" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Browser_Type" type="CHAR" labelTextRef="TxtWpCqX" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Details" type="CHAR" labelTextRef="Txt7cFkqV" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Form" type="CHAR" labelTextRef="Txt3rANUl" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Form_ID" type="INTEGER" labelTextRef="Txt1DK8Zi" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ID" type="INTEGER" labelTextRef="Txt9WUe4o" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Page" type="CHAR" labelTextRef="Txt5vIho5" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Session_ID" type="CHAR" labelTextRef="Txt6ulJx3" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Time_Stamp" type="DATETIME" labelTextRef="Txt1gIsxu" displayType="TEXT" valuePattern=""/>
+        <column name="Type" type="INTEGER" labelTextRef="Txt3QWtPq" displayType="SELECT" displayLength="17" staticList="/Lists/Log_Types">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="User_ID" type="CHAR" labelTextRef="Txt9w4jCZ" maxLength="50" displayType="TEXT" displayLength="50"/>
+    </table>
+</tables>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="Sub_Categories_NoParams" dateCreated="2017-06-28T15:19:31.043+01:00">
+        <columns>*</columns>
+        <from>crm_Category_Sub</from>
+        <additional>order by Sub_Category</additional>
+        <fields>
+            <field id="Category_ID" type="INTEGER" length="10"/>
+            <field id="Description" type="VARCHAR" length="500"/>
+            <field id="Description_CY" type="VARCHAR" length="500"/>
+            <field id="Enabled" type="BIT" length="1"/>
+            <field id="Sub_Category" type="VARCHAR" length="200"/>
+            <field id="Sub_Category_CY" type="VARCHAR" length="200"/>
+            <field id="Sub_Category_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Resp_Team_ID" type="VARCHAR" length="50"/>
+        </fields>
+    </dbResource>
+</ebase>

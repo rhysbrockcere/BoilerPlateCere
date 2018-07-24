@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="crm_Log">
+        <tableMapping table="crm_Log"/>
+        <fieldMapping resourceField="Rows" field="Filter_Rows"/>
+        <fieldMapping resourceField="Where_Clause" field="Where_Clause"/>
+        <fieldMapping resourceField="Action" field="crm_Log-Action"/>
+        <fieldMapping resourceField="Browser_IP" field="crm_Log-Browser_IP"/>
+        <fieldMapping resourceField="Browser_Type" field="crm_Log-Browser_Type"/>
+        <fieldMapping resourceField="Details" field="crm_Log-Details"/>
+        <fieldMapping resourceField="Form" field="crm_Log-Form"/>
+        <fieldMapping resourceField="Form_ID" field="crm_Log-Form_ID"/>
+        <fieldMapping resourceField="ID" field="crm_Log-ID"/>
+        <fieldMapping resourceField="Page" field="crm_Log-Page"/>
+        <fieldMapping resourceField="Session_ID" field="crm_Log-Session_ID"/>
+        <fieldMapping resourceField="Time_Stamp" field="crm_Log-Time_Stamp"/>
+        <fieldMapping resourceField="Type" field="crm_Log-Type"/>
+        <fieldMapping resourceField="User_ID" field="crm_Log-User_ID"/>
+    </resourceMapping>
+</resourceMappings>

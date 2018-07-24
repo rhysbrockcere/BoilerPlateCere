@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dynamicList database="CHILDCARE_OFFER" id="CO_Ethnic_Origin_list" dateCreated="2018-04-23T00:17:07.690+01:00">
+        <columns>Ethnic_Code, Ethnic_EN, Ethnic_CY</columns>
+        <from>Childcare_Offer.dbo.CO_Ethnic_Origin</from>
+        <fields>
+            <field id="Ethnic_CY" input="false"/>
+            <field id="Ethnic_Code" input="false"/>
+            <field id="Ethnic_EN" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

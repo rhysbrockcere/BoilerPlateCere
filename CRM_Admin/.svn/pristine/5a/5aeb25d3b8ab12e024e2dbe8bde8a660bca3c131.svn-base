@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Services" dateCreated="2017-03-09T15:21:57.339Z">
+        <columns>distinct Service</columns>
+        <from>crm_Categories_List</from>
+        <additional>order by service</additional>
+        <fields>
+            <field id="Service" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

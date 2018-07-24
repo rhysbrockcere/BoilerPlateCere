@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="Javascript" preferredComponentPath="/Forms/CLIC_LOG" id="Form_Load" dateCreated="2018-03-06T11:41:39.224Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+var actionList = getList("Action");
+fields.Filter_Action.createCustomList(actionList);
+
+var formList = getList("Form");
+fields.Filter_Form.createCustomList(formList);
+
+//var typeList = getPriorityList("Type")
+//fields.filter_Priority.createCustomList(typeList);
+
+var userList = getList("User_ID");
+fields.Filter_User.createCustomList(userList);
+
+
+/*********************************************************************************************************************************/
+
+function getList(Column) {
+
+	var List = [];
+	
+	try {
+		var con = system.getDatabaseConnection('CRM');
+		var stmt;
+		var rs;
+	
+		stmt = con.prepareStatement('select distinct ' + Column + ' from crm_log order by ' + Column);
+		rs = stmt.executeQuery();
+	
+		while (rs.next()){
+				List.push(rs.getString(1));			
+			}
+	  }
+	
+	catch (e) {
+		log("__**ERROR** - getList " + e);		
+		result = 0;	
+	}
+	finally	{
+	  if(rs) rs.close();
+	  if(stmt) stmt.close();
+		if(con) con.close();
+			
+	  return List;
+	}
+}</scriptText>
+    </script>
+</ebase>

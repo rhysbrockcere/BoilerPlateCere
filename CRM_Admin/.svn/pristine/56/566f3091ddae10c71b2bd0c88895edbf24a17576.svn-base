@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm beforeEvent="/LogonService/GL_checkCredentials,/LogonService/GL_CheckAccess" formHeaderTextRef="Txt2zgvSV" htmlTitleTextRef="Txt38bazJ" finishButtonTextRef="Txt8sBIfQ" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/Scripts/Categories" id="CATEGORIES" dateCreated="2017-03-09T09:58:46.406Z">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/CRM_INTEGRATION"/>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+        </sharedFunctionScripts>
+        <clientCallableFunctionScripts>
+            <clientCallableFunctionScript path="/Scripts/Internal_ClientFunctions"/>
+        </clientCallableFunctionScripts>
+        <resources>
+            <resource name="Categories" path="/Resources/Categories"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt3wMHYu" restoreButtonTextRef="Txt1TAWKC" saveInfoTextRef="Txt2J40Jj" restoreInfoTextRef="Txt5kNnH9"/>
+        <finalPage headerTextRef="TxtCLPA7" infoTextRef="TxtAuaVKt" returnTextRef="Txt1xasZ7" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

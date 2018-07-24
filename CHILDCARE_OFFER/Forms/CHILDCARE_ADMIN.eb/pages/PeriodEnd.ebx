@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="PeriodEnd" pageHeaderTextRef="Txt79Ho7e" pageInfoTextReference="Txt5GJPJx" pageTrailerTextReference="Txt7OEXGD" nextPageTextReference="Txt8zoIAg" prevPageTextReference="Txt8f7Nac">
+    <pageContents>
+        <page ctrl="Pag12zICr" outputType="0" pdfFooterText="LocalTxt1xAAsi" pdfHeaderText="LocalTxt6LhN6i" uid="3DmurXPS">
+            <groupPanel ctrl="GpanwOUw2" groupHeaderText="LocalTxt6T0Yys" groupInfoText="LocalTxt2VpgZ8" groupTrailerText="LocalTxt1jewgF" layoutType="FIELD" uid="O7PJrRB0">
+                <panel ctrl="PanrOvIl_3" displayOnly="true" layoutType="HORIZONTAL_BOX" uid="NLXQCzs0">
+                    <html ctrl="Htmmb0Mw_3" default="L" htmlText="LocalTxt4GAjto_3" uid="JmYpqi3j"/>
+                    <field buttonText="LocalTxtuYSBZ_3" ctrl="FldzC88y_3" field="FOP_FULL_CHILD_NAME" uid="KMKtWt4U"/>
+                    <hyperlink ctrl="LnkcahHK" onClickEvent="/Scripts/Goto_Page_Landing" text="LocalTxt3iVbvl" title="LocalTxt1FhZek" uid="FhPHqnUS"/>
+                </panel>
+                <panel ctrl="PanVY5Hg" layoutType="HORIZONTAL_BOX" uid="6VvrJYdP">
+                    <field buttonText="LocalTxt16x530" ctrl="Fld12EWMZ" displayOnly="true" field="Current_Period_Start_Date" uid="O5s59Xfr"/>
+                    <html ctrl="HtmPbrQU" default="L" htmlText="LocalTxt4Md5B6" uid="J9DLIhZ"/>
+                    <field buttonText="LocalTxt39uVGL" ctrl="FlddHAzo" displayOnly="true" field="Current_Period_End_Date" uid="q8iCUHZ"/>
+                </panel>
+                <tabSet ctrl="TbsFhJhk" uid="1RdU7Hxr">
+                    <tab ctrl="TabcMHdJ" imageAltText="LocalTxtM69ph" imageMouseOverText="LocalTxt3J2bgw" itemName="Tab3" text="LocalTxt6TevRd" uid="AtSIbTDL">
+                        <groupPanel ctrl="GpanH6eZg" groupHeaderText="LocalTxt7xfpei" groupInfoText="LocalTxtq8XWX" groupTrailerText="LocalTxt6lvnGR" uid="3Y7sRIvE">
+                            <field buttonText="LocalTxt8Usc0b" ctrl="FldxkVls" field="PARAM_PIN" uid="PNGab0dz"/>
+                            <button buttonText="LocalTxt7hBFxv" ctrl="ButUEMLS" mouseOverText="LocalTxt8hDVjV" onClickEvent="/Scripts/Create_Claims" uid="FtDtgCLL"/>
+                        </groupPanel>
+                    </tab>
+                    <tab ctrl="TabxKwdU" imageAltText="LocalTxt8FE5Sa" imageMouseOverText="LocalTxt8ezdzb" itemName="Tab1" text="LocalTxt5kBpVM" uid="GGeNJS6U">
+                        <gridControl columnWidths="5%,4.75%,29.78%,29.78%,30.68%" columns="5" ctrl="GrdDwo30" rows="1" uid="GGY4OMdx">
+                            <gridCell column="1" columnspan="1" ctrl="Grcu9Z7y" row="1" rowspan="1" uid="RasyBoxw">
+<field buttonText="LocalTxtAFChvL_2" ctrl="FldgSv39_2" field="FOP_SEARCH_PERIOD" immedEvent="/Scripts/SEARCH_CLAIMS_SUBMITTED" immediateValidation="true" propertySet="Chosen-Medium" uid="H8r03hGI"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="GrcO2hUy" row="1" rowspan="1" uid="GHI8ivzW"/>
+                            <gridCell column="3" columnspan="1" ctrl="GrcvfLUb" row="1" rowspan="1" uid="33w4txsH"/>
+                            <gridCell column="4" columnspan="1" ctrl="Grc15LtFy" layoutType="HORIZONTAL_BOX" row="1" rowspan="1" uid="17gmXOZO">
+<button buttonText="LocalTxt2bYhtF_2" ctrl="ButY103G_2" mouseOverText="LocalTxt1BC7lE_2" onClickEvent="/Scripts/SEARCH_CLAIMS_SUBMITTED" uid="G87clRV5"/>
+<html ctrl="HtmqFPP_4" default="L" htmlText="LocalTxt9Yg6tg_4" uid="n7Bfz2z"/>
+<button buttonText="LocalTxt73ySCj_2" ctrl="ButgC3qb_2" mouseOverText="LocalTxt7DwbSm_2" onClickEvent="/Scripts/CLEAR_SEARCH_CLAIM" uid="64C0qvez"/>
+                            </gridCell>
+                            <gridCell column="5" columnspan="1" ctrl="GrchXNIY" row="1" rowspan="1" uid="7GrLug6O"/>
+                        </gridControl>
+                        <fieldTable ctrl="TblProvClaim" field="Claim_Auth_TBL" numVisibleRows="50" tableHeaderText="LocalTxtbNAAp" tableInfoText="LocalTxtCjZXF" tableTrailerText="LocalTxt8IUopp" uid="7JHwvlB6">
+                            <tablePage ctrl="TpgQLNWc" default="L" uid="NfSRRgiR">
+<fieldColumn buttonText="LocalTxt598LoI" ctrl="ColLSniv" displayOnly="true" field="Claim_Auth_TBL-Provider" uid="F3EUEgTk" width="12%"/>
+<fieldColumn buttonText="LocalTxt7RT0UM" ctrl="ColIUiDX" displayOnly="true" field="Claim_Auth_TBL-ChildName" uid="9tonlgSo" width="14%"/>
+<fieldColumn buttonText="LocalTxt3m9koV" ctrl="ColYWNrZ" field="Claim_Auth_TBL-Booked_Hours" uid="IBXU70Pi" width="6%"/>
+<fieldColumn buttonText="LocalTxt1bpZCi" ctrl="Col6DyE0" displayOnly="true" field="Claim_Auth_TBL-Days_Per_Week" uid="3ljz2EMM" width="6%"/>
+<fieldColumn buttonText="LocalTxt1GaqVG" ctrl="ColKNtNF" displayOnly="true" field="Claim_Auth_TBL-FP_Nursery_Ind" uid="Guf7EtU9" width="6%"/>
+<fieldColumn buttonText="LocalTxt2C902b" ctrl="ColEREPm" displayOnly="true" field="Claim_Auth_TBL-Holiday_Ind" uid="HlZ9fNep" width="4%"/>
+<fieldColumn buttonText="LocalTxt1SuUGY" ctrl="Col9YIjj" displayOnly="true" field="Claim_Auth_TBL-Confirmed_By" uid="E2znANfw" width="11%"/>
+<fieldColumn buttonText="LocalTxt6NwhrA" ctrl="ColC1s8C" displayOnly="true" field="Claim_Auth_TBL-Language_Provided" uid="E8jAju9W" width="6%"/>
+<fieldColumn buttonText="LocalTxt8PsIDO" ctrl="ColLehGK" displayOnly="true" field="Claim_Auth_TBL-Provision_Start_Date" uid="MP78bwiX" width="6%"/>
+<fieldColumn buttonText="LocalTxt3T1On3" ctrl="Col122h4L" displayOnly="true" field="Claim_Auth_TBL-Provision_End_Date" uid="2Mpge4AB" width="7%"/>
+<fieldColumn buttonText="LocalTxt8PxWQe" ctrl="ColjpeYF" displayOnly="true" field="Claim_Auth_TBL-Status" uid="RWb9k2jT" width="7%"/>
+<fieldColumn buttonText="LocalTxt2zkbul" ctrl="ColSZGXb" field="Claim_Auth_TBL-Checked" uid="DkqAn92U" width="7%"/>
+                            </tablePage>
+                        </fieldTable>
+                        <gridControl columnWidths="33%,33%,34%" columns="3" ctrl="GrdVd9Ex" rows="1" uid="CjpGfmyY">
+                            <gridCell column="1" columnspan="1" ctrl="GrcRRKA6" row="1" rowspan="1" uid="2g54QO86">
+<button buttonText="LocalTxt5f5hoO" ctrl="BtnAuthClaims" hidden="true" mouseOverText="LocalTxt5EUDTv" onClickEvent="/Scripts/CLAIM_AUTHORISE" uid="ObqFORK1"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="GrcKNwiz" row="1" rowspan="1" uid="7HAZSCHU"/>
+                            <gridCell column="3" columnspan="1" ctrl="GrcU8YyU" row="1" rowspan="1" uid="QQkqjuxt"/>
+                        </gridControl>
+                    </tab>
+                    <tab ctrl="TabwwJwZ" imageAltText="LocalTxt8rm4sW" imageMouseOverText="LocalTxt8FWckr" itemName="Tab2" text="LocalTxt4vmE0S" uid="2edOJuBg">
+                        <gridControl columnWidths="33%,33%,34%" columns="3" ctrl="GrdQ91Dr" rows="3" uid="FyUTJFzi">
+                            <gridCell column="1" columnspan="1" ctrl="Grc57xPh" row="1" rowspan="1" uid="K2wqbbXj"/>
+                            <gridCell column="2" columnspan="1" ctrl="GrcGSm7J" row="1" rowspan="1" uid="Hs9X0Iwe"/>
+                            <gridCell column="3" columnspan="1" ctrl="GrcyPjSp" row="1" rowspan="1" uid="BWK2d180"/>
+                            <gridCell column="1" columnspan="1" ctrl="GrcsrbJI" row="2" rowspan="1" uid="R5XHWRc9">
+<field buttonText="LocalTxt5a9zqI" ctrl="FldaJON" field="Current_Period_Start_Date" uid="B9FPTqH7"/>
+<field buttonText="LocalTxt3X8US2" ctrl="FldEEpw2" field="Current_Period_End_Date" uid="IPHUm0kb"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="Grcgfl1T" row="2" rowspan="1" uid="9H3vNoVy"/>
+                            <gridCell column="3" columnspan="1" ctrl="GrcbFIZA" row="2" rowspan="1" uid="MuLWLcsN">
+<field buttonText="LocalTxt9BrgNY" ctrl="FldALboB" field="Current_Year_Start_Date" uid="HuvKPP8j"/>
+<field buttonText="LocalTxt10VEeD" ctrl="Fld7Oyt5" field="Current_Year_End_Date" uid="9P528GiY"/>
+                            </gridCell>
+                            <gridCell column="1" columnspan="1" ctrl="GrcDAhNS" row="3" rowspan="1" uid="GEDFYm6P">
+<button buttonText="LocalTxt2hlYIK" ctrl="ButoIzaD" mouseOverText="LocalTxt49Hnwt" uid="6gOoLFXu"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="GrcAQ1Mp" row="3" rowspan="1" uid="NisIHJ2q"/>
+                            <gridCell column="3" columnspan="1" ctrl="GrcKQgLW" row="3" rowspan="1" uid="3hPmPhTq"/>
+                        </gridControl>
+                    </tab>
+                </tabSet>
+            </groupPanel>
+        </page>
+    </pageContents>
+</page>

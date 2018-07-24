@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Search" nextPage="New_User" beforePageEvent="/Scripts/Users/Search_Load" pageHeaderTextRef="Txt2kMVTx" pageInfoTextReference="Txt3DGfpc" pageTrailerTextReference="Txt8DJWIJ" nextPageTextReference="Txt9WEKmN" prevPageTextReference="Txt47sXas">
+    <pageContents>
+        <page ctrl="Pag4oW0s" outputType="0" pdfFooterText="LocalTxt6JY0cA" pdfHeaderText="LocalTxt8FEL3q" uid="3SYC6JGb">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu_AdminMenu"/>
+            <panel ctrl="PanhaW2S" layoutType="FIELD" propertySet="PagePanel" uid="NBdBhkYm">
+                <panel ctrl="pnlSearch" layoutType="FIELD" propertySet="Central Box" uid="NYNQMyGE" width="500px">
+                    <text ctrl="TexYaK3R" text="LocalTxt26nD03" uid="E15Zcenv"/>
+                    <spacer ctrl="SpcfuSLG" uid="CzUbVX16"/>
+                    <field buttonText="LocalTxt6v2XxM" ctrl="FldoP1UG" field="find_user" uid="JXYlFlsZ"/>
+                    <spacer ctrl="Spc129Y4M" uid="DBN3ql5U"/>
+                    <field buttonText="LocalTxt5MNmnC" ctrl="Fld40psf" field="search_Ceri" uid="FCBrtumv"/>
+                    <panel ctrl="PanNBj9r" propertySet="Button_Panel" uid="GZEn1Ek3">
+                        <button buttonText="LocalTxtlmlcN" ctrl="Butejwew" mouseOverText="LocalTxt8Zy2Jw" onClickEvent="/Scripts/Users/Search" uid="RE0v9KLl">
+                            <rootHtmlElementProperties classLocator="@0"/>
+                        </button>
+                    </panel>
+                </panel>
+                <panel ctrl="pnlUsers" hidden="true" propertySet="Central Box" uid="5JoR7iFQ" width="75%">
+                    <text ctrl="TexNDXYL_2" text="LocalTxt4I9S7F_2" uid="6Nl3a9xR"/>
+                    <repeater ctrl="RepsiStl" displayOnly="true" field="CRM_Users" showInfoMessage="true" uid="2mKK0CRm">
+                        <repeaterRow ctrl="Reprp2HbQ" uid="3KCUyWDa">
+                            <gridControl columnWidths="5%,20%,20%,20%,20%" columns="5" ctrl="GrdmFub3_3" rows="1" uid="PSCNuEt" width="100%">
+<gridCell column="1" columnspan="1" ctrl="Grc5jl2w_3" layoutType="HORIZONTAL_BOX" row="1" rowspan="1" uid="2IVRvJbg">
+    <layoutProperties>
+        <HORIZONTAL_BOX hAlign="Fill"/>
+    </layoutProperties>
+    <hyperlink ctrl="Lnkh95MQ_3" onClickEvent="/Scripts/Users/Delete_User" text="LocalTxt3JlsLU_3" title="LocalTxt1JF0H8_3" uid="MkS3teGE"/>
+    <hyperlink ctrl="Lnkh95MQ_2" onClickEvent="/Scripts/Users/Edit_User" text="LocalTxt3JlsLU_2" title="LocalTxt1JF0H8_2" uid="GKFugJuB"/>
+</gridCell>
+<gridCell column="2" columnspan="1" ctrl="GrcygELC_3" layoutType="@0" row="1" rowspan="1" uid="81ggEXSx">
+    <field buttonText="LocalTxt8oDkT6" ctrl="Fld15K1mp" displayLabelText="false" field="CRM_Users-Username" uid="E7mHCsJe"/>
+</gridCell>
+<gridCell column="3" columnspan="1" ctrl="GrcJxpdf" layoutType="@0" row="1" rowspan="1" uid="1syzOuCl">
+    <field buttonText="LocalTxt7axmRu" ctrl="Fldqt5yp" displayLabelText="false" field="CRM_Users-Position_ID" uid="D3cVrERB"/>
+</gridCell>
+<gridCell column="4" columnspan="1" ctrl="Grc1Sd3B_3" layoutType="@0" row="1" rowspan="1" uid="DN9yJDXX">
+    <field buttonText="LocalTxt8wKHiO" ctrl="Fld10q448" displayLabelText="false" field="CRM_Users-Reference_No" uid="OxnmRlSX"/>
+</gridCell>
+<gridCell column="5" columnspan="1" ctrl="GrcUsCz" layoutType="@0" row="1" rowspan="1" uid="G0mJpqdi">
+    <field buttonText="LocalTxtFZiJh" ctrl="FldX2T5G" displayLabelText="false" field="CRM_Users-Email" uid="HUlbIKaE"/>
+</gridCell>
+                            </gridControl>
+                        </repeaterRow>
+                    </repeater>
+                </panel>
+                <panel ctrl="pnl_ImportUsers" hidden="true" propertySet="Central Box" uid="EzyarKmz" width="75%">
+                    <text ctrl="TexNDXYL_3" text="LocalTxt4I9S7F_3" uid="AGuoC8hF"/>
+                    <repeater ctrl="ReppYMOR" displayOnly="true" field="CeriOcc" numVisibleRows="20" showInfoMessage="true" uid="Kzz4rQCm">
+                        <repeaterRow ctrl="Reprkj2Ls" uid="OyhEHI43">
+                            <gridControl columnWidths="10%,45%,45%" columns="3" ctrl="GrdmFub3_2" rows="1" uid="1iyjcPOe" width="100%">
+<gridCell column="1" columnspan="1" ctrl="Grc5jl2w_2" layoutType="FLOW" row="1" rowspan="1" uid="KtlyYNI5">
+    <hyperlink ctrl="Lnkh95MQ" onClickEvent="/Scripts/Users/goto_Import_User" text="LocalTxt3JlsLU" title="LocalTxt1JF0H8" uid="7e5HfAGn"/>
+</gridCell>
+<gridCell column="2" columnspan="1" ctrl="GrcygELC_2" layoutType="@0" row="1" rowspan="1" uid="2dgw21vv">
+    <field buttonText="LocalTxt6iQ3IO" ctrl="FldYcCdL" displayLabelText="false" field="CeriOcc-Name" uid="3fea41nH"/>
+</gridCell>
+<gridCell column="3" columnspan="1" ctrl="Grc1Sd3B_2" layoutType="@0" row="1" rowspan="1" uid="6qhKRhWq">
+    <field buttonText="LocalTxt4zArte" ctrl="Fld3VVKv" displayLabelText="false" field="CeriOcc-position_nm" uid="Dyfo3QiI"/>
+</gridCell>
+                            </gridControl>
+                        </repeaterRow>
+                    </repeater>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

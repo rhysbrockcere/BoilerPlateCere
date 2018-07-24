@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Forms/CHILDCARE_ADMIN" id="CLAIM_AUTHORISE" dateCreated="2018-04-27T15:09:45.919+01:00">
+        <scriptText>set WHERE_CLAUSE_STORED = WHERE_CLAUSE;
+
+loop at Prov_Claim_TBL
+	log Prov_Claim_TBL-Auth_Ind;
+	if [ Prov_Claim_TBL-Auth_Ind = 'Y' ]
+		set WHERE_CLAUSE = 'Claim_ID = ' + tostring(Prov_Claim_TBL-Claim_ID);
+		fetch CO_Claim;
+		set CLAIM_Authorised_Date = $SYSTEM_DATETIME;
+		set CLAIM_Authorised_by = 'petere';
+		set CLAIM_Status = 'Authorised';
+		update CO_Claim;
+	endif
+endloop
+//message w,"Authorisation Complete';
+
+set WHERE_CLAUSE = WHERE_CLAUSE_STORED;
+fetchtable Prov_Claim_TBL;
+
+</scriptText>
+    </script>
+</ebase>

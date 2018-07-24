@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource description="Childcare Offer" database="CHILDCARE_OFFER" id="CO_Period" dateCreated="2018-06-13T21:34:38.147+01:00">
+        <columns>DISTINCT Period_Start_Date</columns>
+        <from>Childcare_Offer.dbo.CO_Period</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PERIOD</where>
+        <fields>
+            <field id="Period_Id" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Period_Month" type="INTEGER" length="10"/>
+            <field id="Period_Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="WHERE_CLAUSE_PERIOD" type="NUMERIC" length="300" persistent="false"/>
+            <field id="Week_Commencing" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

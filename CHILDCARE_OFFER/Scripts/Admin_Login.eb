@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="Javascript" preferredComponentPath="/Forms/CHILDCARE_CLAIM" id="Admin_Login" dateCreated="2018-06-21T21:38:08.919+01:00">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+resources.CO_Current_Period.fetch();
+fields.WHERE_CLAUSE_PERIOD.value = "Period_Start_Date &lt;= CONVERT(date,'" + fields.Current_Period_Start_Date.stringValue.toString() + "',103)";</scriptText>
+    </script>
+</ebase>

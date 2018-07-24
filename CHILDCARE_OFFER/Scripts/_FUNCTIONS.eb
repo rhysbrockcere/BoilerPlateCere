@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/FS_COURSE" preferredComponentProject="FS_FLYING_START" id="_FUNCTIONS" dateCreated="2014-03-05T14:32:01.877Z" dateImported="2015-11-03T14:10:33.947Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+/*************************************************************************************************************************************
+ * 
+ * 
+ * This script contains shared functions for use within the Flying Start project. 
+ * 
+ * No database interaction should be used in these scripts - please use the _DB_FUNCTIONS script. 
+ * 
+ * Created By: George Eadon
+ * 
+ * Last Updated: 10-03-2014
+ * 
+ * Change Log
+ * 
+ * 
+ **************************************************************************************************************************************/
+
+
+/**
+
+ * Hides controls with specified modifier
+ 
+ * @param mod as string
+  
+ */
+
+ function hideControls(mod)
+{
+
+	//Loop through all controls in the basic panel and check for values
+	for each (var m in form.currentPage.getControlsByModifier(mod))
+	{
+				m.hide();
+
+	}
+				
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Shows controls with specified modifier
+ 
+ * @param mod as string
+  
+ */
+
+ function showControls(mod)
+{
+
+	//Loop through all controls in the basic panel and check for values
+	for each (var m in form.currentPage.getControlsByModifier(mod))
+	{
+				m.show();
+
+	}
+				
+}
+
+/*********************************************************************************************/
+
+function highlightMandatoryFields (s1)
+{
+	
+	for each (var m in form.currentPage.getControlsByModifier(s1))
+	{					
+		//m.setEditorClass(&quot;inputHighlight&quot;);
+		m.setLabelClass(&quot;mandatory&quot;);
+		
+	}
+	
+}
+
+/*********************************************************************************************
+
+ * Checks all visible fields on the current form with the specified modifier for a value
+
+ * @param mod Modifier Name as string
+
+ * @return Null for successfull check
+
+ */
+ 
+function checkMandatoryFields (s1)
+{
+	var err = 'N';
+
+	for each (var m in form.currentPage.getControlsByModifier(s1))
+	{	
+	
+		if (typeof m.field !== 'undefined' &amp;&amp; m.isHidden() != true) {
+			
+			var check = m.field.getValue();
+
+			// Checks to see if the field is visible and has a value
+			log(&quot;__Element Name: &quot; + m.elementName + &quot; Check Value: &quot; + check);
+
+			
+			if (check == null) {
+				
+				m.setEditorClass(&quot;inputHighlight&quot;);
+				
+				err = 'Y';
+				
+			}
+			
+			else{
+								
+				m.setEditorClass(&quot;&quot;)
+				
+				m.setLabelClass(&quot;&quot;)
+				
+			}
+			
+		}
+		
+		else{
+			
+			log(&quot;__skipped undefined field&quot;);
+			
+		}
+		
+	}
+
+	if (err == 'Y'){
+
+		if (system.variables.$LANGUAGE == 'EN') {
+			event.owner.addErrorMessage(&quot;Please complete the highlighted fields before proceeding.&quot;);
+		}
+		else {
+			event.owner.addErrorMessage(&quot;Cwblhewch y meysydd a amlygwyd cyn symud ymlaen os gwelwch yn dda.&quot;);
+		}
+		
+		return false;
+	}
+	
+	else {
+		
+		return true;
+		
+	}
+	
+}
+
+/*********************************************************************************************************************************/
+
+/**
+
+ * Shows / hide controls depending on user type. This function uses the control modifiers.
+ * s1 = Lowest level
+ * s5 = Highest Level (Admin)
+ 
+ * @param userType as string
+  
+ */
+
+ function securityTrim(userType)
+{
+
+	log (&quot;** Running security trim, User Type = &quot; + userType);
+	
+	if (fields.PARAM_USER_TYPE.value == 'External' || fields.PARAM_USER_TYPE.value == 'Read-only') {
+		hideControls('s1');
+	}
+	else {
+		showControls('s1');
+	}
+	
+	if (fields.PARAM_USER_TYPE.value == 'Admin') {
+		showControls('s5');
+	}
+	else {
+		hideControls('s5');
+	}
+				
+}
+
+/********************************************************************************************************/
+
+/**
+
+ * Function to clear fields with the specified modifier
+
+ * @param mod as string
+
+ */
+ 
+function clearFields(s1) {
+
+	for each (var m in form.currentPage.getControlsByModifier(s1)) {
+
+		log(&quot;__Clear Field: &quot; + m.elementName);
+		
+		m.field.value = null;			
+		
+	}
+	
+}</scriptText>
+    </script>
+</ebase>

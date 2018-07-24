@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="Enquiry_Statuses" dateCreated="2018-04-13T15:36:20.630+01:00">
+        <columns>*</columns>
+        <from>crm_Enquiry_Status_List</from>
+        <additional>order by description</additional>
+        <fields>
+            <field id="Description" type="VARCHAR" length="50"/>
+            <field id="Optional" type="BIT" length="1"/>
+            <field id="Selectable" type="BIT" length="1"/>
+            <field id="Status_CY" type="VARCHAR" length="50"/>
+            <field id="Status_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

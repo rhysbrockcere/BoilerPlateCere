@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Category/Sub_Category/sub_Form_Load" pageHeaderTextRef="Txt8CowRu" pageInfoTextReference="Txtyuxad" pageTrailerTextReference="Txt4hWppX" nextPageTextReference="Txt61siVr" prevPageTextReference="Txt6jldw9">
+    <pageContents>
+        <page ctrl="PagvUQM2" localMsg="false" msgControls="1eNzQnOZ" outputType="0" pdfFooterText="LocalTxt61lWlj" pdfHeaderText="LocalTxtA2joXe" uid="2ypK3YET">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu_AdminMenu"/>
+            <panel ctrl="PanlZ8Lo" propertySet="PagePanel" uid="AIxO1r18">
+                <message ctrl="Msg_Main" uid="1eNzQnOZ"/>
+                <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="S4YCo4zP"/>
+                <panel ctrl="PanyhBs8" propertySet="Tabs-Parent" uid="I4d6XJ9k">
+                    <text ctrl="TexZtLV9" text="LocalTxt6TUmRn" uid="FHou4SPz"/>
+                    <panel ctrl="PanRcDPu" layoutType="FIELD" propertySet="Tab-Child" uid="QZJYWBcx">
+                        <rootHtmlElementProperties idLocator="tabs-Details"/>
+                        <field buttonText="LocalTxt7dahJ9" ctrl="FldcWVGM" displayOnly="true" editorStyle="width:100%" field="cat_Category" modifiers="r" uid="OwrJ429T"/>
+                        <field buttonText="LocalTxt58Knrd" ctrl="FldOhbyQ" field="Enabled" uid="CcqAsK5m"/>
+                        <field buttonText="LocalTxt4qDKf2" ctrl="FldXdDE3" field="Sub_Category" modifiers="r" uid="6AdWch6U"/>
+                        <field buttonText="LocalTxt7Afvrv" ctrl="FldYS20a" field="Sub_Category_CY" modifiers="r" uid="AgUEtdK4"/>
+                        <field buttonText="LocalTxt6JZWOv" ctrl="FldkyjOi" field="Description" uid="SMGKIgRv"/>
+                        <field buttonText="LocalTxt6RNdJZ" ctrl="FldMBTOX" displayLabelText="true" field="Description_CY" uid="8z6XsOWj"/>
+                        <field buttonText="LocalTxt4duBNd" ctrl="FldnYa4e" field="Keywords" uid="DeVzotk0">
+                            <editorHtmlElementProperties idLocator="txt-keywords"/>
+                        </field>
+                        <hyperlink ctrl="hlink_Copy_Keywords" newLine="false" text="LocalTxt922WSS" title="LocalTxtHY3tn" uid="OHEly9hH">
+                            <rootHtmlElementProperties htmlEventHandlers="@0" idLocator="copy-keywords" jQueryEventHandlers="$;click;/** &#xA; *  Auto-refresh when setting the field values causes long delay and major page flicker&#xA; *  Leave auto-refresh at false but DO NOT prevent default for best results&#xA; */&#xA; &#xA;if (confirm('Are you sure you want to overwrite the sub-category keywords with those of the category?')) {&#xA;&#x9;var a = $eb.getFieldValue('cat_Keywords');&#xA;&#x9;$eb.setFieldValue('Keywords', a, false);&#xA;}&#xA;&#xA;//e.preventDefault();"/>
+                        </hyperlink>
+                    </panel>
+                    <panel ctrl="PanueeTB" propertySet="Tab-Child" uid="FeG7xxqW">
+                        <rootHtmlElementProperties idLocator="tabs-Settings"/>
+                        <field buttonText="LocalTxt8tsrUn" ctrl="Fld10SqQC" field="Resp_Team_ID" modifiers="@0" propertySet="Chosen-Dropdown" uid="5tJOyV8p"/>
+                        <field buttonText="LocalTxtGhB3e" ctrl="FldnbPVd" field="Default_Priority" uid="KgApem4E"/>
+                        <field buttonText="LocalTxtATahfI" ctrl="FldWwb9l" field="Default_Type" uid="90lU4kFL"/>
+                    </panel>
+                    <panel ctrl="PanMiND3" propertySet="Tab-Child" uid="CMUh53Bt">
+                        <rootHtmlElementProperties idLocator="tabs-Information"/>
+                        <field buttonText="LocalTxt9ueotI" ctrl="Fld15LZQb" field="Page_URL" uid="RvON9VTK">
+                            <editorHtmlElementProperties idLocator="txt-page-url"/>
+                        </field>
+                        <hyperlink ctrl="hlink_Copy_URLS" newLine="false" text="LocalTxt922WSS_2" title="LocalTxtHY3tn_2" uid="JRdP11VD">
+                            <rootHtmlElementProperties idLocator="copy-page-url" jQueryEventHandlers="$;click;&#xA;/** &#xA; *  Auto-refresh when setting the field values causes long delay and major page flicker&#xA; *  Leave auto-refresh at false but DO NOT prevent default for best results&#xA; */&#xA; &#xA;if (confirm('Overwrite the sub-category Page URLs with those of the category?')) {&#xA;&#x9;&#xA;&#x9;//Get the category field value (English)&#xA;&#x9;var a = $eb.getFieldValue('cat_Page_URL');&#xA;&#x9;//set the field value&#xA;&#x9;$eb.setFieldValue('Page_URL', a, false)&#xA;&#xA;&#x9;&#xA;&#x9;//Get the category field value (Welsh)&#xA;&#x9;var b = $eb.getFieldValue('cat_Page_URL_CY');&#xA;&#x9;//set the field value&#xA;&#x9;$eb.setFieldValue('Page_URL_CY', b, false)&#xA;}&#xA;&#xA;//Stop the page from refreshing&#xA;//e.preventDefault();"/>
+                        </hyperlink>
+                        <field buttonText="LocalTxt29C1Y0" ctrl="Fld14MYJc" displayLabelText="true" field="Page_URL_CY" uid="1Qv7PwXN">
+                            <editorHtmlElementProperties idLocator="txt-page-url-cy"/>
+                        </field>
+                        <field buttonText="LocalTxt66BQgf" ctrl="Flda4IJJ" field="Default_Subject" uid="OmawYObA">
+                            <editorHtmlElementProperties idLocator="txt-subject"/>
+                        </field>
+                        <hyperlink ctrl="hlink_Copy_Subject" newLine="false" text="LocalTxt922WSS_3" title="LocalTxtHY3tn_3" uid="3w7muZ0B">
+                            <rootHtmlElementProperties idLocator="copy-subject" jQueryEventHandlers="$;click;/** &#xA; *  Auto-refresh when setting the field values causes long delay and major page flicker&#xA; *  Leave auto-refresh at false but DO NOT prevent default for best results&#xA; */&#xA; &#xA;if (confirm('Overwrite the sub-category Default Subjects with those of the category?')) {&#xA;&#x9;var a = $eb.getFieldValue('cat_Default_Subject');&#xA;&#x9;$eb.setFieldValue('Default_Subject', a, false);&#xA;&#x9;var a = $eb.getFieldValue('cat_Default_Subject_CY');&#xA;&#x9;$eb.setFieldValue('Default_Subject_CY', a, false);&#xA;}&#xA;&#xA;//e.preventDefault();"/>
+                        </hyperlink>
+                        <field buttonText="LocalTxt4EE1Wq" ctrl="FldxvmN8" displayLabelText="true" field="Default_Subject_CY" uid="MjoXEoNS">
+                            <editorHtmlElementProperties idLocator="txt-subject-cy"/>
+                        </field>
+                        <horizontalLine ctrl="HlnAY8xC" uid="GHpPP1ze"/>
+                        <field buttonText="LocalTxt9xINmf" ctrl="FldydAI8" displayLabelText="true" field="Default_Details" propertySet="WYSIWIG" uid="AckHTudU">
+                            <editorHtmlElementProperties idLocator="txt-details"/>
+                        </field>
+                        <hyperlink ctrl="hlink_Copy_Details" newLine="false" style="position:absolute;" text="LocalTxt922WSS_4" title="LocalTxtHY3tn_4" uid="3u5TkXnf">
+                            <rootHtmlElementProperties idLocator="copy-details" jQueryEventHandlers="$;click;/**&#xA; * Don't prevent default action on these fields so WYSIWIG editor will display the HTML text&#xA; */&#xA; &#xA;if (confirm('Overwrite the sub-category Default Details Text with that of the category?')) {&#xA;&#x9;var a = $eb.getFieldValue('cat_Default_Details');&#xA;&#x9;$eb.setFieldValue('Default_Details', a, false);&#xA;&#x9;var a = $eb.getFieldValue('cat_Default_Details_CY');&#xA;&#x9;$eb.setFieldValue('Default_Details_CY', a, false);&#xA;}&#xA;&#xA;//e.preventDefault();"/>
+                        </hyperlink>
+                        <field buttonText="LocalTxtAD92Jp" ctrl="FldPEEkE" displayLabelText="true" field="Default_Details_CY" propertySet="WYSIWIG" uid="IQDy02pl">
+                            <editorHtmlElementProperties idLocator="txt-details-cy"/>
+                        </field>
+                        <horizontalLine ctrl="HlnSu4mV" uid="Rp8zAVLI"/>
+                        <field buttonText="LocalTxt2EUtrQ" ctrl="FlduZ8Yf" displayLabelText="true" field="Add_Information" propertySet="WYSIWIG" uid="2xiE56VA">
+                            <editorHtmlElementProperties idLocator="txt-add-information"/>
+                        </field>
+                        <hyperlink ctrl="hlink_Copy_Info" newLine="false" style="position:absolute;" text="LocalTxt922WSS_5" title="LocalTxtHY3tn_5" uid="2TaIkQ4Y">
+                            <rootHtmlElementProperties idLocator="copy-info" jQueryEventHandlers="$;click;if (confirm('Overwrite the sub-category Additional Information with that of the category?')) {&#xA;&#x9;var a = $eb.getFieldValue('cat_Add_Information');&#xA;&#x9;$eb.setFieldValue('Add_Information', a, false);&#xA;&#x9;var a = $eb.getFieldValue('cat_Add_Information_CY');&#xA;&#x9;$eb.setFieldValue('Add_Information_CY', a, false);&#xA;}&#xA;&#xA;//e.preventDefault();"/>
+                        </hyperlink>
+                        <field buttonText="LocalTxt3LFHBu" ctrl="Fld104mdn" displayLabelText="true" field="Add_Information_CY" propertySet="WYSIWIG" uid="LlxJrWm8">
+                            <editorHtmlElementProperties idLocator="txt-add-information-cy"/>
+                        </field>
+                    </panel>
+                    <panel ctrl="PanPfuSL" propertySet="Tab-Child" uid="3NqvNX7">
+                        <rootHtmlElementProperties idLocator="tabs-Forms"/>
+                        <button buttonText="LocalTxt4cfFUk" ctrl="ButcxEyq" mouseOverText="LocalTxt2uj0iT" onClickEvent="/Scripts/Category/Sub_Category/New_Form" uid="IKKECqzn"/>
+                        <fieldTable ctrl="TblPcmih" displayOnly="true" field="Forms" tableHeaderText="LocalTxt85iten" tableInfoText="LocalTxtD2k7j" tableTrailerText="LocalTxt7fxnV6" uid="JeVvwqRA">
+                            <tablePage ctrl="TpgU61pL" default="L" uid="LjZMZKYK">
+<fieldColumn buttonText="LocalTxtmJYzm" ctrl="ColPe6i5" field="Forms-Name" hyperlink="true" immedEvent="/Scripts/Category/Sub_Category/goto_Form" uid="6LGoadlY" width="20%"/>
+<fieldColumn buttonText="LocalTxt7ayeNG" ctrl="ColCxZh5" field="Forms-Type" uid="4eJTnJgY" width="10%"/>
+<fieldColumn buttonText="LocalTxt6HfZgU" ctrl="Colol0fC" field="Forms-Active" hAlign="Center" uid="IOrMwOvF" width="6%">
+    <columnHeaderProperties hAlign="Center"/>
+    <stripeProperties hAlign="Center"/>
+</fieldColumn>
+<fieldColumn buttonText="LocalTxt5ceYLk" ctrl="Col4rWwM" field="Forms-View" hAlign="Center" hidden="true" hyperlink="true" uid="Prw1RISU" width="6%">
+    <stripeProperties hAlign="Center"/>
+</fieldColumn>
+<fieldColumn buttonText="LocalTxt1fcY0B" ctrl="ColrTCuo" field="Forms-Delete" hAlign="Center" hyperlink="true" immedEvent="/Scripts/Category/Sub_Category/Delete_Form" uid="OL4KbjZ9" width="8%">
+    <editorHtmlElementProperties htmlEventHandlers="onclick;javascript:var r = confirm(&quot;Are you sure you want to delete this form?&quot;);if(r==true){return true;}else{return false;}"/>
+    <stripeProperties hAlign="Center"/>
+</fieldColumn>
+                            </tablePage>
+                        </fieldTable>
+                    </panel>
+                    <panel ctrl="PanuicEv" displayOnly="true" layoutType="HORIZONTAL_BOX" topMargin="10px" uid="PzajcoFA">
+                        <layoutProperties>
+                            <HORIZONTAL_BOX hAlign="Fill" spacerSize="20px"/>
+                        </layoutProperties>
+                        <field buttonText="LocalTxt7LBI7o" ctrl="Fld14ZLSX" field="Created_By" uid="GkR0ILtp"/>
+                        <field buttonText="LocalTxt9B4kAH" ctrl="FldSxPlm" field="Date_Created" uid="5HZYCSi7"/>
+                        <field buttonText="LocalTxt2Ix4rY" ctrl="Fld4OzhR" field="Modified_By" uid="7ntJfLbi"/>
+                        <field buttonText="LocalTxt7qVH6p" ctrl="FldQ3hgz" field="Date_Modified" uid="9cAr8Wt2"/>
+                    </panel>
+                </panel>
+                <panel ctrl="Pan14H5Rv" topPadding="10px" uid="N52QV4c5">
+                    <button buttonText="LocalTxt3WqObP" ctrl="cmd" mouseOverText="LocalTxt9L1ZmK" onClickEvent="/Scripts/Category/go_back" uid="PjTcoQan"/>
+                    <button buttonText="LocalTxt97pI47" ctrl="ButJ9wYN" mouseOverText="LocalTxt72IFMn" newLine="false" onClickEvent="/Scripts/Category/Sub_Category/Save_Sub_Category" uid="7X8A0sDU"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

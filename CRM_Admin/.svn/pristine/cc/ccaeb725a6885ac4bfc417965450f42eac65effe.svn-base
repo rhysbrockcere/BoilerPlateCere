@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CERI_DOCS" id="Ceri_People_Team" dateCreated="2017-02-07T11:00:52.211Z">
+        <columns>distinct fullname, position_id</columns>
+        <from>[FIM-SECMODEL].[dbo].[CERI_OCCUPANCY_v]</from>
+        <where>Team_ID=&amp;&amp;Team_ID</where>
+        <additional>order by fullname</additional>
+        <fields>
+            <field id="Team_ID" output="false"/>
+            <field id="fullname" input="false"/>
+            <field id="position_id" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

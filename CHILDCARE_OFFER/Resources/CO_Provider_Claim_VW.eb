@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource database="CHILDCARE_OFFER" table="true" preparedStatement="false" id="CO_Provider_Claim_VW" dateCreated="2018-04-24T23:31:15.313+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer.dbo.CO_Provider_Claim_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Act_FP_Nursery_Ind" type="INTEGER" length="10"/>
+            <field id="Actual_Days" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Actual_Hours" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Application_ID" type="INTEGER" length="10"/>
+            <field id="Booked_Hours" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Child" type="VARCHAR" length="101" readOnly="true"/>
+            <field id="Child_Known_As" type="VARCHAR" length="50"/>
+            <field id="Claim_Detail_ID" type="INTEGER" length="10"/>
+            <field id="Claim_ID" type="INTEGER" length="10"/>
+            <field id="Claim_Status" type="VARCHAR" length="20"/>
+            <field id="Confirmed_By" type="VARCHAR" length="100"/>
+            <field id="Confirmed_Date" type="TIMESTAMP" length="16"/>
+            <field id="Creditor_Reference" type="VARCHAR" length="8"/>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="Email" type="VARCHAR" length="200"/>
+            <field id="FP_Nursery_Ind" type="INTEGER" length="10"/>
+            <field id="Holiday_Week" length="1"/>
+            <field id="Language_Provided" type="VARCHAR" length="20"/>
+            <field id="Period_ID" type="INTEGER" length="10"/>
+            <field id="Period_Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Provider" type="VARCHAR" length="50"/>
+            <field id="Provider_ID" type="INTEGER" length="10"/>
+            <field id="Provision_End_Date" type="TIMESTAMP" length="16"/>
+            <field id="Provision_ID" type="INTEGER" length="10"/>
+            <field id="Provision_Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Status" type="VARCHAR" length="20"/>
+            <field id="Submitted_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Submitted_by" type="VARCHAR" length="70"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="Week_Commencing" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

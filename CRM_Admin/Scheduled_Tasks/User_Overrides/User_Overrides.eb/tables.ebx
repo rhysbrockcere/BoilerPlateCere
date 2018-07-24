@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="CRM_Users">
+        <column name="Created_By" type="CHAR" labelTextRef="Txt1tINyt" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Date_Created" type="DATETIME" labelTextRef="Txt5AR8vk" displayType="TEXT" valuePattern=""/>
+        <column name="Date_Modified" type="DATETIME" labelTextRef="Txt6EwmlV" displayType="TEXT" valuePattern=""/>
+        <column name="Email" type="CHAR" labelTextRef="Txt9GvUrr" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="ID" type="INTEGER" labelTextRef="Txt82MvRj" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Modified_By" type="CHAR" labelTextRef="Txt99n72n" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Position_ID" type="CHAR" labelTextRef="Txt6T8Frn" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Reference_No" type="CHAR" labelTextRef="Txt3IptOR" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Username" type="CHAR" labelTextRef="Txt1ciD0q" maxLength="50" displayType="TEXT" displayLength="50"/>
+    </table>
+</tables>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Application" nextPage="Provider" pageHeaderTextRef="TxtAp5rwN" pageInfoTextReference="Txt9JLm0f" pageTrailerTextReference="Txt43srk0" nextPageTextReference="TxtWq3DN" prevPageTextReference="TxtANFiJ4">
+    <pageContents>
+        <page ctrl="PagiKft6" outputType="0" pdfFooterText="LocalTxt5hHtOQ" pdfHeaderText="LocalTxt1cui0T" uid="AfyA0j3w">
+            <groupPanel ctrl="Gpan15I126" groupHeaderText="LocalTxt1K0c5L" groupInfoText="LocalTxt4lpe75" groupTrailerText="LocalTxt9x4WIo" uid="1Z9AFqvu">
+                <panel ctrl="PanrOvIl" displayOnly="true" layoutType="HORIZONTAL_BOX" uid="RJAGSk6x">
+                    <hyperlink ctrl="LnkDD8qW_2" onClickEvent="/Scripts/GOTO_PAGE_HOME" text="LocalTxt729lpW_2" title="LocalTxt2HmtpH_2" uid="69KG6xgR"/>
+                    <html ctrl="Htmmb0Mw" default="L" htmlText="LocalTxt4GAjto" uid="Ra3jRzMt"/>
+                    <hyperlink ctrl="LnkNoJb0" onClickEvent="/Scripts/Goto_Page_Landing" text="LocalTxt41CN4H" title="LocalTxt6n9GvH" uid="C7NlLaEH"/>
+                    <field buttonText="LocalTxtuYSBZ" ctrl="FldzC88y" field="FOP_FULL_CHILD_NAME" uid="JSFAecdn"/>
+                </panel>
+                <tabSet ctrl="TbsX3FYW" uid="4dQ81vQd">
+                    <tab ctrl="TabEaYHe" imageAltText="LocalTxt1c7TlP" imageMouseOverText="LocalTxtAbt061" itemName="TabP1" text="LocalTxt4UCSUA" uid="Nv77azzg">
+                        <gridControl columnWidths="49.5%,50.5%" columns="2" ctrl="Grd9QNrq" rows="2" uid="H6FnJtS7">
+                            <gridCell column="1" columnspan="1" ctrl="GrcnVdiC" displayOnly="true" layoutType="FIELD" row="1" rowspan="1" uid="5xSdFkj2">
+<field buttonText="LocalTxt8joQWR" ctrl="FldrbIhG" displayOnly="true" field="APP_Customer_ID" hyperlink="true" immedEvent="/Scripts/GOTO_FORM_CLIC_CUSTOMER" immediateValidation="true" uid="95MaKgur"/>
+<field buttonText="LocalTxtABNiCS" ctrl="Fldsm0oC" displayOnly="true" field="APP_Enquiry_ID" hyperlink="true" immedEvent="/Scripts/GOTO_FORM_CLIC_ENQUIRY" immediateValidation="true" uid="DEYH0YGW"/>
+<field buttonText="LocalTxt1cnJ3x" ctrl="Fld10JBdF" field="APP_Customer_Title" uid="lvUrt3d"/>
+<field buttonText="LocalTxtA3dlQH" ctrl="FldGTbup" field="APP_Customer_Forenames" uid="I6YM8IwL"/>
+<field buttonText="LocalTxtAkONeB" ctrl="FldcIxcv" field="APP_Customer_Surname" uid="HXQz57AJ"/>
+<field buttonText="LocalTxt6ycRyS" ctrl="Fldto88X" field="APP_Application_date" uid="1gVXqB8b"/>
+<field buttonText="LocalTxt6DxqIX" ctrl="Fldx3pPF" field="APP_Childcare_Monthly_Spend" uid="20Hhui0Y"/>
+<field buttonText="LocalTxt5MBMWz" ctrl="Fld8s3n" field="APP_Affordability" uid="8kUFYDet"/>
+<field buttonText="LocalTxt9yYD2e" ctrl="FldXtYwg" field="APP_Customer_Ethnicity" uid="QpSIx5L5"/>
+<field buttonText="LocalTxt1IcgFy" ctrl="Fld92Rvv" field="APP_Customer_NI_Number" uid="6w3jkJnF"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="Grc4F6SR" displayOnly="true" layoutType="FIELD" row="1" rowspan="1" uid="Hj0rgNJb">
+<field buttonText="LocalTxt1nWApa" ctrl="FldNS9cQ" field="APP_Customer_UPRN" uid="57VJC919"/>
+<field buttonText="LocalTxt5IPqjR" ctrl="FldYWhpG" field="APP_Customer_Address1" uid="PTDCCJch"/>
+<field buttonText="LocalTxt6brNQ6" ctrl="FldXvwdb" displayLabelText="false" field="APP_Customer_Address2" uid="397A3ivo"/>
+<field buttonText="LocalTxt5FQVuo" ctrl="FldgRX7B" displayLabelText="false" field="APP_Customer_Address3" uid="RpYLwVSd"/>
+<field buttonText="LocalTxt96ixWx" ctrl="FldAsWap" field="APP_Customer_Town" uid="NnHgF0lF"/>
+<field buttonText="LocalTxt6xzXjM" ctrl="FldV8qUz" field="APP_Customer_County" uid="N4j7pm0P"/>
+<field buttonText="LocalTxt6bOBMT" ctrl="Fldwxsc8" field="APP_Customer_Postcode" uid="BLvHUBs2"/>
+                            </gridCell>
+                            <gridCell column="1" columnspan="1" ctrl="Grc12wBOK" displayOnly="true" layoutType="FIELD" row="2" rowspan="1" uid="839VexMh">
+<text ctrl="Tex15H7a6" text="LocalTxtntm1a" uid="LB4zE43o"/>
+<field buttonText="LocalTxt5MLYrL" ctrl="FldjpoIs" field="APP_P1_Emp1_Name" uid="IQ0kPOuu"/>
+<field buttonText="LocalTxt4Uuiup" ctrl="FldsRQ4Y" field="APP_P1_Emp1_Address" uid="Ka3kK6xS"/>
+<field buttonText="LocalTxt366k4d" ctrl="Flde9SHM" displayOnly="true" field="APP_P1_Emp1_Email" hyperlink="true" immediateValidation="true" uid="QK0JRMiH"/>
+<field buttonText="LocalTxt8Np6cP" ctrl="FldIQJ6q" field="APP_P1_Emp1_Telno" uid="F4ra39Pf"/>
+<field buttonText="LocalTxt3a84GW" ctrl="Fld4eYxC" field="APP_P1_Emp1_Salary" uid="LyBlkZPu"/>
+<field buttonText="LocalTxt885mgs" ctrl="FldiJ59y" field="APP_P1_Emp1_Avg_Hours" uid="B1AEvmpL"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="Grcl7nVi" displayOnly="true" layoutType="FIELD" row="2" rowspan="1" uid="1eUfhEYj">
+<text ctrl="Tex15H7a6_2" text="LocalTxtntm1a_2" uid="NPXiokae"/>
+<field buttonText="LocalTxt4lyiqZ" ctrl="Fld10rrQE" field="APP_P1_Emp2_Name" uid="P1BqH9Kt"/>
+<field buttonText="LocalTxt9JGOps" ctrl="FldFogZr" field="APP_P1_Emp2_Address" uid="CGhmLpQW"/>
+<field buttonText="LocalTxt5tB0zV" ctrl="Fldg3gsl" displayOnly="true" field="APP_P1_Emp2_Email" hyperlink="true" immediateValidation="true" uid="CgD1EeEO"/>
+<field buttonText="LocalTxt64aVRm" ctrl="Fld10idAc" field="APP_P1_Emp2_Telno" uid="17IbO9BF"/>
+<field buttonText="LocalTxtA6Qspm" ctrl="FldX5Ilh" field="APP_P1_Emp2_Salary" uid="KuyidkZr"/>
+<field buttonText="LocalTxt1qokkr" ctrl="Fld13k2qN" field="APP_P1_Emp2_Avg_Hours" uid="JA9rBLU2"/>
+                            </gridCell>
+                        </gridControl>
+                        <panel ctrl="PanUzj64" displayOnly="true" layoutType="HORIZONTAL_BOX" uid="Oy1sV17W">
+                            <field buttonText="LocalTxt24vz5B" ctrl="Fld4ytc0" field="APP_Date_Last_Updated" uid="1Q2kvDOD"/>
+                            <field buttonText="LocalTxt8RyCTw" ctrl="Fld12ZMks" field="APP_Last_Updated_By" uid="8ViW3Kek"/>
+                        </panel>
+                    </tab>
+                    <tab ctrl="Tabjhipm" imageAltText="LocalTxt6ycNa6" imageMouseOverText="LocalTxt8Lun1B" itemName="TabP2" text="LocalTxt6hli2W" uid="BUc9WjB5">
+                        <gridControl columnWidths="50%,50%" columns="2" ctrl="Grd2rUuL" rows="2" uid="JVzPQAkd">
+                            <gridCell column="1" columnspan="1" ctrl="GrccKQnT" displayOnly="true" layoutType="FIELD" row="1" rowspan="1" uid="OKEaEZGp">
+<field buttonText="LocalTxt1hbRqJ" ctrl="FldlZeyW" displayOnly="true" field="APP_Enquiry_ID" hyperlink="true" immedEvent="/Scripts/GOTO_FORM_CLIC_ENQUIRY" immediateValidation="true" uid="7Y8F8yYi"/>
+<field buttonText="LocalTxt86hU9e" ctrl="Fld15am6i" field="APP_P2_Title" uid="AZ9Eb04W"/>
+<field buttonText="LocalTxt8z4QCS" ctrl="Fldu6GBj" field="APP_P2_Surname" uid="8G4xVblJ"/>
+<field buttonText="LocalTxt1FLWis" ctrl="Fld7ucFv" field="APP_P2_Forenames" uid="1vN1GRpE"/>
+<field buttonText="LocalTxt2q7MPT" ctrl="Fld12dfT3" field="APP_P2_NI_Number" uid="BjuikPU0"/>
+<field buttonText="LocalTxt36qvjE" ctrl="FldbX9xL" field="APP_P2_Ethnicity" uid="NcHLlew2"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="GrcFO5TI" displayOnly="true" layoutType="FIELD" row="1" rowspan="1" uid="AdceYgs7">
+<field buttonText="LocalTxt6CV3L3" ctrl="FldcyO1J" field="APP_P2_Emp2_UPRN" uid="6gkbIWSl"/>
+<field buttonText="LocalTxt2zOumA" ctrl="FldYg5fq" field="APP_P2_Address1" uid="9AxtUB5o"/>
+<field buttonText="LocalTxt6LGndZ" ctrl="FldSogDB" displayLabelText="false" field="APP_P2_Address2" uid="5VezQxOR"/>
+<field buttonText="LocalTxt8EPxVh" ctrl="FldWKYX5" displayLabelText="false" field="APP_P2_Address3" uid="LtKl1z0D"/>
+<field buttonText="LocalTxt7SiYoW" ctrl="FldqXG2N" field="APP_P2_Town" uid="8B5azOSg"/>
+<field buttonText="LocalTxt95LG8U" ctrl="FldWoKrk" field="APP_P2_County" uid="HSWzSwoB"/>
+<field buttonText="LocalTxt9aYFgp" ctrl="FldShB3d" field="APP_P2_Postcode" uid="RqMMJnj0"/>
+                            </gridCell>
+                            <gridCell column="1" columnspan="1" ctrl="Grc15T1FQ" displayOnly="true" layoutType="FIELD" row="2" rowspan="1" uid="6Ow39tt5">
+<text ctrl="Tex15H7a6_3" text="LocalTxtntm1a_3" uid="9wbWw5yb"/>
+<field buttonText="LocalTxt7KFbye" ctrl="Fldit3HH" field="APP_P2_Emp1_Name" uid="5abjAci5"/>
+<field buttonText="LocalTxt3QP51Y" ctrl="FldiSQWs" field="APP_P2_Emp1_Address" uid="SAUJIbpK"/>
+<field buttonText="LocalTxtpjdKc" ctrl="FldnIznX" displayOnly="true" field="APP_P2_Emp1_Email" hyperlink="true" immediateValidation="true" uid="CBXCZrrL"/>
+<field buttonText="LocalTxt8ki4jk" ctrl="FldCBDVk" field="APP_P2_Emp1_Telno" uid="9ZMqyyrZ"/>
+<field buttonText="LocalTxt3AcF7z" ctrl="Fldu0HIi" field="APP_P2_Emp1_Avg_Hours" uid="3TmhNLT9"/>
+<field buttonText="LocalTxt6ldkeP" ctrl="FldMaabx" field="APP_P2_Emp1_Salary" uid="CZsYGGK5"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="Grcu94GG" displayOnly="true" layoutType="FIELD" row="2" rowspan="1" uid="MqJJyJMy">
+<text ctrl="Tex15H7a6_4" text="LocalTxtntm1a_4" uid="Hlmmc18b"/>
+<field buttonText="LocalTxt9au0BV" ctrl="FldpVnXE" field="APP_P2_Emp2_Address" uid="QgBt1xL5"/>
+<field buttonText="LocalTxt7CYp4k" ctrl="FldX2DKH" field="APP_P2_Emp2_Avg_Hours" uid="N9tGwZla"/>
+<field buttonText="LocalTxt7DHuwi" ctrl="FldwEWvn" displayOnly="true" field="APP_P2_Emp2_Email" hyperlink="true" immediateValidation="true" uid="8AlMUmn1"/>
+<field buttonText="LocalTxt7MNSKJ" ctrl="FldaKrZY" field="APP_P2_Emp2_Name" uid="BRt2nlr1"/>
+<field buttonText="LocalTxt6BZCV8" ctrl="Fld5gaZR" field="APP_P2_Emp2_Salary" uid="Eoi2Da0S"/>
+<field buttonText="LocalTxt9o5YWM" ctrl="FldQaUT1" field="APP_P2_Emp2_Telno" uid="1mxWoSBW"/>
+                            </gridCell>
+                        </gridControl>
+                        <panel ctrl="PanUzj64_2" displayOnly="true" layoutType="HORIZONTAL_BOX" uid="Njq6UFHH">
+                            <field buttonText="LocalTxt24vz5B_2" ctrl="Fld4ytc0_2" field="APP_Date_Last_Updated" uid="CUxD43xa"/>
+                            <field buttonText="LocalTxt8RyCTw_2" ctrl="Fld12ZMks_2" field="APP_Last_Updated_By" uid="Jeg2UErW"/>
+                        </panel>
+                    </tab>
+                    <tab ctrl="Tabsqz0Q" imageAltText="LocalTxtYMz2d" imageMouseOverText="LocalTxt65AfG5" itemName="TabChild" text="LocalTxt5vzX3F" uid="OthqBAKV">
+                        <gridControl columnWidths="33%,33%,34%" columns="3" ctrl="GrdAadLH" rows="1" uid="MudOxjer">
+                            <gridCell column="1" columnspan="1" ctrl="GrcHrFeb" row="1" rowspan="1" uid="N6lcYR9w">
+<groupPanel ctrl="Gpan4o85e" groupHeaderText="LocalTxt1O6X1d" groupInfoText="LocalTxt5Sam3g" groupTrailerText="LocalTxt2ukm49" layoutType="FIELD" uid="BvyHsPLE">
+    <field buttonText="LocalTxtACfSv6" ctrl="FldFJmEx" displayOnly="true" field="APP_Enquiry_ID" hyperlink="true" immedEvent="/Scripts/GOTO_FORM_CLIC_ENQUIRY" immediateValidation="true" uid="QozI1LCY"/>
+    <field buttonText="LocalTxt759JrG" ctrl="FldnV8M" displayOnly="true" field="APP_Child_Forename" uid="NVRn37j1"/>
+    <field buttonText="LocalTxtUizAx" ctrl="Fld7zlo9" displayOnly="true" field="APP_Child_Middlename" uid="R8pukqwM"/>
+    <field buttonText="LocalTxt1c2Wbp" ctrl="FlduqFvm" displayOnly="true" field="APP_Child_Surname" uid="3wlBCj0c"/>
+    <field buttonText="LocalTxt39iAFb" ctrl="FldCQftn" displayOnly="true" field="APP_Child_Known_As" uid="A9C9XK0B"/>
+    <field buttonText="LocalTxt5LZ4wd" ctrl="FldgSITO" displayOnly="true" field="APP_Child_DOB" uid="7YNm1dMM"/>
+    <field buttonText="LocalTxt4ts0lZ" ctrl="Fld2duxE" displayOnly="true" field="APP_Child_Ethnicity" uid="LETtDVff"/>
+    <field buttonText="LocalTxt8Fpvi3" ctrl="Fldq8aeV" displayOnly="true" field="APP_Child_FlyingStart_Ind" uid="KwBJdTOS"/>
+    <field buttonText="LocalTxt8sM74g" ctrl="FldnsrpZ" displayOnly="true" field="APP_Child_Currently_Accessing_Welsh_Ind" uid="AgjbYcKD"/>
+    <field buttonText="LocalTxty26G5" ctrl="Fld11n5bI" displayOnly="true" field="APP_Child_Preferred_Welsh_ind" uid="S6vwUWVz"/>
+    <field buttonText="LocalTxt3c5Bow" ctrl="FldQzi01" field="APP_Child_SEN_Registered_Ind" uid="2UaqOiPI"/>
+    <field buttonText="LocalTxt5uLvEK" ctrl="FldI7lJv" field="APP_Child_SEN_Referral_Date" uid="EgtDkIw9"/>
+    <field buttonText="LocalTxt7s5SLY" ctrl="Fld11Tfel" field="APP_Child_SEN_Referral_Status" uid="3BS0RVvf"/>
+    <button buttonText="LocalTxt84fMsN" ctrl="ButfJvbe" mouseOverText="LocalTxt4O7vVQ" uid="6O2VNYzp"/>
+</groupPanel>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="Grc8BX2b" layoutType="VERTICAL_BOX" row="1" rowspan="1" uid="NfRpD3K3">
+<groupPanel ctrl="GpanomNI4" displayOnly="true" groupHeaderText="LocalTxtAXj3Bo" groupInfoText="LocalTxt7vBBoF" groupTrailerText="LocalTxt6bgg0Q" uid="CUqh3Ddt">
+    <field buttonText="LocalTxt7RQ8Et" ctrl="FldP76Yc" field="APP_Child_UPRN" uid="KjqeyYMx"/>
+    <field buttonText="LocalTxt6eY9wq" ctrl="FldM3RnV" field="APP_Child_Address1" uid="OIwxG6Zv"/>
+    <field buttonText="LocalTxt5uG3CO" ctrl="FldCg4oa" displayLabelText="false" field="APP_Child_Address2" uid="8gbeOq4O"/>
+    <field buttonText="LocalTxt2bKnjA" ctrl="FldGmerF" displayLabelText="false" field="APP_Child_Address3" uid="1OI47605"/>
+    <field buttonText="LocalTxt8ZVea5" ctrl="FldPaM4Y" field="APP_Child_Town" uid="3Cm6C9CR"/>
+    <field buttonText="LocalTxt7Gl9fw" ctrl="FldmceuD" field="APP_Child_County" uid="AtQGzLs7"/>
+    <field buttonText="LocalTxtAGQh8k" ctrl="FldgCvzi" field="APP_Child_Postcode" uid="J9W6dHR5"/>
+</groupPanel>
+                            </gridCell>
+                            <gridCell column="3" columnspan="1" ctrl="Grct00Mv" row="1" rowspan="1" uid="ATkggzKf"/>
+                        </gridControl>
+                    </tab>
+                    <tab ctrl="Tabg8dw5" imageAltText="LocalTxtAQ5puj" imageMouseOverText="LocalTxt7BDkpg" itemName="TabProvision" text="LocalTxt1SYllW" uid="3FgihHen">
+                        <fieldTable ctrl="TbleK2D3" displayOnly="true" field="Provision_TBL" tableHeaderText="LocalTxt88zpDt" tableInfoText="LocalTxt9pKdK" tableTrailerText="LocalTxt39nnHt" uid="FH4nODAh">
+                            <tablePage ctrl="TpgHinZC" default="L" uid="OVc00pkQ">
+<fieldColumn buttonText="LocalTxtAPwf45" ctrl="Colyk1DV" displayOnly="true" field="Provision-Provider" hyperlink="true" immediateValidation="true" sortable="true" uid="4IPwd43M" width="24%"/>
+<fieldColumn buttonText="LocalTxt5Z49Og" ctrl="ColwT4yz" displayOnly="true" field="Provision-Enquiry_ID" hyperlink="true" immediateValidation="true" sortable="true" uid="Ldl9Y0jw" width="7%"/>
+<fieldColumn buttonText="LocalTxt9iuKxz" ctrl="ColYwOtx" field="Provision-Application_date" sortable="true" uid="8eTybccx" width="7%"/>
+<fieldColumn buttonText="LocalTxt4zGSAn" ctrl="ColGtbxM" field="Provision-Approved_Ind" sortable="true" uid="2XrO1HaB" width="7%"/>
+<fieldColumn buttonText="LocalTxt1zlZE8" ctrl="ColqHmzf" field="Provision-Approved_Date" uid="ztc17SJ" width="10%"/>
+<fieldColumn buttonText="LocalTxt1Q30dv" ctrl="ColvXG5B" field="Provision-Booked_Hours" uid="6hcW99Xa" width="13%"/>
+<fieldColumn buttonText="LocalTxt3KdI3L" ctrl="ColU9kP3" field="Provision-Days_per_Week" uid="9e4inFus" width="10%"/>
+<fieldColumn buttonText="LocalTxt9BJaQ7" ctrl="ColrssM4" field="Provision-Start_Date" sortable="true" uid="Q2RPN8xp" width="11%"/>
+<fieldColumn buttonText="LocalTxt2MhIKi" ctrl="Colwkjtv" field="Provision-Provision_End_Date" sortable="true" uid="1LFZd35d" width="11%"/>
+                            </tablePage>
+                        </fieldTable>
+                    </tab>
+                    <tab ctrl="Tab9KQdC" imageAltText="LocalTxt1skr5F" imageMouseOverText="LocalTxtv4jps" itemName="TabStatus" text="LocalTxt6rRggi" uid="1QX1Fag3">
+                        <gridControl columnWidths="50%,50%" columns="2" ctrl="Grdvpnge" rows="2" uid="AgGRg2GT">
+                            <gridCell column="1" columnspan="1" ctrl="Grcpuz3m" layoutType="FIELD" row="1" rowspan="1" uid="QCa688nl">
+<field buttonText="LocalTxt9TOGQ0" ctrl="FldRARze" field="APP_Notes" uid="Gz3JHid5"/>
+<field buttonText="LocalTxt17RO1" ctrl="FldNdoBv" field="APP_Status" propertySet="Chosen-Medium" uid="jD9OQYv"/>
+<button buttonText="LocalTxt2bhpgr" ctrl="ButJAuGQ" mouseOverText="LocalTxt1PhXGh" uid="Gm3HHsTi"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="GrcdwLO6" row="1" rowspan="1" uid="4TCywySr"/>
+                            <gridCell column="1" columnspan="1" ctrl="GrcjNLuK" displayOnly="true" row="2" rowspan="1" uid="Kf2hrGq6">
+<field buttonText="LocalTxt94qbwc" ctrl="FldnnWzC" field="APP_Date_Last_Updated" uid="5Hg7WzLC"/>
+<field buttonText="LocalTxt5q6OCR" ctrl="FldS7o1H" field="APP_Last_Updated_By" uid="9jUVbtPO"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="GrcRq6PI" row="2" rowspan="1" uid="KiGRiXOh"/>
+                        </gridControl>
+                    </tab>
+                </tabSet>
+            </groupPanel>
+        </page>
+    </pageContents>
+</page>

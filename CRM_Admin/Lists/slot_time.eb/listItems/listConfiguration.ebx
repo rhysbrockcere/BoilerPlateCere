@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+    <item id="1" returnVal="30"/>
+    <item id="2" returnVal="60"/>
+    <item id="3" returnVal="90"/>
+    <item id="4" returnVal="120"/>
+    <item id="5" returnVal="150"/>
+    <item id="6" returnVal="180"/>
+    <item id="7" returnVal="210"/>
+    <item id="8" returnVal="240"/>
+    <item id="9" returnVal="270"/>
+    <item id="10" returnVal="300"/>
+    <item id="11" returnVal="330"/>
+    <item id="12" returnVal="360"/>
+    <item id="13" returnVal="420"/>
+</items>

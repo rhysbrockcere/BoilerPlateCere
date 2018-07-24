@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource description="ChildCare Offer - Claim View " database="CHILDCARE_OFFER" table="true" preparedStatement="false" id="CO_Claim_VW" dateCreated="2018-06-19T15:36:46.021+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer.dbo.CO_Claim_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Application_ID" type="INTEGER" length="10"/>
+            <field id="Booked_Hours" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="ChildName" type="VARCHAR" length="101" readOnly="true"/>
+            <field id="Child_DOB" type="TIMESTAMP" length="16"/>
+            <field id="Claim_ID" type="INTEGER" length="10"/>
+            <field id="Confirmed_By" type="VARCHAR" length="100"/>
+            <field id="Confirmed_Date" type="TIMESTAMP" length="16"/>
+            <field id="Created_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="Days_Per_Week" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Enquiry_ID" type="INTEGER" length="10"/>
+            <field id="FP_Nursery_Ind" type="INTEGER" length="10"/>
+            <field id="Holiday_Ind" type="VARCHAR" length="3"/>
+            <field id="Language_Provided" type="VARCHAR" length="10"/>
+            <field id="Period_ID" type="INTEGER" length="10"/>
+            <field id="Period_Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Provider" type="VARCHAR" length="50"/>
+            <field id="Provider_ID" type="INTEGER" length="10"/>
+            <field id="Provision_End_Date" type="TIMESTAMP" length="16"/>
+            <field id="Provision_ID" type="INTEGER" length="10"/>
+            <field id="Provision_Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Status" type="VARCHAR" length="20"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="TargetServer_Categories" dateCreated="2013-06-27T16:00:03.870+01:00">
+        <columns>category_id, convert(varchar(10),category_id) + ' - ' + Category as Category, Category as Name</columns>
+        <from>&amp;&amp;ServerName .dbo.crm_Categories</from>
+        <additional>order by name</additional>
+        <fields>
+            <field id="Category" input="false"/>
+            <field id="Name" input="false"/>
+            <field id="category_id" type="INTEGER" input="false"/>
+            <field id="ServerName" type="CHAR" output="false" persistent="false" dynamic="true"/>
+        </fields>
+    </dynamicList>
+</ebase>

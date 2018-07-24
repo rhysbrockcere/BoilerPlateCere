@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource database="CHILDCARE_OFFER" preparedStatement="false" id="CO_Provider_Address_VW" dateCreated="2018-04-17T00:04:14.111+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer_TEST.dbo.CO_Provider_Address_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Approved_By" type="VARCHAR" length="50"/>
+            <field id="Approved_Date" type="VARCHAR" length="10"/>
+            <field id="CIW_No" type="VARCHAR" length="50"/>
+            <field id="Capacity" type="INTEGER" length="10"/>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="Date_Last_Updated" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="E_Address" type="VARCHAR" length="4000"/>
+            <field id="Holiday_Ind" type="VARCHAR" length="3"/>
+            <field id="Language" type="VARCHAR" length="5"/>
+            <field id="Last_Updated_By" type="VARCHAR" length="50"/>
+            <field id="Provider" type="VARCHAR" length="50"/>
+            <field id="Provider_ID" type="INTEGER" length="10"/>
+            <field id="UPRN" type="BIGINT" length="19"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

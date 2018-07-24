@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Web_Forms">
+        <tableMapping table="Web_Forms"/>
+        <fieldMapping resourceField="Category" field="Web_Forms-Category"/>
+        <fieldMapping resourceField="Category_ID" field="Web_Forms-Category_ID"/>
+        <fieldMapping resourceField="Created_By" field="Web_Forms-Created_By"/>
+        <fieldMapping resourceField="Date_Created" field="Web_Forms-Date_Created"/>
+        <fieldMapping resourceField="Date_Modified" field="Web_Forms-Date_Modified"/>
+        <fieldMapping resourceField="Enabled" field="Web_Forms-Enabled"/>
+        <fieldMapping resourceField="Form_ID" field="Web_Forms-Form_ID"/>
+        <fieldMapping resourceField="Hits" field="Web_Forms-Hits"/>
+        <fieldMapping resourceField="Modified_By" field="Web_Forms-Modified_By"/>
+        <fieldMapping resourceField="Page_Header_EN" field="Web_Forms-Page_Header_EN"/>
+        <fieldMapping resourceField="Resp_Team_ID" field="Web_Forms-Resp_Team_ID"/>
+        <fieldMapping resourceField="Team_Email" field="Web_Forms-Team_Email"/>
+        <fieldMapping resourceField="Where_Clause" field="Where_Clause"/>
+    </resourceMapping>
+</resourceMappings>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Forms/CHILDCARE_ADMIN" id="Reset_Search" dateCreated="2018-04-20T12:21:22.686+01:00">
+        <scriptText>set FOP_CARER_SEARCH = '';
+set FOP_CHILD_SEARCH = '';
+set FOP_ENQUIRY_SEARCH = '';
+set FOP_STATUS_LIST = '';
+set FOP_PROVIDER_SEARCH = '';
+
+hide tblApplications;
+hide tblProviders;</scriptText>
+    </script>
+</ebase>

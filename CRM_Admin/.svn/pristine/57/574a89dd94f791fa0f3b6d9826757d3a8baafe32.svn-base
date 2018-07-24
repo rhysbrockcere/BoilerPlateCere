@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Categories">
+        <tableMapping table="Categories"/>
+        <fieldMapping resourceField="Category" field="Categories-Category"/>
+        <fieldMapping resourceField="Category_ID" field="Categories-Category_ID"/>
+        <fieldMapping resourceField="Enabled" field="Categories-Enabled"/>
+        <fieldMapping resourceField="Resp_Team_ID" field="Categories-Resp_Team_ID"/>
+        <fieldMapping resourceField="Team_Name" field="Categories-Team_Name"/>
+        <fieldMapping resourceField="Team_Path" field="Categories-Team_Path"/>
+        <fieldMapping resourceField="Where_Clause" field="Where_Clause"/>
+    </resourceMapping>
+</resourceMappings>

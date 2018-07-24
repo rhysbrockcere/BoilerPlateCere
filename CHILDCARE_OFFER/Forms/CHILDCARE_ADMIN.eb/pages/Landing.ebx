@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Landing" nextPage="Home" beforePageEvent="/Scripts/Admin_Login" pageHeaderTextRef="Txt7VPDb3" pageInfoTextReference="TxtAm97HQ" pageTrailerTextReference="Txt9h6tUq" nextPageTextReference="Txt88bZgK" prevPageTextReference="Txt2zXoMt">
+    <pageContents>
+        <page ctrl="PagRgha1" outputType="0" pdfFooterText="LocalTxtJFAga" pdfHeaderText="LocalTxt7XX6Xo" uid="2DisPRyG">
+            <pagePanel ctrl="PpanS0Ga" uid="RDcvmBD3">
+                <gridControl columnWidths="50%,50%" columns="2" ctrl="GrdyorrZ" rows="1" uid="POXV02cN">
+                    <gridCell column="1" columnspan="1" ctrl="GrcEz5LL" row="1" rowspan="1" uid="1LzmHpA0">
+                        <groupPanel ctrl="GpanAK62m" groupHeaderText="LocalTxt9XnZIB" groupInfoText="LocalTxt1D3wPO" groupTrailerText="LocalTxt6xqv7Z" uid="LifY2xnb">
+                            <field buttonText="LocalTxt6Vlhph" ctrl="Fldx09aH" field="FOP_ADMIN_AREA" immedEvent="/Scripts/GOTO_PAGE_HOME" immediateValidation="true" uid="4OaaXjdR"/>
+                        </groupPanel>
+                        <gridControl columnWidths="33%,33%,34%" columns="3" ctrl="GrdDe8aC" rows="1" uid="O6pv6txP">
+                            <gridCell column="1" columnspan="1" ctrl="GrcUF4Ef" row="1" rowspan="1" uid="PfsFaTlP"/>
+                            <gridCell column="2" columnspan="1" ctrl="GrcPqsA8" row="1" rowspan="1" uid="MCldEOqs">
+<hyperlink ctrl="LnkHomePage" hidden="true" onClickEvent="/Scripts/GOTO_PAGE_HOME" text="LocalTxt729lpW" title="LocalTxt2HmtpH" uid="KVRX5yi6"/>
+                            </gridCell>
+                            <gridCell column="3" columnspan="1" ctrl="Grcvh7Zv" row="1" rowspan="1" uid="7fVJ9KwA"/>
+                        </gridControl>
+                    </gridCell>
+                    <gridCell column="2" columnspan="1" ctrl="GrcYtDrj" row="1" rowspan="1" uid="20D4fF8d">
+                        <groupPanel ctrl="GpanNzfaL" groupHeaderText="LocalTxt9syZVC" groupInfoText="LocalTxt5lPghC" groupTrailerText="LocalTxt1MxBZo" uid="2pZlckRw">
+                            <hyperlink ctrl="Lnk3eWHr" onClickEvent="/Scripts/Goto_Page_PeriodEnd" text="LocalTxt8H2taa_2" title="LocalTxt27dDi6_2" uid="IHBLzcHD"/>
+                            <hyperlink ctrl="LnkLasXe" text="LocalTxt3yT87A_2" title="LocalTxt44hawD_2" uid="M900UQFq"/>
+                        </groupPanel>
+                    </gridCell>
+                </gridControl>
+            </pagePanel>
+        </page>
+    </pageContents>
+</page>

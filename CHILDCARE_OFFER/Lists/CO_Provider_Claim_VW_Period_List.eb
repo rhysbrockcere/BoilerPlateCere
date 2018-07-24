@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dynamicList database="CHILDCARE_OFFER" id="CO_Provider_Claim_VW_Period_List" dateCreated="2018-04-26T16:17:13.711+01:00">
+        <columns>DISTINCT Period_Start_Date</columns>
+        <from>Childcare_Offer.dbo.CO_Provider_Claim_VW</from>
+        <where>&amp;&amp;WHERE_CLAUSE_PERIOD</where>
+        <fields>
+            <field id="Period_Start_Date" type="DATE" input="false"/>
+            <field id="WHERE_CLAUSE_PERIOD" type="NUMERIC" output="false" persistent="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource database="CHILDCARE_OFFER" preparedStatement="false" id="CO_Ethnic_Origin" dateCreated="2018-04-16T23:41:09.674+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer.dbo.CO_Ethnic_Origin</from>
+        <fields>
+            <field id="Ethnic_CY" type="VARCHAR" length="50"/>
+            <field id="Ethnic_Code" type="VARCHAR" length="4"/>
+            <field id="Ethnic_EN" type="VARCHAR" length="50"/>
+            <field id="Ethnic_Group" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

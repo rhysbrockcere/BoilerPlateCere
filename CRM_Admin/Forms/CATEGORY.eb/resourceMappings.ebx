@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Category">
+        <fieldMapping resourceField="Add_Information" field="Add_Information"/>
+        <fieldMapping resourceField="Add_Information_CY" field="Add_Information_CY"/>
+        <fieldMapping resourceField="Category" field="Category"/>
+        <fieldMapping resourceField="Category_CY" field="Category_CY"/>
+        <fieldMapping resourceField="Category_ID" field="Category_ID"/>
+        <fieldMapping resourceField="Created_By" field="Created_By"/>
+        <fieldMapping resourceField="Date_Created" field="Date_Created"/>
+        <fieldMapping resourceField="Date_Modified" field="Date_Modified"/>
+        <fieldMapping resourceField="Default_Details" field="Default_Details"/>
+        <fieldMapping resourceField="Default_Details_CY" field="Default_Details_CY"/>
+        <fieldMapping resourceField="Default_Subject" field="Default_Subject"/>
+        <fieldMapping resourceField="Default_Subject_CY" field="Default_Subject_CY"/>
+        <fieldMapping resourceField="Description" field="Description"/>
+        <fieldMapping resourceField="Description_CY" field="Description_CY"/>
+        <fieldMapping resourceField="Ebase_Form_ID" field="Ebase_Form_ID"/>
+        <fieldMapping resourceField="Enabled" field="Enabled"/>
+        <fieldMapping resourceField="FileRef_ListID" field="FileRef_ListID"/>
+        <fieldMapping resourceField="Keywords" field="Keywords"/>
+        <fieldMapping resourceField="Modified_By" field="Modified_By"/>
+        <fieldMapping resourceField="Page_URL" field="Page_URL"/>
+        <fieldMapping resourceField="Page_URL_CY" field="Page_URL_CY"/>
+        <fieldMapping resourceField="Resp_Team_ID" field="Resp_Team_ID"/>
+        <fieldMapping resourceField="SLA_ID" field="SLA_ID"/>
+        <fieldMapping resourceField="Show_ApprovalStatus" field="Show_ApprovalStatus"/>
+        <fieldMapping resourceField="Show_BadgeType" field="Show_BadgeType"/>
+        <fieldMapping resourceField="Show_DueDate" field="Show_DueDate"/>
+        <fieldMapping resourceField="Show_FileRef" field="Show_FileRef"/>
+    </resourceMapping>
+    <resourceMapping id="Sub_Categories">
+        <tableMapping table="Sub_Categories"/>
+        <fieldMapping resourceField="Category_ID" field="Category_ID"/>
+        <fieldMapping resourceField="Add_Information" field="Sub_Categories-Add_Information"/>
+        <fieldMapping resourceField="Add_Information_CY" field="Sub_Categories-Add_Information_CY"/>
+        <fieldMapping resourceField="Default_Details" field="Sub_Categories-Default_Details"/>
+        <fieldMapping resourceField="Default_Details_CY" field="Sub_Categories-Default_Details_CY"/>
+        <fieldMapping resourceField="Default_Priority" field="Sub_Categories-Default_Priority"/>
+        <fieldMapping resourceField="Default_Subject" field="Sub_Categories-Default_Subject"/>
+        <fieldMapping resourceField="Default_Subject_CY" field="Sub_Categories-Default_Subject_CY"/>
+        <fieldMapping resourceField="Default_Type" field="Sub_Categories-Default_Type"/>
+        <fieldMapping resourceField="Description" field="Sub_Categories-Description"/>
+        <fieldMapping resourceField="Description_CY" field="Sub_Categories-Description_CY"/>
+        <fieldMapping resourceField="Enabled" field="Sub_Categories-Enabled"/>
+        <fieldMapping resourceField="Keywords" field="Sub_Categories-Keywords"/>
+        <fieldMapping resourceField="Page_URL" field="Sub_Categories-Page_URL"/>
+        <fieldMapping resourceField="Page_URL_CY" field="Sub_Categories-Page_URL_CY"/>
+        <fieldMapping resourceField="Resp_Team_ID" field="Sub_Categories-Resp_Team_ID"/>
+        <fieldMapping resourceField="Sub_Category" field="Sub_Categories-Sub_Category"/>
+        <fieldMapping resourceField="Sub_Category_CY" field="Sub_Categories-Sub_Category_CY"/>
+        <fieldMapping resourceField="Sub_Category_ID" field="Sub_Categories-Sub_Category_ID"/>
+    </resourceMapping>
+</resourceMappings>

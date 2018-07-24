@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CERESQLN1_SQL2012" preparedStatement="false" id="CO_LU_Valid_Postcode" dateCreated="2018-04-16T23:41:09.955+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer_TEST.dbo.CO_LU_Valid_Postcode</from>
+        <fields>
+            <field id="County" type="INTEGER" length="10"/>
+            <field id="PostCode_Start_Date" type="VARCHAR" length="10"/>
+            <field id="Postcode" type="VARCHAR" length="8"/>
+        </fields>
+    </dbResource>
+</ebase>

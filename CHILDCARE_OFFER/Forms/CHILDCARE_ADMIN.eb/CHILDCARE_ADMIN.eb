@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <webForm formHeaderTextRef="Txt2DqeGr" htmlTitleTextRef="Txt46CSIN" finishButtonTextRef="Txt6ynxef" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Landing" preferredScriptFolder="/Scripts" id="CHILDCARE_ADMIN" dateCreated="2018-04-20T00:21:48.850+01:00">
+        <sharedFunctionScripts>
+            <sharedFunctionScript path="/Scripts/_GLOBAL_FUNCTIONS"/>
+            <sharedFunctionScript path="/Scripts/CRM_INTERGRATION"/>
+        </sharedFunctionScripts>
+        <clientCallableFunctionScripts>
+            <clientCallableFunctionScript path="/Scripts/_FUNCTIONS"/>
+        </clientCallableFunctionScripts>
+        <resources>
+            <resource name="CO_Administrative_Area" path="/Resources/CO_Administrative_Area"/>
+            <resource name="CO_Application" path="/Resources/CO_Application"/>
+            <resource name="CO_Application_TBL" path="/Resources/CO_Application_TBL"/>
+            <resource name="CO_Claim" path="/Resources/CO_Claim"/>
+            <resource name="CO_Claim_VW" path="/Resources/CO_Claim_VW"/>
+            <resource name="CO_Current_Period" path="/Resources/CO_Current_Period"/>
+            <resource name="CO_Insert_Provision_Claim" path="/Resources/CO_Insert_Provision_Claim"/>
+            <resource name="CO_Provider" path="/Resources/CO_Provider"/>
+            <resource name="CO_Provider_Claim_VW" path="/Resources/CO_Provider_Claim_VW"/>
+            <resource name="CO_Provider_TBL" path="/Resources/CO_Provider_TBL"/>
+            <resource name="CO_Provision" path="/Resources/CO_Provision"/>
+            <resource name="CO_Provision_VW_TBL" path="/Resources/CO_Provision_VW_TBL"/>
+            <resource name="ICT_EMAIL" path="/Resources/Email_resources/ICT_EMAIL"/>
+            <resource name="os_Address_Child" path="/Resources/os_Address_Child"/>
+            <resource name="os_Address_P1" path="/Resources/os_Address_P1"/>
+            <resource name="os_Address_P2" path="/Resources/os_Address_P2"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt4oKp3m" restoreButtonTextRef="Txt9I7fWa" saveInfoTextRef="Txt1qUBb0" restoreInfoTextRef="Txt6TPwIP"/>
+        <finalPage headerTextRef="Txt923Meb" infoTextRef="TxtB7N5o" returnTextRef="Txt8NEaEr" inheritStyle="true"/>
+        <jsps top="$ws/Web_Resources/JSP/sp_header_Ceredigion.jsp" bottom="$ws/Web_Resources/JSP/intranetFooter.jsp" topStatic="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

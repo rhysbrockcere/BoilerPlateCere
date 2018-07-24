@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Forms/CHILDCARE_ADMIN" id="List_Applications" dateCreated="2018-04-20T01:37:52.159+01:00">
+        <scriptText>set WHERE_CLAUSE = 'Status = \'' + FOP_Status_LIST + '\'';
+fetchtable App_TBL;
+show tblApplications;</scriptText>
+    </script>
+</ebase>

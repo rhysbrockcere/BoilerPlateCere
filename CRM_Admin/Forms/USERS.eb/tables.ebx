@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="CRM_Users">
+        <column name="Created_By" type="CHAR" labelTextRef="Txt6KNIxi" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Date_Created" type="DATETIME" labelTextRef="TxtAYHhRC" displayType="TEXT"/>
+        <column name="Date_Modified" type="DATETIME" labelTextRef="Txt7YAAEh" displayType="TEXT"/>
+        <column name="Email" type="CHAR" labelTextRef="Txt3sUdpj" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="ID" type="INTEGER" labelTextRef="Txt3wZXRZ" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Modified_By" type="CHAR" labelTextRef="Txt1weUXI" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Position_ID" type="CHAR" labelTextRef="Txt36WOQ5" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Reference_No" type="CHAR" labelTextRef="Txt1ahkmS" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Username" type="CHAR" labelTextRef="Txt7QbkNk" maxLength="50" displayType="TEXT" displayLength="50"/>
+    </table>
+    <table name="CeriOcc">
+        <column name="cont_lookup" type="CHAR" labelTextRef="Txt3c7GLd" maxLength="183" displayType="TEXT" displayLength="60"/>
+        <column name="contract_id" type="CHAR" labelTextRef="Txt71dnNc" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="manager_lookup" type="CHAR" labelTextRef="TxtA3UUER" maxLength="183" displayType="TEXT" displayLength="60"/>
+        <column name="manager_positionid" type="CHAR" labelTextRef="Txt90rxEu" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Name" type="CHAR" labelTextRef="Txt8LTh7Z" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="org_id" type="CHAR" labelTextRef="TxtsoMc3" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="person_id" type="CHAR" labelTextRef="Txt5m6g1j" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="position_id" type="CHAR" labelTextRef="Txt2fMiBi" maxLength="10" displayType="TEXT" displayLength="20"/>
+        <column name="position_lookup" type="CHAR" labelTextRef="Txt375ALV" maxLength="183" displayType="TEXT" displayLength="60"/>
+        <column name="position_nm" type="CHAR" labelTextRef="Txt51TmJl" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="position_ref_no" type="CHAR" labelTextRef="Txt8AWjT4" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="reference_no" type="CHAR" labelTextRef="Txt2L6yas" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="team_id" type="CHAR" labelTextRef="Txt1BUNO8" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="team_lookup" type="CHAR" labelTextRef="Txt8ydURU" maxLength="183" displayType="TEXT" displayLength="60"/>
+    </table>
+</tables>

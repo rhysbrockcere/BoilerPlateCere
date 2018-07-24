@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Where_Clause" type="CHAR" labelTextRef="Txt9n4iNA" displayType="TEXT"/>
+    <field name="filter_AttachDocType" type="CHAR" labelTextRef="Txt3DI5um" displayType="TEXT"/>
+    <field name="filter_CatName" type="CHAR" labelTextRef="Txt5JIA6P" displayType="TEXT"/>
+    <field name="filter_CustForename" type="CHAR" labelTextRef="TxtIXSmu" displayType="TEXT"/>
+    <field name="filter_CustSurname" type="CHAR" labelTextRef="Txt2O4N7Q" displayType="TEXT"/>
+    <field name="filter_Disabled" type="BOOLEAN" labelTextRef="Txt5La5WA" displayType="CHECKBOX"/>
+    <field name="filter_EnqDate" type="CHAR" labelTextRef="TxtAuMUkl" displayType="TEXT"/>
+    <field name="filter_EnqID" type="CHAR" labelTextRef="Txt2qvO4F" displayType="TEXT"/>
+    <field name="filter_EnqReference" type="CHAR" labelTextRef="Txt4sd0o9" displayType="TEXT"/>
+    <field name="filter_Keyword" type="CHAR" labelTextRef="Txt8b4lPl" displayType="TEXT"/>
+    <field name="filter_Team" type="CHAR" labelTextRef="TxtB6U4z" displayType="SELECT" dynamicList="/Lists/Teams">
+        <listMappings display="Team_Name" return="Team_ID"/>
+    </field>
+</fields>

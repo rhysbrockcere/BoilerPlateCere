@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/WebForms/Form_Load,/Scripts/WebForms/Anonymous_Change,/Scripts/WebForms/EmailReceipt_Change" pageHeaderTextRef="Txt8X4Ewy" pageInfoTextReference="TxtF2HXD" pageTrailerTextReference="Txt8iF54Y" nextPageTextReference="Txt5d0zYk" prevPageTextReference="Txt5xVvL8">
+    <pageContents>
+        <page ctrl="Pagf0qbv" localMsg="false" msgControls="6aL6ebQe" outputType="0" pdfFooterText="LocalTxt1ChJAe" pdfHeaderText="LocalTxt6psFkp" uid="GWW9Gu2B">
+            <componentPlaceHolder name="AdminMenu" prefix="mnuAdminMenu"/>
+            <panel ctrl="PanHm65Y" propertySet="PagePanel" uid="JpxadiL5">
+                <horizontalMenu ctrl="Hmenwyhm9" name="Hmenwyhm91517222646824" propertySet="MenuBar" uid="8c9q9Pf7">
+                    <staticMenuItem ctrl="Mit15PSae" enabled="false" imageAltText="LocalTxtANtznv" imageMouseOverText="LocalTxt1D42nG" itemName="Item1" name="Mit15PSae1517222659018" text="LocalTxtWggS" uid="1IiCxqDQ">
+                        <staticMenuItem ctrl="Mit5K9bR" imageAltText="LocalTxt7GYyHe" imageMouseOverText="LocalTxt27qBwX" itemName="Item2" name="Mit5K9bR1517222670780" onClickEvent="/Scripts/WebForms/Copy_Form" text="LocalTxt2gTljf" uid="NHbRdvIq"/>
+                    </staticMenuItem>
+                </horizontalMenu>
+                <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="KoGAHN6P"/>
+                <message ctrl="Message_1" uid="6aL6ebQe"/>
+                <panel ctrl="PanRrMUc" propertySet="Tabs-Parent" uid="93e6Y4FM">
+                    <text ctrl="TexZtLV9" text="LocalTxt6TUmRn" uid="NseTW6tG"/>
+                    <panel ctrl="PanhQX5J" propertySet="Tab-Child" uid="OO9htELS">
+                        <rootHtmlElementProperties idLocator="tabs-Details"/>
+                        <field buttonText="LocalTxt6INLPp" ctrl="FldeiQmO" field="Form_ID" modifiers="r, mandatory" uid="GT9i6Wqh"/>
+                        <field buttonText="LocalTxt8zn2Ou" ctrl="FldyMSgl" field="Enabled" uid="7aujpzEZ"/>
+                        <field buttonText="LocalTxt1kUfnt" ctrl="Fldl4zeO" field="Page_Header_EN" modifiers="r" uid="2lmbnOII"/>
+                        <field buttonText="LocalTxtA0QsIz" ctrl="FldTfB6H" field="Page_Header_CY" modifiers="r" uid="L7hBvCrs"/>
+                        <panel ctrl="pnlHits" uid="KJnXYLp4">
+                            <layoutProperties>
+<FIELD editorWidth="70%" labelWidth="20%"/>
+                            </layoutProperties>
+                            <field buttonText="LocalTxt98aiYh" ctrl="FldHVFvt" displayOnly="true" field="Hits" uid="OeihGDRr"/>
+                            <hyperlink ctrl="hlnk_ResetHits" newLine="false" text="LocalTxt3A4MXi" title="LocalTxt5zjL3o" uid="ETscrBdr"/>
+                            <field buttonText="LocalTxt2njopg" ctrl="Fld5rjS0" field="Sub_Category_ID" immedEvent="/Scripts/WebForms/Category_Change" immediateValidation="true" modifiers="mandatory" propertySet="Chosen-Large" uid="4bYWzrNi"/>
+                        </panel>
+                        <field buttonText="LocalTxt7OQkuh" ctrl="txtSelectCategory" field="fop_Category_ID" hidden="true" immedEvent="/Scripts/WebForms/Category_Change" immediateValidation="true" modifiers="mandatory" propertySet="Chosen-Large" uid="RoeMDtMU"/>
+                        <panel ctrl="pnlCategoryInfo" uid="7dTSdjdP">
+                            <layoutProperties>
+<FIELD editorWidth="70%" labelWidth="20%"/>
+                            </layoutProperties>
+                            <field buttonText="LocalTxt3xCFoI" ctrl="FldEg0rI" displayOnly="true" field="Categories_List_Full-Category" hidden="true" uid="BtVBBEuE"/>
+                            <hyperlink ctrl="hlnk_ChangeCategory" hidden="true" newLine="false" onClickEvent="/Scripts/WebForms/Change_Category" text="LocalTxt9G48G0" title="LocalTxt4IQB2F" uid="OuCUvUcQ"/>
+                            <field buttonText="LocalTxt2eCYbZ" ctrl="FldmyfHx" displayOnly="true" field="Categories_List_Full-Resp_Team_ID" uid="N0pzDy9G"/>
+                            <field buttonText="LocalTxt2u43nQ" ctrl="FldpjBpF" displayOnly="true" field="Categories_List_Full-Leader" uid="C6rJrc1B"/>
+                            <field buttonText="LocalTxtAH3vfa" ctrl="FldWi6rk" displayOnly="true" field="Categories_List_Full-Email" uid="zSJy6n8"/>
+                            <field buttonText="LocalTxt86rlSP" ctrl="FldlD3ma" displayInfoText="true" field="Email_Address" propertySet="Email" uid="4gh7sgO5"/>
+                        </panel>
+                    </panel>
+                    <panel ctrl="PanhQX5J_2" propertySet="Tab-Child" uid="3Afh6TLY">
+                        <rootHtmlElementProperties idLocator="tabs-Settings"/>
+                        <field buttonText="LocalTxt1wGPSp" ctrl="FldTmMMG" displayInfoText="true" field="Allow_Anonymous" helpButImage="@0" helpPos="2" immedEvent="/Scripts/WebForms/Anonymous_Change" immediateValidation="true" uid="L2m5wJRD"/>
+                        <field buttonText="LocalTxt6Y7AWy" ctrl="chkAddress" displayInfoText="true" field="Address_Block" uid="MplwfYTY"/>
+                        <field buttonText="LocalTxt7admZu" ctrl="FldQGrV6" displayInfoText="true" field="Show_Subject" uid="KTOnlqHB"/>
+                        <field buttonText="LocalTxt26jAOe" ctrl="FldsH32q" displayInfoText="true" field="Show_Comments" uid="Nk4DumuH"/>
+                        <field buttonText="LocalTxt8oGi5B" ctrl="FldVZ0iZ" displayInfoText="true" field="Default_Comments" uid="K5Bz5Y8G"/>
+                        <field buttonText="LocalTxt7XlzTN" ctrl="FldDCeP3" displayInfoText="true" field="allow_select" uid="KCtVt34q"/>
+                        <field buttonText="LocalTxt1XK7a2" ctrl="FldlJAFx" field="Allow_Upload" uid="apsgXxb"/>
+                        <field buttonText="LocalTxt3Fw3N1" ctrl="FlduhhHB" displayInfoText="true" field="Email_Customer" immedEvent="/Scripts/WebForms/EmailReceipt_Change" immediateValidation="true" uid="2jsxVuGP"/>
+                        <field buttonText="LocalTxt7vTcxv" ctrl="chkReceiptDetails" displayInfoText="true" field="Email_Confirmation_Details" hidden="true" uid="KYaBGRb2"/>
+                        <field buttonText="LocalTxt6zHaZ9" ctrl="Fld3INLj" field="Default_Enquiry_Type" modifiers="mandatory" propertySet="Chosen-Medium" uid="NaukvehL"/>
+                        <field buttonText="LocalTxtAcmlal" ctrl="FldIkie1" displayInfoText="true" field="Return_URL_EN" uid="EXoUx3UM"/>
+                        <field buttonText="LocalTxt49SGrB" ctrl="FldKjMKl" field="Return_URL_CY" uid="ICcuNkHN"/>
+                    </panel>
+                    <panel ctrl="PanhQX5J_3" propertySet="Tab-Child" uid="6fZWaOi1">
+                        <rootHtmlElementProperties idLocator="tabs-Texts"/>
+                        <field buttonText="LocalTxt9eWZUm" ctrl="Fldnur7e" displayLabelText="true" field="Intro_Text_EN" propertySet="WYSIWIG" uid="3vHEePrg"/>
+                        <field buttonText="LocalTxt7iuMEN" ctrl="FldVECPG" displayLabelText="true" field="Intro_Text_CY" propertySet="WYSIWIG" uid="Ot0LpeYH"/>
+                        <horizontalLine ctrl="HlnmaXVq" uid="PLLaxlbQ"/>
+                        <field buttonText="LocalTxt5awpHZ" ctrl="FldQJ6mt" displayLabelText="true" field="Summary_Text_EN" propertySet="WYSIWIG" uid="HkOZAspK"/>
+                        <field buttonText="LocalTxt9Sb6HH" ctrl="FldphV5J" displayLabelText="true" field="Summary_Text_CY" propertySet="WYSIWIG" uid="Po3uzmUm"/>
+                        <horizontalLine ctrl="HlnqZmj1" uid="RpfUlH8d"/>
+                        <field buttonText="LocalTxt2qrj0T" ctrl="FldxzrPO" displayLabelText="true" field="Confirmation_Text_EN" propertySet="WYSIWIG" uid="P0LWQXjI"/>
+                        <field buttonText="LocalTxtAsBWLv" ctrl="FldAyPsi" displayLabelText="true" field="Confirmation_Text_CY" propertySet="WYSIWIG" uid="9MDJ8OhI"/>
+                        <horizontalLine ctrl="Hln8DZAF" uid="BSM3KUrI"/>
+                        <field buttonText="LocalTxtSfpuP" ctrl="FldJcOWm" displayLabelText="true" field="Email_Text_EN" propertySet="WYSIWIG" uid="L43BULNe"/>
+                        <field buttonText="LocalTxt6DjjiT" ctrl="FldQ9vjM" displayLabelText="true" field="Email_text_CY" propertySet="WYSIWIG" uid="FXOmvKI0"/>
+                    </panel>
+                    <panel ctrl="Pan15UsPh" propertySet="Tab-Child" uid="Ji7Q627k">
+                        <rootHtmlElementProperties idLocator="tabs-Advanced"/>
+                        <field buttonText="LocalTxttWEgy" ctrl="FldD7TdL" displayInfoText="true" field="Next_Form_Name" uid="HNmeY72t"/>
+                        <field buttonText="LocalTxt6Ewa8T" ctrl="FldtvvZN" displayInfoText="true" field="Param1" uid="Oc9xxZzQ"/>
+                        <field buttonText="LocalTxtSCQxt" ctrl="FldxuPSS" displayInfoText="true" field="Email_Form" uid="GmLMEm46"/>
+                        <field buttonText="LocalTxt5zqXj8" ctrl="FldwBZml" displayInfoText="true" field="total_pages" uid="RG5BgKM6"/>
+                    </panel>
+                </panel>
+                <panel ctrl="Pan14H5Rv" propertySet="Button_Panel" uid="Epy2nNwP">
+                    <button buttonText="LocalTxt3WqObP" ctrl="cmd" mouseOverText="LocalTxt9L1ZmK" onClickEvent="/Scripts/WebForms/go_Back" uid="HUofRyP1"/>
+                    <button buttonText="LocalTxt97pI47" ctrl="ButJ9wYN" mouseOverText="LocalTxt72IFMn" newLine="false" onClickEvent="/Scripts/GL_Validate,/Scripts/WebForms/Save_WebForm" uid="1147H8aS"/>
+                </panel>
+                <panel ctrl="PanuicEv" displayOnly="true" layoutType="HORIZONTAL_BOX" topMargin="10px" uid="52mrm9cQ">
+                    <layoutProperties>
+                        <HORIZONTAL_BOX hAlign="Fill" spacerSize="20px"/>
+                    </layoutProperties>
+                    <field buttonText="LocalTxtAH4CI" ctrl="FldFMtPm" field="Created_By" uid="DZ3CEbo5"/>
+                    <field buttonText="LocalTxt10fhIh" ctrl="FldHV9rL" field="Date_Created" uid="6MxApI9Y"/>
+                    <field buttonText="LocalTxt6CMNNo" ctrl="Fld2pmMR" field="Modified_By" uid="9xLheKeA"/>
+                    <field buttonText="LocalTxt1GUsar" ctrl="FldGWA67" field="Date_Modified" uid="G0V2MKw4"/>
+                </panel>
+            </panel>
+            <componentPlaceHolder name="CMP_LANG_CONTROL" prefix="LANG_CMP_LANG_CONTROL"/>
+        </page>
+    </pageContents>
+</page>

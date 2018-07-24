@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Categories_List_Full">
+        <column name="Category" type="CHAR" labelTextRef="Txt9gTXiV" maxLength="403" displayType="TEXT" displayLength="60"/>
+        <column name="Email" type="CHAR" labelTextRef="Txt8GYj0O" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Leader" type="CHAR" labelTextRef="Txt7lxALN" maxLength="50" displayType="SELECT" displayLength="50" dynamicList="/Lists/Ceri_People_Team">
+            <listMappings display="fullname" return="position_id">
+                <additional field="Categories_List_Full-Resp_Team_ID" listField="Team_ID"/>
+            </listMappings>
+        </column>
+        <column name="Resp_Team_ID" type="CHAR" labelTextRef="TxtA2ocmU" maxLength="50" displayType="SELECT" displayLength="50" dynamicList="/Lists/Teams">
+            <listMappings display="Team_Name" return="Team_ID"/>
+        </column>
+    </table>
+</tables>

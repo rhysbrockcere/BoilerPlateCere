@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Copy" beforePageEvent="/Scripts/Category/copy_Load,/Scripts/Category/clearCopy" pageHeaderTextRef="Txt5hGBvn" pageInfoTextReference="Txt6JMh6g" pageTrailerTextReference="TxtA4yb95" nextPageTextReference="Txt41lPhJ" prevPageTextReference="TxtM06h1">
+    <pageContents>
+        <page ctrl="PagU7SJH_2" outputType="0" pdfFooterText="LocalTxt1lXWuY" pdfHeaderText="LocalTxt1dvo1H" uid="N2eAC1qL">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu1_AdminMenu"/>
+            <panel ctrl="PanhqFre_2" layoutType="FIELD" propertySet="PagePanel" uid="8CkTJCqL">
+                <panel ctrl="PanxEi2i_2" layoutType="FIELD" propertySet="Central Box" uid="EBgEX2Bi" width="50%">
+                    <layoutProperties>
+                        <FIELD editorWidth="60%" labelWidth="30%"/>
+                    </layoutProperties>
+                    <text ctrl="TexdvZYg_2" text="LocalTxt5ejKzy" uid="B4uWaXVq"/>
+                    <field buttonText="LocalTxt8MLMbH" ctrl="FldWn4Io" displayOnly="true" field="Sub_Category_ID" uid="3RjY6PkY"/>
+                    <field buttonText="LocalTxt5iDbj8" ctrl="FldHJt7Q" displayOnly="true" field="cat_Category" uid="BcT0AViG"/>
+                    <field buttonText="LocalTxt8D27qr" ctrl="Fldsn4Ip" displayOnly="true" field="Sub_Category" uid="Earw8EPQ"/>
+                    <spacer ctrl="SpcUCYcl_2" uid="MFtO3AHy"/>
+                    <field buttonText="LocalTxt4j362X" ctrl="Fld98Zlu_2" displayOnly="true" field="copy_CurrentServer" uid="B9XmFWRo"/>
+                    <field buttonText="LocalTxt249y1V" ctrl="FldJzjlX_2" field="copy_TargetServer" immedEvent="/Scripts/Category/copy_GetCategories" immediateValidation="true" modifiers="mandatory, c" uid="E0TkNY5v"/>
+                    <field buttonText="LocalTxt9cGO07" ctrl="Action_Combo" field="copy_Action" hidden="true" immedEvent="/Scripts/Category/copy_NewCategoryChange" immediateValidation="true" modifiers="mandatory, c" uid="ClaOZfHz"/>
+                    <field buttonText="LocalTxt61e1fX" ctrl="copy_TargetCat" field="copy_TargetCategory" hidden="true" uid="L3sJEiQ7"/>
+                    <field buttonText="LocalTxt6VjDFm" ctrl="SubCategoryCombo" field="copy_TargetSubCat" hidden="true" modifiers="mandatory, c" uid="QXQEDjAl"/>
+                    <spacer ctrl="Spcfe3uh_2" uid="sklZYYj"/>
+                    <text ctrl="txtCatWarning" hidden="true" text="LocalTxtAKYZqc" uid="5iJWNZDs"/>
+                    <spacer ctrl="SpcCdUUh_2" uid="HEy45R4i"/>
+                    <button buttonText="LocalTxt7StzEy" ctrl="But11JKs3_3" mouseOverText="LocalTxtRsaVO" onClickEvent="/Scripts/Category/CancelCopy" uid="GtM2CpIa"/>
+                    <button buttonText="LocalTxt7StzEy_2" ctrl="But11JKs3_4" mouseOverText="LocalTxtRsaVO_2" newLine="false" onClickEvent="/Scripts/Category/clearCopy" uid="LZZwiOeI"/>
+                    <button buttonText="LocalTxt48arxI" ctrl="ButfmKNv_2" mouseOverText="LocalTxtJxMzL" newLine="false" onClickEvent="/Scripts/GL_Validate,/Scripts/Category/Sub_Category/CopySubCategory,/Scripts/Category/clearCopy" uid="LWJmXhdG"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource database="CHILDCARE_OFFER" preparedStatement="false" id="CO_Application" dateCreated="2018-04-18T15:41:21.185+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer.dbo.CO_Application</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Affordability" type="VARCHAR" length="50"/>
+            <field id="Application_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Application_date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Area_ID" type="INTEGER" length="10"/>
+            <field id="Carer_Giving_Info" type="VARCHAR" length="50"/>
+            <field id="Child_Address1" type="VARCHAR" length="50"/>
+            <field id="Child_Address2" type="VARCHAR" length="50"/>
+            <field id="Child_Address3" type="VARCHAR" length="50"/>
+            <field id="Child_County" type="VARCHAR" length="50"/>
+            <field id="Child_Currently_Accessing_Welsh_Ind" type="VARCHAR" length="3"/>
+            <field id="Child_DOB" type="VARCHAR" length="10"/>
+            <field id="Child_Ethnicity" type="VARCHAR" length="10"/>
+            <field id="Child_FlyingStart_Ind" type="VARCHAR" length="30"/>
+            <field id="Child_Forename" type="VARCHAR" length="50"/>
+            <field id="Child_Known_As" type="VARCHAR" length="50"/>
+            <field id="Child_Middlename" type="VARCHAR" length="50"/>
+            <field id="Child_Postcode" type="VARCHAR" length="8"/>
+            <field id="Child_Preferred_Welsh_ind" type="VARCHAR" length="3"/>
+            <field id="Child_SEN_Referral_Date" type="VARCHAR" length="10"/>
+            <field id="Child_SEN_Referral_Status" type="VARCHAR" length="20"/>
+            <field id="Child_SEN_Registered_Ind" type="VARCHAR" length="3"/>
+            <field id="Child_Surname" type="VARCHAR" length="50"/>
+            <field id="Child_Town" type="VARCHAR" length="50"/>
+            <field id="Child_UPN" type="VARCHAR" length="20"/>
+            <field id="Child_UPRN" type="BIGINT" length="19"/>
+            <field id="Childcare_Monthly_Spend" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Customer_Address1" type="VARCHAR" length="50"/>
+            <field id="Customer_Address2" type="VARCHAR" length="50"/>
+            <field id="Customer_Address3" type="VARCHAR" length="50"/>
+            <field id="Customer_County" type="VARCHAR" length="50"/>
+            <field id="Customer_Ethnicity" type="VARCHAR" length="10"/>
+            <field id="Customer_Forenames" type="VARCHAR" length="50"/>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="Customer_NI_Number" type="VARCHAR" length="9"/>
+            <field id="Customer_Postcode" type="VARCHAR" length="8"/>
+            <field id="Customer_Surname" type="VARCHAR" length="35"/>
+            <field id="Customer_Title" type="VARCHAR" length="50"/>
+            <field id="Customer_Town" type="VARCHAR" length="50"/>
+            <field id="Customer_UPRN" type="INTEGER" length="10"/>
+            <field id="Date_Last_Updated" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="End_Date" type="TIMESTAMP" length="16"/>
+            <field id="End_Reason" type="VARCHAR" length="20"/>
+            <field id="Enquiry_ID" type="INTEGER" length="10"/>
+            <field id="Last_Updated_By" type="VARCHAR" length="50"/>
+            <field id="Notes" type="VARCHAR" length="2000"/>
+            <field id="Other_Carer_Avg_Hours" type="NUMERIC" length="18" fractionalDigits="1"/>
+            <field id="P1_Emp1_Address" type="VARCHAR" length="500"/>
+            <field id="P1_Emp1_Avg_Hours" type="NUMERIC" length="18" fractionalDigits="1"/>
+            <field id="P1_Emp1_Email" type="VARCHAR" length="100"/>
+            <field id="P1_Emp1_Name" type="VARCHAR" length="100"/>
+            <field id="P1_Emp1_Salary" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="P1_Emp1_Telno" type="VARCHAR" length="50"/>
+            <field id="P1_Emp1_UPRN" type="BIGINT" length="19"/>
+            <field id="P1_Emp2_Address" type="VARCHAR" length="500"/>
+            <field id="P1_Emp2_Avg_Hours" type="NUMERIC" length="18" fractionalDigits="1"/>
+            <field id="P1_Emp2_Email" type="VARCHAR" length="100"/>
+            <field id="P1_Emp2_Name" type="VARCHAR" length="100"/>
+            <field id="P1_Emp2_Salary" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="P1_Emp2_Telno" type="VARCHAR" length="50"/>
+            <field id="P1_Emp2_UPRN" type="BIGINT" length="19"/>
+            <field id="P2_Address1" type="VARCHAR" length="50"/>
+            <field id="P2_Address2" type="VARCHAR" length="50"/>
+            <field id="P2_Address3" type="VARCHAR" length="50"/>
+            <field id="P2_County" type="VARCHAR" length="50"/>
+            <field id="P2_Emp1_Address" type="VARCHAR" length="500"/>
+            <field id="P2_Emp1_Avg_Hours" type="NUMERIC" length="18" fractionalDigits="1"/>
+            <field id="P2_Emp1_Email" type="VARCHAR" length="100"/>
+            <field id="P2_Emp1_Name" type="VARCHAR" length="100"/>
+            <field id="P2_Emp1_Salary" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="P2_Emp1_Telno" type="VARCHAR" length="50"/>
+            <field id="P2_Emp1_UPRN" type="BIGINT" length="19"/>
+            <field id="P2_Emp2_Address" type="VARCHAR" length="500"/>
+            <field id="P2_Emp2_Avg_Hours" type="NUMERIC" length="18" fractionalDigits="1"/>
+            <field id="P2_Emp2_Email" type="VARCHAR" length="100"/>
+            <field id="P2_Emp2_Name" type="VARCHAR" length="100"/>
+            <field id="P2_Emp2_Salary" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="P2_Emp2_Telno" type="VARCHAR" length="50"/>
+            <field id="P2_Emp2_UPRN" type="BIGINT" length="19"/>
+            <field id="P2_Ethnicity" type="VARCHAR" length="5"/>
+            <field id="P2_Forenames" type="VARCHAR" length="50"/>
+            <field id="P2_NI_Number" type="VARCHAR" length="9"/>
+            <field id="P2_Postcode" type="VARCHAR" length="8"/>
+            <field id="P2_Surname" type="VARCHAR" length="35"/>
+            <field id="P2_Title" type="VARCHAR" length="50"/>
+            <field id="P2_Town" type="VARCHAR" length="50"/>
+            <field id="Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Status" type="VARCHAR" length="10"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Forms/CHILDCARE_ADMIN" id="SEARCH_APPLICATIONS" dateCreated="2018-04-20T01:24:10.746+01:00">
+        <scriptText>set WHERE_CLAUSE = 'Area_ID = ' + FOP_ADMIN_AREA ;
+
+//check if Filter is set
+if [ FOP_Status_LIST != '' ]
+	set WHERE_CLAUSE = WHERE_CLAUSE + 'AND Status = \'' + FOP_Status_LIST + '\'';
+endif
+
+if [ FOP_CARER_SEARCH != '' ]
+	set WHERE_CLAUSE = WHERE_CLAUSE + ' AND Customer_ID = ' + tostring( APP_Customer_ID );
+endif
+if [FOP_CHILD_SEARCH != '' ]
+	set WHERE_CLAUSE = WHERE_CLAUSE +' AND Enquiry_ID = ' + tostring( APP_Enquiry_ID );
+endif
+if [ FOP_ENQUIRY_SEARCH != '' ]
+	set WHERE_CLAUSE = WHERE_CLAUSE + 'AND Enquiry_ID = ' + tostring( APP_Enquiry_ID );
+endif
+
+fetchtable App_TBL;
+show tblApplications;
+hide PROVIDER_TBL;</scriptText>
+    </script>
+</ebase>

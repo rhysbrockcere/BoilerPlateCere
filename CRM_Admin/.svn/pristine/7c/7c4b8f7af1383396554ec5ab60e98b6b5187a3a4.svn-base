@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Security_Actions" dateCreated="2016-09-23T10:30:06.723+01:00">
+        <columns>Action_ID, Action</columns>
+        <from>sys_Security_Actions</from>
+        <where>Enabled='1'</where>
+        <fields>
+            <field id="Action_ID" type="INTEGER" input="false"/>
+            <field id="Action" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

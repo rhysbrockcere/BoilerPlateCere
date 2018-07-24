@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource description="Childcare Offer - Claim detail - Attendance" database="CHILDCARE_OFFER" id="CO_Claim_Detail_TBL" dateCreated="2018-06-14T15:36:50.756+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer.dbo.CO_Claim_Detail</from>
+        <fields>
+            <field id="Actual_Days" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Actual_Hours" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Claim_Detail_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Claim_ID" type="INTEGER" length="10"/>
+            <field id="FP_Nursery_Ind" type="INTEGER" length="10"/>
+            <field id="Holiday_Week" length="1"/>
+            <field id="Language_Provided" type="VARCHAR" length="20"/>
+            <field id="Status" type="VARCHAR" length="20"/>
+            <field id="Submitted_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Submitted_by" type="VARCHAR" length="70"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+            <field id="Week_Commencing" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

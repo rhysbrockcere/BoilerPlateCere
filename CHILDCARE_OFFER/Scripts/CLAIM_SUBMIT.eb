@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <script contentType="FPL" preferredComponentPath="/Forms/CHILDCARE_CLAIM" id="CLAIM_SUBMIT" dateCreated="2018-05-01T14:17:36.181+01:00">
+        <scriptText>//validate claims
+set ERROR_IND = 'N';
+
+loop at table Prov_Claim_TBL
+	if [ Prov_Claim_TBL-Submit_Ind = 'Y' ]
+		if [ Prov_Claim_TBL-Holiday_Week = null ]
+			set ERROR_IND = 'Y';
+		//	highlight row ERROR ;
+		endif
+		if [ Prov_Claim_TBL-Actual_Hours = null ]
+			set ERROR_IND = 'Y';
+		//	highlight row Prov_Claim_TBL;
+		endif
+		if [ Prov_Claim_TBL-Actual_Days = null ]
+			set ERROR_IND = 'Y';
+		//	highlight row Prov_Claim_TBL;
+		endif
+		if [ Prov_Claim_TBL-Language_Provided = null ]
+			set ERROR_IND = 'Y';
+		//	highlight row Prov_Claim_TBL;
+		endif
+		if [ Prov_Claim_TBL-FP_Nursery_Ind = null ]
+			set ERROR_IND = 'Y';
+		//	highlight row Prov_Claim_TBL;
+		endif
+	endif
+endloop 
+
+if [ ERROR_IND = 'N' ]
+//Update Validated 
+	loop at table Prov_Claim_TBL
+		if [ Prov_Claim_TBL-Submit_Ind = 'Y' ]
+			set WHERE_CLAUSE = 'Claim_ID = ' + tostring( Prov_Claim_TBL-Claim_ID );
+			fetch CO_Claim;
+			set CLAIM_Submitted_Date = $SYSTEM_DATETIME;
+			set CLAIM_Submitted_by = PARAM_EMAIL;
+			set CLAIM_Status = 'Submitted';
+			set CLAIM_Welsh_Provsion_Ind = Prov_Claim_TBL-Welsh_Provsion_Ind;
+			set CLAIM_Hours_This_Period = Prov_Claim_TBL-Hours_This_Period;
+			set CLAIM_Holiday_Weeks = Prov_Claim_TBL-Holiday_Weeks;
+			set CLAIM_FP_Nursery_Ind = Prov_Claim_TBL-FP_Nursery_Ind;
+			update CO_Claim;
+		endif
+	endloop 
+	GOTO PAGE Dummy_End;
+endif  //ERROR_IND
+message 'Error: Missing data: for all selected lines, please check that all values have been completed';
+
+</scriptText>
+    </script>
+</ebase>

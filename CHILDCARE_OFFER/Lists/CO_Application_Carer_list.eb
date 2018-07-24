@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dynamicList database="CHILDCARE_OFFER" id="CO_Application_Carer_list" dateCreated="2018-04-20T01:03:03.972+01:00">
+        <columns>DISTINCT Customer_Forenames + ' ' + Customer_Surname + '(' +ISNULL(Customer_NI_Number,'') +'):(C-' + CONVERT(varchar(10), Customer_ID) +'):(E-'+ CONVERT(VARCHAR(10),Enquiry_ID) + ')' as Customer_Name, Customer_ID, Enquiry_ID</columns>
+        <from>Childcare_Offer.dbo.CO_Application</from>
+        <additional>WHERE Area_ID=&amp;&amp;FOP_ADMIN_AREA</additional>
+        <fields>
+            <field id="Customer_ID" type="INTEGER" input="false"/>
+            <field id="Enquiry_ID" type="INTEGER" input="false"/>
+            <field id="Customer_Name" input="false"/>
+            <field id="FOP_ADMIN_AREA" type="INTEGER" input="false" persistent="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

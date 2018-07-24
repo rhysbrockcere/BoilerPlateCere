@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Attendance" nextPage="Dummy_End" pageHeaderTextRef="TxtoWJD7" pageInfoTextReference="Txt2WSI54" pageTrailerTextReference="Txt59dKWA" nextPageTextReference="Txt793HvL" prevPageTextReference="TxtAKkz1a">
+    <pageContents>
+        <page ctrl="PagHfrG8" outputType="0" pdfFooterText="LocalTxt68grRM" pdfHeaderText="LocalTxtA0wm4v" uid="MMZv9CZm">
+            <groupPanel ctrl="GrpProvAttendance" groupHeaderText="LocalTxt3zXEf0" groupInfoText="LocalTxt5eTtQ1" groupTrailerText="LocalTxt8vqXRq" hidden="true" layoutType="FLOW" uid="4L2ppO9X">
+                <field buttonText="LocalTxt7Q2ApQ" ctrl="fldPeriodList" field="FOP_PERIOD_LIST" immedEvent="/Scripts/Prov_Claim_Show_Wk_List" immediateValidation="true" uid="3kqFtyUy"/>
+                <field buttonText="LocalTxtKasuA" ctrl="Fld_wk_comm_list" field="FOP_Week_Commencing" hidden="true" immedEvent="/Scripts/Prov_Claim_Fetch_Claim_Detail" immediateValidation="true" uid="QoprPjPU"/>
+                <fieldTable ctrl="Tbl_ClaimDetail" field="Prov_Claim_TBL" hidden="true" numVisibleRows="30" tableHeaderText="LocalTxt5pkKuR" tableInfoText="LocalTxtAogLOw" tableTrailerText="LocalTxt2sMX2e" uid="1ZRbYgy1">
+                    <tablePage ctrl="TpgiNutP" default="L" uid="OQOPOeo9">
+                        <fieldColumn buttonText="LocalTxt8xZKw" ctrl="Colggm9t" displayOnly="true" field="Prov_Claim_TBL-Child" uid="DJEynh7o" width="3%"/>
+                        <fieldColumn buttonText="LocalTxt3AZBVB" ctrl="Col12LPib" displayOnly="true" field="Prov_Claim_TBL-Booked_Hours" uid="F8uoWlaj" width="3%"/>
+                        <fieldColumn buttonText="LocalTxt49w4Yi" ctrl="Col4ogx" field="Prov_Claim_TBL-Holiday_Week" uid="4zakdSj2" width="11%"/>
+                        <fieldColumn buttonText="LocalTxtmqgwA" ctrl="Col7dmSu" field="Prov_Claim_TBL-Actual_Hours" uid="AwK7Xmwk" width="3%"/>
+                        <fieldColumn buttonText="LocalTxt3lqpuZ" ctrl="ColSvMtM" field="Prov_Claim_TBL-Actual_Days" uid="6ZlZTxMQ" width="3%"/>
+                        <fieldColumn buttonText="LocalTxt7SdZpu" ctrl="ColhFMSn" field="Prov_Claim_TBL-Language_Provided" uid="6bMhbFVH" width="3%"/>
+                        <fieldColumn buttonText="LocalTxtudZXD" ctrl="ColzcrHV" field="Prov_Claim_TBL-Act_FP_Nursery_Ind" uid="D00f6FJ5" width="3%"/>
+                        <fieldColumn buttonText="LocalTxt35fVVU" ctrl="ColUMil0" field="Prov_Claim_TBL-Submit_Ind" uid="Ln2UGa3v" width="12%"/>
+                    </tablePage>
+                </fieldTable>
+                <text ctrl="TexyJPqd" text="LocalTxt4KchY" uid="DtOHyfpQ"/>
+                <button buttonText="LocalTxt3WIi4a" ctrl="But3tV9D" mouseOverText="LocalTxt8h5vyH" onClickEvent="/Scripts/CLAIM_SUBMIT" uid="qKJE6pe"/>
+            </groupPanel>
+        </page>
+    </pageContents>
+</page>

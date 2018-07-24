@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="Javascript" preferredComponentPath="/Forms/USERS" id="goto_Import_User" dateCreated="2018-01-23T09:54:16.479Z">
+        <scriptText>importPackage(com.ebasetech.xi.api);
+importPackage(com.ebasetech.xi.services);
+
+fields.usr_Email.value = '';
+fields.usr_Username.value = '';
+form.gotoPage(pages.New_User);
+
+
+</scriptText>
+    </script>
+</ebase>

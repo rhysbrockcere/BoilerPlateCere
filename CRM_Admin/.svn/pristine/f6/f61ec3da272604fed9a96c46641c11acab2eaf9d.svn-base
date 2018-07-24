@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="CeriExtract">
+        <column name="Name" type="CHAR" labelTextRef="Txt1jSO2D" maxLength="161" displayType="TEXT" displayLength="60"/>
+        <column name="party_nm_pos" type="CHAR" labelTextRef="Txt50oyom" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Team_ID" type="CHAR" labelTextRef="Txt19qmJa" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Team_Name" type="CHAR" labelTextRef="Txt9m8pLl" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="Username" type="CHAR" labelTextRef="TxtEoqjm" maxLength="4000" displayType="TEXT" displayLength="60"/>
+    </table>
+    <table name="Security_Settings">
+        <column name="Category_ID" type="INTEGER" labelTextRef="Txt4USHsW" displayType="SELECT" displayLength="17" dynamicList="/Lists/CategoriesList">
+            <listMappings display="Name" return="category_id"/>
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="ID" type="INTEGER" labelTextRef="Txt9VDIX3" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Role_ID" type="INTEGER" labelTextRef="Txt6Pr5nl" displayType="SELECT" displayLength="17" dynamicList="/Lists/SecurityRoles">
+            <listMappings display="Name" return="Role_ID"/>
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+    <table name="Team_Members">
+        <column name="contract_name" type="CHAR" labelTextRef="Txt1Ouyna" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="fullname" type="CHAR" labelTextRef="Txt4P2THr" maxLength="161" displayType="TEXT" displayLength="60"/>
+        <column name="position_id" type="CHAR" labelTextRef="Txt9QqXG6" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="position_nm" type="CHAR" labelTextRef="Txt1Z1VKW" maxLength="80" displayType="TEXT" displayLength="60"/>
+    </table>
+    <table name="Teams">
+        <column name="Level" type="INTEGER" labelTextRef="Txt65gc6S" displayType="TEXT">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Members" type="INTEGER" labelTextRef="Txt449cRW" displayType="TEXT">
+            <validators>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Team_ID" type="CHAR" labelTextRef="Txt1GxkK7" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Team_Name" type="CHAR" labelTextRef="Txt7iyM7C" maxLength="80" displayType="TEXT" displayLength="60"/>
+        <column name="Team_Path" type="CHAR" labelTextRef="Txt2Wnxgi" maxLength="800" displayType="TEXT" displayLength="60"/>
+    </table>
+</tables>

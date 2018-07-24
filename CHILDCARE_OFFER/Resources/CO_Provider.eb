@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource description="ChildcareOffer - Provider" database="CHILDCARE_OFFER" preparedStatement="false" id="CO_Provider" dateCreated="2018-04-16T23:41:10.267+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer.dbo.CO_Provider</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address1" type="VARCHAR" length="255"/>
+            <field id="Address2" type="VARCHAR" length="200"/>
+            <field id="Address3" type="VARCHAR" length="200"/>
+            <field id="Approved_By" type="VARCHAR" length="50"/>
+            <field id="Approved_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="CIW_Date" type="VARCHAR" length="10"/>
+            <field id="CIW_Last_Inspection" type="VARCHAR" length="10"/>
+            <field id="CIW_Name" type="VARCHAR" length="50"/>
+            <field id="CIW_No" type="VARCHAR" length="50"/>
+            <field id="Capacity" type="INTEGER" length="10"/>
+            <field id="Contact_Address1" type="VARCHAR" length="255"/>
+            <field id="Contact_Address2" type="VARCHAR" length="200"/>
+            <field id="Contact_Address3" type="VARCHAR" length="200"/>
+            <field id="Contact_County" type="VARCHAR" length="200"/>
+            <field id="Contact_Postcode" type="VARCHAR" length="10"/>
+            <field id="Contact_Town" type="VARCHAR" length="200"/>
+            <field id="Contact_UPRN" type="BIGINT" length="19"/>
+            <field id="County" type="VARCHAR" length="200"/>
+            <field id="Creditor_Reference" type="VARCHAR" length="8"/>
+            <field id="Customer_ID" type="INTEGER" length="10"/>
+            <field id="Date_Last_Updated" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Email" type="VARCHAR" length="200"/>
+            <field id="Holiday_Ind" type="VARCHAR" length="3"/>
+            <field id="Language" type="VARCHAR" length="5"/>
+            <field id="Last_Updated_By" type="VARCHAR" length="50"/>
+            <field id="Manager" type="VARCHAR" length="100"/>
+            <field id="Manager_Phone" type="VARCHAR" length="50"/>
+            <field id="Mobile" type="VARCHAR" length="50"/>
+            <field id="Phone" type="VARCHAR" length="50"/>
+            <field id="Postcode" type="VARCHAR" length="10"/>
+            <field id="Prov_Approved_Ind" type="VARCHAR" length="20"/>
+            <field id="Provider" type="VARCHAR" length="50"/>
+            <field id="Provider_ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Session_Days_Fri" type="TINYINT" length="3"/>
+            <field id="Session_Days_Mon" type="TINYINT" length="3"/>
+            <field id="Session_Days_Sat" type="TINYINT" length="3"/>
+            <field id="Session_Days_Sun" type="TINYINT" length="3"/>
+            <field id="Session_Days_Thu" type="TINYINT" length="3"/>
+            <field id="Session_Days_Tue" type="TINYINT" length="3"/>
+            <field id="Session_Days_Wed" type="TINYINT" length="3"/>
+            <field id="Session_Flexibility" type="VARCHAR" length="500"/>
+            <field id="Session_Time" type="VARCHAR" length="500"/>
+            <field id="Town" type="VARCHAR" length="200"/>
+            <field id="Type" type="VARCHAR" length="50"/>
+            <field id="UPRN" type="BIGINT" length="19"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Sub_Categories">
+        <column name="Add_Information" type="CHAR" labelTextRef="Txt4X8AjN" maxLength="1073741823" displayType="TEXT" displayLength="60"/>
+        <column name="Add_Information_CY" type="CHAR" labelTextRef="Txt6WabGY" maxLength="1073741823" displayType="TEXT" displayLength="60"/>
+        <column name="Default_Details" type="CHAR" labelTextRef="Txt868yd0" maxLength="1073741823" displayType="TEXT" displayLength="60"/>
+        <column name="Default_Details_CY" type="CHAR" labelTextRef="Txt1nDrmK" maxLength="1073741823" displayType="TEXT" displayLength="60"/>
+        <column name="Default_Priority" type="INTEGER" labelTextRef="Txt13kR9M" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Default_Subject" type="CHAR" labelTextRef="Txt6W7spY" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Default_Subject_CY" type="CHAR" labelTextRef="Txt1stAif" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Default_Type" type="INTEGER" labelTextRef="Txt9x6LsO" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Description" type="CHAR" labelTextRef="Txt46qqcv" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Description_CY" type="CHAR" labelTextRef="Txt37Wccr" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Enabled" type="BOOLEAN" labelTextRef="Txt5CItJK" displayType="CHECKBOX"/>
+        <column name="Keywords" type="CHAR" labelTextRef="Txt9Vji01" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Page_URL" type="CHAR" labelTextRef="Txt5vMJO0" maxLength="255" displayType="TEXT" displayLength="60"/>
+        <column name="Page_URL_CY" type="CHAR" labelTextRef="Txt6zQcjM" maxLength="255" displayType="TEXT" displayLength="60"/>
+        <column name="Resp_Team_ID" type="CHAR" labelTextRef="Txt5pAsl1" maxLength="50" displayType="SELECT" displayLength="50" dynamicList="/Lists/Teams">
+            <listMappings display="Team_Name" return="Team_ID"/>
+        </column>
+        <column name="Sub_Category" type="CHAR" labelTextRef="Txt4247Bx" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="Sub_Category_CY" type="CHAR" labelTextRef="TxtAmDNdW" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="Sub_Category_ID" type="INTEGER" labelTextRef="Txt2sCCvo" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+</tables>

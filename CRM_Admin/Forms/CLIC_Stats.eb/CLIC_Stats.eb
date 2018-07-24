@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm formHeaderTextRef="Txt11gGQy" htmlTitleTextRef="Txt2Nkboj" finishButtonTextRef="Txt7VIZ0D" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/Menu" id="CLIC_Stats" dateCreated="2017-11-07T15:36:54.397Z">
+        <saveRestore enabled="false" saveButtonTextRef="Txt9d7Jrc" restoreButtonTextRef="TxtA26y77" saveInfoTextRef="Txt8ylNwd" restoreInfoTextRef="Txt3aGBxj"/>
+        <finalPage headerTextRef="Txt6CqdaZ" infoTextRef="Txt5EBC1j" returnTextRef="Txt9nde0z" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

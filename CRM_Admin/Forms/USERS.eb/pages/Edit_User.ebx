@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Edit_User" beforePageEvent="/Scripts/Users/Edit_Load" pageHeaderTextRef="Txt2ZSR0M_2" pageInfoTextReference="TxtQaWMJ_2" pageTrailerTextReference="Txt5sTATK_2" nextPageTextReference="Txt3ZAcCv_2" prevPageTextReference="Txt75QQ9D_2">
+    <pageContents>
+        <page ctrl="Pag130Uxg_2" outputType="0" pdfFooterText="LocalTxtAGRLRJ_2" pdfHeaderText="LocalTxtAHML0P_2" uid="5ECZenVL">
+            <componentPlaceHolder name="AdminMenu" prefix="MNU3_AdminMenu"/>
+            <panel ctrl="PanPUSfx_2" propertySet="PagePanel" uid="Mv6WN25">
+                <panel ctrl="pnlSearch_3" layoutType="FIELD" propertySet="Central Box" uid="HG0GevcP" width="75%">
+                    <text ctrl="TexYaK3R_3" text="LocalTxt26nD03_3" uid="K5oFwzN9"/>
+                    <field buttonText="LocalTxt9O8C41" ctrl="Fld140bfV" displayOnly="true" field="usr_ID" uid="RcLZFhPN"/>
+                    <field buttonText="LocalTxt87HZ2V_2" ctrl="FldKePRt_2" field="usr_Username" modifiers="mandatory" uid="116L5FYx"/>
+                    <field buttonText="LocalTxt7Qmj2z_2" ctrl="FldE4s6F_2" field="usr_Email" modifiers="email, mandatory" propertySet="Email" uid="NZVQ6aS8"/>
+                    <field buttonText="LocalTxt4cutzc" ctrl="FldVWozC" field="usr_Position_ID" modifiers="mandatory" uid="1oUd6vPQ"/>
+                    <field buttonText="LocalTxt8o6Pld" ctrl="Fld14QsxO" field="usr_Reference_No" modifiers="mandatory" uid="KBnmllFo"/>
+                    <field buttonText="LocalTxtvveDg_2" ctrl="FldjCGYC_2" displayOnly="true" field="CeriOcc-position_nm" uid="GfoAHnzh"/>
+                    <field buttonText="LocalTxt8pa0MF_2" ctrl="FldXbnTp_2" displayOnly="true" field="CeriOcc-manager_lookup" uid="8hUIAA43"/>
+                    <field buttonText="LocalTxt59PDIH_2" ctrl="FldnuDzP_2" displayOnly="true" field="CeriOcc-team_lookup" uid="Fnd2i9ic"/>
+                    <panel ctrl="PanH8Zyc" displayOnly="true" layoutType="HORIZONTAL_BOX" topMargin="10px" uid="GUy9vrZC">
+                        <layoutProperties>
+                            <HORIZONTAL_BOX hAlign="Fill" spacerSize="1em"/>
+                        </layoutProperties>
+                        <field buttonText="LocalTxt6FiNt6" ctrl="FldRvsy5" field="usr_Date_Created" uid="G4Ql82I1"/>
+                        <field buttonText="LocalTxt1xYCgr" ctrl="Fld13w6Ti" field="usr_Created_By" uid="4RBWsGKq"/>
+                        <field buttonText="LocalTxt3CyYlr" ctrl="FldsF2oi" field="usr_Date_Modified" uid="GJ0bOT8"/>
+                        <field buttonText="LocalTxt7Za1Xa" ctrl="Fld10QoFQ" field="usr_Modified_By" uid="DfJ3PdgW"/>
+                    </panel>
+                    <panel ctrl="PantHvyI_2" propertySet="Button_Panel" uid="9Ih1uVBw">
+                        <button buttonText="LocalTxt4F2y6M_2" ctrl="ButfMkfH_2" mouseOverText="LocalTxt56Xv8t_2" onClickEvent="/Scripts/Users/Cancel_User" uid="DKuYzOku"/>
+                        <button buttonText="LocalTxt67reXI_2" ctrl="But8whWM_2" mouseOverText="LocalTxt2NpBTu_2" newLine="false" onClickEvent="/Scripts/GL_Validate,/Scripts/Users/Update_User" uid="IwnFRSK6"/>
+                    </panel>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

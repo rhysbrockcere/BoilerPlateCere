@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="Category_Statuses" dateCreated="2018-04-13T15:55:57.638+01:00">
+        <columns>*</columns>
+        <from>crm_Category_Statuses</from>
+        <where>Sub_Category_ID=&amp;&amp;Sub_Category_ID</where>
+        <fields>
+            <field id="Status_ID" type="INTEGER" length="10"/>
+            <field id="Sub_Category_ID" type="INTEGER" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

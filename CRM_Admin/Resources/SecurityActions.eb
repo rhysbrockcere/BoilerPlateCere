@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource description="List of all available actions" database="CRM" table="true" id="SecurityActions" dateCreated="2016-09-27T13:12:26.309+01:00">
+        <columns>*</columns>
+        <from>sys_Security_Actions</from>
+        <where>enabled = '1'</where>
+        <fields>
+            <field id="Action" type="VARCHAR" length="50"/>
+            <field id="Action_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Enabled" type="BIT" length="1"/>
+        </fields>
+    </dbResource>
+</ebase>

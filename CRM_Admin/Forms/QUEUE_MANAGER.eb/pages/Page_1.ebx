@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Queue_Manager/Queue_Load" pageHeaderTextRef="Txt1vrnhr" pageInfoTextReference="Txt8XfRXo" pageTrailerTextReference="Txt44dfXZ" nextPageTextReference="Txt6l5G9x" prevPageTextReference="Txt3QzVbb">
+    <pageContents>
+        <page ctrl="Pag15VojY" outputType="0" pdfFooterText="LocalTxt5ULZl6" pdfHeaderText="LocalTxtAel844" uid="LJquG6MU">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu_AdminMenu"/>
+            <panel ctrl="PanwhFHK" propertySet="PagePanel" uid="1xwpbr4I">
+                <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="NNFEtW1K"/>
+                <panel ctrl="Panel_Queue" propertySet="floatLeft" uid="D4z0tlEc" width="70%">
+                    <rootHtmlElementProperties classLocator="panelLeft"/>
+                    <repeater ctrl="RepRmLjp" field="Queue" numVisibleRows="15" uid="DOQYxq8I">
+                        <repeaterRow ctrl="ReprrsQ2v" propertySet="Repeater Row" uid="RDfMER0A">
+                            <gridControl columnWidths="31.35%,31.35%,32.3%,5%" columns="4" ctrl="GrdhgryF" rows="1" uid="2pr8Egie">
+<gridCell column="1" columnspan="1" ctrl="GrcJWo0j" row="1" rowspan="1" uid="4bIuJkAp">
+    <field buttonText="LocalTxt2zu0b3" ctrl="Fld12AUK" displayOnly="true" field="Queue-Name" hyperlink="true" immedEvent="/Scripts/Queue_Manager/DDI_Load" immediateValidation="true" uid="4FxOhW2W"/>
+</gridCell>
+<gridCell column="2" columnspan="1" ctrl="GrcxtqMg" row="1" rowspan="1" uid="CUqmnFWi">
+    <field buttonText="LocalTxt3fIMLm" ctrl="Fld12zzuB" field="Queue-StatusID" uid="FmNQ83qT"/>
+</gridCell>
+<gridCell column="3" columnspan="1" ctrl="GrcptRSp" row="1" rowspan="1" uid="24so0qf7">
+    <field buttonText="LocalTxt6soqJa" ctrl="Fld3nrAk" field="Queue-Details" uid="J9kpm1As"/>
+</gridCell>
+<gridCell column="4" columnspan="1" ctrl="Grcac2L7" row="1" rowspan="1" uid="7f0PFurH">
+    <field buttonText="LocalTxt98WMtd" ctrl="FldDCi4O" field="Queue-Details_CY" uid="QheiVo9D"/>
+</gridCell>
+                            </gridControl>
+                            <horizontalLine ctrl="HlnpsfrD" uid="I3dVpVtf"/>
+                        </repeaterRow>
+                    </repeater>
+                    <groupPanel ctrl="grp_set_all" groupHeaderText="LocalTxt8y7yg8" groupInfoText="LocalTxt5oOhdp" groupTrailerText="LocalTxt6c6par" uid="7Isqxj7U">
+                        <gridControl columnWidths="31.35%,31.35%,5%,32.3%" columns="4" ctrl="GrdHPLO3" rows="1" uid="QRXwjqsv">
+                            <gridCell column="1" columnspan="1" ctrl="GrcSQLLh" row="1" rowspan="1" uid="GJTMnOp9">
+<field buttonText="LocalTxtA5wjnN" ctrl="Fld9ASWP" field="SET_ALL_STATUS" uid="pVyeHlL"/>
+                            </gridCell>
+                            <gridCell column="2" columnspan="1" ctrl="GrcmnqXx" row="1" rowspan="1" uid="946polEF">
+<field buttonText="LocalTxtAIA5xf" ctrl="Fld15QOI0" field="SET_ALL_MESSAGE_EN" uid="HWBhS5nP"/>
+                            </gridCell>
+                            <gridCell column="3" columnspan="1" ctrl="Grct8Gvb" row="1" rowspan="1" uid="QR2ZQV8Y">
+<field buttonText="LocalTxt5PiKdW" ctrl="Fldd692A" field="SET_ALL_MESSAGE_CY" uid="66hrqCeN"/>
+                            </gridCell>
+                            <gridCell column="4" columnspan="1" ctrl="GrcDPHdc" row="1" rowspan="1" uid="Dm9NHUT2">
+<button buttonText="LocalTxt7XZ2A9" ctrl="But8FmCK" mouseOverText="LocalTxt2t41sk" onClickEvent="/Scripts/Queue_Manager/Queue_Update" uid="9AQPAAJt"/>
+                            </gridCell>
+                        </gridControl>
+                        <message ctrl="Msg_Queue" uid="O7q8Fuek"/>
+                    </groupPanel>
+                </panel>
+                <panel ctrl="Panel_DDI" hidden="true" uid="1VMZebwg">
+                    <field buttonText="LocalTxt417MK0" ctrl="FldFd8nF" displayOnly="true" field="Queue-Name" uid="ZKBkQEz"/>
+                    <fieldTable ctrl="Tbly5NTB" deletable="true" field="DDI" insertable="true" numVisibleRows="50" tableHeaderText="LocalTxt7Juhfp" tableInfoText="LocalTxt75BXf3" tableTrailerText="LocalTxt8rFY2V" uid="O3k4GrTn" width="50%">
+                        <tablePage ctrl="TpgkHvD7" default="L" uid="HSO07Sav">
+                            <fieldColumn buttonText="LocalTxt7w9h5O" ctrl="Colx6EjC" field="DDI-DDI" sortable="true" uid="4OOgOxDT" width="26%"/>
+                            <fieldColumn buttonText="LocalTxt5aQUoi" ctrl="ColGAA6C" field="DDI-DDI_Service" sortable="true" uid="OIfzndbm" width="25%"/>
+                            <fieldColumn buttonText="LocalTxtfN82C" ctrl="Col1dFuL" field="DDI-DDI_StatusID" propertySet="Chosen-Dropdown" sortable="true" uid="LVIES0nR"/>
+                            <fieldColumn buttonText="LocalTxt7ljZQc" ctrl="Col15SiLQ" field="DDI-DDI_Auto_Reopen" propertySet="Chosen-Dropdown" uid="F4nQJsHo"/>
+                        </tablePage>
+                    </fieldTable>
+                    <button buttonText="LocalTxt60pDq7" ctrl="ButTUoRB" mouseOverText="LocalTxt5FPFoL" onClickEvent="/Scripts/Queue_Manager/DDI_Update" uid="R143rAHq"/>
+                    <button buttonText="LocalTxt38AB2u" ctrl="ButfTjGL" mouseOverText="LocalTxt3TFvEX" onClickEvent="/Scripts/Queue_Manager/DDI_Cancel" uid="O82uiN5S"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

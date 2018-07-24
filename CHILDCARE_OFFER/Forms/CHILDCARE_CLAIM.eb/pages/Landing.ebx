@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Landing" pageHeaderTextRef="Txt35JZnT" pageInfoTextReference="Txt1W0hRj" pageTrailerTextReference="Txt98gN5L" nextPageTextReference="Txt63HCYV" prevPageTextReference="Txt62zmvf">
+    <pageContents>
+        <page ctrl="PagRCH1J" outputType="0" pdfFooterText="LocalTxt5f9DLE" pdfHeaderText="LocalTxt8jMRec" uid="OLAl9w60">
+            <groupPanel ctrl="GpanPZBuF" groupHeaderText="LocalTxt8kZQq4" groupInfoText="LocalTxt1ZqiNu" groupTrailerText="LocalTxt3Vl1iG" uid="1GYZHJxd">
+                <field buttonText="LocalTxt2w9w4Z" ctrl="FldSLmyy" field="PARAM_EMAIL" mandatory="true" uid="OSzHPiow"/>
+                <field buttonText="LocalTxt4Bipfd" ctrl="FldzZkYC" field="PARAM_CREDITOR_REF" mandatory="true" uid="3P13XaeO"/>
+                <field buttonText="LocalTxtAqEIeQ" ctrl="FldPjd4N" field="PARAM_PIN" hidden="true" mandatory="true" uid="9u9Gn3vR"/>
+                <button buttonText="LocalTxt81bS1U" ctrl="But110dS8" mouseOverText="LocalTxt5Uwyps" onClickEvent="/Scripts/CLAIM_LOGIN,/Scripts/GOTO_PAGE_HOME" uid="3tkpRIcQ"/>
+            </groupPanel>
+        </page>
+    </pageContents>
+</page>

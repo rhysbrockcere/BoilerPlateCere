@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Stats/Stats_Load" pageHeaderTextRef="Txt95sor6" pageInfoTextReference="Txt7AyQB6" pageTrailerTextReference="Txt610EYV" nextPageTextReference="Txt3MxMEv" prevPageTextReference="Txt9mzrP6">
+    <pageContents>
+        <page ctrl="PaguDurP" layoutType="FIELD" outputType="0" pdfFooterText="LocalTxt34sSzW" pdfHeaderText="LocalTxt5yxLpW" uid="68LIlcS">
+            <componentPlaceHolder name="AdminMenu" prefix="mnuAdminMenu"/>
+            <panel ctrl="Pan6mht7" layoutType="FIELD" propertySet="PagePanel" uid="BEdZ2nVy">
+                <text ctrl="TexyDk3C" text="LocalTxtTwm5w" uid="3YE3X3Kw"/>
+                <panel ctrl="Pan8p2zj" displayOnly="true" uid="85zfh0Yb">
+                    <text ctrl="TexBhHoj" text="LocalTxt8k86Yp" uid="O1u5BmFg"/>
+                    <field buttonText="LocalTxt8iOEGw" ctrl="Fldtl8FT" field="Count_Enquiry" uid="2QnFF1uo"/>
+                    <field buttonText="LocalTxt4UT17N" ctrl="FldaIqgY" field="Count_Enq_New" uid="BwAsu7bF"/>
+                    <field buttonText="LocalTxtAGs5B3" ctrl="FldXnR04" field="Count_Enq_Active" uid="DYXP3JbH"/>
+                    <text ctrl="TexFzoBi" text="LocalTxt5dUdCo" uid="GZiAXG29"/>
+                    <field buttonText="LocalTxtAfZIzF" ctrl="FldywZs3" field="Count_Customers" uid="HhXVJhkh"/>
+                    <field buttonText="LocalTxt8h9p4t" ctrl="FldUqUJr" field="Count_Customers_R" uid="3MKjIxWn"/>
+                    <field buttonText="LocalTxtAYJpPO" ctrl="Fld11l7Pt" field="Count_Customers_C" uid="PM5ALz5h"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

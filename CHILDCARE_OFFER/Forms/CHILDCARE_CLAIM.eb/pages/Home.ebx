@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Home" nextPage="Attendance" beforePageEvent="/Scripts/Prov_Claim_FetchClaims" pageHeaderTextRef="Txt5q3O3S" pageInfoTextReference="Txt6MNPyW" pageTrailerTextReference="TxtwgxJc" nextPageTextReference="Txt8PqcAu" prevPageTextReference="Txt5vsWz9">
+    <pageContents>
+        <page ctrl="PagkZsuF" outputType="0" pdfFooterText="LocalTxt1gXeG5" pdfHeaderText="LocalTxt2OTzQI" uid="GghtPpaF">
+            <groupPanel ctrl="GpanziuAA" displayOnly="true" groupHeaderText="LocalTxt3L3xYB" groupInfoText="LocalTxt8xzEhA" groupTrailerText="LocalTxtUbFkI" layoutType="HORIZONTAL_BOX" uid="QPROx7PD">
+                <field buttonText="LocalTxt7wXI5K" ctrl="FldzvRzL" field="Current_Period_Start_Date" uid="3HaGUW6b"/>
+                <html ctrl="Htmg3AXC" default="L" htmlText="LocalTxt9W8rJM" uid="OfpdY8Hg"/>
+                <field buttonText="LocalTxt1rWtpB" ctrl="FldYmMi1" field="Current_Period_End_Date" uid="HJmeKA8K"/>
+            </groupPanel>
+            <groupPanel ctrl="grpConfirmProvision" groupHeaderText="LocalTxt64S5s1" groupInfoText="LocalTxt5cugOb" groupTrailerText="LocalTxtP9gZG" uid="MwLmznjx">
+                <fieldTable cssClass="@0" ctrl="TblUteUY" field="Claim_TBL" numVisibleRows="20" tableHeaderText="LocalTxt2Iy3Ui" tableInfoText="LocalTxt9orLfk" tableTrailerText="LocalTxtATWVCX" uid="CX94A5pe" width="75%">
+                    <tablePage ctrl="TpgGkKxb" default="L" uid="IEKhvNji">
+                        <fieldColumn buttonText="LocalTxt8h4FyB" ctrl="ColjBClM" displayOnly="true" field="Claim_TBL-Application_ID" uid="MqYQipOs" width="12%"/>
+                        <fieldColumn buttonText="LocalTxt6usk6" ctrl="ColjLjqO" displayOnly="true" field="Claim_TBL-Booked_Hours" uid="AYGhjsmo" width="12%"/>
+                        <fieldColumn buttonText="LocalTxt8Zheao" ctrl="ColD2Aln" displayOnly="true" field="Claim_TBL-Days_Per_Week" uid="FCCGEjRJ" width="13%"/>
+                        <fieldColumn buttonText="LocalTxtAVYcMB" ctrl="ColNdkrg" displayOnly="true" field="Claim_TBL-Provision_Start_Date" uid="CKonbZ64" width="11%"/>
+                        <fieldColumn buttonText="LocalTxt3VYnjQ" ctrl="ColWooAI" field="Claim_TBL-Provision_End_Date" uid="Fk4c4Xwl" width="28%"/>
+                        <fieldColumn buttonText="LocalTxt7DeCcM" ctrl="ColCnOYa" field="Claim_TBL-Status" uid="4Me9OTUf" width="24%"/>
+                    </tablePage>
+                </fieldTable>
+                <button buttonText="LocalTxt8UjZXk" ctrl="BtnConfProvision" mouseOverText="LocalTxt6knTz" onClickEvent="/Scripts/Provider_Confirm_Claim" uid="3fyHuNIn"/>
+                <button buttonText="LocalTxt5K3zdz" ctrl="BtnRecordAttendance" hidden="true" mouseOverText="LocalTxtsjVar" onClickEvent="/Scripts/Prov_Claim_ShowAttendance" uid="3e7Dimug"/>
+            </groupPanel>
+        </page>
+    </pageContents>
+</page>

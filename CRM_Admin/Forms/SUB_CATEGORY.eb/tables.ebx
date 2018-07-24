@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Forms">
+        <column name="Active" type="BOOLEAN" labelTextRef="Txt4qbZrL" displayType="CHECKBOX"/>
+        <column name="Delete" type="CHAR" defaultValue="Delete" labelTextRef="TxtlAJbN" displayType="TEXT"/>
+        <column name="Ebase_Form_ID" type="CHAR" labelTextRef="Txt87YMgH" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Form_URL" type="CHAR" labelTextRef="Txt9jNrQv" maxLength="255" displayType="TEXT" displayLength="60"/>
+        <column name="ID" type="INTEGER" labelTextRef="Txt1MXeAF" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Name" type="CHAR" labelTextRef="Txt5XqYTX" maxLength="255" displayType="TEXT" displayLength="60"/>
+        <column name="Type" type="CHAR" labelTextRef="Txt9izNJj" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="View" type="CHAR" defaultValue="View Form" labelTextRef="Txt5aoACM" displayType="TEXT"/>
+    </table>
+</tables>

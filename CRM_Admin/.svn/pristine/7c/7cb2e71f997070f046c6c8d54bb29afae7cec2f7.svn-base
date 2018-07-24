@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Add_Information" type="CHAR" labelTextRef="Txt1fUGZp" maxLength="5000" displayType="TEXTAREA" displayLength="80" rows="10" html="true"/>
+    <field name="Add_Information_CY" type="CHAR" labelTextRef="Txt3f7Fu7" maxLength="5000" displayType="TEXTAREA" displayLength="80" rows="10"/>
+    <field name="Category" type="CHAR" labelTextRef="Txt97mdaF" maxLength="200" displayType="TEXT" displayLength="40"/>
+    <field name="Category_CY" type="CHAR" labelTextRef="Txt2gYXNc" maxLength="200" displayType="TEXT" displayLength="40"/>
+    <field name="Category_ID" type="INTEGER" parameter="true" labelTextRef="Txt8fonDH" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Created_By" type="CHAR" labelTextRef="Txt4rJV2P" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="Date_Created" type="DATETIME" labelTextRef="TxtXfw1q" displayType="TEXT"/>
+    <field name="Date_Modified" type="DATETIME" labelTextRef="Txt919Sv" displayType="TEXT"/>
+    <field name="Default_Details" type="CHAR" labelTextRef="Txt4dtTM5" maxLength="5000" displayType="TEXTAREA" displayLength="80" rows="10"/>
+    <field name="Default_Details_CY" type="CHAR" labelTextRef="Txt2VD5k9" maxLength="5000" displayType="TEXTAREA" displayLength="80" rows="10"/>
+    <field name="Default_Subject" type="CHAR" labelTextRef="Txt8z5jCI" maxLength="100" displayType="TEXT" displayLength="80"/>
+    <field name="Default_Subject_CY" type="CHAR" labelTextRef="Txt8iH2MM" maxLength="100" displayType="TEXT" displayLength="80"/>
+    <field name="Description" type="CHAR" labelTextRef="Txt77FCja" maxLength="500" displayType="TEXTAREA" displayLength="80" rows="5"/>
+    <field name="Description_CY" type="CHAR" labelTextRef="Txt7FZj1" maxLength="500" displayType="TEXTAREA" displayLength="80" rows="5"/>
+    <field name="ENG" type="CHAR" defaultValue="&lt;h2&gt;English&lt;/h2&gt;" labelTextRef="Txt3Hf0hX" displayType="TEXT" html="true"/>
+    <field name="Ebase_Form_ID" type="CHAR" labelTextRef="TxttxRg6" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="Enabled" type="BOOLEAN" labelTextRef="TxtO9BaY" displayType="CHECKBOX"/>
+    <field name="FileRef_ListID" type="INTEGER" labelTextRef="Txt3vf7IA" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Keywords" type="CHAR" labelTextRef="TxtwOpze" maxLength="500" displayType="TEXT" displayLength="80"/>
+    <field name="Modified_By" type="CHAR" labelTextRef="Txt5fgCpH" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="Page_URL" type="CHAR" labelTextRef="Txt9Kodz3" maxLength="255" displayType="TEXT" displayLength="80"/>
+    <field name="Page_URL_CY" type="CHAR" labelTextRef="Txt54GTDe" maxLength="255" displayType="TEXT" displayLength="80"/>
+    <field name="Resp_Team_ID" type="CHAR" labelTextRef="TxtA0Hw7z" maxLength="50" displayType="SELECT" displayLength="50" dynamicList="/Lists/Teams_Available">
+        <listMappings display="Team_Name" return="Team_ID"/>
+    </field>
+    <field name="SLA_ID" type="INTEGER" labelTextRef="Txt15nW4i" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Show_DueDate" type="BOOLEAN" labelTextRef="Txt2F9fRi" displayType="CHECKBOX"/>
+    <field name="Show_FileRef" type="BOOLEAN" labelTextRef="Txt8wr3xg" displayType="CHECKBOX"/>
+</fields>

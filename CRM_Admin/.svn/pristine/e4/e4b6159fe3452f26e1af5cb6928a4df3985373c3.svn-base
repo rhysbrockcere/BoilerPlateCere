@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Categories/Categories_Load" pageHeaderTextRef="Txt2YJ9YT" pageInfoTextReference="TxtAcrlGS" pageTrailerTextReference="TxtaQUF4" nextPageTextReference="Txt16C5Ou" prevPageTextReference="Txt3N7mZp">
+    <pageContents>
+        <page ctrl="PagBsr3P" outputType="0" pdfFooterText="LocalTxt5yXC8U" pdfHeaderText="LocalTxtAO6WdW" uid="NwIxcRS3">
+            <panel ctrl="Pan14H5Rv" propertySet="Nav_Panel" uid="IC0nj4C3">
+                <button buttonText="LocalTxt57L0vB" ctrl="ButBt7nI" mouseOverText="LocalTxt9TKTA1" onClickEvent="/Scripts/goto_Admin_Home" uid="Bb4aVRAk"/>
+                <button buttonText="LocalTxt3WqObP" ctrl="cmd" mouseOverText="LocalTxt9L1ZmK" newLine="false" onClickEvent="/Scripts/Categories/New_Category" uid="O0Yzf28D"/>
+            </panel>
+            <panel ctrl="Pan4uK1T" displayOnly="true" propertySet="floatLeft" uid="9A1JWg6l" width="70%">
+                <rootHtmlElementProperties classLocator="panelLeft box"/>
+                <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="IwlUHE5q"/>
+                <horizontalLine ctrl="Hln4ooMH_2" uid="9rWPNQja"/>
+                <fieldTable ctrl="TblesAAX" field="Categories" numVisibleRows="15" tableHeaderText="LocalTxt7PRdvA" tableInfoText="LocalTxt5kbhLw" tableTrailerText="LocalTxt7gYvAu" uid="JWlXMsdj">
+                    <tablePage ctrl="TpgFQ787" default="L" uid="9KmJpa5y">
+                        <fieldColumn buttonText="LocalTxt52WwYo" ctrl="ColOXa4i" field="Categories-Category" hyperlink="true" immedEvent="/Scripts/Categories/goto_Category" sortable="true" uid="I2Wtlp3H" width="24%"/>
+                        <fieldColumn buttonText="LocalTxt19rAbA" ctrl="Col4S54k" field="Categories-Team_Name" sortable="true" uid="82rvMy8r" width="24%"/>
+                        <fieldColumn buttonText="LocalTxt5hgXwR" ctrl="ColQ6TKU" field="Categories-Division" sortable="true" uid="Kmv6danQ" width="24%"/>
+                        <fieldColumn buttonText="LocalTxt9cq4eE" ctrl="Coll1W5X" field="Categories-Service" sortable="true" uid="PZ1VYGbT" width="24%"/>
+                    </tablePage>
+                </fieldTable>
+            </panel>
+            <panel ctrl="PanoMjEt_2" propertySet="floatRight" uid="1MrFNCdr" width="29%">
+                <rootHtmlElementProperties classLocator="panelRight box"/>
+                <text ctrl="TexYaK3R_5" text="LocalTxt26nD03_5" uid="RQLK4Tdr"/>
+                <horizontalLine ctrl="Hln4ooMH_5" uid="8DC39cX"/>
+                <field buttonText="LocalTxtAtq53S" ctrl="FldHeUUS" field="filter_CatName" uid="IloNHv07"/>
+                <field buttonText="LocalTxt8Jtki8" ctrl="FldOzRrq" field="filter_Team" propertySet="Chosen-Dropdown" uid="8Obix56A"/>
+                <field buttonText="LocalTxt2i4hui" ctrl="FldyGypx" field="filter_Service" propertySet="Chosen-Dropdown" uid="CmMgbMkP"/>
+                <field buttonText="LocalTxt4O8VaZ" ctrl="FldQGERz" field="filter_Division" propertySet="Chosen-Dropdown" uid="2VYNgZzZ"/>
+                <panel ctrl="PanzKbrU_2" uid="FVMoL2pv"/>
+                <panel ctrl="Pan13Yjox_2" uid="N3uCNZUq">
+                    <button buttonText="LocalTxt4YBOgN" ctrl="cmdClearFilter" hidden="true" mouseOverText="LocalTxt6CwO5Z" onClickEvent="/Scripts/Categories/Clear_Filter,/Scripts/Categories/Categories_Load" uid="HDnY5LVS"/>
+                    <button buttonText="LocalTxt4lZJIf" ctrl="cmdFilter" mouseOverText="LocalTxt9rSSpI" newLine="false" onClickEvent="/Scripts/Categories/Categories_Load" uid="IgvHB6f9"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <webForm formHeaderTextRef="Txt1BcCDO" htmlTitleTextRef="Txt9lnRua" finishButtonTextRef="Txt3ovhs1" backButtonSupport="yes" docType="HTML5" template="/Presentation/Presentation_Templates/Intranet17" firstPage="Page_1" preferredScriptFolder="/Lists" id="CLIC_Lists" dateCreated="2017-11-01T11:15:56.928Z">
+        <resources>
+            <resource name="List_Items" path="/Resources/List_Items"/>
+            <resource name="Lists" path="/Resources/Lists"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="Txt96ga3J" restoreButtonTextRef="Txt3XMbhh" saveInfoTextRef="TxtAEqvqr" restoreInfoTextRef="Txt7Tni3p"/>
+        <finalPage headerTextRef="Txteyw0l" infoTextRef="Txt3H8Lxl" returnTextRef="Txt7aVOPA" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

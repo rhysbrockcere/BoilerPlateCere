@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Forms/CHILDCARE_ADMIN" id="GOTO_PAGE_APPLICATION" dateCreated="2018-04-20T02:08:02.888+01:00">
+        <scriptText>set WHERE_CLAUSE = 'Enquiry_ID = ' + tostring(App_TBL-Enquiry_ID); 
+fetch CO_Application;
+
+set FOP_FULL_CHILD_NAME = APP_Child_Forename + ' ' + APP_Child_Middlename + ' ' + APP_Child_Surname  + '(' + APP_Child_Known_As +')' + tostring(APP_Child_DOB);
+fetchtable Provision_TBL;
+goto page Application;</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Categories_SecTrim_Appointment" dateCreated="2017-07-05T09:29:54.708+01:00">
+        <columns>distinct Category, Category_ID</columns>
+        <from>crm_Category_Permissions</from>
+        <where>Team_ID = &amp;&amp;TEAM_ID and enabled = '1' and action = 'App'</where>
+        <fields>
+            <field id="Category_ID" type="INTEGER" input="false"/>
+            <field id="TEAM_ID" output="false"/>
+            <field id="Category" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

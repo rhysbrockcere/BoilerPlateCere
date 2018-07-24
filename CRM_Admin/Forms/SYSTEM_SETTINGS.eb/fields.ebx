@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="search_Category" type="CHAR" labelTextRef="Txt5eQMSY_2" displayType="TEXT"/>
+</fields>

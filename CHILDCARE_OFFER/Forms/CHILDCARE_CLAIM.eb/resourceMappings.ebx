@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="CO_Claim">
+        <fieldMapping resourceField="Application_ID" field="CLAIM_Application_ID"/>
+        <fieldMapping resourceField="Booked_Hours" field="CLAIM_Booked_Hours"/>
+        <fieldMapping resourceField="Claim_ID" field="CLAIM_Claim_ID"/>
+        <fieldMapping resourceField="Confirmed_By" field="CLAIM_Confirmed_By"/>
+        <fieldMapping resourceField="Confirmed_Date" field="CLAIM_Confirmed_Date"/>
+        <fieldMapping resourceField="Created_Date" field="CLAIM_Created_Date"/>
+        <fieldMapping resourceField="Days_Per_Week" field="CLAIM_Days_Per_Week"/>
+        <fieldMapping resourceField="FP_Nursery_Ind" field="CLAIM_FP_Nursery_Ind"/>
+        <fieldMapping resourceField="Language_Provided" field="CLAIM_Language_Provided"/>
+        <fieldMapping resourceField="Period_ID" field="CLAIM_Period_ID"/>
+        <fieldMapping resourceField="Period_Start_Date" field="CLAIM_Period_Start_Date"/>
+        <fieldMapping resourceField="Provider_ID" field="CLAIM_Provider_ID"/>
+        <fieldMapping resourceField="Provision_End_Date" field="CLAIM_Provision_End_Date"/>
+        <fieldMapping resourceField="Provision_ID" field="CLAIM_Provision_ID"/>
+        <fieldMapping resourceField="Provision_Start_Date" field="CLAIM_Provision_Start_Date"/>
+        <fieldMapping resourceField="Status" field="CLAIM_Status"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="CO_Claim_TBL">
+        <tableMapping table="Claim_TBL"/>
+        <fieldMapping resourceField="Application_ID" field="Claim_TBL-Application_ID"/>
+        <fieldMapping resourceField="Booked_Hours" field="Claim_TBL-Booked_Hours"/>
+        <fieldMapping resourceField="Claim_ID" field="Claim_TBL-Claim_ID"/>
+        <fieldMapping resourceField="Confirmed_By" field="Claim_TBL-Confirmed_By"/>
+        <fieldMapping resourceField="Confirmed_Date" field="Claim_TBL-Confirmed_Date"/>
+        <fieldMapping resourceField="Created_Date" field="Claim_TBL-Created_Date"/>
+        <fieldMapping resourceField="Days_Per_Week" field="Claim_TBL-Days_Per_Week"/>
+        <fieldMapping resourceField="FP_Nursery_Ind" field="Claim_TBL-FP_Nursery_Ind"/>
+        <fieldMapping resourceField="Language_Provided" field="Claim_TBL-Language_Provided"/>
+        <fieldMapping resourceField="Period_ID" field="Claim_TBL-Period_ID"/>
+        <fieldMapping resourceField="Period_Start_Date" field="Claim_TBL-Period_Start_Date"/>
+        <fieldMapping resourceField="Provider_ID" field="Claim_TBL-Provider_ID"/>
+        <fieldMapping resourceField="Provision_End_Date" field="Claim_TBL-Provision_End_Date"/>
+        <fieldMapping resourceField="Provision_ID" field="Claim_TBL-Provision_ID"/>
+        <fieldMapping resourceField="Provision_Start_Date" field="Claim_TBL-Provision_Start_Date"/>
+        <fieldMapping resourceField="Status" field="Claim_TBL-Status"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="CO_Current_Period">
+        <fieldMapping resourceField="Current_Month" field="Current_Month"/>
+        <fieldMapping resourceField="Current_Period_End_Date" field="Current_Period_End_Date"/>
+        <fieldMapping resourceField="Current_Period_Start_Date" field="Current_Period_Start_Date"/>
+        <fieldMapping resourceField="Current_Year_End_Date" field="Current_Year_End_Date"/>
+        <fieldMapping resourceField="Current_Year_Start_Date" field="Current_Year_Start_Date"/>
+    </resourceMapping>
+    <resourceMapping id="CO_Provider">
+        <fieldMapping resourceField="Provider_ID" field="PROVIDER_Provider_ID"/>
+        <fieldMapping resourceField="Provider" field="Provider"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+    <resourceMapping id="CO_Provider_Claim_VW">
+        <tableMapping table="Prov_Claim_TBL"/>
+        <fieldMapping resourceField="Act_FP_Nursery_Ind" field="Prov_Claim_TBL-Act_FP_Nursery_Ind"/>
+        <fieldMapping resourceField="Actual_Days" field="Prov_Claim_TBL-Actual_Days"/>
+        <fieldMapping resourceField="Actual_Hours" field="Prov_Claim_TBL-Actual_Hours"/>
+        <fieldMapping resourceField="Application_ID" field="Prov_Claim_TBL-Application_ID"/>
+        <fieldMapping resourceField="Booked_Hours" field="Prov_Claim_TBL-Booked_Hours"/>
+        <fieldMapping resourceField="Child" field="Prov_Claim_TBL-Child"/>
+        <fieldMapping resourceField="Child_Known_As" field="Prov_Claim_TBL-Child_Known_As"/>
+        <fieldMapping resourceField="Claim_Detail_ID" field="Prov_Claim_TBL-Claim_Detail_ID"/>
+        <fieldMapping resourceField="Claim_ID" field="Prov_Claim_TBL-Claim_ID"/>
+        <fieldMapping resourceField="Claim_Status" field="Prov_Claim_TBL-Claim_Status"/>
+        <fieldMapping resourceField="Confirmed_By" field="Prov_Claim_TBL-Confirmed_By"/>
+        <fieldMapping resourceField="Confirmed_Date" field="Prov_Claim_TBL-Confirmed_Date"/>
+        <fieldMapping resourceField="Creditor_Reference" field="Prov_Claim_TBL-Creditor_Reference"/>
+        <fieldMapping resourceField="Customer_ID" field="Prov_Claim_TBL-Customer_ID"/>
+        <fieldMapping resourceField="Email" field="Prov_Claim_TBL-Email"/>
+        <fieldMapping resourceField="FP_Nursery_Ind" field="Prov_Claim_TBL-FP_Nursery_Ind"/>
+        <fieldMapping resourceField="Holiday_Week" field="Prov_Claim_TBL-Holiday_Week"/>
+        <fieldMapping resourceField="Language_Provided" field="Prov_Claim_TBL-Language_Provided"/>
+        <fieldMapping resourceField="Period_ID" field="Prov_Claim_TBL-Period_ID"/>
+        <fieldMapping resourceField="Period_Start_Date" field="Prov_Claim_TBL-Period_Start_Date"/>
+        <fieldMapping resourceField="Provider" field="Prov_Claim_TBL-Provider"/>
+        <fieldMapping resourceField="Provider_ID" field="Prov_Claim_TBL-Provider_ID"/>
+        <fieldMapping resourceField="Provision_End_Date" field="Prov_Claim_TBL-Provision_End_Date"/>
+        <fieldMapping resourceField="Provision_ID" field="Prov_Claim_TBL-Provision_ID"/>
+        <fieldMapping resourceField="Provision_Start_Date" field="Prov_Claim_TBL-Provision_Start_Date"/>
+        <fieldMapping resourceField="Status" field="Prov_Claim_TBL-Status"/>
+        <fieldMapping resourceField="Submitted_Date" field="Prov_Claim_TBL-Submitted_Date"/>
+        <fieldMapping resourceField="Submitted_by" field="Prov_Claim_TBL-Submitted_by"/>
+        <fieldMapping resourceField="Week_Commencing" field="Prov_Claim_TBL-Week_Commencing"/>
+        <fieldMapping resourceField="WHERE_CLAUSE" field="WHERE_CLAUSE"/>
+    </resourceMapping>
+</resourceMappings>

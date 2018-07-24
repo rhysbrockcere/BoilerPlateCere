@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Enquiry_Statuses">
+        <column name="Description" type="CHAR" labelTextRef="Txt9ZlVeJ" maxLength="50" displayType="TEXT" displayLength="30"/>
+        <column name="Optional" type="BOOLEAN" labelTextRef="Txt4jUfXB" displayType="CHECKBOX"/>
+        <column name="Selectable" type="BOOLEAN" labelTextRef="TxtZRqOe" displayType="CHECKBOX"/>
+        <column name="Status_CY" type="CHAR" labelTextRef="Txt5hADbD" maxLength="50" displayType="TEXT" displayLength="30"/>
+        <column name="Status_ID" type="INTEGER" labelTextRef="Txt3PhH06" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+    <table name="Statuses">
+        <column name="Status_ID" type="INTEGER" labelTextRef="Txt1Ouurc" displayType="SELECT" displayLength="17" dynamicList="/Lists/Enquiry_Statuses">
+            <listMappings display="Status" return="Status_ID"/>
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Sub_Category_ID" type="INTEGER" labelTextRef="Txt4l1ros" displayType="TEXT" displayLength="17" dynamicList="/Lists/Sub_Category_List">
+            <listMappings display="Label" return="Sub_Category_ID"/>
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Type_ID" type="INTEGER" labelTextRef="Txt8wvryk" displayType="SELECT" displayLength="17" dynamicList="/Lists/Enquiry_Types">
+            <listMappings display="Type" return="Id"/>
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+</tables>

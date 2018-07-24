@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <webForm formHeaderTextRef="Txt2hQuIW" htmlTitleTextRef="Txt10qwJs" finishButtonTextRef="Txt9R2Oz2" backButtonSupport="yes" ajax="false" docType="HTML5" template="/Presentation/Presentation_Templates/SP_INTERNET" firstPage="Landing" preferredScriptFolder="/Scripts" id="CHILDCARE_CLAIM" dateCreated="2018-04-23T20:58:45.992+01:00">
+        <resources>
+            <resource name="CO_Claim" path="/Resources/CO_Claim"/>
+            <resource name="CO_Claim_TBL" path="/Resources/CO_Claim_TBL"/>
+            <resource name="CO_Current_Period" path="/Resources/CO_Current_Period"/>
+            <resource name="CO_Provider" path="/Resources/CO_Provider"/>
+            <resource name="CO_Provider_Claim_VW" path="/Resources/CO_Provider_Claim_VW"/>
+        </resources>
+        <saveRestore enabled="false" saveButtonTextRef="TxtWevWf" restoreButtonTextRef="TxtAlcLZT" saveInfoTextRef="Txt9L2OEn" restoreInfoTextRef="Txt1J9KPI"/>
+        <finalPage headerTextRef="TxtATl2vt" infoTextRef="Txt63BxIB" returnTextRef="Txt4dHh8V" inheritStyle="true"/>
+        <jsps useTemplate="true" useTemplateWidths="true"/>
+    </webForm>
+</ebase>

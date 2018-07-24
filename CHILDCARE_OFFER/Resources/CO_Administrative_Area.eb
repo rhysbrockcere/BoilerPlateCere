@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource database="CHILDCARE_OFFER" preparedStatement="false" id="CO_Administrative_Area" dateCreated="2018-04-24T10:21:05.441+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer.dbo.CO_Administrative_Area</from>
+        <fields>
+            <field id="Administrative_Area" type="VARCHAR" length="50"/>
+            <field id="Area_ID" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

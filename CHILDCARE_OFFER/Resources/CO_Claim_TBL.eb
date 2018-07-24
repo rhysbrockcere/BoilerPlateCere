@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource description="Childcare Offer - Child Provider claims" database="CHILDCARE_OFFER" table="true" preparedStatement="false" id="CO_Claim_TBL" dateCreated="2018-04-27T15:13:28.294+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer.dbo.CO_Claim</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Application_ID" type="INTEGER" length="10"/>
+            <field id="Booked_Hours" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="Claim_ID" type="INTEGER" length="10" readOnly="true"/>
+            <field id="Confirmed_By" type="VARCHAR" length="100"/>
+            <field id="Confirmed_Date" type="TIMESTAMP" length="16"/>
+            <field id="Created_Date" type="TIMESTAMP" length="23" fractionalDigits="3"/>
+            <field id="Days_Per_Week" type="NUMERIC" length="18" fractionalDigits="2"/>
+            <field id="FP_Nursery_Ind" type="INTEGER" length="1"/>
+            <field id="Language_Provided" type="VARCHAR" length="10"/>
+            <field id="Period_ID" type="INTEGER" length="10"/>
+            <field id="Period_Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Provider_ID" type="INTEGER" length="10"/>
+            <field id="Provision_End_Date" type="TIMESTAMP" length="16"/>
+            <field id="Provision_ID" type="INTEGER" length="10"/>
+            <field id="Provision_Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Status" type="VARCHAR" length="20"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>

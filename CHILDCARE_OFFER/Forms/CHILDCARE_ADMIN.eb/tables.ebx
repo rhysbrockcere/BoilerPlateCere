@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="App_TBL">
+        <column name="Application_date" type="DATE" labelTextRef="Txt8vKm1e" displayType="TEXT"/>
+        <column name="Child_Forename" type="CHAR" labelTextRef="Txt70MNJB" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Child_Known_As" type="CHAR" labelTextRef="Txt3Js3d6" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Child_Middlename" type="CHAR" labelTextRef="Txt2k8VoT" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Child_Surname" type="CHAR" labelTextRef="TxtAFNydp" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Customer_Forenames" type="CHAR" labelTextRef="Txt7Yj3gH" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Customer_ID" type="INTEGER" labelTextRef="Txt6Lgro" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Customer_Surname" type="CHAR" labelTextRef="Txt9KgNVe" maxLength="35" displayType="TEXT" displayLength="35"/>
+        <column name="Enquiry_ID" type="INTEGER" labelTextRef="Txt3mUGUd" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Notes" type="CHAR" labelTextRef="TxtAXfsgB" maxLength="2000" displayType="TEXT" displayLength="60"/>
+        <column name="Start_Date" type="DATE" labelTextRef="Txt1BgMA4" displayType="TEXT"/>
+        <column name="Status" type="CHAR" labelTextRef="Txt7tKvuU" maxLength="10" displayType="TEXT" displayLength="10"/>
+    </table>
+    <table name="Claim_Auth_TBL">
+        <column name="Application_ID" type="INTEGER" labelTextRef="Txt2i0bod" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Booked_Hours" type="NUMBER" labelTextRef="TxtAqGipZ" displayType="TEXT" displayLength="5">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Checked" type="CHAR" labelTextRef="Txt74zGRv" maxLength="1" displayType="CHECKBOX" staticList="/Lists/Static_Lists/Y"/>
+        <column name="Child_DOB" type="DATETIME" labelTextRef="Txt3OpZY4" displayType="TEXT"/>
+        <column name="ChildName" type="CHAR" labelTextRef="Txt9WVaKN" maxLength="101" displayType="TEXT" displayLength="60"/>
+        <column name="Claim_ID" type="INTEGER" labelTextRef="Txt11FROI" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Confirmed_By" type="CHAR" labelTextRef="TxtNn5FS" maxLength="100" displayType="TEXT" displayLength="30"/>
+        <column name="Confirmed_Date" type="DATE" labelTextRef="Txt7MBjK5" displayType="TEXT"/>
+        <column name="Created_Date" type="DATETIME" labelTextRef="Txt4FI8Qv" displayType="TEXT"/>
+        <column name="Customer_ID" type="INTEGER" labelTextRef="Txt8psyNT" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Days_Per_Week" type="NUMBER" labelTextRef="Txt7W7cTp" displayType="TEXT" displayLength="5">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Enquiry_ID" type="INTEGER" labelTextRef="TxtArlwkg" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="FP_Nursery_Ind" type="INTEGER" labelTextRef="TxtAscv4d" displayType="TEXT" displayLength="5">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Holiday_Ind" type="CHAR" labelTextRef="Txt8NEsRp" maxLength="3" displayType="TEXT" displayLength="3"/>
+        <column name="Language_Provided" type="CHAR" labelTextRef="Txt9Dcz4n" maxLength="10" displayType="TEXT" displayLength="9"/>
+        <column name="Period_ID" type="INTEGER" labelTextRef="Txt8bSwlf" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Period_Start_Date" type="DATETIME" labelTextRef="Txt41NTae" displayType="TEXT"/>
+        <column name="Provider" type="CHAR" labelTextRef="Txt11bRpB" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Provider_ID" type="INTEGER" labelTextRef="Txt75EJnm" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Provision_End_Date" type="DATE" labelTextRef="Txt6qJzrg" displayType="TEXT"/>
+        <column name="Provision_ID" type="INTEGER" labelTextRef="Txt87UpWZ" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Provision_Start_Date" type="DATE" labelTextRef="Txt1dB1UL" displayType="TEXT"/>
+        <column name="Status" type="CHAR" labelTextRef="Txt1MZ6mR" maxLength="20" displayType="TEXT" displayLength="20"/>
+    </table>
+    <table name="PROVIDER_TBL">
+        <column name="Approved_By" type="CHAR" labelTextRef="TxtAHwzda" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Approved_Date" type="DATE" labelTextRef="Txt64loOE" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Capacity" type="INTEGER" labelTextRef="Txt8WOblp" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="CIW_No" type="CHAR" labelTextRef="Txt6Az0Rx" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Customer_ID" type="INTEGER" labelTextRef="Txt9FgAmD" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Date_Last_Updated" type="DATE" labelTextRef="Txt3IKhFk" displayType="TEXT"/>
+        <column name="Holiday_Ind" type="CHAR" labelTextRef="Txt7yeZii" maxLength="3" displayType="TEXT" displayLength="3"/>
+        <column name="Language" type="CHAR" labelTextRef="Txt64SMkk" maxLength="5" displayType="TEXT" displayLength="5"/>
+        <column name="Last_Updated_By" type="CHAR" labelTextRef="Txt9wEwaK" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Prov_Approved_Ind" type="CHAR" labelTextRef="Txt2MjXEo" maxLength="1" displayType="TEXT" displayLength="1"/>
+        <column name="Provider" type="CHAR" labelTextRef="Txt37ZAb2" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Provider_ID" type="INTEGER" labelTextRef="Txt2ySxFg" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="UPRN" type="INTEGER" labelTextRef="TxtAAbjF0" displayType="TEXT" displayLength="30">
+            <validators>
+                <validator type="MAX_DIGITS" value="19"/>
+                <validator type="MAX_LENGTH" value="30"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+    </table>
+    <table name="Prov_Claim_TBL">
+        <column name="Act_FP_Nursery_Ind" type="INTEGER" labelTextRef="Txt7bqE6n" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Actual_Days" type="NUMBER" labelTextRef="TxtA8GnmH" displayType="TEXT" displayLength="29">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Actual_Hours" type="NUMBER" labelTextRef="Txt6pWGdv" displayType="TEXT" displayLength="29">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Application_ID" type="INTEGER" labelTextRef="Txt8EjkQw" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Booked_Hours" type="NUMBER" labelTextRef="TxtCA0wL" displayType="TEXT" displayLength="29">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Child" type="CHAR" labelTextRef="Txt45HWKk" maxLength="101" displayType="TEXT" displayLength="60"/>
+        <column name="Child_Known_As" type="CHAR" labelTextRef="Txt3c5lMS" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Claim_Detail_ID" type="INTEGER" labelTextRef="Txt2XwSV5" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Claim_ID" type="INTEGER" labelTextRef="Txt7a0XDd" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Claim_Status" type="CHAR" labelTextRef="Txt8eJafR" maxLength="20" displayType="TEXT" displayLength="20"/>
+        <column name="Confirmed_By" type="CHAR" labelTextRef="TxtAiXnUY" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Confirmed_Date" type="DATE" labelTextRef="Txt4Vc1CY" displayType="TEXT"/>
+        <column name="Creditor_Reference" type="CHAR" labelTextRef="Txt5HVrYP" maxLength="8" displayType="TEXT" displayLength="8"/>
+        <column name="Customer_ID" type="INTEGER" labelTextRef="TxtrExbx" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Email" type="CHAR" labelTextRef="Txt5YxCn1" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="FP_Nursery_Ind" type="INTEGER" labelTextRef="Txt4y08cL" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Holiday_Week" type="CHAR" labelTextRef="Txt6xTPGe" maxLength="1" displayType="TEXT" displayLength="1"/>
+        <column name="Language_Provided" type="CHAR" labelTextRef="TxtAacanb" maxLength="20" displayType="TEXT" displayLength="20"/>
+        <column name="Period_ID" type="INTEGER" labelTextRef="Txt8XTgJl" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Period_Start_Date" type="DATETIME" labelTextRef="Txt7QRRUf" displayType="TEXT"/>
+        <column name="Provider" type="CHAR" labelTextRef="Txt2khn3a" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Provider_ID" type="INTEGER" labelTextRef="Txt6ZqINi" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Provision_End_Date" type="DATE" labelTextRef="Txt6Q60Vt" displayType="TEXT"/>
+        <column name="Provision_ID" type="INTEGER" labelTextRef="Txt3Glm9d" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Provision_Start_Date" type="DATE" labelTextRef="TxtApHZKU" displayType="TEXT"/>
+        <column name="Status" type="CHAR" labelTextRef="Txt4lskdp" maxLength="20" displayType="TEXT" displayLength="20"/>
+        <column name="Submitted_by" type="CHAR" labelTextRef="Txt78kRxG" maxLength="70" displayType="TEXT" displayLength="60"/>
+        <column name="Submitted_Date" type="DATETIME" labelTextRef="Txt6dBXUx" displayType="TEXT"/>
+        <column name="Week_Commencing" type="DATE" labelTextRef="TxtAJNFse" displayType="TEXT"/>
+    </table>
+    <table name="Provision_TBL" columnPrefix="Provision">
+        <column name="Application_date" type="DATE" labelTextRef="Txt4gETwy" displayType="TEXT"/>
+        <column name="Approved_By" type="CHAR" labelTextRef="TxtHxSka" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Approved_Date" type="CHAR" labelTextRef="Txt9Z0Jyd" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Approved_Ind" type="CHAR" labelTextRef="Txt8R2Zkd" maxLength="1" displayType="TEXT" displayLength="1"/>
+        <column name="Booked_Hours" type="NUMBER" fractionalDigits="1" labelTextRef="Txt7Fux67" displayType="TEXT" displayLength="29">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Capacity" type="INTEGER" labelTextRef="Txt8CTAbk" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Child_DOB" type="DATE" labelTextRef="Txt8RKp5m" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Child_Forename" type="CHAR" labelTextRef="Txt93XDbj" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Child_Middlename" type="CHAR" labelTextRef="Txt4ACYiW" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Child_Name" type="CHAR" labelTextRef="Txt9smrRV" maxLength="60" displayType="TEXT" displayLength="60"/>
+        <column name="Child_Surname" type="CHAR" labelTextRef="Txt5zvlrN" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Customer_ID" type="INTEGER" labelTextRef="Txt9dmxwI" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Days_per_Week" type="NUMBER" fractionalDigits="1" labelTextRef="Txt9YWFaZ" displayType="TEXT" displayLength="29">
+            <validators>
+                <validator type="MAX_DIGITS" value="18"/>
+                <validator type="MAX_LENGTH" value="29"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="End_Date" type="DATE" labelTextRef="Txt73FZ79" displayType="TEXT"/>
+        <column name="End_Reason" type="CHAR" labelTextRef="Txt2nP8au" maxLength="20" displayType="TEXT" displayLength="20"/>
+        <column name="Enquiry_ID" type="INTEGER" labelTextRef="Txt2CtkSb" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Language" type="CHAR" labelTextRef="Txt7tFmNB" maxLength="5" displayType="TEXT" displayLength="5"/>
+        <column name="Language_Provided" type="CHAR" labelTextRef="Txt9hyRZq" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Provider" type="CHAR" labelTextRef="Txt2YQwac" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Provider_ID" type="INTEGER" labelTextRef="Txt7PhJKP" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Provision_End_Date" type="DATE" labelTextRef="Txt8p3igI" displayType="TEXT"/>
+        <column name="Provision_ID" type="INTEGER" labelTextRef="Txt2vDaWx" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Provision_Start_Date" type="DATE" labelTextRef="Txt24XazX" displayType="TEXT"/>
+        <column name="Start_Date" type="DATE" labelTextRef="Txt4aY7zI" displayType="TEXT"/>
+    </table>
+</tables>

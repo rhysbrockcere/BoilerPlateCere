@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Page_1" beforePageEvent="/Scripts/Category/FormLoad" pageHeaderTextRef="Txt8CowRu" pageInfoTextReference="Txtyuxad" pageTrailerTextReference="Txt4hWppX" nextPageTextReference="Txt61siVr" prevPageTextReference="Txt6jldw9">
+    <pageContents>
+        <page ctrl="PagvUQM2" localMsg="false" msgControls="1eNzQnOZ" outputType="0" pdfFooterText="LocalTxt61lWlj" pdfHeaderText="LocalTxtA2joXe" uid="2ypK3YET">
+            <rootHtmlElementProperties idLocator="page1" jQueryEventHandlers="$;ready;tabs();"/>
+            <panel ctrl="Pan14H5Rv" propertySet="Nav_Panel" uid="N52QV4c5">
+                <button buttonText="LocalTxt3WqObP" ctrl="cmd" mouseOverText="LocalTxt9L1ZmK" onClickEvent="/Scripts/Category/go_back" uid="PjTcoQan"/>
+                <button buttonText="LocalTxt97pI47" ctrl="ButJ9wYN" mouseOverText="LocalTxt72IFMn" newLine="false" onClickEvent="/Scripts/Category/Save_Category" uid="7X8A0sDU"/>
+            </panel>
+            <message ctrl="Msg_Main" uid="1eNzQnOZ"/>
+            <text ctrl="TexYaK3R_2" text="LocalTxt26nD03_2" uid="S4YCo4zP"/>
+            <panel ctrl="PanyhBs8" propertySet="Tabs-Parent" uid="I4d6XJ9k">
+                <rootHtmlElementProperties jQueryEventHandlers="@0"/>
+                <text ctrl="TexZtLV9" text="LocalTxt6TUmRn" uid="FHou4SPz"/>
+                <panel ctrl="PanRcDPu" layoutType="FIELD" propertySet="Tab-Child" uid="QZJYWBcx">
+                    <rootHtmlElementProperties idLocator="tabs-Details"/>
+                    <field buttonText="LocalTxt7dahJ9" ctrl="FldcWVGM" editorStyle="width:100%" field="Category" modifiers="r" uid="OwrJ429T"/>
+                    <field buttonText="LocalTxtAjDnZu" ctrl="Fld12vRF2" displayLabelText="true" field="Category_CY" uid="1Dh5JJxS"/>
+                    <field buttonText="LocalTxt6JZWOv" ctrl="FldkyjOi" field="Description" uid="SMGKIgRv"/>
+                    <field buttonText="LocalTxt6RNdJZ" ctrl="FldMBTOX" displayLabelText="true" field="Description_CY" uid="8z6XsOWj"/>
+                    <field buttonText="LocalTxt9y4oex" ctrl="FldHLV9X" field="Keywords" uid="OuqYzXkR"/>
+                </panel>
+                <panel ctrl="PanueeTB" propertySet="Tab-Child" uid="FeG7xxqW">
+                    <rootHtmlElementProperties idLocator="tabs-Settings"/>
+                    <field buttonText="LocalTxtYhi54" ctrl="Fldj4Fq5" field="Enabled" uid="CfnqKFtK"/>
+                    <field buttonText="LocalTxt8tsrUn" ctrl="Fld10SqQC" field="Resp_Team_ID" modifiers="r" propertySet="Chosen-Dropdown" uid="5tJOyV8p"/>
+                    <field buttonText="LocalTxt6dT3PX" ctrl="Fldp1HQt" field="Show_DueDate" uid="2iQldsnT"/>
+                    <field buttonText="LocalTxt6A6PuJ" ctrl="Fld11u7qx" field="Show_FileRef" uid="NmpPBTKm"/>
+                </panel>
+                <panel ctrl="PanMiND3" propertySet="Tab-Child" uid="CMUh53Bt">
+                    <rootHtmlElementProperties idLocator="tabs-Information"/>
+                    <field buttonText="LocalTxt9ueotI" ctrl="Fld15LZQb" field="Page_URL" uid="RvON9VTK"/>
+                    <field buttonText="LocalTxt29C1Y0" ctrl="Fld14MYJc" displayLabelText="true" field="Page_URL_CY" uid="1Qv7PwXN"/>
+                    <field buttonText="LocalTxt66BQgf" ctrl="Flda4IJJ" field="Default_Subject" uid="OmawYObA"/>
+                    <field buttonText="LocalTxt4EE1Wq" ctrl="FldxvmN8" displayLabelText="true" field="Default_Subject_CY" uid="MjoXEoNS"/>
+                    <horizontalLine ctrl="HlnAY8xC" uid="GHpPP1ze"/>
+                    <field buttonText="LocalTxt9xINmf" ctrl="FldydAI8" displayLabelText="true" field="Default_Details" propertySet="WYSIWIG" uid="AckHTudU"/>
+                    <field buttonText="LocalTxtAD92Jp" ctrl="FldPEEkE" displayLabelText="true" field="Default_Details_CY" propertySet="WYSIWIG" uid="IQDy02pl"/>
+                    <horizontalLine ctrl="HlnSu4mV" uid="Rp8zAVLI"/>
+                    <field buttonText="LocalTxt2EUtrQ" ctrl="FlduZ8Yf" displayLabelText="true" field="Add_Information" propertySet="WYSIWIG" uid="2xiE56VA"/>
+                    <field buttonText="LocalTxt3LFHBu" ctrl="Fld104mdn" displayLabelText="true" field="Add_Information_CY" propertySet="WYSIWIG" uid="LlxJrWm8"/>
+                </panel>
+                <panel ctrl="PanMkP2H" propertySet="Tab-Child" uid="6tJvqoeT">
+                    <rootHtmlElementProperties idLocator="tabs-Sub-Categories"/>
+                    <button buttonText="LocalTxtzS0Tu" ctrl="ButuESxn" mouseOverText="LocalTxt6hMt1O" onClickEvent="/Scripts/Category/New_Sub_Category" uid="1vOLbaKQ"/>
+                    <fieldTable ctrl="TblWAj4M" displayOnly="true" field="Sub_Categories" tableHeaderText="LocalTxt1Ei3XA" tableInfoText="LocalTxt2we2WQ" tableTrailerText="LocalTxtJzsg4" uid="B05KPPKj">
+                        <tablePage ctrl="TpgFMcyk" default="L" uid="5QQSyQVF">
+                            <fieldColumn buttonText="LocalTxt6z7V6p" ctrl="ColdCqSl" field="Sub_Categories-Sub_Category_ID" uid="ATnfYZFn" width="5%"/>
+                            <fieldColumn buttonText="LocalTxt7OInzb" ctrl="Col5lhtk" field="Sub_Categories-Sub_Category" hyperlink="true" immedEvent="/Scripts/Category/goto_Sub_Category" uid="70g8LJVX" width="19%"/>
+                            <fieldColumn buttonText="LocalTxt16GIj2" ctrl="ColPWzUq" field="Sub_Categories-Description" uid="AE7HsEnU" width="19%"/>
+                            <fieldColumn buttonText="LocalTxt2F2OTH" ctrl="ColOG1Cl" field="Sub_Categories-Resp_Team_ID" uid="Bx3ZZDDh" width="19%"/>
+                            <fieldColumn buttonText="LocalTxt8JMtav" ctrl="ColZe17b" field="Sub_Categories-Enabled" hAlign="Center" uid="MR0bm0Np" width="5%">
+<columnHeaderProperties hAlign="Center"/>
+                            </fieldColumn>
+                        </tablePage>
+                    </fieldTable>
+                </panel>
+                <panel ctrl="PanuicEv" displayOnly="true" layoutType="HORIZONTAL_BOX" topMargin="10px" uid="PzajcoFA">
+                    <layoutProperties>
+                        <HORIZONTAL_BOX hAlign="Fill" spacerSize="20px"/>
+                    </layoutProperties>
+                    <field buttonText="LocalTxt7LBI7o" ctrl="Fld14ZLSX" field="Created_By" uid="GkR0ILtp"/>
+                    <field buttonText="LocalTxt9B4kAH" ctrl="FldSxPlm" field="Date_Created" uid="5HZYCSi7"/>
+                    <field buttonText="LocalTxt2Ix4rY" ctrl="Fld4OzhR" field="Modified_By" uid="7ntJfLbi"/>
+                    <field buttonText="LocalTxt7qVH6p" ctrl="FldQ3hgz" field="Date_Modified" uid="9cAr8Wt2"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

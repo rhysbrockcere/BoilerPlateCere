@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Count_Customers" type="INTEGER" labelTextRef="Txt3XoIQp" displayType="TEXT"/>
+    <field name="Count_Customers_C" type="INTEGER" labelTextRef="TxtAqMMFO" displayType="TEXT"/>
+    <field name="Count_Customers_R" type="INTEGER" labelTextRef="Txt4QTKjw" displayType="TEXT"/>
+    <field name="Count_Enq_Active" type="INTEGER" labelTextRef="Txt8g5Sby" displayType="TEXT"/>
+    <field name="Count_Enq_New" type="INTEGER" labelTextRef="Txt8oHMA2" displayType="TEXT"/>
+    <field name="Count_Enquiry" type="INTEGER" labelTextRef="Txt7bDFwX" displayType="TEXT"/>
+</fields>

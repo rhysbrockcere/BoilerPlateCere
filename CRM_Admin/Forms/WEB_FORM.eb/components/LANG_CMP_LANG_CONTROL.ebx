@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<component source="/Components/CMP_LANG_CONTROL" sourceProject="GLOBAL" version="79" prefix="LANG_CMP_LANG_CONTROL" page="Page_1">
+    <linkedTexts>
+        <linkedText>/GLOBAL_Messages</linkedText>
+        <linkedText>/Shared_Texts</linkedText>
+    </linkedTexts>
+    <fields>
+        <field name="LANG_CODE" type="CHAR" eventField="true" clientAccessible="ReadWrite" labelTextRef="LANG_CMP_LANG_CONTROL__TxtAJTZd6" displayType="TEXT" sourceId="87e0f1d3-fc48-4acb-8a49-6be4d4642289"/>
+    </fields>
+    <texts>
+        <text id="36440000"/>
+        <text id="36440001"/>
+        <text id="36440002"/>
+        <text id="36440003"/>
+        <text id="36440004"/>
+        <text id="Txt7jCZZy"/>
+        <text id="TxtAJTZd6">
+            <languageText language="EN">Language Code</languageText>
+        </text>
+    </texts>
+    <component componentPrefix="LANG_CMP_LANG_CONTROL" contentClass="@T" contentStyle="@T" ctrl="LANG_CMP_LANG_CONTROL__COMPONENT2" default="C" inheritMsg="true" layoutType="@0" localMsg="false" outputType="0" sourceUid="1" uid="O0CKKCub">
+        <componentOriginals default="T" layoutType="FIELD" width="@0"/>
+        <field buttonDisplayAsImage="@T" buttonImageUrl="@T" buttonSkipValidation="@T" buttonText="LocalLANG_CMP_LANG_CONTROL__Txt7jCZZy" componentPrefix="LANG_CMP_LANG_CONTROL" ctrl="LANG_CMP_LANG_CONTROL__FldnIHgy" default="C" displayIvAsImage="@T" displayOnly="@T" field="LANG_CMP_LANG_CONTROL__LANG_CODE" helpButImage="@T" helpPos="@T" helpWindowProperties="@T" hidden="@T" hyperlink="@T" immediateValidation="true" inheritMsg="@T" labelFor="@T" localMsg="@T" mandatory="@T" msgControls="@T" newLine="@T" sourceUid="QwOFMOR7" uid="NVMuIPzO" validationEvent="/Scripts/GL_SetLanguage">
+            <componentOriginals default="T" displayIvAsImage="false" helpButImage="@0" helpPos="3" helpWindowProperties="@0">
+                <editorHtmlElementProperties idLocator="language"/>
+            </componentOriginals>
+        </field>
+    </component>
+</component>

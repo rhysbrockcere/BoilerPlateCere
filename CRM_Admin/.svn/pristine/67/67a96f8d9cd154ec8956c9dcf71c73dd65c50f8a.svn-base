@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" id="SecurityTeamInfo" dateCreated="2017-02-07T14:00:41.066Z">
+        <columns>*</columns>
+        <from>sys_Security_Team_Info</from>
+        <where>Team_ID=&amp;&amp;Team_ID</where>
+        <fields>
+            <field id="Email" type="VARCHAR" length="100"/>
+            <field id="Leader" type="VARCHAR" length="50"/>
+            <field id="Team_ID" type="VARCHAR" length="50" required="true" key="true"/>
+        </fields>
+    </dbResource>
+</ebase>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource description="Childcare Offer - Current Period" database="CHILDCARE_OFFER" id="CO_Current_Period" dateCreated="2018-06-13T14:33:04.842+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer.dbo.CO_Current_Period</from>
+        <fields>
+            <field id="Current_Month" type="INTEGER" length="10"/>
+            <field id="Current_Period_End_Date" type="TIMESTAMP" length="16"/>
+            <field id="Current_Period_Start_Date" type="TIMESTAMP" length="16"/>
+            <field id="Current_Year_End_Date" type="TIMESTAMP" length="16"/>
+            <field id="Current_Year_Start_Date" type="TIMESTAMP" length="16"/>
+        </fields>
+    </dbResource>
+</ebase>

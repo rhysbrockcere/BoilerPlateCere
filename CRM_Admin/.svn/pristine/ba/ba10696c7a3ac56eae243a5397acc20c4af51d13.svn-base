@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Categories">
+        <column name="Category" type="CHAR" labelTextRef="TxtAZI3lY" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Category_ID" type="INTEGER" labelTextRef="Txt6SR0hR" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Enabled" type="BOOLEAN" labelTextRef="Txt4PKuzu" displayType="CHECKBOX"/>
+        <column name="Resp_Team_ID" type="CHAR" labelTextRef="Txt3xsWjJ" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Team_Name" type="CHAR" labelTextRef="Txt51ixre" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Team_Path" type="CHAR" labelTextRef="Txt8qsdO2" maxLength="1000" displayType="TEXT" displayLength="60"/>
+    </table>
+</tables>

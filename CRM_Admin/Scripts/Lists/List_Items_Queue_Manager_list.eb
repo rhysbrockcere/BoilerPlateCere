@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="List_Items_Queue_Manager_list" dateCreated="2018-02-01T10:02:04.910Z">
+        <columns>Item_ID, Enabled, Description_CY, Description</columns>
+        <from>sys_List_Items</from>
+        <where>List_ID=10002</where>
+        <additional>order by description</additional>
+        <fields>
+            <field id="Description" input="false"/>
+            <field id="Description_CY" input="false"/>
+            <field id="Enabled" type="BIT" input="false"/>
+            <field id="Item_ID" type="INTEGER" input="false"/>
+            <field id="List_ID" type="INTEGER" output="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <scheduledTask id="Ceri_User_Sync" dateCreated="2018-01-23T14:31:22.579Z">
+        <runtimeTaskIdentifier>4e6ee261-ab80-4917-b3a1-73fffb56014c</runtimeTaskIdentifier>
+        <programName>com.ebasetech.ufs.kernel.SavedFormsMaintenance</programName>
+        <scheduleType>Hourly</scheduleType>
+        <interval>1</interval>
+        <minuteOfHour>30</minuteOfHour>
+    </scheduledTask>
+</ebase>

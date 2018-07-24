@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Forms/CHILDCARE_ADMIN" id="GOTO_PAGE_PROVIDER" dateCreated="2018-04-20T15:42:48.955+01:00">
+        <scriptText>set WHERE_CLAUSE = 'Provider_ID = ' + tostring(PROVIDER_Provider_ID) ;
+fetch CO_Provider;
+fetchtable Provision_TBL;
+
+goto page Provider;</scriptText>
+    </script>
+</ebase>

@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="APP_Affordability" type="CHAR" labelTextRef="Txt3x8PiW" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Application_ID" type="INTEGER" labelTextRef="Txt3vjMs3" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_Application_date" type="DATETIME" labelTextRef="TxtkeDNs" displayType="TEXT"/>
+    <field name="APP_Area_ID" type="CHAR" labelTextRef="Txt86DnXL" maxLength="30" displayType="TEXT"/>
+    <field name="APP_Carer_Giving_Info" type="CHAR" labelTextRef="TxtcABT0" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Child_Address1" type="CHAR" labelTextRef="Txt8m590p" maxLength="50" displayType="TEXT" displayLength="30"/>
+    <field name="APP_Child_Address2" type="CHAR" labelTextRef="TxtA5YpwY" maxLength="50" displayType="TEXT" displayLength="30"/>
+    <field name="APP_Child_Address3" type="CHAR" labelTextRef="Txt5R0rIE" maxLength="50" displayType="TEXT" displayLength="30"/>
+    <field name="APP_Child_County" type="CHAR" labelTextRef="Txt29DcgI" maxLength="50" displayType="TEXT" displayLength="20"/>
+    <field name="APP_Child_Currently_Accessing_Welsh_Ind" type="CHAR" labelTextRef="Txt9PG5Kq" maxLength="3" displayType="TEXT" displayLength="3"/>
+    <field name="APP_Child_DOB" type="CHAR" labelTextRef="Txt7Yn99F" maxLength="10" displayType="TEXT" displayLength="10"/>
+    <field name="APP_Child_Ethnicity" type="CHAR" labelTextRef="Txt3ZIaSI" maxLength="10" displayType="SELECT" displayLength="5" dynamicList="/Lists/CO_Ethnic_Origin_list">
+        <listMappings display="Ethnic_EN" return="Ethnic_Code"/>
+    </field>
+    <field name="APP_Child_FlyingStart_Ind" type="CHAR" labelTextRef="Txt1KmQCg" maxLength="30" displayType="TEXT" displayLength="1"/>
+    <field name="APP_Child_Forename" type="CHAR" labelTextRef="Txt4idlzK" maxLength="50" displayType="TEXT" displayLength="40"/>
+    <field name="APP_Child_Known_As" type="CHAR" labelTextRef="TxtAG0FTo" maxLength="50" displayType="TEXT" displayLength="30"/>
+    <field name="APP_Child_Middlename" type="CHAR" labelTextRef="TxtxBU4h" maxLength="50" displayType="TEXT" displayLength="40"/>
+    <field name="APP_Child_Postcode" type="CHAR" labelTextRef="Txt8aJnaZ" maxLength="8" displayType="TEXT" displayLength="8"/>
+    <field name="APP_Child_Preferred_Welsh_ind" type="CHAR" labelTextRef="Txt9IVeCk" maxLength="3" displayType="TEXT" displayLength="3"/>
+    <field name="APP_Child_SEN_Referral_Date" type="CHAR" labelTextRef="Txt5NFhZh" maxLength="10" displayType="TEXT" displayLength="10"/>
+    <field name="APP_Child_SEN_Referral_Status" type="CHAR" labelTextRef="Txt4XW3Xp" maxLength="20" displayType="TEXT" displayLength="20"/>
+    <field name="APP_Child_SEN_Registered_Ind" type="CHAR" labelTextRef="Txt2dw7cT" maxLength="3" displayType="RADIO" displayLength="1" staticList="/Lists/Static_Lists/YESNO"/>
+    <field name="APP_Child_Surname" type="CHAR" labelTextRef="Txt9ddPuV" maxLength="50" displayType="TEXT" displayLength="40"/>
+    <field name="APP_Child_Town" type="CHAR" labelTextRef="Txt2yyq2q" maxLength="50" displayType="TEXT" displayLength="20"/>
+    <field name="APP_Child_UPN" type="CHAR" labelTextRef="Txt962HYa" maxLength="20" displayType="TEXT" displayLength="20"/>
+    <field name="APP_Child_UPRN" type="INTEGER" labelTextRef="Txt3rH49s" displayType="TEXT" displayLength="30">
+        <validators>
+            <validator type="MAX_DIGITS" value="19"/>
+            <validator type="MAX_LENGTH" value="30"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_Childcare_Monthly_Spend" type="NUMBER" labelTextRef="Txt9C8h1g" displayType="TEXT" displayLength="29">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_Customer_Address1" type="CHAR" labelTextRef="Txt5HjPjP" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Customer_Address2" type="CHAR" labelTextRef="Txt46LYcw" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Customer_Address3" type="CHAR" labelTextRef="Txt3lm66s" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Customer_County" type="CHAR" labelTextRef="Txt5B7ly0" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Customer_Ethnicity" type="CHAR" labelTextRef="Txt6DfoM4" maxLength="10" displayType="SELECT" displayLength="30" dynamicList="/Lists/CO_Ethnic_Origin_list">
+        <listMappings display="Ethnic_EN" return="Ethnic_Code"/>
+    </field>
+    <field name="APP_Customer_Forenames" type="CHAR" labelTextRef="Txt7vGsfG" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Customer_ID" type="INTEGER" labelTextRef="Txt20SXGE" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_Customer_NI_Number" type="CHAR" labelTextRef="Txt1tBAdT" maxLength="9" displayType="TEXT" displayLength="9"/>
+    <field name="APP_Customer_Postcode" type="CHAR" labelTextRef="Txt1z0bZU" maxLength="8" displayType="TEXT" displayLength="8"/>
+    <field name="APP_Customer_Surname" type="CHAR" labelTextRef="TxtEZRyL" maxLength="35" displayType="TEXT" displayLength="35"/>
+    <field name="APP_Customer_Title" type="CHAR" labelTextRef="Txt33bFkb" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Customer_Town" type="CHAR" labelTextRef="Txt3II942" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Customer_UPRN" type="INTEGER" labelTextRef="Txt52Gsub" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_Date_Last_Updated" type="DATETIME" labelTextRef="Txt45TpGu" displayType="TEXT"/>
+    <field name="APP_End_Date" type="DATETIME" labelTextRef="Txt16Joew" displayType="TEXT"/>
+    <field name="APP_End_Reason" type="CHAR" labelTextRef="Txt4iRsxB" maxLength="20" displayType="TEXT" displayLength="20"/>
+    <field name="APP_Enquiry_ID" type="INTEGER" labelTextRef="Txt4RhqcV" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_Last_Updated_By" type="CHAR" labelTextRef="Txt3dBvNV" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Notes" type="CHAR" labelTextRef="Txt2zfF53" maxLength="2000" displayType="TEXTAREA" displayLength="60" rows="8"/>
+    <field name="APP_Other_Carer_Avg_Hours" type="NUMBER" fractionalDigits="1" labelTextRef="Txt9LzWEF" displayType="TEXT" displayLength="29">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P1_Emp1_Address" type="CHAR" labelTextRef="TxtA5ilnK" maxLength="500" displayType="TEXTAREA" displayLength="40" rows="5"/>
+    <field name="APP_P1_Emp1_Avg_Hours" type="NUMBER" fractionalDigits="1" labelTextRef="Txt2meHUz" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P1_Emp1_Email" type="CHAR" labelTextRef="Txt7ir5DG" maxLength="100" displayType="TEXT" displayLength="40"/>
+    <field name="APP_P1_Emp1_Name" type="CHAR" labelTextRef="Txt10YDeK" maxLength="100" displayType="TEXT" displayLength="40"/>
+    <field name="APP_P1_Emp1_Salary" type="NUMBER" labelTextRef="Txt1q08va" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P1_Emp1_Telno" type="CHAR" labelTextRef="Txt1HdgPH" maxLength="50" displayType="TEXT" displayLength="12"/>
+    <field name="APP_P1_Emp1_UPRN" type="INTEGER" labelTextRef="Txt9l1ezW" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="19"/>
+            <validator type="MAX_LENGTH" value="30"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P1_Emp2_Address" type="CHAR" labelTextRef="Txt35krug" maxLength="500" displayType="TEXTAREA" displayLength="40" rows="5"/>
+    <field name="APP_P1_Emp2_Avg_Hours" type="NUMBER" fractionalDigits="1" labelTextRef="Txt3FDhnL" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P1_Emp2_Email" type="CHAR" labelTextRef="Txt7DEEEn" maxLength="100" displayType="TEXT" displayLength="40"/>
+    <field name="APP_P1_Emp2_Name" type="CHAR" labelTextRef="Txt7rGhtQ" maxLength="100" displayType="TEXT" displayLength="40"/>
+    <field name="APP_P1_Emp2_Salary" type="NUMBER" labelTextRef="Txt4wMLKk" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P1_Emp2_Telno" type="CHAR" labelTextRef="Txt3eej4q" maxLength="50" displayType="TEXT" displayLength="12"/>
+    <field name="APP_P1_Emp2_UPRN" type="INTEGER" labelTextRef="Txt8Hdqdy" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="19"/>
+            <validator type="MAX_LENGTH" value="30"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P2_Address1" type="CHAR" labelTextRef="Txt7XK3SL" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_P2_Address2" type="CHAR" labelTextRef="Txt9mPCbV" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_P2_Address3" type="CHAR" labelTextRef="Txt2j4Nhh" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_P2_County" type="CHAR" labelTextRef="Txt2s3a3U" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_P2_Emp1_Address" type="CHAR" labelTextRef="Txt3UkGAo" maxLength="500" displayType="TEXTAREA" displayLength="40" rows="4"/>
+    <field name="APP_P2_Emp1_Avg_Hours" type="NUMBER" fractionalDigits="1" labelTextRef="Txt1Wofz1" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P2_Emp1_Email" type="CHAR" labelTextRef="Txt6TY4EI" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="APP_P2_Emp1_Name" type="CHAR" labelTextRef="Txt9Ybilg" maxLength="100" displayType="TEXT" displayLength="40"/>
+    <field name="APP_P2_Emp1_Salary" type="NUMBER" labelTextRef="Txt2hOgXR" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P2_Emp1_Telno" type="CHAR" labelTextRef="Txt8oogeE" maxLength="50" displayType="TEXT" displayLength="12"/>
+    <field name="APP_P2_Emp1_UPRN" type="INTEGER" labelTextRef="Txt8NUfFh" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="19"/>
+            <validator type="MAX_LENGTH" value="30"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P2_Emp2_Address" type="CHAR" labelTextRef="Txt5CSNm6" maxLength="500" displayType="TEXTAREA" displayLength="40" rows="5"/>
+    <field name="APP_P2_Emp2_Avg_Hours" type="NUMBER" fractionalDigits="1" labelTextRef="Txt3XtaRL" displayType="TEXT" displayLength="29">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P2_Emp2_Email" type="CHAR" labelTextRef="Txt7jd0RO" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="APP_P2_Emp2_Name" type="CHAR" labelTextRef="TxtABQn5d" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="APP_P2_Emp2_Salary" type="NUMBER" labelTextRef="Txt9NWDBX" displayType="TEXT" displayLength="12">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P2_Emp2_Telno" type="CHAR" labelTextRef="Txt95ixGX" maxLength="50" displayType="TEXT" displayLength="12"/>
+    <field name="APP_P2_Emp2_UPRN" type="INTEGER" labelTextRef="Txt2kRciO" displayType="TEXT" displayLength="30">
+        <validators>
+            <validator type="MAX_DIGITS" value="19"/>
+            <validator type="MAX_LENGTH" value="30"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="APP_P2_Ethnicity" type="CHAR" labelTextRef="TxtGiW6O" maxLength="5" displayType="SELECT" displayLength="5" dynamicList="/Lists/CO_Ethnic_Origin_list">
+        <listMappings display="Ethnic_EN" return="Ethnic_Code"/>
+    </field>
+    <field name="APP_P2_Forenames" type="CHAR" labelTextRef="Txt56CxH3" maxLength="50" displayType="TEXT" displayLength="35"/>
+    <field name="APP_P2_NI_Number" type="CHAR" labelTextRef="Txt2ZSVnO" maxLength="9" displayType="TEXT" displayLength="9"/>
+    <field name="APP_P2_Postcode" type="CHAR" labelTextRef="Txt4wg6sJ" maxLength="8" displayType="TEXT" displayLength="8"/>
+    <field name="APP_P2_Surname" type="CHAR" labelTextRef="Txt5FWAvb" maxLength="35" displayType="TEXT" displayLength="35"/>
+    <field name="APP_P2_Title" type="CHAR" labelTextRef="Txt6QPL2i" maxLength="50" displayType="TEXT" displayLength="10"/>
+    <field name="APP_P2_Town" type="CHAR" labelTextRef="Txt656Y8q" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="APP_Start_Date" type="DATETIME" labelTextRef="Txt91MCLH" displayType="TEXT"/>
+    <field name="APP_Status" type="CHAR" labelTextRef="Txt2gHNmq" maxLength="10" displayType="SELECT" displayLength="10" staticList="/Lists/CO_Application_Status"/>
+    <field name="CAL_Calendar_ID" type="INTEGER" labelTextRef="Txt80GPob" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CAL_Current_Period_End_Date" type="DATE" labelTextRef="Txt9Akej9" displayType="TEXT"/>
+    <field name="CAL_Current_Period_Start_Date" type="DATE" labelTextRef="Txt3tdtwg" displayType="TEXT"/>
+    <field name="CAL_Current_Year_End_Date" type="DATE" labelTextRef="Txt1MZ6j7" displayType="TEXT"/>
+    <field name="CAL_Current_Year_Start_Date" type="DATE" labelTextRef="Txt1sqqeE" displayType="TEXT"/>
+    <field name="CLAIM_Authorised_Date" type="DATETIME" labelTextRef="Txt4XI47v" displayType="TEXT"/>
+    <field name="CLAIM_Authorised_by" type="CHAR" labelTextRef="Txt1xtzrW" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="CLAIM_Booked_Hours" type="NUMBER" labelTextRef="TxtAni2ct" displayType="TEXT" displayLength="29">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Claim_ID" type="INTEGER" labelTextRef="Txt7bnbgA" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Created_Date" type="CHAR" labelTextRef="Txt4zyb0a" maxLength="10" displayType="TEXT" displayLength="10"/>
+    <field name="CLAIM_Customer_ID" type="INTEGER" labelTextRef="Txt7wCbHt" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Days_Per_Week" type="NUMBER" labelTextRef="Txt3faY0q" displayType="TEXT" displayLength="29">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Enquiry_ID" type="INTEGER" labelTextRef="Txt1VKPD0" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_FP_Nursery_Ind" type="CHAR" labelTextRef="Txt6LrS9d" maxLength="1" displayType="TEXT" displayLength="1"/>
+    <field name="CLAIM_Holiday_Weeks" type="INTEGER" labelTextRef="TxtA8XljG" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Hours_This_Period" type="NUMBER" labelTextRef="Txt6QRyHB" displayType="TEXT" displayLength="29">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Payment_Amount" type="NUMBER" labelTextRef="Txt7xICWP" displayType="TEXT" displayLength="29">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Payment_Date" type="CHAR" labelTextRef="Txt5Njd3C" maxLength="10" displayType="TEXT" displayLength="10"/>
+    <field name="CLAIM_Period_Start_Date" type="DATETIME" labelTextRef="Txt6l9a4W" displayType="TEXT"/>
+    <field name="CLAIM_Provider_ID" type="INTEGER" labelTextRef="Txt2d2c4R" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Provision_ID" type="INTEGER" labelTextRef="Txt4XRaS7" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Status" type="CHAR" labelTextRef="Txt4aAN2r" maxLength="20" displayType="TEXT" displayLength="20"/>
+    <field name="CLAIM_Submitted_Date" type="DATETIME" labelTextRef="Txt43o1X0" displayType="TEXT"/>
+    <field name="CLAIM_Submitted_by" type="CHAR" labelTextRef="Txt3Ds6Eq" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="CLAIM_WeekCommencing" type="DATETIME" labelTextRef="Txt2zKyuG" displayType="TEXT"/>
+    <field name="CLAIM_Welsh_Provsion_Ind" type="CHAR" labelTextRef="Txt4cCEv6" maxLength="4" displayType="TEXT" displayLength="4"/>
+    <field name="Current_Month" type="INTEGER" labelTextRef="TxtBodZO" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Current_Period_End_Date" type="DATE" labelTextRef="Txt7VNLKe" displayType="TEXT"/>
+    <field name="Current_Period_Start_Date" type="DATE" labelTextRef="Txt35Igo" displayType="TEXT"/>
+    <field name="Current_Year_End_Date" type="DATE" labelTextRef="TxtA4ZgRU" displayType="TEXT"/>
+    <field name="Current_Year_Start_Date" type="DATE" labelTextRef="Txt6sDnMQ" displayType="TEXT"/>
+    <field name="EMAIL_FROM" type="CHAR" labelTextRef="Txt6R7uBm" displayType="TEXT"/>
+    <field name="EMAIL_MESSAGE" type="CHAR" labelTextRef="Txt3ZLLQN" displayType="TEXT"/>
+    <field name="EMAIL_SUBJECT" type="CHAR" labelTextRef="TxtzH6an" displayType="TEXT"/>
+    <field name="EMAIL_TO" type="CHAR" labelTextRef="Txt4N1ZVD" displayType="TEXT"/>
+    <field name="FOP_ADMIN_AREA" type="CHAR" labelTextRef="Txt7jFxcr" displayType="RADIO" align="vertical" dynamicList="/Lists/CO_Administrative_Area_list">
+        <listMappings display="Administrative_Area" return="Area_ID">
+            <additional field="FOP_Administrative_Area" listField="Administrative_Area_FOP"/>
+        </listMappings>
+    </field>
+    <field name="FOP_Administrative_Area" type="CHAR" labelTextRef="Txt4zqe96" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="FOP_CARER_SEARCH" type="CHAR" labelTextRef="TxtrPkgL" displayType="SELECT" dynamicList="/Lists/CO_Application_Carer_list" listBuildOption="each">
+        <listMappings display="Customer_Name">
+            <additional field="APP_Customer_ID" listField="Customer_ID"/>
+            <additional field="APP_Enquiry_ID" listField="Enquiry_ID"/>
+            <additional field="FOP_ADMIN_AREA" listField="FOP_ADMIN_AREA"/>
+        </listMappings>
+    </field>
+    <field name="FOP_CHILD_SEARCH" type="CHAR" labelTextRef="Txt826QaH" displayType="SELECT" dynamicList="/Lists/CO_Application_Child_list" listBuildOption="each">
+        <listMappings display="Child_Name">
+            <additional field="APP_Enquiry_ID" listField="Enquiry_ID"/>
+            <additional field="FOP_ADMIN_AREA" listField="FOP_ADMIN_AREA"/>
+        </listMappings>
+    </field>
+    <field name="FOP_CLAIM_STATUS" type="CHAR" labelTextRef="TxtAaR96y" displayType="RADIO" staticList="/Lists/CO_Claim_Status"/>
+    <field name="FOP_ENQUIRY_SEARCH" type="CHAR" labelTextRef="Txt16DSFe" displayType="TEXT" displayLength="6"/>
+    <field name="FOP_FULL_CHILD_NAME" type="CHAR" labelTextRef="Txt8LoJBB" displayType="TEXT"/>
+    <field name="FOP_PERIOD_LIST" type="DATE" labelTextRef="TxtHn0EM" displayType="SELECT" dynamicList="/Lists/CO_Period_list">
+        <listMappings display="Period_Start_Date"/>
+    </field>
+    <field name="FOP_PROVIDER_OLD_STATUS" type="CHAR" labelTextRef="Txt7GgzIQ" displayType="TEXT"/>
+    <field name="FOP_PROVIDER_SEARCH" type="CHAR" labelTextRef="Txt32JyBF" displayType="SELECT" dynamicList="/Lists/CO_Provider_list" listBuildOption="each">
+        <listMappings display="Provider">
+            <additional field="PROVIDER_Provider_ID" listField="Provider_ID"/>
+        </listMappings>
+    </field>
+    <field name="FOP_SEARCH_PERIOD" type="DATE" labelTextRef="Txt2tVchk" displayType="SELECT" dynamicList="/Lists/CO_Period_list">
+        <listMappings display="Period_Start_Date">
+            <additional field="WHERE_CLAUSE_PERIOD" listField="WHERE_CLAUSE_PERIOD"/>
+        </listMappings>
+    </field>
+    <field name="FOP_STATUS_LIST" type="CHAR" labelTextRef="Txt1kQKBy" displayType="SELECT" staticList="/Lists/CO_Provider_Status"/>
+    <field name="PARAM_PIN" type="CHAR" labelTextRef="Txt4B6xTL" maxLength="6" displayType="TEXT" displayLength="6">
+        <validators>
+            <validator type="MIN_LENGTH" value="1"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Address1" type="CHAR" labelTextRef="TxtdEYSd" maxLength="255" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Address2" type="CHAR" labelTextRef="Txt9iJrId" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Address3" type="CHAR" labelTextRef="TxtAXCns9" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Approved_By" type="CHAR" labelTextRef="Txt3rWkHP" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="PROVIDER_Approved_Date" type="DATETIME" labelTextRef="Txt2afFyW" maxLength="10" displayType="TEXT" displayLength="10"/>
+    <field name="PROVIDER_CIW_Date" type="CHAR" labelTextRef="TxtAQ2QcI" maxLength="10" displayType="TEXT" displayLength="23"/>
+    <field name="PROVIDER_CIW_Last_Inspection" type="CHAR" labelTextRef="Txt5H2NBw" maxLength="10" displayType="TEXT" displayLength="10"/>
+    <field name="PROVIDER_CIW_Name" type="CHAR" labelTextRef="Txt6NRqDS" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="PROVIDER_CIW_No" type="CHAR" labelTextRef="Txt78wvVR" maxLength="50" displayType="TEXT" displayLength="10"/>
+    <field name="PROVIDER_Capacity" type="INTEGER" labelTextRef="TxtmGOMQ" displayType="TEXT" displayLength="2">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Contact_Address1" type="CHAR" labelTextRef="Txt3Xqo6v" maxLength="255" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Contact_Address2" type="CHAR" labelTextRef="Txt13eSiV" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Contact_Address3" type="CHAR" labelTextRef="Txt6fNkcQ" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Contact_County" type="CHAR" labelTextRef="Txt9D3gYk" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Contact_Postcode" type="CHAR" labelTextRef="Txt88bhvq" maxLength="10" displayType="TEXT" displayLength="10"/>
+    <field name="PROVIDER_Contact_Town" type="CHAR" labelTextRef="Txt5wrDj4" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Contact_UPRN" type="INTEGER" labelTextRef="Txt9bjI0Q" displayType="TEXT" displayLength="30">
+        <validators>
+            <validator type="MAX_DIGITS" value="19"/>
+            <validator type="MAX_LENGTH" value="30"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_County" type="CHAR" labelTextRef="TxtdtveA" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Creditor_Reference" type="CHAR" labelTextRef="Txt2Vgu2E" displayType="TEXT" displayLength="8">
+        <validators>
+            <validator type="MIN_LENGTH" value="8"/>
+            <validator type="MASK" value="NNNNNNNN"/>
+            <validator type="MAX_LENGTH" value="8"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Customer_ID" type="INTEGER" labelTextRef="Txt3FvUcv" displayType="TEXT" displayLength="10">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Date_Last_Updated" type="DATETIME" labelTextRef="Txt2ZSk1g" displayType="TEXT"/>
+    <field name="PROVIDER_Email" type="CHAR" labelTextRef="Txt6avMu1" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Holiday_Ind" type="CHAR" labelTextRef="Txt8XfMxF" maxLength="3" displayType="RADIO" displayLength="1" staticList="/Lists/Static_Lists/Y"/>
+    <field name="PROVIDER_Language" type="CHAR" labelTextRef="TxtWG9qj" maxLength="5" displayType="SELECT" displayLength="10" dynamicList="/Lists/CO_Ethnic_Origin_list">
+        <listMappings display="Ethnic_EN" return="Ethnic_Code"/>
+    </field>
+    <field name="PROVIDER_Last_Updated_By" type="CHAR" labelTextRef="Txt5NjL7O" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="PROVIDER_Manager" type="CHAR" labelTextRef="Txtp59HO" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Manager_Phone" type="CHAR" labelTextRef="TxtZLKvX" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="PROVIDER_Mobile" type="CHAR" labelTextRef="Txt9VNcnp" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="PROVIDER_Phone" type="CHAR" labelTextRef="Txt64ADGG" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="PROVIDER_Postcode" type="CHAR" labelTextRef="Txt7EoHFe" maxLength="10" displayType="TEXT" displayLength="10"/>
+    <field name="PROVIDER_Prov_Approved_Ind" type="CHAR" labelTextRef="Txt1aj6O0" maxLength="20" displayType="SELECT" displayLength="20" staticList="/Lists/CO_Provider_Status"/>
+    <field name="PROVIDER_Provider" type="CHAR" labelTextRef="TxtARqKUb" maxLength="50" displayType="TEXT" displayLength="40"/>
+    <field name="PROVIDER_Provider_ID" type="INTEGER" labelTextRef="TxtAQUXDR" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Session_Days_Fri" type="INTEGER" labelTextRef="Txt7pvpLV" displayType="TEXT" displayLength="6">
+        <validators>
+            <validator type="MAX_DIGITS" value="3"/>
+            <validator type="MAX_LENGTH" value="6"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Session_Days_Mon" type="INTEGER" labelTextRef="Txt8ja824" displayType="TEXT" displayLength="6">
+        <validators>
+            <validator type="MAX_DIGITS" value="3"/>
+            <validator type="MAX_LENGTH" value="6"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Session_Days_Sat" type="INTEGER" labelTextRef="Txt8fulxV" displayType="TEXT" displayLength="6">
+        <validators>
+            <validator type="MAX_DIGITS" value="3"/>
+            <validator type="MAX_LENGTH" value="6"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Session_Days_Sun" type="INTEGER" labelTextRef="TxtLixpU" displayType="TEXT" displayLength="6">
+        <validators>
+            <validator type="MAX_DIGITS" value="3"/>
+            <validator type="MAX_LENGTH" value="6"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Session_Days_Thu" type="INTEGER" labelTextRef="Txt92gfyA" displayType="TEXT" displayLength="6">
+        <validators>
+            <validator type="MAX_DIGITS" value="3"/>
+            <validator type="MAX_LENGTH" value="6"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Session_Days_Tue" type="INTEGER" labelTextRef="Txt1HtxK0" displayType="TEXT" displayLength="6">
+        <validators>
+            <validator type="MAX_DIGITS" value="3"/>
+            <validator type="MAX_LENGTH" value="6"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Session_Days_Wed" type="INTEGER" labelTextRef="TxtYRJZA" displayType="TEXT" displayLength="6">
+        <validators>
+            <validator type="MAX_DIGITS" value="3"/>
+            <validator type="MAX_LENGTH" value="6"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Session_Flexibility" type="CHAR" labelTextRef="Txt8q0nwF" maxLength="500" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Session_Time" type="CHAR" labelTextRef="Txt7KCnsr" maxLength="500" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Town" type="CHAR" labelTextRef="Txt3ZVxlU" maxLength="200" displayType="TEXT" displayLength="60"/>
+    <field name="PROVIDER_Type" type="CHAR" labelTextRef="Txt2mYguf" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="PROVIDER_UPRN" type="INTEGER" labelTextRef="Txt31Udpy" displayType="TEXTAREA" displayLength="40">
+        <validators>
+            <validator type="MAX_DIGITS" value="19"/>
+            <validator type="MAX_LENGTH" value="30"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_WHERE_CLAUSE" type="NUMBER" fractionalDigits="0" labelTextRef="TxtO4erK" displayType="TEXT" displayLength="60">
+        <validators>
+            <validator type="MAX_DIGITS" value="300"/>
+            <validator type="MAX_LENGTH" value="452"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="WHERE_CLAUSE" type="CHAR" labelTextRef="Txt2iG9Lh" displayType="TEXT"/>
+    <field name="WHERE_CLAUSE_PERIOD" type="CHAR" labelTextRef="Txt4lGdDU" displayType="TEXT"/>
+    <field name="WHERE_CLAUSE_STORED" type="CHAR" labelTextRef="Txt8snp6W" displayType="TEXT"/>
+</fields>

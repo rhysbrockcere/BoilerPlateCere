@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Copy" beforePageEvent="/Scripts/Category/copy_Load,/Scripts/Category/clearCopy" pageHeaderTextRef="Txt5hGBvn" pageInfoTextReference="Txt6JMh6g" pageTrailerTextReference="TxtA4yb95" nextPageTextReference="Txt41lPhJ" prevPageTextReference="TxtM06h1">
+    <pageContents>
+        <page ctrl="PagU7SJH" outputType="0" pdfFooterText="LocalTxt1lXWuY" pdfHeaderText="LocalTxt1dvo1H" uid="QRn2dOGZ">
+            <componentPlaceHolder name="AdminMenu" prefix="mnu1_AdminMenu"/>
+            <panel ctrl="PanhqFre" layoutType="FIELD" propertySet="PagePanel" uid="6Sj4Iwla">
+                <panel ctrl="PanxEi2i" layoutType="FIELD" propertySet="Central Box" uid="60TzzuWg" width="50%">
+                    <text ctrl="TexdvZYg" text="LocalTxt5ejKzy" uid="BrMuCTyu"/>
+                    <field buttonText="LocalTxt6y8Pgq" ctrl="FlddEAVw" displayOnly="true" field="Category_ID" uid="PrsvQXfC"/>
+                    <field buttonText="LocalTxt4mRLTJ" ctrl="Fld13T7eu" displayOnly="true" field="Category" uid="E3BVhBks"/>
+                    <spacer ctrl="SpcUCYcl" uid="JCmMnDOq"/>
+                    <field buttonText="LocalTxt4j362X" ctrl="Fld98Zlu" displayOnly="true" field="copy_CurrentServer" uid="DIKh5Dks"/>
+                    <field buttonText="LocalTxt249y1V" ctrl="FldJzjlX" field="copy_TargetServer" immedEvent="/Scripts/Category/copy_GetCategories" immediateValidation="true" modifiers="mandatory, c" uid="77LI54vX"/>
+                    <field buttonText="LocalTxt9cGO07" ctrl="Action_Combo" field="copy_Action" hidden="true" immedEvent="/Scripts/Category/copy_NewCategoryChange" immediateValidation="true" modifiers="mandatory, c" uid="EXxjY0At"/>
+                    <field buttonText="LocalTxt84Yqks" ctrl="TargetCategory_Combo" displayInfoText="true" field="copy_TargetCategory" hidden="true" modifiers="mandatory, c" uid="C2nKpuaJ"/>
+                    <field buttonText="LocalTxt1EJM6M" ctrl="chkSubCat" displayIvAsImage="false" field="copy_IncludeSub" hidden="true" immedEvent="/Scripts/Category/copy_SubCat_Change" immediateValidation="true" modifiers="c" uid="1523ofKG"/>
+                    <panel borderColor="#cccccc" borderRadius="5px 5px 5px 5px" borderStyle="Solid" borderWidth="1px" ctrl="pnlSubCategories" displayOnly="true" hidden="true" uid="2pHwj9z0">
+                        <repeater ctrl="Repzq8FY" field="Sub_Categories" uid="EQrAd0vX">
+                            <repeaterRow ctrl="ReprT1c83" uid="B3U0XypD">
+<gridControl columnWidths="20%,80%" columns="2" ctrl="GrdUzbkU" rows="1" uid="6kny90W6">
+    <gridCell column="1" columnspan="1" ctrl="Grc11l43j" row="1" rowspan="1" uid="LPRMVGk7">
+        <field buttonText="LocalTxt61cBVV" ctrl="Fldb445C" displayLabelText="false" field="Sub_Categories-Sub_Category_ID" uid="LVqBohDs"/>
+    </gridCell>
+    <gridCell column="2" columnspan="1" ctrl="GrcnDBOm" row="1" rowspan="1" uid="CpoLdKx9">
+        <field buttonText="LocalTxtbKp0f" ctrl="Fld88g5e" displayLabelText="false" field="Sub_Categories-Sub_Category" uid="JHkpj9o2"/>
+    </gridCell>
+</gridControl>
+                            </repeaterRow>
+                        </repeater>
+                    </panel>
+                    <spacer ctrl="Spcfe3uh" uid="SMhelO2H"/>
+                    <text ctrl="txtCatWarning" hidden="true" text="LocalTxtAKYZqc" uid="58jMwrTA"/>
+                    <text ctrl="txtSubCatWarning" hidden="true" text="LocalTxtAKYZqc_2" uid="48oX8Y9r"/>
+                    <spacer ctrl="SpcCdUUh" uid="CLhiu6eX"/>
+                    <button buttonText="LocalTxt7StzEy" ctrl="But11JKs3" mouseOverText="LocalTxtRsaVO" onClickEvent="/Scripts/Category/CancelCopy" uid="11mGa0o9"/>
+                    <button buttonText="LocalTxt7StzEy_2" ctrl="But11JKs3_2" mouseOverText="LocalTxtRsaVO_2" newLine="false" onClickEvent="/Scripts/Category/clearCopy" uid="4a3KZTT"/>
+                    <button buttonText="LocalTxt48arxI" ctrl="ButfmKNv" mouseOverText="LocalTxtJxMzL" newLine="false" onClickEvent="/Scripts/GL_Validate,/Scripts/Category/copy_CopyCategory,/Scripts/Category/clearCopy" uid="AeO0gsol"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

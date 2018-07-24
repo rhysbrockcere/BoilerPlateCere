@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Forms/CHILDCARE_ADMIN" id="Create_Claims" dateCreated="2018-04-20T23:44:53.512+01:00">
+        <scriptText>//Check if claims have already been generated
+//create column on Calendar to update a status
+//set WHERE_CLAUSE = 'Period_Start_Date = 
+
+EXEC CO_Insert_Provision_Claim;
+</scriptText>
+    </script>
+</ebase>

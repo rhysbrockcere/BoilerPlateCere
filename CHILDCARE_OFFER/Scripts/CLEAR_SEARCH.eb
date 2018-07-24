@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <script contentType="FPL" preferredComponentPath="/Forms/FS_MAIN_MENU" preferredComponentProject="FS_FLYING_START" id="CLEAR_SEARCH" dateImported="2015-11-03T14:10:28.173Z">
+        <scriptText>//Clear Search Fields
+
+set FOP_CATCHMENT_AREA = '';
+set FOP_FS_ID = '';
+set FOP_FORENAME = '';
+set FOP_SURNAME = '';
+set FOP_START_DOB = '';
+set FOP_END_DOB = '';
+set FOP_GENDER = '';
+set WHERE_CLAUSE = '';
+set FOP_HEALTH_VISITOR = '';
+set HEALTH_VISITOR_USERNAME = '';
+set FOP_SEARCH_ADDRESS_LIST = ''; 
+set FOP_SEARCH_ALL_IND = '';
+set FOP_ANTINATAL = '';
+
+hide SEARCH_CHILD;
+hide SEARCH_CARER;</scriptText>
+    </script>
+</ebase>

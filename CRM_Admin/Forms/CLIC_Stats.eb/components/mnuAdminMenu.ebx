@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<component source="/Menu/AdminMenu" sourceProject="CRM_Admin" version="0" prefix="mnuAdminMenu" page="Page_1">
+    <fields>
+        <field name="FIELD1" type="CHAR" eventField="true" labelTextRef="mnuAdminMenu__Txt6S5U0Q" displayType="TEXT" sourceId="694d58a9-9d3a-4aa2-8171-670a83526297"/>
+    </fields>
+    <texts>
+        <text id="Txt1QqURh"/>
+        <text id="Txt1UUm1H">
+            <languageText language="EN">User Overrides</languageText>
+        </text>
+        <text id="Txt1irbYz"/>
+        <text id="Txt1r2Rtx"/>
+        <text id="Txt2Fs5rX"/>
+        <text id="Txt2GOAqU"/>
+        <text id="Txt2JgaSt"/>
+        <text id="Txt2WFGk4"/>
+        <text id="Txt3eJ8jZ"/>
+        <text id="Txt3vteEu">
+            <languageText language="EN">New Category</languageText>
+        </text>
+        <text id="Txt47mCD4">
+            <languageText language="EN">System Log</languageText>
+        </text>
+        <text id="Txt4890Ht"/>
+        <text id="Txt4BiHVJ"/>
+        <text id="Txt4DMgSt"/>
+        <text id="Txt4axBg2"/>
+        <text id="Txt4f2Ro0"/>
+        <text id="Txt4jS3EM">
+            <languageText language="EN">General</languageText>
+        </text>
+        <text id="Txt4lGzIF"/>
+        <text id="Txt53MvSp"/>
+        <text id="Txt54nw2M"/>
+        <text id="Txt5Te8zp"/>
+        <text id="Txt5idDdj">
+            <languageText language="EN">Categories</languageText>
+        </text>
+        <text id="Txt5wVR3b">
+            <languageText language="EN">Lists</languageText>
+        </text>
+        <text id="Txt6308dk"/>
+        <text id="Txt6FYTu7">
+            <languageText language="EN">Security</languageText>
+        </text>
+        <text id="Txt6S5U0Q">
+            <languageText language="EN">Field1</languageText>
+        </text>
+        <text id="Txt6frPk"/>
+        <text id="Txt6tSfEs"/>
+        <text id="Txt6uHfiR"/>
+        <text id="Txt7ILfdb">
+            <languageText language="EN">Web Forms</languageText>
+        </text>
+        <text id="Txt7QX4Hx">
+            <languageText language="EN">Queue Manager</languageText>
+        </text>
+        <text id="Txt7ZUpAB"/>
+        <text id="Txt7pOpEh"/>
+        <text id="Txt7xLkNV"/>
+        <text id="Txt87joQn"/>
+        <text id="Txt8NwDYg"/>
+        <text id="Txt8lowMa">
+            <languageText language="EN">Statuses</languageText>
+        </text>
+        <text id="Txt92lktL"/>
+        <text id="Txt9MdNfm"/>
+        <text id="Txt9szOac"/>
+        <text id="TxtAPCkEP">
+            <languageText language="EN">Roles</languageText>
+        </text>
+        <text id="TxtAZYJuU">
+            <languageText language="EN">Home</languageText>
+        </text>
+        <text id="TxtAiZ8rw">
+            <languageText language="EN">New Web Form</languageText>
+        </text>
+        <text id="TxtAnNSW7"/>
+        <text id="TxtAox5YO"/>
+        <text id="TxtLLVlg">
+            <languageText language="EN">Statistics</languageText>
+        </text>
+        <text id="TxtRTXkO"/>
+        <text id="Txta8GCI"/>
+        <text id="TxtnPemx"/>
+        <text id="Txtwul7c"/>
+        <text id="TxtyMHni"/>
+    </texts>
+    <component componentPrefix="mnuAdminMenu" contentClass="@T" contentStyle="@T" ctrl="mnuAdminMenu__CmpYNxge" default="C" displayOnly="@T" formPanelWidth="@T" hidden="@T" inheritMsg="true" jSPBottom="@T" jSPLeft="@T" jSPLeftWidth="@T" jSPRight="@T" jSPRightWidth="@T" jSPTop="@T" layoutType="@0" localMsg="@T" msgControls="@T" newLine="@T" outputType="0" pdfFooterMarginTextClass="@T" pdfFooterMarginTextStyle="@T" pdfFooterText="LocalmnuAdminMenu__TxtyMHni" pdfHeaderMarginTextClass="@T" pdfHeaderMarginTextStyle="@T" pdfHeaderText="LocalmnuAdminMenu__Txt53MvSp" pdfOrientation="@T" sourceUid="8BCDzP6y" uid="EIyKufVP">
+        <componentOriginals contentClass="@0" contentStyle="@0" default="T" pdfFooterMarginTextClass="@0" pdfFooterMarginTextStyle="@0" pdfHeaderMarginTextClass="@0" pdfHeaderMarginTextStyle="@0" pdfOrientation="@0"/>
+        <panel componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__PandSxsW" default="C" displayOnly="@T" hidden="@T" inheritMsg="@T" localMsg="@T" msgControls="@T" newLine="@T" sourceUid="BjXuD2EC" uid="JCmguBjx">
+            <componentOriginals backgroundColor="#057fd3" default="T" layoutType="@0"/>
+            <panel componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__PanQNHuv" default="C" displayOnly="@T" hidden="@T" inheritMsg="@T" localMsg="@T" msgControls="@T" newLine="@T" sourceUid="R71UvEAv" uid="50rs25RD">
+                <componentOriginals default="T" layoutType="@0" propertySet="PagePanel"/>
+                <field beforeEvent="/Menu/setCurrentItem" buttonDisplayAsImage="@T" buttonImageUrl="@T" buttonSkipValidation="@T" buttonText="LocalmnuAdminMenu__Txt4BiHVJ" componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__FldyQkhC" default="C" displayIvAsImage="@T" displayOnly="@T" field="mnuAdminMenu__FIELD1" helpButImage="@T" helpPos="@T" helpWindowProperties="@T" hidden="true" hyperlink="@T" immediateValidation="@T" inheritMsg="@T" labelFor="@T" localMsg="@T" mandatory="@T" msgControls="@T" newLine="@T" sourceUid="84TWa309" uid="8BjYIIcW">
+                    <componentOriginals default="T" displayIvAsImage="@0" helpButImage="@0" helpPos="@0" helpWindowProperties="@0"/>
+                </field>
+                <horizontalMenu componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__Menu" default="C" displayOnly="@T" hidden="@T" inheritMsg="@T" localMsg="@T" markParentsAsSelected="@T" msgControls="@T" name="HmenEMUsO1506956373997" newLine="@T" onClickEvent="/Menu/menuHandling" shareable="@T" skipValidation="@T" sourceUid="BIkceZwD" uid="6wRDkok4">
+                    <componentOriginals default="T" markParentsAsSelected="@0" shareable="@0" skipValidation="@0"/>
+                    <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__mnuHome" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt2JgaSt" imageMouseOverText="LocalmnuAdminMenu__Txt4f2Ro0" imageURL="@T" inheritMsg="@T" itemName="CLIC_ADMIN" localMsg="@T" msgControls="@T" name="Mith9cte1506956456121" newLine="@T" sourceUid="Nn2GT1zo" text="LocalmnuAdminMenu__TxtAZYJuU" uid="LrucXbp7">
+                        <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                    </staticMenuItem>
+                    <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__mnuSecurity" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__TxtRTXkO" imageMouseOverText="LocalmnuAdminMenu__Txt6frPk" imageURL="@T" inheritMsg="@T" itemName="SECURITY" localMsg="@T" msgControls="@T" name="Mit38VvZ1506956491050" newLine="@T" sourceUid="6EknK2QD" text="LocalmnuAdminMenu__Txt6FYTu7" uid="J1J9KdQD">
+                        <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__mnuSecurityRoles" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__TxtAox5YO" imageMouseOverText="LocalmnuAdminMenu__Txt4lGzIF" imageURL="@T" inheritMsg="@T" itemName="SECURITY_ROLES" localMsg="@T" msgControls="@T" name="Mite3Vxx1506956525819" newLine="@T" sourceUid="5jijRnlw" text="LocalmnuAdminMenu__TxtAPCkEP" uid="OeHZMl6j">
+                            <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        </staticMenuItem>
+                        <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__MitunHkE" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt4890Ht" imageMouseOverText="LocalmnuAdminMenu__Txt7ZUpAB" imageURL="@T" inheritMsg="@T" itemName="USERS" localMsg="@T" msgControls="@T" name="MitunHkE1516705743767" newLine="@T" sourceUid="2h5ZhIAM" text="LocalmnuAdminMenu__Txt1UUm1H" uid="SMg7FJ4E">
+                            <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        </staticMenuItem>
+                    </staticMenuItem>
+                    <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__mnuCategories" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt2Fs5rX" imageMouseOverText="LocalmnuAdminMenu__Txt2GOAqU" imageURL="@T" inheritMsg="@T" itemName="CATEGORIES" localMsg="@T" msgControls="@T" name="Mit1UXn31506956377878" newLine="@T" sourceUid="HahNDpY8" text="LocalmnuAdminMenu__Txt5idDdj" uid="Hb82JTqT">
+                        <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__mnuNewCategory" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt92lktL" imageMouseOverText="LocalmnuAdminMenu__Txt1r2Rtx" imageURL="@T" inheritMsg="@T" itemName="CATEGORY" localMsg="@T" msgControls="@T" name="MitH5Fwn1506956383758" newLine="@T" sourceUid="ATGxcmnR" text="LocalmnuAdminMenu__Txt3vteEu" uid="6yEPJUNw">
+                            <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        </staticMenuItem>
+                    </staticMenuItem>
+                    <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__mnuWebForms" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt1QqURh" imageMouseOverText="LocalmnuAdminMenu__Txt1irbYz" imageURL="@T" inheritMsg="@T" itemName="WEB_FORMS" localMsg="@T" msgControls="@T" name="MitbZ8aj1506956381230" newLine="@T" sourceUid="HwIDE7AX" text="LocalmnuAdminMenu__Txt7ILfdb" uid="Gtax8lJX">
+                        <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__mnuNewWebForm" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt6tSfEs" imageMouseOverText="LocalmnuAdminMenu__TxtnPemx" imageURL="@T" inheritMsg="@T" itemName="WEB_FORM" localMsg="@T" msgControls="@T" name="Mitr9P7q1506956637319" newLine="@T" sourceUid="oJvZNiO" text="LocalmnuAdminMenu__TxtAiZ8rw" uid="BB9sNvcf">
+                            <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        </staticMenuItem>
+                    </staticMenuItem>
+                    <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__MitHjv0f" default="C" displayOnly="@T" enabled="false" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt4DMgSt" imageMouseOverText="LocalmnuAdminMenu__Txt9MdNfm" imageURL="@T" inheritMsg="@T" itemName="General" localMsg="@T" msgControls="@T" name="MitHjv0f1509535886562" newLine="@T" sourceUid="9cSorxwB" text="LocalmnuAdminMenu__Txt4jS3EM" uid="JGjjoa0y">
+                        <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__MitnI1xz" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt6308dk" imageMouseOverText="LocalmnuAdminMenu__Txt6uHfiR" imageURL="@T" inheritMsg="@T" itemName="ENQUIRY_STATUSES" localMsg="@T" msgControls="@T" name="MitnI1xz1523629568480" newLine="@T" sourceUid="BF3oQsEC" text="LocalmnuAdminMenu__Txt8lowMa" uid="AOTT4FUt">
+                            <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        </staticMenuItem>
+                        <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__MitX64UN" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt3eJ8jZ" imageMouseOverText="LocalmnuAdminMenu__Txt7pOpEh" imageURL="@T" inheritMsg="@T" itemName="CLIC_Lists" localMsg="@T" msgControls="@T" name="MitX64UN1509535909657" newLine="@T" sourceUid="78s8urEZ" text="LocalmnuAdminMenu__Txt5wVR3b" uid="QK5blmcT">
+                            <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        </staticMenuItem>
+                        <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__Mitz8vPn" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt5Te8zp" imageMouseOverText="LocalmnuAdminMenu__Txt54nw2M" imageURL="@T" inheritMsg="@T" itemName="CLIC_Stats" localMsg="@T" msgControls="@T" name="Mitz8vPn1510070087073" newLine="@T" sourceUid="GptK8iXU" text="LocalmnuAdminMenu__TxtLLVlg" uid="AhRFsvZX">
+                            <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        </staticMenuItem>
+                        <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__Mit14Yb39" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt7xLkNV" imageMouseOverText="LocalmnuAdminMenu__TxtAnNSW7" inheritMsg="@T" itemName="QUEUE_MANAGER" localMsg="@T" msgControls="@T" name="Mit14Yb391517496975959" newLine="@T" sourceUid="I8PTj5PK" text="LocalmnuAdminMenu__Txt7QX4Hx" uid="FsX1vAxt">
+                            <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        </staticMenuItem>
+                        <staticMenuItem componentPrefix="mnuAdminMenu" ctrl="mnuAdminMenu__Mit8C9BT" default="C" displayOnly="@T" enabled="@T" hidden="@T" imageAltText="LocalmnuAdminMenu__Txt9szOac" imageMouseOverText="LocalmnuAdminMenu__Txt4axBg2" imageURL="@T" inheritMsg="@T" itemName="CLIC_LOG" localMsg="@T" msgControls="@T" name="Mit8C9BT1520350864678" newLine="@T" sourceUid="NbYbtqLE" text="LocalmnuAdminMenu__Txt47mCD4" uid="JltSP2Wg">
+                            <componentOriginals default="T" enabled="@0" imageURL="@0"/>
+                        </staticMenuItem>
+                    </staticMenuItem>
+                </horizontalMenu>
+            </panel>
+        </panel>
+    </component>
+</component>

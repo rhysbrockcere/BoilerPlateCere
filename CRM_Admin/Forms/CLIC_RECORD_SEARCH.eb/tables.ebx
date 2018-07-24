@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table name="Results">
+        <column name="Action" type="CHAR" labelTextRef="TxtA6VmoC" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Action_Date" type="DATE" labelTextRef="Txt6Io8EI" displayType="TEXT"/>
+        <column name="Agent" type="CHAR" labelTextRef="TxtAFqrs1" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Assigned_To" type="CHAR" labelTextRef="Txt7Xugeo" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Attachment_Name" type="CHAR" labelTextRef="Txt1WUgyF" maxLength="601" displayType="TEXT" displayLength="60"/>
+        <column name="BB_ApprovalStatus" type="CHAR" labelTextRef="Txt7MuF3O" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="BB_BadgeType" type="CHAR" labelTextRef="Txt3rAGL5" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Category" type="CHAR" labelTextRef="Txt8Tkxn7" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="Created_By" type="CHAR" labelTextRef="Txt7NPHPQ" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Date_Completed" type="DATE" labelTextRef="Txt92dQKj" displayType="TEXT"/>
+        <column name="Date_Created" type="DATE" labelTextRef="TxtAbHCT7" displayType="TEXT"/>
+        <column name="Description" type="CHAR" labelTextRef="Txt3b83Z4" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Details" type="CHAR" labelTextRef="Txt7DWz3a" maxLength="1073741823" displayType="TEXT" displayLength="60"/>
+        <column name="DocumentType" type="INTEGER" labelTextRef="Txt7OQrua" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="DueDate" type="DATE" labelTextRef="Txt3e1ldC" displayType="TEXT"/>
+        <column name="Email" type="CHAR" labelTextRef="Txt53g3bm" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Enquiry_Details" type="CHAR" labelTextRef="TxtA0jklN" maxLength="1073741823" displayType="TEXT" displayLength="60"/>
+        <column name="Enquiry_ID" type="INTEGER" labelTextRef="Txt9diz9p" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Expr1" type="CHAR" labelTextRef="TxtAk3k4n" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="FileName" type="CHAR" labelTextRef="Txt4qXvIi" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="FilePath" type="CHAR" labelTextRef="Txt5awK3d" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="FileType" type="CHAR" labelTextRef="Txt49WSOF" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Firstname" type="CHAR" labelTextRef="TxtAhoJF4" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Location" type="CHAR" labelTextRef="Txt2glXjh" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Priority" type="INTEGER" labelTextRef="Txt8BgRrL" displayType="TEXT" displayLength="17">
+            <validators>
+                <validator type="MAX_DIGITS" value="10"/>
+                <validator type="MAX_LENGTH" value="17"/>
+                <validator type="DEC_DIG"/>
+            </validators>
+        </column>
+        <column name="Reference" type="CHAR" labelTextRef="Txt4AtLqm" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="Resolution_Notes" type="CHAR" labelTextRef="Txt1sfPLz" maxLength="1073741823" displayType="TEXT" displayLength="60"/>
+        <column name="Resolution_Status" type="CHAR" labelTextRef="Txt9IE1bO" maxLength="50" displayType="TEXT" displayLength="50"/>
+        <column name="state" type="CHAR" labelTextRef="Txt4libZ6" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Status" type="CHAR" labelTextRef="Txt4hnyfp" maxLength="1" displayType="TEXT" displayLength="1"/>
+        <column name="Sub_Category" type="CHAR" labelTextRef="Txt1o3YgP" maxLength="200" displayType="TEXT" displayLength="60"/>
+        <column name="Subject" type="CHAR" labelTextRef="Txt9YgcCD" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Surname" type="CHAR" labelTextRef="Txt5b7cy7" maxLength="500" displayType="TEXT" displayLength="60"/>
+        <column name="Team_email" type="CHAR" labelTextRef="TxtA91dCg" maxLength="100" displayType="TEXT" displayLength="60"/>
+        <column name="Title" type="CHAR" labelTextRef="Txt38aasf" maxLength="10" displayType="TEXT" displayLength="10"/>
+        <column name="Type" type="CHAR" labelTextRef="Txt7SuQyY" maxLength="100" displayType="TEXT" displayLength="60"/>
+    </table>
+</tables>

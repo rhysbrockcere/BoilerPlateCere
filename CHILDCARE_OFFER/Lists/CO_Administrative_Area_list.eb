@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dynamicList database="CHILDCARE_OFFER" id="CO_Administrative_Area_list" dateCreated="2018-04-24T10:23:38.577+01:00">
+        <columns>Area_ID, Administrative_Area,Administrative_Area AS Administrative_Area_FOP</columns>
+        <from>Childcare_Offer.dbo.CO_Administrative_Area</from>
+        <where>Active_Ind='Y'</where>
+        <fields>
+            <field id="Administrative_Area" input="false"/>
+            <field id="Area_ID" type="CHAR" input="false"/>
+            <field id="Administrative_Area_FOP" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

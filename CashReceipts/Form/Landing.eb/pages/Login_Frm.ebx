@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Login_Frm" nextPage="Income_Claim_Frm" pageHeaderTextRef="Txtb5hNn" pageInfoTextReference="TxtATim5m" pageTrailerTextReference="TxtAIa16O" nextPageTextReference="TxtcHzl1" prevPageTextReference="Txt6YFn2P">
+    <pageContents>
+        <page ctrl="PagHtsFc" jSPBottom="NULL" jSPTop="NULL" outputType="0" pdfFooterText="LocalTxt7wylQe" pdfHeaderText="LocalTxt9LXiRM" uid="HsCpO6Fr">
+            <panel ctrl="PanUOp74" propertySet="Central Box" style="border:none;text-align:center;" uid="LWAKDy1O" width="500px">
+                <image alternativeText="LocalTxt8svkSh" ctrl="ImgAu4uD" imageURL="$ws/Web_Resources/Images/crest_ceredigion.jpg" mouseOverText="LocalTxt3MSJ6Y" newLine="true" uid="AAwcRH0P"/>
+            </panel>
+            <panel ctrl="pnlSearch" layoutType="FIELD" propertySet="Central Box" uid="IifaeX0c" width="500px">
+                <text ctrl="Texk8q9P" text="LocalTxt58V0jb" uid="6gZM94eE"/>
+                <field buttonText="LocalTxt4VZ4jI" ctrl="FldxPfBN" field="Username" uid="5TYcoM9r"/>
+                <panel ctrl="PanoxVd6" propertySet="Button_Panel" uid="DgAM0tWP">
+                    <button buttonText="LocalTxtAs0s0X" ctrl="ButTin9H" mouseOverText="LocalTxtzHXT9" onClickEvent="/LogonService/GL_Login_Continue" uid="QW0Pu4TU"/>
+                </panel>
+            </panel>
+        </page>
+    </pageContents>
+</page>

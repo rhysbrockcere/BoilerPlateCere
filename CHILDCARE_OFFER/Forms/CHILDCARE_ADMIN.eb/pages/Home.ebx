@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="Home" nextPage="Landing" pageHeaderTextRef="Txt67bWc6" pageInfoTextReference="TxtAgkPAI" pageTrailerTextReference="TxtAR6CU9" nextPageTextReference="Txt3uhK7L" prevPageTextReference="Txt6bYdrI">
+    <pageContents>
+        <page ctrl="PagFw2pq" outputType="0" pdfFooterText="LocalTxt3Ja5xn" pdfHeaderText="LocalTxt3a4755" uid="KbMewmEK">
+            <groupPanel ctrl="Gpan5dBCh" groupHeaderText="LocalTxt3M12Y6" groupInfoText="LocalTxt6T7cHp" groupTrailerText="LocalTxtdW78F" uid="KXIVssGJ">
+                <hyperlink ctrl="LnkWKCVy" onClickEvent="/Scripts/Goto_Page_Landing" text="LocalTxt1gHpT4" title="LocalTxt6KCwO6" uid="JuDb6ck2"/>
+                <panel ctrl="PannuJ25" uid="BtMx9jgx">
+                    <gridControl columnWidths="41.68%,16.65%,41.68%" columns="3" ctrl="Grd122eF3" rows="2" uid="DYW1DbAe">
+                        <gridCell column="1" columnspan="1" ctrl="GrcM3Dj4" layoutType="FIELD" row="1" rowspan="1" uid="NaOfxgQI">
+                            <text ctrl="Tex12emuf" text="LocalTxt20UY9X" uid="8sZG4zBy"/>
+                            <html ctrl="HtmnY3k2" default="L" htmlText="LocalTxt23z0A" uid="M1YMyzmS"/>
+                            <field buttonText="LocalTxtO8W41" ctrl="FldAQmX9" field="FOP_CARER_SEARCH" propertySet="Chosen-Large" uid="JAq6vEGo"/>
+                            <field buttonText="LocalTxt6mcg1q" ctrl="FldVURiQ" field="FOP_CHILD_SEARCH" propertySet="Chosen-Large" uid="KqB0xVZZ"/>
+                            <field buttonText="LocalTxt75HdMe" ctrl="FldyWZpo" field="FOP_ENQUIRY_SEARCH" uid="7z0EJpTj"/>
+                            <field buttonText="LocalTxt1PguGz" ctrl="Fldkaz2X" field="FOP_STATUS_LIST" immedEvent="/Scripts/SEARCH_APPLICATIONS" propertySet="Chosen-Medium" uid="2pC2LVtQ"/>
+                        </gridCell>
+                        <gridCell column="2" columnspan="1" ctrl="GrcA83jX" row="1" rowspan="1" uid="9IJYmsrm"/>
+                        <gridCell column="3" columnspan="1" ctrl="GrcZpUdF" layoutType="FIELD" row="1" rowspan="1" uid="JoFBQi1i">
+                            <text ctrl="Tex12emuf_2" text="LocalTxt20UY9X_2" uid="BFxBydil"/>
+                            <html ctrl="HtmnY3k2_2" default="L" htmlText="LocalTxt23z0A_2" uid="LgPmLo2x"/>
+                            <field buttonText="LocalTxt582Ttx" ctrl="Fld7jUK7" field="FOP_PROVIDER_SEARCH" propertySet="Chosen-Medium" uid="O8e8DdkM"/>
+                            <hyperlink ctrl="Lnk4wVrA" hidden="true" onClickEvent="/Scripts/GOTO_PAGE_PROVIDER" text="LocalTxt1pn0rO" title="LocalTxt6GElB2" uid="5LUZaXY9"/>
+                            <field buttonText="LocalTxt1PguGz_2" ctrl="Fldkaz2X_2" field="FOP_STATUS_LIST" immedEvent="/Scripts/SEARCH_APPLICATIONS" propertySet="Chosen-Medium" uid="4PnGB3fM"/>
+                        </gridCell>
+                        <gridCell column="1" columnspan="1" ctrl="GrcWhsqB" layoutType="HORIZONTAL_BOX" row="2" rowspan="1" uid="SGMLKGfD">
+                            <button buttonText="LocalTxt5ZRmyk" ctrl="ButSearchApplication" mouseOverText="LocalTxt62xBPO" onClickEvent="/Scripts/SEARCH_APPLICATIONS" uid="ROHddxDU"/>
+                            <html ctrl="HtmqFPP" default="L" htmlText="LocalTxt9Yg6tg" uid="1k5sNy5s"/>
+                            <button buttonText="LocalTxt7vs5JO" ctrl="ButRestSearch1" mouseOverText="LocalTxt4yeKFC" onClickEvent="/Scripts/Reset_Search" uid="JCLK8pHo"/>
+                        </gridCell>
+                        <gridCell column="2" columnspan="1" ctrl="Grc7jDPT" row="2" rowspan="1" uid="JQafxfEs"/>
+                        <gridCell column="3" columnspan="1" ctrl="GrcA1Wnn" layoutType="HORIZONTAL_BOX" row="2" rowspan="1" uid="OAOzfWBJ">
+                            <button buttonText="LocalTxt1rFUCI" ctrl="ButSearchProvider" mouseOverText="LocalTxt5Nh1be" onClickEvent="/Scripts/SEARCH_PROVIDERS" uid="KrzfsMuw"/>
+                            <html ctrl="HtmqFPP_2" default="L" htmlText="LocalTxt9Yg6tg_2" uid="MCbVbLQV"/>
+                            <button buttonText="LocalTxt7vs5JO_2" ctrl="ButRestSearch2" mouseOverText="LocalTxt4yeKFC_2" onClickEvent="/Scripts/Reset_Search" uid="6AP0mv4u"/>
+                        </gridCell>
+                    </gridControl>
+                </panel>
+                <panel ctrl="PanH8nGf" uid="EBIFDulv">
+                    <fieldTable ctrl="tblApplications" displayOnly="true" field="App_TBL" hidden="true" numVisibleRows="40" tableHeaderText="LocalTxt4EAKsp" tableInfoText="LocalTxt3reX5c" tableTrailerText="LocalTxt7SvlOO" uid="9ghollIm">
+                        <tablePage ctrl="Tpgs62VC" default="L" uid="RYJIg45Q">
+                            <fieldColumn buttonText="LocalTxt4JEuiv" ctrl="Col9PIIG" displayOnly="true" field="App_TBL-Enquiry_ID" hyperlink="true" immediateValidation="true" sortable="true" uid="1rnWQoGg" width="8%"/>
+                            <fieldColumn buttonText="LocalTxt3DAaxD" ctrl="ColR3tcb" displayOnly="true" field="App_TBL-Application_date" hyperlink="true" immedEvent="/Scripts/GOTO_PAGE_APPLICATION" immediateValidation="true" sortable="true" uid="LNFR5pCT" width="8%"/>
+                            <fieldColumn buttonText="LocalTxt7ZGlI5" ctrl="ColarOv3" field="App_TBL-Child_Forename" sortable="true" uid="Gxs0JhM4" width="8%"/>
+                            <fieldColumn buttonText="LocalTxt8VlrKB" ctrl="ColVDS8e" field="App_TBL-Child_Middlename" uid="PWiTv8lY" width="8%"/>
+                            <fieldColumn buttonText="LocalTxt1mszet" ctrl="Col4GqTG" field="App_TBL-Child_Surname" sortable="true" uid="LHgYSWV9" width="8%"/>
+                            <fieldColumn buttonText="LocalTxt1W8lLW" ctrl="ColC1NUX" field="App_TBL-Customer_Forenames" uid="2iw6IkSe" width="8%"/>
+                            <fieldColumn buttonText="LocalTxt7k6aKl" ctrl="ColTyO09" field="App_TBL-Customer_Surname" sortable="true" uid="BmfbWHoS" width="8%"/>
+                            <fieldColumn buttonText="LocalTxt5LjeVu" ctrl="ColUx2O8" field="App_TBL-Notes" uid="JgtkgwOj" width="8%"/>
+                            <fieldColumn buttonText="LocalTxtAh1SQT" ctrl="ColMxSku" field="App_TBL-Start_Date" sortable="true" uid="BpF49ZyY" width="8%"/>
+                            <fieldColumn buttonText="LocalTxt5gf5ZQ" ctrl="ColrfzQd" field="App_TBL-Status" sortable="true" uid="9Z4SGzv4" width="8%"/>
+                        </tablePage>
+                    </fieldTable>
+                </panel>
+                <fieldTable ctrl="tblProviders" displayOnly="true" field="PROVIDER_TBL" hidden="true" numVisibleRows="30" tableHeaderText="LocalTxt3SZbYL" tableInfoText="LocalTxt7SfLux" tableTrailerText="LocalTxt96PGEq" uid="3kf9cgyf">
+                    <tablePage ctrl="TpgYD1ys" default="L" uid="RCk0Es3f">
+                        <fieldColumn buttonText="LocalTxt4OFzkO" ctrl="ColBVufv" field="PROVIDER_TBL-Customer_ID" uid="BdgQ0jnN" width="16%"/>
+                        <fieldColumn buttonText="LocalTxt2dUUg2" ctrl="Col3DNTs" displayOnly="true" field="PROVIDER_TBL-Provider" hyperlink="true" immedEvent="/Scripts/GOTO_PAGE_PROVIDER_FROM_TBL" immediateValidation="true" uid="Jrr6ZbQC" width="16%"/>
+                        <fieldColumn buttonText="LocalTxt7SUpGa" ctrl="Colncib7" field="PROVIDER_TBL-CIW_No" uid="3gYUG2tA" width="17%"/>
+                        <fieldColumn buttonText="LocalTxt6qWSqM" ctrl="Colx5GkJ" field="PROVIDER_TBL-Prov_Approved_Ind" uid="OLl2acCu" width="16%"/>
+                        <fieldColumn buttonText="LocalTxt1qyriy" ctrl="ColrL4cu" field="PROVIDER_TBL-Approved_By" uid="OTYZZdQy" width="16%"/>
+                        <fieldColumn buttonText="LocalTxt2pwT3F" ctrl="Col5odNG" field="PROVIDER_TBL-Approved_Date" uid="G9t9eN8v" width="16%"/>
+                    </tablePage>
+                </fieldTable>
+            </groupPanel>
+        </page>
+    </pageContents>
+</page>

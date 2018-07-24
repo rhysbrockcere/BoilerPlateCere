@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="CLAIM_Application_ID" type="INTEGER" labelTextRef="TxtaKzD" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Booked_Hours" type="NUMBER" labelTextRef="Txt8i0TJp" displayType="TEXT" displayLength="29">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Claim_ID" type="INTEGER" labelTextRef="Txt3ppKwp" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Confirmed_By" type="CHAR" labelTextRef="Txt6llNd" maxLength="100" displayType="TEXT" displayLength="60"/>
+    <field name="CLAIM_Confirmed_Date" type="DATETIME" labelTextRef="Txt7vDIEp" displayType="TEXT"/>
+    <field name="CLAIM_Created_Date" type="DATETIME" labelTextRef="Txt1Ej66c" displayType="TEXT"/>
+    <field name="CLAIM_Days_Per_Week" type="NUMBER" labelTextRef="TxtAtukha" displayType="TEXT" displayLength="29">
+        <validators>
+            <validator type="MAX_DIGITS" value="18"/>
+            <validator type="MAX_LENGTH" value="29"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_FP_Nursery_Ind" type="INTEGER" labelTextRef="TxtdNkXf" displayType="TEXT" displayLength="3">
+        <validators>
+            <validator type="MAX_DIGITS" value="1"/>
+            <validator type="MAX_LENGTH" value="3"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Language_Provided" type="CHAR" labelTextRef="Txt1LSsUA" maxLength="10" displayType="TEXT" displayLength="10"/>
+    <field name="CLAIM_Period_ID" type="INTEGER" labelTextRef="Txt5YA2Zx" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Period_Start_Date" type="DATETIME" labelTextRef="Txt6317Q5" displayType="TEXT"/>
+    <field name="CLAIM_Provider_ID" type="INTEGER" labelTextRef="Txt1yHlL9" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Provision_End_Date" type="DATETIME" labelTextRef="TxtoYNC2" displayType="TEXT"/>
+    <field name="CLAIM_Provision_ID" type="INTEGER" labelTextRef="Txt3FHHvJ" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="CLAIM_Provision_Start_Date" type="DATETIME" labelTextRef="Txt9KH8RJ" displayType="TEXT"/>
+    <field name="CLAIM_Status" type="CHAR" labelTextRef="TxtAr0MIh" maxLength="20" displayType="TEXT" displayLength="20"/>
+    <field name="Current_Month" type="INTEGER" labelTextRef="Txt6HqyhM" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="Current_Period_End_Date" type="DATE" labelTextRef="Txt2CEbW1" displayType="TEXT"/>
+    <field name="Current_Period_Start_Date" type="DATE" labelTextRef="Txt8JHJhs" displayType="TEXT"/>
+    <field name="Current_Year_End_Date" type="DATETIME" labelTextRef="Txt4w8YgS" displayType="TEXT"/>
+    <field name="Current_Year_Start_Date" type="DATETIME" labelTextRef="Txt4YMPTp" displayType="TEXT"/>
+    <field name="ERROR_IND" type="CHAR" labelTextRef="Txt9MGMeV" displayType="TEXT"/>
+    <field name="Email" type="CHAR" labelTextRef="Txt9vMk6V" maxLength="default" displayType="TEXT">
+        <validators>
+            <validator type="EMAIL"/>
+        </validators>
+    </field>
+    <field name="FOP_PERIOD_LIST" type="DATE" labelTextRef="TxtHn0EM" displayType="SELECT" dynamicList="/Lists/CO_Period_list">
+        <listMappings display="Period_Start_Date">
+            <additional field="WHERE_CLAUSE_PERIOD" listField="WHERE_CLAUSE_PERIOD"/>
+        </listMappings>
+    </field>
+    <field name="FOP_WC_Date1" type="DATE" labelTextRef="Txt8Nv4Um" displayType="TEXT"/>
+    <field name="FOP_WC_Date2" type="DATE" labelTextRef="Txt8Nv4Um_2" displayType="TEXT"/>
+    <field name="FOP_WC_Date3" type="DATE" labelTextRef="Txt8Nv4Um_4" displayType="TEXT"/>
+    <field name="FOP_WC_Date4" type="DATE" labelTextRef="Txt8Nv4Um_5" displayType="TEXT"/>
+    <field name="FOP_WC_Date5" type="DATE" labelTextRef="Txt8Nv4Um_3" displayType="TEXT"/>
+    <field name="FOP_Week_Commencing" type="CHAR" labelTextRef="TxtemoHu" displayType="SELECT" dynamicList="/Lists/CO_Period_Week_Commencing" listBuildOption="never">
+        <listMappings display="Period_Start_Date">
+            <additional field="WHERE_CLAUSE_PERIOD" listField="WHERE_CLAUSE_PERIOD"/>
+        </listMappings>
+    </field>
+    <field name="PARAM_CREDITOR_REF" type="CHAR" defaultValue="00000000" parameter="true" labelTextRef="Txt4SqD0G" maxLength="8" displayType="TEXT" displayLength="8">
+        <validators>
+            <validator type="MIN_LENGTH" value="8"/>
+        </validators>
+    </field>
+    <field name="PARAM_EMAIL" type="CHAR" defaultValue="petere@ceredigion.gov.uk" parameter="true" labelTextRef="Txt1ew3Lw" maxLength="default" displayType="TEXT" displayLength="40">
+        <validators>
+            <validator type="EMAIL"/>
+        </validators>
+    </field>
+    <field name="PARAM_PIN" type="CHAR" defaultValue="111111" parameter="true" labelTextRef="Txt2vSmkE" maxLength="6" displayType="TEXT" displayLength="6">
+        <validators>
+            <validator type="MIN_LENGTH" value="6"/>
+        </validators>
+    </field>
+    <field name="PROVIDER_Provider_ID" type="CHAR" labelTextRef="TxtAsQcjm" displayType="TEXT"/>
+    <field name="Provider" type="CHAR" labelTextRef="Txt73Stw5" maxLength="50" displayType="TEXT" displayLength="50"/>
+    <field name="WHERE_CLAUSE" type="CHAR" labelTextRef="Txtf0xdF" displayType="TEXT"/>
+    <field name="WHERE_CLAUSE_PERIOD" type="CHAR" labelTextRef="Txt7typKb" displayType="TEXT"/>
+</fields>

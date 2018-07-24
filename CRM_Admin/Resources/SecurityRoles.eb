@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="SecurityRoles" dateCreated="2017-02-07T11:46:03.055Z">
+        <columns>*</columns>
+        <from>sys_Security_Roles</from>
+        <fields>
+            <field id="Description" type="VARCHAR" length="500"/>
+            <field id="Name" type="VARCHAR" length="50"/>
+            <field id="Role_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+        </fields>
+    </dbResource>
+</ebase>

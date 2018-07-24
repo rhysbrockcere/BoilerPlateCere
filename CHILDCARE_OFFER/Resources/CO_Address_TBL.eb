@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource database="CHILDCARE_OFFER" preparedStatement="false" id="CO_Address_TBL" dateCreated="2018-04-16T23:41:07.287+01:00">
+        <columns>*</columns>
+        <from>Childcare_Offer_TEST.dbo.CO_Address</from>
+        <where>&amp;&amp;WHERE_CLAUSE</where>
+        <fields>
+            <field id="Address_ID" type="INTEGER" length="10" required="true" key="true" readOnly="true"/>
+            <field id="Area" type="VARCHAR" length="40"/>
+            <field id="County" type="VARCHAR" length="40"/>
+            <field id="HouseNameNumber" type="VARCHAR" length="40"/>
+            <field id="Postcode" length="8"/>
+            <field id="Street" type="VARCHAR" length="40"/>
+            <field id="Town" type="VARCHAR" length="40"/>
+            <field id="UPRN" type="BIGINT" length="19"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
+        </fields>
+    </dbResource>
+</ebase>
