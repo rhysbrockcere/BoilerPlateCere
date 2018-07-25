@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Abbreveation" type="CHAR" labelTextRef="Txt5YgDNp" maxLength="64" displayType="TEXT" displayLength="60"/>
+    <field name="Deleted" type="BOOLEAN" labelTextRef="TxtAjEV2D" displayType="CHECKBOX"/>
+    <field name="Deleted_By" type="CHAR" labelTextRef="Txt7xyVhD" maxLength="255" displayType="TEXT" displayLength="60"/>
+    <field name="Deleted_Date" type="CHAR" labelTextRef="TxtAVqlbT" maxLength="27" displayType="TEXT" displayLength="27"/>
+    <field name="LastModified_Date" type="CHAR" labelTextRef="Txt4yMNkH" maxLength="27" displayType="TEXT" displayLength="27"/>
+    <field name="Last_Modified_By" type="CHAR" labelTextRef="Txt9Zizcg" maxLength="255" displayType="TEXT" displayLength="60"/>
+    <field name="Username" type="CHAR" labelTextRef="Txt8xTvPm" displayType="TEXT"/>
+    <field name="VAT_Code_Business_ID" type="INTEGER" labelTextRef="Txt2Av3eH" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="VAT_Code_ID" type="INTEGER" labelTextRef="TxtPZG4N" displayType="TEXT" displayLength="17">
+        <validators>
+            <validator type="MAX_DIGITS" value="10"/>
+            <validator type="MAX_LENGTH" value="17"/>
+            <validator type="DEC_DIG"/>
+        </validators>
+    </field>
+    <field name="VAT_Code_Name" type="CHAR" labelTextRef="Txt7IlKhl" maxLength="64" displayType="SELECT" displayLength="60" dynamicList="/List/Dynamic/Vat">
+        <listMappings display="VAT_Code_Name" return="VAT_Code_ID"/>
+    </field>
+</fields>

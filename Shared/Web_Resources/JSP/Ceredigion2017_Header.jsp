@@ -8,8 +8,8 @@
     <div class="content">
     	<table cellpadding="0" cellspacing="0" style="width:100%">
         	<colgroup>
-            	<col style="width: 20%;">
-              	<col style="width: 70%;">
+            	<col style="width: 10%;">
+              	<col style="width: 80%;">
               	<col style="width: 10%;">
          	</colgroup>
             	<tr style="height:1px">

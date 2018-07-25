@@ -87,7 +87,7 @@ function crmGetEnquiryLink(EnquiryID) {
 //function crmCheckDBVersion() {
 	//Current forms version
 	var version = {};
-	version.forms = 1.82;
+	version.forms = 1.83;
 	version.database = 0.0;
 	version.update = false;
 	system.variables.$USERVAR2.value = 'v.' + version.forms;

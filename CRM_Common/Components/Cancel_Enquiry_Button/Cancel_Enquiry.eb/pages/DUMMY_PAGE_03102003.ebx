@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="Txt5RVOq7" pageInfoTextReference="TxtZT3kc" pageTrailerTextReference="Txt9LVMyQ" nextPageTextReference="Txt2bxAT3" prevPageTextReference="Txt5ulwhE">
+    <pageContents>
+        <component ctrl="CmpqPfKN" inheritMsg="true" outputType="0" pdfFooterText="LocalTxtoWNKF" pdfHeaderText="LocalTxt1GnhbA" uid="OsYw1Ssz">
+            <button buttonText="LocalTxt7FghsM_2" ctrl="cmd_Cancel" mouseOverText="LocalTxtAT58ux_2" onClickEvent="/Components/Cancel_Enquiry_Button/CancelEnquiry" uid="KmQwIDvh"/>
+        </component>
+    </pageContents>
+</page>

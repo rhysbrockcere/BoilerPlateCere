@@ -1199,25 +1199,25 @@
                 <warningMessageStyle backgroundColor="@0" textColor="@0" textFont="@0"/>
             </message>
             <field ctrl="Address" default="L" displayInfoText="false" editorCellClass="fieldText" editorCellStyle="width:100%;" editorStyle="width:70%;" fieldStyle="width:100%;" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="address">
-                <editorHtmlElementProperties htmlEventHandlers="onchange;/* Address format - alphabetic plus hyphen, apostrophe, full stop and space */&#xA;var regex = /^[A-Za-z0-9\-\., ]*$/m;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+                <editorHtmlElementProperties htmlEventHandlers="onchange;var regex = /^[A-Za-z0-9\-\.,'&amp; ]*$/m;&#xA;$(this).val($.trim($(this).val()));&#xA;&#xA;&#xA;testInput(this, regex);"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
             </field>
             <field ctrl="Bank_AccountNo" default="L" displayInfoText="false" editorCellClass="fieldText" editorCellStyle="width:100%;" editorStyle="width:70%;" fieldStyle="width:100%;" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="bank_account_no">
-                <editorHtmlElementProperties htmlEventHandlers="onchange;/* Bank Account No */&#xA;&#xA;var regex = /^(\d){7,8}$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+                <editorHtmlElementProperties htmlEventHandlers="onchange;var regex = /^(\d){7,8}$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
             </field>
             <field ctrl="Bank_SortCode" default="L" displayInfoText="false" editorCellClass="fieldText" editorCellStyle="width:100%;" editorStyle="width:70%;" fieldStyle="width:100%;" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="sort">
-                <editorHtmlElementProperties htmlEventHandlers="onchange;/* Bank Account Sort Code */&#xA;&#xA;var regex = /^(\d){7,8}$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+                <editorHtmlElementProperties htmlEventHandlers="onchange;var regex = /^(\d){7,8}$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
             </field>
             <field ctrl="CTAX Ref" default="L" displayInfoText="false" editorCellClass="fieldText" editorClass="highlightField" editorStyle="vertical-align:middle;width:100%" errorMsgClass="errorMessage" fieldStyle="width:100%" gapAfterEditor="0.4px" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="CTAX" patternTextStyle="margin-left:0.2em;" vAlign="Center" warningMsgClass="warningMessage">
-                <editorHtmlElementProperties htmlEventHandlers="onchange;/* CTAX format */&#xA;var regex = /^(7){1}([0-9]){7}([0-9]|x){1}?$/i;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+                <editorHtmlElementProperties htmlEventHandlers="onchange;var regex = /^(7){1}([0-9]){7}([0-9]|x){1}?$/i;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                     <popupWindowProperties resizable="true"/>
@@ -1229,13 +1229,13 @@
                 </infoProperties>
             </field>
             <field ctrl="Currency" default="L" displayInfoText="false" editorCellStyle="width:100%;" fieldStyle="width:100%;" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="currency">
-                <editorHtmlElementProperties classLocator="currency" htmlEventHandlers="onchange;/* Currency number format */&#xA;var regex = /^[0-9,]*(.[0-9]{2})?$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);&#xA;" jQueryEventHandlers="$;ready;currency();"/>
+                <editorHtmlElementProperties classLocator="currency" htmlEventHandlers="onchange;var regex = /^[0-9,]*(.[0-9]{2})?$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);&#xA;" jQueryEventHandlers="$;ready;currency();"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
             </field>
             <field ctrl="Date" default="L" displayInfoText="false" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" helpStyle="background-repeat:no-repeat;" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="date">
-                <editorHtmlElementProperties classLocator="datepicker" customAttributes="placeholder=&quot;dd/mm/yyyy&quot;" jQueryEventHandlers="$;change;/* Date format */&#xA;var regex = /^\d{2}\/\d{2}\/\d{4}$/;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+                <editorHtmlElementProperties classLocator="datepicker" customAttributes="placeholder=&quot;dd/mm/yyyy&quot;" jQueryEventHandlers="$;change;var regex = /^\d{2}\/\d{2}\/\d{4}$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
@@ -1253,7 +1253,7 @@
                 </infoProperties>
             </field>
             <field ctrl="Email" default="L" displayInfoText="false" editorCellClass="fieldText" editorCellStyle="width:100%;" fieldStyle="width:100%" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="help-box" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="email">
-                <editorHtmlElementProperties customAttributes="type=&quot;email&quot;" htmlEventHandlers="onchange;/* Email address format */&#xA;var regex = /^(([^&lt;&gt;()[\]\\.,;:\s@\&quot;]+(\.[^&lt;&gt;()[\]\\.,;:\s@\&quot;]+)*)|(\&quot;.+\&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);&#xA;"/>
+                <editorHtmlElementProperties customAttributes="type=&quot;email&quot;" htmlEventHandlers="onchange;var regex = /^(([^&lt;&gt;()[\]\\.,;:\s@\&quot;]+(\.[^&lt;&gt;()[\]\\.,;:\s@\&quot;]+)*)|(\&quot;.+\&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);&#xA;"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
@@ -1271,38 +1271,38 @@
                 <warningMessageStyle backgroundColor="@0" textColor="@0"/>
             </field>
             <field ctrl="Integer" default="L" displayInfoText="false" editorStyle="/* width:70%; */" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="integer">
-                <editorHtmlElementProperties classLocator="spinner" customAttributes="type=&quot;number&quot;,  step=&quot;1&quot;" htmlEventHandlers="onchange;/* Integer number format */&#xA;var regex = /^[0-9]*$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);&#xA;" jQueryEventHandlers="$;ready;spinner();"/>
+                <editorHtmlElementProperties classLocator="spinner" customAttributes="type=&quot;number&quot;,  step=&quot;1&quot;" htmlEventHandlers="onchange;var regex = /^[0-9]*$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);&#xA;" jQueryEventHandlers="$;ready;spinner();"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
             </field>
             <field ctrl="Name" default="L" displayInfoText="false" editorCellClass="fieldText" editorStyle="width:70%;" fieldStyle="width:100%;" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="name">
-                <editorHtmlElementProperties htmlEventHandlers="onchange;/* Name format - alphabetic plus hyphen, apostrophe, full stop and space */&#xA;var regex = /^[A-Za-z\-'\.\s]*$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+                <editorHtmlElementProperties htmlEventHandlers="onchange;var regex = /^[A-Za-z\-'\.\s]*$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);"/>
                 <infoProperties textFont=" ">
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
             </field>
             <field ctrl="National Insurance Number" default="L" displayInfoText="false" editorCellClass="fieldText" editorClass="highlightField" editorStyle="vertical-align:middle;width:100%" errorMsgClass="errorMessage" fieldStyle="width:100%" gapAfterEditor="0.4px" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="ni" patternTextStyle="margin-left:0.2em;" vAlign="Center" warningMsgClass="warningMessage">
-                <editorHtmlElementProperties htmlEventHandlers="onchange;/* NI format */&#xA;var regex = /^([A-CEGHJ-PR-TW-Z]){1}([A-CEGHJ-NPR-TW-Z]){1}([0-9]){2}([0-9]){2}([0-9]){2}([A-D ]){1}?$/i;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+                <editorHtmlElementProperties htmlEventHandlers="onchange;var regex = /^([A-CEGHJ-PR-TW-Z]){1}([A-CEGHJ-NPR-TW-Z]){1}([0-9]){2}([0-9]){2}([0-9]){2}([A-D ]){1}?$/i;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                     <popupWindowProperties resizable="true"/>
                 </infoProperties>
             </field>
             <field ctrl="Numeric" default="L" displayInfoText="false" editorCellStyle="width:100%;" fieldStyle="width:100%;" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="numeric">
-                <editorHtmlElementProperties htmlEventHandlers="onchange;/* Numeric number format */&#xA;var regex = /^[0-9]*\.?[0-9]*$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);&#xA;"/>
+                <editorHtmlElementProperties htmlEventHandlers="onchange;var regex = /^[0-9]*\.?[0-9]*$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);&#xA;"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
             </field>
             <field ctrl="Phone" default="L" displayInfoText="false" editorCellClass="fieldText" editorStyle="width:70%;" fieldStyle="width:100%;" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="phone">
-                <editorHtmlElementProperties customAttributes="type=&quot;tel&quot;" htmlEventHandlers="onchange;/* Telephone number format */&#xA;// var regex = /^(\()?(\+44-|\+44|0)([- 0-9\(\)]{10,16}?)$/; // for british phone numbers&#xA;var regex = /^[-\s0-9\(\)]{10,16}$/;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// a more general regex for numbers of an appropriate length&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+                <editorHtmlElementProperties customAttributes="type=&quot;tel&quot;" htmlEventHandlers="onchange;var regex = /^[-\s0-9\(\)]{10,16}$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
             </field>
             <field ctrl="Postcode" default="L" displayInfoText="false" editorCellClass="fieldText" editorCellStyle="width:7em;" editorStyle="width:70%;text-transform:uppercase;" fieldStyle="width:100%;" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="postcode">
-                <editorHtmlElementProperties htmlEventHandlers="onchange;/* Postcode number format */&#xA;var regex = /^[A-Z]{1,2}[0-9]{1,2}\s?[0-9][A-Z]{2}$/i;&#x9;&#xA;&#xA;/* Get the value entered */&#xA;var postcodeValue = this.value;&#xA;&#xA;/* Remove spaces */&#xA;if(postcodeValue){&#xA;&#x9;postcodeValue = postcodeValue.replace(/\s/g, &quot;&quot;);&#xA;}&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);&#xA;"/>
+                <editorHtmlElementProperties htmlEventHandlers="onchange;var regex = /^[A-Z]{1,2}[0-9]{1,2}\s?[0-9][A-Z]{2}$/i;&#x9;&#xA;var postcodeValue = this.value;&#xA;if(postcodeValue){&#xA;&#x9;postcodeValue = postcodeValue.replace(/\s/g, &quot;&quot;);&#xA;}&#xA;testInput(this, regex);&#xA;"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                 </infoProperties>
@@ -1313,13 +1313,15 @@
                 </infoProperties>
             </field>
             <field ctrl="Title" default="L" displayInfoText="false" editorCellClass="fieldText" editorClass="highlightField" editorStyle="vertical-align:middle;width:6em;" errorMsgClass="errorMessage" gapAfterEditor="0.4px" helpButImage="$ws/Web_Resources/Images/help.gif" helpClass="helpText" helpPos="2" ivImageURL="$ws/Web_Resources/Images/tick.gif" labelClass="label" labelElementClass="label" modifiers="name, mandatory" patternTextStyle="margin-left:0.2em;" vAlign="Center" warningMsgClass="warningMessage">
-                <editorHtmlElementProperties customAttributes="placeholder=&quot;Mr, Mrs etc.&quot;" htmlEventHandlers="onchange;/* Name format - alphabetic plus hyphen, apostrophe, full stop and space */&#xA;var regex = /^[A-Za-z\-'\.\s]*$/;&#xA;&#xA;/* Highlight if the field has a value, and does not match format */&#xA;testInput(this, regex);"/>
+                <editorHtmlElementProperties customAttributes="placeholder=&quot;Mr, Mrs etc.&quot;" htmlEventHandlers="onchange;var regex = /^[A-Za-z\-'\.\s]*$/;&#xA;$(this).val($.trim($(this).val()));&#xA;testInput(this, regex);"/>
                 <infoProperties>
                     <popupTextProperties textFont="@0" textSize="@0"/>
                     <popupWindowProperties resizable="true"/>
                 </infoProperties>
             </field>
-            <field ctrl="defult"/>
+            <field ctrl="defult">
+                <rootHtmlElementProperties htmlEventHandlers="onchange;$(this).val($.trim($(this).val()));"/>
+            </field>
             <repeaterRow ctrl="Empty" default="L"/>
             <repeaterRow allMargin="@0" allPadding="@0" borderColor="@0" borderRadius="@0" borderStyle="@0" borderWidth="@0" bottomBorderWidth="@0" bottomMargin="@0" bottomPadding="@0" ctrl="RepeaterRow" default="true" errorMsgClass="errorMessage" layoutType="FIELD" leftBorderWidth="@0" leftMargin="@0" leftPadding="@0" rightBorderWidth="@0" rightMargin="@0" rightPadding="@0" topBorderWidth="@0" topMargin="@0" topPadding="@0" warningMsgClass="warningMessage">
                 <errorMessageStyle backgroundColor="@0" textColor="@0"/>

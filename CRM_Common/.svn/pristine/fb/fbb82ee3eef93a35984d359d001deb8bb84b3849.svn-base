@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="CategoriesList_Full" dateCreated="2017-07-28T16:39:19.511+01:00">
+        <columns>UID,Category_ID, Sub_Category_ID, Category, Resp_Team_ID, Email, Leader</columns>
+        <from>crm_Category_List_Full</from>
+        <fields>
+            <field id="Category_ID" type="INTEGER" input="false"/>
+            <field id="Sub_Category_ID" type="INTEGER" input="false"/>
+            <field id="Category" input="false"/>
+            <field id="Resp_Team_ID" input="false"/>
+            <field id="UID" type="INTEGER" input="false"/>
+            <field id="Email" input="false"/>
+            <field id="Leader" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

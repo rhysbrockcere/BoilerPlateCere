@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dbResource database="CRM" id="Enquiry_Action" dateCreated="2017-02-07T10:20:45.602Z">
+        <columns>*</columns>
+        <from>crm_Enquiry_Actions</from>
+        <where>ID=&amp;&amp;ID</where>
+        <fields>
+            <field id="Agent" type="VARCHAR" length="50"/>
+            <field id="Date" type="TIMESTAMP" length="16"/>
+            <field id="Details" type="CLOB" length="1073741823"/>
+            <field id="Enquiry_ID" type="INTEGER" length="10"/>
+            <field id="ID" type="INTEGER" length="10" key="true" readOnly="true"/>
+            <field id="Resolution_Status" type="VARCHAR" length="50"/>
+            <field id="Type" type="VARCHAR" length="10"/>
+        </fields>
+    </dbResource>
+</ebase>

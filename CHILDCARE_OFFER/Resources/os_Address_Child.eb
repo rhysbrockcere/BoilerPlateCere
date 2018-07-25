@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ebase version="5.2.0">
+<ebase version="5.3.2">
     <dbResource description="AddressBase Addresses for Child Addreses" database="CERESQLN1_SQL2012" preparedStatement="false" id="os_Address_Child" dateCreated="2018-04-23T16:33:47.129+01:00">
         <columns>*</columns>
-        <from>AddressBase.dbo.os_Address</from>
+        <from>Aim_Cer_Test.dbo.ccc_RB_Expected_Income_VAT_Codes</from>
         <where>&amp;&amp;WHERE_CLAUSE</where>
         <fields>
             <field id="ADMINISTRATIVE_AREA" type="VARCHAR" length="500"/>
@@ -59,6 +59,7 @@
             <field id="WELSH_STREET_DESCRIPTION" type="VARCHAR" length="500"/>
             <field id="WELSH_THOROUGHFARE_NAME" type="VARCHAR" length="500"/>
             <field id="WELSH_TOWN_NAME" type="VARCHAR" length="500"/>
+            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
             <field id="W_ADDR1" type="VARCHAR" length="4000"/>
             <field id="W_ADDR2" type="VARCHAR" length="500"/>
             <field id="W_ADDR3" type="VARCHAR" length="500"/>
@@ -79,7 +80,6 @@
             <field id="WebCall" type="VARCHAR" length="10"/>
             <field id="easting" type="DECIMAL" length="18" fractionalDigits="2"/>
             <field id="northing" type="DECIMAL" length="18" fractionalDigits="2"/>
-            <field id="WHERE_CLAUSE" type="NUMERIC" length="300" persistent="false"/>
         </fields>
     </dbResource>
 </ebase>

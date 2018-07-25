@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resourceMappings>
+    <resourceMapping id="Expected_Income_Form_Data">
+        <tableMapping table="Expected_Income_Form_Data"/>
+        <fieldMapping resourceField="AmountClaimed" field="Expected_Income_Form_Data-AmountClaimed"/>
+        <fieldMapping resourceField="Claim_Date" field="Expected_Income_Form_Data-Claim_Date"/>
+        <fieldMapping resourceField="Created_By" field="Expected_Income_Form_Data-Created_By"/>
+        <fieldMapping resourceField="Created_Date" field="Expected_Income_Form_Data-Created_Date"/>
+        <fieldMapping resourceField="Date_Due_To_Be_Received" field="Expected_Income_Form_Data-Date_Due_To_Be_Received"/>
+        <fieldMapping resourceField="Deleted" field="Expected_Income_Form_Data-Deleted"/>
+        <fieldMapping resourceField="Deleted_By" field="Expected_Income_Form_Data-Deleted_By"/>
+        <fieldMapping resourceField="Deleted_Date" field="Expected_Income_Form_Data-Deleted_Date"/>
+        <fieldMapping resourceField="Details_of_Claim" field="Expected_Income_Form_Data-Details_of_Claim"/>
+        <fieldMapping resourceField="ExpectedIncome_Business_ID" field="Expected_Income_Form_Data-ExpectedIncome_Business_ID"/>
+        <fieldMapping resourceField="ExpectedIncome_ID" field="Expected_Income_Form_Data-ExpectedIncome_ID"/>
+        <fieldMapping resourceField="Form_Owner" field="Expected_Income_Form_Data-Form_Owner"/>
+        <fieldMapping resourceField="Form_Status_ID" field="Expected_Income_Form_Data-Form_Status_ID"/>
+        <fieldMapping resourceField="Income_Code" field="Expected_Income_Form_Data-Income_Code"/>
+        <fieldMapping resourceField="Last_Modified_By" field="Expected_Income_Form_Data-Last_Modified_By"/>
+        <fieldMapping resourceField="Last_Modified_Date" field="Expected_Income_Form_Data-Last_Modified_Date"/>
+        <fieldMapping resourceField="Name_Of_Payer" field="Expected_Income_Form_Data-Name_Of_Payer"/>
+        <fieldMapping resourceField="VAT_Code_ID" field="Expected_Income_Form_Data-VAT_Code_ID"/>
+    </resourceMapping>
+</resourceMappings>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<fields>
-    <field name="FIELD1" type="CHAR" labelTextRef="Txt50F0kF" displayType="TEXT"/>
-    <field name="FIELD2" type="CHAR" labelTextRef="TxtSGLXN" displayType="TEXT"/>
-    <field name="FieldSum" type="CURRENCY" labelTextRef="Txt5y87D8" displayType="TEXT"/>
-    <field name="Username" type="CHAR" labelTextRef="Txt8xTvPm" displayType="TEXT"/>
-</fields>

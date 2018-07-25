@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="People_Restricted" dateCreated="2017-09-11T14:28:32.307+01:00">
+        <columns>Name, Position_ID, Email</columns>
+        <from>sys_CERiExtract</from>
+        <where>Team_ID=&amp;&amp;Team_ID</where>
+        <additional>order by Name</additional>
+        <fields>
+            <field id="Name" input="false"/>
+            <field id="Position_ID" input="false"/>
+            <field id="Email" input="false"/>
+            <field id="Team_ID" output="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Payment_Types" dateCreated="2017-11-29T15:07:17.244Z">
+        <columns>Pay_Code, Description</columns>
+        <from>sys_payment_types</from>
+        <additional>order by description</additional>
+        <fields>
+            <field id="Pay_Code" input="false"/>
+            <field id="Description" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

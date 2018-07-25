@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dynamicList database="CRM" id="Enquiry_Priority" dateCreated="2017-03-02T16:44:03.465Z">
+        <columns>priority_id, Description</columns>
+        <from>crm_enquiry_Priorities</from>
+        <fields>
+            <field id="priority_id" type="INTEGER" input="false"/>
+            <field id="Description" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>

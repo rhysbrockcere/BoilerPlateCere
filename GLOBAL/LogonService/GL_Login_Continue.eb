@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ebase version="5.2.0">
+<ebase version="5.3.2">
     <script contentType="Javascript" preferredComponentPath="/LogonService/LoginForm" id="GL_Login_Continue" dateCreated="2018-01-17T13:22:04.287Z">
         <scriptText>importPackage(com.ebasetech.xi.api);
 importPackage(com.ebasetech.xi.services);

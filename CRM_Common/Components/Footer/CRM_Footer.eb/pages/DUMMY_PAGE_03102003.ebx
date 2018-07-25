@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<page name="DUMMY_PAGE_03102003" pageHeaderTextRef="Txt52aFMX" pageInfoTextReference="Txt3WVo3b" pageTrailerTextReference="Txt9nn4TU" nextPageTextReference="Txt7ew2VU" prevPageTextReference="Txt9Um8JS">
+    <pageContents>
+        <component ctrl="Cmp15L70R" inheritMsg="true" outputType="0" pdfFooterText="LocalTxt9uBBen" pdfHeaderText="LocalTxt8zmCnt" uid="R2XzspFp">
+            <footer cssClass="bg-dark" ctrl="Foot4ndId" uid="ELVsojZ2">
+                <rootHtmlElementProperties classLocator="footer-copyright"/>
+                <panel ctrl="Panx5p7C" propertySet="container" uid="FGKHKXYQ">
+                    <text ctrl="TexBpbT0" text="LocalTxt8hTekT" uid="4iJQkBkb"/>
+                </panel>
+            </footer>
+        </component>
+    </pageContents>
+</page>

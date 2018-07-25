@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<fields>
+    <field name="Cancel_Request" type="BOOLEAN" defaultValue="false" returnable="true" labelTextRef="Txt4OEf0W" displayType="TEXT" id="fe7f7145-edb5-42ce-b801-d614084c5740"/>
+</fields>

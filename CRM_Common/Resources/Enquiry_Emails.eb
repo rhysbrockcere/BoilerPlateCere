@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <dbResource database="CRM" table="true" id="Enquiry_Emails" dateCreated="2018-03-07T10:05:52.255Z">
+        <columns>*</columns>
+        <from>crm_Enquiry_Emails</from>
+        <where>Enquiry_ID = &amp;&amp;Enquiry_ID</where>
+        <fields>
+            <field id="Action_Type" type="VARCHAR" length="10"/>
+            <field id="Agent" type="VARCHAR" length="50"/>
+            <field id="Date" type="TIMESTAMP" length="16" fractionalDigits="3"/>
+            <field id="Enquiry_ID" type="INTEGER" length="10"/>
+            <field id="Message" type="CLOB" length="1073741823"/>
+        </fields>
+    </dbResource>
+</ebase>

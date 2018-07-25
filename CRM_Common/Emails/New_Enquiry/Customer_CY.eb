@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.2.0">
+    <emailResource accountName="Exchange" from="no-reply@ceredigion.gov.uk" to="&amp;&amp;EMAIL_ADDRESS" subject="Cyngor sir CEREDIGION County Council ( &amp;&amp;REFERENCE )" html="true" id="Customer_CY" dateCreated="2016-11-30T15:27:26.932Z">
+        <message>&lt;html&gt;&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+	&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+	&lt;style type="text/css"&gt;
+		&lt;!-- .ReadMsgBody {
+			width: 100%;
+		}
+
+		.ExternalClass {
+			width: 100%;
+		}
+
+		.ExternalClass * {
+			line-height: 110%
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		#maintable {
+			width: 650px;
+		}
+
+		@media screen and (max-width: 650px) {
+			body {
+				margin: 0 !important;
+			}
+			table[id=wrapper] {
+				width: 100%!important;
+				padding: 0px 0px !important;
+			}
+			table[id=wrapper] #maintable {
+				width: 100% !important;
+				max-width: 650px !important;
+				min-width: 320px !important;
+			}
+			table[id=wrapper] .show {
+				width: 100%;
+				display: block !important;
+			}
+			table[id=wrapper] .hide {
+				width: 0px !important;
+				display: none !important;
+			}
+		}
+
+    /* iOS and Android Tweek */
+    div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
+    a[x-apple-data-detectors] {color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important;}
+    /* iOS and Android Tweek */
+		--&gt;
+	&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body bgcolor="#f0f1eb" bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased; text-size-adjust: none; margin: 0px; padding: 0px;" cz-shortcut-listen="true"&gt;
+	&lt;table width="100%" border="0" cellspacing="0" cellpadding="10" style="table-layout:fixed;" id="wrapper" align="center"&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td align="center" bgcolor="#f0f1eb"&gt;
+					&lt;table border="0" cellpadding="10" cellspacing="0" width="650" id="maintable" bgcolor="#FFFFFF" align="center"&gt;
+						&lt;tbody&gt;
+							&lt;tr&gt;
+							  &lt;td class="hide" bgcolor="#37587e"&gt;
+                                &lt;img src="http://forms.ceredigion.gov.uk/ufs/images/Ceredigion_Email_Logo.png" alt="Ceredigion Logo" title="Ceredigion Logo"&gt;
+							  &lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td width="600" height="20" class="hide"&gt;
+                                	&lt;div style="color:#555555;line-height:120%;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size:14px; padding:10px;"&gt;
+                                        &lt;p&gt;Dear &amp;&amp;SALUTATION ,
+                                        &lt;p&gt;Thank you for your enquiry. Below is a copy of your enquiry for your records.&lt;/p&gt;
+                                        &lt;p&gt;Subject: &amp;&amp;SUBJECT &lt;/p&gt;
+                                        &lt;p&gt;Details:&lt;/p&gt;
+                                        &lt;p&gt;&amp;&amp;DETAILS &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+							  &lt;td width="600" height="20" class="hide" bgcolor="#61626F" align="right"&gt;
+                                	&lt;div style="color:#fff;line-height:150%;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;padding:10px;"&gt;
+                                        &lt;p style="margin: 0;text-align: right;font-size: 14px"&gt;
+                                        &lt;span style="font-weight:300; font-size:21px;"&gt;Ceredigion County Council&lt;/span&gt;
+                                            &lt;br&gt; Neuadd Cyngor Ceredigion Penmorfa
+                                            &lt;br&gt; Aberaeron
+                                            &lt;br&gt; Ceredigion
+                                            &lt;br&gt; SA46 0PA
+                                            &lt;br&gt; 01545 900333
+                                      &lt;/p&gt;
+       							&lt;/div&gt;
+                                &lt;/td&gt;
+							&lt;/tr&gt;
+
+						&lt;/tbody&gt;
+					&lt;/table&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;        
+&lt;/body&gt;
+&lt;/html&gt;</message>
+        <fields>
+            <field id="DETAILS"/>
+            <field id="EMAIL_ADDRESS" required="true"/>
+            <field id="REFERENCE"/>
+            <field id="SALUTATION"/>
+            <field id="SUBJECT"/>
+        </fields>
+    </emailResource>
+</ebase>

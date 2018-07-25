@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebase version="5.3.2">
+    <dynamicList database="CERESQLS1_CASH2012" nativeSql="true" id="Vat" dateCreated="2018-07-25T10:02:35.919+01:00">
+        <columns>select VAT_Code_Name</columns>
+        <from>ccc_RB_Expected_Income_VAT_Codes</from>
+        <sql>select Abbreveation+'-'+VAT_Code_Name as VAT_Code_Name,VAT_Code_ID
+from Aim_Cer_Test.dbo.ccc_RB_Expected_Income_VAT_Codes 
+</sql>
+        <fields>
+            <field id="VAT_Code_Name" input="false"/>
+            <field id="VAT_Code_ID" input="false"/>
+        </fields>
+    </dynamicList>
+</ebase>
